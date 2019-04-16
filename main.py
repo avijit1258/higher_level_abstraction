@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 #self calling edge is omitted for now
 
 # caller callee for generating
-caller_callee = [('F0', 'F1'), ('F0', 'F2'), ('F0', 'F3'), ('F1', 'F3'), ('F2', 'F0'), ('F2', 'F1'), ('F4', 'F2'),('F5', 'F1')]
+caller_callee = [('F0', 'F1'), ('F0', 'F2'), ('F0', 'F3'), ('F1', 'F3'), ('F2', 'F0'), ('F2', 'F1'), ('F4', 'F2'), ('F5', 'F1')]
 
 S = []
 
