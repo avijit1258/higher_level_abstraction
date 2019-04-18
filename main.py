@@ -1,5 +1,7 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import pydot
+#import networkx.drawing.nx_pydot.read_dot
 
 #caller_callee = [('F1', 'F3'), ('F1', 'F7'), ('F3', 'F7'), ('F4', 'F1')]
 #self calling edge is omitted for now
@@ -13,10 +15,12 @@ T = []
 
 execution_paths = []
 G = nx.DiGraph()
-G.add_edges_from(caller_callee)
-
-nx.draw(G, with_labels=True)
-plt.show()
+#G.add_edges_from(caller_callee)
+#G = nx.drawing.nx_agraph.read_dot('/pyan/pyan/pyan.dot')
+#G = nx.DiGraph(nx.drawing.nx_pydot.read_dot('pyan/pyan/pyan.dot'))
+#G = nx.read_graphml('pyan/pyan/pyan_yed.txt')
+#nx.draw(G, with_labels=True)
+#plt.show()
 
 
 def extracting_source_and_exit_node():
@@ -29,7 +33,26 @@ def extracting_source_and_exit_node():
         if v == 0:
             T.append(t)
             print(t)
+def tgf_to_networkX():
 
+        f = open("pyan/pyan/pyan_tgf.txt", "r")
+        graph_started = False
+        for line in f:
+            if line.find('#') != -1:
+                print(line.find('#'))
+                graph_started = True
+                continue
+
+            if graph_started == True:
+                edge_info = line.split()
+                print(edge_info)
+                G.add_edge(edge_info[0], edge_info[1])
+
+        nx.draw(G, with_labels=True)
+        plt.show()
+
+
+        return
 
 def extracting_execution_paths():
 
@@ -43,7 +66,10 @@ def extracting_execution_paths():
                 execution_paths.append(p)
 
 
+
+
+tgf_to_networkX()
 extracting_source_and_exit_node()
 extracting_execution_paths()
 
-
+print(execution_paths)

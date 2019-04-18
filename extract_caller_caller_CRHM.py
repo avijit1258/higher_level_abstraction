@@ -42,10 +42,11 @@ mappingFileClass[cpp_file_list[17]] = ['ClassWQ_River', 'ClassWQ_REWroute']
 mappingFileClass[cpp_file_list[18]] = ['ClassWQ_Hype']
 mappingFileClass[cpp_file_list[19]] = ['TLogForm']
 mappingFileClass[cpp_file_list[20]] = ['ClassMacro', 'Defdeclparam', 'Defdecldiag', 'Defdeclstatvar', 'Defdecllocal', 'Defdeclgetvar', 'Defdeclputvar', 'Defdeclputparam', 'Defdeclreadobs', 'Defdeclobsfunc']
-mappingFileClass[cpp_file_list[21]] = [] #start from NewModules.cpp
-mappingFileClass[cpp_file_list[22]] = []
-mappingFileClass[cpp_file_list[23]] = []
-mappingFileClass[cpp_file_list[24]] = []
+mappingFileClass[cpp_file_list[21]] = ['Classshared', 'ClassNOP', 'Classbasin', 'Classglobal', 'Classobs', 'Classintcp', 'Classpbsm', 'ClassSoilDS','Classalbedoobs2','Classwinter_meltflag','Class_z_s_rho','Classtsurface','Classqdrift','Classqmelt', 'Classquinton','ClassICEflow'] #start from NewModules.cpp
+mappingFileClass[cpp_file_list[22]] = ['Poly','Fourier','Power','Expo', 'Log', 'MLinReg','LeastSquares']#Numerical.cpp
+mappingFileClass[cpp_file_list[23]] = ['TParameter']#Para.cpp
+mappingFileClass[cpp_file_list[24]] = ['TRprt']#report.cpp
+mappingFileClass[cpp_file_list[25]] = ['TPlotControl']#report.cpp
 
 
 

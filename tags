@@ -1,0 +1,1784 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AH	NewModules.cpp	7391;"	d	file:
+AKA1Click	CRHMmain.cpp	/^void __fastcall TMain::AKA1Click(TObject *Sender)$/;"	f	class:TMain
+AKA1Click	report.cpp	/^void __fastcall TRprt::AKA1Click(TObject *Sender)$/;"	f	class:TRprt
+AKA2Click	report.cpp	/^void __fastcall TRprt::AKA2Click(TObject *Sender)$/;"	f	class:TRprt
+AKAModuleDelete	AKAform.cpp	/^void __fastcall TFormAKA::AKAModuleDelete(Mapstr2 &MapAKAany)$/;"	f	class:TFormAKA
+AKAcombine	AKAform.cpp	/^void __fastcall TFormAKA::AKAcombine(TObject *Sender)$/;"	f	class:TFormAKA
+AKAhook	ClassModule.cpp	/^void ClassModule::AKAhook(TAKA type, string module, string OrgName, string & NewName)  $/;"	f	class:ClassModule
+AKAhook	ClassModule.cpp	/^void ClassModule::AKAhook(TAKA type, string module, string OrgName, string & NewName, string & source, string base)  $/;"	f	class:ClassModule
+AKAselectiveDelete	Bld.cpp	/^void __fastcall TBldForm::AKAselectiveDelete(TObject *Sender)$/;"	f	class:TBldForm
+AKAseparate	AKAform.cpp	/^void __fastcall TFormAKA::AKAseparate(TObject *Sender)$/;"	f	class:TFormAKA
+AKAstrings	ClassModule.cpp	/^__declspec(dllexport) string AKAstrings[] = {"VARG", "OBSR", "VARD", "OBSD", "PARD", "OBSF"};$/;"	v
+AKAtype	ClassModule.cpp	/^TAKA AKAtype(string type)$/;"	f
+ALBEDO	NewModules.cpp	/^void ClassSimpleRichard::ALBEDO(long hh)$/;"	f	class:ClassSimpleRichard
+AV	NewModules.cpp	7392;"	d	file:
+AboutBox	About.cpp	/^TAboutBox *AboutBox;$/;"	v
+AboutClick	CRHMmain.cpp	/^void __fastcall TMain::AboutClick(TObject *Sender)$/;"	f	class:TMain
+AbsListBox3Click	CRHMmain.cpp	/^void __fastcall TMain::AbsListBox3Click(TObject *Sender)$/;"	f	class:TMain
+Accept	ClassModule.cpp	/^void Administer::Accept(int Result)$/;"	f	class:Administer
+Add1Click	Bld.cpp	/^void __fastcall TBldForm::Add1Click(TObject *Sender)$/;"	f	class:TBldForm
+AddArray1Click	CRHMmain.cpp	/^void __fastcall TMain::AddArray1Click(TObject *Sender)$/;"	f	class:TMain
+AddGroup	EntryForm.cpp	/^void __fastcall TFormEntry::AddGroup(int ii)  $/;"	f	class:TFormEntry
+AddListBox1Click	CRHMmain.cpp	/^void __fastcall TMain::AddListBox1Click(TObject *Sender)$/;"	f	class:TMain
+AddListBox2Click	CRHMmain.cpp	/^void __fastcall TMain::AddListBox2Click(TObject *Sender)$/;"	f	class:TMain
+AddMacroCode	report.cpp	/^void __fastcall TRprt::AddMacroCode(String S, TStringList *MacroModulesList, TStrings* Memo1, long &MacroPos)$/;"	f	class:TRprt
+AddModel	ClassModule.cpp	/^void Administer::AddModel(String ModelName, String ModelModules)$/;"	f	class:Administer
+AddModule	ClassModule.cpp	/^void Administer::AddModule(ClassModule *Module)$/;"	f	class:Administer
+AddObsFunct1Click	CRHMmain.cpp	/^void __fastcall TMain::AddObsFunct1Click(TObject *Sender)$/;"	f	class:TMain
+AddObsPlot	CRHMmain.cpp	/^void __fastcall TMain::AddObsPlot(TObject *Sender, ClassVar *thisVar,$/;"	f	class:TMain
+AddSupport	EntryForm.cpp	/^void __fastcall TFormEntry::AddSupport(Module* ThisModule)  $/;"	f	class:TFormEntry
+Add_NHRU	report.cpp	/^long __fastcall TRprt::Add_NHRU(String S, TStringList *MacroModulesList)$/;"	f	class:TRprt
+Add_WQ	Hype_CRHM.cpp	/^void ClassWQ_Netroute::Add_WQ(long hru, float *var, float *var_conc, float amount, float amount_conc)$/;"	f	class:ClassWQ_Netroute
+Add_WQ	Hype_CRHM.cpp	/^void ClassWQ_Soil::Add_WQ(const long hru, float *var, float *var_conc, float *var2, float *var2_conc, float *var3, float *var3_conc)$/;"	f	class:ClassWQ_Soil
+Add_WQ	Hype_CRHM.cpp	/^void ClassWQ_Soil::Add_WQ(const long hru, float *var, float *var_conc, float amount, float amount_conc)$/;"	f	class:ClassWQ_Soil
+Add_WQ	Hype_CRHM.cpp	/^void ClassWQ_pbsm::Add_WQ(long hru, float *var, float *var_cWQ, float amount, float amount_cWQ)$/;"	f	class:ClassWQ_pbsm
+Add_WQ	NewModules.cpp	/^void ClassWQ_Netroute_M_D::Add_WQ(long hru, float *var, float *var_cWQ, float amount, float amount_cWQ)$/;"	f	class:ClassWQ_Netroute_M_D
+Add_to_Drift_in_cWQ	Hype_CRHM.cpp	/^void ClassWQ_pbsm::Add_to_Drift_in_cWQ(long hru, float transport, float transport_cWQ)$/;"	f	class:ClassWQ_pbsm
+Administer	ClassModule.cpp	/^Administer::Administer(String Version, String _HelpFile) : Version(Version), HelpFile(_HelpFile)$/;"	f	class:Administer
+Against	Analy.cpp	/^CRHM::TAgainst Plot::Against = CRHM::myTIME;$/;"	m	class:Plot	file:
+All1Click	CRHMmain.cpp	/^void __fastcall TMain::All1Click(TObject *Sender)$/;"	f	class:TMain
+All1Rprt	CRHMmain.cpp	/^void __fastcall TMain::All1Rprt(TObject *Sender)$/;"	f	class:TMain
+AllModelsList	GlobalDll.cpp	/^TStringList *(Global::AllModelsList);$/;"	v
+AllModulesList	GlobalDll.cpp	/^TStringList *(Global::AllModulesList);$/;"	v
+AllModulesList1Click	report.cpp	/^void __fastcall TRprt::AllModulesList1Click(TObject *Sender)$/;"	f	class:TRprt
+AllRprtObs	CRHMmain.cpp	/^void __fastcall TMain::AllRprtObs(TObject *Sender)$/;"	f	class:TMain
+Analysis1Click	CRHMmain.cpp	/^void __fastcall TMain::Analysis1Click(TObject *Sender)$/;"	f	class:TMain
+AnyOne	ClassModule.cpp	/^bool ClassModule::AnyOne(float *Data, int Cnt, float Val)$/;"	f	class:ClassModule
+AppHelp	CRHMmain.cpp	/^bool __fastcall TMain::AppHelp(WORD Command, int Data, bool &CallHelp)$/;"	f	class:TMain
+ApplicationDir	CRHMmain.cpp	/^String ApplicationDir = ExtractFilePath(AnsiReplaceStr(Application->ExeName, "\/", "\\\\")); $/;"	v
+Avg	ClassCRHM.cpp	/^void ClassVar::Avg(void)$/;"	f	class:ClassVar
+Avg_	ClassCRHM.cpp	/^void ClassVar::Avg_(long dim_n)$/;"	f	class:ClassVar
+BB	NewModules.cpp	7105;"	d	file:
+BETA_S	NewModules.cpp	7399;"	d	file:
+BETA_U	NewModules.cpp	7400;"	d	file:
+BackUp	ClassCRHM.cpp	/^void ClassPar::BackUp()$/;"	f	class:ClassPar
+BackUp	ClassCRHM.cpp	/^void ClassVar::BackUp()$/;"	f	class:ClassVar
+Best_Match	Bld.cpp	/^long __fastcall TBldForm::Best_Match(String Var, TStringList *List)$/;"	f	class:TBldForm
+BitBtn1MouseDown	Bld.cpp	/^void __fastcall TBldForm::BitBtn1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift, int X, int Y)$/;"	f	class:TBldForm
+BitBtn2Click	Bld.cpp	/^void __fastcall TBldForm::BitBtn2Click(TObject *Sender)$/;"	f	class:TBldForm
+BitFile1Click	Flow.cpp	/^void __fastcall TFlowForm::BitFile1Click(TObject *Sender)$/;"	f	class:TFlowForm
+BldForm	Bld.cpp	/^TBldForm *BldForm;$/;"	v
+BldModelClick	CRHMmain.cpp	/^void __fastcall TMain::BldModelClick(TObject *Sender)$/;"	f	class:TMain
+Box1Disply	CRHMmain.cpp	/^long Box1Disply = CRHM::USUAL; $/;"	v
+BuildFlag	GlobalDll.cpp	/^CRHM::TBuild Global::BuildFlag;$/;"	m	class:Global	file:
+BuildHru	CRHMmain.cpp	/^String __fastcall TMain::BuildHru(String S, long Hru, CRHM::TDim dimen)$/;"	f	class:TMain
+BuildLay	CRHMmain.cpp	/^String __fastcall TMain::BuildLay(String S, long Lay)$/;"	f	class:TMain
+Button1Click	Analy.cpp	/^void __fastcall TAnalysis::Button1Click(TObject *Sender)   $/;"	f	class:TAnalysis
+Button1Click	Export.cpp	/^void __fastcall TFileOutput::Button1Click(TObject *Sender)$/;"	f	class:TFileOutput
+Button2Click	Analy.cpp	/^void __fastcall TAnalysis::Button2Click(TObject *Sender)$/;"	f	class:TAnalysis
+Button2Click	Export.cpp	/^void __fastcall TFileOutput::Button2Click(TObject *Sender)$/;"	f	class:TFileOutput
+CRHMControlSaveCnt	GlobalDll.cpp	/^long Global::CRHMControlSaveCnt; $/;"	m	class:Global	file:
+CRHMStatus	GlobalDll.cpp	/^long Global::CRHMStatus;  $/;"	m	class:Global	file:
+Ca	NewModules.cpp	/^const float Ca = 0.001; $/;"	v
+CalcFreq	NewModules.cpp	/^const long CalcFreq = 288;$/;"	v
+Call	report.cpp	/^char Call[][9] = {"NO", "as Basic", "as Funct"};$/;"	v
+CallDecl	MacroUnit.cpp	/^void Defdecldiag::CallDecl()$/;"	f	class:Defdecldiag
+CallDecl	MacroUnit.cpp	/^void Defdeclgetparam::CallDecl()$/;"	f	class:Defdeclgetparam
+CallDecl	MacroUnit.cpp	/^void Defdeclgetvar::CallDecl()$/;"	f	class:Defdeclgetvar
+CallDecl	MacroUnit.cpp	/^void Defdecllocal::CallDecl()$/;"	f	class:Defdecllocal
+CallDecl	MacroUnit.cpp	/^void Defdeclobs::CallDecl()$/;"	f	class:Defdeclobs
+CallDecl	MacroUnit.cpp	/^void Defdeclobsfunc::CallDecl()$/;"	f	class:Defdeclobsfunc
+CallDecl	MacroUnit.cpp	/^void Defdeclparam::CallDecl()$/;"	f	class:Defdeclparam
+CallDecl	MacroUnit.cpp	/^void Defdeclputparam::CallDecl()$/;"	f	class:Defdeclputparam
+CallDecl	MacroUnit.cpp	/^void Defdeclputvar::CallDecl()$/;"	f	class:Defdeclputvar
+CallDecl	MacroUnit.cpp	/^void Defdeclreadobs::CallDecl()$/;"	f	class:Defdeclreadobs
+CallDecl	MacroUnit.cpp	/^void Defdeclstatvar::CallDecl()$/;"	f	class:Defdeclstatvar
+CallDecl	MacroUnit.cpp	/^void Defdeclvar::CallDecl()$/;"	f	class:Defdeclvar
+CallInit	MacroUnit.cpp	/^void Defdecldiag::CallInit(long nhru, long nlay)$/;"	f	class:Defdecldiag
+CallInit	MacroUnit.cpp	/^void Defdeclgetparam::CallInit(long nhru, long nlay)   $/;"	f	class:Defdeclgetparam
+CallInit	MacroUnit.cpp	/^void Defdeclgetvar::CallInit(long nhru, long nlay)$/;"	f	class:Defdeclgetvar
+CallInit	MacroUnit.cpp	/^void Defdecllocal::CallInit(long nhru, long nlay)$/;"	f	class:Defdecllocal
+CallInit	MacroUnit.cpp	/^void Defdeclobs::CallInit(long nhru, long nlay)$/;"	f	class:Defdeclobs
+CallInit	MacroUnit.cpp	/^void Defdeclparam::CallInit(long nhru, long nlay)$/;"	f	class:Defdeclparam
+CallInit	MacroUnit.cpp	/^void Defdeclputparam::CallInit(long nhru, long nlay)   $/;"	f	class:Defdeclputparam
+CallInit	MacroUnit.cpp	/^void Defdeclputvar::CallInit(long nhru, long nlay)   $/;"	f	class:Defdeclputvar
+CallInit	MacroUnit.cpp	/^void Defdeclstatvar::CallInit(long nhru, long nlay)$/;"	f	class:Defdeclstatvar
+CallInit	MacroUnit.cpp	/^void Defdeclvar::CallInit(long nhru, long nlay)$/;"	f	class:Defdeclvar
+CancelChangesClick	EntryForm.cpp	/^void __fastcall TFormEntry::CancelChangesClick(TObject *Sender)$/;"	f	class:TFormEntry
+CancelScreenClick	CRHMmain.cpp	/^void __fastcall TMain::CancelScreenClick(TObject *Sender)$/;"	f	class:TMain
+Change	ClassCRHM.cpp	/^void ClassPar::Change(ClassPar &p)   $/;"	f	class:ClassPar
+ChangeLag	ClassModule.cpp	/^float ClassClark::ChangeLag(const float *newlag, const long hh)$/;"	f	class:ClassClark
+ChangeLag	ClassModule.cpp	/^void ClassMuskingum::ChangeLag(const float *newlag, const long hh)$/;"	f	class:ClassMuskingum
+ChangeStorage	ClassModule.cpp	/^float ClassClark::ChangeStorage(const float* kstorage, const long hh)$/;"	f	class:ClassClark
+Chart1Click	report.cpp	/^void __fastcall TRprt::Chart1Click(TObject *Sender)$/;"	f	class:TRprt
+CheckBlankModule	CRHMmain.cpp	/^void __fastcall TMain::CheckBlankModule(TObject *Sender)$/;"	f	class:TMain
+CheckClick	Bld.cpp	/^void __fastcall TBldForm::CheckClick(TObject *Sender)$/;"	f	class:TBldForm
+CheckListBox1ClickCheck	Bld.cpp	/^void __fastcall TBldForm::CheckListBox1ClickCheck(TObject *Sender)$/;"	f	class:TBldForm
+CheckModel	Bld.cpp	/^long __fastcall TBldForm::CheckModel()$/;"	f	class:TBldForm
+CheckNan1Click	report.cpp	/^void __fastcall TRprt::CheckNan1Click(TObject *Sender)$/;"	f	class:TRprt
+CheckNan1Init	report.cpp	/^void __fastcall TRprt::CheckNan1Init(TObject *Sender)$/;"	f	class:TRprt
+CheckUnitsObs	ClassCRHM.cpp	/^void Convert::CheckUnitsObs(string Vunits, string Munits, string declaration)  $/;"	f	class:Convert
+CheckUnitsString	ClassCRHM.cpp	/^void Convert::CheckUnitsString(string Name, string variable, string units)$/;"	f	class:Convert
+CheckUnitsTable	ClassCRHM.cpp	/^bool Convert::CheckUnitsTable()$/;"	f	class:Convert
+CheckforModule	CRHMmain.cpp	/^long __fastcall TMain::CheckforModule(String S, long Pos)$/;"	f	class:TMain
+Ci	NewModules.cpp	/^const float Ci = 1.950; $/;"	v
+ClassClark	ClassModule.cpp	/^ClassClark::ClassClark(const float* inVar, float* outVar, const float* kstorage, const float* lag, const long nhru, const float setlag) : inVar(inVar), outVar(outVar), kstorage(kstorage), nhru(nhru)$/;"	f	class:ClassClark
+ClassCtoK	ClassCRHM.cpp	/^ClassCtoK::ClassCtoK(ClassData *MyObs, String ToVar, String args, String argtypes) :Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassCtoK
+ClassData	ClassCRHM.cpp	/^ClassData::ClassData(const ClassData & Cl)   $/;"	f	class:ClassData
+ClassEntry	Bld.cpp	/^    ClassEntry() : Name(""), OrigPos(0), rank(0), module(NULL) {};$/;"	f	class:ClassEntry
+ClassEntry	Bld.cpp	/^    ClassEntry(String Name, ClassModule *module, int OrigPos_) : Name(Name), module(module), OrigPos(OrigPos_), rank(0) {};$/;"	f	class:ClassEntry
+ClassEntry	Bld.cpp	/^ClassEntry::ClassEntry(const ClassEntry & Cl)$/;"	f	class:ClassEntry
+ClassEntry	Bld.cpp	/^class ClassEntry$/;"	c	file:
+ClassForce	ClassCRHM.cpp	/^ClassForce::ClassForce(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassForce
+ClassFtoC	ClassCRHM.cpp	/^ClassFtoC::ClassFtoC(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassFtoC
+ClassKtoC	ClassCRHM.cpp	/^ClassKtoC::ClassKtoC(ClassData *MyObs, String ToVar, String args, String argtypes) :Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassKtoC
+ClassMacro	MacroUnit.cpp	/^ClassMacro::ClassMacro(string Name, int ThisBegin, String Version, string Desc): ClassModule(Name, Version, CRHM::MACRO)$/;"	f	class:ClassMacro
+ClassMissing	ClassCRHM.cpp	/^ClassMissing::ClassMissing(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes), GoodData(NULL)$/;"	f	class:ClassMissing
+ClassMissingInter	ClassCRHM.cpp	/^ClassMissingInter::ClassMissingInter(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes), GoodData(NULL)$/;"	f	class:ClassMissingInter
+ClassMuskingum	ClassModule.cpp	/^ClassMuskingum::ClassMuskingum(const float* inVar, float* outVar, const float* k, const float* X_M, const float* lag, const long nhru, const float setlag) : inVar(inVar), outVar(outVar), nhru(nhru)$/;"	f	class:ClassMuskingum
+ClassPar	ClassCRHM.cpp	/^ClassPar::ClassPar(ClassPar &p)   $/;"	f	class:ClassPar
+ClassPar	ClassCRHM.cpp	/^ClassPar::ClassPar(string module, string param, CRHM::TDim dimen,string CommaText, string help, CRHM::TVar varType, int Grpdim) : module(module), basemodule(""), param(param), varType(varType), dimen(dimen), help(help),units(""), valstr(""), minVal(0), maxVal(0), Inhibit_share(0),values(NULL), ivalues(NULL), layvalues(NULL), ilayvalues(NULL), Identical(NULL), Strings(NULL),layvaluesBkup(NULL), ilayvaluesBkup(NULL), StringsBkup(NULL), lay(1)$/;"	f	class:ClassPar
+ClassPar	ClassCRHM.cpp	/^ClassPar::ClassPar(string module, string param, CRHM::TDim dimen,string valstr, float minVal, float maxVal,string help, string units, CRHM::TVar varType, int defdim, int Grpdim) : module(module), basemodule(""), param(param), varType(varType), dimen(dimen),valstr(valstr), minVal(minVal), maxVal(maxVal), Inhibit_share(0),help(help), units(units),values(NULL), ivalues(NULL),layvalues(NULL), ilayvalues(NULL), Strings(NULL),layvaluesBkup(NULL), ilayvaluesBkup(NULL), Identical(NULL), StringsBkup(NULL), lay(1)$/;"	f	class:ClassPar
+ClassParFind	ClassCRHM.cpp	/^ClassPar *ClassParFind(string module, string param)  $/;"	f
+ClassParFind	ClassCRHM.cpp	/^ClassPar *ClassParFind(string name)  $/;"	f
+ClassParFindPar	ClassCRHM.cpp	/^ClassPar *ClassParFindPar(string name)  $/;"	f
+ClassParFindParBld	ClassCRHM.cpp	/^long ClassParFindParBld(ClassPar *thisPar)  $/;"	f
+ClassParFindRev	ClassCRHM.cpp	/^ClassPar *ClassParFindRev(string module, string param)$/;"	f
+ClassParFindShared	ClassCRHM.cpp	/^ClassPar *ClassParFindShared(string name)  $/;"	f
+ClassParSet	ClassCRHM.cpp	/^void ClassParSet(ClassPar *p)$/;"	f
+ClassRH_WtoI	ClassCRHM.cpp	/^ClassRH_WtoI::ClassRH_WtoI(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassRH_WtoI
+ClassReplace	ClassCRHM.cpp	/^ClassReplace::ClassReplace(ClassData *MyObs, String ToVar, String args, String argtypes) :Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassReplace
+ClassSim	ClassCRHM.cpp	/^ClassSim::ClassSim(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassSim
+ClassSmear	ClassCRHM.cpp	/^ClassSmear::ClassSmear(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes), Minus(false)$/;"	f	class:ClassSmear
+ClassTimeshift	ClassCRHM.cpp	/^ClassTimeshift::ClassTimeshift(ClassData *MyObs, String ToVar, String args, String argtypes) :Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassTimeshift
+ClassVar	ClassCRHM.cpp	/^ClassVar::ClassVar(const ClassVar & Cl)   $/;"	f	class:ClassVar
+ClassVar	ClassCRHM.cpp	/^ClassVar::ClassVar(string module, string name, CRHM::TDim dimen,string help, string units, CRHM::TVar varType, bool PointPlot, int Grpdim, int defdim) : module(module), name(name), DLLName(""), root(""), varType(varType), lay(0), nfreq(false),optional(false), StatVar(false), InGroup(0), visibility(CRHM::USUAL), FunKind(CRHM::FOBS),help(help), units(units), layvalues(NULL), ilayvalues(NULL), dim(0), dimMax(0),values(NULL), ivalues(NULL), offset(0), cnt(0), FileData(NULL), HRU_OBS_indexed(0),UserFunct(NULL), FunctVar(NULL), CustomFunct(NULL), No_ReadVar(0), PointPlot(PointPlot), TchrtOpt(0),dimen(dimen)$/;"	f	class:ClassVar
+ClassVar	ClassCRHM.cpp	/^ClassVar::ClassVar(string module, string name, long dim,string help, string units, CRHM::TVar varType, bool PointPlot) : module(module), name(name), DLLName(""), root(""), varType(varType), dim(dim), dimMax(0), lay(0), nfreq(false),optional(false), StatVar(false), InGroup(0), visibility(CRHM::USUAL), FunKind(CRHM::FOBS),help(help), units(units), layvalues(NULL), ilayvalues(NULL),values(NULL), ivalues(NULL), offset(0), cnt(0), FileData(NULL), HRU_OBS_indexed(0),UserFunct(NULL), FunctVar(NULL), CustomFunct(NULL), No_ReadVar(0), PointPlot(PointPlot), TchrtOpt(0),dimen(CRHM::NHRU)$/;"	f	class:ClassVar
+ClassVarFind	ClassCRHM.cpp	/^ClassVar *ClassVarFind(string name)$/;"	f
+Classabs	ClassCRHM.cpp	/^Classabs::Classabs(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classabs
+Classadd	ClassCRHM.cpp	/^Classadd::Classadd(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classadd
+ClassaddV	ClassCRHM.cpp	/^ClassaddV::ClassaddV(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassaddV
+Classconst	ClassCRHM.cpp	/^Classconst::Classconst(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classconst
+Classcos	ClassCRHM.cpp	/^Classcos::Classcos(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classcos
+Classdiv	ClassCRHM.cpp	/^Classdiv::Classdiv(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classdiv
+ClassdivV	ClassCRHM.cpp	/^ClassdivV::ClassdivV(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassdivV
+Classea	ClassCRHM.cpp	/^Classea::Classea(ClassData *MyObs, String ToVar, String args, String argtypes) :  Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classea
+Classexp	ClassCRHM.cpp	/^Classexp::Classexp(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classexp
+Classexpv	ClassCRHM.cpp	/^Classexpv::Classexpv(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classexpv
+Classfilter	ClassCRHM.cpp	/^Classfilter::Classfilter(ClassData *MyObs, String ToVar, String args, String argtypes) : MyObs(MyObs), ToVar(ToVar), args(args), argtypes(argtypes),Vs(0), Cs(0), Error(0), ObsCnt(0), TotalCnt(0), FirstTime(true)$/;"	f	class:Classfilter
+Classjulian	ClassCRHM.cpp	/^Classjulian::Classjulian(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classjulian
+Classlog	ClassCRHM.cpp	/^Classlog::Classlog(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classlog
+Classlogv	ClassCRHM.cpp	/^Classlogv::Classlogv(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classlogv
+Classmacro	ClassCRHM.cpp	/^Classmacro::Classmacro(ClassData *File) : File(File), Interpolation(0)$/;"	f	class:Classmacro
+Classmul	ClassCRHM.cpp	/^Classmul::Classmul(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classmul
+ClassmulV	ClassCRHM.cpp	/^ClassmulV::ClassmulV(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClassmulV
+Classpoly	ClassCRHM.cpp	/^Classpoly::Classpoly(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classpoly
+Classpolyv	ClassCRHM.cpp	/^Classpolyv::Classpolyv(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classpolyv
+Classpow	ClassCRHM.cpp	/^Classpow::Classpow(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classpow
+Classpowv	ClassCRHM.cpp	/^Classpowv::Classpowv(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classpowv
+Classpulse	ClassCRHM.cpp	/^Classpulse::Classpulse(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classpulse
+Classramp	ClassCRHM.cpp	/^Classramp::Classramp(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classramp
+Classrandom	ClassCRHM.cpp	/^Classrandom::Classrandom(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classrandom
+Classrefwind	ClassCRHM.cpp	/^Classrefwind::Classrefwind(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classrefwind
+Classrh	ClassCRHM.cpp	/^Classrh::Classrh(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classrh
+Classsin	ClassCRHM.cpp	/^Classsin::Classsin(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classsin
+Classsquare	ClassCRHM.cpp	/^Classsquare::Classsquare(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classsquare
+Classsub	ClassCRHM.cpp	/^Classsub::Classsub(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classsub
+ClasssubV	ClassCRHM.cpp	/^ClasssubV::ClasssubV(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:ClasssubV
+Classtime	ClassCRHM.cpp	/^Classtime::Classtime(ClassData *MyObs, String ToVar, String args, String argtypes) : Classfilter(MyObs, ToVar, args, argtypes)$/;"	f	class:Classtime
+CleanUp	Analy.cpp	/^void __fastcall TAnalysis::CleanUp(TObject *Sender)$/;"	f	class:TAnalysis
+ClearAllLogs	Log.cpp	/^void __fastcall TLogForm::ClearAllLogs(void)$/;"	f	class:TLogForm
+ClearClick	EntryForm.cpp	/^void __fastcall TFormEntry::ClearClick(TObject *Sender)$/;"	f	class:TFormEntry
+ClearDebugClick	Log.cpp	/^void __fastcall TLogForm::ClearDebugClick(TObject *Sender)$/;"	f	class:TLogForm
+ClearErrorsClick	Log.cpp	/^void __fastcall TLogForm::ClearErrorsClick(TObject *Sender)$/;"	f	class:TLogForm
+ClearGrid	AKAform.cpp	/^void __fastcall TFormAKA::ClearGrid(TObject *Sender)$/;"	f	class:TFormAKA
+ClearListBox4	CRHMmain.cpp	/^void __fastcall TMain::ClearListBox4(TObject *Sender)$/;"	f	class:TMain
+ClearModules	CRHMmain.cpp	/^void __fastcall TMain::ClearModules(TObject *Sender, bool All)$/;"	f	class:TMain
+ClearModulesClick	CRHMmain.cpp	/^void __fastcall TMain::ClearModulesClick(TObject *Sender)$/;"	f	class:TMain
+ClearRunLogs	Log.cpp	/^void __fastcall TLogForm::ClearRunLogs(void)$/;"	f	class:TLogForm
+Cm	NewModules.cpp	/^const float Cm = 2.000; $/;"	v
+Co	NewModules.cpp	/^const float Co = 0.110; $/;"	v
+Coefficients1Click	Log.cpp	/^void __fastcall TLogForm::Coefficients1Click(TObject *Sender)$/;"	f	class:TLogForm
+CommandLine	CRHMmain.cpp	/^bool CommandLine = false;$/;"	v
+CompactDlls	CRHMmain.cpp	/^void __fastcall TMain::CompactDlls(void)$/;"	f	class:TMain
+ComputeYFitAndResiduals	Numerical.cpp	/^void LeastSquares::ComputeYFitAndResiduals(void)$/;"	f	class:LeastSquares
+ConstructClick	CRHMmain.cpp	/^void __fastcall TMain::ConstructClick(TObject *Sender)$/;"	f	class:TMain
+ControlReadState	CRHMmain.cpp	/^void __fastcall TMain::ControlReadState(TObject *Sender, bool MainLoop, ClassPar * VarPar)$/;"	f	class:TMain
+ControlSaveState	CRHMmain.cpp	/^void __fastcall TMain::ControlSaveState(TObject *Sender, bool MainLoop, ClassPar * VarPar, BitSet &Bit)$/;"	f	class:TMain
+Convert	ClassCRHM.cpp	/^Convert::Convert()$/;"	f	class:Convert
+ConvertUnit	ClassCRHM.cpp	/^bool Convert::ConvertUnit( double& dValue, string pszSrcUnit, string pszDstUnit)$/;"	f	class:Convert
+CopyAndDelete	Numerical.cpp	/^void MLinReg::CopyAndDelete(void)$/;"	f	class:MLinReg
+Count	ClassCRHM.cpp	/^void ClassVar::Count(void)$/;"	f	class:ClassVar
+Count0	ClassCRHM.cpp	/^void ClassVar::Count0(void)$/;"	f	class:ClassVar
+Count0_	ClassCRHM.cpp	/^void ClassVar::Count0_(long dim_n)$/;"	f	class:ClassVar
+Count_	ClassCRHM.cpp	/^void ClassVar::Count_(long dim_n)$/;"	f	class:ClassVar
+CreateAndSolveEquations	Numerical.cpp	/^void LeastSquares::CreateAndSolveEquations(void)$/;"	f	class:LeastSquares
+CreateBasisFunctions	Numerical.cpp	/^void Expo::CreateBasisFunctions(void)$/;"	f	class:Expo
+CreateBasisFunctions	Numerical.cpp	/^void Fourier::CreateBasisFunctions(void)$/;"	f	class:Fourier
+CreateBasisFunctions	Numerical.cpp	/^void Log::CreateBasisFunctions(void)$/;"	f	class:Log
+CreateBasisFunctions	Numerical.cpp	/^void MLinReg::CreateBasisFunctions(void)$/;"	f	class:MLinReg
+CreateBasisFunctions	Numerical.cpp	/^void Poly::CreateBasisFunctions(void)$/;"	f	class:Poly
+CreateBasisFunctions	Numerical.cpp	/^void Power::CreateBasisFunctions(void)$/;"	f	class:Power
+CreateGroup1Click	EntryForm.cpp	/^void __fastcall TFormEntry::CreateGroup1Click(TObject *Sender)$/;"	f	class:TFormEntry
+Culvert	NewModules.cpp	/^void ClassREWroute2::Culvert(long hh)$/;"	f	class:ClassREWroute2
+CurrentColor	CRHMmain.cpp	/^TColor CurrentColor;$/;"	v
+CurrentDisply	Para.cpp	/^long CurrentDisply = CRHM::USUAL;$/;"	v
+CurrentModule	Para.cpp	/^String LastValue, LocalValue, CurrentModule;$/;"	v
+CurrentModuleRun	GlobalDll.cpp	/^long Global::CurrentModuleRun;  $/;"	m	class:Global	file:
+CurrentVersion	CRHMmain.cpp	3;"	d	file:
+Cv_a	NewModules.cpp	/^const float Cv_a =    1212.0; $/;"	v
+Cv_i	NewModules.cpp	/^const float Cv_i = 1950400.0; $/;"	v
+Cv_s	NewModules.cpp	/^const float Cv_s[] = {78912.0, 144384.0, 175392.0, 1157000.0, 1157000.0}; $/;"	v
+Cv_w	NewModules.cpp	/^const float Cv_w = 4185000.0; $/;"	v
+Cw	NewModules.cpp	/^const float Cw = 4.185; $/;"	v
+DEGtoRAD	NewModules.cpp	/^const float DEGtoRAD = M_PI\/180.0;$/;"	v
+DEGtoRAD365	NewModules.cpp	/^const float DEGtoRAD365 = 2*M_PI\/365.0;$/;"	v
+DLL1CloseALLClick	CRHMmain.cpp	/^void __fastcall TMain::DLL1CloseALLClick(TObject *Sender)$/;"	f	class:TMain
+DLL1OpenClick	CRHMmain.cpp	/^void __fastcall TMain::DLL1OpenClick(TObject *Sender)$/;"	f	class:TMain
+DTend	GlobalDll.cpp	/^double Global::DTend;    $/;"	m	class:Global	file:
+DTindx	GlobalDll.cpp	/^long Global::DTindx;  $/;"	m	class:Global	file:
+DTmax	GlobalDll.cpp	/^long Global::DTmax;   $/;"	m	class:Global	file:
+DTmin	GlobalDll.cpp	/^long Global::DTmin;   $/;"	m	class:Global	file:
+DTnow	GlobalDll.cpp	/^TDateTime Global::DTnow; $/;"	m	class:Global	file:
+DTstart	GlobalDll.cpp	/^double Global::DTstart;  $/;"	m	class:Global	file:
+DataReadFile	ClassCRHM.cpp	/^bool ClassData::DataReadFile(void)$/;"	f	class:ClassData
+DateTimePicker1Change	CRHMmain.cpp	/^void __fastcall TMain::DateTimePicker1Change(TObject *Sender)$/;"	f	class:TMain
+DateTimePicker2Change	CRHMmain.cpp	/^void __fastcall TMain::DateTimePicker2Change(TObject *Sender)$/;"	f	class:TMain
+DebugScreen1Click	CRHMmain.cpp	/^void __fastcall TMain::DebugScreen1Click(TObject *Sender)$/;"	f	class:TMain
+DebugScreen1Rprt	CRHMmain.cpp	/^void __fastcall TMain::DebugScreen1Rprt(TObject *Sender)$/;"	f	class:TMain
+DeclObsName	CRHMmain.cpp	/^String __fastcall TMain::DeclObsName(ClassVar *thisVar)$/;"	f	class:TMain
+DeclRootList	GlobalDll.cpp	/^TStringList *(Global::DeclRootList);$/;"	v
+DeclRootList1Click	report.cpp	/^void __fastcall TRprt::DeclRootList1Click(TObject *Sender)$/;"	f	class:TRprt
+DefStringList	MacroUnit.cpp	/^TStringList *DefCRHM::DefStringList = NULL;$/;"	m	class:DefCRHM	file:
+Defdecldiag	MacroUnit.cpp	/^Defdecldiag::Defdecldiag(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdecldiag
+Defdeclgetparam	MacroUnit.cpp	/^Defdeclgetparam::Defdeclgetparam(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclgetparam
+Defdeclgetvar	MacroUnit.cpp	/^Defdeclgetvar::Defdeclgetvar(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclgetvar
+Defdecllocal	MacroUnit.cpp	/^Defdecllocal::Defdecllocal(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdecllocal
+Defdeclobs	MacroUnit.cpp	/^Defdeclobs::Defdeclobs(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclobs
+Defdeclobsfunc	MacroUnit.cpp	/^Defdeclobsfunc::Defdeclobsfunc(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclobsfunc
+Defdeclparam	MacroUnit.cpp	/^Defdeclparam::Defdeclparam(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclparam
+Defdeclputparam	MacroUnit.cpp	/^Defdeclputparam::Defdeclputparam(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclputparam
+Defdeclputvar	MacroUnit.cpp	/^Defdeclputvar::Defdeclputvar(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclputvar
+Defdeclreadobs	MacroUnit.cpp	/^Defdeclreadobs::Defdeclreadobs(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclreadobs
+Defdeclstatvar	MacroUnit.cpp	/^Defdeclstatvar::Defdeclstatvar(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclstatvar
+Defdeclvar	MacroUnit.cpp	/^Defdeclvar::Defdeclvar(ClassMacro *Macro_) : DefCRHM(Macro_)$/;"	f	class:Defdeclvar
+DelReadObs	ClassModule.cpp	/^void ClassModule::DelReadObs(void)$/;"	f	class:ClassModule
+Delete1Click	Bld.cpp	/^void __fastcall TBldForm::Delete1Click(TObject *Sender)$/;"	f	class:TBldForm
+DeleteBlankRows	Flow.cpp	/^void __fastcall TFlowForm::DeleteBlankRows(TStringGrid *Grid)$/;"	f	class:TFlowForm
+DeleteCol	Flow.cpp	/^void __fastcall TFlowForm::DeleteCol(TStringGrid *Grid, int Column)$/;"	f	class:TFlowForm
+DeleteListBox3Click	CRHMmain.cpp	/^void __fastcall TMain::DeleteListBox3Click(TObject *Sender)$/;"	f	class:TMain
+DeleteListBox4Click	CRHMmain.cpp	/^void __fastcall TMain::DeleteListBox4Click(TObject *Sender)$/;"	f	class:TMain
+DeleteRow	AKAform.cpp	/^void __fastcall TFormAKA::DeleteRow(int Row)$/;"	f	class:TFormAKA
+DeleteRow	Flow.cpp	/^void __fastcall TFlowForm::DeleteRow(TStringGrid *Grid, int Row)$/;"	f	class:TFlowForm
+DepthofSnow	Common.cpp	/^float DepthofSnow(float SWE)$/;"	f
+DepthofSnow	NewModules.cpp	/^float Classglacier::DepthofSnow(float SWE)  $/;"	f	class:Classglacier
+DepthofSnow	NewModules.cpp	/^float DepthofSnow(float SWE)$/;"	f
+Diagram	Flow.cpp	/^Diagram::Diagram(TFlowForm *FlowForm) : FlowForm(FlowForm)$/;"	f	class:Diagram
+Digest	AKAform.cpp	/^TAKA TFormAKA::Digest(Mapstr2::iterator it, string & module, string & name, string & Newname, string & source)$/;"	f	class:TFormAKA
+Dims	Para.cpp	/^long Dims, Rows, ParaNameWidth;$/;"	v
+DisplayBasin	Para.cpp	/^void __fastcall TParameter::DisplayBasin(TObject *Sender, int Indx, int Rows)$/;"	f	class:TParameter
+DisplayModule	Bld.cpp	/^void __fastcall TBldForm::DisplayModule(String S, ClassModule* thisModule, bool LBox1)$/;"	f	class:TBldForm
+DivUnit	ClassCRHM.cpp	/^void Convert::DivUnit( Tresult& u1, const Tresult& u2 )$/;"	f	class:Convert
+DllDelete	CRHMmain.cpp	/^void __fastcall TMain::DllDelete(String FileName)$/;"	f	class:TMain
+DllFileClose	CRHMmain.cpp	/^void __fastcall TMain::DllFileClose(TObject *Sender)$/;"	f	class:TMain
+DllFileCloseAux	CRHMmain.cpp	/^void __fastcall TMain::DllFileCloseAux(String FileName)$/;"	f	class:TMain
+DllinUse	CRHMmain.cpp	/^bool __fastcall TMain::DllinUse(String FileName)$/;"	f	class:TMain
+DoClark	ClassModule.cpp	/^void ClassClark::DoClark()$/;"	f	class:ClassClark
+DoClark	ClassModule.cpp	/^void ClassClark::DoClark(const long hh)$/;"	f	class:ClassClark
+DoIt	Numerical.cpp	/^void LeastSquares::DoIt(void)$/;"	f	class:LeastSquares
+DoLoad	EntryForm.cpp	/^void __fastcall TFormEntry::DoLoad(TObject *Sender)$/;"	f	class:TFormEntry
+DoMuskingum	ClassModule.cpp	/^void ClassMuskingum::DoMuskingum()$/;"	f	class:ClassMuskingum
+DoMuskingum	ClassModule.cpp	/^void ClassMuskingum::DoMuskingum(const long hh)$/;"	f	class:ClassMuskingum
+DoObsStatus	CRHMmain.cpp	/^void __fastcall TMain::DoObsStatus(TObject *Sender, bool &First)$/;"	f	class:TMain
+DoPrjOpen	CRHMmain.cpp	/^void __fastcall TMain::DoPrjOpen(TObject *Sender)$/;"	f	class:TMain
+DoSave	Analy.cpp	/^void __fastcall TAnalysis::DoSave(TObject *Sender)$/;"	f	class:TAnalysis
+DoSave	EntryForm.cpp	/^void __fastcall TFormEntry::DoSave(TObject *Sender)$/;"	f	class:TFormEntry
+DoSave	Export.cpp	/^void __fastcall TFileOutput::DoSave(TObject *Sender)$/;"	f	class:TFileOutput
+DrawGrid	Flow.cpp	/^void __fastcall TFlowForm::DrawGrid(TObject *Sender)$/;"	f	class:TFlowForm
+DrawGridObs	AKAform.cpp	/^void __fastcall TFormAKA::DrawGridObs(TObject *Sender)$/;"	f	class:TFormAKA
+DrawGridVar	AKAform.cpp	/^void __fastcall TFormAKA::DrawGridVar(TObject *Sender)$/;"	f	class:TFormAKA
+DrawModules	Flow.cpp	/^void Diagram::DrawModules()$/;"	f	class:Diagram
+Dtot	ClassCRHM.cpp	/^void ClassVar::Dtot(void)  $/;"	f	class:ClassVar
+EXCH	NewModules.cpp	/^void ClassSimpleRichard::EXCH(long hh, float Q1, float U1, float &CH)$/;"	f	class:ClassSimpleRichard
+EditKeyPress	report.cpp	/^void __fastcall TRprt::EditKeyPress(TObject *Sender, char &Key)$/;"	f	class:TRprt
+Encode24	ClassCRHM.cpp	/^double ClassData::Encode24(int D[])$/;"	f	class:ClassData
+Entries	Bld.cpp	/^vector<ClassEntry> Entries;$/;"	v
+EqualUpper	Common.cpp	/^bool EqualUpper(string s1, string s2)$/;"	f
+Errors	Analy.cpp	/^char Errors[][21] = {"No error",                $/;"	v
+EscapeClick	AKAform.cpp	/^void __fastcall TFormAKA::EscapeClick(TObject *Sender)$/;"	f	class:TFormAKA
+Evap_Resist_names	NewModules.cpp	/^string Evap_Resist_names[] = {"Penman-Monteith", "Dalton Bulk transfer", "Priestley_Taylor"};$/;"	v
+Evap_names	NewModules.cpp	/^string Evap_names[] = {"Granger", "Priestley-Taylor", "Penman-Monteith", "Dalton Bulk transfer"};$/;"	v
+Exit1Click	Flow.cpp	/^void __fastcall TFlowForm::Exit1Click(TObject *Sender)$/;"	f	class:TFlowForm
+Exit1Click	Log.cpp	/^void __fastcall TLogForm::Exit1Click(TObject *Sender)$/;"	f	class:TLogForm
+Exit1Click	report.cpp	/^void __fastcall TRprt::Exit1Click(TObject *Sender)$/;"	f	class:TRprt
+ExitClick	AKAform.cpp	/^void __fastcall TFormAKA::ExitClick(TObject *Sender)$/;"	f	class:TFormAKA
+ExitClick	Analy.cpp	/^void __fastcall TAnalysis::ExitClick(TObject *Sender)$/;"	f	class:TAnalysis
+ExitClick	CRHMmain.cpp	/^void __fastcall TMain::ExitClick(TObject *Sender)$/;"	f	class:TMain
+ExitClick	EntryForm.cpp	/^void __fastcall TFormEntry::ExitClick(TObject *Sender)$/;"	f	class:TFormEntry
+ExitClick	Export.cpp	/^void __fastcall TFileOutput::ExitClick(TObject *Sender)$/;"	f	class:TFileOutput
+ExpandShrink	ClassCRHM.cpp	/^void ClassPar::ExpandShrink(long new_dim)$/;"	f	class:ClassPar
+ExpandUnitExpr	ClassCRHM.cpp	/^void Convert::ExpandUnitExpr( Tresult& u, double k, string pszExpr )$/;"	f	class:Convert
+Expand_Grp_to_OurModuleList	report.cpp	/^void __fastcall TRprt::Expand_Grp_to_OurModuleList(TObject *Sender, long ii)$/;"	f	class:TRprt
+ExportClick	CRHMmain.cpp	/^void __fastcall TMain::ExportClick(TObject *Sender)$/;"	f	class:TMain
+ExtractGroupClick	report.cpp	/^void __fastcall TRprt::ExtractGroupClick(TObject *Sender)$/;"	f	class:TRprt
+ExtractGroupFile	report.cpp	/^void __fastcall TRprt::ExtractGroupFile(TObject *Sender, ClassModule *thisModule)$/;"	f	class:TRprt
+ExtractHruLay	CRHMmain.cpp	/^String __fastcall TMain::ExtractHruLay(String S, long &Hru, long &Lay)$/;"	f	class:TMain
+ExtractHruLayFunct	CRHMmain.cpp	/^String __fastcall TMain::ExtractHruLayFunct(String S, long &Hru, long &Lay, String &Funct, String &FullName)$/;"	f	class:TMain
+FStrings	CRHMmain.cpp	/^String FStrings[] = {"Observation", "VP_saturated", "W_to_MJ\/Int", "MJ\/Int_to_W", "Average", "Minimum", "Maximum", "Total", "Positive",$/;"	v
+Farouki_a	NewModules.cpp	/^float Farouki_a(float fract_por)$/;"	f
+Fday	MacroUnit.cpp	/^float Fday()   $/;"	f
+Fgetfirst	MacroUnit.cpp	/^float Fgetfirst()   $/;"	f
+Fgetlast	MacroUnit.cpp	/^float Fgetlast()   $/;"	f
+Fgetrand	MacroUnit.cpp	/^float Fgetrand()   $/;"	f
+Fgetstep	MacroUnit.cpp	/^float Fgetstep()   $/;"	f
+FileDefaults	CRHMmain.cpp	/^void __fastcall TMain::FileDefaults(TObject *Sender)$/;"	f	class:TMain
+FileExistsSp	CRHMmain.cpp	/^bool __fastcall TMain::FileExistsSp(String FileName)$/;"	f	class:TMain
+FileExistsSp	Para.cpp	/^bool __fastcall TParameter::FileExistsSp(String FileName)$/;"	f	class:TParameter
+FileExitClick	Para.cpp	/^void __fastcall TParameter::FileExitClick(TObject *Sender)$/;"	f	class:TParameter
+FileOpenClick	Para.cpp	/^void __fastcall TParameter::FileOpenClick(TObject *Sender)$/;"	f	class:TParameter
+FileOutput	Export.cpp	/^TFileOutput *FileOutput;$/;"	v
+FileSaveAsClick	Log.cpp	/^void __fastcall TLogForm::FileSaveAsClick(TObject *Sender)$/;"	f	class:TLogForm
+FileSaveAsClick	Para.cpp	/^void __fastcall TParameter::FileSaveAsClick(TObject *Sender)$/;"	f	class:TParameter
+FileSaveClick	Log.cpp	/^void __fastcall TLogForm::FileSaveClick(TObject *Sender)$/;"	f	class:TLogForm
+FileSaveClick	Para.cpp	/^void __fastcall TParameter::FileSaveClick(TObject *Sender)$/;"	f	class:TParameter
+FindFileName	CRHMmain.cpp	/^bool __fastcall TMain::FindFileName(String &FileName)$/;"	f	class:TMain
+FindModule_from_parameter	ClassModule.cpp	/^long ClassModule::FindModule_from_parameter(string source, string param)$/;"	f	class:ClassModule
+FindObservationType	CRHMmain.cpp	/^CRHM::TFun  FindObservationType(String Kind)$/;"	f
+FindParaCount	Para.cpp	/^void __fastcall TParameter::FindParaCount(TObject *Sender, int Indx)$/;"	f	class:TParameter
+FindWildParFloat	ClassModule.cpp	/^long ClassModule::FindWildParFloat(string name, ClassPar* &newPar, bool Trunc = false, bool Root = true)$/;"	f	class:ClassModule
+FindWildVarFloat	CRHMmain.cpp	/^long __fastcall TMain::FindWildVarFloat(string name, ClassVar* &newVar, bool OnceFlag)$/;"	f	class:TMain
+FindWildVarFloat	ClassModule.cpp	/^long ClassModule::FindWildVarFloat(string name, ClassVar* &newVar, bool OnceFlag)$/;"	f	class:ClassModule
+First	ClassCRHM.cpp	/^void ClassVar::First(void)$/;"	f	class:ClassVar
+FirstSeries	Analy.cpp	/^TLineSeries* Plot::FirstSeries = NULL; $/;"	m	class:Plot	file:
+First_	ClassCRHM.cpp	/^void ClassVar::First_(long dim_n)$/;"	f	class:ClassVar
+FitType	Analy.cpp	/^CRHM::TFitType Plot::FitType = CRHM::POLY;$/;"	m	class:Plot	file:
+Fjulian	MacroUnit.cpp	/^float Fjulian()   $/;"	f
+Flags1Click	Log.cpp	/^void __fastcall TLogForm::Flags1Click(TObject *Sender)$/;"	f	class:TLogForm
+FlipTicMouseDown	CRHMmain.cpp	/^void __fastcall TMain::FlipTicMouseDown(TObject *Sender,$/;"	f	class:TMain
+FlowDiagramClick	CRHMmain.cpp	/^void __fastcall TMain::FlowDiagramClick(TObject *Sender)$/;"	f	class:TMain
+FlowForm	Flow.cpp	/^TFlowForm *FlowForm;$/;"	v
+Fmonth	MacroUnit.cpp	/^float Fmonth()   $/;"	f
+Font1Click	Log.cpp	/^void __fastcall TLogForm::Font1Click(TObject *Sender)$/;"	f	class:TLogForm
+Font1Click	report.cpp	/^void __fastcall TRprt::Font1Click(TObject *Sender)$/;"	f	class:TRprt
+FormAKA	AKAform.cpp	/^TFormAKA *FormAKA;$/;"	v
+FormActivate	AKAform.cpp	/^void __fastcall TFormAKA::FormActivate(TObject *Sender)$/;"	f	class:TFormAKA
+FormActivate	Analy.cpp	/^void __fastcall TAnalysis::FormActivate(TObject *Sender)$/;"	f	class:TAnalysis
+FormActivate	Bld.cpp	/^void __fastcall TBldForm::FormActivate(TObject *Sender)$/;"	f	class:TBldForm
+FormActivate	CRHMmain.cpp	/^void __fastcall TMain::FormActivate(TObject *Sender)$/;"	f	class:TMain
+FormActivate	EntryForm.cpp	/^void __fastcall TFormEntry::FormActivate(TObject *Sender)$/;"	f	class:TFormEntry
+FormActivate	Examples.cpp	/^void __fastcall TLibForm::FormActivate(TObject *Sender)$/;"	f	class:TLibForm
+FormActivate	Export.cpp	/^void __fastcall TFileOutput::FormActivate(TObject *Sender)$/;"	f	class:TFileOutput
+FormActivate	Flow.cpp	/^void __fastcall TFlowForm::FormActivate(TObject *Sender)$/;"	f	class:TFlowForm
+FormActivate	Log.cpp	/^void __fastcall TLogForm::FormActivate(TObject *Sender)$/;"	f	class:TLogForm
+FormActivate	Para.cpp	/^void __fastcall TParameter::FormActivate(TObject *Sender)$/;"	f	class:TParameter
+FormActivate	UpdateForm.cpp	/^void __fastcall TPlotControl::FormActivate(TObject *Sender)$/;"	f	class:TPlotControl
+FormActivate	report.cpp	/^void __fastcall TRprt::FormActivate(TObject *Sender)$/;"	f	class:TRprt
+FormClick	CRHMmain.cpp	/^void __fastcall TMain::FormClick(TObject *Sender)$/;"	f	class:TMain
+FormClick	UpdateForm.cpp	/^void __fastcall TPlotControl::FormClick(TObject *Sender)$/;"	f	class:TPlotControl
+FormClose	Analy.cpp	/^void __fastcall TAnalysis::FormClose(TObject *Sender, TCloseAction &Action)$/;"	f	class:TAnalysis
+FormClose	Bld.cpp	/^void __fastcall TBldForm::FormClose(TObject *Sender, TCloseAction &Action)$/;"	f	class:TBldForm
+FormClose	CRHMmain.cpp	/^void __fastcall TMain::FormClose(TObject *Sender, TCloseAction &Action)$/;"	f	class:TMain
+FormClose	Export.cpp	/^void __fastcall TFileOutput::FormClose(TObject *Sender, TCloseAction &Action)$/;"	f	class:TFileOutput
+FormClose	Log.cpp	/^void __fastcall TLogForm::FormClose(TObject *Sender, TCloseAction &Action)$/;"	f	class:TLogForm
+FormClose	Para.cpp	/^void __fastcall TParameter::FormClose(TObject *Sender, TCloseAction &Action)$/;"	f	class:TParameter
+FormClose	report.cpp	/^void __fastcall TRprt::FormClose(TObject *Sender, TCloseAction &Action)$/;"	f	class:TRprt
+FormCreate	Analy.cpp	/^void __fastcall TAnalysis::FormCreate(TObject *Sender)$/;"	f	class:TAnalysis
+FormCreate	CRHMmain.cpp	/^void __fastcall TMain::FormCreate(TObject *Sender)$/;"	f	class:TMain
+FormCreate	Export.cpp	/^void __fastcall TFileOutput::FormCreate(TObject *Sender)$/;"	f	class:TFileOutput
+FormCreate	Flow.cpp	/^void __fastcall TFlowForm::FormCreate(TObject *Sender)$/;"	f	class:TFlowForm
+FormDeactivate	AKAform.cpp	/^void __fastcall TFormAKA::FormDeactivate(TObject *Sender)$/;"	f	class:TFormAKA
+FormDeactivate	Bld.cpp	/^void __fastcall TBldForm::FormDeactivate(TObject *Sender)$/;"	f	class:TBldForm
+FormDeactivate	EntryForm.cpp	/^void __fastcall TFormEntry::FormDeactivate(TObject *Sender)$/;"	f	class:TFormEntry
+FormDestroy	Analy.cpp	/^void __fastcall TAnalysis::FormDestroy(TObject *Sender)$/;"	f	class:TAnalysis
+FormDestroy	CRHMmain.cpp	/^void __fastcall TMain::FormDestroy(TObject *Sender)$/;"	f	class:TMain
+FormDestroy	Export.cpp	/^void __fastcall TFileOutput::FormDestroy(TObject *Sender)$/;"	f	class:TFileOutput
+FormDestroy	Flow.cpp	/^void __fastcall TFlowForm::FormDestroy(TObject *Sender)$/;"	f	class:TFlowForm
+FormEntry	EntryForm.cpp	/^TFormEntry *FormEntry;$/;"	v
+FormKeyDown	Flow.cpp	/^void __fastcall TFlowForm::FormKeyDown(TObject *Sender, WORD &Key, TShiftState Shift)$/;"	f	class:TFlowForm
+FormKeyUp	Flow.cpp	/^void __fastcall TFlowForm::FormKeyUp(TObject *Sender, WORD &Key, TShiftState Shift)$/;"	f	class:TFlowForm
+FormPaint	Flow.cpp	/^void __fastcall TFlowForm::FormPaint(TObject *Sender)$/;"	f	class:TFlowForm
+FormResize	Flow.cpp	/^void __fastcall TFlowForm::FormResize(TObject *Sender)$/;"	f	class:TFlowForm
+FormShow	report.cpp	/^void __fastcall TRprt::FormShow(TObject *Sender)$/;"	f	class:TRprt
+FormatMax	Bld.cpp	/^long __fastcall TBldForm::FormatMax(long M)$/;"	f	class:TBldForm
+FreeChart1	CRHMmain.cpp	/^void __fastcall TMain::FreeChart1(TObject *Sender)$/;"	f	class:TMain
+FreeChart2	CRHMmain.cpp	/^void __fastcall TMain::FreeChart2(TObject *Sender)$/;"	f	class:TMain
+Freq	GlobalDll.cpp	/^long Global::Freq;     $/;"	m	class:Global	file:
+FreqDefault1Click	CRHMmain.cpp	/^void __fastcall TMain::FreqDefault1Click(TObject *Sender)$/;"	f	class:TMain
+Fstrings	ClassModule.cpp	/^__declspec(dllexport) string Fstrings[] = {"Observation", "VP_saturated", "W_to_MJ\/Int", "MJ\/Int_to_W", "Average", "Minimum", "Maximum", "Daily Sum", "Positive",$/;"	v
+Fun	report.cpp	/^char Fun[][8] = {"FOBS", "VP_SAT", "W_MJ", "MJ_W", "AVG", "MIN", "MAX", "TOT", "POS", "FIRST", "LAST", "CNT", "CNT0", "DLTA", "INTVL", "DAY"};$/;"	v
+Funct	CRHMmain.cpp	/^CRHM::TFun Funct = CRHM::FOBS;$/;"	v
+FunctListN	ClassModule.cpp	/^TStringList *FunctListN = new TStringList;$/;"	v
+Function1	Hype_CRHM.cpp	/^float ClassWQ_Netroute::Function1(float *I, long hh)$/;"	f	class:ClassWQ_Netroute
+Function1	NewModules.cpp	/^float ClassNetroute::Function1(float *I, long hh)$/;"	f	class:ClassNetroute
+Function1	NewModules.cpp	/^float ClassNetroute_D::Function1(float *I, long hh)$/;"	f	class:ClassNetroute_D
+Function1	NewModules.cpp	/^float ClassNetroute_M::Function1(float *I, long hh)$/;"	f	class:ClassNetroute_M
+Function1	NewModules.cpp	/^float ClassNetroute_M_D::Function1(float *I, long hh)$/;"	f	class:ClassNetroute_M_D
+Function1	NewModules.cpp	/^float ClassWQ_Netroute_M_D::Function1(float *I, long hh)$/;"	f	class:ClassWQ_Netroute_M_D
+Function2	Hype_CRHM.cpp	/^float ClassWQ_Netroute::Function2(float *X, long hh)$/;"	f	class:ClassWQ_Netroute
+Function2	NewModules.cpp	/^float ClassNetroute::Function2(float *X, long hh)$/;"	f	class:ClassNetroute
+Function2	NewModules.cpp	/^float ClassNetroute_D::Function2(float *X, long hh)$/;"	f	class:ClassNetroute_D
+Function2	NewModules.cpp	/^float ClassNetroute_M::Function2(float *X, long hh)$/;"	f	class:ClassNetroute_M
+Function2	NewModules.cpp	/^float ClassNetroute_M_D::Function2(float *X, long hh)$/;"	f	class:ClassNetroute_M_D
+Function2	NewModules.cpp	/^float ClassWQ_Netroute_M_D::Function2(float *X, long hh)$/;"	f	class:ClassWQ_Netroute_M_D
+FunctionListBox2Click	CRHMmain.cpp	/^void __fastcall TMain::FunctionListBox2Click(TObject *Sender)$/;"	f	class:TMain
+Fyear	MacroUnit.cpp	/^float Fyear()   $/;"	f
+GetFreq	Export.cpp	/^long __fastcall TFileOutput::GetFreq(TObject *Sender, long Indx)$/;"	f	class:TFileOutput
+GetNumVar	Flow.cpp	/^int __fastcall TFlowForm::GetNumVar(int Mod, int &First, int &Last)$/;"	f	class:TFlowForm
+GetSharedUnit	ClassCRHM.cpp	/^long GetSharedUnit(string units)$/;"	f
+GetUnit	ClassCRHM.cpp	/^long ClassPar::GetUnit(void)$/;"	f	class:ClassPar
+GetUnit	ClassCRHM.cpp	/^long ClassVar::GetUnit(void)$/;"	f	class:ClassVar
+GetUnits	AKAform.cpp	/^String  __fastcall TFormAKA::GetUnits(String S, String SS)$/;"	f	class:TFormAKA
+GetVar	AKAform.cpp	/^ClassVar*  __fastcall TFormAKA::GetVar(String S, String SS)$/;"	f	class:TFormAKA
+GetXY	Flow.cpp	/^void Box::GetXY(int Out_Var, int InX, int &ToX, int &ToY)$/;"	f	class:Box
+Get_Heat_Chad	NewModules.cpp	/^void ClassHMSA::Get_Heat_Chad(long nn)$/;"	f	class:ClassHMSA
+Get_Heat_Param_Soil	NewModules.cpp	/^void ClassHMSA::Get_Heat_Param_Soil(float Soil_Temp, long nn)$/;"	f	class:ClassHMSA
+Global1Click	report.cpp	/^void __fastcall TRprt::Global1Click(TObject *Sender)$/;"	f	class:TRprt
+GroupCntTrk	GlobalDll.cpp	/^long Global::GroupCntTrk;$/;"	m	class:Global	file:
+GroupEnding	Common.cpp	/^void GroupEnding(String &AA, int Cnt)$/;"	f
+GroupEnding	Common.cpp	/^void GroupEnding(string &AA, int Cnt)$/;"	f
+GrpCnt	EntryForm.cpp	/^long Module::GrpCnt;$/;"	m	class:Module	file:
+HC_Air	NewModules.cpp	/^const float HC_Air = 1010.0; $/;"	v
+HC_Ice	NewModules.cpp	/^const float HC_Ice = 2120.0; $/;"	v
+HC_Minerals	NewModules.cpp	/^const float HC_Minerals = 890.0; $/;"	v
+HC_Organic	NewModules.cpp	/^const float HC_Organic = 1920.0; $/;"	v
+HC_Water	NewModules.cpp	/^const float HC_Water = 4185.0; $/;"	v
+HRUStdString	CRHMmain.cpp	/^String __fastcall TMain::HRUStdString(String S)  $/;"	f	class:TMain
+HRU_OBS	GlobalDll.cpp	/^long   **Global::HRU_OBS; $/;"	m	class:Global	file:
+HRU_OBS_DIRECT	GlobalDll.cpp	/^long   **Global::HRU_OBS_DIRECT; $/;"	m	class:Global	file:
+HRUsAddListBox1Click	CRHMmain.cpp	/^void __fastcall TMain::HRUsAddListBox1Click(TObject *Sender)$/;"	f	class:TMain
+HRUsLAYsAddListBox1Click	CRHMmain.cpp	/^void __fastcall TMain::HRUsLAYsAddListBox1Click(TObject *Sender)$/;"	f	class:TMain
+HTMLhelp1Click	CRHMmain.cpp	/^void __fastcall TMain::HTMLhelp1Click(TObject *Sender)$/;"	f	class:TMain
+Harder	NewModules.cpp	/^void Classobs::Harder(void)$/;"	f	class:Classobs
+Hf	NewModules.cpp	7956;"	d	file:
+Hierarchy1Click	report.cpp	/^void __fastcall TRprt::Hierarchy1Click(TObject *Sender)$/;"	f	class:TRprt
+HierarchyList	report.cpp	/^void __fastcall TRprt::HierarchyList(TObject *Sender)$/;"	f	class:TRprt
+HruNameClick	CRHMmain.cpp	/^void __fastcall TMain::HruNameClick(TObject *Sender)$/;"	f	class:TMain
+ITMAX	NewModules.cpp	7393;"	d	file:
+Ice_Bulb	Common.cpp	/^float Ice_Bulb(float Tc, float RH, float Pa) $/;"	f
+Index	CRHM_parse.cpp	/^long    execbase::Index;$/;"	m	class:execbase	file:
+IndexOf	Analy.cpp	/^long __fastcall TAnalysis::IndexOf(TListBox *Box, const AnsiString S)$/;"	f	class:TAnalysis
+IndexOf	Bld.cpp	/^int __fastcall TBldForm::IndexOf(TListBox *Box, const AnsiString S)$/;"	f	class:TBldForm
+IndexOf	CRHMmain.cpp	/^long __fastcall TMain::IndexOf(TListBox *Box, const AnsiString S)$/;"	f	class:TMain
+IndexOf	Export.cpp	/^int __fastcall TFileOutput::IndexOf(TListBox *Box, const AnsiString S)$/;"	f	class:TFileOutput
+Index_	ClassCRHM.cpp	/^long Index_; $/;"	v
+IndxMax	GlobalDll.cpp	/^long Global::IndxMax; $/;"	m	class:Global	file:
+IndxMin	GlobalDll.cpp	/^long Global::IndxMin; $/;"	m	class:Global	file:
+Infos	ClassCRHM.cpp	/^Unit_Info Convert::Infos[] =$/;"	m	class:Convert	file:
+InitMacroCnt	CRHMmain.cpp	/^int InitMacroCnt = 0;$/;"	v
+InitModCnt	CRHMmain.cpp	/^int InitModCnt = 0;$/;"	v
+InitModules	CRHMmain.cpp	/^void __fastcall TMain::InitModules(TObject *Sender)$/;"	f	class:TMain
+InitReadObs	ClassModule.cpp	/^void ClassModule::InitReadObs(void)$/;"	f	class:ClassModule
+InitializeAndFormBasisVectors	Numerical.cpp	/^void LeastSquares::InitializeAndFormBasisVectors(void)$/;"	f	class:LeastSquares
+Interpolated_ftc_lay	NewModules.cpp	/^float ClassXG::Interpolated_ftc_lay(float Za, long lay)   $/;"	f	class:ClassXG
+Interpolated_ttc_lay	NewModules.cpp	/^float ClassXG::Interpolated_ttc_lay(float Za, long lay)   $/;"	f	class:ClassXG
+Interval	GlobalDll.cpp	/^double Global::Interval; $/;"	m	class:Global	file:
+Intvl	ClassCRHM.cpp	/^void ClassVar::Intvl(void)   $/;"	f	class:ClassVar
+InverseTransform	Numerical.cpp	/^void Expo::InverseTransform(int Index)$/;"	f	class:Expo
+InverseTransform	Numerical.cpp	/^void Fourier::InverseTransform(int Index)$/;"	f	class:Fourier
+InverseTransform	Numerical.cpp	/^void Log::InverseTransform(int Index)$/;"	f	class:Log
+InverseTransform	Numerical.cpp	/^void MLinReg::InverseTransform(int Index)$/;"	f	class:MLinReg
+InverseTransform	Numerical.cpp	/^void Poly::InverseTransform(int Index)$/;"	f	class:Poly
+InverseTransform	Numerical.cpp	/^void Power::InverseTransform(int Index)$/;"	f	class:Power
+Julian	ClassCRHM.cpp	/^float Julian(char *when)$/;"	f
+K	Common.cpp	/^float K(float Ky, float LogStDev)$/;"	f
+K_Air	NewModules.cpp	/^const float K_Air = 0.025; $/;"	v
+K_Ice	NewModules.cpp	/^const float K_Ice = 2.24;  $/;"	v
+K_Minerals	NewModules.cpp	/^const float K_Minerals = 2.50;  $/;"	v
+K_Organic	NewModules.cpp	/^const float K_Organic = 0.21;  $/;"	v
+K_Water	NewModules.cpp	/^const float K_Water = 0.57;  $/;"	v
+Kadsdes	Hype_routines.cpp	/^const float Kadsdes = 1.0; $/;"	v
+KeyShift	CRHMmain.cpp	/^bool KeyShift = false;$/;"	v
+Kfr	Hype_routines.cpp	/^const float Kfr = 1.0; $/;"	v
+KyValue	Common.cpp	/^float KyValue(float probability, float guess)$/;"	f
+LAYsAddListBox1Click	CRHMmain.cpp	/^void __fastcall TMain::LAYsAddListBox1Click(TObject *Sender)$/;"	f	class:TMain
+LOGVARLOAD	GlobalDll.cpp	/^bool Global::LOGVARLOAD;$/;"	m	class:Global	file:
+LOGVARLOAD1Click	report.cpp	/^void __fastcall TRprt::LOGVARLOAD1Click(TObject *Sender)$/;"	f	class:TRprt
+LOGVARLOAD1Init	report.cpp	/^void __fastcall TRprt::LOGVARLOAD1Init(TObject *Sender)$/;"	f	class:TRprt
+LVLStrings	Bld.cpp	/^String LVLStrings[] = {"BASIC", "MACRO", "ADVANCED", "SUPPORT", "CUSTOM", "PROTOTYPE", "OBSOLETE"};$/;"	v
+LVLStrings	report.cpp	/^String LVLStrings[] = {"BASIC", "MACRO", "ADVANCED", "PROTOTYPE", "OBSOLETE", "CUSTOM", "SUPPORT"};$/;"	v
+Label1Click	Bld.cpp	/^void __fastcall TBldForm::Label1Click(TObject *Sender)$/;"	f	class:TBldForm
+Label1Click	report.cpp	/^void __fastcall TRprt::Label1Click(TObject *Sender)$/;"	f	class:TRprt
+Label4Click	CRHMmain.cpp	/^void __fastcall TMain::Label4Click(TObject *Sender)$/;"	f	class:TMain
+Label5Click	Para.cpp	/^void __fastcall TParameter::Label5Click(TObject *Sender)$/;"	f	class:TParameter
+LabelBaseMouseDown	CRHMmain.cpp	/^void __fastcall TMain::LabelBaseMouseDown(TObject *Sender,$/;"	f	class:TMain
+LabelFunctClick	CRHMmain.cpp	/^void __fastcall TMain::LabelFunctClick(TObject *Sender)$/;"	f	class:TMain
+Last	ClassCRHM.cpp	/^void ClassVar::Last(void)$/;"	f	class:ClassVar
+Last1Click	Bld.cpp	/^void __fastcall TBldForm::Last1Click(TObject *Sender)$/;"	f	class:TBldForm
+Last1Click	CRHMmain.cpp	/^void __fastcall TMain::Last1Click(TObject *Sender)$/;"	f	class:TMain
+Last1Rprt	CRHMmain.cpp	/^void __fastcall TMain::Last1Rprt(TObject *Sender)$/;"	f	class:TMain
+LastRprtObs	CRHMmain.cpp	/^void __fastcall TMain::LastRprtObs(TObject *Sender)$/;"	f	class:TMain
+LastValue	Para.cpp	/^String LastValue, LocalValue, CurrentModule;$/;"	v
+Last_	ClassCRHM.cpp	/^void ClassVar::Last_(long dim_n)$/;"	f	class:ClassVar
+LeastSquares	Numerical.cpp	/^LeastSquares::LeastSquares(int NumPoints, float x[], float y[],int NumTerms, String Type, String Desc) :NumPoints(NumPoints), NumTerms(NumTerms), Type(Type), Desc(Desc)$/;"	f	class:LeastSquares
+LeastSquares	Numerical.cpp	/^LeastSquares::LeastSquares(int NumTerms, String Type, String Desc, TLineSeries *Data, bool OffsetTime) :NumPoints(Data->Count()), NumTerms(NumTerms), Type(Type), Desc(Desc), OffsetTime(OffsetTime)$/;"	f	class:LeastSquares
+Left	ClassModule.cpp	/^float ClassClark::Left(int hh)$/;"	f	class:ClassClark
+Left	ClassModule.cpp	/^float ClassMuskingum::Left(int hh)$/;"	f	class:ClassMuskingum
+LibForm	Examples.cpp	/^TLibForm *LibForm;$/;"	v
+Line	Para.cpp	/^string Line, Descrip("Description - to be added");$/;"	v
+Linked	report.cpp	/^char Linked[][13] = {"Shared", "declparam", "declputparam"};$/;"	v
+ListBox1Click	AKAform.cpp	/^void __fastcall TFormAKA::ListBox1Click(TObject *Sender)$/;"	f	class:TFormAKA
+ListBox1Click	Analy.cpp	/^void __fastcall TAnalysis::ListBox1Click(TObject *Sender)$/;"	f	class:TAnalysis
+ListBox1Click	Bld.cpp	/^void __fastcall TBldForm::ListBox1Click(TObject *Sender)$/;"	f	class:TBldForm
+ListBox1Click	CRHMmain.cpp	/^void __fastcall TMain::ListBox1Click(TObject *Sender)$/;"	f	class:TMain
+ListBox1Click	Export.cpp	/^void __fastcall TFileOutput::ListBox1Click(TObject *Sender)$/;"	f	class:TFileOutput
+ListBox1Click	Para.cpp	/^void __fastcall TParameter::ListBox1Click(TObject *Sender)$/;"	f	class:TParameter
+ListBox1Click	report.cpp	/^void __fastcall TRprt::ListBox1Click(TObject *Sender)$/;"	f	class:TRprt
+ListBox1KeyDown	CRHMmain.cpp	/^void __fastcall TMain::ListBox1KeyDown(TObject *Sender, WORD &Key,$/;"	f	class:TMain
+ListBox1KeyUp	CRHMmain.cpp	/^void __fastcall TMain::ListBox1KeyUp(TObject *Sender, WORD &Key,$/;"	f	class:TMain
+ListBox2Click	Analy.cpp	/^void __fastcall TAnalysis::ListBox2Click(TObject *Sender)$/;"	f	class:TAnalysis
+ListBox2Click	Bld.cpp	/^void __fastcall TBldForm::ListBox2Click(TObject *Sender)$/;"	f	class:TBldForm
+ListBox2Click	CRHMmain.cpp	/^void __fastcall TMain::ListBox2Click(TObject *Sender)$/;"	f	class:TMain
+ListBox2Click	Export.cpp	/^void __fastcall TFileOutput::ListBox2Click(TObject *Sender)$/;"	f	class:TFileOutput
+ListBox3Click	CRHMmain.cpp	/^void __fastcall TMain::ListBox3Click(TObject *Sender)$/;"	f	class:TMain
+ListBox4Click	CRHMmain.cpp	/^void __fastcall TMain::ListBox4Click(TObject *Sender)$/;"	f	class:TMain
+ListBox4RemoveFuncts	CRHMmain.cpp	/^void __fastcall TMain::ListBox4RemoveFuncts(TObject *Sender, String Svar)$/;"	f	class:TMain
+ListBoxMacroClear	CRHMmain.cpp	/^void __fastcall TMain::ListBoxMacroClear(TObject *Sender)  $/;"	f	class:TMain
+LoadCRHM	ClassModule.cpp	/^void Administer::LoadCRHM(String DllName)$/;"	f	class:Administer
+LocalValue	Para.cpp	/^String LastValue, LocalValue, CurrentModule;$/;"	v
+LogClick	CRHMmain.cpp	/^void __fastcall TMain::LogClick(TObject *Sender)$/;"	f	class:TMain
+LogDebug	ClassCRHM.cpp	/^void __fastcall LogDebug(char *S)$/;"	f
+LogDebug	ClassCRHM.cpp	/^void __fastcall LogDebug(long h, char *Text, float v)$/;"	f
+LogDebugD	ClassCRHM.cpp	/^void __fastcall LogDebugD(char *S)$/;"	f
+LogDebugT	ClassCRHM.cpp	/^void __fastcall LogDebugT(char *S)$/;"	f
+LogError	ClassCRHM.cpp	/^void __fastcall LogError(CRHMException Except)$/;"	f
+LogError	ClassCRHM.cpp	/^void __fastcall LogError(String S, TExcept Kind)$/;"	f
+LogError	Log.cpp	/^void __fastcall TLogForm::LogError(CRHMException Except)$/;"	f	class:TLogForm
+LogError	Log.cpp	/^void __fastcall TLogForm::LogError(String S, TExcept Kind)$/;"	f	class:TLogForm
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(const char *S, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(const char *S, float V, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(const char *S, float V, const char *S2, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(const char *S, long V, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(long hh, const char *S, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(long hh, const char *S, float V, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(long hh, const char *S, float V1, float V2, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(long hh, const char *S, float V1, float V2, float V3, TExtra Opt)$/;"	f
+LogMessage	ClassCRHM.cpp	/^void __fastcall LogMessage(long hh, const char *S, long V, TExtra Opt)$/;"	f
+LogMessageA	ClassCRHM.cpp	/^void __fastcall LogMessageA(long hh, const char *S, float V1, TExtra Opt)$/;"	f
+LogMessageA	ClassCRHM.cpp	/^void __fastcall LogMessageA(long hh, const char *S, float V1, const char *S2, TExtra Opt)$/;"	f
+LogMessageA	ClassCRHM.cpp	/^void __fastcall LogMessageA(long hh, const char *S, float V1, const float Basin_area, TExtra Opt)$/;"	f
+LogMessageA	ClassCRHM.cpp	/^void __fastcall LogMessageA(long hh, const char *S, float V1, const float Basin_area, const char *S2, TExtra Opt)$/;"	f
+LogMessageA	ClassCRHM.cpp	/^void __fastcall LogMessageA(long hh, const char *S, float V1, const float HRU_area, const float Basin_area, TExtra Opt)$/;"	f
+LogMessageA	ClassCRHM.cpp	/^void __fastcall LogMessageA(long hh, const char *S, float V1, const float HRU_area, const float Basin_area, const char *S2, TExtra Opt)$/;"	f
+LookupUnit	ClassCRHM.cpp	/^int Convert::LookupUnit( string pszIn )$/;"	f	class:Convert
+LoopCnt	GlobalDll.cpp	/^long Global::LoopCnt;  $/;"	m	class:Global	file:
+LoopCntDown	GlobalDll.cpp	/^long Global::LoopCntDown;  $/;"	m	class:Global	file:
+LoopFirst	ClassCRHM.cpp	/^void ClassVar::LoopFirst(long dim_n)  $/;"	f	class:ClassVar
+LoopLast	ClassCRHM.cpp	/^void ClassVar::LoopLast(long dim_n)  $/;"	f	class:ClassVar
+LoopRange	ClassCRHM.cpp	/^void ClassVar::LoopRange(long dim_n)  $/;"	f	class:ClassVar
+LoopTo	GlobalDll.cpp	/^TDateTime Global::LoopTo; $/;"	m	class:Global	file:
+MAX_DENSITY	NewModules.cpp	7101;"	d	file:
+MINS_int	NewModules.cpp	/^const float MINS_int = 24.0*60.0\/CalcFreq;$/;"	v
+MMDDYYYY1Click	report.cpp	/^void __fastcall TRprt::MMDDYYYY1Click(TObject *Sender)$/;"	f	class:TRprt
+MSTime1Click	report.cpp	/^void __fastcall TRprt::MSTime1Click(TObject *Sender)$/;"	f	class:TRprt
+Macro1Click	CRHMmain.cpp	/^void __fastcall TMain::Macro1Click(TObject *Sender)$/;"	f	class:TMain
+MacroClear	ClassModule.cpp	/^void Administer::MacroClear()$/;"	f	class:Administer
+MacroLoad	CRHMmain.cpp	/^void __fastcall TMain::MacroLoad(TObject *Sender)$/;"	f	class:TMain
+MacroLoad_X	CRHMmain.cpp	/^void __fastcall TMain::MacroLoad_X(TObject *Sender)$/;"	f	class:TMain
+MacroModulesList	GlobalDll.cpp	/^TStringList *(Global::MacroModulesList);$/;"	v
+MacroModulesList1Click	report.cpp	/^void __fastcall TRprt::MacroModulesList1Click(TObject *Sender)$/;"	f	class:TRprt
+MacroUpdate	ClassModule.cpp	/^void Administer::MacroUpdate()$/;"	f	class:Administer
+MapAKA	GlobalDll.cpp	/^Mapstr2 Global::MapAKA;$/;"	m	class:Global	file:
+MapObsGet	GlobalDll.cpp	/^MapVar Global::MapObsGet;   $/;"	m	class:Global	file:
+MapPars	GlobalDll.cpp	/^MapPar Global::MapPars;     $/;"	m	class:Global	file:
+MapSharedpars1Click	report.cpp	/^void __fastcall TRprt::MapSharedpars1Click(TObject *Sender)$/;"	f	class:TRprt
+MapVars	GlobalDll.cpp	/^MapVar Global::MapVars;     $/;"	m	class:Global	file:
+MapVarsGet	GlobalDll.cpp	/^MapVar Global::MapVarsGet;  $/;"	m	class:Global	file:
+MapVarsPut	GlobalDll.cpp	/^MapVar Global::MapVarsPut;  $/;"	m	class:Global	file:
+Mapdeclobs	GlobalDll.cpp	/^Mapstr Global::Mapdeclobs;  $/;"	m	class:Global	file:
+Mapdeclpar	GlobalDll.cpp	/^Mapstr Global::Mapdeclpar;  $/;"	m	class:Global	file:
+Mapdeclstat	GlobalDll.cpp	/^Mapstr Global::Mapdeclstat; $/;"	m	class:Global	file:
+Mapdeclvar	GlobalDll.cpp	/^Mapstr Global::Mapdeclvar;  $/;"	m	class:Global	file:
+Mapgetvar	GlobalDll.cpp	/^Mapstr Global::Mapgetvar;   $/;"	m	class:Global	file:
+Mapobsget1Click	report.cpp	/^void __fastcall TRprt::Mapobsget1Click(TObject *Sender)$/;"	f	class:TRprt
+MapparsClick	report.cpp	/^void __fastcall TRprt::MapparsClick(TObject *Sender)$/;"	f	class:TRprt
+Mapputvar	GlobalDll.cpp	/^Mapstr Global::Mapputvar;   $/;"	m	class:Global	file:
+Mapreadvar	GlobalDll.cpp	/^Mapstr Global::Mapreadvar;  $/;"	m	class:Global	file:
+MapvarsClick	report.cpp	/^void __fastcall TRprt::MapvarsClick(TObject *Sender)$/;"	f	class:TRprt
+Mapvarsget1Click	report.cpp	/^void __fastcall TRprt::Mapvarsget1Click(TObject *Sender)$/;"	f	class:TRprt
+Mapvarsput1Click	report.cpp	/^void __fastcall TRprt::Mapvarsput1Click(TObject *Sender)$/;"	f	class:TRprt
+MatchDecl_Obs	Flow.cpp	/^int __fastcall TFlowForm::MatchDecl_Obs(String module, String Obs)$/;"	f	class:TFlowForm
+MatchMod_Name	AKAform.cpp	/^int __fastcall TFormAKA::MatchMod_Name(String module, String name, int Col)  $/;"	f	class:TFormAKA
+MatchSimple_Name	AKAform.cpp	/^int __fastcall TFormAKA::MatchSimple_Name(String name, int Col)  $/;"	f	class:TFormAKA
+Max	ClassCRHM.cpp	/^void ClassVar::Max(void)$/;"	f	class:ClassVar
+Max_	ClassCRHM.cpp	/^void ClassVar::Max_(long dim_n)$/;"	f	class:ClassVar
+Max_Layers	NewModules.cpp	/^const float Max_Layers = 20;  $/;"	v
+Mem	report.cpp	/^char Mem[][9] = {"NULL", "Assigned"};$/;"	v
+MemoDblClick	AKAform.cpp	/^void __fastcall TFormAKA::MemoDblClick(TObject *Sender)$/;"	f	class:TFormAKA
+MemoDebugEnter	Log.cpp	/^void __fastcall TLogForm::MemoDebugEnter(TObject *Sender)$/;"	f	class:TLogForm
+MemoLogEnter	Log.cpp	/^void __fastcall TLogForm::MemoLogEnter(TObject *Sender)$/;"	f	class:TLogForm
+MetaFile1Click	Flow.cpp	/^void __fastcall TFlowForm::MetaFile1Click(TObject *Sender)$/;"	f	class:TFlowForm
+Min	ClassCRHM.cpp	/^void ClassVar::Min(void)$/;"	f	class:ClassVar
+Min_	ClassCRHM.cpp	/^void ClassVar::Min_(long dim_n)$/;"	f	class:ClassVar
+ModVarRemove	ClassCRHM.cpp	/^void ModVarRemove(MapVar & MapVars)$/;"	f
+ModelModulesList	GlobalDll.cpp	/^TStringList *(Global::ModelModulesList);$/;"	v
+ModuleBitSet	GlobalDll.cpp	/^BitSet Global::ModuleBitSet; $/;"	m	class:Global	file:
+MonthDaysCnt	ClassCRHM.cpp	/^long MonthDaysCnt(TDateTime DT)$/;"	f
+MoveDown	Bld.cpp	/^void  MoveDown(vector<ClassEntry> &Entries, long to, long from)  $/;"	f
+MoveModulesToGlobal	NewModules.cpp	/^void MoveModulesToGlobal(String DLLName)$/;"	f
+MulUnit	ClassCRHM.cpp	/^void Convert::MulUnit( Tresult& u1, const Tresult& u2 )$/;"	f	class:Convert
+MulUnitK	ClassCRHM.cpp	/^void Convert::MulUnitK( Tresult& u, double k )$/;"	f	class:Convert
+Multipliers	ClassCRHM.cpp	/^Multiplier_Info Convert::Multipliers[] =$/;"	m	class:Convert	file:
+Myparser	ClassModule.cpp	/^Myparser::Myparser() $/;"	f	class:Myparser
+NCratio	Hype_routines.cpp	/^const float NCratio         = 5.7;     $/;"	v
+NPratio	Hype_routines.cpp	/^const float NPratio         = 1.0\/7.2; $/;"	v
+Name	Bld.cpp	/^    String Name;           $/;"	m	class:ClassEntry	file:
+NegateListBox3Click	CRHMmain.cpp	/^void __fastcall TMain::NegateListBox3Click(TObject *Sender)$/;"	f	class:TMain
+NegateListBox4Click	CRHMmain.cpp	/^void __fastcall TMain::NegateListBox4Click(TObject *Sender)$/;"	f	class:TMain
+NewModuleName	GlobalDll.cpp	/^TStringList *(Global::NewModuleName);$/;"	v
+Nfr	Hype_routines.cpp	/^const float Nfr = 1.0; $/;"	v
+Not_Obs	Bld.cpp	/^bool __fastcall TBldForm::Not_Obs(String Mod, String Var)$/;"	f	class:TBldForm
+Not_Obs	report.cpp	/^bool __fastcall TRprt::Not_Obs(String Mod, String Var)$/;"	f	class:TRprt
+Now	ClassModule.cpp	/^double ClassModule::Now(void)$/;"	f	class:ClassModule
+OBS_AS_IS	GlobalDll.cpp	/^long    Global::OBS_AS_IS; $/;"	m	class:Global	file:
+OBS_ELEV	GlobalDll.cpp	/^float  **Global::OBS_ELEV; $/;"	m	class:Global	file:
+ObsCloseClick	CRHMmain.cpp	/^void __fastcall TMain::ObsCloseClick(TObject *Sender)$/;"	f	class:TMain
+ObsFileClose	CRHMmain.cpp	/^void __fastcall TMain::ObsFileClose(TObject *Sender)$/;"	f	class:TMain
+ObsFunct_Toggle	CRHMmain.cpp	/^long ObsFunct_Toggle = 0; $/;"	v
+OldModuleName	GlobalDll.cpp	/^TStringList *(Global::OldModuleName);$/;"	v
+OnHint	CRHMmain.cpp	/^void __fastcall TMain::OnHint(TObject *Sender)$/;"	f	class:TMain
+Open1Click	AKAform.cpp	/^void __fastcall TFormAKA::Open1Click(TObject *Sender)$/;"	f	class:TFormAKA
+OpenClick	CRHMmain.cpp	/^void __fastcall TMain::OpenClick(TObject *Sender)$/;"	f	class:TMain
+OpenClick	EntryForm.cpp	/^void __fastcall TFormEntry::OpenClick(TObject *Sender)$/;"	f	class:TFormEntry
+OpenDLLFile	CRHMmain.cpp	/^bool __fastcall TMain::OpenDLLFile(String FileName)$/;"	f	class:TMain
+OpenHelp	CRHMmain.cpp	/^void __fastcall TMain::OpenHelp(TObject *Sender)$/;"	f	class:TMain
+OpenObsFile	CRHMmain.cpp	/^bool __fastcall TMain::OpenObsFile(TObject *Sender, String FileName)$/;"	f	class:TMain
+OrigPos	Bld.cpp	/^    unsigned long OrigPos; $/;"	m	class:ClassEntry	file:
+OriginalObs	AKAform.cpp	/^bool __fastcall TFormAKA::OriginalObs(String module, String name)$/;"	f	class:TFormAKA
+OriginalVar	AKAform.cpp	/^bool __fastcall TFormAKA::OriginalVar(String module, String name)$/;"	f	class:TFormAKA
+OurHelpList	GlobalDll.cpp	/^TStringList *(Global::OurHelpList);$/;"	v
+OurModulesList	GlobalDll.cpp	/^TStringList *(Global::OurModulesList);$/;"	v
+OurModulesList1Click	report.cpp	/^void __fastcall TRprt::OurModulesList1Click(TObject *Sender)$/;"	f	class:TRprt
+OutFit	Analy.cpp	/^void Plot::OutFit(TLineSeries *OutSeries)$/;"	f	class:Plot
+PAESCHKE	NewModules.cpp	7394;"	d	file:
+PCM_area_frac	NewModules.cpp	/^float ClassSoilPrairie::PCM_area_frac(float maxarea, float volume, float S, float h)$/;"	f	class:ClassSoilPrairie
+PCM_calc_h_and_S	NewModules.cpp	/^void ClassSoilPrairie::PCM_calc_h_and_S(float maxvolume, float maxarea, float &S, float &h)$/;"	f	class:ClassSoilPrairie
+PCM_evap	NewModules.cpp	/^void ClassSoilPrairie::PCM_evap(float evap)$/;"	f	class:ClassSoilPrairie
+PCM_rain	NewModules.cpp	/^void ClassSoilPrairie::PCM_rain()$/;"	f	class:ClassSoilPrairie
+PCM_route_excess	NewModules.cpp	/^float ClassSoilPrairie::PCM_route_excess()$/;"	f	class:ClassSoilPrairie
+PCM_runoff	NewModules.cpp	/^void ClassSoilPrairie::PCM_runoff()$/;"	f	class:ClassSoilPrairie
+PCM_set_Sd	NewModules.cpp	/^void ClassSoilPrairie::PCM_set_Sd()$/;"	f	class:ClassSoilPrairie
+PCM_wetland_drainage_area	NewModules.cpp	/^float ClassSoilPrairie::PCM_wetland_drainage_area(float maxarea)  $/;"	f	class:ClassSoilPrairie
+PDMROF_add_subtract	NewModules.cpp	/^float ClassSoilPrairie::PDMROF_add_subtract(float deltaSd)$/;"	f	class:ClassSoilPrairie
+ParFind	CRHMmain.cpp	/^ClassPar *ParFind(string name)  $/;"	f
+ParaNameWidth	Para.cpp	/^long Dims, Rows, ParaNameWidth;$/;"	v
+Parameter	Para.cpp	/^TParameter *Parameter;$/;"	v
+ParameterBackUp	CRHMmain.cpp	/^void __fastcall TMain::ParameterBackUp(TObject *Sender)$/;"	f	class:TMain
+ParameterDisply	Para.cpp	/^String ParameterDisply[] = { "All parameters", "Basic parameters", "Advance parameters", "Private parameters"};$/;"	v
+ParameterRestore	CRHMmain.cpp	/^void __fastcall TMain::ParameterRestore(TObject *Sender)$/;"	f	class:TMain
+Parameters1Click	Log.cpp	/^void __fastcall TLogForm::Parameters1Click(TObject *Sender)$/;"	f	class:TLogForm
+ParametersClick	CRHMmain.cpp	/^void __fastcall TMain::ParametersClick(TObject *Sender)$/;"	f	class:TMain
+ParseDivUnitExpr	ClassCRHM.cpp	/^string Convert::ParseDivUnitExpr( string pszIn, Tresult& u )$/;"	f	class:Convert
+ParseMulUnitExpr	ClassCRHM.cpp	/^string Convert::ParseMulUnitExpr( string pszIn, Tresult& u )$/;"	f	class:Convert
+ParsePowUnitExpr	ClassCRHM.cpp	/^string Convert::ParsePowUnitExpr( string pszIn, Tresult& u )$/;"	f	class:Convert
+ParseUnitPhase1	ClassCRHM.cpp	/^string Convert::ParseUnitPhase1( string pszIn, Tresult& u )$/;"	f	class:Convert
+ParseUnitPhase2	ClassCRHM.cpp	/^string Convert::ParseUnitPhase2( string pszIn, Tresult& u )$/;"	f	class:Convert
+Pbsm	NewModules.cpp	/^void Classpbsm_M::Pbsm (float E_StubHt, float Uthr, float & DriftH, float & SublH, float t, float u, float rh, float Fetch, long N_S, float A_S, float GSL, float height, float Beta_M, float & Qdist_leeslope, float & Qdist_valley)$/;"	f	class:Classpbsm_M
+Pbsm	NewModules.cpp	/^void Pbsm (float E_StubHt, float Uthr, float & DriftH, float & SublH,  float t, float u, float rh, float Fetch, long N_S, float A_S)$/;"	f
+Peak	ClassCRHM.cpp	/^void ClassVar::Peak(void)$/;"	f	class:ClassVar
+PendingDLLModuleList	GlobalDll.cpp	/^TStringList *(Global::PendingDLLModuleList);$/;"	v
+Plot	Analy.cpp	/^Plot::Plot(long Index) : Error(0)$/;"	f	class:Plot
+PlotControl	UpdateForm.cpp	/^TPlotControl *PlotControl;$/;"	v
+PlotUpdateClick	UpdateForm.cpp	/^void __fastcall TPlotControl::PlotUpdateClick(TObject *Sender)$/;"	f	class:TPlotControl
+Pnt	report.cpp	/^String  __fastcall TRprt::Pnt(int P)$/;"	f	class:TRprt
+Pos	ClassCRHM.cpp	/^void ClassVar::Pos(void)$/;"	f	class:ClassVar
+Pos_	ClassCRHM.cpp	/^void ClassVar::Pos_(long dim_n)$/;"	f	class:ClassVar
+PowUnit	ClassCRHM.cpp	/^void Convert::PowUnit( Tresult& u, char nPow )$/;"	f	class:Convert
+Print1Click	Flow.cpp	/^void __fastcall TFlowForm::Print1Click(TObject *Sender)$/;"	f	class:TFlowForm
+Print1Click	Log.cpp	/^void __fastcall TLogForm::Print1Click(TObject *Sender)$/;"	f	class:TLogForm
+Print1Click	report.cpp	/^void __fastcall TRprt::Print1Click(TObject *Sender)$/;"	f	class:TRprt
+PrintSetup1Click	report.cpp	/^void __fastcall TRprt::PrintSetup1Click(TObject *Sender)$/;"	f	class:TRprt
+PrinterSetUp1Click	Flow.cpp	/^void __fastcall TFlowForm::PrinterSetUp1Click(TObject *Sender)$/;"	f	class:TFlowForm
+PrinterSetup1Click	Log.cpp	/^void __fastcall TLogForm::PrinterSetup1Click(TObject *Sender)$/;"	f	class:TLogForm
+PrjAutoExitClick	CRHMmain.cpp	/^void __fastcall TMain::PrjAutoExitClick(TObject *Sender)$/;"	f	class:TMain
+PrjAutoRunClick	CRHMmain.cpp	/^void __fastcall TMain::PrjAutoRunClick(TObject *Sender)$/;"	f	class:TMain
+PrjCloseClick	CRHMmain.cpp	/^void __fastcall TMain::PrjCloseClick(TObject *Sender)$/;"	f	class:TMain
+PrjExitClick	CRHMmain.cpp	/^void __fastcall TMain::PrjExitClick(TObject *Sender)$/;"	f	class:TMain
+PrjOpenClick	CRHMmain.cpp	/^void __fastcall TMain::PrjOpenClick(TObject *Sender)$/;"	f	class:TMain
+PrjReportClick	CRHMmain.cpp	/^void __fastcall TMain::PrjReportClick(TObject *Sender)$/;"	f	class:TMain
+PrjSaveAsClick	CRHMmain.cpp	/^void __fastcall TMain::PrjSaveAsClick(TObject *Sender)$/;"	f	class:TMain
+PrjSaveClick	CRHMmain.cpp	/^void __fastcall TMain::PrjSaveClick(TObject *Sender)$/;"	f	class:TMain
+ProbabilityThresholdNew	NewModules.cpp	/^void ProbabilityThresholdNew(float SWE, float t, float Uten_Prob, float & Probability, float & Threshold,long Snow, float & SnowAge, long & DrySnow)$/;"	f
+ProjectDir	CRHMmain.cpp	/^String ProjectDir = ApplicationDir;$/;"	v
+Qs	Common.cpp	/^float Qs(float P, float tc)   $/;"	f
+Qswater	Common.cpp	/^float Qswater(float P, float tc)   $/;"	f
+RADxxMIN	NewModules.cpp	/^const float RADxxMIN = 2.0*M_PI\/CalcFreq;$/;"	v
+RELEASE	NewModules.cpp	/^bool RELEASE = false;$/;"	v
+REN	AKAform.cpp	8;"	d	file:
+RHOa	NewModules.cpp	/^float ClassCRHMCanopy::RHOa(float t, float ea, float Pa) $/;"	f	class:ClassCRHMCanopy
+RHOa	NewModules.cpp	/^float ClassCRHMCanopyClearing::RHOa(float t, float ea, float Pa) $/;"	f	class:ClassCRHMCanopyClearing
+RHOa	NewModules.cpp	/^float ClassCRHMCanopyClearingGap::RHOa(float t, float ea, float Pa) $/;"	f	class:ClassCRHMCanopyClearingGap
+RHOa	NewModules.cpp	/^float ClassShutWall::RHOa(float t, float ea, float Pa) $/;"	f	class:ClassShutWall
+RHOa	NewModules.cpp	/^float ClassShutWallD::RHOa(float t, float ea, float Pa) $/;"	f	class:ClassShutWallD
+RHOa	NewModules.cpp	/^float ClassevapD_Resist::RHOa(float t, float ea, float Pa) $/;"	f	class:ClassevapD_Resist
+RHOa	NewModules.cpp	/^float ClassevapX::RHOa(float t, float ea, float Pa) $/;"	f	class:ClassevapX
+RHOa	NewModules.cpp	/^float Classevap_Resist::RHOa(float t, float ea, float Pa) $/;"	f	class:Classevap_Resist
+RH_EA_obs	GlobalDll.cpp	/^long    Global::RH_EA_obs; $/;"	m	class:Global	file:
+RH_VP_flag	GlobalDll.cpp	/^long   *Global::RH_VP_flag; $/;"	m	class:Global	file:
+RH_VP_flag2	GlobalDll.cpp	/^long   *Global::RH_VP_flag2; $/;"	m	class:Global	file:
+ROW2	AKAform.cpp	9;"	d	file:
+RadioGroup1Click	Analy.cpp	/^void __fastcall TAnalysis::RadioGroup1Click(TObject *Sender)$/;"	f	class:TAnalysis
+RadioGroup2Click	Analy.cpp	/^void __fastcall TAnalysis::RadioGroup2Click(TObject *Sender)$/;"	f	class:TAnalysis
+RadioGroupClick	AKAform.cpp	/^void __fastcall TFormAKA::RadioGroupClick(TObject *Sender)$/;"	f	class:TFormAKA
+RadioGroupDisplayClick	CRHMmain.cpp	/^void __fastcall TMain::RadioGroupDisplayClick(TObject *Sender)$/;"	f	class:TMain
+RadioGroupFunctClick	CRHMmain.cpp	/^void __fastcall TMain::RadioGroupFunctClick(TObject *Sender)$/;"	f	class:TMain
+RapidAdvanceTo	GlobalDll.cpp	/^TDateTime Global::RapidAdvanceTo; $/;"	m	class:Global	file:
+ReadAheadObs	ClassModule.cpp	/^bool ClassModule::ReadAheadObs(long inc)$/;"	f	class:ClassModule
+ReadAheadObsMacro	ClassModule.cpp	/^bool ClassModule::ReadAheadObsMacro(long inc)$/;"	f	class:ClassModule
+ReadBuildParameters	Bld.cpp	/^void __fastcall TBldForm::ReadBuildParameters(TObject *Sender)$/;"	f	class:TBldForm
+ReadMemo	AKAform.cpp	/^void __fastcall TFormAKA::ReadMemo(TObject *Sender)$/;"	f	class:TFormAKA
+ReadObs	ClassModule.cpp	/^void ClassModule::ReadObs(bool Reset)$/;"	f	class:ClassModule
+ReadStateFile	CRHMmain.cpp	/^void __fastcall TMain::ReadStateFile(TObject *Sender, bool & GoodRun)$/;"	f	class:TMain
+ReadVar	ClassCRHM.cpp	/^void ClassVar::ReadVar(void)$/;"	f	class:ClassVar
+ReleaseM	ClassCRHM.cpp	/^void ClassVar::ReleaseM(bool Keep)$/;"	f	class:ClassVar
+RemoveParameter	Bld.cpp	/^void __fastcall TBldForm::RemoveParameter(TObject *Sender)$/;"	f	class:TBldForm
+RemoveSharedParams	CRHMmain.cpp	/^void __fastcall TMain::RemoveSharedParams(void)  $/;"	f	class:TMain
+RemoveUnusedClick	AKAform.cpp	/^void __fastcall TFormAKA::RemoveUnusedClick(TObject *Sender)$/;"	f	class:TFormAKA
+RenameGroupClick	report.cpp	/^void __fastcall TRprt::RenameGroupClick(TObject *Sender)$/;"	f	class:TRprt
+ReportList	GlobalDll.cpp	/^TStringList *(Global::ReportList);$/;"	v
+ResetLoopList	CRHMmain.cpp	/^void __fastcall TMain::ResetLoopList(TObject *Sender)  $/;"	f	class:TMain
+ResetPickers	CRHMmain.cpp	/^void __fastcall TMain::ResetPickers(void)$/;"	f	class:TMain
+Reset_WQ	Hype_CRHM.cpp	/^void ClassWQ_Netroute::Reset_WQ(long hru, float *var, float *var_conc)$/;"	f	class:ClassWQ_Netroute
+Reset_WQ	Hype_CRHM.cpp	/^void ClassWQ_Soil::Reset_WQ(const long hru, float *var, float *var_conc)$/;"	f	class:ClassWQ_Soil
+Reset_WQ	Hype_CRHM.cpp	/^void ClassWQ_pbsm::Reset_WQ(long hru, float *var, float *var_cWQ)$/;"	f	class:ClassWQ_pbsm
+Reset_WQ	NewModules.cpp	/^void ClassWQ_Netroute_M_D::Reset_WQ(long hru, float *var, float *var_cWQ)$/;"	f	class:ClassWQ_Netroute_M_D
+Restore	ClassCRHM.cpp	/^void ClassPar::Restore()$/;"	f	class:ClassPar
+Restore	ClassCRHM.cpp	/^void ClassVar::Restore()$/;"	f	class:ClassVar
+Rho_Air	NewModules.cpp	/^const float Rho_Air = 1.2;  $/;"	v
+Rho_Ice	NewModules.cpp	/^const float Rho_Ice = 920.0; $/;"	v
+Rho_Minerals	NewModules.cpp	/^const float Rho_Minerals = 2650.0; $/;"	v
+Rho_Organic	NewModules.cpp	/^const float Rho_Organic = 1300.0; $/;"	v
+Rho_Snow	NewModules.cpp	/^const float Rho_Snow = 200.0; $/;"	v
+Rho_Water	NewModules.cpp	/^const float Rho_Water = 1000.0; $/;"	v
+Rows	Para.cpp	/^long Dims, Rows, ParaNameWidth;$/;"	v
+Rprt	report.cpp	/^TRprt *Rprt;$/;"	v
+RunClick	CRHMmain.cpp	/^void __fastcall TMain::RunClick(TObject *Sender)$/;"	f	class:TMain
+RunUpBitSet	GlobalDll.cpp	/^BitSet Global::RunUpBitSet; $/;"	m	class:Global	file:
+SH	NewModules.cpp	7397;"	d	file:
+SM	NewModules.cpp	7396;"	d	file:
+SUM	Hype_routines.cpp	/^float ClassWQ_Hype::SUM(float *X)$/;"	f	class:ClassWQ_Hype
+SUM	Hype_routines.cpp	/^float ClassWQ_Hype::SUM(float X[][numsubstances], long Substance)$/;"	f	class:ClassWQ_Hype
+SURF	NewModules.cpp	/^void ClassSimpleRichard::SURF(long hh, float Q1, float U1)$/;"	f	class:ClassSimpleRichard
+SV	NewModules.cpp	7398;"	d	file:
+SVDens	Common.cpp	/^float SVDens(float Temp) \/* outputs sat. vapor density, kg\/m^3 *\/$/;"	f
+SWE_prob	Common.cpp	/^float SWE_prob(float SWEmean, float SWE, float CV)$/;"	f
+SWEfromDepth	NewModules.cpp	/^float SWEfromDepth(float Snow_Depth)  $/;"	f
+Same	ClassCRHM.cpp	/^bool ClassPar::Same(ClassPar &p)   $/;"	f	class:ClassPar
+SatVP	NewModules.cpp	/^float SatVP(float Temp) \/* outputs sat. vapor pressure, Pa *\/$/;"	f
+Save1Click	AKAform.cpp	/^void __fastcall TFormAKA::Save1Click(TObject *Sender)$/;"	f	class:TFormAKA
+Save1Click	report.cpp	/^void __fastcall TRprt::Save1Click(TObject *Sender)$/;"	f	class:TRprt
+SaveAs1Click	report.cpp	/^void __fastcall TRprt::SaveAs1Click(TObject *Sender)$/;"	f	class:TRprt
+SaveAsClick	AKAform.cpp	/^void __fastcall TFormAKA::SaveAsClick(TObject *Sender)$/;"	f	class:TFormAKA
+SaveAsClick	Analy.cpp	/^void __fastcall TAnalysis::SaveAsClick(TObject *Sender)$/;"	f	class:TAnalysis
+SaveAsClick	EntryForm.cpp	/^void __fastcall TFormEntry::SaveAsClick(TObject *Sender)$/;"	f	class:TFormEntry
+SaveAsClick	Export.cpp	/^void __fastcall TFileOutput::SaveAsClick(TObject *Sender)$/;"	f	class:TFileOutput
+SaveBuildParameters	Bld.cpp	/^void __fastcall TBldForm::SaveBuildParameters(TObject *Sender)$/;"	f	class:TBldForm
+SaveChangesClick	EntryForm.cpp	/^void __fastcall TFormEntry::SaveChangesClick(TObject *Sender)$/;"	f	class:TFormEntry
+SaveChartTemplateClick	CRHMmain.cpp	/^void __fastcall TMain::SaveChartTemplateClick(TObject *Sender)$/;"	f	class:TMain
+SaveClick	AKAform.cpp	/^void __fastcall TFormAKA::SaveClick(TObject *Sender)$/;"	f	class:TFormAKA
+SaveClick	Analy.cpp	/^void __fastcall TAnalysis::SaveClick(TObject *Sender)$/;"	f	class:TAnalysis
+SaveClick	EntryForm.cpp	/^void __fastcall TFormEntry::SaveClick(TObject *Sender)$/;"	f	class:TFormEntry
+SaveClick	Export.cpp	/^void __fastcall TFileOutput::SaveClick(TObject *Sender)$/;"	f	class:TFileOutput
+SaveDebugLog	Log.cpp	/^void __fastcall TLogForm::SaveDebugLog(TObject *Sender)$/;"	f	class:TLogForm
+SaveMemoLog	Log.cpp	/^void __fastcall TLogForm::SaveMemoLog(TObject *Sender)$/;"	f	class:TLogForm
+SaveParameters	Para.cpp	/^void __fastcall TParameter::SaveParameters(TObject *Sender)$/;"	f	class:TParameter
+SaveProject	CRHMmain.cpp	/^void __fastcall TMain::SaveProject(TObject *Sender)$/;"	f	class:TMain
+SaveScreenCode	AKAform.cpp	/^void __fastcall TFormAKA::SaveScreenCode(TObject *Sender)$/;"	f	class:TFormAKA
+SaveState	CRHMmain.cpp	/^void __fastcall TMain::SaveState(TObject *Sender)$/;"	f	class:TMain
+Selection1Click	Flow.cpp	/^void __fastcall TFlowForm::Selection1Click(TObject *Sender)$/;"	f	class:TFlowForm
+SetBasicUnit	ClassCRHM.cpp	/^void Convert::SetBasicUnit( Tresult& u, double k, int iUnit )$/;"	f	class:Convert
+SetSharedParams	CRHMmain.cpp	/^void __fastcall TMain::SetSharedParams(ClassPar *basinPar)$/;"	f	class:TMain
+SetSoilproperties	NewModules.cpp	/^float SetSoilproperties[] [4] =$/;"	v
+SetSuffix	Bld.cpp	/^void __fastcall TBldForm::SetSuffix(long Row)$/;"	f	class:TBldForm
+SetTitle	Flow.cpp	/^void TFlowForm::SetTitle(String Text)$/;"	f	class:TFlowForm
+Set_WQ	Hype_CRHM.cpp	/^void ClassWQ_Netroute::Set_WQ(long hru, float *var, float *var_conc, float amount, float amount_conc)$/;"	f	class:ClassWQ_Netroute
+Set_WQ	Hype_CRHM.cpp	/^void ClassWQ_Soil::Set_WQ(const long hru, float *var, float *var_conc, float amount, float amount_conc)$/;"	f	class:ClassWQ_Soil
+Set_WQ	NewModules.cpp	/^void ClassWQ_Netroute_M_D::Set_WQ(long hru, float *var, float *var_cWQ, float amount, float amount_cWQ)$/;"	f	class:ClassWQ_Netroute_M_D
+SharedMapPars	GlobalDll.cpp	/^MapPar Global::SharedMapPars; $/;"	m	class:Global	file:
+SqueezeParams	CRHMmain.cpp	/^void __fastcall TMain::SqueezeParams(TObject *Sender)$/;"	f	class:TMain
+Sstrings	CRHMmain.cpp	/^String Sstrings[] = {"", "_VPsat", "_WtoMJ", "_MJtoW", "_Avg", "_Min", "_Max", "_Tot", "_Pos", "_First", "_Last", "_Cnt", "_Cnt0", "_Dlta"};$/;"	v
+Sstrings	Export.cpp	/^String Sstrings[] = {"", "_VPsat", "_WtoMJ", "_MJtoW", "_Avg", "_Min", "_Max", "_Tot", "_Pos", "_First", "_Last", "_Pk", "_Cnt", "_Cnt0", "_Dlta"};$/;"	v
+StatOpenInitClick	CRHMmain.cpp	/^void __fastcall TMain::StatOpenInitClick(TObject *Sender)$/;"	f	class:TMain
+StatSaveClick	CRHMmain.cpp	/^void __fastcall TMain::StatSaveClick(TObject *Sender)$/;"	f	class:TMain
+StatSaveStateAsClick	CRHMmain.cpp	/^void __fastcall TMain::StatSaveStateAsClick(TObject *Sender)$/;"	f	class:TMain
+StateFileClose	CRHMmain.cpp	/^void __fastcall TMain::StateFileClose(TObject *Sender)$/;"	f	class:TMain
+StateFileCloseAll	CRHMmain.cpp	/^void __fastcall TMain::StateFileCloseAll(TObject *Sender)$/;"	f	class:TMain
+StatePar	CRHMmain.cpp	/^ClassPar *StatePar = NULL; $/;"	v
+StringGrid1GetEditText	AKAform.cpp	/^void __fastcall TFormAKA::StringGrid1GetEditText(TObject *Sender, int ACol, int ARow, AnsiString &Value)$/;"	f	class:TFormAKA
+StringGrid1GetEditText	Para.cpp	/^void __fastcall TParameter::StringGrid1GetEditText(TObject *Sender,int ACol, int ARow, AnsiString &Value)$/;"	f	class:TParameter
+StringGrid1KeyPress	AKAform.cpp	/^void __fastcall TFormAKA::StringGrid1KeyPress(TObject *Sender, char &Key)$/;"	f	class:TFormAKA
+StringGrid1KeyPress	Para.cpp	/^void __fastcall TParameter::StringGrid1KeyPress(TObject *Sender, char &Key)$/;"	f	class:TParameter
+StringGrid1MouseDown	AKAform.cpp	/^void __fastcall TFormAKA::StringGrid1MouseDown(TObject *Sender, TMouseButton Button, TShiftState Shift, int X, int Y)$/;"	f	class:TFormAKA
+StringGrid1SelectCell	AKAform.cpp	/^void __fastcall TFormAKA::StringGrid1SelectCell(TObject *Sender, int ACol, int ARow, bool &CanSelect)$/;"	f	class:TFormAKA
+StringGrid1SelectCell	Para.cpp	/^void __fastcall TParameter::StringGrid1SelectCell(TObject *Sender,int ACol, int ARow, bool &CanSelect)$/;"	f	class:TParameter
+StringGrid1SetEditText	AKAform.cpp	/^void __fastcall TFormAKA::StringGrid1SetEditText(TObject *Sender, int ACol, int ARow, const AnsiString Value)$/;"	f	class:TFormAKA
+StringGrid1SetEditText	Para.cpp	/^void __fastcall TParameter::StringGrid1SetEditText(TObject *Sender,int ACol, int ARow, const AnsiString Value)$/;"	f	class:TParameter
+StructCnt	EntryForm.cpp	/^long Module::StructCnt;$/;"	m	class:Module	file:
+StructCntTrk	GlobalDll.cpp	/^long Global::StructCntTrk;$/;"	m	class:Global	file:
+Sub_WQ	Hype_CRHM.cpp	/^void ClassWQ_Netroute::Sub_WQ(long hru, float *var, float *var_conc, float *var2, float *var2_conc, float *var3, float *var3_conc)$/;"	f	class:ClassWQ_Netroute
+Sub_WQ	Hype_CRHM.cpp	/^void ClassWQ_Soil::Sub_WQ(const long hru, float *var, float *var_conc, float *var2, float *var2_conc, float *var3, float *var3_conc)$/;"	f	class:ClassWQ_Soil
+Sub_WQ	Hype_CRHM.cpp	/^void ClassWQ_Soil::Sub_WQ(const long hru, float *var, float *var_conc, float amount, float amount_conc)$/;"	f	class:ClassWQ_Soil
+Sub_WQ	Hype_CRHM.cpp	/^void ClassWQ_pbsm::Sub_WQ(long hru, float *var, float *var_cWQ, float amount, float amount_cWQ)$/;"	f	class:ClassWQ_pbsm
+Sub_WQ	NewModules.cpp	/^void ClassWQ_Netroute_M_D::Sub_WQ(long hru, float *var, float *var_cWQ, float *var2, float *var2_cWQ, float *var3, float *var3_cWQ)$/;"	f	class:ClassWQ_Netroute_M_D
+Sum	NewModules.cpp	/^void Classpbsm_M::Sum(float TQsalt, float TQsusp, float SBsum, float SBsalt, float & DriftH, float & SublH)$/;"	f	class:Classpbsm_M
+Sum	NewModules.cpp	/^void Sum(float TQsalt, float TQsusp, float SBsum, float SBsalt, float & DriftH, float & SublH)$/;"	f
+SummaryScreen1Click	CRHMmain.cpp	/^void __fastcall TMain::SummaryScreen1Click(TObject *Sender)$/;"	f	class:TMain
+SummaryScreen1Rprt	CRHMmain.cpp	/^void __fastcall TMain::SummaryScreen1Rprt(TObject *Sender)$/;"	f	class:TMain
+TAboutBox	About.cpp	/^__fastcall TAboutBox::TAboutBox(TComponent* Owner): TForm(Owner)$/;"	f	class:TAboutBox
+TAnalysis	Analy.cpp	/^__fastcall TAnalysis::TAnalysis(TComponent* Owner) : TForm(Owner)$/;"	f	class:TAnalysis
+TBase	CRHMmain.cpp	/^long TBase;$/;"	v
+TBases	CRHMmain.cpp	/^String TBases[] = {"Daily", "Water_year", "Calendar_year", "Monthly_summary", "Summarize_all"};$/;"	v
+TBldForm	Bld.cpp	/^__fastcall TBldForm::TBldForm(TComponent* Owner) : TForm(Owner)$/;"	f	class:TBldForm
+TFileOutput	Export.cpp	/^__fastcall TFileOutput::TFileOutput(TComponent* Owner) : TForm(Owner)$/;"	f	class:TFileOutput
+TFlowForm	Flow.cpp	/^__fastcall TFlowForm::TFlowForm(TComponent* Owner) : TForm(Owner)$/;"	f	class:TFlowForm
+TFormAKA	AKAform.cpp	/^__fastcall TFormAKA::TFormAKA(TComponent* Owner) : TForm(Owner)$/;"	f	class:TFormAKA
+TFormEntry	EntryForm.cpp	/^__fastcall TFormEntry::TFormEntry(TComponent* Owner) : TForm(Owner)$/;"	f	class:TFormEntry
+THRESH	NewModules.cpp	7395;"	d	file:
+TLibForm	Examples.cpp	/^__fastcall TLibForm::TLibForm(TComponent* Owner) : TForm(Owner)$/;"	f	class:TLibForm
+TLogForm	Log.cpp	/^__fastcall TLogForm::TLogForm(TComponent* Owner) : TForm(Owner)$/;"	f	class:TLogForm
+TLogFormats	CRHMmain.cpp	/^String TLogFormats[] = {"MS_time", "MM\/DD\/YYYY", "YYYY-MM-DD"};$/;"	v
+TMain	CRHMmain.cpp	/^__fastcall TMain::TMain(TComponent* Owner)$/;"	f	class:TMain
+TParameter	Para.cpp	/^__fastcall TParameter::TParameter(TComponent* Owner): TForm(Owner)$/;"	f	class:TParameter
+TPlotControl	UpdateForm.cpp	/^__fastcall TPlotControl::TPlotControl(TComponent* Owner) : TForm(Owner)$/;"	f	class:TPlotControl
+TRprt	report.cpp	/^__fastcall TRprt::TRprt(TComponent* Owner) : TForm(Owner)$/;"	f	class:TRprt
+T_F	report.cpp	/^char T_F[][6] = {"No", "Yes"};$/;"	v
+TempTime	CRHMmain.cpp	/^long TempTime;$/;"	v
+TimeFormat	GlobalDll.cpp	/^CRHM::TIMEFORMAT Global::TimeFormat;$/;"	m	class:Global	file:
+Tmonths	CRHMmain.cpp	/^String Tmonths[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "July", "Aug", "Sept", "Oct", "Nov", "Dec"};$/;"	v
+Tot	ClassCRHM.cpp	/^void ClassVar::Tot(void)  $/;"	f	class:ClassVar
+Tot_	ClassCRHM.cpp	/^void ClassVar::Tot_(long dim_n)$/;"	f	class:ClassVar
+Transform	Numerical.cpp	/^void Expo::Transform(void)$/;"	f	class:Expo
+Transform	Numerical.cpp	/^void Fourier::Transform(void)$/;"	f	class:Fourier
+Transform	Numerical.cpp	/^void Log::Transform(void)$/;"	f	class:Log
+Transform	Numerical.cpp	/^void MLinReg::Transform(void)$/;"	f	class:MLinReg
+Transform	Numerical.cpp	/^void Poly::Transform(void)$/;"	f	class:Poly
+Transform	Numerical.cpp	/^void Power::Transform(void)$/;"	f	class:Power
+TransformSolution	Numerical.cpp	/^void Expo::TransformSolution(void)$/;"	f	class:Expo
+TransformSolution	Numerical.cpp	/^void Fourier::TransformSolution(void)$/;"	f	class:Fourier
+TransformSolution	Numerical.cpp	/^void Log::TransformSolution(void)$/;"	f	class:Log
+TransformSolution	Numerical.cpp	/^void MLinReg::TransformSolution(void)$/;"	f	class:MLinReg
+TransformSolution	Numerical.cpp	/^void Poly::TransformSolution(void)$/;"	f	class:Poly
+TransformSolution	Numerical.cpp	/^void Power::TransformSolution(void)$/;"	f	class:Power
+TransformSolutionAndFindResiduals	Numerical.cpp	/^void LeastSquares::TransformSolutionAndFindResiduals(void)$/;"	f	class:LeastSquares
+UpDateHelpMenu	CRHMmain.cpp	/^void __fastcall TMain::UpDateHelpMenu(void)$/;"	f	class:TMain
+UpDateModelMenu	CRHMmain.cpp	/^void __fastcall TMain::UpDateModelMenu(void)$/;"	f	class:TMain
+UpDown1Click	Analy.cpp	/^void __fastcall TAnalysis::UpDown1Click(TObject *Sender, TUDBtnType Button)$/;"	f	class:TAnalysis
+UpDownHRUIndxClick	CRHMmain.cpp	/^void __fastcall TMain::UpDownHRUIndxClick(TObject *Sender, TUDBtnType Button)$/;"	f	class:TMain
+UpDownMAXHRUClick	Bld.cpp	/^void __fastcall TBldForm::UpDownMAXHRUClick(TObject *Sender, TUDBtnType Button)$/;"	f	class:TBldForm
+UpDownMAXLAYClick	Bld.cpp	/^void __fastcall TBldForm::UpDownMAXLAYClick(TObject *Sender, TUDBtnType Button)$/;"	f	class:TBldForm
+UpDownOBSIndxClick	CRHMmain.cpp	/^void __fastcall TMain::UpDownOBSIndxClick(TObject *Sender, TUDBtnType Button)$/;"	f	class:TMain
+UpdateDim	CRHMmain.cpp	/^void __fastcall TMain::UpdateDim(CRHM::TDim Dim, long dim)$/;"	f	class:TMain
+UpdateOurModules	CRHMmain.cpp	/^void __fastcall TMain::UpdateOurModules(void)$/;"	f	class:TMain
+Update_Main_DIM	ClassCRHM.cpp	/^void __fastcall Update_Main_DIM(CRHM::TDim Dim, long dim)$/;"	f
+Update_Main_Dirty	ClassCRHM.cpp	/^void __fastcall Update_Main_Dirty(void)$/;"	f
+Update_Main_Status	ClassCRHM.cpp	/^void __fastcall Update_Main_Status(String S)$/;"	f
+UsingObservations	ClassModule.cpp	/^bool ClassModule::UsingObservations(void)$/;"	f	class:ClassModule
+VAP_SUB	NewModules.cpp	6991;"	d	file:
+V_D_H	report.cpp	/^char V_D_H[][11] = {"OUTPUT", "NORMAL", "DIAGNOSTIC", "PRIVATE"};$/;"	v
+VarCHRM	CRHM_parse.cpp	/^VarCHRM::VarCHRM(const VarCHRM & Cl)$/;"	f	class:VarCHRM
+VarFind	CRHMmain.cpp	/^ClassVar *VarFind(string name)$/;"	f
+VarObsFunct_Update	CRHMmain.cpp	/^void __fastcall TMain::VarObsFunct_Update(TObject *Sender)$/;"	f	class:TMain
+Var_name	ClassModule.cpp	/^String ClassModule::Var_name(ClassModule* thisModule, String S)$/;"	f	class:ClassModule
+VariableBackUp	CRHMmain.cpp	/^void __fastcall TMain::VariableBackUp(TObject *Sender)$/;"	f	class:TMain
+VariableRestore	CRHMmain.cpp	/^void __fastcall TMain::VariableRestore(TObject *Sender)$/;"	f	class:TMain
+Variation1Click	Bld.cpp	/^void __fastcall TBldForm::Variation1Click(TObject *Sender)$/;"	f	class:TBldForm
+Variation_Decide	Bld.cpp	/^bool TBldForm::Variation_Decide(int Variation_set, long Variation)$/;"	f	class:TBldForm
+Variation_Decide	CRHMmain.cpp	/^bool TMain::Variation_Decide(int Variation_set, long Variation)$/;"	f	class:TMain
+Variation_Decide	Flow.cpp	/^bool TFlowForm::Variation_Decide(int indx, long Variation)$/;"	f	class:TFlowForm
+Variation_Decide	Para.cpp	/^bool TParameter::Variation_Decide(long variation, long variation_set)$/;"	f	class:TParameter
+Variation_Skip	ClassModule.cpp	/^bool ClassModule::Variation_Skip(void)$/;"	f	class:ClassModule
+Veto_Freq	ClassCRHM.cpp	/^long ClassData::Veto_Freq(long Freq)$/;"	f	class:ClassData
+Visible_Decide	Bld.cpp	/^bool TBldForm::Visible_Decide(long Variation)$/;"	f	class:TBldForm
+VoidClick	AKAform.cpp	/^void __fastcall TFormAKA::VoidClick(TObject *Sender)$/;"	f	class:TFormAKA
+WMGetMinMaxInfo	CRHMmain.cpp	/^void __fastcall TMain::WMGetMinMaxInfo(TWMGetMinMaxInfo &Msg)$/;"	f	class:TMain
+WMLogDebug	Log.cpp	/^void __fastcall TLogForm::WMLogDebug(TMessage &Message)$/;"	f	class:TLogForm
+WMLogException	Log.cpp	/^void __fastcall TLogForm::WMLogException(TMessage &Message)$/;"	f	class:TLogForm
+WMLogException1	Log.cpp	/^void __fastcall TLogForm::WMLogException1(TMessage &Message)$/;"	f	class:TLogForm
+WMMainUpdateDim	CRHMmain.cpp	/^void __fastcall TMain::WMMainUpdateDim(TMessage &Message)$/;"	f	class:TMain
+WMMainUpdateDirty	CRHMmain.cpp	/^void __fastcall TMain::WMMainUpdateDirty(TMessage &Message)$/;"	f	class:TMain
+WMMainUpdateStatus	CRHMmain.cpp	/^void __fastcall TMain::WMMainUpdateStatus(TMessage &Message)$/;"	f	class:TMain
+WQ_prj	GlobalDll.cpp	/^long    Global::WQ_prj; $/;"	m	class:Global	file:
+Warming_p	GlobalDll.cpp	/^float  *Global::Warming_p; $/;"	m	class:Global	file:
+Warming_t	GlobalDll.cpp	/^float  *Global::Warming_t; $/;"	m	class:Global	file:
+Water_Ice	NewModules.cpp	/^const float Water_Ice = 334.0e3; $/;"	v
+WriteAheadObsMacro	ClassModule.cpp	/^bool ClassModule::WriteAheadObsMacro(long inc)$/;"	f	class:ClassModule
+WriteVar	ClassCRHM.cpp	/^void ClassVar::WriteVar(void)$/;"	f	class:ClassVar
+YYYYMMDD1Click	report.cpp	/^void __fastcall TRprt::YYYYMMDD1Click(TObject *Sender)$/;"	f	class:TRprt
+_adj_layers	NewModules.cpp	/^void ClassSnobalBase::_adj_layers(void)$/;"	f	class:ClassSnobalBase
+_adj_snow	NewModules.cpp	/^void ClassSnobalBase::_adj_snow(float	delta_z_s,float	delta_m_s)$/;"	f	class:ClassSnobalBase
+_advec	NewModules.cpp	/^void ClassSnobalBase::_advec(void)$/;"	f	class:ClassSnobalBase
+_below_thold	NewModules.cpp	/^int ClassSnobalBase::_below_thold(float	threshold)  $/;"	f	class:ClassSnobalBase
+_calc_layers	NewModules.cpp	/^void ClassSnobalBase::_calc_layers(void)$/;"	f	class:ClassSnobalBase
+_cold_content	NewModules.cpp	/^float ClassSnobalBase::_cold_content(float	temp,float	mass)$/;"	f	class:ClassSnobalBase
+_divide_tstep	NewModules.cpp	/^int ClassSnobalBase::_divide_tstep(TSTEP_REC *tstep)   $/;"	f	class:ClassSnobalBase
+_do_tstep	NewModules.cpp	/^int ClassSnobalBase::_do_tstep(TSTEP_REC *tstep)  $/;"	f	class:ClassSnobalBase
+_drift	NewModules.cpp	/^void ClassSnobalBase::_drift(void)$/;"	f	class:ClassSnobalBase
+_e_bal	NewModules.cpp	/^int ClassSnobalBase::_e_bal(void)$/;"	f	class:ClassSnobalBase
+_evap_cond	NewModules.cpp	/^void ClassSnobalBase::_evap_cond(void)$/;"	f	class:ClassSnobalBase
+_h2o_compact	NewModules.cpp	/^void ClassSnobalBase::_h2o_compact(void)$/;"	f	class:ClassSnobalBase
+_h_le	NewModules.cpp	/^int ClassSnobalBase::_h_le(void)$/;"	f	class:ClassSnobalBase
+_layer_mass	NewModules.cpp	/^void ClassSnobalBase::_layer_mass(void)$/;"	f	class:ClassSnobalBase
+_mass_bal	NewModules.cpp	/^void ClassSnobalBase::_mass_bal(void)$/;"	f	class:ClassSnobalBase
+_matherr	CRHMmain.cpp	/^int _matherr (struct _exception *a)$/;"	f
+_net_rad	NewModules.cpp	/^void ClassSnobalBase::_net_rad(void)$/;"	f	class:ClassSnobalBase
+_new_density	NewModules.cpp	/^void ClassSnobalBase::_new_density(void)$/;"	f	class:ClassSnobalBase
+_precip	NewModules.cpp	/^void ClassSnobalBase::_precip(void)$/;"	f	class:ClassSnobalBase
+_runoff	NewModules.cpp	/^void ClassSnobalBase::_runoff(void)$/;"	f	class:ClassSnobalBase
+_snowmelt	NewModules.cpp	/^void ClassSnobalBase::_snowmelt(void)$/;"	f	class:ClassSnobalBase
+_time_compact	NewModules.cpp	/^void ClassSnobalBase::_time_compact(void)$/;"	f	class:ClassSnobalBase
+a1	Common.cpp	/^const float a1          =   0.4361836;   $/;"	v
+a2	Common.cpp	/^const float a2          =  -0.1201676;$/;"	v
+a3	Common.cpp	/^const float a3          =   0.937298;$/;"	v
+add	NewModules.cpp	/^void Classlake::add(void)$/;"	f	class:Classlake
+add_source_to_water	Hype_routines.cpp	/^void ClassWQ_Hype::add_source_to_water(const float vol, const long n, float *conc, const float source)$/;"	f	class:ClassWQ_Hype
+add_source_to_water	Hype_routines.cpp	/^void ClassWQ_Hype::add_source_to_water(const float vol, long n, float conc, float source)$/;"	f	class:ClassWQ_Hype
+addfilter	ClassCRHM.cpp	/^void Classmacro::addfilter(String Line)$/;"	f	class:Classmacro
+addtofunctlist	ClassModule.cpp	/^void ClassModule::addtofunctlist(ClassVar *newVar)$/;"	f	class:ClassModule
+addtoreadlist	ClassModule.cpp	/^void ClassModule::addtoreadlist(ClassVar *newVar)   $/;"	f	class:ClassModule
+adjust_layers	Hype_CRHM.cpp	/^void ClassWQ_ion::adjust_layers(void)$/;"	f	class:ClassWQ_ion
+air_mass	NewModules.cpp	/^void Classglobal::air_mass (const float czen, float &oam)$/;"	f	class:Classglobal
+albedo	NewModules.cpp	/^void Classalbedoobs2::albedo(long jday, float Qnc)$/;"	f	class:Classalbedoobs2
+atend1Click	CRHMmain.cpp	/^void __fastcall TMain::atend1Click(TObject *Sender)$/;"	f	class:TMain
+atom	ClassModule.cpp	/^void Myparser::atom(float &result)$/;"	f	class:Myparser
+balance_spsoil	Hype_routines.cpp	/^void ClassWQ_Hype::balance_spsoil(const float kfr, const float nfr, const float kadsdes)$/;"	f	class:ClassWQ_Hype
+biweekly1Click	CRHMmain.cpp	/^void __fastcall TMain::biweekly1Click(TObject *Sender)$/;"	f	class:TMain
+bulkdensity	Hype_routines.cpp	/^const float bulkdensity = 1300;$/;"	v
+c_a	NewModules.cpp	/^const float c_a = 1010.0; $/;"	v
+c_i	NewModules.cpp	/^const float c_i = 2120.0; $/;"	v
+c_s	NewModules.cpp	/^const float c_s[] =  {1920.0, 1920.0, 1920.0, 890.0, 890.0}; $/;"	v
+calc_layers	Hype_CRHM.cpp	/^void ClassWQ_ion::calc_layers(void)$/;"	f	class:ClassWQ_ion
+calcf1	NewModules.cpp	/^float ClassGreenAmpt::calcf1(float F, float psidth)$/;"	f	class:ClassGreenAmpt
+calcf1	NewModules.cpp	/^float ClassGreencrack::calcf1(float F, float psidth)  $/;"	f	class:ClassGreencrack
+calculate_erosion	Hype_routines.cpp	/^void ClassWQ_Hype::calculate_erosion(const float prec, const float thickness, float surfacerunoff, float erodedP, const float cohesion, const float erodibility, const float snow, const float sreroexp, float **partP_lay, float **humusP_lay, float fracminP)$/;"	f	class:ClassWQ_Hype
+calculate_lake_tpmean	Hype_lake.cpp	/^void ClassWQ_Lake::calculate_lake_tpmean(const long laketype)$/;"	f	class:ClassWQ_Lake
+calculate_river_tpmean	Hype_river.cpp	/^void ClassWQ_River::calculate_river_tpmean(const long rivertype)$/;"	f	class:ClassWQ_River
+calculate_transport	Hype_routines.cpp	/^void ClassWQ_Hype::calculate_transport(const float flow, float erodedP)$/;"	f	class:ClassWQ_Hype
+colours	CRHMmain.cpp	/^const long colours[] = {clBlack, clDkGray, clBlue, clTeal, clFuchsia, clGreen, clNavy, clMaroon, clNavy, clOlive, clPurple, clRed, clTeal, clMaroon, 0x4763FF, 0x7280FA, 0xFF00FF, 0x008CFF, 0x00FF7F, 0x20A5DA};$/;"	v
+crhmLog	GlobalDll.cpp	/^HWND Global::crhmLog;$/;"	m	class:Global	file:
+crhmMain	GlobalDll.cpp	/^HWND Global::crhmMain;$/;"	m	class:Global	file:
+crop_sources	Hype_routines.cpp	/^void  ClassWQ_Hype::crop_sources(const long calcN, const long calcP, const float calcC, const long fertperiod, const long litterperiod, const float area, float **thickness, float **sources_fertilizer_lay, float **sources_plant_lay)$/;"	f	class:ClassWQ_Hype
+daily1Click	CRHMmain.cpp	/^void __fastcall TMain::daily1Click(TObject *Sender)$/;"	f	class:TMain
+dattim	ClassCRHM.cpp	/^void dattim(char *type, long *itime)   $/;"	f
+dattim	ClassCRHM.cpp	/^void dattim(double DT, long *itime)   $/;"	f
+decl	Hype_CRHM.cpp	/^void ClassWQ_Netroute::decl(void)$/;"	f	class:ClassWQ_Netroute
+decl	Hype_CRHM.cpp	/^void ClassWQ_Soil::decl(void)$/;"	f	class:ClassWQ_Soil
+decl	Hype_CRHM.cpp	/^void ClassWQ_ion::decl(void)$/;"	f	class:ClassWQ_ion
+decl	Hype_CRHM.cpp	/^void ClassWQ_pbsm::decl(void)$/;"	f	class:ClassWQ_pbsm
+decl	Hype_lake.cpp	/^void ClassWQ_Lake::decl(void)$/;"	f	class:ClassWQ_Lake
+decl	Hype_river.cpp	/^void ClassWQ_REWroute::decl(void)$/;"	f	class:ClassWQ_REWroute
+decl	Hype_river.cpp	/^void ClassWQ_River::decl(void)$/;"	f	class:ClassWQ_River
+decl	Hype_routines.cpp	/^void ClassWQ_Hype::decl(void)$/;"	f	class:ClassWQ_Hype
+decl	MacroUnit.cpp	/^void ClassMacro::decl(void)$/;"	f	class:ClassMacro
+decl	NewModules.cpp	/^void Class3D_param::decl(void)$/;"	f	class:Class3D_param
+decl	NewModules.cpp	/^void ClassAnnan::decl(void)$/;"	f	class:ClassAnnan
+decl	NewModules.cpp	/^void ClassAyers::decl(void)$/;"	f	class:ClassAyers
+decl	NewModules.cpp	/^void ClassCRHMCanopy::decl(void)$/;"	f	class:ClassCRHMCanopy
+decl	NewModules.cpp	/^void ClassCRHMCanopyClearing::decl(void)$/;"	f	class:ClassCRHMCanopyClearing
+decl	NewModules.cpp	/^void ClassCRHMCanopyClearingGap::decl(void)$/;"	f	class:ClassCRHMCanopyClearingGap
+decl	NewModules.cpp	/^void ClassFlowInSnow::decl(void)$/;"	f	class:ClassFlowInSnow
+decl	NewModules.cpp	/^void ClassGreenAmpt::decl(void)$/;"	f	class:ClassGreenAmpt
+decl	NewModules.cpp	/^void ClassGreencrack::decl(void)$/;"	f	class:ClassGreencrack
+decl	NewModules.cpp	/^void ClassGrow_Crop::decl(void)$/;"	f	class:ClassGrow_Crop
+decl	NewModules.cpp	/^void ClassHMSA::decl(void)$/;"	f	class:ClassHMSA
+decl	NewModules.cpp	/^void ClassHeating::decl(void)$/;"	f	class:ClassHeating
+decl	NewModules.cpp	/^void ClassHtobs::decl(void)$/;"	f	class:ClassHtobs
+decl	NewModules.cpp	/^void ClassICEflow::decl(void)$/;"	f	class:ClassICEflow
+decl	NewModules.cpp	/^void ClassIceBulb::decl(void)$/;"	f	class:ClassIceBulb
+decl	NewModules.cpp	/^void ClassK_Estimate::decl(void)$/;"	f	class:ClassK_Estimate
+decl	NewModules.cpp	/^void ClassKevin::decl(void)$/;"	f	class:ClassKevin
+decl	NewModules.cpp	/^void ClassLongVt::decl(void)$/;"	f	class:ClassLongVt
+decl	NewModules.cpp	/^void ClassMeltRunoff_Kstorage::decl(void)$/;"	f	class:ClassMeltRunoff_Kstorage
+decl	NewModules.cpp	/^void ClassMeltRunoff_Lag::decl(void)$/;"	f	class:ClassMeltRunoff_Lag
+decl	NewModules.cpp	/^void ClassMod_Exec::decl(void)$/;"	f	class:ClassMod_Exec
+decl	NewModules.cpp	/^void ClassNOP::decl(void)$/;"	f	class:ClassNOP
+decl	NewModules.cpp	/^void ClassNO_pbsm::decl(void)$/;"	f	class:ClassNO_pbsm
+decl	NewModules.cpp	/^void ClassNeedle::decl(void)$/;"	f	class:ClassNeedle
+decl	NewModules.cpp	/^void ClassNetroute::decl(void)$/;"	f	class:ClassNetroute
+decl	NewModules.cpp	/^void ClassNetroute_D::decl(void)$/;"	f	class:ClassNetroute_D
+decl	NewModules.cpp	/^void ClassNetroute_M::decl(void)$/;"	f	class:ClassNetroute_M
+decl	NewModules.cpp	/^void ClassNetroute_M_D::decl(void)$/;"	f	class:ClassNetroute_M_D
+decl	NewModules.cpp	/^void ClassObstoPar::decl(void)$/;"	f	class:ClassObstoPar
+decl	NewModules.cpp	/^void ClassPSPnew::decl(void)$/;"	f	class:ClassPSPnew
+decl	NewModules.cpp	/^void ClassPrairieInfil::decl(void)$/;"	f	class:ClassPrairieInfil
+decl	NewModules.cpp	/^void ClassREWroute2::decl(void)$/;"	f	class:ClassREWroute2
+decl	NewModules.cpp	/^void ClassREWroute::decl(void)$/;"	f	class:ClassREWroute
+decl	NewModules.cpp	/^void ClassSWEslope::decl(void)$/;"	f	class:ClassSWEslope
+decl	NewModules.cpp	/^void ClassSetSoil::decl(void)$/;"	f	class:ClassSetSoil
+decl	NewModules.cpp	/^void ClassShutWall::decl(void)$/;"	f	class:ClassShutWall
+decl	NewModules.cpp	/^void ClassShutWallD::decl(void)$/;"	f	class:ClassShutWallD
+decl	NewModules.cpp	/^void ClassSimpleRichard::decl(void)$/;"	f	class:ClassSimpleRichard
+decl	NewModules.cpp	/^void ClassSlope_Qsi::decl(void)$/;"	f	class:ClassSlope_Qsi
+decl	NewModules.cpp	/^void ClassSnobalCRHM::decl(void)$/;"	f	class:ClassSnobalCRHM
+decl	NewModules.cpp	/^void ClassSnobalX::decl(void)$/;"	f	class:ClassSnobalX
+decl	NewModules.cpp	/^void ClassSoil::decl(void)$/;"	f	class:ClassSoil
+decl	NewModules.cpp	/^void ClassSoilDS::decl(void)$/;"	f	class:ClassSoilDS
+decl	NewModules.cpp	/^void ClassSoilPrairie::decl(void)$/;"	f	class:ClassSoilPrairie
+decl	NewModules.cpp	/^void ClassSoilX::decl(void)$/;"	f	class:ClassSoilX
+decl	NewModules.cpp	/^void ClassTs::decl(void)$/;"	f	class:ClassTs
+decl	NewModules.cpp	/^void ClassVolumetric::decl(void)$/;"	f	class:ClassVolumetric
+decl	NewModules.cpp	/^void ClassWQ_Netroute_M_D::decl(void)$/;"	f	class:ClassWQ_Netroute_M_D
+decl	NewModules.cpp	/^void ClassXG::decl(void)$/;"	f	class:ClassXG
+decl	NewModules.cpp	/^void ClassXGAyers::decl(void)$/;"	f	class:ClassXGAyers
+decl	NewModules.cpp	/^void Class_z_s_rho::decl(void)$/;"	f	class:Class_z_s_rho
+decl	NewModules.cpp	/^void Classalbedo::decl(void)$/;"	f	class:Classalbedo
+decl	NewModules.cpp	/^void ClassalbedoBaker::decl(void)$/;"	f	class:ClassalbedoBaker
+decl	NewModules.cpp	/^void ClassalbedoRichard::decl(void)$/;"	f	class:ClassalbedoRichard
+decl	NewModules.cpp	/^void ClassalbedoWinstral::decl(void)$/;"	f	class:ClassalbedoWinstral
+decl	NewModules.cpp	/^void Classalbedoobs2::decl(void)$/;"	f	class:Classalbedoobs2
+decl	NewModules.cpp	/^void Classalbedoobs::decl(void)$/;"	f	class:Classalbedoobs
+decl	NewModules.cpp	/^void Classalbedoparam::decl(void)$/;"	f	class:Classalbedoparam
+decl	NewModules.cpp	/^void Classbasin::decl(void)$/;"	f	class:Classbasin
+decl	NewModules.cpp	/^void Classbrushintcp::decl(void)$/;"	f	class:Classbrushintcp
+decl	NewModules.cpp	/^void Classcalcsun::decl(void)$/;"	f	class:Classcalcsun
+decl	NewModules.cpp	/^void Classcontribution::decl(void)$/;"	f	class:Classcontribution
+decl	NewModules.cpp	/^void Classcrack::decl(void)$/;"	f	class:Classcrack
+decl	NewModules.cpp	/^void Classebsm::decl(void)$/;"	f	class:Classebsm
+decl	NewModules.cpp	/^void Classevap::decl(void)$/;"	f	class:Classevap
+decl	NewModules.cpp	/^void ClassevapD::decl(void)$/;"	f	class:ClassevapD
+decl	NewModules.cpp	/^void ClassevapD_Resist::decl(void)$/;"	f	class:ClassevapD_Resist
+decl	NewModules.cpp	/^void ClassevapX::decl(void)$/;"	f	class:ClassevapX
+decl	NewModules.cpp	/^void Classevap_Resist::decl(void)$/;"	f	class:Classevap_Resist
+decl	NewModules.cpp	/^void Classfrostdepth::decl(void)$/;"	f	class:Classfrostdepth
+decl	NewModules.cpp	/^void Classfrozen::decl(void)$/;"	f	class:Classfrozen
+decl	NewModules.cpp	/^void ClassfrozenAyers::decl(void)$/;"	f	class:ClassfrozenAyers
+decl	NewModules.cpp	/^void Classglacier::decl(void)$/;"	f	class:Classglacier
+decl	NewModules.cpp	/^void Classglobal::decl(void)$/;"	f	class:Classglobal
+decl	NewModules.cpp	/^void Classintcp::decl(void)$/;"	f	class:Classintcp
+decl	NewModules.cpp	/^void Classinterception::decl(void)$/;"	f	class:Classinterception
+decl	NewModules.cpp	/^void Classlake::decl(void)$/;"	f	class:Classlake
+decl	NewModules.cpp	/^void Classnetall::decl(void)$/;"	f	class:Classnetall
+decl	NewModules.cpp	/^void Classobs::decl(void)$/;"	f	class:Classobs
+decl	NewModules.cpp	/^void Classpbsm::decl(void)$/;"	f	class:Classpbsm
+decl	NewModules.cpp	/^void ClasspbsmSnobal::decl(void)$/;"	f	class:ClasspbsmSnobal
+decl	NewModules.cpp	/^void Classpbsm_M::decl(void)$/;"	f	class:Classpbsm_M
+decl	NewModules.cpp	/^void Classqdrift::decl(void)$/;"	f	class:Classqdrift
+decl	NewModules.cpp	/^void Classqmelt::decl(void)$/;"	f	class:Classqmelt
+decl	NewModules.cpp	/^void Classquinton::decl(void)$/;"	f	class:Classquinton
+decl	NewModules.cpp	/^void Classsbsm::decl(void)$/;"	f	class:Classsbsm
+decl	NewModules.cpp	/^void Classshared::decl(void)$/;"	f	class:Classshared
+decl	NewModules.cpp	/^void Classtsurface::decl(void)$/;"	f	class:Classtsurface
+decl	NewModules.cpp	/^void Classwalmsley_wind::decl(void)$/;"	f	class:Classwalmsley_wind
+decl	NewModules.cpp	/^void Classwinter_meltflag::decl(void)$/;"	f	class:Classwinter_meltflag
+decldiag	ClassModule.cpp	/^void ClassModule::decldiag(string variable, CRHM::TDim dimen, string help, string units, float **value, float ***layvalue, const int dim, bool PointPlot, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+decldiag	ClassModule.cpp	/^void ClassModule::decldiag(string variable, CRHM::TDim dimen, string help, string units, long **value, long ***ilayvalue, const int dim, bool PointPlot, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+decldiagparam	ClassModule.cpp	/^TStringList* ClassModule::decldiagparam(string param, CRHM::TDim dimen, string Texts, string help, TStringList *StringsList, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+decldiagparam	ClassModule.cpp	/^void ClassModule::decldiagparam(string param, CRHM::TDim dimen, string valstr, string minstr, string maxstr, string help, string units, const float **value, const float ***layvalue, const int dim, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+decldiagparam	ClassModule.cpp	/^void ClassModule::decldiagparam(string param, CRHM::TDim dimen, string valstr, string minstr, string maxstr, string help, string units, const long **value, const long ***layvalue, const int dim, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declgetparam	ClassModule.cpp	/^long ClassModule::declgetparam(string source, string param, string units, const float **value, const float ***layvalue)$/;"	f	class:ClassModule
+declgetparam	ClassModule.cpp	/^void ClassModule::declgetparam(string source, string param, string units, const long **ivalue, const long ***ilayvalue)$/;"	f	class:ClassModule
+declgetvar	ClassModule.cpp	/^long ClassModule::declgetvar(string source, string name, string units, const float **value, const float ***layvalue)$/;"	f	class:ClassModule
+declgetvar	ClassModule.cpp	/^long ClassModule::declgetvar(string source, string name, string units, const long **value, const long ***layvalue)$/;"	f	class:ClassModule
+declgrpvar	ClassModule.cpp	/^int ClassModule::declgrpvar(string variable, string queryvar, string help, string units, float **value, float ***layvalue, bool PointPlot)$/;"	f	class:ClassModule
+decllocal	ClassModule.cpp	/^void ClassModule::decllocal(string variable, CRHM::TDim dimen, string help, string units, float **value, float ***layvalue, const int dim)$/;"	f	class:ClassModule
+decllocal	ClassModule.cpp	/^void ClassModule::decllocal(string variable, CRHM::TDim dimen, string help, string units, long **value, long ***layvalue, const int dim)$/;"	f	class:ClassModule
+decllocalparam	ClassModule.cpp	/^TStringList* ClassModule::decllocalparam(string param, CRHM::TDim dimen, string Texts, string help, TStringList *StringsList, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+decllocalparam	ClassModule.cpp	/^void ClassModule::decllocalparam(string param, CRHM::TDim dimen, string valstr, string minstr, string maxstr, string help, string units, const float **value, const float ***layvalue, const int dim, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+decllocalparam	ClassModule.cpp	/^void ClassModule::decllocalparam(string param, CRHM::TDim dimen, string valstr, string minstr, string maxstr, string help, string units, const long **value, const long ***layvalue, const int dim, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declobs	ClassModule.cpp	/^long ClassModule::declobs(string name, CRHM::TDim dimen, string help, string units, float **value)$/;"	f	class:ClassModule
+declobs	MacroUnit.cpp	/^long ClassMacro::declobs(string module, string name, CRHM::TDim dimen, string help, string units, float **value)$/;"	f	class:ClassMacro
+declobs1Click	report.cpp	/^void __fastcall TRprt::declobs1Click(TObject *Sender)$/;"	f	class:TRprt
+declobsfunc	ClassModule.cpp	/^long ClassModule::declobsfunc(string obs, string variable, float **value, CRHM::TFun typeFun, float ***layvalue, bool optional)$/;"	f	class:ClassModule
+declobsfunc	ClassModule.cpp	/^long ClassModule::declobsfunc(string obs, string variable, long **value, CRHM::TFun typeFun, bool optional)$/;"	f	class:ClassModule
+declpar1Click	report.cpp	/^void __fastcall TRprt::declpar1Click(TObject *Sender)$/;"	f	class:TRprt
+declparam	ClassModule.cpp	/^TStringList* ClassModule::declparam(string param, CRHM::TDim dimen, string Texts, string help, TStringList *StringsList, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declparam	ClassModule.cpp	/^void ClassModule::declparam(string param, CRHM::TDim dimen, string valstr, string minstr, string maxstr, string help, string units, const float **value, const float ***layvalue, const int dim, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declparam	ClassModule.cpp	/^void ClassModule::declparam(string param, CRHM::TDim dimen, string valstr, string minstr, string maxstr, string help, string units, const long **ivalue, const long ***ilayvalue, const int dim, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declputparam	ClassModule.cpp	/^long ClassModule::declputparam(string source, string param, string units, float **value, float ***layvalue)$/;"	f	class:ClassModule
+declputparam	ClassModule.cpp	/^long ClassModule::declputparam(string source, string param, string units, long **ivalue, long ***ilayvalue)$/;"	f	class:ClassModule
+declputvar	ClassModule.cpp	/^long ClassModule::declputvar(string source, string name, string units, float **value, float ***layvalue)$/;"	f	class:ClassModule
+declputvar	ClassModule.cpp	/^long ClassModule::declputvar(string source, string name, string units, long **value, long ***layvalue)$/;"	f	class:ClassModule
+declread	ClassCRHM.cpp	/^ClassVar *declread(string module, string name, long cnt, long offset, ClassData * FileData, string Comment)$/;"	f
+declreadobs	ClassModule.cpp	/^long ClassModule::declreadobs(string variable, CRHM::TDim dimen, string help, string units, const float **value, long HRU_index, bool optional, const float ***layvalue)$/;"	f	class:ClassModule
+declreadobs	ClassModule.cpp	/^long ClassModule::declreadobs(string variable, CRHM::TDim dimen, string help, string units, const long **value, long HRU_index, bool optional, const long ***layvalue)$/;"	f	class:ClassModule
+declstat1Click	report.cpp	/^void __fastcall TRprt::declstat1Click(TObject *Sender)$/;"	f	class:TRprt
+declstatdiag	ClassModule.cpp	/^void ClassModule::declstatdiag(string variable, CRHM::TDim dimen, string help, string units, float **value, float ***layvalue, const int dim, bool PointPlot, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declstatdiag	ClassModule.cpp	/^void ClassModule::declstatdiag(string variable, CRHM::TDim dimen, string help, string units, long **value, long ***ilayvalue, const int dim, bool PointPlot, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declstatvar	ClassModule.cpp	/^void ClassModule::declstatvar(string variable, CRHM::TDim dimen, string help, string units, float **value, float ***layvalue, const int dim, bool PointPlot, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declstatvar	ClassModule.cpp	/^void ClassModule::declstatvar(string variable, CRHM::TDim dimen, string help, string units, long **value, long ***ilayvalue, const int dim, bool PointPlot, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declvar	ClassModule.cpp	/^void ClassModule::declvar(string variable, CRHM::TDim dimen, string help, string units, float **value, float ***layvalue, const int dim, bool PointPlot, bool StatVar, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declvar	ClassModule.cpp	/^void ClassModule::declvar(string variable, CRHM::TDim dimen, string help, string units, long **ivalue, long ***ilayvalue, const int dim, bool PointPlot, bool StatVar, CRHM::TVISIBLE Local)$/;"	f	class:ClassModule
+declvar1Click	report.cpp	/^void __fastcall TRprt::declvar1Click(TObject *Sender)$/;"	f	class:TRprt
+delta	NewModules.cpp	/^double ClassCRHMCanopy::delta(float t) $/;"	f	class:ClassCRHMCanopy
+delta	NewModules.cpp	/^double ClassCRHMCanopyClearing::delta(float t) $/;"	f	class:ClassCRHMCanopyClearing
+delta	NewModules.cpp	/^double ClassCRHMCanopyClearingGap::delta(float t) $/;"	f	class:ClassCRHMCanopyClearingGap
+delta	NewModules.cpp	/^double ClassShutWall::delta(float t)  $/;"	f	class:ClassShutWall
+delta	NewModules.cpp	/^double ClassShutWallD::delta(float t)  $/;"	f	class:ClassShutWallD
+delta	NewModules.cpp	/^double Classevap::delta(float t) $/;"	f	class:Classevap
+delta	NewModules.cpp	/^double ClassevapD::delta(float t) $/;"	f	class:ClassevapD
+delta	NewModules.cpp	/^double ClassevapD_Resist::delta(float t) $/;"	f	class:ClassevapD_Resist
+delta	NewModules.cpp	/^double ClassevapX::delta(float t) $/;"	f	class:ClassevapX
+delta	NewModules.cpp	/^double Classevap_Resist::delta(float t) $/;"	f	class:Classevap_Resist
+denitrification_water	Hype_lake.cpp	/^void ClassWQ_Lake::denitrification_water(const long laketype, const float area, const float denpar)$/;"	f	class:ClassWQ_Lake
+denitrification_water	Hype_river.cpp	/^void ClassWQ_River::denitrification_water(const long watertype, const float area, const float denpar)$/;"	f	class:ClassWQ_River
+dimens	report.cpp	/^char dimens[][6] = {"BASIN", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE", "TEN", "ELEVEN", "TWELVE", "NHRU", "NOBS", "NLAY", "NDEF", "NFREQ", "NREB", "NDEFN", "NDEFNZ"};$/;"	v
+doFunc	ClassCRHM.cpp	/^void ClassCtoK::doFunc(long Obs, long Line)$/;"	f	class:ClassCtoK
+doFunc	ClassCRHM.cpp	/^void ClassForce::doFunc(long Obs, long Line)$/;"	f	class:ClassForce
+doFunc	ClassCRHM.cpp	/^void ClassFtoC::doFunc(long Obs, long Line)$/;"	f	class:ClassFtoC
+doFunc	ClassCRHM.cpp	/^void ClassKtoC::doFunc(long Obs, long Line)$/;"	f	class:ClassKtoC
+doFunc	ClassCRHM.cpp	/^void ClassMissing0::doFunc(long Obs, long Line)$/;"	f	class:ClassMissing0
+doFunc	ClassCRHM.cpp	/^void ClassMissing::doFunc(long Obs, long Line)$/;"	f	class:ClassMissing
+doFunc	ClassCRHM.cpp	/^void ClassMissingC::doFunc(long Obs, long Line)$/;"	f	class:ClassMissingC
+doFunc	ClassCRHM.cpp	/^void ClassMissingFlag::doFunc(long Obs, long Line)$/;"	f	class:ClassMissingFlag
+doFunc	ClassCRHM.cpp	/^void ClassMissingFlagAfter::doFunc(long Obs, long Line)$/;"	f	class:ClassMissingFlagAfter
+doFunc	ClassCRHM.cpp	/^void ClassMissingInter::doFunc(long Obs, long Line)$/;"	f	class:ClassMissingInter
+doFunc	ClassCRHM.cpp	/^void ClassMissingrepl::doFunc(long Obs, long Line)$/;"	f	class:ClassMissingrepl
+doFunc	ClassCRHM.cpp	/^void ClassRH_WtoI::doFunc(long Obs, long Line)$/;"	f	class:ClassRH_WtoI
+doFunc	ClassCRHM.cpp	/^void ClassReplace::doFunc(long Obs, long Line)$/;"	f	class:ClassReplace
+doFunc	ClassCRHM.cpp	/^void ClassSim::doFunc(long Obs, long Line)$/;"	f	class:ClassSim
+doFunc	ClassCRHM.cpp	/^void ClassSmear::doFunc(long Obs, long Line)$/;"	f	class:ClassSmear
+doFunc	ClassCRHM.cpp	/^void Classabs::doFunc(long Obs, long Line)$/;"	f	class:Classabs
+doFunc	ClassCRHM.cpp	/^void Classadd::doFunc(long Obs, long Line)$/;"	f	class:Classadd
+doFunc	ClassCRHM.cpp	/^void ClassaddV::doFunc(long Obs, long Line)$/;"	f	class:ClassaddV
+doFunc	ClassCRHM.cpp	/^void Classconst::doFunc(long Obs, long Line)$/;"	f	class:Classconst
+doFunc	ClassCRHM.cpp	/^void Classcos::doFunc(long Obs, long Line)$/;"	f	class:Classcos
+doFunc	ClassCRHM.cpp	/^void Classdiv::doFunc(long Obs, long Line)$/;"	f	class:Classdiv
+doFunc	ClassCRHM.cpp	/^void ClassdivV::doFunc(long Obs, long Line)$/;"	f	class:ClassdivV
+doFunc	ClassCRHM.cpp	/^void Classea::doFunc(long Obs, long Line)$/;"	f	class:Classea
+doFunc	ClassCRHM.cpp	/^void Classexp::doFunc(long Obs, long Line)$/;"	f	class:Classexp
+doFunc	ClassCRHM.cpp	/^void Classexpv::doFunc(long Obs, long Line)$/;"	f	class:Classexpv
+doFunc	ClassCRHM.cpp	/^void Classjulian::doFunc(long Obs, long Line)$/;"	f	class:Classjulian
+doFunc	ClassCRHM.cpp	/^void Classlog::doFunc(long Obs, long Line)$/;"	f	class:Classlog
+doFunc	ClassCRHM.cpp	/^void Classlogv::doFunc(long Obs, long Line)$/;"	f	class:Classlogv
+doFunc	ClassCRHM.cpp	/^void Classmul::doFunc(long Obs, long Line)$/;"	f	class:Classmul
+doFunc	ClassCRHM.cpp	/^void ClassmulV::doFunc(long Obs, long Line)$/;"	f	class:ClassmulV
+doFunc	ClassCRHM.cpp	/^void Classpoly::doFunc(long Obs, long Line)$/;"	f	class:Classpoly
+doFunc	ClassCRHM.cpp	/^void Classpolyv::doFunc(long Obs, long Line)$/;"	f	class:Classpolyv
+doFunc	ClassCRHM.cpp	/^void Classpow::doFunc(long Obs, long Line)$/;"	f	class:Classpow
+doFunc	ClassCRHM.cpp	/^void Classpowv::doFunc(long Obs, long Line)$/;"	f	class:Classpowv
+doFunc	ClassCRHM.cpp	/^void Classpulse::doFunc(long Obs, long Line)$/;"	f	class:Classpulse
+doFunc	ClassCRHM.cpp	/^void Classramp::doFunc(long Obs, long Line)$/;"	f	class:Classramp
+doFunc	ClassCRHM.cpp	/^void Classrandom::doFunc(long Obs, long Line)$/;"	f	class:Classrandom
+doFunc	ClassCRHM.cpp	/^void Classrefwind::doFunc(long Obs, long Line)$/;"	f	class:Classrefwind
+doFunc	ClassCRHM.cpp	/^void Classrh::doFunc(long Obs, long Line)$/;"	f	class:Classrh
+doFunc	ClassCRHM.cpp	/^void Classsin::doFunc(long Obs, long Line)$/;"	f	class:Classsin
+doFunc	ClassCRHM.cpp	/^void Classsquare::doFunc(long Obs, long Line)$/;"	f	class:Classsquare
+doFunc	ClassCRHM.cpp	/^void Classsub::doFunc(long Obs, long Line)$/;"	f	class:Classsub
+doFunc	ClassCRHM.cpp	/^void ClasssubV::doFunc(long Obs, long Line)$/;"	f	class:ClasssubV
+doFunc	ClassCRHM.cpp	/^void Classtime::doFunc(long Obs, long Line)$/;"	f	class:Classtime
+doFunctions	ClassCRHM.cpp	/^void Classfilter::doFunctions(long Line)$/;"	f	class:Classfilter
+do_data_tstep	NewModules.cpp	/^void ClassSnobalBase::do_data_tstep(void)$/;"	f	class:ClassSnobalBase
+do_ea_day	ClassCRHM.cpp	/^void ClassVar::do_ea_day(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_p	ClassCRHM.cpp	/^void ClassVar::do_p(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_p_Clim	ClassCRHM.cpp	/^void ClassVar::do_p_Clim(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_ppt	ClassCRHM.cpp	/^void ClassVar::do_ppt(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_ppt_Clim	ClassCRHM.cpp	/^void ClassVar::do_ppt_Clim(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_rh_day	ClassCRHM.cpp	/^void ClassVar::do_rh_day(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_rh_day_Clim	ClassCRHM.cpp	/^void ClassVar::do_rh_day_Clim(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_t	ClassCRHM.cpp	/^void ClassVar::do_t(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_t_Clim	ClassCRHM.cpp	/^void ClassVar::do_t_Clim(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_t_day	ClassCRHM.cpp	/^void ClassVar::do_t_day(ClassModule *thisModule)  $/;"	f	class:ClassVar
+do_t_day_Clim	ClassCRHM.cpp	/^void ClassVar::do_t_day_Clim(ClassModule *thisModule)  $/;"	f	class:ClassVar
+efcon	NewModules.cpp	/^float ClassSnobalBase::efcon(float	k,float	t,float	p)$/;"	f	class:ClassSnobalBase
+error	ClassCRHM.cpp	/^void Classfilter::error(String Mess)$/;"	f	class:Classfilter
+estar	ClassCRHM.cpp	/^double estar(float t) \/* Saturation vapour pressure *\/$/;"	f
+estar	Common.cpp	/^double estar(float t) \/* Saturation vapour pressure kPa*\/$/;"	f
+eval_exp	ClassModule.cpp	/^void Myparser::eval_exp(ClassPar *Par)$/;"	f	class:Myparser
+eval_exp2	ClassModule.cpp	/^void Myparser::eval_exp2(float &result)$/;"	f	class:Myparser
+eval_exp3	ClassModule.cpp	/^void Myparser::eval_exp3(float &result)$/;"	f	class:Myparser
+eval_exp4	ClassModule.cpp	/^void Myparser::eval_exp4(float &result)$/;"	f	class:Myparser
+eval_exp5	ClassModule.cpp	/^void Myparser::eval_exp5(float &result)$/;"	f	class:Myparser
+eval_exp6	ClassModule.cpp	/^void Myparser::eval_exp6(float &result)$/;"	f	class:Myparser
+execbase	CRHM_parse.cpp	/^execbase::execbase(const execbase & Cl) : eval(Cl.eval), oper(Cl.oper)$/;"	f	class:execbase
+execute	ClassCRHM.cpp	/^void Classmacro::execute(long Line)$/;"	f	class:Classmacro
+exponential_moisturefactor	Hype_routines.cpp	/^float ClassWQ_Hype::exponential_moisturefactor(const float sm, const float pw, const float limpar, const float exp)$/;"	f	class:ClassWQ_Hype
+extract_units	ClassCRHM.cpp	/^string extract_units(string& Comment)$/;"	f
+fdaily	NewModules.cpp	/^double Classevap::fdaily(float u, float Ht)  $/;"	f	class:Classevap
+fdaily	NewModules.cpp	/^double ClassevapD::fdaily(float u, float Ht)  $/;"	f	class:ClassevapD
+fdaily	NewModules.cpp	/^double ClassevapX::fdaily(float u, float Ht)  $/;"	f	class:ClassevapX
+filtPbuf	Hype_routines.cpp	/^const float filtPbuf  = 1.0; $/;"	v
+filtPinner	Hype_routines.cpp	/^const float filtPinner  = 1.0; $/;"	v
+filtPother	Hype_routines.cpp	/^const float filtPother  = 1.0; $/;"	v
+find_freeze_D	NewModules.cpp	/^void ClassXG::find_freeze_D(float df)   $/;"	f	class:ClassXG
+find_thaw_D	NewModules.cpp	/^void ClassXG::find_thaw_D(float dt)   $/;"	f	class:ClassXG
+findstatvar	report.cpp	/^long __fastcall TRprt::findstatvar(TObject *Sender, String who, String what, bool &Self)$/;"	f	class:TRprt
+findvar	report.cpp	/^long __fastcall TRprt::findvar(TObject *Sender, String who, String what, bool &Self)$/;"	f	class:TRprt
+finish	Hype_CRHM.cpp	/^void ClassWQ_Netroute::finish(bool good)$/;"	f	class:ClassWQ_Netroute
+finish	Hype_CRHM.cpp	/^void ClassWQ_Soil::finish(bool good)$/;"	f	class:ClassWQ_Soil
+finish	Hype_CRHM.cpp	/^void ClassWQ_ion::finish(bool good)$/;"	f	class:ClassWQ_ion
+finish	Hype_CRHM.cpp	/^void ClassWQ_pbsm::finish(bool good)$/;"	f	class:ClassWQ_pbsm
+finish	Hype_lake.cpp	/^void ClassWQ_Lake::finish(bool good)$/;"	f	class:ClassWQ_Lake
+finish	Hype_river.cpp	/^void ClassWQ_REWroute::finish(bool good)$/;"	f	class:ClassWQ_REWroute
+finish	Hype_river.cpp	/^void ClassWQ_River::finish(bool good)$/;"	f	class:ClassWQ_River
+finish	Hype_routines.cpp	/^void ClassWQ_Hype::finish(bool good)$/;"	f	class:ClassWQ_Hype
+finish	MacroUnit.cpp	/^void ClassMacro::finish(bool good)   $/;"	f	class:ClassMacro
+finish	NewModules.cpp	/^void Class3D_param::finish(bool good)$/;"	f	class:Class3D_param
+finish	NewModules.cpp	/^void ClassAyers::finish(bool good)$/;"	f	class:ClassAyers
+finish	NewModules.cpp	/^void ClassCRHMCanopy::finish(bool good)$/;"	f	class:ClassCRHMCanopy
+finish	NewModules.cpp	/^void ClassCRHMCanopyClearing::finish(bool good)$/;"	f	class:ClassCRHMCanopyClearing
+finish	NewModules.cpp	/^void ClassCRHMCanopyClearingGap::finish(bool good)$/;"	f	class:ClassCRHMCanopyClearingGap
+finish	NewModules.cpp	/^void ClassGreenAmpt::finish(bool good)$/;"	f	class:ClassGreenAmpt
+finish	NewModules.cpp	/^void ClassGreencrack::finish(bool good)$/;"	f	class:ClassGreencrack
+finish	NewModules.cpp	/^void ClassICEflow::finish(bool good)$/;"	f	class:ClassICEflow
+finish	NewModules.cpp	/^void ClassK_Estimate::finish(bool good)$/;"	f	class:ClassK_Estimate
+finish	NewModules.cpp	/^void ClassKevin::finish(bool good)$/;"	f	class:ClassKevin
+finish	NewModules.cpp	/^void ClassMod_Exec::finish(bool good)$/;"	f	class:ClassMod_Exec
+finish	NewModules.cpp	/^void ClassNOP::finish(bool good)$/;"	f	class:ClassNOP
+finish	NewModules.cpp	/^void ClassNO_pbsm::finish(bool good)$/;"	f	class:ClassNO_pbsm
+finish	NewModules.cpp	/^void ClassNetroute::finish(bool good)$/;"	f	class:ClassNetroute
+finish	NewModules.cpp	/^void ClassNetroute_D::finish(bool good)$/;"	f	class:ClassNetroute_D
+finish	NewModules.cpp	/^void ClassNetroute_M::finish(bool good)$/;"	f	class:ClassNetroute_M
+finish	NewModules.cpp	/^void ClassNetroute_M_D::finish(bool good)$/;"	f	class:ClassNetroute_M_D
+finish	NewModules.cpp	/^void ClassObstoPar::finish(bool good)$/;"	f	class:ClassObstoPar
+finish	NewModules.cpp	/^void ClassPSPnew::finish(bool good)$/;"	f	class:ClassPSPnew
+finish	NewModules.cpp	/^void ClassPrairieInfil::finish(bool good)$/;"	f	class:ClassPrairieInfil
+finish	NewModules.cpp	/^void ClassREWroute2::finish(bool good)$/;"	f	class:ClassREWroute2
+finish	NewModules.cpp	/^void ClassREWroute::finish(bool good)$/;"	f	class:ClassREWroute
+finish	NewModules.cpp	/^void ClassSWEslope::finish(bool good)$/;"	f	class:ClassSWEslope
+finish	NewModules.cpp	/^void ClassShutWall::finish(bool good)$/;"	f	class:ClassShutWall
+finish	NewModules.cpp	/^void ClassShutWallD::finish(bool good)$/;"	f	class:ClassShutWallD
+finish	NewModules.cpp	/^void ClassSimpleRichard::finish(bool good)$/;"	f	class:ClassSimpleRichard
+finish	NewModules.cpp	/^void ClassSnobalBase::finish(bool good)   $/;"	f	class:ClassSnobalBase
+finish	NewModules.cpp	/^void ClassSnobalCRHM::finish(bool good)   $/;"	f	class:ClassSnobalCRHM
+finish	NewModules.cpp	/^void ClassSnobalX::finish(bool good)   $/;"	f	class:ClassSnobalX
+finish	NewModules.cpp	/^void ClassSoil::finish(bool good)$/;"	f	class:ClassSoil
+finish	NewModules.cpp	/^void ClassSoilDS::finish(bool good)$/;"	f	class:ClassSoilDS
+finish	NewModules.cpp	/^void ClassSoilPrairie::finish(bool good)$/;"	f	class:ClassSoilPrairie
+finish	NewModules.cpp	/^void ClassSoilX::finish(bool good)$/;"	f	class:ClassSoilX
+finish	NewModules.cpp	/^void ClassWQ_Netroute_M_D::finish(bool good)$/;"	f	class:ClassWQ_Netroute_M_D
+finish	NewModules.cpp	/^void ClassXG::finish(bool good)$/;"	f	class:ClassXG
+finish	NewModules.cpp	/^void ClassXGAyers::finish(bool good)$/;"	f	class:ClassXGAyers
+finish	NewModules.cpp	/^void ClassalbedoWinstral::finish(bool good)$/;"	f	class:ClassalbedoWinstral
+finish	NewModules.cpp	/^void Classbrushintcp::finish(bool good)$/;"	f	class:Classbrushintcp
+finish	NewModules.cpp	/^void Classcontribution::finish(bool good)$/;"	f	class:Classcontribution
+finish	NewModules.cpp	/^void Classcrack::finish(bool good)$/;"	f	class:Classcrack
+finish	NewModules.cpp	/^void Classebsm::finish(bool good)$/;"	f	class:Classebsm
+finish	NewModules.cpp	/^void Classevap::finish(bool good)$/;"	f	class:Classevap
+finish	NewModules.cpp	/^void ClassevapD::finish(bool good)$/;"	f	class:ClassevapD
+finish	NewModules.cpp	/^void ClassevapD_Resist::finish(bool good)$/;"	f	class:ClassevapD_Resist
+finish	NewModules.cpp	/^void ClassevapX::finish(bool good)$/;"	f	class:ClassevapX
+finish	NewModules.cpp	/^void Classevap_Resist::finish(bool good)$/;"	f	class:Classevap_Resist
+finish	NewModules.cpp	/^void Classfrostdepth::finish(bool good)$/;"	f	class:Classfrostdepth
+finish	NewModules.cpp	/^void Classfrozen::finish(bool good)$/;"	f	class:Classfrozen
+finish	NewModules.cpp	/^void ClassfrozenAyers::finish(bool good)$/;"	f	class:ClassfrozenAyers
+finish	NewModules.cpp	/^void Classglacier::finish(bool good)$/;"	f	class:Classglacier
+finish	NewModules.cpp	/^void Classintcp::finish(bool good)$/;"	f	class:Classintcp
+finish	NewModules.cpp	/^void Classinterception::finish(bool good)$/;"	f	class:Classinterception
+finish	NewModules.cpp	/^void Classlake::finish(bool good)$/;"	f	class:Classlake
+finish	NewModules.cpp	/^void Classobs::finish(bool good)$/;"	f	class:Classobs
+finish	NewModules.cpp	/^void Classpbsm::finish(bool good)$/;"	f	class:Classpbsm
+finish	NewModules.cpp	/^void ClasspbsmSnobal::finish(bool good)$/;"	f	class:ClasspbsmSnobal
+finish	NewModules.cpp	/^void Classpbsm_M::finish(bool good)$/;"	f	class:Classpbsm_M
+finish	NewModules.cpp	/^void Classqdrift::finish(bool good)$/;"	f	class:Classqdrift
+finish	NewModules.cpp	/^void Classquinton::finish(bool good)$/;"	f	class:Classquinton
+finish	NewModules.cpp	/^void Classsbsm::finish(bool good)$/;"	f	class:Classsbsm
+fixup	ClassCRHM.cpp	/^void Classfilter::fixup(void)   $/;"	f	class:Classfilter
+fixup	ClassCRHM.cpp	/^void Classmacro::fixup(void)$/;"	f	class:Classmacro
+freeze	NewModules.cpp	/^void ClassXG::freeze(void)   $/;"	f	class:ClassXG
+freundlich	Hype_routines.cpp	/^void  ClassWQ_Hype::freundlich(long lin, float *poolPP, float *SRP_Conc, const float vol, const float layerthick, const float Kfr, const float Nfr, const float Kadsdes)$/;"	f	class:ClassWQ_Hype
+g_snow	NewModules.cpp	/^float ClassSnobalBase::g_snow(float	rho1,float	rho2,float	ts1,float	ts2,float	ds1,float	ds2,float	pa)$/;"	f	class:ClassSnobalBase
+g_soil	NewModules.cpp	/^float ClassSnobalBase::g_soil(float	rho,float	tsno,float	tg,float	ds,float	dg,float	pa)$/;"	f	class:ClassSnobalBase
+gamma	NewModules.cpp	/^double ClassCRHMCanopy::gamma(float Pa, float t) $/;"	f	class:ClassCRHMCanopy
+gamma	NewModules.cpp	/^double ClassCRHMCanopyClearing::gamma(float Pa, float t) $/;"	f	class:ClassCRHMCanopyClearing
+gamma	NewModules.cpp	/^double ClassCRHMCanopyClearingGap::gamma(float Pa, float t) $/;"	f	class:ClassCRHMCanopyClearingGap
+gamma	NewModules.cpp	/^double ClassShutWall::gamma(float Pa, float t) $/;"	f	class:ClassShutWall
+gamma	NewModules.cpp	/^double ClassShutWallD::gamma(float Pa, float t) $/;"	f	class:ClassShutWallD
+gamma	NewModules.cpp	/^double Classevap::gamma(float Pa, float t) $/;"	f	class:Classevap
+gamma	NewModules.cpp	/^double ClassevapD::gamma(float Pa, float t) $/;"	f	class:ClassevapD
+gamma	NewModules.cpp	/^double ClassevapD_Resist::gamma(float Pa, float t) $/;"	f	class:ClassevapD_Resist
+gamma	NewModules.cpp	/^double ClassevapX::gamma(float Pa, float t) $/;"	f	class:ClassevapX
+gamma	NewModules.cpp	/^double Classevap_Resist::gamma(float Pa, float t) $/;"	f	class:Classevap_Resist
+get	CRHM_parse.cpp	/^float VarCHRM::get(void)$/;"	f	class:VarCHRM
+getTDim	MacroUnit.cpp	/^CRHM::TDim DefCRHM::getTDim(String D)$/;"	f	class:DefCRHM
+getTFunc	MacroUnit.cpp	/^CRHM::TFun DefCRHM::getTFunc(String D)$/;"	f	class:DefCRHM
+get_ftc_lay	NewModules.cpp	/^float ClassXG::get_ftc_lay(long lay)  $/;"	f	class:ClassXG
+get_token	ClassModule.cpp	/^void Myparser::get_token()$/;"	f	class:Myparser
+get_ttc_lay	NewModules.cpp	/^float ClassXG::get_ttc_lay(long lay)  $/;"	f	class:ClassXG
+getdim	ClassCRHM.cpp	/^long getdim(CRHM::TDim dimen)$/;"	f
+getdim	ClassModule.cpp	/^long ClassModule::getdim(CRHM::TDim dimen)$/;"	f	class:ClassModule
+getdimObs	ClassModule.cpp	/^long ClassModule::getdimObs(string variable)$/;"	f	class:ClassModule
+getstep	ClassCRHM.cpp	/^long getstep(void)$/;"	f
+getvar1Click	report.cpp	/^void __fastcall TRprt::getvar1Click(TObject *Sender)$/;"	f	class:TRprt
+global	CRHMmain.cpp	/^Global global;$/;"	v
+halfsatINsoil	Hype_routines.cpp	/^const float halfsatINsoil = 1.0;$/;"	v
+halfsatINwater	Hype_routines.cpp	/^const float halfsatINwater = 999; $/;"	v
+halfsatTPwater	Hype_routines.cpp	/^const float halfsatTPwater  = 0.05;    $/;"	v
+halfsatconcfactor	Hype_routines.cpp	/^float ClassWQ_Hype::halfsatconcfactor(const float conc, const float par)$/;"	f	class:ClassWQ_Hype
+heat_stor	NewModules.cpp	/^float ClassSnobalBase::heat_stor(float	cp,float	spm,float	tdif)$/;"	f	class:ClassSnobalBase
+hle1	NewModules.cpp	/^int ClassSnobalBase::hle1(float	press,	float	ta,	float	ts,	float	za,	float	ea,	float	es,	float	zq,	float	u,	float	zu,	float	z0,	float &CRHM_h,	float &CRHM_le,	float &CRHM_e)$/;"	f	class:ClassSnobalBase
+howmuch	NewModules.cpp	/^void ClassGreenAmpt::howmuch(float F0, float dt)$/;"	f	class:ClassGreenAmpt
+howmuch	NewModules.cpp	/^void ClassGreencrack::howmuch(float F0, float dt)   $/;"	f	class:ClassGreencrack
+hru_elev	GlobalDll.cpp	/^float  *Global::hru_elev; $/;"	m	class:Global	file:
+i_in	Hype_CRHM.cpp	/^const long i_in = 0; $/;"	v
+i_in	Hype_routines.cpp	/^const long i_in = 0; $/;"	v
+i_in	NewModules.cpp	/^const long i_in = 0; $/;"	v
+i_oc	Hype_CRHM.cpp	/^const long i_oc = 4; $/;"	v
+i_oc	Hype_routines.cpp	/^const long i_oc = 4; $/;"	v
+i_oc	NewModules.cpp	/^const long i_oc = 4; $/;"	v
+i_on	Hype_CRHM.cpp	/^const long i_on = 1; $/;"	v
+i_on	Hype_routines.cpp	/^const long i_on = 1; $/;"	v
+i_on	NewModules.cpp	/^const long i_on = 1; $/;"	v
+i_pp	Hype_CRHM.cpp	/^const long i_pp = 3; $/;"	v
+i_pp	Hype_routines.cpp	/^const long i_pp = 3; $/;"	v
+i_pp	NewModules.cpp	/^const long i_pp = 3; $/;"	v
+i_sp	Hype_CRHM.cpp	/^const long i_sp = 2; $/;"	v
+i_sp	Hype_routines.cpp	/^const long i_sp = 2; $/;"	v
+i_sp	NewModules.cpp	/^const long i_sp = 2; $/;"	v
+infil_index	NewModules.cpp	/^void infil_index(float Theta, float SWE, float & Index, float & Pot)$/;"	f
+infiltrate	NewModules.cpp	/^void ClassGreenAmpt::infiltrate(void)$/;"	f	class:ClassGreenAmpt
+infiltrate	NewModules.cpp	/^void ClassGreencrack::infiltrate(void)$/;"	f	class:ClassGreencrack
+init	Hype_CRHM.cpp	/^void ClassWQ_Netroute::init(void)$/;"	f	class:ClassWQ_Netroute
+init	Hype_CRHM.cpp	/^void ClassWQ_Soil::init(void)$/;"	f	class:ClassWQ_Soil
+init	Hype_CRHM.cpp	/^void ClassWQ_ion::init(void)$/;"	f	class:ClassWQ_ion
+init	Hype_CRHM.cpp	/^void ClassWQ_pbsm::init(void)$/;"	f	class:ClassWQ_pbsm
+init	Hype_lake.cpp	/^void ClassWQ_Lake::init(void)$/;"	f	class:ClassWQ_Lake
+init	Hype_river.cpp	/^void ClassWQ_REWroute::init(void)$/;"	f	class:ClassWQ_REWroute
+init	Hype_river.cpp	/^void ClassWQ_River::init(void)$/;"	f	class:ClassWQ_River
+init	Hype_routines.cpp	/^void ClassWQ_Hype::init(void)$/;"	f	class:ClassWQ_Hype
+init	MacroUnit.cpp	/^void ClassMacro::init(void)$/;"	f	class:ClassMacro
+init	NewModules.cpp	/^void Class3D_param::init(void)$/;"	f	class:Class3D_param
+init	NewModules.cpp	/^void ClassAnnan::init(void)$/;"	f	class:ClassAnnan
+init	NewModules.cpp	/^void ClassAyers::init(void)$/;"	f	class:ClassAyers
+init	NewModules.cpp	/^void ClassCRHMCanopy::init(void)$/;"	f	class:ClassCRHMCanopy
+init	NewModules.cpp	/^void ClassCRHMCanopyClearing::init(void)$/;"	f	class:ClassCRHMCanopyClearing
+init	NewModules.cpp	/^void ClassCRHMCanopyClearingGap::init(void)$/;"	f	class:ClassCRHMCanopyClearingGap
+init	NewModules.cpp	/^void ClassFlowInSnow::init(void)$/;"	f	class:ClassFlowInSnow
+init	NewModules.cpp	/^void ClassGreenAmpt::init(void)$/;"	f	class:ClassGreenAmpt
+init	NewModules.cpp	/^void ClassGreencrack::init(void)$/;"	f	class:ClassGreencrack
+init	NewModules.cpp	/^void ClassGrow_Crop::init(void)$/;"	f	class:ClassGrow_Crop
+init	NewModules.cpp	/^void ClassHMSA::init(void)$/;"	f	class:ClassHMSA
+init	NewModules.cpp	/^void ClassHeating::init(void)$/;"	f	class:ClassHeating
+init	NewModules.cpp	/^void ClassHtobs::init(void)$/;"	f	class:ClassHtobs
+init	NewModules.cpp	/^void ClassICEflow::init(void)$/;"	f	class:ClassICEflow
+init	NewModules.cpp	/^void ClassIceBulb::init(void)$/;"	f	class:ClassIceBulb
+init	NewModules.cpp	/^void ClassK_Estimate::init(void)$/;"	f	class:ClassK_Estimate
+init	NewModules.cpp	/^void ClassKevin::init(void)$/;"	f	class:ClassKevin
+init	NewModules.cpp	/^void ClassLongVt::init(void)$/;"	f	class:ClassLongVt
+init	NewModules.cpp	/^void ClassMeltRunoff_Kstorage::init(void)$/;"	f	class:ClassMeltRunoff_Kstorage
+init	NewModules.cpp	/^void ClassMeltRunoff_Lag::init(void)$/;"	f	class:ClassMeltRunoff_Lag
+init	NewModules.cpp	/^void ClassMod_Exec::init(void)$/;"	f	class:ClassMod_Exec
+init	NewModules.cpp	/^void ClassNOP::init(void)$/;"	f	class:ClassNOP
+init	NewModules.cpp	/^void ClassNO_pbsm::init(void)$/;"	f	class:ClassNO_pbsm
+init	NewModules.cpp	/^void ClassNeedle::init(void)$/;"	f	class:ClassNeedle
+init	NewModules.cpp	/^void ClassNetroute::init(void)$/;"	f	class:ClassNetroute
+init	NewModules.cpp	/^void ClassNetroute_D::init(void)$/;"	f	class:ClassNetroute_D
+init	NewModules.cpp	/^void ClassNetroute_M::init(void)$/;"	f	class:ClassNetroute_M
+init	NewModules.cpp	/^void ClassNetroute_M_D::init(void)$/;"	f	class:ClassNetroute_M_D
+init	NewModules.cpp	/^void ClassObstoPar::init(void)$/;"	f	class:ClassObstoPar
+init	NewModules.cpp	/^void ClassPSPnew::init(void)$/;"	f	class:ClassPSPnew
+init	NewModules.cpp	/^void ClassPrairieInfil::init(void)$/;"	f	class:ClassPrairieInfil
+init	NewModules.cpp	/^void ClassREWroute2::init(void)$/;"	f	class:ClassREWroute2
+init	NewModules.cpp	/^void ClassREWroute::init(void)$/;"	f	class:ClassREWroute
+init	NewModules.cpp	/^void ClassSWEslope::init(void)$/;"	f	class:ClassSWEslope
+init	NewModules.cpp	/^void ClassSetSoil::init(void)$/;"	f	class:ClassSetSoil
+init	NewModules.cpp	/^void ClassShutWall::init(void)$/;"	f	class:ClassShutWall
+init	NewModules.cpp	/^void ClassShutWallD::init(void)$/;"	f	class:ClassShutWallD
+init	NewModules.cpp	/^void ClassSimpleRichard::init(void)$/;"	f	class:ClassSimpleRichard
+init	NewModules.cpp	/^void ClassSlope_Qsi::init(void)$/;"	f	class:ClassSlope_Qsi
+init	NewModules.cpp	/^void ClassSnobalBase::init(void)$/;"	f	class:ClassSnobalBase
+init	NewModules.cpp	/^void ClassSnobalCRHM::init(void)$/;"	f	class:ClassSnobalCRHM
+init	NewModules.cpp	/^void ClassSnobalX::init(void)$/;"	f	class:ClassSnobalX
+init	NewModules.cpp	/^void ClassSoil::init(void)$/;"	f	class:ClassSoil
+init	NewModules.cpp	/^void ClassSoilDS::init(void)$/;"	f	class:ClassSoilDS
+init	NewModules.cpp	/^void ClassSoilPrairie::init(void)$/;"	f	class:ClassSoilPrairie
+init	NewModules.cpp	/^void ClassSoilX::init(void)$/;"	f	class:ClassSoilX
+init	NewModules.cpp	/^void ClassTs::init(void)$/;"	f	class:ClassTs
+init	NewModules.cpp	/^void ClassVolumetric::init(void)$/;"	f	class:ClassVolumetric
+init	NewModules.cpp	/^void ClassWQ_Netroute_M_D::init(void)$/;"	f	class:ClassWQ_Netroute_M_D
+init	NewModules.cpp	/^void ClassXG::init(void)$/;"	f	class:ClassXG
+init	NewModules.cpp	/^void ClassXGAyers::init(void)$/;"	f	class:ClassXGAyers
+init	NewModules.cpp	/^void Class_z_s_rho::init(void)$/;"	f	class:Class_z_s_rho
+init	NewModules.cpp	/^void Classalbedo::init(void)$/;"	f	class:Classalbedo
+init	NewModules.cpp	/^void ClassalbedoBaker::init(void)$/;"	f	class:ClassalbedoBaker
+init	NewModules.cpp	/^void ClassalbedoRichard::init(void)$/;"	f	class:ClassalbedoRichard
+init	NewModules.cpp	/^void ClassalbedoWinstral::init(void)$/;"	f	class:ClassalbedoWinstral
+init	NewModules.cpp	/^void Classalbedoobs2::init(void)$/;"	f	class:Classalbedoobs2
+init	NewModules.cpp	/^void Classalbedoobs::init(void)$/;"	f	class:Classalbedoobs
+init	NewModules.cpp	/^void Classalbedoparam::init(void)$/;"	f	class:Classalbedoparam
+init	NewModules.cpp	/^void Classbasin::init(void)$/;"	f	class:Classbasin
+init	NewModules.cpp	/^void Classbrushintcp::init(void)$/;"	f	class:Classbrushintcp
+init	NewModules.cpp	/^void Classcalcsun::init(void)$/;"	f	class:Classcalcsun
+init	NewModules.cpp	/^void Classcontribution::init(void)$/;"	f	class:Classcontribution
+init	NewModules.cpp	/^void Classcrack::init(void)$/;"	f	class:Classcrack
+init	NewModules.cpp	/^void Classebsm::init(void)$/;"	f	class:Classebsm
+init	NewModules.cpp	/^void Classevap::init(void)$/;"	f	class:Classevap
+init	NewModules.cpp	/^void ClassevapD::init(void)$/;"	f	class:ClassevapD
+init	NewModules.cpp	/^void ClassevapD_Resist::init(void)$/;"	f	class:ClassevapD_Resist
+init	NewModules.cpp	/^void ClassevapX::init(void)$/;"	f	class:ClassevapX
+init	NewModules.cpp	/^void Classevap_Resist::init(void)$/;"	f	class:Classevap_Resist
+init	NewModules.cpp	/^void Classfrostdepth::init(void)$/;"	f	class:Classfrostdepth
+init	NewModules.cpp	/^void Classfrozen::init(void)$/;"	f	class:Classfrozen
+init	NewModules.cpp	/^void ClassfrozenAyers::init(void)$/;"	f	class:ClassfrozenAyers
+init	NewModules.cpp	/^void Classglacier::init(void)$/;"	f	class:Classglacier
+init	NewModules.cpp	/^void Classglobal::init(void)$/;"	f	class:Classglobal
+init	NewModules.cpp	/^void Classintcp::init(void)$/;"	f	class:Classintcp
+init	NewModules.cpp	/^void Classinterception::init(void)$/;"	f	class:Classinterception
+init	NewModules.cpp	/^void Classlake::init(void)$/;"	f	class:Classlake
+init	NewModules.cpp	/^void Classnetall::init(void)$/;"	f	class:Classnetall
+init	NewModules.cpp	/^void Classobs::init(void)$/;"	f	class:Classobs
+init	NewModules.cpp	/^void Classpbsm::init(void)$/;"	f	class:Classpbsm
+init	NewModules.cpp	/^void ClasspbsmSnobal::init(void)$/;"	f	class:ClasspbsmSnobal
+init	NewModules.cpp	/^void Classpbsm_M::init(void)$/;"	f	class:Classpbsm_M
+init	NewModules.cpp	/^void Classqdrift::init(void)$/;"	f	class:Classqdrift
+init	NewModules.cpp	/^void Classqmelt::init(void)$/;"	f	class:Classqmelt
+init	NewModules.cpp	/^void Classquinton::init(void)$/;"	f	class:Classquinton
+init	NewModules.cpp	/^void Classsbsm::init(void)$/;"	f	class:Classsbsm
+init	NewModules.cpp	/^void Classshared::init(void)$/;"	f	class:Classshared
+init	NewModules.cpp	/^void Classtsurface::init(void)$/;"	f	class:Classtsurface
+init	NewModules.cpp	/^void Classwalmsley_wind::init(void)$/;"	f	class:Classwalmsley_wind
+init	NewModules.cpp	/^void Classwinter_meltflag::init(void)$/;"	f	class:Classwinter_meltflag
+init_snow	NewModules.cpp	/^void ClassSnobalBase::init_snow(void)$/;"	f	class:ClassSnobalBase
+initbase	ClassModule.cpp	/^void ClassModule::initbase(void)$/;"	f	class:ClassModule
+internal_lake_load	Hype_lake.cpp	/^void ClassWQ_Lake::internal_lake_load(const long laketype, const float area)$/;"	f	class:ClassWQ_Lake
+isGroup	AKAform.cpp	/^bool __fastcall TFormAKA::isGroup(string name)$/;"	f	class:TFormAKA
+isSame_decl	AKAform.cpp	/^bool __fastcall TFormAKA::isSame_decl(string name, string Newname)$/;"	f	class:TFormAKA
+isSimple	CRHMmain.cpp	/^bool __fastcall TMain::isSimple(string module)  $/;"	f	class:TMain
+isdelim	ClassModule.cpp	/^int Myparser::isdelim(char c)$/;"	f	class:Myparser
+julian	ClassCRHM.cpp	/^long julian(TDateTime DT)$/;"	f
+julian	ClassCRHM.cpp	/^long julian(char *when)$/;"	f
+julian_month	ClassCRHM.cpp	/^long julian_month(long Year, long julian)$/;"	f
+ka	NewModules.cpp	/^const float ka = 0.025; $/;"	v
+ki	NewModules.cpp	/^const float ki = 2.24;  $/;"	v
+klone	Hype_CRHM.cpp	/^ClassWQ_Netroute* ClassWQ_Netroute::klone(string name) const$/;"	f	class:ClassWQ_Netroute
+klone	Hype_CRHM.cpp	/^ClassWQ_Soil* ClassWQ_Soil::klone(string name) const$/;"	f	class:ClassWQ_Soil
+klone	Hype_CRHM.cpp	/^ClassWQ_ion* ClassWQ_ion::klone(string name) const$/;"	f	class:ClassWQ_ion
+klone	Hype_CRHM.cpp	/^ClassWQ_pbsm* ClassWQ_pbsm::klone(string name) const$/;"	f	class:ClassWQ_pbsm
+klone	Hype_lake.cpp	/^ClassWQ_Lake* ClassWQ_Lake::klone(string name) const$/;"	f	class:ClassWQ_Lake
+klone	Hype_river.cpp	/^ClassWQ_REWroute* ClassWQ_REWroute::klone(string name) const$/;"	f	class:ClassWQ_REWroute
+klone	Hype_river.cpp	/^ClassWQ_River* ClassWQ_River::klone(string name) const$/;"	f	class:ClassWQ_River
+klone	Hype_routines.cpp	/^ClassWQ_Hype* ClassWQ_Hype::klone(string name) const$/;"	f	class:ClassWQ_Hype
+klone	MacroUnit.cpp	/^ClassMacro* ClassMacro::klone(string name) const$/;"	f	class:ClassMacro
+klone	NewModules.cpp	/^Class3D_param* Class3D_param::klone(string name) const$/;"	f	class:Class3D_param
+klone	NewModules.cpp	/^ClassAnnan* ClassAnnan::klone(string name) const$/;"	f	class:ClassAnnan
+klone	NewModules.cpp	/^ClassAyers* ClassAyers::klone(string name) const$/;"	f	class:ClassAyers
+klone	NewModules.cpp	/^ClassCRHMCanopy* ClassCRHMCanopy::klone(string name) const$/;"	f	class:ClassCRHMCanopy
+klone	NewModules.cpp	/^ClassCRHMCanopyClearing* ClassCRHMCanopyClearing::klone(string name) const$/;"	f	class:ClassCRHMCanopyClearing
+klone	NewModules.cpp	/^ClassCRHMCanopyClearingGap* ClassCRHMCanopyClearingGap::klone(string name) const$/;"	f	class:ClassCRHMCanopyClearingGap
+klone	NewModules.cpp	/^ClassFlowInSnow* ClassFlowInSnow::klone(string name) const$/;"	f	class:ClassFlowInSnow
+klone	NewModules.cpp	/^ClassGreenAmpt* ClassGreenAmpt::klone(string name) const$/;"	f	class:ClassGreenAmpt
+klone	NewModules.cpp	/^ClassGreencrack* ClassGreencrack::klone(string name) const$/;"	f	class:ClassGreencrack
+klone	NewModules.cpp	/^ClassGrow_Crop* ClassGrow_Crop::klone(string name) const$/;"	f	class:ClassGrow_Crop
+klone	NewModules.cpp	/^ClassHMSA* ClassHMSA::klone(string name) const$/;"	f	class:ClassHMSA
+klone	NewModules.cpp	/^ClassHeating* ClassHeating::klone(string name) const$/;"	f	class:ClassHeating
+klone	NewModules.cpp	/^ClassHtobs* ClassHtobs::klone(string name) const$/;"	f	class:ClassHtobs
+klone	NewModules.cpp	/^ClassICEflow* ClassICEflow::klone(string name) const$/;"	f	class:ClassICEflow
+klone	NewModules.cpp	/^ClassIceBulb* ClassIceBulb::klone(string name) const$/;"	f	class:ClassIceBulb
+klone	NewModules.cpp	/^ClassK_Estimate* ClassK_Estimate::klone(string name) const$/;"	f	class:ClassK_Estimate
+klone	NewModules.cpp	/^ClassKevin* ClassKevin::klone(string name) const$/;"	f	class:ClassKevin
+klone	NewModules.cpp	/^ClassLongVt* ClassLongVt::klone(string name) const$/;"	f	class:ClassLongVt
+klone	NewModules.cpp	/^ClassMeltRunoff_Kstorage* ClassMeltRunoff_Kstorage::klone(string name) const$/;"	f	class:ClassMeltRunoff_Kstorage
+klone	NewModules.cpp	/^ClassMeltRunoff_Lag* ClassMeltRunoff_Lag::klone(string name) const$/;"	f	class:ClassMeltRunoff_Lag
+klone	NewModules.cpp	/^ClassMod_Exec* ClassMod_Exec::klone(string name) const$/;"	f	class:ClassMod_Exec
+klone	NewModules.cpp	/^ClassNOP* ClassNOP::klone(string name) const$/;"	f	class:ClassNOP
+klone	NewModules.cpp	/^ClassNO_pbsm* ClassNO_pbsm::klone(string name) const$/;"	f	class:ClassNO_pbsm
+klone	NewModules.cpp	/^ClassNeedle* ClassNeedle::klone(string name) const$/;"	f	class:ClassNeedle
+klone	NewModules.cpp	/^ClassNetroute* ClassNetroute::klone(string name) const$/;"	f	class:ClassNetroute
+klone	NewModules.cpp	/^ClassNetroute_D* ClassNetroute_D::klone(string name) const$/;"	f	class:ClassNetroute_D
+klone	NewModules.cpp	/^ClassNetroute_M* ClassNetroute_M::klone(string name) const$/;"	f	class:ClassNetroute_M
+klone	NewModules.cpp	/^ClassNetroute_M_D* ClassNetroute_M_D::klone(string name) const$/;"	f	class:ClassNetroute_M_D
+klone	NewModules.cpp	/^ClassObstoPar* ClassObstoPar::klone(string name) const$/;"	f	class:ClassObstoPar
+klone	NewModules.cpp	/^ClassPSPnew* ClassPSPnew::klone(string name) const$/;"	f	class:ClassPSPnew
+klone	NewModules.cpp	/^ClassPrairieInfil* ClassPrairieInfil::klone(string name) const$/;"	f	class:ClassPrairieInfil
+klone	NewModules.cpp	/^ClassREWroute* ClassREWroute::klone(string name) const$/;"	f	class:ClassREWroute
+klone	NewModules.cpp	/^ClassREWroute2* ClassREWroute2::klone(string name) const$/;"	f	class:ClassREWroute2
+klone	NewModules.cpp	/^ClassSWEslope* ClassSWEslope::klone(string name) const$/;"	f	class:ClassSWEslope
+klone	NewModules.cpp	/^ClassSetSoil* ClassSetSoil::klone(string name) const$/;"	f	class:ClassSetSoil
+klone	NewModules.cpp	/^ClassShutWall* ClassShutWall::klone(string name) const$/;"	f	class:ClassShutWall
+klone	NewModules.cpp	/^ClassShutWallD* ClassShutWallD::klone(string name) const$/;"	f	class:ClassShutWallD
+klone	NewModules.cpp	/^ClassSimpleRichard* ClassSimpleRichard::klone(string name) const$/;"	f	class:ClassSimpleRichard
+klone	NewModules.cpp	/^ClassSlope_Qsi* ClassSlope_Qsi::klone(string name) const$/;"	f	class:ClassSlope_Qsi
+klone	NewModules.cpp	/^ClassSnobalCRHM* ClassSnobalCRHM::klone(string name) const$/;"	f	class:ClassSnobalCRHM
+klone	NewModules.cpp	/^ClassSnobalX* ClassSnobalX::klone(string name) const$/;"	f	class:ClassSnobalX
+klone	NewModules.cpp	/^ClassSoil* ClassSoil::klone(string name) const$/;"	f	class:ClassSoil
+klone	NewModules.cpp	/^ClassSoilDS* ClassSoilDS::klone(string name) const$/;"	f	class:ClassSoilDS
+klone	NewModules.cpp	/^ClassSoilPrairie* ClassSoilPrairie::klone(string name) const$/;"	f	class:ClassSoilPrairie
+klone	NewModules.cpp	/^ClassSoilX* ClassSoilX::klone(string name) const$/;"	f	class:ClassSoilX
+klone	NewModules.cpp	/^ClassTs* ClassTs::klone(string name) const$/;"	f	class:ClassTs
+klone	NewModules.cpp	/^ClassVolumetric* ClassVolumetric::klone(string name) const$/;"	f	class:ClassVolumetric
+klone	NewModules.cpp	/^ClassWQ_Netroute_M_D* ClassWQ_Netroute_M_D::klone(string name) const$/;"	f	class:ClassWQ_Netroute_M_D
+klone	NewModules.cpp	/^ClassXG* ClassXG::klone(string name) const$/;"	f	class:ClassXG
+klone	NewModules.cpp	/^ClassXGAyers* ClassXGAyers::klone(string name) const$/;"	f	class:ClassXGAyers
+klone	NewModules.cpp	/^Class_z_s_rho* Class_z_s_rho::klone(string name) const$/;"	f	class:Class_z_s_rho
+klone	NewModules.cpp	/^Classalbedo* Classalbedo::klone(string name) const$/;"	f	class:Classalbedo
+klone	NewModules.cpp	/^ClassalbedoBaker* ClassalbedoBaker::klone(string name) const$/;"	f	class:ClassalbedoBaker
+klone	NewModules.cpp	/^ClassalbedoRichard* ClassalbedoRichard::klone(string name) const$/;"	f	class:ClassalbedoRichard
+klone	NewModules.cpp	/^ClassalbedoWinstral* ClassalbedoWinstral::klone(string name) const$/;"	f	class:ClassalbedoWinstral
+klone	NewModules.cpp	/^Classalbedoobs* Classalbedoobs::klone(string name) const$/;"	f	class:Classalbedoobs
+klone	NewModules.cpp	/^Classalbedoobs2* Classalbedoobs2::klone(string name) const$/;"	f	class:Classalbedoobs2
+klone	NewModules.cpp	/^Classalbedoparam* Classalbedoparam::klone(string name) const$/;"	f	class:Classalbedoparam
+klone	NewModules.cpp	/^Classbasin* Classbasin::klone(string name) const$/;"	f	class:Classbasin
+klone	NewModules.cpp	/^Classbrushintcp* Classbrushintcp::klone(string name) const$/;"	f	class:Classbrushintcp
+klone	NewModules.cpp	/^Classcalcsun* Classcalcsun::klone(string name) const$/;"	f	class:Classcalcsun
+klone	NewModules.cpp	/^Classcontribution* Classcontribution::klone(string name) const$/;"	f	class:Classcontribution
+klone	NewModules.cpp	/^Classcrack* Classcrack::klone(string name) const$/;"	f	class:Classcrack
+klone	NewModules.cpp	/^Classebsm* Classebsm::klone(string name) const$/;"	f	class:Classebsm
+klone	NewModules.cpp	/^Classevap* Classevap::klone(string name) const$/;"	f	class:Classevap
+klone	NewModules.cpp	/^ClassevapD* ClassevapD::klone(string name) const$/;"	f	class:ClassevapD
+klone	NewModules.cpp	/^ClassevapD_Resist* ClassevapD_Resist::klone(string name) const$/;"	f	class:ClassevapD_Resist
+klone	NewModules.cpp	/^ClassevapX* ClassevapX::klone(string name) const$/;"	f	class:ClassevapX
+klone	NewModules.cpp	/^Classevap_Resist* Classevap_Resist::klone(string name) const$/;"	f	class:Classevap_Resist
+klone	NewModules.cpp	/^Classfrostdepth* Classfrostdepth::klone(string name) const$/;"	f	class:Classfrostdepth
+klone	NewModules.cpp	/^Classfrozen* Classfrozen::klone(string name) const$/;"	f	class:Classfrozen
+klone	NewModules.cpp	/^ClassfrozenAyers* ClassfrozenAyers::klone(string name) const$/;"	f	class:ClassfrozenAyers
+klone	NewModules.cpp	/^Classglacier* Classglacier::klone(string name) const$/;"	f	class:Classglacier
+klone	NewModules.cpp	/^Classglobal* Classglobal::klone(string name) const$/;"	f	class:Classglobal
+klone	NewModules.cpp	/^Classintcp* Classintcp::klone(string name) const$/;"	f	class:Classintcp
+klone	NewModules.cpp	/^Classinterception* Classinterception::klone(string name) const$/;"	f	class:Classinterception
+klone	NewModules.cpp	/^Classlake* Classlake::klone(string name) const$/;"	f	class:Classlake
+klone	NewModules.cpp	/^Classnetall* Classnetall::klone(string name) const$/;"	f	class:Classnetall
+klone	NewModules.cpp	/^Classobs* Classobs::klone(string name) const$/;"	f	class:Classobs
+klone	NewModules.cpp	/^Classpbsm* Classpbsm::klone(string name) const$/;"	f	class:Classpbsm
+klone	NewModules.cpp	/^ClasspbsmSnobal* ClasspbsmSnobal::klone(string name) const$/;"	f	class:ClasspbsmSnobal
+klone	NewModules.cpp	/^Classpbsm_M* Classpbsm_M::klone(string name) const$/;"	f	class:Classpbsm_M
+klone	NewModules.cpp	/^Classqdrift* Classqdrift::klone(string name) const$/;"	f	class:Classqdrift
+klone	NewModules.cpp	/^Classqmelt* Classqmelt::klone(string name) const$/;"	f	class:Classqmelt
+klone	NewModules.cpp	/^Classquinton* Classquinton::klone(string name) const$/;"	f	class:Classquinton
+klone	NewModules.cpp	/^Classsbsm* Classsbsm::klone(string name) const$/;"	f	class:Classsbsm
+klone	NewModules.cpp	/^Classshared* Classshared::klone(string name) const$/;"	f	class:Classshared
+klone	NewModules.cpp	/^Classtsurface* Classtsurface::klone(string name) const$/;"	f	class:Classtsurface
+klone	NewModules.cpp	/^Classwalmsley_wind* Classwalmsley_wind::klone(string name) const$/;"	f	class:Classwalmsley_wind
+klone	NewModules.cpp	/^Classwinter_meltflag* Classwinter_meltflag::klone(string name) const$/;"	f	class:Classwinter_meltflag
+km	NewModules.cpp	/^const float km = 2.50;  $/;"	v
+ko	NewModules.cpp	/^const float ko = 0.21;  $/;"	v
+ks_s	NewModules.cpp	/^const float ks_s[] = {450.0, 154.0, 13.0, 5.0, 3.0}; $/;"	v
+kw	NewModules.cpp	/^const float kw = 0.57;  $/;"	v
+lLimit	Common.cpp	/^long lLimit = numeric_limits<long>::max();$/;"	v
+lam_a	NewModules.cpp	/^const float lam_a = 0.025; $/;"	v
+lam_i	NewModules.cpp	/^const float lam_i = 2.24;  $/;"	v
+lam_s	NewModules.cpp	/^const float lam_s[] = {0.21, 0.21, 0.21, 2.50, 2.50};  $/;"	v
+lam_w	NewModules.cpp	/^const float lam_w = 0.57;  $/;"	v
+lambda	NewModules.cpp	/^float ClassCRHMCanopy::lambda(float t) $/;"	f	class:ClassCRHMCanopy
+lambda	NewModules.cpp	/^float ClassCRHMCanopyClearing::lambda(float t) $/;"	f	class:ClassCRHMCanopyClearing
+lambda	NewModules.cpp	/^float ClassCRHMCanopyClearingGap::lambda(float t) $/;"	f	class:ClassCRHMCanopyClearingGap
+lambda	NewModules.cpp	/^float ClassShutWall::lambda(float t) $/;"	f	class:ClassShutWall
+lambda	NewModules.cpp	/^float ClassShutWallD::lambda(float t) $/;"	f	class:ClassShutWallD
+lambda	NewModules.cpp	/^float Classevap::lambda(float t) $/;"	f	class:Classevap
+lambda	NewModules.cpp	/^float ClassevapD::lambda(float t) $/;"	f	class:ClassevapD
+lambda	NewModules.cpp	/^float ClassevapD_Resist::lambda(float t) $/;"	f	class:ClassevapD_Resist
+lambda	NewModules.cpp	/^float ClassevapX::lambda(float t) $/;"	f	class:ClassevapX
+lambda	NewModules.cpp	/^float Classevap_Resist::lambda(float t) $/;"	f	class:Classevap_Resist
+lapse_rate	GlobalDll.cpp	/^float  *Global::lapse_rate; $/;"	m	class:Global	file:
+last_front	NewModules.cpp	/^float ClassXG::last_front(void)$/;"	f	class:ClassXG
+last_timestep	ClassCRHM.cpp	/^bool last_timestep(void)$/;"	f
+laststep	ClassCRHM.cpp	/^bool laststep(void)$/;"	f
+ldprodpp	Hype_routines.cpp	/^const float ldprodpp = 1.0;$/;"	v
+ldprodsp	Hype_routines.cpp	/^const float ldprodsp = 1.0;$/;"	v
+link	ClassModule.cpp	/^ClassModule* ClassModule::link(string Module)$/;"	f	class:ClassModule
+little_p	Common.cpp	/^const float little_p    =   0.33267;$/;"	v
+lookup	Common.cpp	/^float snowcover::lookup(float melt)$/;"	f	class:snowcover
+major	NewModules.cpp	7957;"	d	file:
+maxdegradwater	Hype_routines.cpp	/^const float maxdegradwater  = 0.5;     $/;"	v
+maxdenitriwater	Hype_routines.cpp	/^const float maxdenitriwater = 999; $/;"	v
+maxerror	NewModules.cpp	/^const float maxerror = 0.00001;$/;"	v
+maxhru	GlobalDll.cpp	/^long Global::maxhru;$/;"	m	class:Global	file:
+maxiterations	NewModules.cpp	/^const long maxiterations = 1000;$/;"	v
+maxlay	GlobalDll.cpp	/^long Global::maxlay;$/;"	m	class:Global	file:
+maxobs	GlobalDll.cpp	/^long Global::maxobs;$/;"	m	class:Global	file:
+maxprodwater	Hype_routines.cpp	/^const float maxprodwater    = 0.5;     $/;"	v
+module	Bld.cpp	/^    ClassModule *module;   $/;"	m	class:ClassEntry	file:
+moisturefactor	Hype_routines.cpp	/^float ClassWQ_Hype::moisturefactor(float sm, float wp, float pw, float thickm, float satsmf, float exp, float thetalow, float thetaupp)$/;"	f	class:ClassWQ_Hype
+monthly1Click	CRHMmain.cpp	/^void __fastcall TMain::monthly1Click(TObject *Sender)$/;"	f	class:TMain
+ncolours	CRHMmain.cpp	/^long ncolours = (sizeof colours)\/4; $/;"	v
+new_concentration	Hype_routines.cpp	/^void ClassWQ_Hype::new_concentration(const float pool, const float vol, float **conc)$/;"	f	class:ClassWQ_Hype
+new_concentration	Hype_routines.cpp	/^void ClassWQ_Hype::new_concentration(const float pool, const float vol, float *conc)  $/;"	f	class:ClassWQ_Hype
+new_concentration	Hype_routines.cpp	/^void ClassWQ_Hype::new_concentration(const float pool, float vol, float conc)$/;"	f	class:ClassWQ_Hype
+new_tsno	NewModules.cpp	/^float ClassSnobalBase::new_tsno(float	spm,float	t0,float	ccon)$/;"	f	class:ClassSnobalBase
+nhru	GlobalDll.cpp	/^long Global::nhru;$/;"	m	class:Global	file:
+nlay	GlobalDll.cpp	/^long Global::nlay;$/;"	m	class:Global	file:
+nobs	GlobalDll.cpp	/^long Global::nobs;$/;"	m	class:Global	file:
+np_processes_in_lake	Hype_lake.cpp	/^void ClassWQ_Lake::np_processes_in_lake(const long laketype, const float area, const float denpar, const long prodNpar, const float prodPpar, const long sedonpar, const float sedpppar, const float limonpar, const float limpppar)$/;"	f	class:ClassWQ_Lake
+np_processes_in_river	Hype_river.cpp	/^void ClassWQ_River::np_processes_in_river(const long rivertype, const float area, const float depth, const float transq, const float Qbank, const float denpar, const float denparl, const float prodNpar, const float prodPpar, const float sedexppar, const float limpppar)$/;"	f	class:ClassWQ_River
+obs_ea	GlobalDll.cpp	/^float  **Global::obs_ea; $/;"	m	class:Global	file:
+obs_rh	GlobalDll.cpp	/^float  **Global::obs_rh; $/;"	m	class:Global	file:
+obs_t	GlobalDll.cpp	/^float  **Global::obs_t; $/;"	m	class:Global	file:
+obs_t_obs	GlobalDll.cpp	/^float  **Global::obs_t_obs; $/;"	m	class:Global	file:
+oc_processes_in_lake	Hype_lake.cpp	/^void ClassWQ_Lake::oc_processes_in_lake(const long watertype, const long area, const long prodpar, const long limpppar, const long sedocpar)$/;"	f	class:ClassWQ_Lake
+oc_processes_in_river	Hype_river.cpp	/^void ClassWQ_River::oc_processes_in_river(const long watertype, const float area, const float depth, const float prodpar, const float limpppar)$/;"	f	class:ClassWQ_River
+oc_production_mineralisation	Hype_lake.cpp	/^void ClassWQ_Lake::oc_production_mineralisation(const float area, float prodpar, float limpppar, float water, float conc, float watertemp, float waterTPmean, float temp10, float temp20, float depth)$/;"	f	class:ClassWQ_Lake
+oc_production_mineralisation	Hype_river.cpp	/^void ClassWQ_River::oc_production_mineralisation(const float area, float prodpar, float limpppar, float water, float conc, float watertemp, float waterTPmean, float temp10, float temp20, float depth)$/;"	f	class:ClassWQ_River
+oc_sedimentation	Hype_lake.cpp	/^void ClassWQ_Lake::oc_sedimentation(const float area, const float sedocpar)$/;"	f	class:ClassWQ_Lake
+operator <	Bld.cpp	/^bool operator<(const ClassEntry &x, const ClassEntry &y)$/;"	f
+operator =	Bld.cpp	/^ClassEntry & ClassEntry::operator=(const ClassEntry & Cl)$/;"	f	class:ClassEntry
+operator =	CRHM_parse.cpp	/^VarCHRM & VarCHRM::operator=(const VarCHRM & Cl)$/;"	f	class:VarCHRM
+operator =	CRHM_parse.cpp	/^execbase & execbase::operator=(const execbase & Cl)$/;"	f	class:execbase
+operator =	ClassCRHM.cpp	/^ClassData & ClassData::operator=(const ClassData & Cl)   $/;"	f	class:ClassData
+operator =	ClassCRHM.cpp	/^ClassVar & ClassVar::operator=(const ClassVar & Cl)   $/;"	f	class:ClassVar
+parametric_Sd_add	NewModules.cpp	/^float ClassSoilPrairie::parametric_Sd_add(const float applied_depth)$/;"	f	class:ClassSoilPrairie
+parametric_Sd_subtract	NewModules.cpp	/^float ClassSoilPrairie::parametric_Sd_subtract(const float applied_depth)$/;"	f	class:ClassSoilPrairie
+parametric_area_frac	NewModules.cpp	/^float ClassSoilPrairie::parametric_area_frac(const float vol_frac)$/;"	f	class:ClassSoilPrairie
+parametric_contrib_frac_add	NewModules.cpp	/^float ClassSoilPrairie::parametric_contrib_frac_add(const float contrib_frac_slice, const float delta_Sd)$/;"	f	class:ClassSoilPrairie
+parametric_contrib_frac_subtract	NewModules.cpp	/^float ClassSoilPrairie::parametric_contrib_frac_subtract(void)$/;"	f	class:ClassSoilPrairie
+plant_uptake	Hype_routines.cpp	/^void  ClassWQ_Hype::plant_uptake(const long calcN, const long calcP, const float **N_uptake_lay, const float **P_uptake_lay, const float **wp_lay, float **thickness_lay, float **soil_lay, float **csoil_top_lay, float **csoil_bottom_lay, float **sink_lay)$/;"	f	class:ClassWQ_Hype
+ponding	NewModules.cpp	/^void ClassGreenAmpt::ponding(void)$/;"	f	class:ClassGreenAmpt
+ponding	NewModules.cpp	/^void ClassGreencrack::ponding(void)$/;"	f	class:ClassGreencrack
+pop_front	NewModules.cpp	/^float ClassXG::pop_front(void)$/;"	f	class:ClassXG
+por_s	NewModules.cpp	/^const float por_s[] = {0.96, 0.9, 0.87, 0.43, 0.43}; $/;"	v
+pprelexp	Hype_routines.cpp	/^const float pprelexp  = 1.0; $/;"	v
+pprelmax	Hype_routines.cpp	/^const float pprelmax  = 1.0; $/;"	v
+ppt_adj	GlobalDll.cpp	/^float  *Global::ppt_adj; $/;"	m	class:Global	file:
+pre_run	NewModules.cpp	/^void Classobs::pre_run(void)$/;"	f	class:Classobs
+prob	NewModules.cpp	/^void Classsbsm::prob(void)$/;"	f	class:Classsbsm
+process	NewModules.cpp	/^void Classlake::process(void)$/;"	f	class:Classlake
+production_mineralisation	Hype_lake.cpp	/^void ClassWQ_Lake::production_mineralisation(const long laketype, const float area, const float prodNpar, const float prodPpar, const float limpppar, const float depth)$/;"	f	class:ClassWQ_Lake
+production_mineralisation	Hype_river.cpp	/^void ClassWQ_River::production_mineralisation(const long watertype, const float area, const float prodNpar, const float prodPpar, const float limpppar, const float depth)$/;"	f	class:ClassWQ_River
+production_pool	Hype_routines.cpp	/^void ClassWQ_Hype::production_pool(const long n, float **pool, const float *source, long CRHM_array)$/;"	f	class:ClassWQ_Hype
+production_pool	Hype_routines.cpp	/^void ClassWQ_Hype::production_pool(const long n, float **pool, const float source[][numsubstances], long Application)$/;"	f	class:ClassWQ_Hype
+production_pool	Hype_routines.cpp	/^void ClassWQ_Hype::production_pool(const long n, float *pool, const float *source)$/;"	f	class:ClassWQ_Hype
+production_pool	Hype_routines.cpp	/^void ClassWQ_Hype::production_pool(const long n, float *pool, float source)  $/;"	f	class:ClassWQ_Hype
+psi	NewModules.cpp	/^static double psi(double zeta,int	code)$/;"	f	file:
+push_front	NewModules.cpp	/^void ClassXG::push_front(float D)$/;"	f	class:ClassXG
+put	CRHM_parse.cpp	/^void VarCHRM::put(float val_)$/;"	f	class:VarCHRM
+putvar1Click	report.cpp	/^void __fastcall TRprt::putvar1Click(TObject *Sender)$/;"	f	class:TRprt
+quickPow	ClassCRHM.cpp	/^double Convert::quickPow( double k, int nPow )$/;"	f	class:Convert
+rank	Bld.cpp	/^    long rank;             $/;"	m	class:ClassEntry	file:
+readargs	ClassCRHM.cpp	/^void Classfilter::readargs()$/;"	f	class:Classfilter
+readvar1Click	report.cpp	/^void __fastcall TRprt::readvar1Click(TObject *Sender)$/;"	f	class:TRprt
+retention_pool	Hype_routines.cpp	/^void ClassWQ_Hype::retention_pool(long n, float **pool, float *sink, long CRHM_array)$/;"	f	class:ClassWQ_Hype
+retention_pool	Hype_routines.cpp	/^void ClassWQ_Hype::retention_pool(long n, float *pool, float *sink)$/;"	f	class:ClassWQ_Hype
+review_HRU_OBS	ClassCRHM.cpp	/^void ClassVar::review_HRU_OBS(void)$/;"	f	class:ClassVar
+rho_a	NewModules.cpp	/^const float rho_a =    1.2; $/;"	v
+rho_i	NewModules.cpp	/^const float rho_i =  920.0; $/;"	v
+rho_s	NewModules.cpp	/^const float rho_s[] = {41.1, 75.2, 91.4, 1300.0, 1300.0}; $/;"	v
+run	Hype_CRHM.cpp	/^void ClassWQ_Netroute::run(void)$/;"	f	class:ClassWQ_Netroute
+run	Hype_CRHM.cpp	/^void ClassWQ_Soil::run(void)$/;"	f	class:ClassWQ_Soil
+run	Hype_CRHM.cpp	/^void ClassWQ_ion::run(void)$/;"	f	class:ClassWQ_ion
+run	Hype_CRHM.cpp	/^void ClassWQ_pbsm::run(void)$/;"	f	class:ClassWQ_pbsm
+run	Hype_lake.cpp	/^void ClassWQ_Lake::run(void)$/;"	f	class:ClassWQ_Lake
+run	Hype_river.cpp	/^void ClassWQ_REWroute::run(void)$/;"	f	class:ClassWQ_REWroute
+run	Hype_river.cpp	/^void ClassWQ_River::run(void)$/;"	f	class:ClassWQ_River
+run	Hype_routines.cpp	/^void ClassWQ_Hype::run(void)$/;"	f	class:ClassWQ_Hype
+run	MacroUnit.cpp	/^void ClassMacro::run(void)   $/;"	f	class:ClassMacro
+run	NewModules.cpp	/^void Class3D_param::run(void)$/;"	f	class:Class3D_param
+run	NewModules.cpp	/^void ClassAnnan::run(void)$/;"	f	class:ClassAnnan
+run	NewModules.cpp	/^void ClassAyers::run(void)$/;"	f	class:ClassAyers
+run	NewModules.cpp	/^void ClassCRHMCanopy::run(void)$/;"	f	class:ClassCRHMCanopy
+run	NewModules.cpp	/^void ClassCRHMCanopyClearing::run(void)$/;"	f	class:ClassCRHMCanopyClearing
+run	NewModules.cpp	/^void ClassCRHMCanopyClearingGap::run(void)$/;"	f	class:ClassCRHMCanopyClearingGap
+run	NewModules.cpp	/^void ClassFlowInSnow::run(void)$/;"	f	class:ClassFlowInSnow
+run	NewModules.cpp	/^void ClassGreenAmpt::run(void)$/;"	f	class:ClassGreenAmpt
+run	NewModules.cpp	/^void ClassGreencrack::run(void)$/;"	f	class:ClassGreencrack
+run	NewModules.cpp	/^void ClassGrow_Crop::run(void)$/;"	f	class:ClassGrow_Crop
+run	NewModules.cpp	/^void ClassHMSA::run(void)$/;"	f	class:ClassHMSA
+run	NewModules.cpp	/^void ClassHeating::run(void)$/;"	f	class:ClassHeating
+run	NewModules.cpp	/^void ClassHtobs::run(void)$/;"	f	class:ClassHtobs
+run	NewModules.cpp	/^void ClassICEflow::run(void)$/;"	f	class:ClassICEflow
+run	NewModules.cpp	/^void ClassIceBulb::run(void)$/;"	f	class:ClassIceBulb
+run	NewModules.cpp	/^void ClassK_Estimate::run(void)$/;"	f	class:ClassK_Estimate
+run	NewModules.cpp	/^void ClassKevin::run(void)$/;"	f	class:ClassKevin
+run	NewModules.cpp	/^void ClassLongVt::run(void)$/;"	f	class:ClassLongVt
+run	NewModules.cpp	/^void ClassMeltRunoff_Kstorage::run(void)$/;"	f	class:ClassMeltRunoff_Kstorage
+run	NewModules.cpp	/^void ClassMeltRunoff_Lag::run(void)$/;"	f	class:ClassMeltRunoff_Lag
+run	NewModules.cpp	/^void ClassMod_Exec::run(void)$/;"	f	class:ClassMod_Exec
+run	NewModules.cpp	/^void ClassNO_pbsm::run(void)$/;"	f	class:ClassNO_pbsm
+run	NewModules.cpp	/^void ClassNeedle::run(void)   $/;"	f	class:ClassNeedle
+run	NewModules.cpp	/^void ClassNetroute::run(void)$/;"	f	class:ClassNetroute
+run	NewModules.cpp	/^void ClassNetroute_D::run(void)$/;"	f	class:ClassNetroute_D
+run	NewModules.cpp	/^void ClassNetroute_M::run(void)$/;"	f	class:ClassNetroute_M
+run	NewModules.cpp	/^void ClassNetroute_M_D::run(void)$/;"	f	class:ClassNetroute_M_D
+run	NewModules.cpp	/^void ClassObstoPar::run(void)$/;"	f	class:ClassObstoPar
+run	NewModules.cpp	/^void ClassPSPnew::run(void)$/;"	f	class:ClassPSPnew
+run	NewModules.cpp	/^void ClassPrairieInfil::run(void)$/;"	f	class:ClassPrairieInfil
+run	NewModules.cpp	/^void ClassREWroute2::run(void)$/;"	f	class:ClassREWroute2
+run	NewModules.cpp	/^void ClassREWroute::run(void)$/;"	f	class:ClassREWroute
+run	NewModules.cpp	/^void ClassSWEslope::run(void)$/;"	f	class:ClassSWEslope
+run	NewModules.cpp	/^void ClassShutWall::run(void)$/;"	f	class:ClassShutWall
+run	NewModules.cpp	/^void ClassShutWallD::run(void)$/;"	f	class:ClassShutWallD
+run	NewModules.cpp	/^void ClassSimpleRichard::run(void)   $/;"	f	class:ClassSimpleRichard
+run	NewModules.cpp	/^void ClassSlope_Qsi::run(void)$/;"	f	class:ClassSlope_Qsi
+run	NewModules.cpp	/^void ClassSnobalCRHM::run(void)   $/;"	f	class:ClassSnobalCRHM
+run	NewModules.cpp	/^void ClassSnobalX::run(void)   $/;"	f	class:ClassSnobalX
+run	NewModules.cpp	/^void ClassSoil::run(void)$/;"	f	class:ClassSoil
+run	NewModules.cpp	/^void ClassSoilDS::run(void)$/;"	f	class:ClassSoilDS
+run	NewModules.cpp	/^void ClassSoilPrairie::run(void)$/;"	f	class:ClassSoilPrairie
+run	NewModules.cpp	/^void ClassSoilX::run(void)$/;"	f	class:ClassSoilX
+run	NewModules.cpp	/^void ClassTs::run(void)   $/;"	f	class:ClassTs
+run	NewModules.cpp	/^void ClassVolumetric::run(void)$/;"	f	class:ClassVolumetric
+run	NewModules.cpp	/^void ClassWQ_Netroute_M_D::run(void)$/;"	f	class:ClassWQ_Netroute_M_D
+run	NewModules.cpp	/^void ClassXG::run(void)$/;"	f	class:ClassXG
+run	NewModules.cpp	/^void ClassXGAyers::run(void)$/;"	f	class:ClassXGAyers
+run	NewModules.cpp	/^void Class_z_s_rho::run(void)$/;"	f	class:Class_z_s_rho
+run	NewModules.cpp	/^void Classalbedo::run(void)$/;"	f	class:Classalbedo
+run	NewModules.cpp	/^void ClassalbedoBaker::run(void)$/;"	f	class:ClassalbedoBaker
+run	NewModules.cpp	/^void ClassalbedoRichard::run(void)$/;"	f	class:ClassalbedoRichard
+run	NewModules.cpp	/^void ClassalbedoWinstral::run(void)$/;"	f	class:ClassalbedoWinstral
+run	NewModules.cpp	/^void Classalbedoobs2::run(void)$/;"	f	class:Classalbedoobs2
+run	NewModules.cpp	/^void Classalbedoobs::run(void)$/;"	f	class:Classalbedoobs
+run	NewModules.cpp	/^void Classalbedoparam::run(void)$/;"	f	class:Classalbedoparam
+run	NewModules.cpp	/^void Classbrushintcp::run(void)$/;"	f	class:Classbrushintcp
+run	NewModules.cpp	/^void Classcalcsun::run(void)$/;"	f	class:Classcalcsun
+run	NewModules.cpp	/^void Classcontribution::run(void)$/;"	f	class:Classcontribution
+run	NewModules.cpp	/^void Classcrack::run(void)$/;"	f	class:Classcrack
+run	NewModules.cpp	/^void Classebsm::run(void)$/;"	f	class:Classebsm
+run	NewModules.cpp	/^void Classevap::run(void)$/;"	f	class:Classevap
+run	NewModules.cpp	/^void ClassevapD::run(void)$/;"	f	class:ClassevapD
+run	NewModules.cpp	/^void ClassevapD_Resist::run(void)$/;"	f	class:ClassevapD_Resist
+run	NewModules.cpp	/^void ClassevapX::run(void)$/;"	f	class:ClassevapX
+run	NewModules.cpp	/^void Classevap_Resist::run(void)$/;"	f	class:Classevap_Resist
+run	NewModules.cpp	/^void Classfrostdepth::run(void)$/;"	f	class:Classfrostdepth
+run	NewModules.cpp	/^void Classfrozen::run(void)$/;"	f	class:Classfrozen
+run	NewModules.cpp	/^void ClassfrozenAyers::run(void)$/;"	f	class:ClassfrozenAyers
+run	NewModules.cpp	/^void Classglacier::run(void)$/;"	f	class:Classglacier
+run	NewModules.cpp	/^void Classglobal::run(void)$/;"	f	class:Classglobal
+run	NewModules.cpp	/^void Classintcp::run(void)$/;"	f	class:Classintcp
+run	NewModules.cpp	/^void Classinterception::run(void)$/;"	f	class:Classinterception
+run	NewModules.cpp	/^void Classlake::run(void)$/;"	f	class:Classlake
+run	NewModules.cpp	/^void Classnetall::run(void)$/;"	f	class:Classnetall
+run	NewModules.cpp	/^void Classobs::run(void)$/;"	f	class:Classobs
+run	NewModules.cpp	/^void Classpbsm::run(void)$/;"	f	class:Classpbsm
+run	NewModules.cpp	/^void ClasspbsmSnobal::run(void)$/;"	f	class:ClasspbsmSnobal
+run	NewModules.cpp	/^void Classpbsm_M::run(void)$/;"	f	class:Classpbsm_M
+run	NewModules.cpp	/^void Classqdrift::run(void)$/;"	f	class:Classqdrift
+run	NewModules.cpp	/^void Classqmelt::run(void)$/;"	f	class:Classqmelt
+run	NewModules.cpp	/^void Classquinton::run(void)$/;"	f	class:Classquinton
+run	NewModules.cpp	/^void Classsbsm::run(void)$/;"	f	class:Classsbsm
+run	NewModules.cpp	/^void Classtsurface::run(void)$/;"	f	class:Classtsurface
+run	NewModules.cpp	/^void Classwalmsley_wind::run(void)$/;"	f	class:Classwalmsley_wind
+run	NewModules.cpp	/^void Classwinter_meltflag::run(void)$/;"	f	class:Classwinter_meltflag
+runoff_pp_by_erosion	Hype_routines.cpp	/^void ClassWQ_Hype::runoff_pp_by_erosion(const float prec, float surfacerunoff, float totflow, float csurface, float **csoil_top_lay, float **csoil_bottom_lay)$/;"	f	class:ClassWQ_Hype
+satact	Hype_routines.cpp	/^const float satact = 1.0;$/;"	v
+sati	NewModules.cpp	/^float ClassSnobalBase::sati(float  tk)  $/;"	f	class:ClassSnobalBase
+satw	NewModules.cpp	/^float satw(float  tk)$/;"	f
+scale	NewModules.cpp	/^float Classsbsm::scale(void)$/;"	f	class:Classsbsm
+sedimentation_lake	Hype_lake.cpp	/^void ClassWQ_Lake::sedimentation_lake(const long laketype, const float area, const float sedonpar, const float sedpppar, const float limonpar, const float limpppar)$/;"	f	class:ClassWQ_Lake
+sedimentation_resuspension	Hype_river.cpp	/^void ClassWQ_River::sedimentation_resuspension(const long rivertype, const float area, const float sedexppar, const float riverq, const float qbank, const float depth)$/;"	f	class:ClassWQ_River
+selectCol	Para.cpp	/^int selectCol, selectRow;$/;"	v
+selectRow	Para.cpp	/^int selectCol, selectRow;$/;"	v
+serror	ClassModule.cpp	/^void Myparser::serror(int error)$/;"	f	class:Myparser
+setdim	ClassCRHM.cpp	/^void setdim(CRHM::TDim dimen, long dim)$/;"	f
+setdim	ClassCRHM.cpp	/^void setdim(string name, long dim)$/;"	f
+smfdenitlim	Hype_routines.cpp	/^const float smfdenitlim = 0.1; $/;"	v
+smfdenitpow	Hype_routines.cpp	/^const float smfdenitpow = 1.0; $/;"	v
+snowcover	Common.cpp	/^snowcover::snowcover(float SWEmean, float cv)$/;"	f	class:snowcover
+soil_carbon_pool_transformations	Hype_routines.cpp	/^void ClassWQ_Hype::soil_carbon_pool_transformations(const float calcC, const float **wp_lay, const float **fc_lay, const float **pw_lay, float **thickness_lay, const float klh, const float klo, const float kho, const float kof, const float koflim, const float minc, const float soimf, const float soimr)$/;"	f	class:ClassWQ_Hype
+soil_carbon_processes	Hype_routines.cpp	/^void ClassWQ_Hype::soil_carbon_processes(const float calcC, const float **wp_lay, const float **fc_lay, const float **ep_lay, const float **pw_lay, float **thickness_lay, const float klh, const float klo, const float kho, const float kof, const float koflim, const float minc, const float soimf, const float soimr)$/;"	f	class:ClassWQ_Hype
+soil_denitrification	Hype_routines.cpp	/^void  ClassWQ_Hype::soil_denitrification(const float maxwc, const float denpar, const float *soil_moist, const float stemp, float **csoil_lay, float **sink_lay)$/;"	f	class:ClassWQ_Hype
+soil_np_processes	Hype_routines.cpp	/^void ClassWQ_Hype::soil_np_processes(const long calcN, const long calcP, const float calcC, const float area, const float **fc_lay, const float **ep_lay, const float **N_uptake_lay, const float **P_uptake_lay, float **thickness_lay, const long fertperiod, const long litterperiod, float **source_lay, float *nitrification, float **denitrification_lay, float *cropuptake, float **sources_fertilizer_lay, float **sources_plant_lay, const float pardisfN, const float pardisfP, const float pardishN, const float pardishP, const float parminfN, const float parminfP, const float pardegrhN, const float denpar, const float pardegrhP)$/;"	f	class:ClassWQ_Hype
+soil_pool_transformations	Hype_routines.cpp	/^void ClassWQ_Hype::soil_pool_transformations(const long calcN, long long calcP, const float **wp, const float **fc, const float **ep, float **thickness_lay, float **source_lay, const float pardisfN, const float pardisfP, const float pardishN, const float pardishP, const float minfNpar, const float minfPpar, const float degrhNpar, const float degrhPpar)$/;"	f	class:ClassWQ_Hype
+soilerod	Hype_routines.cpp	/^const float soilerod = 1.0;$/;"	v
+soilproperties	NewModules.cpp	/^float soilproperties[] [9] =$/;"	v
+sqr	ClassCRHM.cpp	/^float sqr(float X)$/;"	f
+sqr	Common.cpp	/^float sqr(float X)$/;"	f
+sreroexp	Hype_routines.cpp	/^const float sreroexp = 0.0; $/;"	v
+ssxfr	NewModules.cpp	/^float ClassSnobalBase::ssxfr(float	k1,float	k2,float	t1,float	t2,float	d1,float	d2)$/;"	f	class:ClassSnobalBase
+startponding	NewModules.cpp	/^void ClassGreenAmpt::startponding(void)$/;"	f	class:ClassGreenAmpt
+startponding	NewModules.cpp	/^void ClassGreencrack::startponding(void)  $/;"	f	class:ClassGreencrack
+sublimation	NewModules.cpp	/^float Classsbsm::sublimation(void)$/;"	f	class:Classsbsm
+tcsSkipSpaces	ClassCRHM.cpp	/^string tcsSkipSpaces(string pszIn )$/;"	f
+tcsSqueeze	ClassCRHM.cpp	/^string tcsSqueeze(string pszIn )$/;"	f
+tcsinc	ClassCRHM.cpp	/^string tcsinc(string pszIn)$/;"	f
+tempfactor	Hype_routines.cpp	/^float ClassWQ_Hype::tempfactor(float temp)$/;"	f	class:ClassWQ_Hype
+tempfactor2	Hype_routines.cpp	/^float ClassWQ_Hype::tempfactor2(const float temp)$/;"	f	class:ClassWQ_Hype
+textureproperties	NewModules.cpp	/^float textureproperties[] [6] =   $/;"	v
+thaw	NewModules.cpp	/^void ClassXG::thaw(void)   $/;"	f	class:ClassXG
+thetalow	Hype_routines.cpp	/^const float thetalow = 0.1;                     $/;"	v
+thetapow	Hype_routines.cpp	/^const float thetapow = 1.0;$/;"	v
+thetaupp	Hype_routines.cpp	/^const float thetaupp = 0.5;                     $/;"	v
+thisVar	GlobalDll.cpp	/^TObject *Global::thisVar;$/;"	m	class:Global	file:
+transport	NewModules.cpp	/^float Classsbsm::transport(void)$/;"	f	class:Classsbsm
+used	Bld.cpp	/^    bool used;$/;"	m	class:ClassEntry	file:
+varTypes	report.cpp	/^char varTypes[][6] = {"none", "Int", "Float", "Txt", "Read", "ReadI", "ReadF"};$/;"	v
+water_year_month	CRHMmain.cpp	/^long water_year_month = 10;$/;"	v
+weekly1Click	CRHMmain.cpp	/^void __fastcall TMain::weekly1Click(TObject *Sender)$/;"	f	class:TMain
+xLimit	Common.cpp	/^double xLimit = numeric_limits<float>::max();$/;"	v
+yearly1Click	CRHMmain.cpp	/^void __fastcall TMain::yearly1Click(TObject *Sender)$/;"	f	class:TMain
+~Administer	ClassModule.cpp	/^Administer::~Administer()$/;"	f	class:Administer
+~Box	Flow.cpp	/^Box::~Box()$/;"	f	class:Box
+~ClassClark	ClassModule.cpp	/^ClassClark::~ClassClark()$/;"	f	class:ClassClark
+~ClassData	ClassCRHM.cpp	/^__fastcall ClassData::~ClassData()$/;"	f	class:ClassData
+~ClassMacro	MacroUnit.cpp	/^ClassMacro::~ClassMacro()   $/;"	f	class:ClassMacro
+~ClassMissing	ClassCRHM.cpp	/^ClassMissing::~ClassMissing()$/;"	f	class:ClassMissing
+~ClassMissingFlagAfter	ClassCRHM.cpp	/^ClassMissingFlagAfter::~ClassMissingFlagAfter()$/;"	f	class:ClassMissingFlagAfter
+~ClassMissingInter	ClassCRHM.cpp	/^ClassMissingInter::~ClassMissingInter()$/;"	f	class:ClassMissingInter
+~ClassMuskingum	ClassModule.cpp	/^ClassMuskingum::~ClassMuskingum()$/;"	f	class:ClassMuskingum
+~ClassPar	ClassCRHM.cpp	/^__fastcall ClassPar::~ClassPar()$/;"	f	class:ClassPar
+~Classfilter	ClassCRHM.cpp	/^Classfilter::~Classfilter()$/;"	f	class:Classfilter
+~Classmacro	ClassCRHM.cpp	/^Classmacro::~Classmacro()   $/;"	f	class:Classmacro
+~Diagram	Flow.cpp	/^Diagram::~Diagram()$/;"	f	class:Diagram
+~LeastSquares	Numerical.cpp	/^LeastSquares::~LeastSquares()$/;"	f	class:LeastSquares
+~Plot	Analy.cpp	/^Plot::~Plot()$/;"	f	class:Plot
+~VarCHRM	CRHM_parse.cpp	/^VarCHRM::~VarCHRM()$/;"	f	class:VarCHRM
+~snowcover	Common.cpp	/^snowcover::~snowcover()$/;"	f	class:snowcover
