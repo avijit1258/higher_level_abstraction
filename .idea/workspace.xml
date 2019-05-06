@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/topic_modelling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,20 +18,25 @@
     <session id="815863127">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="3" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="30" />
+          <entry key="csv" value="1" />
           <entry key="dot" value="1" />
-          <entry key="function" value="2" />
-          <entry key="py" value="9" />
+          <entry key="filename" value="1" />
+          <entry key="function" value="3" />
+          <entry key="log" value="1" />
+          <entry key="py" value="11" />
           <entry key="tags" value="1" />
           <entry key="txt" value="5" />
         </counts>
@@ -35,38 +44,58 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="30" />
-          <entry key="PLAIN_TEXT" value="9" />
-          <entry key="Python" value="9" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cpp" value="5" />
-          <entry key="py" value="3722" />
-          <entry key="txt" value="709" />
+          <entry key="py" value="4957" />
+          <entry key="txt" value="916" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="C++" value="5" />
-          <entry key="PLAIN_TEXT" value="709" />
-          <entry key="Python" value="3722" />
+          <entry key="PLAIN_TEXT" value="916" />
+          <entry key="Python" value="4957" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+            <state relative-caret-position="2873">
+              <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
-                <marker date="1555564737692" expanded="true" signature="898:899" ph="..." />
-                <marker date="1555564737692" expanded="true" signature="943:1425" ph="..." />
+                <marker date="1556837332630" expanded="true" signature="1026:1027" ph="..." />
+                <marker date="1556837332630" expanded="true" signature="1082:1134" ph="..." />
+                <marker date="1556837332630" expanded="true" signature="4250:4892" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build+run.log">
+          <provider selected="true" editor-type-id="LargeFileEditor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/people.csv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/function">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -75,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/main.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2057">
-              <caret line="127" column="20" lean-forward="true" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
+              <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -83,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/extract_caller_caller_CRHM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="1020">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <marker date="1555536006280" expanded="true" signature="3217:3219" ph="..." />
@@ -93,30 +122,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/analyzer.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/topic_modelling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="1020" column="11" selection-start-line="1020" selection-start-column="11" selection-end-line="1020" selection-end-column="11" />
+            <state relative-caret-position="526">
+              <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_yed.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan.dot">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_tgf.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+            <state relative-caret-position="867">
+              <caret line="51" column="8" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -130,16 +152,7 @@
         <entry file="file://$PROJECT_DIR$/tags">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="9452">
-              <caret line="556" column="173" lean-forward="true" selection-start-line="556" selection-start-column="173" selection-end-line="556" selection-end-column="173" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/NewModules.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469659">
-              <caret line="27627" column="7" selection-start-line="27627" selection-start-column="5" selection-end-line="27627" selection-end-column="17" />
+              <caret line="556" column="173" selection-start-line="556" selection-start-column="173" selection-end-line="556" selection-end-column="173" />
             </state>
           </provider>
         </entry>
@@ -179,6 +192,7 @@
       <find>call</find>
       <find>callgraph</find>
       <find>find_scope</find>
+      <find>visit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -194,6 +208,7 @@
         <option value="$PROJECT_DIR$/instrumenting source code/original_sources/Hype_river.cpp" />
         <option value="$PROJECT_DIR$/extract_caller_caller_CRHM.py" />
         <option value="$PROJECT_DIR$/pyan/pyan/pyan_tgf.txt" />
+        <option value="$PROJECT_DIR$/topic_modelling.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -216,24 +231,6 @@
               <item name="HigerLevelAbstraction" type="b2602c69:ProjectViewProjectNode" />
               <item name="HigerLevelAbstraction" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="HigerLevelAbstraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HigerLevelAbstraction" type="462c0819:PsiDirectoryNode" />
-              <item name="pyan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HigerLevelAbstraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HigerLevelAbstraction" type="462c0819:PsiDirectoryNode" />
-              <item name="pyan" type="462c0819:PsiDirectoryNode" />
-              <item name="pyan" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HigerLevelAbstraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HigerLevelAbstraction" type="462c0819:PsiDirectoryNode" />
-              <item name="pyan" type="462c0819:PsiDirectoryNode" />
-              <item name="pyan" type="462c0819:PsiDirectoryNode" />
-              <item name="pyan" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -243,7 +240,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -262,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.topic_modelling">
     <configuration name="extract_caller_caller_CRHM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="HigerLevelAbstraction" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -305,12 +302,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="topic_modelling" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="HigerLevelAbstraction" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/topic_modelling.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
       <item itemvalue="Python.extract_caller_caller_CRHM" />
+      <item itemvalue="Python.topic_modelling" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.topic_modelling" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.extract_caller_caller_CRHM" />
       </list>
@@ -330,18 +350,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16596417" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18071654" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23343849" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22923239" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39957264" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32912722" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32912722" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -356,7 +377,8 @@
     <MESSAGE value="Extracting all function names with relevent details are ongoing. Also pyan projects code and automated instrumentation code is added." />
     <MESSAGE value="adding class name for each file 80 percent done and also ctags is extracted to understand overall structure of 'CRHM'" />
     <MESSAGE value="tgf file extraction and networkX graph building is going on. CRHM caller callee extraction stopped for a while." />
-    <option name="LAST_COMMIT_MESSAGE" value="tgf file extraction and networkX graph building is going on. CRHM caller callee extraction stopped for a while." />
+    <MESSAGE value="Need to verify the execution paths extracted by my program is similar to The papers one from their site. Pausing for doing CMPT: 820 work." />
+    <option name="LAST_COMMIT_MESSAGE" value="Need to verify the execution paths extracted by my program is similar to The papers one from their site. Pausing for doing CMPT: 820 work." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_user_guide.txt">
@@ -366,13 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -548,37 +563,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/NewModules.cpp">
+    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/analyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469659">
-          <caret line="27627" column="7" selection-start-line="27627" selection-start-column="5" selection-end-line="27627" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tags">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9452">
-          <caret line="556" column="173" lean-forward="true" selection-start-line="556" selection-start-column="173" selection-end-line="556" selection-end-column="173" />
+        <state relative-caret-position="17204">
+          <caret line="1020" column="11" selection-start-line="1020" selection-start-column="11" selection-end-line="1020" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_yed.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/__init__.py">
+    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan.dot">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filename">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/NewModules.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="671">
+          <caret line="27627" column="7" selection-start-line="27627" selection-start-column="5" selection-end-line="27627" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2873">
+          <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <marker date="1556837332630" expanded="true" signature="1026:1027" ph="..." />
+            <marker date="1556837332630" expanded="true" signature="1082:1134" ph="..." />
+            <marker date="1556837332630" expanded="true" signature="4250:4892" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build+run.log">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/people.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/function">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2057">
-          <caret line="127" column="20" lean-forward="true" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
+          <caret line="127" column="20" selection-start-line="127" selection-start-column="20" selection-end-line="127" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extract_caller_caller_CRHM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="1020">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <marker date="1555536006280" expanded="true" signature="3217:3219" ph="..." />
@@ -586,31 +630,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan.dot">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/analyzer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="1020" column="11" selection-start-line="1020" selection-start-column="11" selection-end-line="1020" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_tgf.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+        <state relative-caret-position="867">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tags">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-359">
-          <caret line="20" column="46" lean-forward="true" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+        <state relative-caret-position="9452">
+          <caret line="556" column="173" selection-start-line="556" selection-start-column="173" selection-end-line="556" selection-end-column="173" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic_modelling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="55" column="18" lean-forward="true" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <marker date="1555564737692" expanded="true" signature="898:899" ph="..." />
-            <marker date="1555564737692" expanded="true" signature="943:1425" ph="..." />
+            <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
