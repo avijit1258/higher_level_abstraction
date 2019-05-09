@@ -6,8 +6,13 @@ import re
 import pandas as pd
 #import networkx.drawing.nx_pydot.read_dot
 from sklearn.cluster import AgglomerativeClustering
-from scipy.cluster.hierarchy import dendrogram
+from scipy.cluster.hierarchy import dendrogram, linkage
 import numpy as np
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+
+from collections import defaultdict
+
 
 
 #caller_callee = [('F1', 'F3'), ('F1', 'F7'), ('F3', 'F7'), ('F4', 'F1')]
@@ -38,12 +43,17 @@ def extracting_source_and_exit_node():
         if v == 0:
             S.append(s)
             #print(s)
+    print(len(S))
     print('Out degree')
     for t, v in G.out_degree():
         # print(t, v)
         if v == 0:
             T.append(t)
             #print(t)
+
+    print(len(T))
+
+    return
 
 
 def extract_function_name(str):
@@ -55,7 +65,7 @@ def extract_function_name(str):
 
 def tgf_to_networkX():
 
-        f = open("graph.txt", "r")
+        f = open("detectron_tgf.txt", "r")
 
         graph_started = False
         for line in f:
@@ -212,7 +222,7 @@ def jaccard_distance_matrix(paths):
     return Matrix
 
 
-def plot_dendrogram(model, **kwargs):
+def plot_dendrogram(model, mt,**kwargs):
 
     # Children of hierarchical clustering
     children = model.children_
@@ -227,8 +237,45 @@ def plot_dendrogram(model, **kwargs):
     # Create linkage matrix and then plot the dendrogram
     linkage_matrix = np.column_stack([children, distance, no_of_observations]).astype(float)
 
+    # This block of code is for drawing single linkage algorithm for
+    # Z = linkage(mt, 'ward')
+    # fig = plt.figure(figsize=(25, 10))
+    # dn = dendrogram(Z)
+
     # Plot the corresponding dendrogram
-    dendrogram(linkage_matrix, **kwargs)
+    dendrogram(linkage_matrix, **kwargs, truncate_mode='lastp', p= 15)
+
+
+def tf_idf_score(labels):
+
+    clusters = defaultdict(list)
+
+    #print(labels)
+    #print(len(labels))
+    for i in range(len(labels)):
+        clusters[labels[i]].append(execution_paths[i])
+
+    flat_list = [item for sublist in clusters[0] for item in sublist]
+    print(flat_list)
+
+    for k, v in clusters.items():
+        vectorizer = TfidfVectorizer(sublinear_tf=False, stop_words='english',smooth_idf=True,use_idf=True)
+        # print(np.array(execution_paths[c]).ravel())
+        print('clusters')
+        print(k)
+        X = vectorizer.fit_transform(np.array([item for sublist in clusters[k] for item in sublist]).ravel())
+        #print(vectorizer.idf_)
+        #print(vectorizer.vocabulary_)
+        #print(vectorizer.get_feature_names())
+
+        c = 0
+        for d in vectorizer.get_feature_names():
+            c += 1
+            print(function_id_to_name[d])
+            if c == 5:
+                break
+
+    return
 
 
 def python_analysis():
@@ -245,9 +292,12 @@ def python_analysis():
 
     mat = jaccard_distance_matrix(execution_paths)
 
-    model = AgglomerativeClustering(affinity='precomputed', n_clusters=10, linkage='complete').fit(mat)
+    model = AgglomerativeClustering(affinity='precomputed', n_clusters= 10, linkage='complete').fit(mat)
     print(model.labels_)
-    plot_dendrogram(model, labels=model.labels_)
+    plot_dendrogram(model, mat, labels=model.labels_)
+
+    tf_idf_score(model.labels_)
+
     plt.show()
 
     return
