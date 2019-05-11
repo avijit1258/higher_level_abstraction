@@ -65,7 +65,7 @@ def prepare_text_for_lda(text):
 
 with open('people.csv') as f:
     for line in f:
-        print(line)
+        #print(line)
         tokens = prepare_text_for_lda(line)
         #if random.random() > .99:
             #print(tokens)

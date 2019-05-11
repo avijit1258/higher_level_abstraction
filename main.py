@@ -6,17 +6,22 @@ import re
 import pandas as pd
 #import networkx.drawing.nx_pydot.read_dot
 from sklearn.cluster import AgglomerativeClustering
-from scipy.cluster.hierarchy import dendrogram, linkage
+from scipy.cluster.hierarchy import dendrogram, linkage, fcluster, to_tree
+from scipy.spatial.distance import pdist
 import numpy as np
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 from collections import defaultdict
 
+from scipy.spatial import distance as ssd
+
+from scipy.cluster.hierarchy import cut_tree
 
 
-#caller_callee = [('F1', 'F3'), ('F1', 'F7'), ('F3', 'F7'), ('F4', 'F1')]
-#self calling edge is omitted for now
+
+# caller_callee = [('F1', 'F3'), ('F1', 'F7'), ('F3', 'F7'), ('F4', 'F1')]
+# self calling edge is omitted for now
 
 # caller callee for generating
 caller_callee = [('F0', 'F1'), ('F0', 'F2'), ('F0', 'F3'), ('F1', 'F3'), ('F2', 'F0'), ('F2', 'F1'), ('F4', 'F2'), ('F5', 'F1')]
@@ -28,12 +33,12 @@ T = []
 execution_paths = []
 G = nx.DiGraph()
 function_id_to_name = {}
-#G.add_edges_from(caller_callee)
-#G = nx.drawing.nx_agraph.read_dot('/pyan/pyan/pyan.dot')
-#G = nx.DiGraph(nx.drawing.nx_pydot.read_dot('pyan/pyan/pyan.dot'))
-#G = nx.read_graphml('pyan/pyan/pyan_yed.txt')
-#nx.draw(G, with_labels=True)
-#plt.show()
+# G.add_edges_from(caller_callee)
+# G = nx.drawing.nx_agraph.read_dot('/pyan/pyan/pyan.dot')
+# G = nx.DiGraph(nx.drawing.nx_pydot.read_dot('pyan/pyan/pyan.dot'))
+# G = nx.read_graphml('pyan/pyan/pyan_yed.txt')
+# nx.draw(G, with_labels=True)
+# plt.show()
 
 
 def extracting_source_and_exit_node():
@@ -42,14 +47,14 @@ def extracting_source_and_exit_node():
         # print(s, v)
         if v == 0:
             S.append(s)
-            #print(s)
+            # print(s)
     print(len(S))
     print('Out degree')
     for t, v in G.out_degree():
         # print(t, v)
         if v == 0:
             T.append(t)
-            #print(t)
+            # print(t)
 
     print(len(T))
 
@@ -77,8 +82,8 @@ def tgf_to_networkX():
 
             if graph_started == True:
                 edge_info = line.split()
-                #print(edge_info)
-                #G.add_edge(function_id_to_name[edge_info[0]], function_id_to_name[edge_info[1]])
+                # print(edge_info)
+                # G.add_edge(function_id_to_name[edge_info[0]], function_id_to_name[edge_info[1]])
                 G.add_edge(edge_info[0], edge_info[1])
 
             if graph_started == False:
@@ -162,7 +167,8 @@ def buildgraph(f, view):
     # print stack
     print('unique scenario extracted for', f.name)
 
-    nx.draw(G, with_labels=True)
+    nx.draw_circular(G, with_labels=True)
+    plt.savefig('crhm.png')
     plt.show()
 
     return
@@ -188,7 +194,7 @@ def splitWordAndMakeSentence(paths):
 
 
 def crhm_analysis():
-    f0 =open('build+run.log')
+    f0 =open('clogs.txt')
     buildgraph(f0, 1)
     #tgf_to_networkX()
     G.remove_edges_from(G.selfloop_edges())
@@ -199,8 +205,16 @@ def crhm_analysis():
     #print(G.edges())
     #print(execution_paths)
 
-    df = pd.DataFrame(splitWordAndMakeSentence(execution_paths))
-    df.to_csv('people.csv')
+    mat = jaccard_distance_matrix(execution_paths)
+
+    clustering_using_scipy(mat)
+    # clustering_using_sklearn(mat)
+
+    plt.show()
+
+    # Storing execution paths for use in topic_modelling.py
+    # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths))
+    # df.to_csv('people.csv')
 
     return
 
@@ -209,10 +223,11 @@ def jaccard_similarity(list1, list2):
     intersection = len(list(set(list1).intersection(list2)))
     # print(list(set(list1).intersection(list2)))
     union = (len(list1) + len(list2)) - intersection
-    return float(intersection / union)
+    return 1 - float(intersection / union)
 
 
 def jaccard_distance_matrix(paths):
+
     length = len(paths)
     Matrix = [[0 for x in range(length)] for y in range(length)]
     for i in range(len(paths)):
@@ -238,42 +253,77 @@ def plot_dendrogram(model, mt,**kwargs):
     linkage_matrix = np.column_stack([children, distance, no_of_observations]).astype(float)
 
     # This block of code is for drawing single linkage algorithm for
-    # Z = linkage(mt, 'ward')
+    # Z = linkage(mt, 'single')
     # fig = plt.figure(figsize=(25, 10))
     # dn = dendrogram(Z)
 
     # Plot the corresponding dendrogram
-    dendrogram(linkage_matrix, **kwargs, truncate_mode='lastp', p= 15)
+    d = dendrogram(linkage_matrix, **kwargs, p = 30, truncate_mode='lastp')
+    #print(d)
+
+
+def clustering_using_scipy(mt):
+
+    print('Execution paths : ', len(execution_paths))
+    #print(mt)
+    # npa = np.asarray(execution_paths)
+    # Y = pdist(npa, 'jaccard')
+    Z = linkage(ssd.squareform(mt), 'average')
+    # print(Z)
+    fig = plt.figure(figsize=(25, 10))
+    dn = dendrogram(Z)
+    rootnode, nodelist = to_tree(Z, rd=True)
+    print(rootnode.id)
+
+    for i in nodelist:
+        print(i.id)
+        print(i.count)
+
+    plt.show()
+
+    return
 
 
 def tf_idf_score(labels):
 
     clusters = defaultdict(list)
-
+    flat_list = defaultdict(list)
     #print(labels)
     #print(len(labels))
     for i in range(len(labels)):
         clusters[labels[i]].append(execution_paths[i])
 
-    flat_list = [item for sublist in clusters[0] for item in sublist]
-    print(flat_list)
-
     for k, v in clusters.items():
-        vectorizer = TfidfVectorizer(sublinear_tf=False, stop_words='english',smooth_idf=True,use_idf=True)
+        flat_list[k] = [item for sublist in clusters[k] for item in sublist]
+        # vectorizer = TfidfVectorizer(sublinear_tf=True, stop_words='english', smooth_idf=True, use_idf=False)
         # print(np.array(execution_paths[c]).ravel())
-        print('clusters')
-        print(k)
-        X = vectorizer.fit_transform(np.array([item for sublist in clusters[k] for item in sublist]).ravel())
-        #print(vectorizer.idf_)
-        #print(vectorizer.vocabulary_)
-        #print(vectorizer.get_feature_names())
+        # print('clusters')
+        # print(k)
+        # X = vectorizer.fit_transform([item for sublist in clusters[k] for item in sublist])
+        # print(vectorizer.idf_)
+        # print(vectorizer.vocabulary_)
+        # print(vectorizer.get_feature_names())
+        #
+        # c = 0
+        # for d in vectorizer.get_feature_names():
+        #     c += 1
+        #     print(function_id_to_name[d])
+        #     if c == 5:
+        #         break
+    print(flat_list)
+    vectorizer = TfidfVectorizer(sublinear_tf=True, stop_words='english', smooth_idf=True, use_idf=False)
+    X = vectorizer.fit_transform(flat_list)
+    print(X)
 
-        c = 0
-        for d in vectorizer.get_feature_names():
-            c += 1
-            print(function_id_to_name[d])
-            if c == 5:
-                break
+    return
+
+
+def clustering_using_sklearn(mat):
+
+    model = AgglomerativeClustering(affinity='precomputed', n_clusters=10, linkage='single').fit(mat)
+    print(model.labels_)
+    plot_dendrogram(model, mat, labels=model.labels_)
+    tf_idf_score(model.labels_)
 
     return
 
@@ -292,20 +342,15 @@ def python_analysis():
 
     mat = jaccard_distance_matrix(execution_paths)
 
-    model = AgglomerativeClustering(affinity='precomputed', n_clusters= 10, linkage='complete').fit(mat)
-    print(model.labels_)
-    plot_dendrogram(model, mat, labels=model.labels_)
-
-    tf_idf_score(model.labels_)
+    clustering_using_scipy(mat)
+    # clustering_using_sklearn(mat)
 
     plt.show()
 
     return
 
-
-
-
-python_analysis()
+# python_analysis()
 
 # print(extract_function_name('add_defines_edge\\n(/home/avijit/github/pyan/pyan/analyzer.py:1247)\n'))
-# crhm_analysis()
+
+crhm_analysis()
