@@ -275,7 +275,7 @@ def clustering_using_scipy(mt):
     Z = linkage(ssd.squareform(mt), 'ward')
     # print(Z)
     fig = plt.figure(figsize=(25, 10))
-    dn = dendrogram(Z)
+    dn = dendrogram(Z, truncate_mode='lastp', p=1000)
     rootnode, nodelist = to_tree(Z, rd=True)
 
     nodes = bfs(nodelist, rootnode.id, 7)
@@ -500,6 +500,7 @@ def python_analysis():
 
     return
 
+
 def cluster_view(Z, dend):
     X = flatten(dend['icoord'])
     Y = flatten(dend['dcoord'])
@@ -540,17 +541,25 @@ def cluster_view(Z, dend):
     # traverse tree from leaves upwards and populate mapping ID -> (x,y)
     root_node, node_list = to_tree(Z, rd=True)
     ids_left = range(len(dend['leaves']), len(node_list))
+    # As I truncated the dendogram, actual code from stackoverflow created infinite loop
+    # Fixing the code maually solved the problem. I stoping the while loop solved the problem
+    # ids_left = range(3375, 6746)
+    print(ids_left)
 
-    while len(ids_left) > 0:
-
+    count = 1
+    while count == 1:
+        count = count + 1
         for ii, node_id in enumerate(ids_left):
+            if node_list[node_id].is_leaf():
+                continue
             node = node_list[node_id]
             if (node.left.id in id_to_coord) and (node.right.id in id_to_coord):
                 left_coord = id_to_coord[node.left.id]
                 right_coord = id_to_coord[node.right.id]
                 id_to_coord[node_id] = children_to_parent_coords[(left_coord, right_coord)]
 
-        ids_left = [node_id for node_id in range(len(node_list)) if not node_id in id_to_coord]
+        # ids_left = [node_id for node_id in range(len(node_list)) if not node_id in id_to_coord]
+        # print(ids_left)
 
     # plot result on top of dendrogram
     ax = plt.gca()

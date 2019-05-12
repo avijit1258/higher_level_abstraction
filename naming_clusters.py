@@ -55,8 +55,12 @@ for i, d in zip(dend['icoord'], dend['dcoord']):
 root_node, node_list = to_tree(Z, rd=True)
 ids_left = range(len(dend['leaves']), len(node_list))
 
-while len(ids_left) > 0:
+print(ids_left)
 
+count = 1
+# len(ids_left) > 0
+while count == 1:
+    count = count + 1
     for ii, node_id in enumerate(ids_left):
         node = node_list[node_id]
         if (node.left.id in id_to_coord) and (node.right.id in id_to_coord):
@@ -64,7 +68,7 @@ while len(ids_left) > 0:
             right_coord = id_to_coord[node.right.id]
             id_to_coord[node_id] = children_to_parent_coords[(left_coord, right_coord)]
 
-    ids_left = [node_id for node_id in range(len(node_list)) if not node_id in id_to_coord]
+    # ids_left = [node_id for node_id in range(len(node_list)) if not node_id in id_to_coord]
 
 # plot result on top of dendrogram
 ax = plt.gca()
