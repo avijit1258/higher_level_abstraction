@@ -16,6 +16,10 @@ from collections import defaultdict
 
 from scipy.spatial import distance as ssd
 
+import queue
+
+import math
+
 from scipy.cluster.hierarchy import cut_tree
 
 
@@ -167,7 +171,7 @@ def buildgraph(f, view):
     # print stack
     print('unique scenario extracted for', f.name)
 
-    nx.draw_circular(G, with_labels=True)
+    nx.draw(G, with_labels=True)
     plt.savefig('crhm.png')
     plt.show()
 
@@ -268,18 +272,165 @@ def clustering_using_scipy(mt):
     #print(mt)
     # npa = np.asarray(execution_paths)
     # Y = pdist(npa, 'jaccard')
-    Z = linkage(ssd.squareform(mt), 'average')
+    Z = linkage(ssd.squareform(mt), 'ward')
     # print(Z)
     fig = plt.figure(figsize=(25, 10))
     dn = dendrogram(Z)
     rootnode, nodelist = to_tree(Z, rd=True)
-    print(rootnode.id)
 
-    for i in nodelist:
-        print(i.id)
-        print(i.count)
+    nodes = bfs(nodelist, rootnode.id, 7)
 
-    plt.show()
+    # labels = bfs_leaf_node(nodelist, 6729)
+    # print(labels)
+
+    for i in nodes:
+        print(i)
+        labels = bfs_leaf_node(nodelist, i)
+        print('--------------#######--------')
+        print('Cluster:',i, 'Count:',nodelist[i].count)
+        tf_idf_score_for_scipy_cluster(labels)
+        print('-------------#######-------')
+        print(i)
+
+    # print(rootnode.id)
+    # label = []
+    # for i in nodelist:
+    #     # print(i.id)
+    #     # node = nodelist[i.id]
+    #     # print(node.left.id)
+    #     # print(i.count)
+    #     # print(i.left)
+    #     # print(i.right)
+    #     if i.count == 1:
+    #         label.append(i.id)
+
+    cluster_view(Z, dn)
+
+    # plt.show()
+
+    return
+
+
+def bfs_leaf_node(nodelist, id):
+
+    # node = nodelist[id]
+
+    count = 0
+    visited = [0] * len(nodelist)
+    q = queue.Queue()
+    q.put(id)
+    visited[id] = 1
+    leaf_nodes = []
+    while True:
+        if q.empty():
+            break
+        # print(q.qsize())
+        p = q.get()
+        # print(p)
+        # print(q.qsize())
+        count = count + 1
+
+        # print(p, ' ', nodelist[p].count)
+        visited[p] = 1
+
+        if nodelist[p].count == 1:
+            leaf_nodes.append(p)
+            continue
+
+        if visited[nodelist[p].left.id] == 0:
+            q.put(nodelist[p].left.id)
+        if visited[nodelist[p].right.id] == 0:
+            q.put(nodelist[p].right.id)
+
+        if count == nodelist[id].count:
+            break
+
+    return leaf_nodes
+
+
+def bfs(nodelist, id, depth):
+
+    # node = nodelist[id]
+    nodes = []
+    count = 0
+    visited = [0] * len(nodelist)
+    q = queue.Queue()
+    q.put(id)
+    visited[id] = 1
+    while True:
+        if q.empty():
+            break
+        q.qsize()
+        p = q.get()
+        q.qsize()
+        count = count + 1
+
+        if visited[nodelist[p].left.id] == 0:
+            q.put(nodelist[p].left.id)
+        if visited[nodelist[p].right.id] == 0:
+            q.put(nodelist[p].right.id)
+
+        nodes.append(p)
+        print(p, ' ', nodelist[p].count)
+        visited[p] = 1
+
+        if math.ceil(math.log(count + 1, 2)) == depth:
+            break
+
+    return nodes
+
+
+def execution_path_to_sentence(labels):
+
+    documents = []
+
+    for l in labels:
+        str = ''
+        for e in execution_paths[l]:
+            str += e
+            str += ' '
+        documents.append(str)
+
+    return documents
+
+
+def tf_idf_score_for_scipy_cluster(labels):
+
+    # print(execution_paths[labels[0]])
+    # print(labels)
+
+    # txt1 = ['His smile was not perfect', 'His smile was not not not not perfect', 'she not sang']
+    txt1 = execution_path_to_sentence(labels)
+    tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word')
+    txt_fitted = tf.fit(txt1)
+    txt_transformed = txt_fitted.transform(txt1)
+
+    # print(tf.vocabulary_)
+    #
+    feature_names = np.array(tf.get_feature_names())
+    # sorted_by_idf = np.argsort(tf.idf_)
+    # print("Features with lowest idf:\n{}".format(
+    #     feature_names[sorted_by_idf[:5]]))
+    # print("\nFeatures with highest idf:\n{}".format(
+    #     feature_names[sorted_by_idf[-5:]]))
+
+    max_val = txt_transformed.max(axis=0).toarray().ravel()
+
+    # sort weights from smallest to biggest and extract their indices
+    # print(max_val)
+    sort_by_tfidf = max_val.argsort()
+
+    # print("Features with lowest tfidf:\n{}".format(
+    #     max_val[sort_by_tfidf[:5]]))
+
+    print("\nFeatures with highest tfidf: \n{}".format(
+        max_val[sort_by_tfidf[-5:]]))
+
+    # print("Features with lowest tfidf:\n{}".format(
+    #     feature_names[sort_by_tfidf[:5]]))
+
+    print("\nFeatures with highest tfidf: \n{}".format(
+        feature_names[sort_by_tfidf[-5:]]))
 
     return
 
@@ -288,8 +439,8 @@ def tf_idf_score(labels):
 
     clusters = defaultdict(list)
     flat_list = defaultdict(list)
-    #print(labels)
-    #print(len(labels))
+    # print(labels)
+    # print(len(labels))
     for i in range(len(labels)):
         clusters[labels[i]].append(execution_paths[i])
 
@@ -348,6 +499,76 @@ def python_analysis():
     plt.show()
 
     return
+
+def cluster_view(Z, dend):
+    X = flatten(dend['icoord'])
+    Y = flatten(dend['dcoord'])
+    leave_coords = [(x, y) for x, y in zip(X, Y) if y == 0]
+
+    # in the dendogram data structure,
+    # leave ids are listed in ascending order according to their x-coordinate
+    order = np.argsort([x for x, y in leave_coords])
+    id_to_coord = dict(zip(dend['leaves'], [leave_coords[idx] for idx in order]))  # <- main data structure
+
+    # ----------------------------------------
+    # get coordinates of other nodes
+
+    # this should work but doesn't:
+
+    # # traverse tree from leaves upwards and populate mapping ID -> (x,y);
+    # # use linkage matrix to traverse the tree optimally
+    # # (each row in the linkage matrix corresponds to a row in dend['icoord'] and dend['dcoord'])
+    # root_node, node_list = to_tree(Z, rd=True)
+    # for ii, (X, Y) in enumerate(zip(dend['icoord'], dend['dcoord'])):
+    #     x = (X[1] + X[2]) / 2
+    #     y = Y[1] # or Y[2]
+    #     node_id = ii + len(dend['leaves'])
+    #     id_to_coord[node_id] = (x, y)
+
+    # so we need to do it the hard way:
+
+    # map endpoint of each link to coordinates of parent node
+    children_to_parent_coords = dict()
+    for i, d in zip(dend['icoord'], dend['dcoord']):
+        x = (i[1] + i[2]) / 2
+        y = d[1]  # or d[2]
+        parent_coord = (x, y)
+        left_coord = (i[0], d[0])
+        right_coord = (i[-1], d[-1])
+        children_to_parent_coords[(left_coord, right_coord)] = parent_coord
+
+    # traverse tree from leaves upwards and populate mapping ID -> (x,y)
+    root_node, node_list = to_tree(Z, rd=True)
+    ids_left = range(len(dend['leaves']), len(node_list))
+
+    while len(ids_left) > 0:
+
+        for ii, node_id in enumerate(ids_left):
+            node = node_list[node_id]
+            if (node.left.id in id_to_coord) and (node.right.id in id_to_coord):
+                left_coord = id_to_coord[node.left.id]
+                right_coord = id_to_coord[node.right.id]
+                id_to_coord[node_id] = children_to_parent_coords[(left_coord, right_coord)]
+
+        ids_left = [node_id for node_id in range(len(node_list)) if not node_id in id_to_coord]
+
+    # plot result on top of dendrogram
+    ax = plt.gca()
+    for node_id, (x, y) in id_to_coord.items():
+        if not node_list[node_id].is_leaf():
+            ax.plot(x, y, 'ro')
+            ax.annotate(str(node_id), (x, y), xytext=(0, -8),
+                        textcoords='offset points',
+                        va='top', ha='center')
+
+    dend['node_id_to_coord'] = id_to_coord
+
+    plt.show()
+
+    return
+
+def flatten(l):
+    return [item for sublist in l for item in sublist]
 
 # python_analysis()
 
