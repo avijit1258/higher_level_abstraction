@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/naming_clusters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util.py" beforeDir="false" />
     </list>
     <ignored path="venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="306" column="20" selection-start-line="306" selection-start-column="20" selection-end-line="306" selection-end-column="20" />
+            <state relative-caret-position="411">
+              <caret line="300" column="51" selection-start-line="300" selection-start-column="51" selection-end-line="300" selection-end-column="51" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -29,24 +27,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/people.csv">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/detectron_tgf.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/naming_clusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="59" column="43" lean-forward="true" selection-start-line="17" selection-end-line="79" selection-end-column="10" />
+            <state relative-caret-position="381">
+              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -92,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic_modelling.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+            <state relative-caret-position="225">
+              <caret line="15" column="9" selection-start-line="11" selection-end-line="17" selection-end-column="13" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -164,6 +148,7 @@
         <option value="$PROJECT_DIR$/dendogram_sklearn.py" />
         <option value="$PROJECT_DIR$/topic_modelling.py" />
         <option value="$PROJECT_DIR$/util.py" />
+        <option value="$PROJECT_DIR$/naming_clusters.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -360,7 +345,7 @@
       <updated>1557200143486</updated>
       <workItem from="1557200146198" duration="41174000" />
       <workItem from="1557448231439" duration="23317000" />
-      <workItem from="1557619293979" duration="18476000" />
+      <workItem from="1557619293979" duration="36546000" />
     </task>
     <task id="LOCAL-00001" summary="Clustering and jaccard distance calculation completed.">
       <created>1557285435693</created>
@@ -383,11 +368,25 @@
       <option name="project" value="LOCAL" />
       <updated>1557619070123</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Tf-idf works very well. Clustering is very ok. Now, just topic modelling will be enough to go for goal.">
+      <created>1557640144638</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557640144638</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Clustering, tf-idf and numbering of clusters in fig is done. Now just topic modelling output will be sufficient for stopping implementation and starting slide and poster.">
+      <created>1557666066148</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557666066148</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82967000" />
+    <option name="totallyTimeSpent" value="101037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -406,8 +405,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22462203" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39957264" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22462203" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3088553" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
@@ -422,7 +421,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" side_tool="true" weight="0.32982844" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info active="true" anchor="right" id="SciView" order="5" visible="true" weight="0.27006087" />
+      <window_info anchor="right" id="SciView" order="5" visible="true" weight="0.3364693" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,15 +440,17 @@
     <MESSAGE value="Clustering and jaccard distance calculation completed." />
     <MESSAGE value="tfidf working doing some validation and experimentation." />
     <MESSAGE value="Cluster access granted. Now, doing labeling task using tf-idf method and topic modelling technique." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cluster access granted. Now, doing labeling task using tf-idf method and topic modelling technique." />
+    <MESSAGE value="Tf-idf works very well. Clustering is very ok. Now, just topic modelling will be enough to go for goal." />
+    <MESSAGE value="Clustering, tf-idf and numbering of clusters in fig is done. Now just topic modelling output will be sufficient for stopping implementation and starting slide and poster." />
+    <option name="LAST_COMMIT_MESSAGE" value="Clustering, tf-idf and numbering of clusters in fig is done. Now just topic modelling output will be sufficient for stopping implementation and starting slide and poster." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/higher_level_abstraction$extract_caller_caller_CRHM.coverage" NAME="extract_caller_caller_CRHM Coverage Results" MODIFIED="1557201572502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/higher_level_abstraction$main.coverage" NAME="main Coverage Results" MODIFIED="1557640076855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/higher_level_abstraction$main.coverage" NAME="main Coverage Results" MODIFIED="1557718243935" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/higher_level_abstraction$util.coverage" NAME="util Coverage Results" MODIFIED="1557663103026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/higher_level_abstraction$topic_modelling.coverage" NAME="topic_modelling Coverage Results" MODIFIED="1557521858713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_user_guide.txt" />
     <entry file="file://$PROJECT_DIR$/instrumenting source code/tools.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -680,16 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic_modelling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="67" column="9" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tags">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8340">
@@ -707,20 +698,44 @@
     <entry file="file://$PROJECT_DIR$/pyan_tgf.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="1734" selection-start-line="1734" selection-end-line="1734" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/naming_clusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="59" column="43" lean-forward="true" selection-start-line="17" selection-end-line="79" selection-end-column="10" />
+        <state relative-caret-position="381">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/topic_modelling.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="9" selection-start-line="11" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="306" column="20" selection-start-line="306" selection-start-column="20" selection-end-line="306" selection-end-column="20" />
+        <state relative-caret-position="411">
+          <caret line="300" column="51" selection-start-line="300" selection-start-column="51" selection-end-line="300" selection-end-column="51" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

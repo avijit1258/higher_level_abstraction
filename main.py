@@ -20,6 +20,20 @@ import queue
 
 import math
 
+from spacy.lang.en import English
+
+import nltk
+
+from nltk.corpus import wordnet as wn
+from nltk.stem.wordnet import WordNetLemmatizer
+
+from gensim import corpora
+
+import pickle
+
+import gensim
+
+
 from scipy.cluster.hierarchy import cut_tree
 
 
@@ -33,6 +47,15 @@ caller_callee = [('F0', 'F1'), ('F0', 'F2'), ('F0', 'F3'), ('F1', 'F3'), ('F2', 
 S = []
 
 T = []
+
+text_data = []
+
+nltk.download('wordnet')
+
+parser = English()
+
+nltk.download('stopwords')
+en_stop = set(nltk.corpus.stopwords.words('english'))
 
 execution_paths = []
 G = nx.DiGraph()
@@ -275,7 +298,7 @@ def clustering_using_scipy(mt):
     Z = linkage(ssd.squareform(mt), 'ward')
     # print(Z)
     fig = plt.figure(figsize=(25, 10))
-    dn = dendrogram(Z, truncate_mode='lastp', p=1000)
+    dn = dendrogram(Z, truncate_mode='lastp', p=200)
     rootnode, nodelist = to_tree(Z, rd=True)
 
     nodes = bfs(nodelist, rootnode.id, 7)
@@ -287,8 +310,10 @@ def clustering_using_scipy(mt):
         print(i)
         labels = bfs_leaf_node(nodelist, i)
         print('--------------#######--------')
-        print('Cluster:',i, 'Count:',nodelist[i].count)
-        tf_idf_score_for_scipy_cluster(labels)
+        print('Cluster:', i, 'Count:', nodelist[i].count)
+        # tf_idf_score_for_scipy_cluster(labels)
+        # print('topic modelling label')
+        # topic_model(labels)
         print('-------------#######-------')
         print(i)
 
@@ -364,6 +389,12 @@ def bfs(nodelist, id, depth):
         p = q.get()
         q.qsize()
         count = count + 1
+
+        if nodelist[p].count == 1:
+            nodes.append(p)
+            print(p, ' ', nodelist[p].count)
+            visited[p] = 1
+            continue
 
         if visited[nodelist[p].left.id] == 0:
             q.put(nodelist[p].left.id)
@@ -571,16 +602,84 @@ def cluster_view(Z, dend):
                         va='top', ha='center')
 
     dend['node_id_to_coord'] = id_to_coord
-
+    plt.savefig('clustering.png')
     plt.show()
 
     return
 
+
 def flatten(l):
     return [item for sublist in l for item in sublist]
+
+
+def tokenize(text):
+    lda_tokens = []
+    tokens = parser(text)
+    for token in tokens:
+        if token.orth_.isspace():
+            continue
+        elif token.like_url:
+            lda_tokens.append('URL')
+        elif token.orth_.startswith('@'):
+            lda_tokens.append('SCREEN_NAME')
+        else:
+            lda_tokens.append(token.lower_)
+    return lda_tokens
+
+
+def get_lemma(word):
+    lemma = wn.morphy(word)
+    if lemma is None:
+        return word
+    else:
+        return lemma
+
+
+def get_lemma2(word):
+    return WordNetLemmatizer().lemmatize(word)
+
+
+def prepare_text_for_lda(text):
+    tokens = tokenize(text)
+    #print(tokens)
+    tokens = [token for token in tokens if len(token) >= 2]
+    #print(tokens)
+    tokens = [token for token in tokens if token not in en_stop]
+    #print(tokens)
+    tokens = [get_lemma(token) for token in tokens]
+    #print(tokens)
+    return tokens
+
+
+def topic_model(labels):
+
+    txt = execution_path_to_sentence(labels)
+
+    for line in txt:
+        # print(line)
+        tokens = prepare_text_for_lda(line)
+        # if random.random() > .99:
+        # print(tokens)
+        text_data.append(tokens)
+
+    # print(text_data)
+    dictionary = corpora.Dictionary(text_data)
+    corpus = [dictionary.doc2bow(text) for text in text_data]
+
+    pickle.dump(corpus, open('corpus.pkl', 'wb'))
+    dictionary.save('dictionary.gensim')
+
+    NUM_TOPICS = 5
+    ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=15)
+    ldamodel.save('model5.gensim')
+    topics = ldamodel.print_topics(num_words=5)
+    for topic in topics:
+        print(topic)
+
 
 # python_analysis()
 
 # print(extract_function_name('add_defines_edge\\n(/home/avijit/github/pyan/pyan/analyzer.py:1247)\n'))
+
 
 crhm_analysis()
