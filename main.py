@@ -97,7 +97,7 @@ def extract_function_name(str):
 
 def tgf_to_networkX():
 
-        f = open("detectron_tgf.txt", "r")
+        f = open("pyan_tgf.txt", "r")
 
         graph_started = False
         for line in f:
@@ -311,9 +311,9 @@ def clustering_using_scipy(mt):
         labels = bfs_leaf_node(nodelist, i)
         print('--------------#######--------')
         print('Cluster:', i, 'Count:', nodelist[i].count)
-        # tf_idf_score_for_scipy_cluster(labels)
-        # print('topic modelling label')
-        # topic_model(labels)
+        tf_idf_score_for_scipy_cluster(labels)
+        print('topic modelling label')
+        topic_model(labels)
         print('-------------#######-------')
         print(i)
 
@@ -677,9 +677,9 @@ def topic_model(labels):
         print(topic)
 
 
-# python_analysis()
+python_analysis()
 
 # print(extract_function_name('add_defines_edge\\n(/home/avijit/github/pyan/pyan/analyzer.py:1247)\n'))
 
 
-crhm_analysis()
+# crhm_analysis()
