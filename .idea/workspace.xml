@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/tool/templates/home.html" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +19,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tool/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="543">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -31,10 +32,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+            <state relative-caret-position="240">
+              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#0#70#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +44,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2010">
-              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="1755">
+              <caret line="152" selection-start-line="152" selection-end-line="152" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5760">
+              <caret line="420" column="18" selection-start-line="413" selection-end-line="424" selection-end-column="20" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -64,13 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>UpDownHRUIndxClick</find>
-      <find>ClassWQ_Lake</find>
-      <find>ClassWQ_River</find>
-      <find>ClassWQ_Hype</find>
-      <find>TLogForm</find>
-      <find>ClassMacro</find>
-      <find>Defdeclgetparam</find>
       <find>Poly</find>
       <find>Fourier</find>
       <find>TParameter</find>
@@ -94,6 +100,13 @@
       <find>cluster_view</find>
       <find>flatt</find>
       <find>bfs</find>
+      <find>python_ana</find>
+      <find>nodes_with_parent</find>
+      <find>bfs_with_parent</find>
+      <find>topic</find>
+      <find>tf</find>
+      <find>id</find>
+      <find>function_id_to_nam</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,8 +128,8 @@
         <option value="$PROJECT_DIR$/naming_clusters.py" />
         <option value="$PROJECT_DIR$/spark_neo4j/playing_with_pyspark.py" />
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/tool/ClusteringCallGraph.py" />
         <option value="$PROJECT_DIR$/tool/home.html" />
+        <option value="$PROJECT_DIR$/tool/ClusteringCallGraph.py" />
         <option value="$PROJECT_DIR$/tool/app.py" />
         <option value="$PROJECT_DIR$/tool/templates/home.html" />
       </list>
@@ -134,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -151,6 +163,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Course" />
     </panes>
   </component>
@@ -160,8 +173,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tool/static" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -195,6 +211,9 @@
       <module name="HigerLevelAbstraction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -351,7 +370,10 @@
       <workItem from="1561071479733" duration="87000" />
       <workItem from="1561420604003" duration="3939000" />
       <workItem from="1562623883441" duration="2208000" />
-      <workItem from="1562627898978" duration="33057000" />
+      <workItem from="1562627898978" duration="38791000" />
+      <workItem from="1563425002228" duration="4806000" />
+      <workItem from="1563734583629" duration="3517000" />
+      <workItem from="1564011175518" duration="7051000" />
     </task>
     <task id="LOCAL-00001" summary="Clustering and jaccard distance calculation completed.">
       <created>1557285435693</created>
@@ -395,11 +417,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562630466050</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tool started to work. main clustering file refactored for OOP concept, flask is also ready for further, No sending json and showing it by GO js is next goal.">
+      <created>1563406343122</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1563406343128</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146144000" />
+    <option name="totallyTimeSpent" value="167252000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,10 +440,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
+    <frame x="1920" y="233" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18996799" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19637139" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -424,7 +453,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32633787" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32633787" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -433,9 +462,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" sideWeight="0.50311524" side_tool="true" visible="true" weight="0.28335112" />
+      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" sideWeight="0.5077882" side_tool="true" visible="true" weight="0.28335112" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="5" sideWeight="0.49688473" visible="true" weight="0.28335112" />
+      <window_info anchor="right" id="SciView" order="5" sideWeight="0.49221185" visible="true" weight="0.28335112" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -457,7 +486,8 @@
     <MESSAGE value="Tf-idf works very well. Clustering is very ok. Now, just topic modelling will be enough to go for goal." />
     <MESSAGE value="Clustering, tf-idf and numbering of clusters in fig is done. Now just topic modelling output will be sufficient for stopping implementation and starting slide and poster." />
     <MESSAGE value="This is the end of complete poster version and starting of the tool will be from next commits." />
-    <option name="LAST_COMMIT_MESSAGE" value="This is the end of complete poster version and starting of the tool will be from next commits." />
+    <MESSAGE value="Tool started to work. main clustering file refactored for OOP concept, flask is also ready for further, No sending json and showing it by GO js is next goal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tool started to work. main clustering file refactored for OOP concept, flask is also ready for further, No sending json and showing it by GO js is next goal." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/higher_level_abstraction$extract_caller_caller_CRHM.coverage" NAME="extract_caller_caller_CRHM Coverage Results" MODIFIED="1557201572502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -675,16 +705,6 @@
     <entry file="file://$PROJECT_DIR$/pyan_tgf.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="400" column="23" selection-start-line="375" selection-end-line="410" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/naming_clusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
@@ -731,8 +751,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2010">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        <state relative-caret-position="1755">
+          <caret line="152" selection-start-line="152" selection-end-line="152" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5760">
+          <caret line="420" column="18" selection-start-line="413" selection-end-line="424" selection-end-column="20" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -741,20 +771,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        <state relative-caret-position="240">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="543">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

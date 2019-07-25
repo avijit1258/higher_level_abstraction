@@ -3,6 +3,9 @@ from flask import abort
 from flask import make_response
 from flask import request
 from flask import url_for
+from flask_cors import CORS
+
+
 
 from ClusteringCallGraph import *
 
@@ -11,7 +14,7 @@ import json
 
 
 app = Flask(__name__, static_url_path='/static')
-
+CORS(app)
 
 @app.route('/',methods=['GET'])
 def root():
@@ -19,14 +22,15 @@ def root():
     return render_template('home.html')
 
 
-@app.route('/api/v1/get_cluster', methods=['GET'])
+@app.route('/get_cluster', methods=['GET'])
 def get_cluster():
 
     c = ClusteringCallGraph()
 
     cluster = c.python_analysis()
+    print(cluster)
     del c
-    return cluster
+    return jsonify(cluster)
 
 
 if __name__ == '__main__':

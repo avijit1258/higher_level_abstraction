@@ -33,6 +33,7 @@ import pickle
 
 import gensim
 
+import multiprocessing
 
 
 
@@ -41,6 +42,8 @@ class ClusteringCallGraph:
     S = []
 
     T = []
+
+    tree = []
 
     text_data = []
 
@@ -146,6 +149,16 @@ class ClusteringCallGraph:
 
         return Matrix
 
+    def labeling_cluster(self, labels, k, v):
+
+        tf = self.tf_idf_score_for_scipy_cluster(labels)
+        # print('topic modelling label')
+        # tm = self.topic_model(labels)
+        print('-------------#######-------')
+        self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
+
+        return
+
     def clustering_using_scipy(self, mt):
 
         print('Execution paths : ', len(self.execution_paths))
@@ -159,9 +172,26 @@ class ClusteringCallGraph:
         rootnode, nodelist = to_tree(Z, rd=True)
 
         nodes = self.bfs(nodelist, rootnode.id, 7)
-        nodes_with_paraent = self.bfs_with_parent(nodelist, rootnode.id, 7)
+        nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, 7)
         # labels = bfs_leaf_node(nodelist, 6729)
         # print(labels)
+
+
+        for k,v in nodes_with_parent.items():
+            labels = self.bfs_leaf_node(nodelist, k)
+
+            # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
+            # p.start()
+
+            self.labeling_cluster(labels, k, v)
+
+            #print('--------------#######--------')
+            # print('Cluster:', k, 'Count:', nodelist[k].count)
+            # tf = self.tf_idf_score_for_scipy_cluster(labels)
+            # print('topic modelling label')
+            # tm = self.topic_model(labels)
+            # print('-------------#######-------')
+            # tree.append({'key':k, 'parent': v, 'tf_name': tf, 'tm_name': tm})
 
         # for i in nodes:
         #     print(i)
@@ -190,7 +220,7 @@ class ClusteringCallGraph:
 
         # plt.show()
 
-        return nodes_with_paraent
+        return self.tree
 
     def extract_function_name(self,str):
         end = str.find('\\')
@@ -268,16 +298,17 @@ class ClusteringCallGraph:
         # print("Features with lowest tfidf:\n{}".format(
         #     max_val[sort_by_tfidf[:5]]))
 
-        print("\nFeatures with highest tfidf: \n{}".format(
-            max_val[sort_by_tfidf[-5:]]))
+        # print("\nFeatures with highest tfidf: \n{}".format(
+        #     max_val[sort_by_tfidf[-5:]]))
 
+        # ~ printing highest frequency
         # print("Features with lowest tfidf:\n{}".format(
         #     feature_names[sort_by_tfidf[:5]]))
 
-        print("\nFeatures with highest tfidf: \n{}".format(
-            feature_names[sort_by_tfidf[-5:]]))
+        # print("\nFeatures with highest tfidf: \n{}".format(
+        #     feature_names[sort_by_tfidf[-5:]]))
 
-        return
+        return feature_names[sort_by_tfidf[-5:]]
 
     def execution_path_to_sentence(self, labels):
 
@@ -314,8 +345,9 @@ class ClusteringCallGraph:
         ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=15)
         ldamodel.save('model5.gensim')
         topics = ldamodel.print_topics(num_words=5)
-        for topic in topics:
-            print(topic)
+        # for topic in topics:
+        #     print(topic)
+        return topics
 
     def prepare_text_for_lda(self, text):
         tokens = self.tokenize(text)
@@ -502,10 +534,19 @@ class ClusteringCallGraph:
 
             if math.ceil(math.log(count + 1, 2)) == depth:
                 break
-
+        print(tree)
         return tree
 
         return
+
+    def id_to_sentence(self,labels):
+
+        str = ''
+        for l in labels:
+            str += self.function_id_to_name[l]
+            str += ' '
+
+        return str
 
 
 # c = ClusteringCallGraph()
