@@ -84,7 +84,7 @@ class ClusteringCallGraph:
 
     def tgf_to_networkX(self):
 
-        f = open("pyan_tgf.txt", "r")
+        f = open("own_tool.txt", "r")
 
         graph_started = False
         for line in f:
@@ -150,7 +150,7 @@ class ClusteringCallGraph:
         return Matrix
 
     def labeling_cluster(self, labels, k, v):
-
+        print(k,'blank document', labels)
         tf = self.tf_idf_score_for_scipy_cluster(labels)
         # print('topic modelling label')
         # tm = self.topic_model(labels)
@@ -171,15 +171,15 @@ class ClusteringCallGraph:
         dn = dendrogram(Z, truncate_mode='lastp', p=200)
         rootnode, nodelist = to_tree(Z, rd=True)
 
-        nodes = self.bfs(nodelist, rootnode.id, 7)
-        nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, 7)
+        nodes = self.bfs(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
+        nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
         # labels = bfs_leaf_node(nodelist, 6729)
         # print(labels)
 
 
         for k,v in nodes_with_parent.items():
             labels = self.bfs_leaf_node(nodelist, k)
-
+            print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
             # p.start()
 
@@ -469,6 +469,7 @@ class ClusteringCallGraph:
         q.put(id)
         visited[id] = 1
         while True:
+            print(list(q.queue))
             if q.empty():
                 break
             q.qsize()
@@ -534,6 +535,7 @@ class ClusteringCallGraph:
 
             if math.ceil(math.log(count + 1, 2)) == depth:
                 break
+        print('bfs_with_parent')
         print(tree)
         return tree
 

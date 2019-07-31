@@ -28,7 +28,7 @@ def get_cluster():
     c = ClusteringCallGraph()
 
     cluster = c.python_analysis()
-    print(cluster)
+    # print(cluster)
     del c
     return jsonify(cluster)
 

@@ -99,7 +99,21 @@
             { stroke: null }),
           $(go.TextBlock,
             { margin: 5 },
-            new go.Binding("text", "key", function(k) { return "node" + k; }))
+            new go.Binding("text", "key", function(k) { return "node" + k; })),
+            {
+                toolTip:                       // define a tooltip for each node
+                  $(go.Adornment, "Spot",      // that has several labels around it
+                    { background: "transparent" },  // avoid hiding tooltip when mouse moves
+                    $(go.Placeholder, { padding: 5 }),
+                    $(go.TextBlock,
+                      { alignment: go.Spot.Top, alignmentFocus: go.Spot.Bottom, stroke: "red" },
+                      new go.Binding("text", "key", function(s) { return "key: " + s; })),
+                    $(go.TextBlock, "Bottom",
+                      { alignment: go.Spot.Bottom, alignmentFocus: go.Spot.Top, stroke: "red" },
+                      new go.Binding("text", "tf_name", function(s) { return "Cluster Name: " + s; }))
+                  )  // end Adornment
+            }
+
         );
       myFullDiagram.nodeTemplate = myNodeTemplate;
       myLocalDiagram.nodeTemplate = myNodeTemplate;
@@ -209,14 +223,34 @@
         for (x in result)
             {
                 nodeDataArray.push({
-                  key: result[x].tf_name,
+                  key: result[x].key,
+                    parent: result[x].parent,
+                    tf_name: result[x].tf_name,
                   color: go.Brush.randomColor()
                 });
 
             }
 
+
         myFullDiagram.model = new go.TreeModel(nodeDataArray);
     }
+
+     // define tooltips for nodes
+      var tooltiptemplate =
+        $("ToolTip",
+          $(go.TextBlock,
+            {
+              font: "bold 8pt Helvetica, bold Arial, sans-serif",
+              wrap: go.TextBlock.WrapFit,
+              margin: 5
+            },
+            new go.Binding("text", "", tooltipTextConverter))
+        );
+
+
+
+
+
 
 
 </script>
