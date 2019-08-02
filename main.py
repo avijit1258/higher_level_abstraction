@@ -113,7 +113,7 @@ def tgf_to_networkX():
                 # G.add_edge(function_id_to_name[edge_info[0]], function_id_to_name[edge_info[1]])
                 G.add_edge(edge_info[0], edge_info[1])
 
-            if graph_started == False:
+            if graph_started == False and line.find('(') != -1:
                ln = line.split(' ')
                #print(ln)
                function_id_to_name[ln[0]] = extract_function_name(ln[1])

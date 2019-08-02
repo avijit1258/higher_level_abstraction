@@ -80,12 +80,12 @@ class ClusteringCallGraph:
 
         # plt.show()
 
-        return  self.clustering_using_scipy(mat)
+        return self.clustering_using_scipy(mat)
 
     def tgf_to_networkX(self):
 
         f = open("own_tool.txt", "r")
-
+        # print("Function name: ")
         graph_started = False
         for line in f:
 
@@ -100,10 +100,11 @@ class ClusteringCallGraph:
                 # G.add_edge(function_id_to_name[edge_info[0]], function_id_to_name[edge_info[1]])
                 self.G.add_edge(edge_info[0], edge_info[1])
 
-            if graph_started == False:
+            if graph_started == False :
                 ln = line.split(' ')
                 # print(ln)
                 self.function_id_to_name[ln[0]] = self.extract_function_name(ln[1])
+                print(ln[0])
 
         nx.draw(self.G, with_labels=True)
         plt.savefig('call-graph.png')
@@ -178,6 +179,8 @@ class ClusteringCallGraph:
 
 
         for k,v in nodes_with_parent.items():
+            if nodelist[k].count == 1:
+                continue
             labels = self.bfs_leaf_node(nodelist, k)
             print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
@@ -275,10 +278,21 @@ class ClusteringCallGraph:
         # print(labels)
 
         # txt1 = ['His smile was not perfect', 'His smile was not not not not perfect', 'she not sang']
-        txt1 = self.execution_path_to_sentence(labels)
-        tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word')
-        txt_fitted = tf.fit(txt1)
-        txt_transformed = txt_fitted.transform(txt1)
+        try:
+
+
+            # for i in labels:
+            #     print(self.execution_paths[i])
+
+            txt1 = self.execution_path_to_sentence(labels)
+            # print('Txt1: ', txt1)
+            tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='\d+')
+            txt_fitted = tf.fit(txt1)
+            txt_transformed = txt_fitted.transform(txt1)
+        except:
+            print('Here I got you',labels, 'In a sentence:', txt1)
+            for i in labels:
+                print(self.execution_paths[i])
 
         # print(tf.vocabulary_)
         #
@@ -469,7 +483,7 @@ class ClusteringCallGraph:
         q.put(id)
         visited[id] = 1
         while True:
-            print(list(q.queue))
+            # print(list(q.queue))
             if q.empty():
                 break
             q.qsize()
