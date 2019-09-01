@@ -10,26 +10,22 @@
 <body onload="init()">
 
     <div id="sample">
-  <div id="fullDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
+
+   <div>
+        <h3>Interactive tool for program comprehension through static analysis: ITpcSA</h3>
+        <button onclick="printDiagram()" class="btn"> GET Image </button>
+   </div>
+        <div>
+            <h2 style="margin-left: auto; margin-right: auto"> Full diagram</h2>
+        </div>
+
+  <div id="fullDiagram" style="height:350px;width:100%;border:1px solid black;margin:2px"></div>
+        <div><h2> Local diagram</h2></div>
+
   <div id="localDiagram" style="height:350px;width:100%;border:1px solid black;margin:2px"></div>
-  <button onclick="setupDiagram()">Create New Tree</button>
 
         <button onclick="get_cluster()" class="btn"> GET Cluster </button>
-  <p>
-  This sample includes two diagrams, the one on top showing a full tree and the one below
-  focusing on a specific node in the tree and those nodes that are logically "near" it.
-  When the selection changes in either diagram, the lower diagram changes its focus to the selected node.
-  To show which node in the full tree is selected,
-  a large yellow highlighter part employing a radial <a>Brush</a> is placed in the background layer of the upper diagram behind the selected node.
-  The Create New Tree button will randomly generate a new <a>TreeModel</a> to be used by the diagrams.
-  </p>
-  <p>
-  Although it is not demonstrated in this sample,
-  one could well use very simple templates for Nodes and for Links in the top Diagram.
-  This would make the top Diagram more efficient to construct when there are very many more nodes.
-  And one could use more detailed templates in the bottom Diagram,
-  where there is more room to show information for each node.
-  </p>
+
 </div>
 
 
@@ -39,15 +35,18 @@
 <script >
     function get_cluster() {
         Url = 'http://127.0.0.1:5000/get_cluster'
-        $('.btn').click(function () {
-            $.getJSON(Url, function (result) {
-                alert(result)
-                setupDiagram(result)
+        // $('.btn').click(function () {
+        //
+        // })
 
-                console.log(result)
+        $.getJSON(Url, function (result) {
+                alert(result);
+
+                setupDiagram(result);
+
+                console.log(result);
             })
-        })
-
+        clearDiagram();
 
     }
 
@@ -61,15 +60,16 @@
         $(go.Diagram, "fullDiagram",  // each diagram refers to its DIV HTML element by id
           {
             initialAutoScale: go.Diagram.UniformToFill,  // automatically scale down to show whole tree
-            maxScale: 0.25,
+            //maxScale: 0.25,
             contentAlignment: go.Spot.Center,  // center the tree in the viewport
-            isReadOnly: true,  // don't allow user to change the diagram
-            "animationManager.isEnabled": false,
+            isReadOnly: false,  // don't allow user to change the diagram
+            "animationManager.isEnabled": true,
             layout: $(go.TreeLayout,
               { angle: 90, sorting: go.TreeLayout.SortingAscending }),
             maxSelectionCount: 1,  // only one node may be selected at a time in each diagram
             // when the selection changes, update the myLocalDiagram view
-            "ChangedSelection": showLocalOnFullClick
+            "ChangedSelection": showLocalOnFullClick,
+              "undoManager.isEnabled": true
           });
 
       myLocalDiagram =  // this is very similar to the full Diagram
@@ -77,7 +77,7 @@
           {
             autoScale: go.Diagram.UniformToFill,
             contentAlignment: go.Spot.Center,
-            isReadOnly: true,
+            isReadOnly: false,
             layout: $(go.TreeLayout,
               { angle: 90, sorting: go.TreeLayout.SortingAscending }),
             "LayoutCompleted": function(e) {
@@ -86,8 +86,12 @@
             },
             maxSelectionCount: 1,
             // when the selection changes, update the contents of the myLocalDiagram
-            "ChangedSelection": showLocalOnLocalClick
+            "ChangedSelection": showLocalOnLocalClick,
+              "undoManager.isEnabled": true
           });
+
+      //myFullDiagram.toolManager.textEditingTool.defaultTextEditor = window.TextEditor;
+      //myLocalDiagram.toolManager.textEditingTool.defaultTextEditor = window.TextEditor;
 
       // Define a node template that is shared by both diagrams
       var myNodeTemplate =
@@ -98,15 +102,15 @@
             new go.Binding("fill", "color"),
             { stroke: null }),
           $(go.TextBlock,
-            { margin: 5 },
-            new go.Binding("text", "key", function(k) { return "node" + k; })),
+            { margin: 5, editable:true},
+            new go.Binding("text", "tf_name", function(k) { return "node" + k ; })),
             {
                 toolTip:                       // define a tooltip for each node
                   $(go.Adornment, "Spot",      // that has several labels around it
                     { background: "transparent" },  // avoid hiding tooltip when mouse moves
                     $(go.Placeholder, { padding: 5 }),
                     $(go.TextBlock,
-                      { alignment: go.Spot.Top, alignmentFocus: go.Spot.Bottom, stroke: "red" },
+                      { alignment: go.Spot.Top, alignmentFocus: go.Spot.Bottom, stroke: "red"},
                       new go.Binding("text", "key", function(s) { return "key: " + s; })),
                     $(go.TextBlock, "Bottom",
                       { alignment: go.Spot.Bottom, alignmentFocus: go.Spot.Top, stroke: "red" },
@@ -128,8 +132,9 @@
       myFullDiagram.linkTemplate = myLinkTemplate;
       myLocalDiagram.linkTemplate = myLinkTemplate;
 
+
       // Create the full tree diagram
-      setupDiagram();
+      // setupDiagram();
 
       // Create a part in the background of the full diagram to highlight the selected node
       highlighter =
@@ -156,6 +161,8 @@
         if (node0 !== null) node0.isSelected = true;
         showLocalOnFullClick();
       });
+
+      myFullDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
     }
 
     // Make the corresponding node in the full diagram to that selected in the local diagram selected,
@@ -199,6 +206,7 @@
       }
     }
 
+
     // Create the tree model containing TOTAL nodes, with each node having a variable number of children
     // function setupDiagram(total) {
     //   if (total === undefined) total = 100;  // default to 100 nodes
@@ -235,23 +243,34 @@
         myFullDiagram.model = new go.TreeModel(nodeDataArray);
     }
 
-     // define tooltips for nodes
-      var tooltiptemplate =
-        $("ToolTip",
-          $(go.TextBlock,
-            {
-              font: "bold 8pt Helvetica, bold Arial, sans-serif",
-              wrap: go.TextBlock.WrapFit,
-              margin: 5
-            },
-            new go.Binding("text", "", tooltipTextConverter))
-        );
+    function clearDiagram() {
+        myFullDiagram.model = null;
+    }
 
 
+     function get_image() {
+        myFullDiagram.makeImage();
+        alert('Image saved');
+    }
 
-
-
-
+    function printDiagram() {
+      var svgWindow = window.open();
+      if (!svgWindow) return;  // failure to open a new Window
+      var printSize = new go.Size(700, 960);
+      var bnds = myFullDiagram.documentBounds;
+      var x = bnds.x;
+      var y = bnds.y;
+      while (y < bnds.bottom) {
+        while (x < bnds.right) {
+          var svg = myFullDiagram.makeSVG({ scale: 1.0, position: new go.Point(x, y), size: printSize });
+          svgWindow.document.body.appendChild(svg);
+          x += printSize.width;
+        }
+        x = bnds.x;
+        y += printSize.height;
+      }
+      setTimeout(function() { svgWindow.print(); }, 1);
+    }
 
 </script>
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="Local view of GoJS works properly. Now, time to find contribution.">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/tool/templates/home.html" afterDir="false" />
     </list>
     <ignored path="venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +19,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="112" column="90" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
+            <state relative-caret-position="3856">
+              <caret line="275" lean-forward="true" selection-start-line="275" selection-end-line="275" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+            <state relative-caret-position="406">
+              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding>
                 <element signature="e#0#70#0" expanded="true" />
               </folding>
@@ -44,10 +44,34 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="292" column="66" lean-forward="true" selection-start-line="292" selection-start-column="66" selection-end-line="292" selection-end-column="66" />
+            <state relative-caret-position="256">
+              <caret line="295" column="92" lean-forward="true" selection-start-line="295" selection-start-column="92" selection-end-line="295" selection-end-column="92" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="211" column="70" lean-forward="true" selection-start-line="211" selection-start-column="70" selection-end-line="211" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/topic_modelling.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -56,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -66,22 +90,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/app.py">
+        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/sklearn/utils/validation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="2445" selection-start-line="2445" selection-end-line="2445" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8007">
-              <caret line="540" column="77" lean-forward="true" selection-start-line="540" selection-start-column="77" selection-end-line="540" selection-end-column="77" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="419">
+              <caret line="913" selection-start-line="913" selection-end-line="913" />
             </state>
           </provider>
         </entry>
@@ -89,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/own_tool.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+            <state relative-caret-position="461">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -99,7 +111,7 @@
         <entry file="file://$PROJECT_DIR$/tool/pyan_tgf.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1800">
-              <caret line="120" column="69" lean-forward="true" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
+              <caret line="120" column="69" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -116,8 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>visit</find>
-      <find>crhm_analysis</find>
       <find>python_analysis</find>
       <find>extracting</find>
       <find>jaccard</find>
@@ -133,20 +143,25 @@
       <find>python_ana</find>
       <find>nodes_with_parent</find>
       <find>bfs_with_parent</find>
-      <find>topic</find>
-      <find>tf</find>
       <find>id</find>
       <find>function_id_to_nam</find>
       <find>Execution paths</find>
-      <find>tf_idf_score_for_scipy_cluster</find>
       <find>label</find>
-      <find>labeling_cluster</find>
       <find>id_to_sentence</find>
       <find>function_id_to</find>
       <find>execution_paths</find>
       <find>bfs</find>
+      <find>topic</find>
+      <find>tf</find>
+      <find>labeling_cluster</find>
+      <find>print</find>
+      <find>function_id_to_name</find>
       <find>execution_path_to_sentence</find>
+      <find>tf_idf_score_for_scipy_cluster</find>
     </findStrings>
+    <replaceStrings>
+      <replace>make_documents_from_clusters_tfidf_method</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
@@ -167,19 +182,19 @@
         <option value="$PROJECT_DIR$/naming_clusters.py" />
         <option value="$PROJECT_DIR$/spark_neo4j/playing_with_pyspark.py" />
         <option value="$PROJECT_DIR$/tool/home.html" />
-        <option value="$PROJECT_DIR$/tool/templates/home.html" />
-        <option value="$PROJECT_DIR$/tool/app.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/tool/app.py" />
+        <option value="$PROJECT_DIR$/tool/templates/home.html" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/tool/ClusteringCallGraph.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2400" />
-    <option name="y" value="133" />
-    <option name="width" value="1440" />
-    <option name="height" value="810" />
+    <option name="x" value="1920" />
+    <option name="y" value="233" />
+    <option name="width" value="1920" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -251,9 +266,6 @@
       <module name="HigerLevelAbstraction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -382,9 +394,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ClusteringCallGraph" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.ClusteringCallGraph" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.util" />
       </list>
@@ -410,7 +422,10 @@
       <workItem from="1562627898978" duration="38791000" />
       <workItem from="1563425002228" duration="4806000" />
       <workItem from="1563734583629" duration="3517000" />
-      <workItem from="1564011175518" duration="37033000" />
+      <workItem from="1564011175518" duration="37946000" />
+      <workItem from="1564786377518" duration="113000" />
+      <workItem from="1564888126840" duration="7290000" />
+      <workItem from="1565208195933" duration="49269000" />
     </task>
     <task id="LOCAL-00001" summary="Clustering and jaccard distance calculation completed.">
       <created>1557285435693</created>
@@ -475,11 +490,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564539798151</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="One bug fixed which is for blank term in tf-idf vectorize. I have updated the token_pattern parameter for tfidfvectorizer. Now, focus should be on view side.">
+      <created>1564723676253</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1564723676253</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197234000" />
+    <option name="totallyTimeSpent" value="254819000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -493,17 +515,17 @@
   <component name="ToolWindowManager">
     <frame x="1920" y="233" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19637139" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20277481" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843652" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2161595" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.30870917" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3084995" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32738718" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32738718" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -512,9 +534,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" sideWeight="0.046801873" side_tool="true" visible="true" weight="0.20117396" />
+      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" sideWeight="0.05148206" side_tool="true" visible="true" weight="0.25453576" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info active="true" anchor="right" id="SciView" order="5" sideWeight="0.95319813" visible="true" weight="0.20117396" />
+      <window_info anchor="right" id="SciView" order="5" sideWeight="0.9485179" visible="true" weight="0.25453576" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -539,22 +561,17 @@
     <MESSAGE value="Tool started to work. main clustering file refactored for OOP concept, flask is also ready for further, No sending json and showing it by GO js is next goal." />
     <MESSAGE value="Able to show cluster and the tree view working. Now, I should concentrate on beautification of the view." />
     <MESSAGE value="Local view of GoJS works properly. Now, time to find contribution." />
-    <option name="LAST_COMMIT_MESSAGE" value="Local view of GoJS works properly. Now, time to find contribution." />
+    <MESSAGE value="One bug fixed which is for blank term in tf-idf vectorize. I have updated the token_pattern parameter for tfidfvectorizer. Now, focus should be on view side." />
+    <option name="LAST_COMMIT_MESSAGE" value="One bug fixed which is for blank term in tf-idf vectorize. I have updated the token_pattern parameter for tfidfvectorizer. Now, focus should be on view side." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/higher_level_abstraction$ClusteringCallGraph.coverage" NAME="ClusteringCallGraph Coverage Results" MODIFIED="1567127065532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
     <SUITE FILE_PATH="coverage/higher_level_abstraction$extract_caller_caller_CRHM.coverage" NAME="extract_caller_caller_CRHM Coverage Results" MODIFIED="1557201572502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/higher_level_abstraction$main.coverage" NAME="main Coverage Results" MODIFIED="1562630192149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/higher_level_abstraction$util.coverage" NAME="util Coverage Results" MODIFIED="1557663103026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/higher_level_abstraction$topic_modelling.coverage" NAME="topic_modelling Coverage Results" MODIFIED="1557521858713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/EntryForm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8360">
-          <caret line="26" column="17" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/Examples.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-285">
@@ -767,46 +784,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic_modelling.py">
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/own_tool.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        <state relative-caret-position="556">
+          <caret line="2445" selection-start-line="2445" selection-end-line="2445" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/pyan_tgf.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
-          <caret line="120" column="69" lean-forward="true" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
+          <caret line="120" column="69" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/own_tool.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="112" column="90" selection-start-line="112" selection-start-column="90" selection-end-line="112" selection-end-column="90" />
+        <state relative-caret-position="3856">
+          <caret line="275" lean-forward="true" selection-start-line="275" selection-end-line="275" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -814,35 +818,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8007">
-          <caret line="540" column="77" lean-forward="true" selection-start-line="540" selection-start-column="77" selection-end-line="540" selection-end-column="77" />
+        <state relative-caret-position="316">
+          <caret line="211" column="70" lean-forward="true" selection-start-line="211" selection-start-column="70" selection-end-line="211" selection-end-column="70" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/app.py">
+    <entry file="file://$PROJECT_DIR$/topic_modelling.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="2445" selection-start-line="2445" selection-end-line="2445" />
+        <state relative-caret-position="240">
+          <caret line="17" column="13" lean-forward="true" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/sklearn/utils/validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="913" selection-start-line="913" selection-end-line="913" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tool/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#70#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="292" column="66" lean-forward="true" selection-start-line="292" selection-start-column="66" selection-end-line="292" selection-end-column="66" />
+        <state relative-caret-position="256">
+          <caret line="295" column="92" lean-forward="true" selection-start-line="295" selection-start-column="92" selection-end-line="295" selection-end-column="92" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

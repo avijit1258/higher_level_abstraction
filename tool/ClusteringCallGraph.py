@@ -59,6 +59,7 @@ class ClusteringCallGraph:
     function_id_to_name = {}
 
     def __del__(self):
+
         print('deleted')
 
     def python_analysis(self):
@@ -76,15 +77,17 @@ class ClusteringCallGraph:
         mat = self.jaccard_distance_matrix(self.execution_paths)
 
 
+
         # clustering_using_sklearn(mat)
 
         # plt.show()
-
+        self.G.clear()
         return self.clustering_using_scipy(mat)
 
     def tgf_to_networkX(self):
 
-        f = open("own_tool.txt", "r")
+        f = open("flask.txt", "r")
+        G = nx.DiGraph()
         # print("Function name: ")
         graph_started = False
         for line in f:
@@ -104,7 +107,7 @@ class ClusteringCallGraph:
                 ln = line.split(' ')
                 # print(ln)
                 self.function_id_to_name[ln[0]] = self.extract_function_name(ln[1])
-                print(ln[0])
+                # print(ln[0])
 
         nx.draw(self.G, with_labels=True)
         plt.savefig('call-graph.png')
@@ -151,18 +154,21 @@ class ClusteringCallGraph:
         return Matrix
 
     def labeling_cluster(self, labels, k, v):
-        print(k,'blank document', labels)
+        # print(k,'blank document', labels)
         tf = self.tf_idf_score_for_scipy_cluster(labels)
         # print('topic modelling label')
         # tm = self.topic_model(labels)
-        print('-------------#######-------')
-        self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
+        # print('-------------#######-------')
+        # Considering functions names as unit
+        # self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
+        # Considering words in functions name as unit
+        self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
 
         return
 
     def clustering_using_scipy(self, mt):
 
-        print('Execution paths : ', len(self.execution_paths))
+        # print('Execution paths : ', len(self.execution_paths))
         # print(mt)
         # npa = np.asarray(execution_paths)
         # Y = pdist(npa, 'jaccard')
@@ -182,7 +188,7 @@ class ClusteringCallGraph:
             if nodelist[k].count == 1:
                 continue
             labels = self.bfs_leaf_node(nodelist, k)
-            print(k, 'cluster using scipy', labels)
+            # print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
             # p.start()
 
@@ -272,27 +278,30 @@ class ClusteringCallGraph:
 
         return leaf_nodes
 
-    def tf_idf_score_for_scipy_cluster(self, labels):
+    def tf_idf_score_for_scipy_cluster(self, clusters):
 
         # print(execution_paths[labels[0]])
+        # print('tf_idf_score_for_scipy_cluster')
         # print(labels)
 
-        # txt1 = ['His smile was not perfect', 'His smile was not not not not perfect', 'she not sang']
+        txt1 = ['His smile was not perfect', 'His smile was not not not not perfect', 'she not sang']
         try:
 
 
             # for i in labels:
             #     print(self.execution_paths[i])
 
-            txt1 = self.execution_path_to_sentence(labels)
-            # print('Txt1: ', txt1)
-            tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='\d+')
+            txt1 = self.make_documents_from_clusters_tfidf_word(clusters)
+            print('Txt1: ', txt1, 'Clusters:',clusters)
+            # when digits are passed as words(un-comment this when methods are used as unit)
+            # tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='\d+')
+            # when words are used means strings
+            tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='(?u)\\b\\w\\w+\\b')
             txt_fitted = tf.fit(txt1)
             txt_transformed = txt_fitted.transform(txt1)
         except:
-            print('Here I got you',labels, 'In a sentence:', txt1)
-            for i in labels:
-                print(self.execution_paths[i])
+            print('Here I got you',clusters, 'In a sentence:', txt1)
+            
 
         # print(tf.vocabulary_)
         #
@@ -324,22 +333,55 @@ class ClusteringCallGraph:
 
         return feature_names[sort_by_tfidf[-5:]]
 
-    def execution_path_to_sentence(self, labels):
+    def make_documents_from_clusters_tfidf_method(self, clusters):
 
         documents = []
 
-        for l in labels:
+        for c in clusters:
             str = ''
-            for e in self.execution_paths[l]:
+            for e in self.execution_paths[c]:
                 str += e
                 str += ' '
             documents.append(str)
 
+
         return documents
+
+    def make_documents_from_clusters_tfidf_word(self, clusters):
+
+        documents = []
+
+        for c in clusters:
+            str = ''
+            for e in self.execution_paths[c]:
+                # print(self.merge_words_as_sentence(self.function_id_to_name[e].split("_")))
+                str += self.merge_words_as_sentence(self.function_id_to_name[e].split("_"))
+                str += ' '
+            # print('\n')
+            documents.append(str)
+
+        return documents
+
+    def merge_words_as_sentence(self, identifiers):
+
+        result = []
+        st = ''
+        # to omit empty words
+        for i in identifiers:
+            if i == '':
+                continue
+            else:
+                result.append(i)
+
+        for r in result:
+            st += r
+            st += ' '
+
+        return st
 
     def topic_model(self, labels):
 
-        txt = self.execution_path_to_sentence(labels)
+        txt = self.make_documents_from_clusters_tfidf_method(labels)
 
         for line in txt:
             # print(line)
@@ -438,7 +480,7 @@ class ClusteringCallGraph:
         # As I truncated the dendogram, actual code from stackoverflow created infinite loop
         # Fixing the code maually solved the problem. I stoping the while loop solved the problem
         # ids_left = range(3375, 6746)
-        print(ids_left)
+        # print(ids_left)
 
         count = 1
         while count == 1:
@@ -493,7 +535,7 @@ class ClusteringCallGraph:
 
             if nodelist[p].count == 1:
                 nodes.append(p)
-                print(p, ' ', nodelist[p].count)
+                # print(p, ' ', nodelist[p].count)
                 visited[p] = 1
                 continue
 
@@ -503,7 +545,7 @@ class ClusteringCallGraph:
                 q.put(nodelist[p].right.id)
 
             nodes.append(p)
-            print(p, ' ', nodelist[p].count)
+            # print(p, ' ', nodelist[p].count)
             visited[p] = 1
 
             if math.ceil(math.log(count + 1, 2)) == depth:
@@ -549,8 +591,8 @@ class ClusteringCallGraph:
 
             if math.ceil(math.log(count + 1, 2)) == depth:
                 break
-        print('bfs_with_parent')
-        print(tree)
+        # print('bfs_with_parent')
+        # print(tree)
         return tree
 
         return
