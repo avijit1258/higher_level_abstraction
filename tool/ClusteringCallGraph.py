@@ -33,10 +33,9 @@ import pickle
 
 import gensim
 
+
+
 import multiprocessing
-
-
-
 
 class ClusteringCallGraph:
     S = []
@@ -76,8 +75,6 @@ class ClusteringCallGraph:
 
         mat = self.jaccard_distance_matrix(self.execution_paths)
 
-
-
         # clustering_using_sklearn(mat)
 
         # plt.show()
@@ -86,7 +83,9 @@ class ClusteringCallGraph:
 
     def tgf_to_networkX(self):
 
-        f = open("flask.txt", "r")
+        # path = easygui.fileopenbox()
+        f = open("flaskSept7.txt", "r")
+        # f = open(path, "r")
         G = nx.DiGraph()
         # print("Function name: ")
         graph_started = False
@@ -153,9 +152,10 @@ class ClusteringCallGraph:
 
         return Matrix
 
-    def labeling_cluster(self, labels, k, v):
-        # print(k,'blank document', labels)
-        tf = self.tf_idf_score_for_scipy_cluster(labels)
+    def labeling_cluster(self, execution_paths_of_a_cluster, k, v):
+        print(k,'blank document', execution_paths_of_a_cluster)
+        print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
+        tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
         # print('topic modelling label')
         # tm = self.topic_model(labels)
         # print('-------------#######-------')
@@ -187,12 +187,12 @@ class ClusteringCallGraph:
         for k,v in nodes_with_parent.items():
             if nodelist[k].count == 1:
                 continue
-            labels = self.bfs_leaf_node(nodelist, k)
+            execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
             # print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
             # p.start()
 
-            self.labeling_cluster(labels, k, v)
+            self.labeling_cluster(execution_paths_of_a_cluster, k, v)
 
             #print('--------------#######--------')
             # print('Cluster:', k, 'Count:', nodelist[k].count)
@@ -292,7 +292,7 @@ class ClusteringCallGraph:
             #     print(self.execution_paths[i])
 
             txt1 = self.make_documents_from_clusters_tfidf_word(clusters)
-            print('Txt1: ', txt1, 'Clusters:',clusters)
+            # print('Txt1: ', txt1, 'Clusters:',clusters)
             # when digits are passed as words(un-comment this when methods are used as unit)
             # tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='\d+')
             # when words are used means strings
@@ -600,13 +600,31 @@ class ClusteringCallGraph:
     def id_to_sentence(self,labels):
 
         str = ''
+
         for l in labels:
             str += self.function_id_to_name[l]
             str += ' '
 
         return str
 
+    def execution_path_to_sentence(self,execution_paths_of_a_cluster):
 
-# c = ClusteringCallGraph()
-#
-# c.python_analysis()
+        documents = []
+
+        try:
+            for l in execution_paths_of_a_cluster:
+                str = ''
+                for e in self.execution_paths[l]:
+                    str += self.id_to_sentence(e)
+                    str += ' '
+                documents.append(str)
+        except:
+            print('Crushed : ', execution_paths_of_a_cluster)
+
+
+        return documents
+
+
+c = ClusteringCallGraph()
+
+c.python_analysis()
