@@ -33,9 +33,17 @@ import pickle
 
 import gensim
 
+import xlsxwriter
+
 
 
 import multiprocessing
+
+from xlsxwriter import worksheet
+
+
+workbook = xlsxwriter.Workbook('flask.xlsx')
+worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
     S = []
@@ -48,6 +56,8 @@ class ClusteringCallGraph:
 
     nltk.download('wordnet')
 
+    special_functions = ['lambda', 'genexpr', 'listcomp', 'setcomp', 'dictcomp']
+
     parser = English()
 
     nltk.download('stopwords')
@@ -56,6 +66,15 @@ class ClusteringCallGraph:
     execution_paths = []
     G = nx.DiGraph()
     function_id_to_name = {}
+
+    row = 1
+
+
+
+    # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
+    worksheet.write(0,0, 'Cluster Id')
+    worksheet.write(0,1, 'Execution_Paths')
+    worksheet.write(0,2, 'Naming_using_our_approach')
 
     def __del__(self):
 
@@ -79,6 +98,7 @@ class ClusteringCallGraph:
 
         # plt.show()
         self.G.clear()
+
         return self.clustering_using_scipy(mat)
 
     def tgf_to_networkX(self):
@@ -100,6 +120,8 @@ class ClusteringCallGraph:
                 edge_info = line.split()
                 # print(edge_info)
                 # G.add_edge(function_id_to_name[edge_info[0]], function_id_to_name[edge_info[1]])
+                if self.function_id_to_name[edge_info[0]] in self.special_functions or self.function_id_to_name[edge_info[1]] in self.special_functions:
+                    continue
                 self.G.add_edge(edge_info[0], edge_info[1])
 
             if graph_started == False :
@@ -153,16 +175,27 @@ class ClusteringCallGraph:
         return Matrix
 
     def labeling_cluster(self, execution_paths_of_a_cluster, k, v):
-        print(k,'blank document', execution_paths_of_a_cluster)
-        print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
-        tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
+        # print(k,'blank document', execution_paths_of_a_cluster)
+        # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
+
+        # tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
+        tm = self.topic_model(execution_paths_of_a_cluster)
+        worksheet.write(self.row, 0, k)
+        worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
+        # worksheet.write(self.row, 2, self.merge_words_as_sentence(tf))
+        # worksheet.write(self.row, 2, self.id_to_sentence(tf))
+        worksheet.write(self.row, 2, tm)
+        self.row += 1
+        # worksheet.write(k, self.execution_path_to_sentence(execution_paths_of_a_cluster), tf)
+
         # print('topic modelling label')
         # tm = self.topic_model(labels)
         # print('-------------#######-------')
         # Considering functions names as unit
         # self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
+        self.tree.append({'key': k, 'parent': v, 'tf_name': 'Hello tfidf', 'tm_name': tm})
         # Considering words in functions name as unit
-        self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
+        # self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
 
         return
 
@@ -291,7 +324,8 @@ class ClusteringCallGraph:
             # for i in labels:
             #     print(self.execution_paths[i])
 
-            txt1 = self.make_documents_from_clusters_tfidf_word(clusters)
+            # txt1 = self.make_documents_for_a_cluster_tfidf_word(clusters)
+            txt1 = self.make_documents_for_a_cluster_tfidf_method(clusters)
             # print('Txt1: ', txt1, 'Clusters:',clusters)
             # when digits are passed as words(un-comment this when methods are used as unit)
             # tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='\d+')
@@ -333,7 +367,7 @@ class ClusteringCallGraph:
 
         return feature_names[sort_by_tfidf[-5:]]
 
-    def make_documents_from_clusters_tfidf_method(self, clusters):
+    def make_documents_for_a_cluster_tfidf_method(self, clusters):
 
         documents = []
 
@@ -347,7 +381,21 @@ class ClusteringCallGraph:
 
         return documents
 
-    def make_documents_from_clusters_tfidf_word(self, clusters):
+    def make_documents_for_a_cluster_tm_method(self, clusters):
+
+        documents = []
+
+        for c in clusters:
+            str = ''
+            for e in self.execution_paths[c]:
+                str += self.function_id_to_name[e]
+                str += ' '
+            documents.append(str)
+
+
+        return documents
+
+    def make_documents_for_a_cluster_tfidf_word(self, clusters):
 
         documents = []
 
@@ -381,7 +429,7 @@ class ClusteringCallGraph:
 
     def topic_model(self, labels):
 
-        txt = self.make_documents_from_clusters_tfidf_method(labels)
+        txt = self.make_documents_for_a_cluster_tfidf_method(labels)
 
         for line in txt:
             # print(line)
@@ -398,11 +446,14 @@ class ClusteringCallGraph:
         dictionary.save('dictionary.gensim')
 
         NUM_TOPICS = 5
-        ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=15)
+        ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
+        # ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         ldamodel.save('model5.gensim')
-        topics = ldamodel.print_topics(num_words=5)
+        #topics = ldamodel.print_topics(num_words=5)
         # for topic in topics:
-        #     print(topic)
+        #    print(topic)
+        topics = ldamodel.print_topic(0,topn=5)
+
         return topics
 
     def prepare_text_for_lda(self, text):
@@ -597,34 +648,38 @@ class ClusteringCallGraph:
 
         return
 
-    def id_to_sentence(self,labels):
+    def id_to_sentence(self,execution_paths):
 
         str = ''
 
-        for l in labels:
+        for l in execution_paths:
             str += self.function_id_to_name[l]
             str += ' '
 
         return str
 
-    def execution_path_to_sentence(self,execution_paths_of_a_cluster):
+    def execution_path_to_sentence(self, execution_paths_of_a_cluster):
 
         documents = []
 
         try:
+            str = ''
             for l in execution_paths_of_a_cluster:
-                str = ''
+
                 for e in self.execution_paths[l]:
-                    str += self.id_to_sentence(e)
-                    str += ' '
-                documents.append(str)
+                    str += self.function_id_to_name[e]
+                    str += ', '
+                str += ' ;'
+                # documents.append(str)
         except:
-            print('Crushed : ', execution_paths_of_a_cluster)
+            print('Crushed : ', e)
 
-
-        return documents
+        return str
 
 
 c = ClusteringCallGraph()
 
 c.python_analysis()
+
+workbook.close()
+
