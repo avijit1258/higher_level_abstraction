@@ -69,7 +69,7 @@ class ClusteringCallGraph:
 
     row = 1
 
-
+    count = 0
 
     # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
     worksheet.write(0,0, 'Cluster Id')
@@ -179,11 +179,13 @@ class ClusteringCallGraph:
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
 
         # tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
-        tm = self.topic_model(execution_paths_of_a_cluster)
+        # tm = self.topic_model_lda(execution_paths_of_a_cluster)
+        tm = self.topic_model_lsi(execution_paths_of_a_cluster)
+        print(self.count,'' ,tm)
         worksheet.write(self.row, 0, k)
         worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
-        # worksheet.write(self.row, 2, self.merge_words_as_sentence(tf))
-        # worksheet.write(self.row, 2, self.id_to_sentence(tf))
+        # worksheet.write(self.row, 2, self.merge_words_as_sentence(tf)) # split_method_tfidf
+        # worksheet.write(self.row, 2, self.id_to_sentence(tf)) # method tfidf
         worksheet.write(self.row, 2, tm)
         self.row += 1
         # worksheet.write(k, self.execution_path_to_sentence(execution_paths_of_a_cluster), tf)
@@ -224,7 +226,10 @@ class ClusteringCallGraph:
             # print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
             # p.start()
-
+            self.count += 1
+            if self.count == 300:
+                print('Hello')
+                break
             self.labeling_cluster(execution_paths_of_a_cluster, k, v)
 
             #print('--------------#######--------')
@@ -409,6 +414,20 @@ class ClusteringCallGraph:
             documents.append(str)
 
         return documents
+    def make_documents_for_a_cluster_tm_word(self, clusters):
+
+        documents = []
+
+        for c in clusters:
+            str = ''
+            for e in self.execution_paths[c]:
+                # print(self.merge_words_as_sentence(self.function_id_to_name[e].split("_")))
+                str += self.merge_words_as_sentence(self.function_id_to_name[e].split("_"))
+                str += ' '
+            # print('\n')
+            documents.append(str)
+
+        return documents
 
     def merge_words_as_sentence(self, identifiers):
 
@@ -427,9 +446,10 @@ class ClusteringCallGraph:
 
         return st
 
-    def topic_model(self, labels):
+    def topic_model_lda(self, labels):
 
-        txt = self.make_documents_for_a_cluster_tfidf_method(labels)
+        # txt = self.make_documents_for_a_cluster_tm_method(labels)
+        txt = self.make_documents_for_a_cluster_tm_word(labels)
 
         for line in txt:
             # print(line)
@@ -453,6 +473,38 @@ class ClusteringCallGraph:
         # for topic in topics:
         #    print(topic)
         topics = ldamodel.print_topic(0,topn=5)
+
+        return topics
+
+    def topic_model_lsi(self, labels):
+
+        txt = self.make_documents_for_a_cluster_tm_method(labels)
+        # txt = self.make_documents_for_a_cluster_tm_word(labels)
+        print(txt)
+
+        for line in txt:
+            # print(line)
+            tokens = self.prepare_text_for_lda(line)
+            # if random.random() > .99:
+            # print(tokens)
+            self.text_data.append(tokens)
+
+        # print(text_data)
+        dictionary = corpora.Dictionary(self.text_data)
+        corpus = [dictionary.doc2bow(text) for text in self.text_data]
+
+        pickle.dump(corpus, open('corpus.pkl', 'wb'))
+        dictionary.save('dictionary.gensim')
+
+        NUM_TOPICS = 5
+        # ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
+        # ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
+        lsimodel = gensim.models.lsimodel.LsiModel(corpus, num_topics=5, id2word=dictionary)
+        lsimodel.save('model5.gensim')
+        # topics = ldamodel.print_topics(num_words=5)
+        # for topic in topics:
+        #    print(topic)
+        topics = lsimodel.print_topic(0, topn=5)
 
         return topics
 

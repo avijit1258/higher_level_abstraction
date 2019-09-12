@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="">
+    <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="LDA model is also running smoothly and taking too much time, although multicore processing is used. Writing cluster and results to excel file is also added. Almost ready for user study. Need to get LSI and LDA names for both method and word.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" afterDir="false" />
     </list>
@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="685" lean-forward="true" selection-start-line="685" selection-end-line="685" />
+            <state relative-caret-position="125">
+              <caret line="480" column="65" selection-start-line="480" selection-start-column="65" selection-end-line="480" selection-end-column="65" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -101,8 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>topic_mode</find>
-      <find>en_stop</find>
       <find>get_lem</find>
       <find>parser</find>
       <find>cluster_view</find>
@@ -131,6 +129,8 @@
       <find>make_documents</find>
       <find>tf_idf_score_for_scipy_cluster</find>
       <find>execution_path_to_sentence</find>
+      <find>topic_model</find>
+      <find>make_documents_for_a_cluster_tm_word</find>
     </findStrings>
     <replaceStrings>
       <replace>make_documents_from_clusters_tfidf_method</replace>
@@ -164,9 +164,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1920" />
     <option name="y" value="-2" />
-    <option name="width" value="1920" />
-    <option name="height" value="1082" />
+    <option name="width" value="2560" />
+    <option name="height" value="1442" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -407,7 +408,7 @@
       <workItem from="1567794786010" duration="8732000" />
       <workItem from="1568064591702" duration="673000" />
       <workItem from="1568067023249" duration="5903000" />
-      <workItem from="1568141485193" duration="30083000" />
+      <workItem from="1568141485193" duration="38502000" />
     </task>
     <task id="LOCAL-00001" summary="Clustering and jaccard distance calculation completed.">
       <created>1557285435693</created>
@@ -493,11 +494,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568151781217</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="LDA model is also running smoothly and taking too much time, although multicore processing is used. Writing cluster and results to excel file is also added. Almost ready for user study. Need to get LSI and LDA names for both method and word.">
+      <created>1568199285314</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568199285314</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301711000" />
+    <option name="totallyTimeSpent" value="310130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,20 +517,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21970116" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21184632" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32829374" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32738718" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2161595" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3084995" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="7" visible="true" weight="0.33693305" />
+      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32738718" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
@@ -531,9 +538,9 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" sideWeight="0.058631923" side_tool="true" visible="true" weight="0.24460432" />
+      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" sideWeight="0.05928237" side_tool="true" visible="true" weight="0.23585913" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="5" sideWeight="0.9413681" visible="true" weight="0.24460432" />
+      <window_info active="true" anchor="right" id="SciView" order="5" sideWeight="0.94071764" visible="true" weight="0.23585913" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +568,8 @@
     <MESSAGE value="One bug fixed which is for blank term in tf-idf vectorize. I have updated the token_pattern parameter for tfidfvectorizer. Now, focus should be on view side." />
     <MESSAGE value="Naming using individual keywords from function names are performed." />
     <MESSAGE value="Some refactoring for better understanding of code and working to write contents to a csv file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some refactoring for better understanding of code and working to write contents to a csv file." />
+    <MESSAGE value="LDA model is also running smoothly and taking too much time, although multicore processing is used. Writing cluster and results to excel file is also added. Almost ready for user study. Need to get LSI and LDA names for both method and word." />
+    <option name="LAST_COMMIT_MESSAGE" value="LDA model is also running smoothly and taking too much time, although multicore processing is used. Writing cluster and results to excel file is also added. Almost ready for user study. Need to get LSI and LDA names for both method and word." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/higher_level_abstraction$ClusteringCallGraph.coverage" NAME="ClusteringCallGraph Coverage Results" MODIFIED="1567127065532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
@@ -845,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="685" lean-forward="true" selection-start-line="685" selection-end-line="685" />
+        <state relative-caret-position="125">
+          <caret line="480" column="65" selection-start-line="480" selection-start-column="65" selection-end-line="480" selection-end-column="65" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
