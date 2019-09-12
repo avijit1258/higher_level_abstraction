@@ -1,0 +1,1723 @@
+1 data_loader_benchmark
+2 detectron.core.config
+3 detectron.core.rpn_generator
+4 detectron.core.test
+5 detectron.core.test_engine
+6 detectron.core.test_retinanet
+7 detectron.datasets.cityscapes_json_dataset_evaluator
+8 detectron.datasets.coco_to_cityscapes_id
+9 detectron.datasets.dataset_catalog
+10 detectron.datasets.dummy_datasets
+11 detectron.datasets.json_dataset
+12 detectron.datasets.json_dataset_evaluator
+13 detectron.datasets.roidb
+14 detectron.datasets.task_evaluation
+15 detectron.datasets.voc_dataset_evaluator
+16 detectron.datasets.voc_eval
+17 detectron.modeling.FPN
+18 detectron.modeling.ResNet
+19 detectron.modeling.VGG16
+20 detectron.modeling.VGG_CNN_M_1024
+21 detectron.modeling.detector
+22 detectron.modeling.fast_rcnn_heads
+23 detectron.modeling.generate_anchors
+24 detectron.modeling.keypoint_rcnn_heads
+25 detectron.modeling.mask_rcnn_heads
+26 detectron.modeling.model_builder
+27 detectron.modeling.name_compat
+28 detectron.modeling.optimizer
+29 detectron.modeling.retinanet_heads
+30 detectron.modeling.rfcn_heads
+31 detectron.modeling.rpn_heads
+32 detectron.ops.collect_and_distribute_fpn_rpn_proposals
+33 detectron.ops.generate_proposal_labels
+34 detectron.ops.generate_proposals
+35 detectron.roi_data.data_utils
+36 detectron.roi_data.fast_rcnn
+37 detectron.roi_data.keypoint_rcnn
+38 detectron.roi_data.loader
+39 detectron.roi_data.mask_rcnn
+40 detectron.roi_data.minibatch
+41 detectron.roi_data.retinanet
+42 detectron.roi_data.rpn
+43 detectron.utils.blob
+44 detectron.utils.boxes
+45 detectron.utils.c2
+46 detectron.utils.collections
+47 detectron.utils.colormap
+48 detectron.utils.coordinator
+49 detectron.utils.env
+50 detectron.utils.image
+51 detectron.utils.io
+52 detectron.utils.keypoints
+53 detectron.utils.logging
+54 detectron.utils.lr_policy
+55 detectron.utils.model_convert_utils
+56 detectron.utils.net
+57 detectron.utils.segms
+58 detectron.utils.subprocess
+59 detectron.utils.timer
+60 detectron.utils.train
+61 detectron.utils.training_stats
+62 detectron.utils.vis
+63 test_batch_permutation_op
+64 test_bbox_transform
+65 test_cfg
+66 test_loader
+67 test_restore_checkpoint
+68 test_smooth_l1_loss_op
+69 test_spatial_narrow_as_op
+70 test_zero_even_op
+71 loader_loop\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/data_loader_benchmark.py:80)
+72 main\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/data_loader_benchmark.py:91)
+73 parse_args\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/data_loader_benchmark.py:51)
+74 _check_and_coerce_cfg_value_type\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1278)
+75 _decode_cfg_value\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1245)
+76 _key_is_deprecated\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1219)
+77 _key_is_renamed\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1228)
+78 _merge_a_into_b\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1184)
+79 _raise_key_rename_error\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1232)
+80 assert_and_infer_cfg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1085)
+81 cache_cfg_urls\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1103)
+82 get_output_dir\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1117)
+83 load_cfg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1131)
+84 merge_cfg_from_cfg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1155)
+85 merge_cfg_from_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1148)
+86 merge_cfg_from_list\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/config.py:1160)
+87 genexpr
+88 evaluate_proposal_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/rpn_generator.py:272)
+89 generate_proposals_on_roidb\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/rpn_generator.py:170)
+90 generate_rpn_on_dataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/rpn_generator.py:55)
+91 generate_rpn_on_range\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/rpn_generator.py:121)
+92 get_roidb\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/rpn_generator.py:253)
+93 im_proposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/rpn_generator.py:208)
+94 multi_gpu_generate_rpn_on_dataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/rpn_generator.py:87)
+95 listcomp
+96 listcomp
+97 _add_multilevel_rois_for_test\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:921)
+98 _get_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:942)
+99 _get_rois_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:889)
+100 _project_im_rois\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:905)
+101 box_results_with_nms_and_limit\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:749)
+102 combine_heatmaps_size_dep\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:721)
+103 im_conv_body_only\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:111)
+104 im_detect_all\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:52)
+105 im_detect_bbox\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:121)
+106 im_detect_bbox_aspect_ratio\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:336)
+107 im_detect_bbox_aug\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:197)
+108 im_detect_bbox_hflip\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:294)
+109 im_detect_bbox_scale\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:319)
+110 im_detect_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:540)
+111 im_detect_keypoints_aspect_ratio\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:699)
+112 im_detect_keypoints_aug\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:581)
+113 im_detect_keypoints_hflip\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:668)
+114 im_detect_keypoints_scale\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:685)
+115 im_detect_mask\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:373)
+116 im_detect_mask_aspect_ratio\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:520)
+117 im_detect_mask_aug\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:416)
+118 im_detect_mask_hflip\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:489)
+119 im_detect_mask_scale\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:506)
+120 keypoint_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:870)
+121 segm_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:812)
+122 listcomp
+123 add_preds_t\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:217)
+124 add_heatmaps_t\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:599)
+125 heur_f\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:654)
+126 listcomp
+127 logit\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test.py:475)
+128 listcomp
+129 listcomp
+130 empty_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:367)
+131 extend_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:389)
+132 get_eval_functions\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:51)
+133 get_inference_dataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:65)
+134 get_roidb_and_dataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:341)
+135 initialize_model_from_cfg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:323)
+136 multi_gpu_test_net_on_dataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:168)
+137 run_inference\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:84)
+138 test_net\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:217)
+139 test_net_on_dataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:139)
+140 listcomp
+141 listcomp
+142 listcomp
+143 result_getter\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_engine.py:92)
+144 listcomp
+145 _create_cell_anchors\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_retinanet.py:38)
+146 im_detect_bbox\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/core/test_retinanet.py:67)
+147 listcomp
+148 evaluate_masks\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/cityscapes_json_dataset_evaluator.py:36)
+149 cityscapes_to_coco\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/coco_to_cityscapes_id.py:38)
+150 cityscapes_to_coco_all_random\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/coco_to_cityscapes_id.py:83)
+151 cityscapes_to_coco_with_rider\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/coco_to_cityscapes_id.py:53)
+152 cityscapes_to_coco_without_person_rider\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/coco_to_cityscapes_id.py:68)
+153 contains\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dataset_catalog.py:213)
+154 datasets\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dataset_catalog.py:208)
+155 get_ann_fn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dataset_catalog.py:223)
+156 get_devkit_dir\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dataset_catalog.py:233)
+157 get_im_dir\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dataset_catalog.py:218)
+158 get_im_prefix\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dataset_catalog.py:228)
+159 get_raw_dir\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dataset_catalog.py:238)
+160 get_coco_dataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/dummy_datasets.py:28)
+161 dictcomp
+162 JsonDataset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:51)
+163 _add_class_assignments\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:431)
+164 _filter_crowd_proposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:411)
+165 _merge_proposal_boxes_into_roidb\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:347)
+166 _remove_proposals_not_in_roidb\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:460)
+167 _sort_proposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:452)
+168 add_proposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:331)
+169 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:54)
+170 _add_gt_annotations\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:161)
+171 _add_proposals_from_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:249)
+172 _get_gt_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:311)
+173 _init_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:282)
+174 _prep_roidb_entry\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:128)
+175 get_roidb\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset.py:83)
+176 dictcomp
+177 listcomp
+178 listcomp
+179 listcomp
+180 setcomp
+181 listcomp
+182 _coco_bbox_results_one_category\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:186)
+183 _coco_kp_results_one_category\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:410)
+184 _coco_segms_results_one_category\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:103)
+185 _do_detection_eval\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:210)
+186 _do_keypoint_eval\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:458)
+187 _do_segmentation_eval\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:129)
+188 _log_detection_eval_metrics\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:222)
+189 _write_coco_bbox_results_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:166)
+190 _write_coco_keypoint_results_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:388)
+191 _write_coco_segms_results_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:70)
+192 evaluate_box_proposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:255)
+193 evaluate_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:141)
+194 evaluate_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:357)
+195 evaluate_masks\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:39)
+196 listcomp
+197 listcomp
+198 _get_thr_ind\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/json_dataset_evaluator.py:223)
+199 _compute_and_log_stats\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:179)
+200 add_bbox_regression_targets\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:139)
+201 combined_roidb_for_training\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:36)
+202 compute_bbox_regression_targets\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:145)
+203 extend_with_flipped_entries\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:76)
+204 filter_for_training\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:111)
+205 listcomp
+206 get_roidb\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:41)
+207 listcomp
+208 is_valid\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/roidb.py:114)
+209 listcomp
+210 _coco_eval_to_box_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:301)
+211 _coco_eval_to_keypoint_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:327)
+212 _coco_eval_to_mask_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:314)
+213 _cs_eval_to_mask_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:344)
+214 _empty_box_proposal_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:396)
+215 _empty_box_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:349)
+216 _empty_keypoint_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:381)
+217 _empty_mask_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:365)
+218 _use_cityscapes_evaluator\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:275)
+219 _use_json_dataset_evaluator\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:270)
+220 _use_voc_evaluator\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:280)
+221 _voc_eval_to_box_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:339)
+222 check_expected_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:194)
+223 evaluate_all\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:53)
+224 evaluate_box_proposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:152)
+225 evaluate_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:74)
+226 evaluate_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:134)
+227 evaluate_masks\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:103)
+228 log_box_proposal_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:170)
+229 log_copy_paste_friendly_results\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/task_evaluation.py:180)
+230 listcomp
+231 listcomp
+232 _do_matlab_eval\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_dataset_evaluator.py:145)
+233 _do_python_eval\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_dataset_evaluator.py:104)
+234 _get_voc_results_file_template\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_dataset_evaluator.py:94)
+235 _write_voc_results_files\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_dataset_evaluator.py:57)
+236 evaluate_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_dataset_evaluator.py:37)
+237 voc_info\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_dataset_evaluator.py:163)
+238 listcomp
+239 parse_rec\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_eval.py:36)
+240 voc_ap\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_eval.py:56)
+241 voc_eval\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/datasets/voc_eval.py:88)
+242 listcomp
+243 listcomp
+244 add_fpn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:117)
+245 add_fpn_ResNet101_conv5_P2only_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:67)
+246 add_fpn_ResNet101_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:61)
+247 add_fpn_ResNet152_conv5_P2only_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:82)
+248 add_fpn_ResNet152_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:76)
+249 add_fpn_ResNet50_conv5_P2only_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:52)
+250 add_fpn_ResNet50_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:46)
+251 add_fpn_onto_conv_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:95)
+252 add_fpn_rpn_losses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:440)
+253 add_fpn_rpn_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:323)
+254 add_multilevel_roi_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:508)
+255 add_topdown_lateral_module\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:259)
+256 fpn_level_info_ResNet101_conv5\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:555)
+257 fpn_level_info_ResNet152_conv5\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:563)
+258 fpn_level_info_ResNet50_conv5\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:547)
+259 get_min_max_levels\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:301)
+260 map_rois_to_fpn_levels\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/FPN.py:493)
+261 listcomp
+262 add_ResNet101_conv4_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:43)
+263 add_ResNet101_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:47)
+264 add_ResNet152_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:51)
+265 add_ResNet50_conv4_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:35)
+266 add_ResNet50_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:39)
+267 add_ResNet_convX_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:91)
+268 add_ResNet_roi_conv5_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:129)
+269 add_residual_block\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:153)
+270 add_stage\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:60)
+271 basic_bn_shortcut\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:203)
+272 basic_bn_stem\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:246)
+273 basic_gn_shortcut\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:223)
+274 basic_gn_stem\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:259)
+275 bottleneck_gn_transformation\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:336)
+276 bottleneck_transformation\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/ResNet.py:276)
+277 add_VGG16_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/VGG16.py:26)
+278 add_VGG16_roi_fc_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/VGG16.py:61)
+279 add_VGG_CNN_M_1024_conv5_body\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/VGG_CNN_M_1024.py:26)
+280 add_VGG_CNN_M_1024_roi_fc_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/VGG_CNN_M_1024.py:47)
+281 DetectionModelHelper\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:43)
+282 _get_lr_change_ratio\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:567)
+283 AddLosses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:554)
+284 AddMetrics\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:561)
+285 AffineChannel\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:81)
+286 BilinearInterpolation\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:368)
+287 CollectAndDistributeFpnRpnProposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:202)
+288 ConvAffine\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:414)
+289 ConvGN\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:444)
+290 ConvShared\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:333)
+291 DisableCudnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:486)
+292 DropoutIfTraining\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:258)
+293 GenerateProposalLabels\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:170)
+294 GenerateProposals\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:107)
+295 GetLossScale\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:547)
+296 RestorePreviousUseCudnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:490)
+297 RoIFeatureTransform\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:268)
+298 TrainableParams\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:68)
+299 UpdateWorkspaceLr\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:495)
+300 _CorrectMomentum\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:525)
+301 _SetNewLr\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:513)
+302 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:44)
+303 listcomp
+304 upsample_filt\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/detector.py:381)
+305 listcomp
+306 listcomp
+307 listcomp
+308 listcomp
+309 add_fast_rcnn_losses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/fast_rcnn_heads.py:75)
+310 add_fast_rcnn_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/fast_rcnn_heads.py:46)
+311 add_roi_2mlp_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/fast_rcnn_heads.py:100)
+312 add_roi_Xconv1fc_gn_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/fast_rcnn_heads.py:151)
+313 add_roi_Xconv1fc_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/fast_rcnn_heads.py:120)
+314 _generate_anchors\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/generate_anchors.py:68)
+315 _mkanchors\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/generate_anchors.py:89)
+316 _ratio_enum\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/generate_anchors.py:106)
+317 _scale_enum\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/generate_anchors.py:117)
+318 _whctrs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/generate_anchors.py:80)
+319 generate_anchors\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/generate_anchors.py:54)
+320 listcomp
+321 add_ResNet_roi_conv5_head_for_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/keypoint_rcnn_heads.py:156)
+322 add_keypoint_losses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/keypoint_rcnn_heads.py:110)
+323 add_keypoint_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/keypoint_rcnn_heads.py:46)
+324 add_roi_pose_head_v1convX\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/keypoint_rcnn_heads.py:187)
+325 add_ResNet_roi_conv5_head_for_masks\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:302)
+326 add_mask_rcnn_losses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:96)
+327 add_mask_rcnn_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:47)
+328 mask_rcnn_fcn_head_v0up\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:275)
+329 mask_rcnn_fcn_head_v0upshare\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:233)
+330 mask_rcnn_fcn_head_v1up\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:126)
+331 mask_rcnn_fcn_head_v1up4convs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:112)
+332 mask_rcnn_fcn_head_v1up4convs_gn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:119)
+333 mask_rcnn_fcn_head_v1upXconvs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:133)
+334 mask_rcnn_fcn_head_v1upXconvs_gn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/mask_rcnn_heads.py:183)
+335 ResNet101_fast_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:562)
+336 ResNet101_fast_rcnn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:577)
+337 ResNet101_faster_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:654)
+338 ResNet101_rfcn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:672)
+339 ResNet101_rpn_conv4\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:605)
+340 ResNet101_rpn_conv4_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:629)
+341 ResNet50_fast_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:556)
+342 ResNet50_fast_rcnn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:568)
+343 ResNet50_faster_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:647)
+344 ResNet50_rfcn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:666)
+345 ResNet50_rpn_conv4\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:601)
+346 ResNet50_rpn_conv4_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:623)
+347 VGG16_fast_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:550)
+348 VGG16_faster_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:640)
+349 VGG16_rpn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:597)
+350 VGG16_rpn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:617)
+351 VGG_CNN_M_1024_fast_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:543)
+352 VGG_CNN_M_1024_rpn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:591)
+353 VGG_CNN_M_1024_rpn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:609)
+354 _add_fast_rcnn_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:249)
+355 _add_roi_keypoint_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:294)
+356 _add_roi_mask_head\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:264)
+357 _narrow_to_fpn_roi_levels\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:233)
+358 add_inference_inputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:406)
+359 add_training_inputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:368)
+360 build_generic_detection_model\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:155)
+361 build_generic_retinanet_model\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:341)
+362 build_generic_rfcn_model\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:324)
+363 create\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:107)
+364 fast_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:439)
+365 fast_rcnn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:492)
+366 faster_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:484)
+367 fpn_rpn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:476)
+368 fpn_rpn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:509)
+369 generalized_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:74)
+370 get_func\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:127)
+371 keypoint_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:452)
+372 keypoint_rcnn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:527)
+373 mask_and_keypoint_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:460)
+374 mask_rcnn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:444)
+375 mask_rcnn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:516)
+376 retinanet\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:98)
+377 rfcn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:93)
+378 rpn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:468)
+379 rpn_frozen_features\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:502)
+380 create_input_blobs_for_net\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:409)
+381 _single_gpu_build_func\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:163)
+382 _single_gpu_build_func\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:345)
+383 _single_gpu_build_func\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/model_builder.py:326)
+384 get_new_name\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/name_compat.py:59)
+385 _add_allreduce_graph\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/optimizer.py:67)
+386 _build_forward_graph\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/optimizer.py:57)
+387 add_single_gpu_param_update_ops\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/optimizer.py:90)
+388 build_data_parallel_model\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/optimizer.py:33)
+389 listcomp
+390 add_fpn_retinanet_losses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/retinanet_heads.py:248)
+391 add_fpn_retinanet_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/retinanet_heads.py:63)
+392 get_retinanet_bias_init\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/retinanet_heads.py:29)
+393 listcomp
+394 add_rfcn_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/rfcn_heads.py:30)
+395 add_generic_rpn_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/rpn_heads.py:33)
+396 add_single_scale_rpn_losses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/rpn_heads.py:125)
+397 add_single_scale_rpn_outputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/modeling/rpn_heads.py:55)
+398 CollectAndDistributeFpnRpnProposalsOp\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:31)
+399 collect\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:71)
+400 distribute\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:91)
+401 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:32)
+402 forward\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/collect_and_distribute_fpn_rpn_proposals.py:35)
+403 dictcomp
+404 listcomp
+405 GenerateProposalLabelsOp\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/generate_proposal_labels.py:31)
+406 forward\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/generate_proposal_labels.py:33)
+407 dictcomp
+408 GenerateProposalsOp\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/generate_proposals.py:30)
+409 _filter_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/generate_proposals.py:174)
+410 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/generate_proposals.py:38)
+411 forward\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/generate_proposals.py:45)
+412 proposals_for_one_image\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/ops/generate_proposals.py:110)
+413 compute_targets\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/data_utils.py:121)
+414 get_field_of_anchors\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/data_utils.py:50)
+415 unmap\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/data_utils.py:104)
+416 _add_multilevel_rois\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/fast_rcnn.py:238)
+417 _expand_bbox_targets\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/fast_rcnn.py:209)
+418 _sample_rois\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/fast_rcnn.py:132)
+419 add_fast_rcnn_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/fast_rcnn.py:108)
+420 get_fast_rcnn_blob_names\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/fast_rcnn.py:40)
+421 _distribute_rois_over_fpn_levels\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/fast_rcnn.py:247)
+422 _within_box\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/keypoint_rcnn.py:114)
+423 add_keypoint_rcnn_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/keypoint_rcnn.py:37)
+424 finalize_keypoint_minibatch\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/keypoint_rcnn.py:94)
+425 RoIDataLoader\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:66)
+426 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:67)
+427 _get_next_minibatch_inds\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:163)
+428 _shuffle_roidb_inds\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:137)
+429 close_blobs_queues\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:267)
+430 create_blobs_queues\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:254)
+431 create_enqueue_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:277)
+432 create_threads\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:205)
+433 enqueue_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:180)
+434 enqueue_blobs_thread\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:115)
+435 get_next_minibatch\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:128)
+436 get_output_names\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:177)
+437 has_stopped\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:244)
+438 minibatch_loader_thread\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:97)
+439 register_sigint_handler\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:288)
+440 shutdown\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:247)
+441 start\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:225)
+442 listcomp
+443 listcomp
+444 listcomp
+445 listcomp
+446 listcomp
+447 listcomp
+448 signal_handler\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/loader.py:289)
+449 _expand_to_class_specific_mask_targets\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/mask_rcnn.py:105)
+450 add_mask_rcnn_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/mask_rcnn.py:37)
+451 listcomp
+452 _get_image_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/minibatch.py:89)
+453 get_minibatch\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/minibatch.py:64)
+454 get_minibatch_blob_names\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/minibatch.py:44)
+455 dictcomp
+456 _get_retinanet_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/retinanet.py:182)
+457 add_retinanet_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/retinanet.py:78)
+458 get_retinanet_blob_names\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/retinanet.py:34)
+459 listcomp
+460 _get_rpn_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/rpn.py:131)
+461 add_rpn_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/rpn.py:62)
+462 get_rpn_blob_names\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/roi_data/rpn.py:35)
+463 listcomp
+464 deserialize\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:177)
+465 get_image_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:40)
+466 get_loss_gradients\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:161)
+467 im_list_to_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:67)
+468 ones\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:135)
+469 prep_im_for_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:100)
+470 py_op_copy_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:142)
+471 serialize\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:170)
+472 zeros\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/blob.py:128)
+473 aspect_ratio\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:254)
+474 bbox_transform\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:150)
+475 bbox_transform_inv\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:193)
+476 box_voting\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:262)
+477 boxes_area\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:57)
+478 clip_boxes_to_image\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:116)
+479 clip_tiled_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:132)
+480 clip_xyxy_to_image\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:123)
+481 expand_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:227)
+482 filter_small_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:108)
+483 flip_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:246)
+484 nms\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:314)
+485 soft_nms\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:321)
+486 unique_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:66)
+487 xywh_to_xyxy\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:74)
+488 xyxy_to_xywh\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/boxes.py:92)
+489 BlobReferenceList\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:82)
+490 CpuScope\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:129)
+491 CudaDevice\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:137)
+492 CudaScope\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:121)
+493 GpuNameScope\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:114)
+494 NamedCudaScope\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:105)
+495 SuffixNet\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:53)
+496 UnscopeName\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:97)
+497 const_fill\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:147)
+498 gauss_fill\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:142)
+499 get_nvidia_info\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:152)
+500 get_nvidia_smi_output\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:160)
+501 import_contrib_ops\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:36)
+502 import_custom_ops\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:47)
+503 import_detectron_ops\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/c2.py:41)
+504 listcomp
+505 AttrDict\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/collections.py:24)
+506 __getattr__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/collections.py:32)
+507 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/collections.py:28)
+508 __setattr__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/collections.py:40)
+509 immutable\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/collections.py:52)
+510 is_immutable\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/collections.py:65)
+511 colormap\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/colormap.py:26)
+512 Coordinator\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:32)
+513 coordinated_get\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:57)
+514 coordinated_put\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:66)
+515 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:34)
+516 request_stop\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:37)
+517 should_stop\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:41)
+518 stop_on_exception\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:47)
+519 wait_for_stop\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/coordinator.py:44)
+520 exit_on_error\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/env.py:50)
+521 get_custom_ops_lib\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/env.py:78)
+522 get_detectron_ops_lib\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/env.py:62)
+523 get_py_bin_ext\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/env.py:38)
+524 get_runtime_dir\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/env.py:33)
+525 import_nccl_ops\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/env.py:55)
+526 set_up_matplotlib\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/env.py:43)
+527 aspect_ratio_abs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/image.py:35)
+528 aspect_ratio_rel\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/image.py:27)
+529 _get_file_md5sum\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:180)
+530 _get_reference_md5sum\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:188)
+531 _progress_bar\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:132)
+532 assert_cache_file_is_ok\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:118)
+533 cache_url\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:86)
+534 download_url\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:152)
+535 load_object\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:72)
+536 save_object\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/io.py:39)
+537 compute_oks\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:243)
+538 flip_heatmaps\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:90)
+539 flip_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:71)
+540 get_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:30)
+541 get_person_class_index\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:66)
+542 heatmaps_to_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:103)
+543 keypoints_to_heatmap_labels\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:160)
+544 nms_oks\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:225)
+545 scores_to_probs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/keypoints.py:214)
+546 SmoothedValue\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:41)
+547 log_json_stats\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:32)
+548 send_email\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:68)
+549 setup_logging\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:76)
+550 AddValue\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:52)
+551 GetAverageValue\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:61)
+552 GetGlobalAverageValue\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:64)
+553 GetMedianValue\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:58)
+554 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/logging.py:46)
+555 dictcomp
+556 get_lr_at_iter\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:28)
+557 get_lr_func\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:125)
+558 get_step_index\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:115)
+559 lr_func_cosine_decay\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:94)
+560 lr_func_exp_decay\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:102)
+561 lr_func_step\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:86)
+562 lr_func_steps_with_decay\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:67)
+563 lr_func_steps_with_lrs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/lr_policy.py:50)
+564 OpFilter\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:31)
+565 add_tensor\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:274)
+566 blob_uses\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:144)
+567 compare_model\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:357)
+568 convert_op_in_ops\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:95)
+569 convert_op_in_proto\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:112)
+570 create_input_blobs_for_net\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:350)
+571 filter_op\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:64)
+572 fuse_affine\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:238)
+573 fuse_first_affine\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:152)
+574 fuse_net\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:255)
+575 fuse_net_affine\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:270)
+576 gen_init_net_from_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:307)
+577 get_device_option_cpu\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:338)
+578 get_device_option_cuda\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:343)
+579 get_op_arg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:116)
+580 get_op_arg_valf\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:123)
+581 get_ws_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:327)
+582 op_filter\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:69)
+583 op_func_chain\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:81)
+584 pairwise\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:136)
+585 save_graph\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:390)
+586 update_mobile_engines\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:128)
+587 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:32)
+588 check\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:45)
+589 listcomp
+590 listcomp
+591 genexpr
+592 listcomp
+593 setcomp
+594 dictcomp
+595 actual_decorator\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:71)
+596 wrapper\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:72)
+597 _chain\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/model_convert_utils.py:85)
+598 average_multi_gpu_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:206)
+599 broadcast_parameters\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:172)
+600 configure_bbox_reg_weights\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:257)
+601 get_group_gn\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:282)
+602 initialize_from_weights_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:43)
+603 initialize_gpu_from_weights_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:53)
+604 print_net\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:211)
+605 save_model_to_weights_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:136)
+606 sum_multi_gpu_blob\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:198)
+607 _do_broadcast\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/net.py:180)
+608 listcomp
+609 listcomp
+610 flip_segms\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:47)
+611 is_poly\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:40)
+612 mask_to_bbox\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:89)
+613 polys_to_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:131)
+614 polys_to_mask\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:75)
+615 polys_to_mask_wrt_box\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:104)
+616 rle_mask_nms\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:209)
+617 rle_mask_voting\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:145)
+618 rle_masks_to_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:254)
+619 _flip_poly\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:49)
+620 _flip_rle\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:54)
+621 listcomp
+622 genexpr
+623 listcomp
+624 get_bounds\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/segms.py:263)
+625 listcomp
+626 log_subprocess_output\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/subprocess.py:106)
+627 process_in_parallel\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/subprocess.py:39)
+628 listcomp
+629 Timer\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/timer.py:34)
+630 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/timer.py:37)
+631 reset\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/timer.py:55)
+632 tic\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/timer.py:40)
+633 toc\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/timer.py:45)
+634 add_model_training_inputs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/train.py:189)
+635 create_model\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/train.py:103)
+636 dump_proto_files\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/train.py:200)
+637 handle_critical_error\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/train.py:96)
+638 optimize_memory\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/train.py:153)
+639 setup_model_for_training\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/train.py:167)
+640 train_model\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/train.py:51)
+641 listcomp
+642 TrainingStats\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:37)
+643 GetStats\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:92)
+644 IterTic\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:59)
+645 IterToc\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:62)
+646 LogIterStats\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:85)
+647 ResetIterTimer\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:65)
+648 UpdateIterStats\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:68)
+649 __init__\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/training_stats.py:40)
+650 listcomp
+651 dictcomp
+652 convert_from_cls_format\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:68)
+653 get_class_string\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:91)
+654 kp_connections\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:47)
+655 vis_bbox\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:132)
+656 vis_class\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:114)
+657 vis_keypoints\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:142)
+658 vis_mask\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:97)
+659 vis_one_image\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:253)
+660 vis_one_image_opencv\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/utils/vis.py:203)
+661 listcomp
+662 listcomp
+663 listcomp
+664 BatchPermutationOpTest\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_batch_permutation_op.py:33)
+665 _run_op_test\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_batch_permutation_op.py:34)
+666 _run_speed_test\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_batch_permutation_op.py:55)
+667 test_forward_and_gradient\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_batch_permutation_op.py:81)
+668 test_size_exceptions\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_batch_permutation_op.py:94)
+669 TestBboxTransform\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_bbox_transform.py:34)
+670 random_boxes\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_bbox_transform.py:29)
+671 test_bbox_dataset_to_prediction_roundtrip\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_bbox_transform.py:49)
+672 test_bbox_transform_and_inverse\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_bbox_transform.py:35)
+673 test_cython_bbox_iou_against_coco_api_bbox_iou\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_bbox_transform.py:77)
+674 _do_test\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_bbox_transform.py:81)
+675 TestAttrDict\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:32)
+676 TestCfg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:67)
+677 test_immutability\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:33)
+678 test_copy_cfg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:68)
+679 test_deprecated_key_from_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:158)
+680 test_deprecated_key_from_list\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:144)
+681 test_merge_cfg_from_cfg\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:74)
+682 test_merge_cfg_from_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:120)
+683 test_merge_cfg_from_list\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:129)
+684 test_renamed_key_from_file\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:181)
+685 test_renamed_key_from_list\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_cfg.py:171)
+686 TestRoIDataLoader\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_loader.py:87)
+687 create_loader_and_network\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_loader.py:68)
+688 get_net\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_loader.py:43)
+689 get_roidb_blobs\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_loader.py:37)
+690 get_roidb_sample_data\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_loader.py:61)
+691 run_net\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_loader.py:77)
+692 test_two_parallel_loaders\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_loader.py:88)
+693 listcomp
+694 add_momentum_init_ops\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_restore_checkpoint.py:60)
+695 get_params\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_restore_checkpoint.py:41)
+696 init_weights\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_restore_checkpoint.py:66)
+697 test_restore_checkpoint\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_restore_checkpoint.py:72)
+698 SmoothL1LossTest\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_smooth_l1_loss_op.py:33)
+699 test_forward_and_gradient\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_smooth_l1_loss_op.py:34)
+700 SpatialNarrowAsOpTest\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_spatial_narrow_as_op.py:33)
+701 _run_test\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_spatial_narrow_as_op.py:34)
+702 test_large_forward\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_spatial_narrow_as_op.py:65)
+703 test_size_exceptions\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_spatial_narrow_as_op.py:74)
+704 test_small_forward_and_gradient\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_spatial_narrow_as_op.py:56)
+705 ZeroEvenOpTest\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:31)
+706 _run_zero_even_op\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:33)
+707 _run_zero_even_op_gpu\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:40)
+708 test_gpu_handles_empty_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:90)
+709 test_gpu_handles_even_length_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:108)
+710 test_gpu_handles_odd_length_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:115)
+711 test_gpu_preserves_vals_at_odd_inds\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:102)
+712 test_gpu_sets_vals_at_even_inds_to_zero\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:96)
+713 test_gpu_throws_on_non_1D_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:85)
+714 test_handles_empty_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:53)
+715 test_handles_even_length_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:71)
+716 test_handles_odd_length_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:78)
+717 test_preserves_vals_at_odd_inds\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:65)
+718 test_sets_vals_at_even_inds_to_zero\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:59)
+719 test_throws_on_non_1D_arrays\n(/home/avijit/PycharmProjects/dataset/Detectron-master/detectron/tests/test_zero_even_op.py:48)
+#
+2 507 U
+2 505 U
+2 46 U
+2 51 U
+80 509 U
+80 81 U
+81 533 U
+87 533 U
+85 83 U
+85 78 U
+85 507 U
+85 505 U
+84 78 U
+84 505 U
+86 77 U
+86 74 U
+86 79 U
+86 75 U
+86 505 U
+86 76 U
+78 505 U
+78 77 U
+78 79 U
+78 75 U
+78 74 U
+78 78 U
+78 76 U
+75 507 U
+75 505 U
+3 59 U
+3 2 U
+3 11 U
+3 51 U
+90 162 U
+90 629 U
+90 630 U
+90 169 U
+90 94 U
+90 632 U
+90 633 U
+90 175 U
+90 91 U
+90 88 U
+94 536 U
+94 627 U
+94 524 U
+94 523 U
+91 363 U
+91 536 U
+91 358 U
+91 92 U
+91 89 U
+91 603 U
+89 629 U
+89 93 U
+89 630 U
+89 494 U
+89 95 U
+89 632 U
+89 633 U
+93 96 U
+93 465 U
+92 162 U
+92 175 U
+92 169 U
+88 228 U
+88 536 U
+88 224 U
+5 59 U
+5 4 U
+5 2 U
+5 3 U
+5 11 U
+5 51 U
+132 90 U
+132 138 U
+132 91 U
+132 139 U
+137 229 U
+137 143 U
+137 222 U
+137 132 U
+143 133 U
+143 82 U
+143 132 U
+143 143 U
+139 162 U
+139 138 U
+139 223 U
+139 629 U
+139 630 U
+139 169 U
+139 632 U
+139 633 U
+139 175 U
+139 136 U
+136 536 U
+136 142 U
+136 627 U
+136 524 U
+136 523 U
+138 536 U
+138 135 U
+138 629 U
+138 494 U
+138 104 U
+138 134 U
+138 659 U
+138 130 U
+138 131 U
+135 363 U
+135 358 U
+135 603 U
+134 162 U
+134 175 U
+134 169 U
+130 140 U
+4 59 U
+4 2 U
+104 115 U
+104 120 U
+104 629 U
+104 117 U
+104 632 U
+104 633 U
+104 146 U
+104 105 U
+104 107 U
+104 110 U
+104 101 U
+104 121 U
+104 112 U
+103 465 U
+105 97 U
+105 474 U
+105 98 U
+105 479 U
+107 123 U
+107 108 U
+107 105 U
+107 109 U
+107 106 U
+108 105 U
+108 483 U
+109 108 U
+109 105 U
+106 473 U
+106 105 U
+106 528 U
+106 108 U
+115 97 U
+115 99 U
+117 115 U
+117 118 U
+117 103 U
+117 119 U
+117 116 U
+117 126 U
+126 127 U
+118 115 U
+118 483 U
+118 103 U
+119 115 U
+119 118 U
+119 103 U
+116 115 U
+116 473 U
+116 118 U
+116 103 U
+116 528 U
+110 97 U
+110 99 U
+112 113 U
+112 124 U
+112 125 U
+112 103 U
+112 114 U
+112 111 U
+112 102 U
+112 110 U
+113 538 U
+113 483 U
+113 103 U
+113 110 U
+114 113 U
+114 103 U
+114 110 U
+111 473 U
+111 113 U
+111 103 U
+111 528 U
+111 110 U
+102 477 U
+101 122 U
+101 484 U
+101 485 U
+101 476 U
+122 122 U
+121 481 U
+121 129 U
+120 544 U
+120 541 U
+120 128 U
+120 542 U
+128 544 U
+99 100 U
+97 260 U
+97 254 U
+98 99 U
+98 465 U
+6 2 U
+6 59 U
+6 23 U
+145 319 U
+146 484 U
+146 485 U
+146 147 U
+146 474 U
+146 479 U
+146 145 U
+146 465 U
+146 629 U
+146 632 U
+146 633 U
+7 2 U
+7 9 U
+148 159 U
+10 46 U
+160 507 U
+160 505 U
+12 2 U
+12 51 U
+195 187 U
+195 191 U
+191 184 U
+187 536 U
+187 188 U
+193 189 U
+193 185 U
+189 182 U
+182 488 U
+196 488 U
+185 536 U
+185 188 U
+188 198 U
+194 186 U
+194 190 U
+190 183 U
+186 536 U
+11 526 U
+11 59 U
+11 2 U
+11 51 U
+169 629 U
+169 153 U
+169 630 U
+169 157 U
+169 173 U
+169 155 U
+169 177 U
+169 158 U
+175 632 U
+175 633 U
+175 174 U
+175 171 U
+175 170 U
+175 163 U
+174 157 U
+174 158 U
+170 611 U
+170 487 U
+170 480 U
+170 172 U
+170 176 U
+171 167 U
+171 166 U
+171 535 U
+171 486 U
+171 478 U
+171 482 U
+171 165 U
+171 164 U
+168 165 U
+168 164 U
+168 163 U
+164 488 U
+179 179 U
+13 2 U
+13 11 U
+206 162 U
+206 175 U
+206 203 U
+206 169 U
+201 204 U
+201 200 U
+201 199 U
+201 207 U
+207 206 U
+203 610 U
+203 539 U
+204 209 U
+209 208 U
+200 202 U
+202 475 U
+14 53 U
+14 2 U
+223 226 U
+223 225 U
+223 227 U
+225 219 U
+225 218 U
+225 220 U
+225 193 U
+225 210 U
+225 236 U
+225 221 U
+227 219 U
+227 213 U
+227 218 U
+227 195 U
+227 212 U
+227 148 U
+226 211 U
+226 194 U
+224 192 U
+224 214 U
+229 231 U
+222 548 U
+210 215 U
+212 217 U
+211 216 U
+221 215 U
+213 217 U
+15 51 U
+15 2 U
+15 9 U
+15 16 U
+236 235 U
+236 232 U
+236 233 U
+235 238 U
+235 237 U
+234 237 U
+233 536 U
+233 241 U
+233 237 U
+232 237 U
+237 156 U
+16 51 U
+241 535 U
+241 239 U
+241 240 U
+241 242 U
+241 536 U
+242 535 U
+242 242 U
+243 242 U
+21 32 U
+21 33 U
+21 34 U
+21 2 U
+285 285 U
+294 406 U
+294 402 U
+294 411 U
+294 492 U
+294 294 U
+306 420 U
+293 411 U
+293 306 U
+293 406 U
+293 420 U
+293 402 U
+287 411 U
+287 406 U
+287 305 U
+287 420 U
+287 402 U
+305 305 U
+305 420 U
+297 506 U
+286 304 U
+288 285 U
+299 282 U
+299 301 U
+301 300 U
+301 492 U
+301 282 U
+300 298 U
+300 492 U
+283 303 U
+303 496 U
+22 45 U
+22 2 U
+22 56 U
+310 497 U
+310 498 U
+309 466 U
+312 601 U
+17 45 U
+17 2 U
+17 56 U
+17 23 U
+250 266 U
+250 258 U
+250 251 U
+249 266 U
+249 258 U
+249 251 U
+246 251 U
+246 256 U
+246 263 U
+245 251 U
+245 256 U
+245 263 U
+248 251 U
+248 264 U
+248 257 U
+247 251 U
+247 264 U
+247 257 U
+251 244 U
+244 497 U
+244 601 U
+244 255 U
+244 259 U
+244 261 U
+255 497 U
+255 601 U
+253 497 U
+253 498 U
+253 319 U
+252 466 U
+260 477 U
+319 314 U
+314 316 U
+320 317 U
+320 316 U
+316 318 U
+316 315 U
+317 315 U
+317 318 U
+24 45 U
+24 2 U
+323 497 U
+323 498 U
+322 466 U
+321 270 U
+25 45 U
+25 2 U
+25 56 U
+327 497 U
+327 498 U
+326 466 U
+331 333 U
+332 334 U
+330 333 U
+333 497 U
+334 497 U
+334 601 U
+329 497 U
+329 325 U
+328 497 U
+328 325 U
+325 270 U
+26 21 U
+26 38 U
+26 2 U
+369 370 U
+369 360 U
+377 370 U
+377 362 U
+376 370 U
+376 361 U
+363 370 U
+363 302 U
+363 281 U
+370 384 U
+381 357 U
+381 354 U
+381 489 U
+381 356 U
+381 395 U
+381 355 U
+360 388 U
+360 381 U
+354 310 U
+354 309 U
+356 327 U
+356 326 U
+356 495 U
+355 323 U
+355 495 U
+355 322 U
+383 394 U
+383 309 U
+362 388 U
+362 383 U
+382 391 U
+382 390 U
+361 388 U
+361 382 U
+359 426 U
+359 425 U
+359 494 U
+359 454 U
+358 380 U
+364 369 U
+374 369 U
+371 369 U
+373 369 U
+378 369 U
+367 369 U
+366 369 U
+365 370 U
+365 360 U
+379 370 U
+379 360 U
+368 370 U
+368 360 U
+375 370 U
+375 360 U
+372 370 U
+372 360 U
+351 279 U
+351 360 U
+351 280 U
+347 277 U
+347 278 U
+347 360 U
+341 265 U
+341 360 U
+341 268 U
+335 262 U
+335 360 U
+335 268 U
+342 265 U
+342 360 U
+342 268 U
+336 262 U
+336 360 U
+336 268 U
+352 279 U
+352 360 U
+349 360 U
+349 277 U
+345 265 U
+345 360 U
+339 262 U
+339 360 U
+353 279 U
+353 360 U
+350 360 U
+350 277 U
+346 265 U
+346 360 U
+340 262 U
+340 360 U
+348 277 U
+348 278 U
+348 360 U
+343 265 U
+343 360 U
+343 268 U
+337 262 U
+337 360 U
+337 268 U
+344 362 U
+344 266 U
+338 362 U
+338 263 U
+28 2 U
+388 494 U
+388 386 U
+388 385 U
+388 387 U
+386 494 U
+385 389 U
+385 492 U
+18 56 U
+18 2 U
+265 267 U
+266 267 U
+262 267 U
+263 267 U
+264 267 U
+270 269 U
+267 270 U
+268 270 U
+273 601 U
+274 601 U
+275 601 U
+29 2 U
+391 392 U
+390 466 U
+30 45 U
+30 2 U
+394 497 U
+394 498 U
+31 45 U
+31 2 U
+31 23 U
+395 397 U
+395 252 U
+395 396 U
+395 253 U
+397 497 U
+397 498 U
+397 319 U
+396 466 U
+19 2 U
+20 2 U
+32 2 U
+402 168 U
+402 200 U
+402 470 U
+402 399 U
+402 464 U
+402 420 U
+402 419 U
+402 403 U
+402 400 U
+403 420 U
+400 260 U
+400 470 U
+406 168 U
+406 200 U
+406 470 U
+406 407 U
+406 464 U
+406 420 U
+406 419 U
+407 420 U
+34 2 U
+411 412 U
+412 409 U
+412 484 U
+412 474 U
+412 479 U
+35 2 U
+35 23 U
+414 319 U
+36 2 U
+419 418 U
+419 424 U
+419 416 U
+418 450 U
+418 423 U
+418 417 U
+418 468 U
+417 472 U
+416 421 U
+421 260 U
+421 254 U
+37 2 U
+423 422 U
+423 543 U
+423 468 U
+38 48 U
+38 2 U
+38 40 U
+426 512 U
+426 515 U
+426 428 U
+426 432 U
+426 454 U
+438 514 U
+438 512 U
+438 518 U
+438 517 U
+438 435 U
+438 436 U
+434 513 U
+434 512 U
+434 518 U
+434 517 U
+434 433 U
+435 453 U
+435 447 U
+435 427 U
+447 427 U
+427 428 U
+427 442 U
+436 454 U
+433 491 U
+433 446 U
+445 434 U
+445 430 U
+445 438 U
+432 430 U
+441 445 U
+441 517 U
+441 440 U
+437 517 U
+440 429 U
+440 445 U
+440 516 U
+440 519 U
+430 436 U
+430 431 U
+430 493 U
+431 494 U
+431 436 U
+431 444 U
+444 436 U
+448 440 U
+439 448 U
+39 2 U
+450 615 U
+450 472 U
+450 451 U
+450 449 U
+450 613 U
+450 468 U
+449 468 U
+40 2 U
+454 462 U
+454 458 U
+454 420 U
+455 454 U
+453 455 U
+453 457 U
+453 461 U
+453 452 U
+453 419 U
+452 467 U
+452 469 U
+41 2 U
+457 414 U
+457 456 U
+456 415 U
+456 413 U
+42 2 U
+461 460 U
+461 471 U
+461 414 U
+461 463 U
+460 415 U
+460 413 U
+1 53 U
+1 73 U
+1 59 U
+1 38 U
+1 80 U
+1 72 U
+1 2 U
+1 13 U
+1 86 U
+1 85 U
+1 549 U
+71 633 U
+71 630 U
+71 629 U
+71 632 U
+72 71 U
+72 426 U
+72 441 U
+72 425 U
+72 436 U
+72 201 U
+72 440 U
+72 439 U
+63 503 U
+63 549 U
+667 665 U
+668 665 U
+672 474 U
+672 670 U
+672 475 U
+671 487 U
+671 474 U
+671 670 U
+671 475 U
+671 488 U
+674 488 U
+673 674 U
+673 670 U
+65 2 U
+65 46 U
+65 549 U
+677 507 U
+677 505 U
+677 510 U
+677 509 U
+677 83 U
+681 507 U
+681 505 U
+681 84 U
+681 83 U
+682 85 U
+683 86 U
+680 86 U
+679 85 U
+685 86 U
+684 507 U
+684 505 U
+684 85 U
+66 38 U
+66 80 U
+66 2 U
+66 549 U
+687 688 U
+687 690 U
+687 426 U
+687 441 U
+687 439 U
+687 425 U
+686 689 U
+692 691 U
+692 687 U
+67 53 U
+67 80 U
+67 2 U
+67 13 U
+67 697 U
+67 503 U
+67 549 U
+695 496 U
+696 599 U
+697 363 U
+697 603 U
+697 359 U
+697 496 U
+697 695 U
+697 694 U
+697 82 U
+697 696 U
+697 201 U
+697 599 U
+697 605 U
+68 503 U
+68 549 U
+69 503 U
+69 549 U
+704 701 U
+702 701 U
+703 701 U
+70 502 U
+719 706 U
+714 706 U
+718 706 U
+717 706 U
+715 706 U
+716 706 U
+713 707 U
+708 707 U
+712 707 U
+711 707 U
+709 707 U
+710 707 U
+43 2 U
+465 469 U
+465 467 U
+44 2 U
+501 525 U
+503 522 U
+502 521 U
+495 504 U
+495 489 U
+504 504 U
+504 489 U
+494 493 U
+494 492 U
+492 491 U
+499 500 U
+509 509 U
+518 517 U
+518 516 U
+533 532 U
+533 534 U
+532 530 U
+532 529 U
+534 531 U
+52 2 U
+538 540 U
+542 545 U
+543 472 U
+544 537 U
+547 555 U
+54 2 U
+556 557 U
+563 558 U
+562 558 U
+571 588 U
+595 596 U
+596 571 U
+582 595 U
+583 597 U
+568 590 U
+568 583 U
+569 568 U
+580 579 U
+573 584 U
+573 566 U
+572 573 U
+575 574 U
+575 572 U
+576 593 U
+576 592 U
+576 565 U
+581 594 U
+56 2 U
+56 51 U
+602 599 U
+602 603 U
+603 535 U
+603 490 U
+603 600 U
+603 494 U
+603 496 U
+603 83 U
+605 536 U
+605 496 U
+599 607 U
+607 609 U
+607 492 U
+598 606 U
+604 496 U
+610 620 U
+610 611 U
+621 619 U
+617 623 U
+623 623 U
+618 624 U
+618 625 U
+58 51 U
+58 2 U
+627 626 U
+627 535 U
+630 631 U
+61 53 U
+61 2 U
+61 59 U
+651 546 U
+651 554 U
+649 630 U
+649 546 U
+649 554 U
+649 629 U
+644 632 U
+645 633 U
+647 631 U
+648 550 U
+648 606 U
+648 651 U
+648 598 U
+650 651 U
+646 547 U
+646 643 U
+643 553 U
+60 2 U
+60 13 U
+60 61 U
+640 649 U
+640 635 U
+640 644 U
+640 639 U
+640 645 U
+640 647 U
+640 642 U
+640 437 U
+640 604 U
+640 648 U
+640 646 U
+640 556 U
+640 637 U
+640 440 U
+640 605 U
+637 440 U
+635 363 U
+635 638 U
+635 82 U
+638 641 U
+639 441 U
+639 634 U
+639 636 U
+639 599 U
+639 439 U
+639 603 U
+634 201 U
+634 359 U
+62 526 U
+62 47 U
+652 661 U
+657 654 U
+657 662 U
+657 540 U
+662 654 U
+662 662 U
+660 657 U
+660 652 U
+660 653 U
+660 658 U
+660 656 U
+660 655 U
+660 511 U
+659 654 U
+659 652 U
+659 653 U
+659 540 U
+659 663 U
+659 511 U
+663 654 U
