@@ -104,7 +104,7 @@ class ClusteringCallGraph:
     def tgf_to_networkX(self):
 
         # path = easygui.fileopenbox()
-        f = open("flaskSept7.txt", "r")
+        f = open("detectronSept7.txt", "r")
         # f = open(path, "r")
         G = nx.DiGraph()
         # print("Function name: ")
