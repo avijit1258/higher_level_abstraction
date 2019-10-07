@@ -42,7 +42,7 @@ import multiprocessing
 from xlsxwriter import worksheet
 
 
-workbook = xlsxwriter.Workbook('flask.xlsx')
+workbook = xlsxwriter.Workbook('sklearn.xlsx')
 worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
@@ -104,7 +104,7 @@ class ClusteringCallGraph:
     def tgf_to_networkX(self):
 
         # path = easygui.fileopenbox()
-        f = open("detectronSept7.txt", "r")
+        f = open("sklearnSept7.txt", "r")
         # f = open(path, "r")
         G = nx.DiGraph()
         # print("Function name: ")
@@ -178,15 +178,15 @@ class ClusteringCallGraph:
         # print(k,'blank document', execution_paths_of_a_cluster)
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
 
-        # tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
+        tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
         # tm = self.topic_model_lda(execution_paths_of_a_cluster)
-        tm = self.topic_model_lsi(execution_paths_of_a_cluster)
-        print(self.count,'' ,tm)
+        # tm = self.topic_model_lsi(execution_paths_of_a_cluster)
+        print(self.count,'' ,tf)
         worksheet.write(self.row, 0, k)
         worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
         # worksheet.write(self.row, 2, self.merge_words_as_sentence(tf)) # split_method_tfidf
-        # worksheet.write(self.row, 2, self.id_to_sentence(tf)) # method tfidf
-        worksheet.write(self.row, 2, tm)
+        worksheet.write(self.row, 2, self.id_to_sentence(tf)) # method tfidf
+        # worksheet.write(self.row, 2, tm)
         self.row += 1
         # worksheet.write(k, self.execution_path_to_sentence(execution_paths_of_a_cluster), tf)
 
@@ -194,8 +194,8 @@ class ClusteringCallGraph:
         # tm = self.topic_model(labels)
         # print('-------------#######-------')
         # Considering functions names as unit
-        # self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
-        self.tree.append({'key': k, 'parent': v, 'tf_name': 'Hello tfidf', 'tm_name': tm})
+        self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
+        # self.tree.append({'key': k, 'parent': v, 'tf_name': 'Hello tfidf', 'tm_name': tm})
         # Considering words in functions name as unit
         # self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
 
