@@ -1,93 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="LSI also works now for both method and word level. Now, focus is on user study." />
-    <ignored path=".venv/" />
-    <ignored path=".idea/" />
+    <list default="true" id="c9e884b1-bdb6-485d-9e7e-4f4a3de78bd8" name="Default Changelist" comment="LSI also works now for both method and word level. Now, focus is on user study.">
+      <change beforePath="$PROJECT_DIR$/.idea/HigerLevelAbstraction.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HigerLevelAbstraction.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/ClusteringCallGraph.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/call-graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/tool/call-graph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/corpus.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/tool/corpus.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/dictionary.gensim" beforeDir="false" afterPath="$PROJECT_DIR$/tool/dictionary.gensim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/flask.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/tool/flask.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/model5.gensim" beforeDir="false" afterPath="$PROJECT_DIR$/tool/model5.gensim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/model5.gensim.projection" beforeDir="false" afterPath="$PROJECT_DIR$/tool/model5.gensim.projection" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5656">
-              <caret line="329" column="42" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/flaskSept7.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5445">
-              <caret line="363" column="28" selection-start-line="363" selection-start-column="28" selection-end-line="363" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5745">
-              <caret line="419" column="24" selection-start-line="413" selection-end-line="424" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/networkxSept7.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/sklearnSept7.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/realTimeSept7.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/sklearn/utils/validation.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13455">
-              <caret line="913" selection-start-line="913" selection-end-line="913" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/own_tool.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/pyan_tgf.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1800">
-              <caret line="120" column="69" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -97,102 +27,12 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>get_lem</find>
-      <find>parser</find>
-      <find>cluster_view</find>
-      <find>flatt</find>
-      <find>python_ana</find>
-      <find>nodes_with_parent</find>
-      <find>bfs_with_parent</find>
-      <find>id</find>
-      <find>function_id_to_nam</find>
-      <find>Execution paths</find>
-      <find>label</find>
-      <find>id_to_sentence</find>
-      <find>function_id_to</find>
-      <find>execution_paths</find>
-      <find>bfs</find>
-      <find>topic</find>
-      <find>tf</find>
-      <find>print</find>
-      <find>function_id_to_name</find>
-      <find>Txt1</find>
-      <find>make_documents_from_clusters_tfidf_word</find>
-      <find>here we go</find>
-      <find>jaccard_distance_matrix</find>
-      <find>labeling_cluster</find>
-      <find>tfidf_word</find>
-      <find>make_documents</find>
-      <find>tf_idf_score_for_scipy_cluster</find>
-      <find>execution_path_to_sentence</find>
-      <find>topic_model</find>
-      <find>make_documents_for_a_cluster_tm_word</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>make_documents_from_clusters_tfidf_method</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/instrumenting source code/tools.py" />
-        <option value="$PROJECT_DIR$/instrumenting source code/original_sources/ClassCRHM.cpp" />
-        <option value="$PROJECT_DIR$/instrumenting source code/original_sources/Hype_CRHM.cpp" />
-        <option value="$PROJECT_DIR$/instrumenting source code/original_sources/Hype_river.cpp" />
-        <option value="$PROJECT_DIR$/extract_caller_caller_CRHM.py" />
-        <option value="$PROJECT_DIR$/pyan/pyan/pyan_tgf.txt" />
-        <option value="$PROJECT_DIR$/dendogram_sklearn.py" />
-        <option value="$PROJECT_DIR$/topic_modelling.py" />
-        <option value="$PROJECT_DIR$/util.py" />
-        <option value="$PROJECT_DIR$/naming_clusters.py" />
-        <option value="$PROJECT_DIR$/spark_neo4j/playing_with_pyspark.py" />
-        <option value="$PROJECT_DIR$/tool/home.html" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/tool/app.py" />
-        <option value="$PROJECT_DIR$/tool/templates/home.html" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/tool/ClusteringCallGraph.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
-  </component>
+  <component name="ProjectId" id="1RofsJlieUEN0IjudQ642atGkKV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="higher_level_abstraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="higher_level_abstraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="higher_level_abstraction" type="b2602c69:ProjectViewProjectNode" />
-              <item name="higher_level_abstraction" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Course" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -237,6 +77,9 @@
       <module name="HigerLevelAbstraction" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tool" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -409,6 +252,7 @@
       <workItem from="1568141485193" duration="42569000" />
       <workItem from="1570037316495" duration="597000" />
       <workItem from="1570229853584" duration="1435000" />
+      <workItem from="1570338579770" duration="4301000" />
     </task>
     <task id="LOCAL-00001" summary="Clustering and jaccard distance calculation completed.">
       <created>1557285435693</created>
@@ -518,9 +362,6 @@
     <option name="localTasksCounter" value="16" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="316229000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -530,36 +371,19 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21638075" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32738718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2161595" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3084995" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
-      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32721382" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32829374" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32738718" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="0" y="0" width="413" height="855" id="Documentation" order="3" sideWeight="0.06260032" side_tool="true" visible="true" weight="0.23574986" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="5" sideWeight="0.9373997" visible="true" weight="0.23574986" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -588,294 +412,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="LSI also works now for both method and word level. Now, focus is on user study." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/higher_level_abstraction$ClusteringCallGraph.coverage" NAME="ClusteringCallGraph Coverage Results" MODIFIED="1567127065532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
+    <SUITE FILE_PATH="coverage/higher_level_abstraction$topic_modelling.coverage" NAME="topic_modelling Coverage Results" MODIFIED="1557521858713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/higher_level_abstraction$util.coverage" NAME="util Coverage Results" MODIFIED="1557663103026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/higher_level_abstraction$extract_caller_caller_CRHM.coverage" NAME="extract_caller_caller_CRHM Coverage Results" MODIFIED="1557201572502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/higher_level_abstraction$main.coverage" NAME="main Coverage Results" MODIFIED="1562630192149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/higher_level_abstraction$util.coverage" NAME="util Coverage Results" MODIFIED="1557663103026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/higher_level_abstraction$topic_modelling.coverage" NAME="topic_modelling Coverage Results" MODIFIED="1557521858713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/Hype_routines.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38089">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/Log.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="15" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/Bld.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26010">
-          <caret line="1530" column="32" selection-start-line="1530" selection-start-column="23" selection-end-line="1530" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/CRHMmain.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5593">
-          <caret line="329" column="17" selection-start-line="329" selection-start-column="16" selection-end-line="329" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/AKAform.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17748">
-          <caret line="1044" column="20" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/UpdateForm.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/report.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/Para.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7140">
-          <caret line="420" column="23" selection-start-line="912" selection-start-column="16" selection-end-line="912" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/Numerical.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14246">
-          <caret line="838" column="8" selection-start-line="838" selection-start-column="5" selection-end-line="838" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/MacroUnit.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26554">
-          <caret line="1562" column="7" selection-start-line="1562" selection-start-column="5" selection-end-line="1562" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/analyzer.py" />
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_yed.txt" />
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan.dot" />
-    <entry file="file://$PROJECT_DIR$/filename" />
-    <entry file="file://$PROJECT_DIR$/instrumenting source code/original_sources/NewModules.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="27627" column="7" selection-start-line="27627" selection-start-column="5" selection-end-line="27627" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build+run.log" />
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/main.py" />
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan_tgf.txt" />
-    <entry file="file://$PROJECT_DIR$/pyan/pyan/pyan/__init__.py" />
-    <entry file="http://https://github.com/avijit1258/pyan/">
-      <provider selected="true" editor-type-id="httpFileEditor" />
-    </entry>
-    <entry file="https://github.com/avijit1258/pyan/">
-      <provider selected="true" editor-type-id="httpFileEditor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/call-graph.png" />
-    <entry file="file://$PROJECT_DIR$/people.csv" />
-    <entry file="file://$PROJECT_DIR$/detectron_tgf.txt" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="1734" selection-start-line="1734" selection-end-line="1734" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_neo4j/playing_with_pyspark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tags">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8340">
-          <caret line="556" column="173" selection-start-line="556" selection-start-column="173" selection-end-line="556" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pyan_tgf.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/naming_clusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dendogram_sklearn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/function">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract_caller_caller_CRHM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="2445" selection-start-line="2445" selection-end-line="2445" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4125">
-          <caret line="275" selection-start-line="275" selection-end-line="275" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/realTimeSep02.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topic_modelling.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/zeroNetSept7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/detectronSept7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/smart_open/smart_open_lib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="397" selection-start-line="397" selection-end-line="397" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/ClusteringCallGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5656">
-          <caret line="329" column="42" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/flaskSept7.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5445">
-          <caret line="363" column="28" selection-start-line="363" selection-start-column="28" selection-end-line="363" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5745">
-          <caret line="419" column="24" selection-start-line="413" selection-end-line="424" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/networkxSept7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/sklearnSept7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/realTimeSept7.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.6/site-packages/sklearn/utils/validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13455">
-          <caret line="913" selection-start-line="913" selection-end-line="913" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/own_tool.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/pyan_tgf.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="120" column="69" selection-start-line="120" selection-start-column="69" selection-end-line="120" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/higher_level_abstraction$ClusteringCallGraph.coverage" NAME="ClusteringCallGraph Coverage Results" MODIFIED="1567127065532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tool" />
   </component>
 </project>
