@@ -34,9 +34,7 @@ import pickle
 import gensim
 
 import xlsxwriter
-
-
-
+from timeit import default_timer as timer
 import multiprocessing
 
 from xlsxwriter import worksheet
@@ -53,6 +51,8 @@ class ClusteringCallGraph:
     tree = []
 
     text_data = []
+
+    subject_system = ''
 
     nltk.download('wordnet')
 
@@ -71,10 +71,17 @@ class ClusteringCallGraph:
 
     count = 0
 
+
+
     # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
     worksheet.write(0,0, 'Cluster Id')
     worksheet.write(0,1, 'Execution_Paths')
-    worksheet.write(0,2, 'Naming_using_our_approach')
+    worksheet.write(0,2, 'tfidf_word')
+    worksheet.write(0, 3, 'tfidf_method')
+    worksheet.write(0, 4, 'lda_word')
+    worksheet.write(0, 5, 'lda_method')
+    worksheet.write(0, 6, 'lsi_word')
+    worksheet.write(0, 7, 'lsi_method')
 
     def __del__(self):
 
@@ -84,16 +91,19 @@ class ClusteringCallGraph:
         self.tgf_to_networkX()
         self.G.remove_edges_from(self.G.selfloop_edges())
         self.extracting_source_and_exit_node()
+        start = timer()
         self.extracting_execution_paths()
-
+        end = timer()
+        print('Time required for extracting_execution_paths: ', end - start)
         # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
 
         # exporting execution paths to be used in topic modeling
         # df = pd.DataFrame(execution_paths)
         # df.to_csv('people.csv')
-
+        start = timer()
         mat = self.jaccard_distance_matrix(self.execution_paths)
-
+        end = timer()
+        print('Time required for jaccard_distance_matrix: ', end - start)
         # clustering_using_sklearn(mat)
 
         # plt.show()
@@ -102,9 +112,12 @@ class ClusteringCallGraph:
         return self.clustering_using_scipy(mat)
 
     def tgf_to_networkX(self):
-
+        self.subject_system = input('Enter name of the subject system: \n')
+        print('thanks a lot')
         # path = easygui.fileopenbox()
-        f = open("detectronSept7.txt", "r")
+
+        f = open(self.subject_system, "r")
+
         # f = open(path, "r")
         G = nx.DiGraph()
         # print("Function name: ")
@@ -154,7 +167,7 @@ class ClusteringCallGraph:
         print(len(self.T))
 
     def extracting_execution_paths(self):
-
+        print('Extracting execution paths')
         for s in self.S:
             for t in self.T:
                 # print(list(nx.dfs_preorder_nodes(G, s)))
@@ -165,7 +178,7 @@ class ClusteringCallGraph:
                     self.execution_paths.append(p)
 
     def jaccard_distance_matrix(self, paths):
-
+        print('jaccard_distance_matrix')
         length = len(paths)
         Matrix = [[0 for x in range(length)] for y in range(length)]
         for i in range(len(paths)):
@@ -178,14 +191,30 @@ class ClusteringCallGraph:
         # print(k,'blank document', execution_paths_of_a_cluster)
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
 
-        tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
-        # tm = self.topic_model_lda(execution_paths_of_a_cluster)
-        # tm = self.topic_model_lsi(execution_paths_of_a_cluster)
-        print(self.count,'' ,tf)
+        tfidf_method = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'method')
+        tfidf_word = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word')
+        lda_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
+        lda_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
+        lsi_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
+        lsi_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
+
         worksheet.write(self.row, 0, k)
         worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
+        worksheet.write(self.row, 2, self.merge_words_as_sentence(tfidf_word))
+        worksheet.write(self.row, 3, self.id_to_sentence(tfidf_method))
+        worksheet.write(self.row, 4, lda_word)
+        worksheet.write(self.row, 5, lda_method)
+        worksheet.write(self.row, 6, lsi_word)
+        worksheet.write(self.row, 7, lsi_method)
+
+        # tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
+        # tm = self.topic_model_lda(execution_paths_of_a_cluster)
+        # tm = self.topic_model_lsi(execution_paths_of_a_cluster)
+        # print(self.count,'' ,tf)
+        # worksheet.write(self.row, 0, k)
+        # worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
         # worksheet.write(self.row, 2, self.merge_words_as_sentence(tf)) # split_method_tfidf
-        worksheet.write(self.row, 2, self.id_to_sentence(tf)) # method tfidf
+        # worksheet.write(self.row, 2, self.id_to_sentence(tfidf_method)) # method tfidf
         # worksheet.write(self.row, 2, tm)
         self.row += 1
         # worksheet.write(k, self.execution_path_to_sentence(execution_paths_of_a_cluster), tf)
@@ -194,11 +223,11 @@ class ClusteringCallGraph:
         # tm = self.topic_model(labels)
         # print('-------------#######-------')
         # Considering functions names as unit
-        self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
+        # self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
         # self.tree.append({'key': k, 'parent': v, 'tf_name': 'Hello tfidf', 'tm_name': tm})
         # Considering words in functions name as unit
         # self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
-
+        self.tree.append({'key': k, 'parent': v, 'tfidf_word': self.merge_words_as_sentence(tfidf_word), 'tfidf_method': self.id_to_sentence(tfidf_method), 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method})
         return
 
     def clustering_using_scipy(self, mt):
@@ -207,6 +236,7 @@ class ClusteringCallGraph:
         # print(mt)
         # npa = np.asarray(execution_paths)
         # Y = pdist(npa, 'jaccard')
+        start = timer()
         Z = linkage(ssd.squareform(mt), 'ward')
         # print(Z)
         fig = plt.figure(figsize=(25, 10))
@@ -215,10 +245,12 @@ class ClusteringCallGraph:
 
         nodes = self.bfs(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
         nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
+        end = timer()
+        print('Time required for clustering: ', end - start)
         # labels = bfs_leaf_node(nodelist, 6729)
         # print(labels)
 
-
+        start = timer()
         for k,v in nodes_with_parent.items():
             if nodelist[k].count == 1:
                 continue
@@ -239,7 +271,8 @@ class ClusteringCallGraph:
             # tm = self.topic_model(labels)
             # print('-------------#######-------')
             # tree.append({'key':k, 'parent': v, 'tf_name': tf, 'tm_name': tm})
-
+        end = timer()
+        print('Time required for labeling using 6 techniques', end - start)
         # for i in nodes:
         #     print(i)
         #     labels = self.bfs_leaf_node(nodelist, i)
@@ -266,6 +299,7 @@ class ClusteringCallGraph:
         # self.cluster_view(Z, dn)
 
         # plt.show()
+        print(self.tree, file=open('tree'+self.subject_system, 'w'))
 
         return self.tree
 
@@ -316,7 +350,7 @@ class ClusteringCallGraph:
 
         return leaf_nodes
 
-    def tf_idf_score_for_scipy_cluster(self, clusters):
+    def tf_idf_score_for_scipy_cluster(self, clusters, method_or_word):
 
         # print(execution_paths[labels[0]])
         # print('tf_idf_score_for_scipy_cluster')
@@ -328,9 +362,12 @@ class ClusteringCallGraph:
 
             # for i in labels:
             #     print(self.execution_paths[i])
-
+            if method_or_word == 'method':
+                txt1 = self.make_documents_for_a_cluster_tfidf_method(clusters)
+            elif method_or_word == 'word':
+                txt1 = self.make_documents_for_a_cluster_tfidf_word(clusters)
             # txt1 = self.make_documents_for_a_cluster_tfidf_word(clusters)
-            txt1 = self.make_documents_for_a_cluster_tfidf_method(clusters)
+            # txt1 = self.make_documents_for_a_cluster_tfidf_method(clusters)
             # print('Txt1: ', txt1, 'Clusters:',clusters)
             # when digits are passed as words(un-comment this when methods are used as unit)
             # tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='\d+')
@@ -446,10 +483,15 @@ class ClusteringCallGraph:
 
         return st
 
-    def topic_model_lda(self, labels):
+    def topic_model_lda(self, labels, method_or_word):
+
+        if method_or_word == 'method':
+            txt = self.make_documents_for_a_cluster_tm_method(labels)
+        elif method_or_word == 'word':
+            txt = self.make_documents_for_a_cluster_tm_word(labels)
 
         # txt = self.make_documents_for_a_cluster_tm_method(labels)
-        txt = self.make_documents_for_a_cluster_tm_word(labels)
+        # txt = self.make_documents_for_a_cluster_tm_word(labels)
 
         for line in txt:
             # print(line)
@@ -476,9 +518,14 @@ class ClusteringCallGraph:
 
         return topics
 
-    def topic_model_lsi(self, labels):
+    def topic_model_lsi(self, labels, method_or_word):
 
-        txt = self.make_documents_for_a_cluster_tm_method(labels)
+        if method_or_word == 'method':
+            txt = self.make_documents_for_a_cluster_tm_method(labels)
+        elif method_or_word == 'word':
+            txt = self.make_documents_for_a_cluster_tm_word(labels)
+
+        # txt = self.make_documents_for_a_cluster_tm_method(labels)
         # txt = self.make_documents_for_a_cluster_tm_word(labels)
         print(txt)
 
