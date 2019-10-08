@@ -29,6 +29,11 @@ def get_cluster():
 
     cluster = c.python_analysis()
     # print(cluster)
+
+    # with open('myfile.txt', 'r') as f:
+    #     content = f.read()
+    #     dic = eval(content)
+
     del c
     return jsonify(cluster)
 
