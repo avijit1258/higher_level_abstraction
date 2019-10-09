@@ -39,7 +39,21 @@
         <h4 class="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <p>One fine body&hellip;</p>
+        <form>
+          <div class="form-group">
+                 <label>Technique 1</label> <br>
+                 <label id="tech1"></label>
+                  <label><input type="radio" name="n_t1" value="2"  >Strongly Agree</label>
+                  <label><input type="radio" name="n_t1" value="1"  >Agree</label>
+                  <label><input type="radio" name="n_t1" value="-1"  >Disagree</label>
+                  <label><input type="radio" name="n_t1" value="-2"  >Strongly Disagree</label>
+
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -210,11 +224,17 @@
     }
 
     function showModal(part) {
+
+
+        var modal = jQuery(this);
+        modal.find('#tech1').text(part.data.tfidf_method);
+
+        //$('#tech1').val(part.data.tfidf_method)
+        // alert("Clicked on " + part.data.key);
+        // alert("Clicked on " + part.data.tfidf_method);
+        // alert("Clicked on " + part.data.tfidf_word);
+        // alert("Clicked on " + part.data.lda_method);
         jQuery('#myModal').modal('show');
-        alert("Clicked on " + part.data.key);
-        alert("Clicked on " + part.data.tfidf_method);
-        alert("Clicked on " + part.data.tfidf_word);
-        alert("Clicked on " + part.data.lda_method);
     }
 
     function showLocalOnFullClick() {

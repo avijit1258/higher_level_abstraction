@@ -198,6 +198,13 @@ class ClusteringCallGraph:
         lsi_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
         lsi_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
 
+        # tfidf_method = 'hello world'
+        # tfidf_word = 'hello world'
+        # lda_method = 'hello world'
+        # lda_word = 'hello world'
+        # lsi_method = 'hello world'
+        # lsi_word = 'hello world'
+
         worksheet.write(self.row, 0, k)
         worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
         worksheet.write(self.row, 2, self.merge_words_as_sentence(tfidf_word))
