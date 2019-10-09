@@ -483,6 +483,16 @@ class ClusteringCallGraph:
 
         return st
 
+    def topic_model_output(self, topics):
+
+        out = ' '
+
+        for t in topics:
+            out = out + t[0]
+            out = out + ','
+
+        return out
+
     def topic_model_lda(self, labels, method_or_word):
 
         if method_or_word == 'method':
@@ -514,7 +524,11 @@ class ClusteringCallGraph:
         #topics = ldamodel.print_topics(num_words=5)
         # for topic in topics:
         #    print(topic)
-        topics = ldamodel.print_topic(0,topn=5)
+        # topics = ldamodel.print_topic(0, topn=5)
+        topics = ldamodel.show_topic(0, topn=5)
+        topics = self.topic_model_output(topics)
+
+        # print('I am from LDA model: ', topics)
 
         return topics
 
@@ -551,7 +565,10 @@ class ClusteringCallGraph:
         # topics = ldamodel.print_topics(num_words=5)
         # for topic in topics:
         #    print(topic)
-        topics = lsimodel.print_topic(0, topn=5)
+        # topics = lsimodel.print_topic(0, topn=5)
+
+        topics = lsimodel.show_topic(0, topn=5)
+        topics = self.topic_model_output(topics)
 
         return topics
 

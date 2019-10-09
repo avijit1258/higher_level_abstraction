@@ -5,6 +5,9 @@
 
      <script type="text/javascript" src="{{ url_for('static',filename = 'go-debug.js')}}"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
     <title>Designing an interactive tool for program comprehension from static analysis</title>
 </head>
 <body onload="init()">
@@ -19,14 +22,32 @@
             <h2 style="margin-left: auto; margin-right: auto"> Full diagram</h2>
         </div>
 
-  <div id="fullDiagram" style="height:350px;width:100%;border:1px solid black;margin:2px"></div>
+  <div id="fullDiagram" style="height:450px;width:100%;border:1px solid black;margin:2px"></div>
         <div><h2> Local diagram</h2></div>
 
-  <div id="localDiagram" style="height:350px;width:100%;border:1px solid black;margin:2px"></div>
+  <div id="localDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
 
         <button onclick="get_cluster()" class="btn"> GET Cluster </button>
 
 </div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 
 
@@ -103,7 +124,7 @@
             { stroke: null }),
           $(go.TextBlock,
             { margin: 5, editable:true},
-            new go.Binding("text", "tf_name", function(k) { return "node" + k ; })),
+            new go.Binding("text", "tfidf_word", function(k) { return "node" + k ; })),
             {
                 toolTip:                       // define a tooltip for each node
                   $(go.Adornment, "Spot",      // that has several labels around it
@@ -114,7 +135,7 @@
                       new go.Binding("text", "key", function(s) { return "key: " + s; })),
                     $(go.TextBlock, "Bottom",
                       { alignment: go.Spot.Bottom, alignmentFocus: go.Spot.Top, stroke: "red" },
-                      new go.Binding("text", "tf_name", function(s) { return "Cluster Name: " + s; }))
+                      new go.Binding("text", "tfidf_word", function(s) { return "Cluster Name: " + s; }))
                   )  // end Adornment
             }
 
@@ -154,6 +175,16 @@
         );
       myFullDiagram.add(highlighter);
 
+       myFullDiagram.addDiagramListener("ObjectContextClicked",
+      function(e) {
+        var part = e.subject.part;
+        if (!(part instanceof go.Link))
+        {
+            showModal(part);
+        }
+
+      });
+
       // Start by focusing the diagrams on the node at the top of the tree.
       // Wait until the tree has been laid out before selecting the root node.
       myFullDiagram.addDiagramListener("InitialLayoutCompleted", function(e) {
@@ -163,6 +194,9 @@
       });
 
       myFullDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
+
+
+
     }
 
     // Make the corresponding node in the full diagram to that selected in the local diagram selected,
@@ -173,6 +207,14 @@
         // there are two separate Nodes, one for each Diagram, but they share the same key value
         myFullDiagram.select(myFullDiagram.findPartForKey(selectedLocal.data.key));
       }
+    }
+
+    function showModal(part) {
+        jQuery('#myModal').modal('show');
+        alert("Clicked on " + part.data.key);
+        alert("Clicked on " + part.data.tfidf_method);
+        alert("Clicked on " + part.data.tfidf_word);
+        alert("Clicked on " + part.data.lda_method);
     }
 
     function showLocalOnFullClick() {
@@ -233,7 +275,12 @@
                 nodeDataArray.push({
                   key: result[x].key,
                     parent: result[x].parent,
-                    tf_name: result[x].tf_name,
+                    tfidf_word: result[x].tfidf_word,
+                    tfidf_method: result[x].tfidf_method,
+                    lda_word: result[x].lda_word,
+                    lda_method: result[x].lda_method,
+                    lsi_word: result[x].lsi_word,
+                    lsi_method: result[x].lsi_method,
                   color: go.Brush.randomColor()
                 });
 

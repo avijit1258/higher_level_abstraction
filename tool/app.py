@@ -16,6 +16,7 @@ import json
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
+
 @app.route('/',methods=['GET'])
 def root():
     # return 'Hello world'
@@ -25,16 +26,16 @@ def root():
 @app.route('/get_cluster', methods=['GET'])
 def get_cluster():
 
-    c = ClusteringCallGraph()
-
-    cluster = c.python_analysis()
+    # c = ClusteringCallGraph()
+    #
+    # cluster = c.python_analysis()
     # print(cluster)
 
-    # with open('myfile.txt', 'r') as f:
-    #     content = f.read()
-    #     dic = eval(content)
+    with open('treedetectronSept7.txt', 'r') as f:
+        content = f.read()
+        cluster = eval(content)
 
-    del c
+    # del c
     return jsonify(cluster)
 
 
