@@ -36,23 +36,73 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Modal title</h4>
+        <h4 class="modal-title" id="modal-title">Modal title</h4>
       </div>
       <div class="modal-body">
-        <form>
+        <form action="{{url_for('save_response')}}" method="post">
           <div class="form-group">
                  <label>Technique 1</label> <br>
-                 <label id="tech1"></label>
+                 <label id="tech1"></label><br>
                   <label><input type="radio" name="n_t1" value="2"  >Strongly Agree</label>
                   <label><input type="radio" name="n_t1" value="1"  >Agree</label>
                   <label><input type="radio" name="n_t1" value="-1"  >Disagree</label>
                   <label><input type="radio" name="n_t1" value="-2"  >Strongly Disagree</label>
 
           </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
+            <div class="form-group">
+                 <label>Technique 2</label> <br>
+                 <label id="tech2"></label><br>
+                  <label><input type="radio" name="n_t2" value="2"  >Strongly Agree</label>
+                  <label><input type="radio" name="n_t2" value="1"  >Agree</label>
+                  <label><input type="radio" name="n_t2" value="-1"  >Disagree</label>
+                  <label><input type="radio" name="n_t2" value="-2"  >Strongly Disagree</label>
+
           </div>
+            <div class="form-group">
+                 <label>Technique 3</label> <br>
+                 <label id="tech3"></label><br>
+                  <label><input type="radio" name="n_t3" value="2"  >Strongly Agree</label>
+                  <label><input type="radio" name="n_t3" value="1"  >Agree</label>
+                  <label><input type="radio" name="n_t3" value="-1"  >Disagree</label>
+                  <label><input type="radio" name="n_t3" value="-2"  >Strongly Disagree</label>
+
+          </div>
+            <div class="form-group">
+                 <label>Technique 4</label> <br>
+                 <label id="tech4"></label><br>
+                  <label><input type="radio" name="n_t4" value="2"  >Strongly Agree</label>
+                  <label><input type="radio" name="n_t4" value="1"  >Agree</label>
+                  <label><input type="radio" name="n_t4" value="-1"  >Disagree</label>
+                  <label><input type="radio" name="n_t4" value="-2"  >Strongly Disagree</label>
+
+          </div>
+            <div class="form-group">
+                 <label>Technique 5</label> <br>
+                 <label id="tech5"></label><br>
+                  <label><input type="radio" name="n_t5" value="2"  >Strongly Agree</label>
+                  <label><input type="radio" name="n_t5" value="1"  >Agree</label>
+                  <label><input type="radio" name="n_t5" value="-1"  >Disagree</label>
+                  <label><input type="radio" name="n_t5" value="-2"  >Strongly Disagree</label>
+
+          </div>
+            <div class="form-group">
+                 <label>Technique 6</label> <br>
+                 <label id="tech6"></label><br>
+                  <label><input type="radio" name="n_t6" value="2"  >Strongly Agree</label>
+                  <label><input type="radio" name="n_t6" value="1"  >Agree</label>
+                  <label><input type="radio" name="n_t6" value="-1"  >Disagree</label>
+                  <label><input type="radio" name="n_t6" value="-2"  >Strongly Disagree</label>
+
+          </div>
+            <div class="form-group">
+            <label for="user_summary" class="col-form-label">Your Summary from the description:</label>
+            <textarea class="form-control" id="user_summary"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="comment" class="col-form-label">Comments:</label>
+            <textarea class="form-control" id="comment"></textarea>
+          </div>
+            <input type="submit" value="Submit">
         </form>
       </div>
       <div class="modal-footer">
@@ -226,8 +276,17 @@
     function showModal(part) {
 
 
-        var modal = jQuery(this);
-        modal.find('#tech1').text(part.data.tfidf_method);
+        // var modal = jQuery(this);
+        // modal.find('#tech1').text(part.data.tfidf_method);
+
+        document.getElementById('modal-title').innerHTML = 'Cluster ID: ' + part.data.key;
+
+        document.getElementById('tech1').innerHTML = part.data.tfidf_word;
+        document.getElementById('tech2').innerHTML = part.data.tfidf_method;
+        document.getElementById('tech3').innerHTML = part.data.lda_word;
+        document.getElementById('tech4').innerHTML = part.data.lda_method;
+        document.getElementById('tech5').innerHTML = part.data.lsi_word;
+        document.getElementById('tech6').innerHTML = part.data.lsi_method;
 
         //$('#tech1').val(part.data.tfidf_method)
         // alert("Clicked on " + part.data.key);
