@@ -40,6 +40,12 @@
       </div>
       <div class="modal-body">
         <form action="{{url_for('save_response')}}" method="post" id="user_feedback">
+           <div class="form-group">
+                 <label> Description of the cluster functionality </label>
+                 <label id="cluster_description">  </label>
+          </div>
+
+
           <div class="form-group">
                  <label>Technique 1</label> <br>
                  <label id="tech1"></label><br>
@@ -96,12 +102,12 @@
           </div>
             <div class="form-group">
             <label for="user_summary" class="col-form-label">Your Summary from the description:</label>
-            <textarea class="form-control" id="user_summary" name="user_summary"></textarea>
-            <textarea class="form-control" value="122" name="key"></textarea>
+                <input type="text" id="user_summary" name="user_summary">
+                <input type="hidden" id="key" name="key">
           </div>
           <div class="form-group">
             <label for="comment" class="col-form-label">Comments:</label>
-            <textarea class="form-control" id="comment" name="comment"></textarea>
+              <input type="text" id="comment" name="comment">
           </div>
             <input type="submit" value="Submit">
         </form>
@@ -119,6 +125,8 @@
 </body>
 
 <script >
+
+    var subject_system = 1;
     function get_cluster() {
         Url = 'http://127.0.0.1:5000/get_cluster'
         // $('.btn').click(function () {
@@ -141,7 +149,6 @@
 	 function init() {
       //if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
       var $ = go.GraphObject.make;  // for conciseness in defining templates
-
       myFullDiagram =
         $(go.Diagram, "fullDiagram",  // each diagram refers to its DIV HTML element by id
           {
@@ -186,7 +193,7 @@
           new go.Binding("text", "key", go.Binding.toString),  // for sorting
           $(go.Shape, "Rectangle",
             new go.Binding("fill", "color"),
-            { stroke: null }),
+            { stroke: null, name: "SHAPE" }),
           $(go.TextBlock,
             { margin: 5, editable:true},
             new go.Binding("text", "tfidf_word", function(k) { return "node" + k ; })),
@@ -328,7 +335,7 @@
       }
     }
 
-            jQuery( "#user_feedback" ).submit(function( event ) {
+          jQuery( "#user_feedback" ).submit(function( event ) {
 
           // Stop form from submitting normally
           event.preventDefault();
@@ -341,19 +348,23 @@
               t4 = $form.find( "input[name='n_t4']" ).val(),
               t5 = $form.find( "input[name='n_t5']" ).val(),
               t6 = $form.find( "input[name='n_t6']" ).val(),
-              key = $form.find("input[name='key']").val(),
-              user_summary = $form.find("input[name='user_summary']").val(),
-              comment = $form.find("input[name='comment']").val(),
+              f_key = $form.find( "input[name='key']" ).val(),
+              f_user_summary = $form.find( "input[name='user_summary']" ).val(),
+              f_comment = $form.find( "input[name='comment']" ).val(),
             url = $form.attr( "action" );
 
+            // alert(f_key);
+            // alert(f_user_summary);
+            // alert(f_comment);
+
           // Send the data using post
-          var posting = $.post( url, { n_t1 : t1, n_t2 : t2,n_t3 : t3,n_t4 : t4,n_t5 : t5,n_t6 : t6, key: key, user_summary: user_summary, comment: comment } );
+          var posting = $.post( url, { n_t1 : t1, n_t2 : t2,n_t3 : t3,n_t4 : t4,n_t5 : t5,n_t6 : t6, key: f_key, user_summary: f_user_summary, comment: f_comment } );
 
           // Put the results in a div
           posting.done(function( data ) {
             // var content = $( data ).find( "#content" );
             // $( "#result" ).empty().append( content );
-              alert("Successful");
+              alert(data);
           });
           $("#user_feedback").trigger("reset");
         });
@@ -390,13 +401,41 @@
                     lda_method: result[x].lda_method,
                     lsi_word: result[x].lsi_word,
                     lsi_method: result[x].lsi_method,
-                  color: go.Brush.randomColor()
+                    color: "#cce6ff"
                 });
 
             }
-
+        // Use below line for randomly coloring brushes
+        // color: go.Brush.randomColor()
 
         myFullDiagram.model = new go.TreeModel(nodeDataArray);
+        update_nodes_for_study();
+
+    }
+
+    function update_nodes_for_study() {
+        var ss1_key = ['6015', '6001', '5991', '5430'];
+        var ss2_key = ['6015', '6001', '5991', '5430'];
+        var ss3_key = ['6015', '6001', '5991', '5430'];
+
+        for (i=0; i < 4; i++)
+        {
+            if(subject_system == 1)
+            {
+                var node = myFullDiagram.findNodeForKey(ss1_key[i]);
+            }else if(subject_system == 2)
+            {
+                var node = myFullDiagram.findNodeForKey(ss2_key[i]);
+            }else if(subject_system == 3)
+            {
+                var node = myFullDiagram.findNodeForKey(ss3_key[i]);
+            }
+
+            var shape = node.findObject("SHAPE");
+            shape.fill = "#87e8a1";
+
+        }
+        subject_system = subject_system + 1
     }
 
     function clearDiagram() {

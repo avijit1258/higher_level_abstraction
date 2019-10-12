@@ -21,6 +21,7 @@ CORS(app)
 subject_system = ['treedetectronSept7.txt', 'treedetectronSept7.txt', 'treedetectronSept7.txt']
 
 ss_count = 0
+cluster_count = 0
 row = 1
 username = ''
 
@@ -65,40 +66,41 @@ def get_cluster():
 
 @app.route('/save_response', methods=['POST'])
 def save_response():
-    global worksheet, row
+    global worksheet, row, cluster_count
     print('From save',worksheet, ss_count)
     # if ss_count == 1:
     #     print('First Subject system')
     # elif ss_count == 2:
     #     print('Second Subject system')
-    # print(request.form['key'])
+    print(request.form['key'])
     print(request.form['n_t1'])
     print(request.form['n_t2'])
     print(request.form['n_t3'])
     print(request.form['n_t4'])
     print(request.form['n_t5'])
     print(request.form['n_t6'])
-    # print(request.form['user_summary'])
-    # print(request.form['comment'])
+    print(request.form['user_summary'])
+    print(request.form['comment'])
 
 
-    # worksheet.write(0, 0, request.form['key'])
+    worksheet.write(row, 0, request.form['key'])
     worksheet.write(row, 1, request.form['n_t1'])
     worksheet.write(row, 2, request.form['n_t2'])
     worksheet.write(row, 3, request.form['n_t3'])
     worksheet.write(row, 4, request.form['n_t4'])
     worksheet.write(row, 5, request.form['n_t5'])
     worksheet.write(row, 6, request.form['n_t6'])
+    worksheet.write(row, 7, request.form['user_summary'])
+    worksheet.write(row, 8, request.form['comment'])
 
-    if ss_count == 3:
+    if ss_count == 3 and cluster_count == 12:
         print('Get 3rd subject system')
         workbook.close()
 
     row = row + 1
-    # worksheet.write(0, 7, request.form['user_summary'])
-    # worksheet.write(0, 8, request.form['comment'])
+    cluster_count = cluster_count + 1
 
-    return 'Successfully saved'
+    return 'Subject: '+ str(ss_count) +'Cluster: '+ str(cluster_count)
 
 
 def create_csv():
