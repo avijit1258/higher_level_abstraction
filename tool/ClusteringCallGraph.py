@@ -800,9 +800,9 @@ class ClusteringCallGraph:
         return str
 
 
-# c = ClusteringCallGraph()
-#
-# c.python_analysis()
-#
-# workbook.close()
+c = ClusteringCallGraph()
+
+c.python_analysis()
+
+workbook.close()
 
