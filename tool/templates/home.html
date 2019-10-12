@@ -295,6 +295,7 @@
         document.getElementById('tech4').innerHTML = part.data.lda_method;
         document.getElementById('tech5').innerHTML = part.data.lsi_word;
         document.getElementById('tech6').innerHTML = part.data.lsi_method;
+        document.getElementById('key').value = part.data.key;
 
         //$('#tech1').val(part.data.tfidf_method)
         // alert("Clicked on " + part.data.key);
@@ -367,6 +368,7 @@
               alert(data);
           });
           $("#user_feedback").trigger("reset");
+          changeDoneClusterColor(f_key);
         });
 
     // Create the tree model containing TOTAL nodes, with each node having a variable number of children
@@ -387,6 +389,12 @@
     //   }
     //   myFullDiagram.model = new go.TreeModel(nodeDataArray);
     // }
+
+    function changeDoneClusterColor(key) {
+        var node = myFullDiagram.findNodeForKey(key);
+        var shape = node.findObject("SHAPE");
+        shape.fill = "#ff66ff";
+    }
 
     function setupDiagram(result) {
         var nodeDataArray = [];
@@ -417,7 +425,7 @@
         var ss1_key = ['6015', '6001', '5991', '5430'];
         var ss2_key = ['6015', '6001', '5991', '5430'];
         var ss3_key = ['6015', '6001', '5991', '5430'];
-
+        alert(subject_system);
         for (i=0; i < 4; i++)
         {
             if(subject_system == 1)
