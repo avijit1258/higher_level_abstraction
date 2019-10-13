@@ -1,0 +1,704 @@
+1 requests
+2 requests._internal_utils
+3 requests.adapters
+4 requests.api
+5 requests.auth
+6 requests.cookies
+7 requests.exceptions
+8 requests.help
+9 requests.hooks
+10 requests.models
+11 requests.sessions
+12 requests.status_codes
+13 requests.structures
+14 requests.utils
+15 _check_cryptography\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/__init__.py:74)
+16 check_compatibility\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/__init__.py:49)
+17 to_native_string\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/_internal_utils.py:14)
+18 unicode_is_ascii\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/_internal_utils.py:30)
+19 BaseAdapter\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:55)
+20 HTTPAdapter\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:84)
+21 SOCKSProxyManager\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:46)
+22 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:58)
+23 close\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:79)
+24 send\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:61)
+25 __getstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:131)
+26 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:113)
+27 __setstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:134)
+28 add_headers\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:358)
+29 build_response\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:255)
+30 cert_verify\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:203)
+31 close\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:319)
+32 get_connection\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:292)
+33 init_poolmanager\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:146)
+34 proxy_headers\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:372)
+35 proxy_manager_for\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:166)
+36 request_url\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:329)
+37 send\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/adapters.py:394)
+38 dictcomp
+39 delete\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:152)
+40 get\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:64)
+41 head\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:92)
+42 options\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:79)
+43 patch\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:137)
+44 post\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:107)
+45 put\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:122)
+46 request\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/api.py:16)
+47 AuthBase\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:72)
+48 HTTPBasicAuth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:79)
+49 HTTPDigestAuth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:108)
+50 HTTPProxyAuth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:100)
+51 _basic_auth_str\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:28)
+52 __call__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:75)
+53 __call__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:95)
+54 __eq__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:86)
+55 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:82)
+56 __ne__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:92)
+57 __call__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:278)
+58 __eq__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:298)
+59 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:111)
+60 __ne__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:304)
+61 build_digest_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:127)
+62 handle_401\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:234)
+63 handle_redirect\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:229)
+64 init_per_thread_state\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:117)
+65 lambda
+66 md5_utf8\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:145)
+67 sha256_utf8\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:157)
+68 sha512_utf8\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:163)
+69 sha_utf8\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:151)
+70 __call__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/auth.py:103)
+71 CookieConflictError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:165)
+72 MockRequest\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:25)
+73 MockResponse\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:97)
+74 RequestsCookieJar\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:171)
+75 _copy_cookie_jar\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:426)
+76 cookiejar_from_dict\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:508)
+77 create_cookie\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:441)
+78 extract_cookies_to_jar\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:118)
+79 get_cookie_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:135)
+80 merge_cookies\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:529)
+81 morsel_to_cookie\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:477)
+82 remove_cookie_by_name\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:146)
+83 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:37)
+84 add_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:74)
+85 add_unredirected_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:78)
+86 get_full_url\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:51)
+87 get_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:71)
+88 get_host\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:45)
+89 get_new_headers\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:81)
+90 get_origin_req_host\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:48)
+91 get_type\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:42)
+92 has_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:68)
+93 host\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:92)
+94 is_unverifiable\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:65)
+95 origin_req_host\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:88)
+96 unverifiable\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:84)
+97 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:104)
+98 getheaders\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:114)
+99 info\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:111)
+100 __contains__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:315)
+101 __delitem__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:337)
+102 __getitem__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:321)
+103 __getstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:401)
+104 __setitem__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:330)
+105 __setstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:408)
+106 _find\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:356)
+107 _find_no_duplicates\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:376)
+108 copy\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:414)
+109 get\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:189)
+110 get_dict\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:299)
+111 get_policy\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:421)
+112 items\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:261)
+113 iteritems\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:252)
+114 iterkeys\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:218)
+115 itervalues\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:235)
+116 keys\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:227)
+117 list_domains\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:270)
+118 list_paths\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:278)
+119 multiple_domains\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:286)
+120 set\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:201)
+121 set_cookie\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:343)
+122 update\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:348)
+123 values\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/cookies.py:244)
+124 listcomp
+125 ChunkedEncodingError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:92)
+126 ConnectTimeout\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:53)
+127 ConnectionError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:32)
+128 ContentDecodingError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:96)
+129 FileModeWarning\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:119)
+130 HTTPError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:28)
+131 InvalidHeader\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:84)
+132 InvalidProxyURL\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:88)
+133 InvalidSchema\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:76)
+134 InvalidURL\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:80)
+135 MissingSchema\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:72)
+136 ProxyError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:36)
+137 ReadTimeout\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:60)
+138 RequestException\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:12)
+139 RequestsDependencyWarning\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:124)
+140 RequestsWarning\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:114)
+141 RetryError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:104)
+142 SSLError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:40)
+143 StreamConsumedError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:100)
+144 Timeout\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:44)
+145 TooManyRedirects\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:68)
+146 URLRequired\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:64)
+147 UnrewindableBodyError\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:108)
+148 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/exceptions.py:17)
+149 _implementation\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/help.py:26)
+150 info\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/help.py:59)
+151 main\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/help.py:113)
+152 default_hooks\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/hooks.py:17)
+153 dispatch_hook\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/hooks.py:23)
+154 dictcomp
+155 PreparedRequest\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:272)
+156 Request\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:198)
+157 RequestEncodingMixin\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:60)
+158 RequestHooksMixin\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:174)
+159 Response\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:587)
+160 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:291)
+161 __repr__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:326)
+162 _get_idna_encoded_host\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:346)
+163 copy\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:329)
+164 prepare\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:308)
+165 prepare_auth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:535)
+166 prepare_body\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:453)
+167 prepare_content_length\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:522)
+168 prepare_cookies\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:557)
+169 prepare_headers\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:442)
+170 prepare_hooks\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:577)
+171 prepare_method\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:340)
+172 prepare_url\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:356)
+173 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:226)
+174 __repr__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:251)
+175 prepare\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:254)
+176 _encode_files\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:109)
+177 _encode_params\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:82)
+178 path_url\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:61)
+179 deregister_hook\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:186)
+180 register_hook\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:175)
+181 genexpr
+182 __bool__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:673)
+183 __enter__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:648)
+184 __exit__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:651)
+185 __getstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:654)
+186 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:597)
+187 __iter__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:693)
+188 __nonzero__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:683)
+189 __repr__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:670)
+190 __setstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:662)
+191 apparent_encoding\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:729)
+192 close\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:963)
+193 content\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:829)
+194 is_permanent_redirect\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:719)
+195 is_redirect\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:712)
+196 iter_content\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:734)
+197 iter_lines\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:798)
+198 json\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:894)
+199 links\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:920)
+200 next\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:724)
+201 ok\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:697)
+202 raise_for_status\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:938)
+203 text\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:853)
+204 dictcomp
+205 generate\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/models.py:751)
+206 Session\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:337)
+207 SessionRedirectMixin\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:96)
+208 merge_hooks\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:81)
+209 merge_setting\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:50)
+210 session\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:755)
+211 __enter__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:417)
+212 __exit__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:420)
+213 __getstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:746)
+214 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:362)
+215 __setstate__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:750)
+216 close\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:730)
+217 delete\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:604)
+218 get\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:534)
+219 get_adapter\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:716)
+220 head\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:556)
+221 merge_environment_settings\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:687)
+222 mount\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:735)
+223 options\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:545)
+224 patch\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:592)
+225 post\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:567)
+226 prepare_request\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:423)
+227 put\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:580)
+228 request\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:463)
+229 send\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:614)
+230 dictcomp
+231 listcomp
+232 listcomp
+233 get_redirect_target\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:98)
+234 rebuild_auth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:254)
+235 rebuild_method\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:314)
+236 rebuild_proxies\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:273)
+237 resolve_redirects\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:144)
+238 should_strip_auth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/sessions.py:119)
+239 listcomp
+240 _init\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/status_codes.py:107)
+241 doc\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/status_codes.py:114)
+242 genexpr
+243 genexpr
+244 CaseInsensitiveDict\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:15)
+245 LookupDict\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:89)
+246 __delitem__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:56)
+247 __eq__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:73)
+248 __getitem__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:53)
+249 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:42)
+250 __iter__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:59)
+251 __len__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:62)
+252 __repr__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:85)
+253 __setitem__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:48)
+254 copy\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:82)
+255 lower_items\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:65)
+256 genexpr
+257 genexpr
+258 __getitem__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:99)
+259 __init__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:92)
+260 __repr__\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:96)
+261 get\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/structures.py:104)
+262 _parse_content_type_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:455)
+263 add_dict_to_cookiejar\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:424)
+264 address_in_network\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:616)
+265 check_header_validity\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:932)
+266 default_headers\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:807)
+267 default_user_agent\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:798)
+268 dict_from_cookiejar\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:409)
+269 dict_to_sequence\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:99)
+270 dotted_netmask\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:631)
+271 extract_zipped_paths\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:228)
+272 from_key_val_list\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:260)
+273 get_auth_from_url\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:911)
+274 get_encoding_from_headers\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:480)
+275 get_encodings_from_content\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:435)
+276 get_environ_proxies\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:760)
+277 get_netrc_auth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:169)
+278 get_unicode_from_response\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:529)
+279 guess_filename\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:220)
+280 guess_json_utf\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:862)
+281 is_ipv4_address\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:642)
+282 is_valid_cidr\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:653)
+283 iter_slices\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:519)
+284 parse_dict_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:349)
+285 parse_header_links\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:819)
+286 parse_list_header\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:317)
+287 prepend_scheme_if_needed\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:894)
+288 proxy_bypass\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:87)
+289 proxy_bypass_registry\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:48)
+290 requote_uri\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:594)
+291 rewind_body\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:970)
+292 select_proxy\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:772)
+293 set_environ\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:677)
+294 should_bypass_proxies\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:699)
+295 stream_decode_response_unicode\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:501)
+296 super_len\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:108)
+297 to_key_val_list\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:287)
+298 unquote_header_value\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:384)
+299 unquote_unreserved\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:570)
+300 urldefragauth\n(/Users/avijitbhattacharjee/OneDrive - University of Saskatchewan/CHIIR_2020/requests-master/requests/utils.py:953)
+301 genexpr
+302 lambda
+#
+90 88 U
+86 17 U
+86 261 U
+86 40 U
+86 109 U
+86 218 U
+87 261 U
+87 40 U
+87 218 U
+87 109 U
+96 94 U
+95 90 U
+93 88 U
+78 83 U
+78 73 U
+78 97 U
+78 72 U
+79 72 U
+79 261 U
+79 40 U
+79 109 U
+79 83 U
+79 218 U
+109 107 U
+120 82 U
+120 261 U
+120 40 U
+120 109 U
+120 77 U
+120 121 U
+120 81 U
+120 218 U
+116 114 U
+123 115 U
+112 113 U
+100 71 U
+102 107 U
+104 120 U
+101 82 U
+122 121 U
+107 71 U
+103 163 U
+103 108 U
+103 254 U
+105 122 U
+108 122 U
+108 111 U
+77 120 U
+81 77 U
+76 124 U
+76 77 U
+76 74 U
+76 121 U
+124 74 U
+80 76 U
+51 17 U
+48 47 U
+53 51 U
+50 48 U
+70 51 U
+49 47 U
+61 66 U
+61 65 U
+61 261 U
+61 69 U
+61 40 U
+61 67 U
+61 109 U
+61 68 U
+61 218 U
+65 68 U
+62 163 U
+62 61 U
+62 24 U
+62 229 U
+62 261 U
+62 40 U
+62 78 U
+62 108 U
+62 284 U
+62 109 U
+62 254 U
+62 168 U
+62 218 U
+57 63 U
+57 62 U
+57 64 U
+57 61 U
+209 297 U
+209 239 U
+208 209 U
+233 17 U
+237 17 U
+237 24 U
+237 80 U
+237 229 U
+237 235 U
+237 78 U
+237 145 U
+237 234 U
+237 125 U
+237 236 U
+237 128 U
+237 290 U
+237 291 U
+237 233 U
+234 277 U
+234 238 U
+236 294 U
+236 273 U
+236 51 U
+236 276 U
+206 207 U
+214 76 U
+214 152 U
+214 26 U
+214 222 U
+214 266 U
+214 20 U
+212 216 U
+226 277 U
+226 76 U
+226 80 U
+226 74 U
+226 208 U
+226 155 U
+226 152 U
+226 160 U
+226 266 U
+226 164 U
+226 244 U
+226 209 U
+228 226 U
+228 221 U
+228 156 U
+228 229 U
+228 173 U
+218 228 U
+223 228 U
+220 228 U
+225 228 U
+227 228 U
+224 228 U
+217 228 U
+229 76 U
+229 232 U
+229 200 U
+229 261 U
+229 40 U
+229 156 U
+229 109 U
+229 153 U
+229 78 U
+229 237 U
+229 219 U
+229 218 U
+232 237 U
+221 261 U
+221 40 U
+221 109 U
+221 209 U
+221 218 U
+221 276 U
+219 133 U
+222 231 U
+213 230 U
+210 206 U
+210 214 U
+177 297 U
+176 279 U
+176 297 U
+156 158 U
+173 152 U
+173 180 U
+175 155 U
+175 152 U
+175 160 U
+175 164 U
+155 157 U
+155 158 U
+160 152 U
+164 170 U
+164 171 U
+164 172 U
+164 169 U
+164 168 U
+164 166 U
+164 165 U
+161 17 U
+163 76 U
+163 17 U
+163 75 U
+163 152 U
+163 160 U
+163 177 U
+163 254 U
+163 244 U
+163 290 U
+171 17 U
+172 135 U
+172 134 U
+172 18 U
+172 162 U
+172 17 U
+172 177 U
+172 290 U
+169 265 U
+169 244 U
+169 17 U
+169 249 U
+166 296 U
+166 177 U
+166 176 U
+166 244 U
+166 167 U
+167 17 U
+167 261 U
+167 296 U
+167 40 U
+167 109 U
+167 244 U
+167 218 U
+165 48 U
+165 273 U
+165 55 U
+165 177 U
+165 122 U
+165 167 U
+165 290 U
+168 76 U
+168 244 U
+168 79 U
+170 180 U
+186 76 U
+186 244 U
+186 249 U
+184 192 U
+185 193 U
+182 201 U
+188 201 U
+187 196 U
+201 202 U
+201 130 U
+195 244 U
+194 244 U
+191 193 U
+205 127 U
+205 125 U
+205 128 U
+196 143 U
+196 295 U
+196 283 U
+196 205 U
+197 196 U
+193 127 U
+193 196 U
+203 193 U
+203 274 U
+203 191 U
+198 203 U
+198 280 U
+198 193 U
+198 274 U
+199 285 U
+202 130 U
+192 23 U
+192 216 U
+192 192 U
+1 16 U
+1 139 U
+1 15 U
+1 129 U
+15 139 U
+12 240 U
+12 245 U
+12 259 U
+240 112 U
+240 245 U
+242 241 U
+242 112 U
+46 46 U
+46 228 U
+46 206 U
+40 46 U
+42 46 U
+41 46 U
+44 46 U
+45 46 U
+43 46 U
+39 46 U
+288 289 U
+296 129 U
+286 298 U
+284 298 U
+263 76 U
+274 262 U
+278 274 U
+299 134 U
+290 299 U
+290 134 U
+264 270 U
+293 261 U
+293 40 U
+293 109 U
+293 218 U
+302 261 U
+302 40 U
+302 109 U
+302 218 U
+294 282 U
+294 293 U
+294 288 U
+294 302 U
+294 301 U
+294 264 U
+294 281 U
+301 93 U
+276 294 U
+266 244 U
+266 267 U
+266 249 U
+285 199 U
+265 131 U
+291 147 U
+148 46 U
+148 228 U
+130 138 U
+127 138 U
+136 127 U
+142 127 U
+144 138 U
+126 144 U
+126 127 U
+137 144 U
+146 138 U
+145 138 U
+135 138 U
+133 138 U
+134 138 U
+131 138 U
+132 134 U
+125 138 U
+128 138 U
+143 138 U
+141 138 U
+147 138 U
+129 140 U
+139 140 U
+249 122 U
+247 255 U
+247 249 U
+254 249 U
+252 112 U
+258 261 U
+258 40 U
+258 218 U
+258 109 U
+261 261 U
+261 40 U
+261 218 U
+261 109 U
+8 151 U
+150 149 U
+151 150 U
+21 133 U
+20 19 U
+26 33 U
+26 22 U
+27 33 U
+35 273 U
+35 34 U
+35 21 U
+30 271 U
+29 76 U
+29 274 U
+29 249 U
+29 78 U
+29 244 U
+29 159 U
+29 186 U
+32 132 U
+32 292 U
+32 35 U
+32 287 U
+31 123 U
+36 300 U
+36 292 U
+34 273 U
+34 51 U
+37 134 U
+37 127 U
+37 136 U
+37 142 U
+37 141 U
+37 36 U
+37 28 U
+37 126 U
+37 137 U
+37 30 U
+37 29 U
+37 32 U
