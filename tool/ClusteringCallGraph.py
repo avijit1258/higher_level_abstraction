@@ -40,7 +40,7 @@ import multiprocessing
 from xlsxwriter import worksheet
 
 
-workbook = xlsxwriter.Workbook('sklearn.xlsx')
+workbook = xlsxwriter.Workbook('detectron.xlsx')
 worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
