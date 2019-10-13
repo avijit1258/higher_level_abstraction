@@ -82,7 +82,6 @@ def save_response():
     print(request.form['user_summary'])
     print(request.form['comment'])
 
-
     worksheet.write(row, 0, request.form['key'])
     worksheet.write(row, 1, request.form['n_t1'])
     worksheet.write(row, 2, request.form['n_t2'])
@@ -120,8 +119,6 @@ def create_csv():
     worksheet.write(0, 6, 'lsi_method')
     worksheet.write(0, 7, 'user_summary')
     worksheet.write(0, 8, 'comment')
-
-
 
 
 if __name__ == '__main__':
