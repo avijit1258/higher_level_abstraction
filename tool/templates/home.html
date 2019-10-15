@@ -350,18 +350,19 @@
 
           // Get some values from elements on the page:
           var $form = $( this ),
-              t1 = $form.find( "input[name='n_t1']" ).val(),
-              t2 = $form.find( "input[name='n_t2']" ).val(),
-              t3 = $form.find( "input[name='n_t3']" ).val(),
-              t4 = $form.find( "input[name='n_t4']" ).val(),
-              t5 = $form.find( "input[name='n_t5']" ).val(),
-              t6 = $form.find( "input[name='n_t6']" ).val(),
+              t1 = $form.find( "input[name='n_t1']:checked" ).val(),
+              t2 = $form.find( "input[name='n_t2']:checked" ).val(),
+              t3 = $form.find( "input[name='n_t3']:checked" ).val(),
+              t4 = $form.find( "input[name='n_t4']:checked" ).val(),
+              t5 = $form.find( "input[name='n_t5']:checked" ).val(),
+              t6 = $form.find( "input[name='n_t6']:checked" ).val(),
               f_key = $form.find( "input[name='key']" ).val(),
               f_user_summary = $form.find( "input[name='user_summary']" ).val(),
               f_comment = $form.find( "input[name='comment']" ).val(),
             url = $form.attr( "action" );
 
-            // alert(f_key);
+            alert(t1);
+            alert(t2);
             // alert(f_user_summary);
             // alert(f_comment);
 
@@ -450,7 +451,7 @@
 'This cluster is deleting, sending, resolving redirects, merging cookies, getting full url.'];
 
 
-        alert(subject_system);
+        // alert(subject_system);
         for (i=0; i < 4; i++)
         {
             if(subject_system == 1)
@@ -459,7 +460,7 @@
                 // document.getElementById('cluster_description').innerHTML = ss1[i];
                 // node.data.description = ss1[i];
                 add_description(node, ss1[i]);
-                alert(ss1[i]);
+                // alert(ss1[i]);
             }else if(subject_system == 2)
             {
                 var node = myFullDiagram.findNodeForKey(ss2_key[i]);
