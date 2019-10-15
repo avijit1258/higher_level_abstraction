@@ -18,7 +18,7 @@ import json
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
-subject_system = ['treedetectronSept7.txt', 'treedetectronSept7.txt', 'treedetectronSept7.txt']
+subject_system = ['treedetectronSept7.txt', 'treerealTimeSept7.txt', 'treerequestsOct12.txt']
 
 ss_count = 0
 cluster_count = 0
@@ -92,7 +92,7 @@ def save_response():
     worksheet.write(row, 7, request.form['user_summary'])
     worksheet.write(row, 8, request.form['comment'])
 
-    if ss_count == 3 and cluster_count == 12:
+    if ss_count == 3 and cluster_count == 11:
         print('Get 3rd subject system')
         workbook.close()
 
