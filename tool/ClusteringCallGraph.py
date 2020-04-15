@@ -44,6 +44,11 @@ workbook = xlsxwriter.Workbook('realTime.xlsx')
 worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
+    """ This class takes caller-callee relationships of a python project. Next, builds a call graph from the input.
+        Extracts execution paths from the call graph. Then clusters the execution paths according to their similarity.
+        Finally, clusters are renamed using the execution paths under them using different topic modelling techniques.
+    
+     """
     S = []
 
     T = []
@@ -84,10 +89,11 @@ class ClusteringCallGraph:
     worksheet.write(0, 7, 'lsi_method')
 
     def __del__(self):
-
+        """ deletes the ClusteringCallGraph class objects """
         print('deleted')
 
     def python_analysis(self):
+        """ analyzing python programs to build cluster tree of execution paths. """
         self.tgf_to_networkX()
         self.G.remove_edges_from(self.G.selfloop_edges())
         self.extracting_source_and_exit_node()
@@ -112,6 +118,7 @@ class ClusteringCallGraph:
         return self.clustering_using_scipy(mat)
 
     def tgf_to_networkX(self):
+        """ converting tgf file to a networkX graph"""
         self.subject_system = input('Enter name of the subject system: \n')
         print('thanks a lot')
         # path = easygui.fileopenbox()
@@ -150,6 +157,7 @@ class ClusteringCallGraph:
         return
 
     def extracting_source_and_exit_node(self):
+        """ Finding source and exit nodes from networkX graph """
         print('In degree')
         for s, v in self.G.in_degree():
             # print(s, v)
@@ -167,6 +175,7 @@ class ClusteringCallGraph:
         print(len(self.T))
 
     def extracting_execution_paths(self):
+        """ Extracting execution paths from networkX call graph """
         print('Extracting execution paths')
         for s in self.S:
             for t in self.T:
@@ -178,6 +187,7 @@ class ClusteringCallGraph:
                     self.execution_paths.append(p)
 
     def jaccard_distance_matrix(self, paths):
+        """ creating distance matrix using jaccard similarity value """
         print('jaccard_distance_matrix')
         length = len(paths)
         Matrix = [[0 for x in range(length)] for y in range(length)]
@@ -188,6 +198,7 @@ class ClusteringCallGraph:
         return Matrix
 
     def labeling_cluster(self, execution_paths_of_a_cluster, k, v):
+        """ Labelling a cluster using six variants """
         # print(k,'blank document', execution_paths_of_a_cluster)
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
 
@@ -238,6 +249,7 @@ class ClusteringCallGraph:
         return
 
     def clustering_using_scipy(self, mt):
+        """ clustering execution paths using scipy """
 
         # print('Execution paths : ', len(self.execution_paths))
         # print(mt)
@@ -312,17 +324,22 @@ class ClusteringCallGraph:
         return self.tree
 
     def extract_function_name(self,str):
+        """ extracting function names from TGF file """
         end = str.find('\\')
 
         return str[:end]
 
     def jaccard_similarity(self, list1, list2):
+        """ calculating jaccard similarity """
         intersection = len(list(set(list1).intersection(list2)))
         # print(list(set(list1).intersection(list2)))
         union = (len(list1) + len(list2)) - intersection
         return 1 - float(intersection / union)
 
     def bfs_leaf_node(self, nodelist, id):
+        """ 
+        Finding leaf nodes of a node in cluster tree.
+        """
 
         # node = nodelist[id]
 
@@ -359,7 +376,9 @@ class ClusteringCallGraph:
         return leaf_nodes
 
     def tf_idf_score_for_scipy_cluster(self, clusters, method_or_word):
-
+        """ 
+        Tfidf score calculation for a scipy cluster.
+        """
         # print(execution_paths[labels[0]])
         # print('tf_idf_score_for_scipy_cluster')
         # print(labels)
@@ -418,7 +437,9 @@ class ClusteringCallGraph:
         return feature_names[sort_by_tfidf[-5:]]
 
     def make_documents_for_a_cluster_tfidf_method(self, clusters):
-
+        """ 
+        Making documents using execution paths of a cluster for tfidf method variant.
+        """
         documents = []
 
         for c in clusters:
@@ -432,7 +453,9 @@ class ClusteringCallGraph:
         return documents
 
     def make_documents_for_a_cluster_tm_method(self, clusters):
-
+        """
+        Making documents using execution paths of a cluster for topic model method variant.
+        """
         documents = []
 
         for c in clusters:
@@ -446,7 +469,9 @@ class ClusteringCallGraph:
         return documents
 
     def make_documents_for_a_cluster_tfidf_word(self, clusters):
-
+        """ 
+        Making documents using execution paths of a cluster for tfidf word variant.
+        """
         documents = []
 
         for c in clusters:
@@ -460,7 +485,9 @@ class ClusteringCallGraph:
 
         return documents
     def make_documents_for_a_cluster_tm_word(self, clusters):
-
+        """ 
+        Making documents using execution paths of a cluster for topic model word variant.
+        """
         documents = []
 
         for c in clusters:
@@ -475,7 +502,9 @@ class ClusteringCallGraph:
         return documents
 
     def merge_words_as_sentence(self, identifiers):
-
+        """ 
+         Merging word as sentence.
+        """
         result = []
         st = ''
         # to omit empty words
@@ -492,7 +521,7 @@ class ClusteringCallGraph:
         return st
 
     def topic_model_output(self, topics):
-
+        """ formatting topic model outputs """
         out = ' '
 
         for t in topics:
@@ -502,7 +531,9 @@ class ClusteringCallGraph:
         return out
 
     def topic_model_lda(self, labels, method_or_word):
-
+        """ 
+        LDA algorithm for method and word variants.
+        """
         if method_or_word == 'method':
             txt = self.make_documents_for_a_cluster_tm_method(labels)
         elif method_or_word == 'word':
@@ -541,7 +572,9 @@ class ClusteringCallGraph:
         return topics
 
     def topic_model_lsi(self, labels, method_or_word):
-
+        """ 
+        LSI algorithm for both method and word variant.
+        """
         if method_or_word == 'method':
             txt = self.make_documents_for_a_cluster_tm_method(labels)
         elif method_or_word == 'word':
@@ -581,6 +614,9 @@ class ClusteringCallGraph:
         return topics
 
     def prepare_text_for_lda(self, text):
+        """ 
+        Proprocessing text for LDA.
+        """
         tokens = self.tokenize(text)
         # print(tokens)
         tokens = [token for token in tokens if len(token) >= 2]
@@ -592,6 +628,9 @@ class ClusteringCallGraph:
         return tokens
 
     def tokenize(self, text):
+        """ 
+        Tokenize a word.
+        """
         lda_tokens = []
         tokens = self.parser(text)
         for token in tokens:
@@ -606,6 +645,9 @@ class ClusteringCallGraph:
         return lda_tokens
 
     def get_lemma(self, word):
+        """ 
+        Getting lemma of a word.
+        """
         lemma = wn.morphy(word)
         if lemma is None:
             return word
@@ -613,6 +655,9 @@ class ClusteringCallGraph:
             return lemma
 
     def cluster_view(self, Z, dend):
+        """ 
+        Generate cluster figure from a dendogram.
+        """
         X = self.flatten(dend['icoord'])
         Y = self.flatten(dend['dcoord'])
         leave_coords = [(x, y) for x, y in zip(X, Y) if y == 0]
@@ -688,10 +733,15 @@ class ClusteringCallGraph:
         return
 
     def flatten(self, l):
+        """ 
+        Flattens a nested list.
+        """
         return [item for sublist in l for item in sublist]
 
     def bfs(self, nodelist, id, depth):
-
+        """ 
+        BFS on cluster tree to get nodes from top to bottom approach with a depth limit.
+        """
         # node = nodelist[id]
         nodes = []
         count = 0
@@ -729,7 +779,9 @@ class ClusteringCallGraph:
         return nodes
 
     def bfs_with_parent(self, nodelist, id, depth):
-
+        """ 
+        BFS to get parent nodes from cluster tree with their child nodes. Key of the returned dict is parent node and values are their child nodes.
+        """
         # node = nodelist[id]
         nodes = []
         count = 0
@@ -773,7 +825,9 @@ class ClusteringCallGraph:
         return
 
     def id_to_sentence(self,execution_paths):
-
+        """
+        This function takes a single execution path and maps its function id with names. Returns printable sentence of a execution path.
+        """
         str = ''
 
         for l in execution_paths:
@@ -783,7 +837,9 @@ class ClusteringCallGraph:
         return str
 
     def execution_path_to_sentence(self, execution_paths_of_a_cluster):
-
+        """ 
+        This function takes execution paths of a cluster. Then creates a printable string with execution paths with function names.
+        """
         documents = []
 
         try:
