@@ -37,6 +37,6 @@ class PlayingWithAST:
 #         print(cn.name)
 
 
-pwa = PlayingWithAST()
+# pwa = PlayingWithAST()
 
-print(pwa.file_to_function_docstring_pair('/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py'))
+# print(pwa.file_to_function_docstring_pair('/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py'))

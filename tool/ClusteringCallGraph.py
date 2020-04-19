@@ -33,14 +33,18 @@ import pickle
 
 import gensim
 
+from gensim.summarization.summarizer import summarize
+
 import xlsxwriter
 from timeit import default_timer as timer
 import multiprocessing
 
 from xlsxwriter import worksheet
 
+from PlayingWithAST import *
 
-workbook = xlsxwriter.Workbook('realTime.xlsx')
+
+workbook = xlsxwriter.Workbook('clusterCallGraph.xlsx')
 worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
@@ -87,6 +91,8 @@ class ClusteringCallGraph:
     worksheet.write(0, 5, 'lda_method')
     worksheet.write(0, 6, 'lsi_word')
     worksheet.write(0, 7, 'lsi_method')
+    worksheet.write(0, 8, 'text_summary')
+
 
     def __del__(self):
         """ deletes the ClusteringCallGraph class objects """
@@ -119,7 +125,8 @@ class ClusteringCallGraph:
 
     def tgf_to_networkX(self):
         """ converting tgf file to a networkX graph"""
-        self.subject_system = input('Enter name of the subject system: \n')
+        # self.subject_system = input('Enter name of the subject system: \n')
+        self.subject_system = 'clusterCallGraph.txt'
         print('thanks a lot')
         # path = easygui.fileopenbox()
 
@@ -206,8 +213,9 @@ class ClusteringCallGraph:
         tfidf_word = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word')
         lda_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
         lda_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
-        lsi_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
-        lsi_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
+        lsi_method = self.topic_model_lsi(execution_paths_of_a_cluster, 'method')
+        lsi_word = self.topic_model_lsi(execution_paths_of_a_cluster, 'word')
+        text_summary = self.summarize_clusters_using_docstring(execution_paths_of_a_cluster)
 
         # tfidf_method = 'hello world'
         # tfidf_word = 'hello world'
@@ -224,6 +232,7 @@ class ClusteringCallGraph:
         worksheet.write(self.row, 5, lda_method)
         worksheet.write(self.row, 6, lsi_word)
         worksheet.write(self.row, 7, lsi_method)
+        worksheet.write(self.row, 8, text_summary)
 
         # tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
         # tm = self.topic_model_lda(execution_paths_of_a_cluster)
@@ -245,7 +254,7 @@ class ClusteringCallGraph:
         # self.tree.append({'key': k, 'parent': v, 'tf_name': 'Hello tfidf', 'tm_name': tm})
         # Considering words in functions name as unit
         # self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
-        self.tree.append({'key': k, 'parent': v, 'tfidf_word': self.merge_words_as_sentence(tfidf_word), 'tfidf_method': self.id_to_sentence(tfidf_method), 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method})
+        self.tree.append({'key': k, 'parent': v, 'tfidf_word': self.merge_words_as_sentence(tfidf_word), 'tfidf_method': self.id_to_sentence(tfidf_method), 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'text_summary': text_summary})
         return
 
     def clustering_using_scipy(self, mt):
@@ -654,6 +663,27 @@ class ClusteringCallGraph:
         else:
             return lemma
 
+    def summarize_clusters_using_docstring(self, execution_paths_of_a_cluster):
+        """  automatic text summarization for docstring of function names """
+        pwa = PlayingWithAST()
+
+        function_name_to_docstring = pwa.file_to_function_docstring_pair('/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py')
+
+        text_for_summary = ''
+        count = 0
+        for c in execution_paths_of_a_cluster:
+            for f in self.execution_paths[c]:
+                # print(self.function_id_to_name[f], ' ', function_name_to_docstring[self.function_id_to_name[f]])
+                text_for_summary += function_name_to_docstring[self.function_id_to_name[f]]
+                count += 1
+
+        # print([self.execution_paths[e] for e in execution_paths_of_a_cluster])
+        # print(text_for_summary)
+        if count <= 9:
+            return 'Not sufficient text available.'
+
+        return summarize(text_for_summary)
+
     def cluster_view(self, Z, dend):
         """ 
         Generate cluster figure from a dendogram.
@@ -857,9 +887,9 @@ class ClusteringCallGraph:
         return str
 
 
-# c = ClusteringCallGraph()
-#
-# c.python_analysis()
-#
-# workbook.close()
+c = ClusteringCallGraph()
+
+c.python_analysis()
+
+workbook.close()
 
