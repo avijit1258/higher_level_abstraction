@@ -18,7 +18,7 @@ import json
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
-subject_system = ['treedetectronSept7.txt', 'treerealTimeSept7.txt', 'treerequestsOct12.txt']
+subject_system = ['tree_calculator.txt','treedetectronSept7.txt', 'treerealTimeSept7.txt', 'treerequestsOct12.txt']
 
 ss_count = 0
 cluster_count = 0
