@@ -544,6 +544,7 @@ class ClusteringCallGraph:
         """ 
         LDA algorithm for method and word variants.
         """
+        self.text_data = []
         if method_or_word == 'method':
             txt = self.make_documents_for_a_cluster_tm_method(labels)
         elif method_or_word == 'word':
@@ -577,14 +578,16 @@ class ClusteringCallGraph:
         topics = ldamodel.show_topic(0, topn=5)
         topics = self.topic_model_output(topics)
 
-        # print('I am from LDA model: ', topics)
-
+        
         return topics
 
     def topic_model_lsi(self, labels, method_or_word):
         """ 
         LSI algorithm for both method and word variant.
         """
+
+        self.text_data = []
+
         if method_or_word == 'method':
             txt = self.make_documents_for_a_cluster_tm_method(labels)
         elif method_or_word == 'word':
