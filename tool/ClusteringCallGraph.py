@@ -201,6 +201,9 @@ class ClusteringCallGraph:
         for i in range(len(paths)):
             for j in range(len(paths)):
                 Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
+        
+        print('Paths :', paths)
+        print('Matrix :', Matrix)
 
         return Matrix
 
@@ -265,14 +268,15 @@ class ClusteringCallGraph:
         # npa = np.asarray(execution_paths)
         # Y = pdist(npa, 'jaccard')
         start = timer()
-        Z = linkage(ssd.squareform(mt), 'ward')
-        # print(Z)
+        Z = linkage(ssd.squareform(mt), 'complete')
+        print('Z is here', Z)
         fig = plt.figure(figsize=(25, 10))
         dn = dendrogram(Z, truncate_mode='lastp', p=200)
         rootnode, nodelist = to_tree(Z, rd=True)
 
         nodes = self.bfs(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
         nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
+        print(nodes_with_parent)
         end = timer()
         print('Time required for clustering: ', end - start)
         # labels = bfs_leaf_node(nodelist, 6729)
@@ -283,6 +287,7 @@ class ClusteringCallGraph:
             if nodelist[k].count == 1:
                 continue
             execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
+            print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
             # print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
             # p.start()
@@ -380,8 +385,8 @@ class ClusteringCallGraph:
             if visited[nodelist[p].right.id] == 0:
                 q.put(nodelist[p].right.id)
 
-            if count == nodelist[id].count:
-                break
+            # if count == nodelist[id].count:
+            #     break
 
         return leaf_nodes
 
