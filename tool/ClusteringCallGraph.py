@@ -285,6 +285,7 @@ class ClusteringCallGraph:
         start = timer()
         for k,v in nodes_with_parent.items():
             if nodelist[k].count == 1:
+                self.tree.append({'key': k, 'parent': v, 'tfidf_word': '', 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'text_summary': 'hello summary'})
                 continue
             execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
             print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
