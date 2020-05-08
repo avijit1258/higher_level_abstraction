@@ -285,7 +285,7 @@ class ClusteringCallGraph:
         start = timer()
         for k,v in nodes_with_parent.items():
             if nodelist[k].count == 1:
-                self.tree.append({'key': k, 'parent': v, 'tfidf_word': '', 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'text_summary': 'hello summary'})
+                self.tree.append({'key': k, 'parent': v, 'tfidf_word': self.pretty_print_leaf_node(self.execution_paths[k]), 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'text_summary': 'hello summary'})
                 continue
             execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
             print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
@@ -336,7 +336,6 @@ class ClusteringCallGraph:
         # plt.show()
         # print(self.tree, file=open('tree'+self.subject_system, 'w'))
         print(self.tree, file=open('tree_calculator.txt', 'w'))
-
         return self.tree
 
     def extract_function_name(self,str):
@@ -873,6 +872,18 @@ class ClusteringCallGraph:
         for l in execution_paths:
             str += self.function_id_to_name[l]
             str += ' '
+
+        return str
+    
+    def pretty_print_leaf_node(self,execution_paths):
+        """
+        This function takes a single execution path and maps its function id with names. Returns printable sentence of a execution path.
+        """
+        str = ''
+
+        for l in execution_paths:
+            str += self.function_id_to_name[l]
+            str += '-->'
 
         return str
 

@@ -200,7 +200,7 @@
             { stroke: null, name: "SHAPE" }),
           $(go.TextBlock,
             { margin: 5, editable:true},
-            new go.Binding("text", "tfidf_word", function(k) { return "node" + k ; })),
+            new go.Binding("text", "tfidf_word", function(k) { return " " + k ; })),
             {
                 toolTip:                       // define a tooltip for each node
                   $(go.Adornment, "Spot",      // that has several labels around it
