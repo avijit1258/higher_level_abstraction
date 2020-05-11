@@ -9,39 +9,27 @@ from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster, to_tree
 from scipy.spatial.distance import pdist
 import numpy as np
-
 from sklearn.feature_extraction.text import TfidfVectorizer
-
 from collections import defaultdict
-
 from scipy.spatial import distance as ssd
-
 import queue
-
 import math
-
 from spacy.lang.en import English
-
 import nltk
-
 from nltk.corpus import wordnet as wn
 from nltk.stem.wordnet import WordNetLemmatizer
-
 from gensim import corpora
-
 import pickle
-
 import gensim
-
 from gensim.summarization.summarizer import summarize
-
 import xlsxwriter
 from timeit import default_timer as timer
 import multiprocessing
-
 from xlsxwriter import worksheet
+from prefixspan import PrefixSpan
 
 from PlayingWithAST import *
+
 
 
 workbook = xlsxwriter.Workbook('calculator.xlsx')
@@ -211,13 +199,15 @@ class ClusteringCallGraph:
         """ Labelling a cluster using six variants """
         # print(k,'blank document', execution_paths_of_a_cluster)
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
-
-        tfidf_method = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'method')
-        tfidf_word = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word')
+        spm_method = self.mining_sequential_patterns(execution_paths_of_a_cluster)
+        tfidf_method = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'method') 
+        tfidf_word = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') + spm_method
         lda_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
         lda_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
         lsi_method = self.topic_model_lsi(execution_paths_of_a_cluster, 'method')
         lsi_word = self.topic_model_lsi(execution_paths_of_a_cluster, 'word')
+        
+
         # text_summary = self.summarize_clusters_using_docstring(execution_paths_of_a_cluster)
 
         # tfidf_method = 'hello world'
@@ -229,8 +219,8 @@ class ClusteringCallGraph:
 
         worksheet.write(self.row, 0, k)
         worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
-        worksheet.write(self.row, 2, self.merge_words_as_sentence(tfidf_word))
-        worksheet.write(self.row, 3, self.id_to_sentence(tfidf_method))
+        worksheet.write(self.row, 2, tfidf_word)
+        worksheet.write(self.row, 3, tfidf_method)
         worksheet.write(self.row, 4, lda_word)
         worksheet.write(self.row, 5, lda_method)
         worksheet.write(self.row, 6, lsi_word)
@@ -257,7 +247,7 @@ class ClusteringCallGraph:
         # self.tree.append({'key': k, 'parent': v, 'tf_name': 'Hello tfidf', 'tm_name': tm})
         # Considering words in functions name as unit
         # self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
-        self.tree.append({'key': k, 'parent': v, 'tfidf_word': self.merge_words_as_sentence(tfidf_word), 'tfidf_method': self.id_to_sentence(tfidf_method), 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'text_summary': 'hello summary'})
+        self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'text_summary': 'hello summary'})
         return
 
     def clustering_using_scipy(self, mt):
@@ -448,8 +438,11 @@ class ClusteringCallGraph:
 
         # print("\nFeatures with highest tfidf: \n{}".format(
         #     feature_names[sort_by_tfidf[-5:]]))
+        if method_or_word == 'method':
+            return self.id_to_sentence(feature_names[sort_by_tfidf[-5:]])
+        elif method_or_word == 'word':
+            return self.merge_words_as_sentence(feature_names[sort_by_tfidf[-5:]])
 
-        return feature_names[sort_by_tfidf[-5:]]
 
     def make_documents_for_a_cluster_tfidf_method(self, clusters):
         """ 
@@ -631,6 +624,7 @@ class ClusteringCallGraph:
 
         return topics
 
+
     def prepare_text_for_lda(self, text):
         """ 
         Proprocessing text for LDA.
@@ -692,6 +686,27 @@ class ClusteringCallGraph:
             return 'Not sufficient text available.'
 
         return summarize(text_for_summary)
+
+
+    def mining_sequential_patterns(self, execution_paths_of_a_cluster):
+        """ This function mines sequential patterns from execution paths """
+        
+        preprocess = [self.execution_paths[item] for item in execution_paths_of_a_cluster]
+        
+        ps = PrefixSpan(preprocess)
+
+        top5 = ps.topk(5, closed = True)
+        
+        # for i in top5:
+        #     for j in i[1]:
+        #         print(j)
+        # print(top5[0][1])
+        sentence = ''
+        for i in top5[0][1]:
+            sentence += self.function_id_to_name[i] + ' '
+
+        print(sentence)
+        return sentence
 
     def cluster_view(self, Z, dend):
         """ 
