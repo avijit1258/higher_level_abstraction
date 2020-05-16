@@ -486,7 +486,9 @@ class ClusteringCallGraph:
             str = ''
             for e in self.execution_paths[c]:
                 # print(self.merge_words_as_sentence(self.function_id_to_name[e].split("_")))
-                str += self.merge_words_as_sentence(self.function_id_to_name[e].split("_"))
+                words_in_function_name = [w for w in self.function_id_to_name[e].split("_") if w not in self.en_stop]
+                words_in_function_name = [ self.get_lemma(w) for w in words_in_function_name]
+                str += self.merge_words_as_sentence(words_in_function_name)
                 str += ' '
             # print('\n')
             documents.append(str)
