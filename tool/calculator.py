@@ -4,7 +4,7 @@
 class Calculator:
     """ This class calculates sum, sub, div, mul operation on two given numbers. """ 
 
-    def welcome_message(self):
+    def init(self):
         """ This function welcomes users to the calculator """
 
         print("Welcome to One Two calculator. ")
@@ -102,4 +102,4 @@ class Calculator:
 
 c = Calculator()
 
-c.welcome_message()
+c.init()
