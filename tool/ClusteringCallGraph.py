@@ -391,27 +391,21 @@ class ClusteringCallGraph:
         txt1 = ['His smile was not perfect', 'His smile was not not not not perfect', 'she not sang']
         try:
 
-
-            # for i in labels:
-            #     print(self.execution_paths[i])
             if method_or_word == 'method':
                 txt1 = self.make_documents_for_a_cluster_tfidf_method(clusters)
             elif method_or_word == 'word':
                 txt1 = self.make_documents_for_a_cluster_tfidf_word(clusters)
-            # txt1 = self.make_documents_for_a_cluster_tfidf_word(clusters)
-            # txt1 = self.make_documents_for_a_cluster_tfidf_method(clusters)
-            # print('Txt1: ', txt1, 'Clusters:',clusters)
-            # when digits are passed as words(un-comment this when methods are used as unit)
-            # tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='\d+')
-            # when words are used means strings
-            tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='(?u)\\b\\w\\w+\\b')
-            txt_fitted = tf.fit(txt1)
-            txt_transformed = txt_fitted.transform(txt1)
+                
+            
+            tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='[a-zA-Z0-9]+')
+        
+            txt_transformed = tf.fit_transform(txt1)
+
         except:
             print('Here I got you',clusters, 'In a sentence:', txt1)
             
 
-        # print(tf.vocabulary_)
+        print(tf.vocabulary_)
         #
         feature_names = np.array(tf.get_feature_names())
         # sorted_by_idf = np.argsort(tf.idf_)
@@ -492,6 +486,8 @@ class ClusteringCallGraph:
                 str += ' '
             # print('\n')
             documents.append(str)
+
+        print('make_documents_for_a_cluster_tfidf_word', documents)
 
         return documents
     def make_documents_for_a_cluster_tm_word(self, clusters):
