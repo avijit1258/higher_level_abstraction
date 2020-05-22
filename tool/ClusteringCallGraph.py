@@ -201,21 +201,12 @@ class ClusteringCallGraph:
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
         spm_method = self.mining_sequential_patterns(execution_paths_of_a_cluster)
         tfidf_method = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'method') 
-        tfidf_word = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') + spm_method
+        tfidf_word = 'IN: '+ str(k) + ', Name:' + self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') 
         lda_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
         lda_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
         lsi_method = self.topic_model_lsi(execution_paths_of_a_cluster, 'method')
         lsi_word = self.topic_model_lsi(execution_paths_of_a_cluster, 'word')
-        
-
         # text_summary = self.summarize_clusters_using_docstring(execution_paths_of_a_cluster)
-
-        # tfidf_method = 'hello world'
-        # tfidf_word = 'hello world'
-        # lda_method = 'hello world'
-        # lda_word = 'hello world'
-        # lsi_method = 'hello world'
-        # lsi_word = 'hello world'
 
         worksheet.write(self.row, 0, k)
         worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
@@ -226,27 +217,8 @@ class ClusteringCallGraph:
         worksheet.write(self.row, 6, lsi_word)
         worksheet.write(self.row, 7, lsi_method)
         worksheet.write(self.row, 8, 'hello summary')
-
-        # tf = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster)
-        # tm = self.topic_model_lda(execution_paths_of_a_cluster)
-        # tm = self.topic_model_lsi(execution_paths_of_a_cluster)
-        # print(self.count,'' ,tf)
-        # worksheet.write(self.row, 0, k)
-        # worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
-        # worksheet.write(self.row, 2, self.merge_words_as_sentence(tf)) # split_method_tfidf
-        # worksheet.write(self.row, 2, self.id_to_sentence(tfidf_method)) # method tfidf
-        # worksheet.write(self.row, 2, tm)
         self.row += 1
-        # worksheet.write(k, self.execution_path_to_sentence(execution_paths_of_a_cluster), tf)
-
-        # print('topic modelling label')
-        # tm = self.topic_model(labels)
-        # print('-------------#######-------')
-        # Considering functions names as unit
-        # self.tree.append({'key': k, 'parent': v, 'tf_name': self.id_to_sentence(tf), 'tm_name': 'Hello topic'})
-        # self.tree.append({'key': k, 'parent': v, 'tf_name': 'Hello tfidf', 'tm_name': tm})
-        # Considering words in functions name as unit
-        # self.tree.append({'key': k, 'parent': v, 'tf_name': self.merge_words_as_sentence(tf), 'tm_name': 'Hello topic'})
+        
         self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'text_summary': 'hello summary'})
         return
 
@@ -275,7 +247,7 @@ class ClusteringCallGraph:
         start = timer()
         for k,v in nodes_with_parent.items():
             if nodelist[k].count == 1:
-                self.tree.append({'key': k, 'parent': v, 'tfidf_word': self.pretty_print_leaf_node(self.execution_paths[k]), 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'text_summary': 'hello summary'})
+                self.tree.append({'key': k, 'parent': v, 'tfidf_word': 'EP: '+ str(k) + ', Name:' +self.pretty_print_leaf_node(self.execution_paths[k]), 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'text_summary': 'hello summary'})
                 continue
             execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
             print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
@@ -289,13 +261,6 @@ class ClusteringCallGraph:
                 break
             self.labeling_cluster(execution_paths_of_a_cluster, k, v)
 
-            #print('--------------#######--------')
-            # print('Cluster:', k, 'Count:', nodelist[k].count)
-            # tf = self.tf_idf_score_for_scipy_cluster(labels)
-            # print('topic modelling label')
-            # tm = self.topic_model(labels)
-            # print('-------------#######-------')
-            # tree.append({'key':k, 'parent': v, 'tf_name': tf, 'tm_name': tm})
         end = timer()
         print('Time required for labeling using 6 techniques', end - start)
         # for i in nodes:
@@ -405,7 +370,7 @@ class ClusteringCallGraph:
             print('Here I got you',clusters, 'In a sentence:', txt1)
             
 
-        print(tf.vocabulary_)
+        # print(tf.vocabulary_)
         #
         feature_names = np.array(tf.get_feature_names())
         # sorted_by_idf = np.argsort(tf.idf_)
@@ -868,8 +833,8 @@ class ClusteringCallGraph:
             # print(p, ' ', nodelist[p].count)
             visited[p] = 1
 
-            if math.ceil(math.log(count + 1, 2)) == depth:
-                break
+            # if math.ceil(math.log(count + 1, 2)) == depth:
+            #     break
         # print('bfs_with_parent')
         # print(tree)
         return tree
@@ -896,7 +861,8 @@ class ClusteringCallGraph:
 
         for l in execution_paths:
             str += self.function_id_to_name[l]
-            str += '-->'
+            if l != execution_paths[len(execution_paths)-1]:
+                str += '-->'
 
         return str
 
