@@ -9,7 +9,7 @@ import xlsxwriter
 
 
 
-from ClusteringCallGraph import *
+# from ClusteringCallGraph import *
 
 from datetime import datetime
 import json
@@ -18,7 +18,7 @@ import json
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
-subject_system = ['tree_calculator.txt','treedetectronSept7.txt', 'treerealTimeSept7.txt', 'treerequestsOct12.txt']
+subject_system = ['treerealTimeSept7.txt', 'treedetectronSept7.txt',  'treerequestsOct12.txt']
 
 ss_count = 0
 cluster_count = 0
@@ -40,19 +40,14 @@ def get_cluster():
     global ss_count
 
     # c = ClusteringCallGraph()
-    #
+    
     # cluster = c.python_analysis()
     # print(cluster)
 
-    # with open('treedetectronSept7.txt', 'r') as f:
-    #     print(subject_system[ss_count])
-    #     content = f.read()
-    #     cluster = eval(content)
-
-    if ss_count == 1:
-        print('First Subject system')
-    elif ss_count == 2:
-        print('Second Subject system')
+    # if ss_count == 1:
+    #     print('First Subject system')
+    # elif ss_count == 2:
+    #     print('Second Subject system')
 
     with open(subject_system[ss_count], 'r') as f:
         print(subject_system[ss_count])
@@ -122,7 +117,7 @@ def create_csv():
 
 
 if __name__ == '__main__':
-    create_csv()
+    # create_csv()
     app.run()
 
 

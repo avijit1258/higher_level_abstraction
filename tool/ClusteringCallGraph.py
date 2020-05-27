@@ -230,7 +230,7 @@ class ClusteringCallGraph:
         # npa = np.asarray(execution_paths)
         # Y = pdist(npa, 'jaccard')
         start = timer()
-        Z = linkage(ssd.squareform(mt), 'complete')
+        Z = linkage(ssd.squareform(mt), 'ward')
         print('Z is here', Z)
         fig = plt.figure(figsize=(25, 10))
         dn = dendrogram(Z, truncate_mode='lastp', p=200)
@@ -250,15 +250,15 @@ class ClusteringCallGraph:
                 self.tree.append({'key': k, 'parent': v, 'tfidf_word': 'EP: '+ str(k) + ', Name: ' +self.pretty_print_leaf_node(self.execution_paths[k]), 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'spm_method': '','text_summary': 'hello summary'})
                 continue
             execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
-            print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
+            # print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
             # print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
             # p.start()
             self.count += 1
             print('Cluster no: ',self.count)
-            if self.count == 300:
-                print('Hello')
-                break
+            # if self.count == 300:
+            #     print('Hello')
+            #     break
             self.labeling_cluster(execution_paths_of_a_cluster, k, v)
 
         end = timer()
@@ -452,7 +452,7 @@ class ClusteringCallGraph:
             # print('\n')
             documents.append(str)
 
-        print('make_documents_for_a_cluster_tfidf_word', documents)
+        # print('make_documents_for_a_cluster_tfidf_word', documents)
 
         return documents
     def make_documents_for_a_cluster_tm_word(self, clusters):
@@ -669,7 +669,7 @@ class ClusteringCallGraph:
                 
             sentence += ';\n'
 
-        print(sentence)
+        # print(sentence)
         return sentence
 
     def cluster_view(self, Z, dend):
@@ -888,9 +888,9 @@ class ClusteringCallGraph:
         return str
 
 
-# c = ClusteringCallGraph()
+c = ClusteringCallGraph()
 
-# c.python_analysis()
+c.python_analysis()
 
 workbook.close()
 

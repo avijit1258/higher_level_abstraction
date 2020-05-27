@@ -1,0 +1,17 @@
+1 ausask
+2 busask 
+3 cusask
+4 dusask
+5 eusask
+6 fusask
+7 gusask
+8 husask
+#
+1 2 U
+1 3 U
+2 8 U
+2 7 U
+4 7 U
+4 6 U
+3 4 U
+3 5 U
