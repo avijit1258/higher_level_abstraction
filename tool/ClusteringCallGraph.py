@@ -113,8 +113,8 @@ class ClusteringCallGraph:
 
     def tgf_to_networkX(self):
         """ converting tgf file to a networkX graph"""
-        # self.subject_system = input('Enter name of the subject system: \n')
-        self.subject_system = '/home/avb307/projects/higher_level_abstraction/tool/calculator.txt'
+        self.subject_system = input('Enter name of the subject system: \n')
+        # self.subject_system = '/home/avb307/projects/higher_level_abstraction/tool/calculator.txt'
         print('thanks a lot')
         # path = easygui.fileopenbox()
 
@@ -201,7 +201,7 @@ class ClusteringCallGraph:
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
         spm_method = self.mining_sequential_patterns(execution_paths_of_a_cluster)
         tfidf_method = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'method') 
-        tfidf_word = 'IN: '+ str(k) + ', Name:' + self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') 
+        tfidf_word = 'IN: '+ str(k) + ', Name: ' + self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') 
         lda_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
         lda_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
         lsi_method = self.topic_model_lsi(execution_paths_of_a_cluster, 'method')
@@ -219,7 +219,7 @@ class ClusteringCallGraph:
         worksheet.write(self.row, 8, 'hello summary')
         self.row += 1
         
-        self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'text_summary': 'hello summary'})
+        self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': 'hello summary'})
         return
 
     def clustering_using_scipy(self, mt):
@@ -238,7 +238,7 @@ class ClusteringCallGraph:
 
         nodes = self.bfs(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
         nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
-        print(nodes_with_parent)
+        # print(nodes_with_parent)
         end = timer()
         print('Time required for clustering: ', end - start)
         # labels = bfs_leaf_node(nodelist, 6729)
@@ -247,7 +247,7 @@ class ClusteringCallGraph:
         start = timer()
         for k,v in nodes_with_parent.items():
             if nodelist[k].count == 1:
-                self.tree.append({'key': k, 'parent': v, 'tfidf_word': 'EP: '+ str(k) + ', Name:' +self.pretty_print_leaf_node(self.execution_paths[k]), 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'text_summary': 'hello summary'})
+                self.tree.append({'key': k, 'parent': v, 'tfidf_word': 'EP: '+ str(k) + ', Name: ' +self.pretty_print_leaf_node(self.execution_paths[k]), 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'spm_method': '','text_summary': 'hello summary'})
                 continue
             execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
             print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
@@ -289,8 +289,8 @@ class ClusteringCallGraph:
         # self.cluster_view(Z, dn)
 
         # plt.show()
-        # print(self.tree, file=open('tree'+self.subject_system, 'w'))
-        print(self.tree, file=open('tree_calculator.txt', 'w'))
+        print(self.tree, file=open('tree'+self.subject_system, 'w'))
+        # print(self.tree, file=open('tree_calculator.txt', 'w'))
         return self.tree
 
     def extract_function_name(self,str):
@@ -665,8 +665,10 @@ class ClusteringCallGraph:
         #         print(j)
         # print(top5[0][1])
         sentence = ''
-        for i in top5[0][1]:
-            sentence += self.function_id_to_name[i] + ' '
+        for i in top5:
+            for j in i[1]:
+                sentence += self.function_id_to_name[j] + ' '
+            sentence += '\n'
 
         print(sentence)
         return sentence
