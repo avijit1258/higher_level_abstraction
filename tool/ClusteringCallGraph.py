@@ -68,6 +68,12 @@ class ClusteringCallGraph:
 
     count = 0
 
+    pwa = PlayingWithAST()
+
+    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning')
+
+
+
 
 
     # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
@@ -199,6 +205,8 @@ class ClusteringCallGraph:
         """ Labelling a cluster using six variants """
         # print(k,'blank document', execution_paths_of_a_cluster)
         # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
+
+        
         spm_method = self.mining_sequential_patterns(execution_paths_of_a_cluster)
         tfidf_method = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'method') 
         tfidf_word = 'IN: '+ str(k) + ', Name: ' + self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') 
@@ -206,7 +214,7 @@ class ClusteringCallGraph:
         lda_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
         lsi_method = self.topic_model_lsi(execution_paths_of_a_cluster, 'method')
         lsi_word = self.topic_model_lsi(execution_paths_of_a_cluster, 'word')
-        # text_summary = self.summarize_clusters_using_docstring(execution_paths_of_a_cluster)
+        text_summary = self.summarize_clusters_using_docstring(execution_paths_of_a_cluster, self.function_name_to_docstring)
 
         worksheet.write(self.row, 0, k)
         worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
@@ -219,7 +227,7 @@ class ClusteringCallGraph:
         worksheet.write(self.row, 8, 'hello summary')
         self.row += 1
         
-        self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': 'hello summary'})
+        self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': text_summary})
         return
 
     def clustering_using_scipy(self, mt):
@@ -629,19 +637,19 @@ class ClusteringCallGraph:
         else:
             return lemma
 
-    def summarize_clusters_using_docstring(self, execution_paths_of_a_cluster):
+    def summarize_clusters_using_docstring(self, execution_paths_of_a_cluster, function_name_to_docstring):
         """  automatic text summarization for docstring of function names """
-        pwa = PlayingWithAST()
-
-        function_name_to_docstring = pwa.file_to_function_docstring_pair('/home/avb307/projects/higher_level_abstraction/tool/calculator.py')
-
+        
         text_for_summary = ''
         count = 0
         for c in execution_paths_of_a_cluster:
             for f in self.execution_paths[c]:
                 # print(self.function_id_to_name[f], ' ', function_name_to_docstring[self.function_id_to_name[f]])
-                text_for_summary += function_name_to_docstring[self.function_id_to_name[f]]
-                count += 1
+                if self.function_id_to_name[f] in function_name_to_docstring:
+
+                    if function_name_to_docstring[self.function_id_to_name[f]] is not None:
+                        text_for_summary += function_name_to_docstring[self.function_id_to_name[f]]
+                        count += 1
 
         # print([self.execution_paths[e] for e in execution_paths_of_a_cluster])
         # print(text_for_summary)
