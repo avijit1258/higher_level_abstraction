@@ -22,7 +22,7 @@
             <h2 style="margin-left: auto; margin-right: auto"> Full diagram</h2>
         </div>
 
-  <div id="fullDiagram" style="height:450px;width:100%;border:1px solid black;margin:2px"></div>
+  <div id="fullDiagram" style="height:550px;width:100%;border:1px solid black;margin:2px"></div>
         <div><h2> Local diagram</h2></div>
 
   <div id="localDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
@@ -418,7 +418,7 @@
                     lsi_word: result[x].lsi_word,
                     lsi_method: result[x].lsi_method,
                     color: "#cce6ff",
-                    description: ""
+                    description: result[x].spm_method
                 });
 
             }
@@ -426,7 +426,7 @@
         // color: go.Brush.randomColor()
 
         myFullDiagram.model = new go.TreeModel(nodeDataArray);
-        update_nodes_for_study();
+        // update_nodes_for_study();
 
     }
 
