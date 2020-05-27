@@ -660,15 +660,14 @@ class ClusteringCallGraph:
 
         top5 = ps.topk(5, closed = True)
         
-        # for i in top5:
-        #     for j in i[1]:
-        #         print(j)
-        # print(top5[0][1])
         sentence = ''
         for i in top5:
             for j in i[1]:
-                sentence += self.function_id_to_name[j] + ' '
-            sentence += '\n'
+                sentence += self.function_id_to_name[j] 
+                if j != i[1][len(i[1])-1]:
+                    sentence += ','
+                
+            sentence += ';\n'
 
         print(sentence)
         return sentence
@@ -889,9 +888,9 @@ class ClusteringCallGraph:
         return str
 
 
-c = ClusteringCallGraph()
+# c = ClusteringCallGraph()
 
-c.python_analysis()
+# c.python_analysis()
 
 workbook.close()
 
