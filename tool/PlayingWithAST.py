@@ -19,13 +19,25 @@ class PlayingWithAST:
                     for cn in ast.iter_child_nodes(node):
                         if isinstance(cn, ast.FunctionDef):
                             # print(ast.dump(cn))
-                            self.function_with_docstring[cn.name] = ast.get_docstring(cn)
+                            self.function_with_docstring[cn.name] = self.process_docstring(ast.get_docstring(cn))
                             # print(cn.name)
                             # print(ast.get_docstring(cn))
                     # print('Class definition',ast.get_docstring(node))
                 if isinstance(node, ast.FunctionDef):
-                    self.function_with_docstring[node.name] = ast.get_docstring(node)
+                    self.function_with_docstring[node.name] = self.process_docstring(ast.get_docstring(node))
         return 
+
+    def process_docstring(self, doc):
+
+        if doc is None:
+            return ''
+        for line in doc.split('\n'):
+            line = line.strip()
+            if (line == "") or (not any([c.isalnum() for c in line])):
+                continue
+            return line
+
+        return ''
 
     def get_all_py_files(self, root):
         all_py = []
@@ -62,7 +74,7 @@ class PlayingWithAST:
 
 
 
-pwa = PlayingWithAST()
-print(pwa.file_to_function_docstring_pair('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning/vocoder/audio.py'))
+# pwa = PlayingWithAST()
+# print(pwa.file_to_function_docstring_pair('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning/vocoder/audio.py'))
 
-print(pwa.get_all_method_docstring_pair_of_a_project('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning'))
+# print(pwa.get_all_method_docstring_pair_of_a_project('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning'))
