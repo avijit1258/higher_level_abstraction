@@ -196,8 +196,8 @@ class ClusteringCallGraph:
             for j in range(len(paths)):
                 Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
         
-        print('Paths :', paths)
-        print('Matrix :', Matrix)
+        # print('Paths :', paths)
+        # print('Matrix :', Matrix)
 
         return Matrix
 
@@ -224,7 +224,7 @@ class ClusteringCallGraph:
         worksheet.write(self.row, 5, lda_method)
         worksheet.write(self.row, 6, lsi_word)
         worksheet.write(self.row, 7, lsi_method)
-        worksheet.write(self.row, 8, 'hello summary')
+        worksheet.write(self.row, 8, text_summary)
         self.row += 1
         
         self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': text_summary})
@@ -239,7 +239,7 @@ class ClusteringCallGraph:
         # Y = pdist(npa, 'jaccard')
         start = timer()
         Z = linkage(ssd.squareform(mt), 'ward')
-        print('Z is here', Z)
+        # print('Z is here', Z)
         fig = plt.figure(figsize=(25, 10))
         dn = dendrogram(Z, truncate_mode='lastp', p=200)
         rootnode, nodelist = to_tree(Z, rd=True)
@@ -564,7 +564,7 @@ class ClusteringCallGraph:
 
         # txt = self.make_documents_for_a_cluster_tm_method(labels)
         # txt = self.make_documents_for_a_cluster_tm_word(labels)
-        print(txt)
+        # print(txt)
 
         for line in txt:
             # print(line)
@@ -653,8 +653,12 @@ class ClusteringCallGraph:
 
         # print([self.execution_paths[e] for e in execution_paths_of_a_cluster])
         # print(text_for_summary)
+        print(len(text_for_summary))
+        print(text_for_summary)
         if count <= 9:
-            return 'Not sufficient text available.'
+            return 'Empty.'
+        if len(text_for_summary) <= 1:
+            return 'Empty'
 
         return summarize(text_for_summary)
 
