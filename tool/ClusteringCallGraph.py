@@ -22,6 +22,8 @@ from gensim import corpora
 import pickle
 import gensim
 from gensim.summarization.summarizer import summarize
+from gensim.summarization.textcleaner import clean_text_by_sentences as _clean_text_by_sentences
+from gensim.summarization.textcleaner import get_sentences
 import xlsxwriter
 from timeit import default_timer as timer
 import multiprocessing
@@ -641,26 +643,35 @@ class ClusteringCallGraph:
         """  automatic text summarization for docstring of function names """
         
         text_for_summary = ''
-        count = 0
+        # count = 0
         for c in execution_paths_of_a_cluster:
             for f in self.execution_paths[c]:
                 # print(self.function_id_to_name[f], ' ', function_name_to_docstring[self.function_id_to_name[f]])
                 if self.function_id_to_name[f] in function_name_to_docstring:
 
                     if function_name_to_docstring[self.function_id_to_name[f]] is not None:
-                        text_for_summary += function_name_to_docstring[self.function_id_to_name[f]]
-                        count += 1
+                        text_for_summary += function_name_to_docstring[self.function_id_to_name[f]] + ' '
+                        # count += 1
 
         # print([self.execution_paths[e] for e in execution_paths_of_a_cluster])
         # print(text_for_summary)
         print(len(text_for_summary))
-        print(text_for_summary)
-        if count <= 9:
-            return 'Empty.'
-        if len(text_for_summary) <= 1:
-            return 'Empty'
+        # print(_clean_text_by_sentences(text_for_summary))
+        # print(get_sentences(text_for_summary))
+        # print(len(get_sentences(text_for_summary)))
+        count = 0
+        for sentence in get_sentences(text_for_summary):
+            print(sentence)
+            count += 1
+        # if count <= 9:
+        #     return 'Empty.'
+        # if len(text_for_summary) <= 1:
+        #     return 'Empty'
 
-        return summarize(text_for_summary)
+        try:
+            return summarize(text_for_summary)
+        except ValueError:
+            return 'Empty'
 
 
     def mining_sequential_patterns(self, execution_paths_of_a_cluster):
