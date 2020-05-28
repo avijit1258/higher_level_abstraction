@@ -1,0 +1,1940 @@
+1 requests
+2 requests._internal_utils
+3 requests.adapters
+4 requests.api
+5 requests.auth
+6 requests.cookies
+7 requests.exceptions
+8 requests.help
+9 requests.hooks
+10 requests.models
+11 requests.sessions
+12 requests.status_codes
+13 requests.structures
+14 requests.utils
+15 setup
+16 tests.compat
+17 tests.conftest
+18 tests.test_help
+19 tests.test_hooks
+20 tests.test_lowlevel
+21 tests.test_packages
+22 tests.test_requests
+23 tests.test_structures
+24 tests.test_testserver
+25 tests.test_utils
+26 tests.utils
+27 _check_cryptography\n(/home/avb307/projects/hla_dataset/requests/requests/__init__.py:74)
+28 check_compatibility\n(/home/avb307/projects/hla_dataset/requests/requests/__init__.py:49)
+29 to_native_string\n(/home/avb307/projects/hla_dataset/requests/requests/_internal_utils.py:14)
+30 unicode_is_ascii\n(/home/avb307/projects/hla_dataset/requests/requests/_internal_utils.py:30)
+31 BaseAdapter\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:55)
+32 HTTPAdapter\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:84)
+33 SOCKSProxyManager\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:46)
+34 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:58)
+35 close\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:79)
+36 send\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:61)
+37 __getstate__\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:131)
+38 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:113)
+39 __setstate__\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:134)
+40 add_headers\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:358)
+41 build_response\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:255)
+42 cert_verify\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:203)
+43 close\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:319)
+44 get_connection\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:292)
+45 init_poolmanager\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:146)
+46 proxy_headers\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:372)
+47 proxy_manager_for\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:166)
+48 request_url\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:329)
+49 send\n(/home/avb307/projects/hla_dataset/requests/requests/adapters.py:394)
+50 dictcomp
+51 delete\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:152)
+52 get\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:64)
+53 head\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:92)
+54 options\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:79)
+55 patch\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:137)
+56 post\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:107)
+57 put\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:122)
+58 request\n(/home/avb307/projects/hla_dataset/requests/requests/api.py:16)
+59 AuthBase\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:72)
+60 HTTPBasicAuth\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:79)
+61 HTTPDigestAuth\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:108)
+62 HTTPProxyAuth\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:100)
+63 _basic_auth_str\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:28)
+64 __call__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:75)
+65 __call__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:95)
+66 __eq__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:86)
+67 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:82)
+68 __ne__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:92)
+69 __call__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:278)
+70 __eq__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:298)
+71 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:111)
+72 __ne__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:304)
+73 build_digest_header\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:127)
+74 handle_401\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:234)
+75 handle_redirect\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:229)
+76 init_per_thread_state\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:117)
+77 lambda
+78 md5_utf8\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:145)
+79 sha256_utf8\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:157)
+80 sha512_utf8\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:163)
+81 sha_utf8\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:151)
+82 __call__\n(/home/avb307/projects/hla_dataset/requests/requests/auth.py:103)
+83 CookieConflictError\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:165)
+84 MockRequest\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:25)
+85 MockResponse\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:97)
+86 RequestsCookieJar\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:171)
+87 _copy_cookie_jar\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:426)
+88 cookiejar_from_dict\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:508)
+89 create_cookie\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:441)
+90 extract_cookies_to_jar\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:118)
+91 get_cookie_header\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:135)
+92 merge_cookies\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:529)
+93 morsel_to_cookie\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:477)
+94 remove_cookie_by_name\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:146)
+95 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:37)
+96 add_header\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:74)
+97 add_unredirected_header\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:78)
+98 get_full_url\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:51)
+99 get_header\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:71)
+100 get_host\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:45)
+101 get_new_headers\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:81)
+102 get_origin_req_host\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:48)
+103 get_type\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:42)
+104 has_header\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:68)
+105 host\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:92)
+106 is_unverifiable\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:65)
+107 origin_req_host\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:88)
+108 unverifiable\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:84)
+109 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:104)
+110 getheaders\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:114)
+111 info\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:111)
+112 __contains__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:315)
+113 __delitem__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:337)
+114 __getitem__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:321)
+115 __getstate__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:401)
+116 __setitem__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:330)
+117 __setstate__\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:408)
+118 _find\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:356)
+119 _find_no_duplicates\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:376)
+120 copy\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:414)
+121 get\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:189)
+122 get_dict\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:299)
+123 get_policy\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:421)
+124 items\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:261)
+125 iteritems\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:252)
+126 iterkeys\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:218)
+127 itervalues\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:235)
+128 keys\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:227)
+129 list_domains\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:270)
+130 list_paths\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:278)
+131 multiple_domains\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:286)
+132 set\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:201)
+133 set_cookie\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:343)
+134 update\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:348)
+135 values\n(/home/avb307/projects/hla_dataset/requests/requests/cookies.py:244)
+136 listcomp
+137 ChunkedEncodingError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:92)
+138 ConnectTimeout\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:53)
+139 ConnectionError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:32)
+140 ContentDecodingError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:96)
+141 FileModeWarning\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:118)
+142 HTTPError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:28)
+143 InvalidHeader\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:84)
+144 InvalidProxyURL\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:88)
+145 InvalidSchema\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:76)
+146 InvalidURL\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:80)
+147 MissingSchema\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:72)
+148 ProxyError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:36)
+149 ReadTimeout\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:60)
+150 RequestException\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:12)
+151 RequestsDependencyWarning\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:122)
+152 RequestsWarning\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:114)
+153 RetryError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:104)
+154 SSLError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:40)
+155 StreamConsumedError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:100)
+156 Timeout\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:44)
+157 TooManyRedirects\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:68)
+158 URLRequired\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:64)
+159 UnrewindableBodyError\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:108)
+160 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/exceptions.py:17)
+161 _implementation\n(/home/avb307/projects/hla_dataset/requests/requests/help.py:26)
+162 info\n(/home/avb307/projects/hla_dataset/requests/requests/help.py:59)
+163 main\n(/home/avb307/projects/hla_dataset/requests/requests/help.py:113)
+164 default_hooks\n(/home/avb307/projects/hla_dataset/requests/requests/hooks.py:17)
+165 dispatch_hook\n(/home/avb307/projects/hla_dataset/requests/requests/hooks.py:23)
+166 dictcomp
+167 PreparedRequest\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:272)
+168 Request\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:198)
+169 RequestEncodingMixin\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:60)
+170 RequestHooksMixin\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:174)
+171 Response\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:587)
+172 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:291)
+173 __repr__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:326)
+174 _get_idna_encoded_host\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:346)
+175 copy\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:329)
+176 prepare\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:308)
+177 prepare_auth\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:535)
+178 prepare_body\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:453)
+179 prepare_content_length\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:522)
+180 prepare_cookies\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:557)
+181 prepare_headers\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:442)
+182 prepare_hooks\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:577)
+183 prepare_method\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:340)
+184 prepare_url\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:356)
+185 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:226)
+186 __repr__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:251)
+187 prepare\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:254)
+188 _encode_files\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:109)
+189 _encode_params\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:82)
+190 path_url\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:61)
+191 deregister_hook\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:186)
+192 register_hook\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:175)
+193 genexpr
+194 __bool__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:669)
+195 __enter__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:644)
+196 __exit__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:647)
+197 __getstate__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:650)
+198 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:597)
+199 __iter__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:689)
+200 __nonzero__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:679)
+201 __repr__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:666)
+202 __setstate__\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:658)
+203 apparent_encoding\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:725)
+204 close\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:943)
+205 content\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:816)
+206 is_permanent_redirect\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:715)
+207 is_redirect\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:708)
+208 iter_content\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:730)
+209 iter_lines\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:785)
+210 json\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:874)
+211 links\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:900)
+212 next\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:720)
+213 ok\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:693)
+214 raise_for_status\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:918)
+215 text\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:836)
+216 dictcomp
+217 generate\n(/home/avb307/projects/hla_dataset/requests/requests/models.py:747)
+218 Session\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:337)
+219 SessionRedirectMixin\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:96)
+220 merge_hooks\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:81)
+221 merge_setting\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:50)
+222 session\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:755)
+223 __enter__\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:417)
+224 __exit__\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:420)
+225 __getstate__\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:746)
+226 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:362)
+227 __setstate__\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:750)
+228 close\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:730)
+229 delete\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:604)
+230 get\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:534)
+231 get_adapter\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:716)
+232 head\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:556)
+233 merge_environment_settings\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:687)
+234 mount\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:735)
+235 options\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:545)
+236 patch\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:592)
+237 post\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:567)
+238 prepare_request\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:423)
+239 put\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:580)
+240 request\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:463)
+241 send\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:614)
+242 dictcomp
+243 listcomp
+244 listcomp
+245 get_redirect_target\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:98)
+246 rebuild_auth\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:254)
+247 rebuild_method\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:314)
+248 rebuild_proxies\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:273)
+249 resolve_redirects\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:144)
+250 should_strip_auth\n(/home/avb307/projects/hla_dataset/requests/requests/sessions.py:119)
+251 listcomp
+252 _init\n(/home/avb307/projects/hla_dataset/requests/requests/status_codes.py:107)
+253 doc\n(/home/avb307/projects/hla_dataset/requests/requests/status_codes.py:114)
+254 genexpr
+255 genexpr
+256 CaseInsensitiveDict\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:15)
+257 LookupDict\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:89)
+258 __delitem__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:56)
+259 __eq__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:73)
+260 __getitem__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:53)
+261 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:42)
+262 __iter__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:59)
+263 __len__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:62)
+264 __repr__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:85)
+265 __setitem__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:48)
+266 copy\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:82)
+267 lower_items\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:65)
+268 genexpr
+269 genexpr
+270 __getitem__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:99)
+271 __init__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:92)
+272 __repr__\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:96)
+273 get\n(/home/avb307/projects/hla_dataset/requests/requests/structures.py:104)
+274 _parse_content_type_header\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:455)
+275 add_dict_to_cookiejar\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:424)
+276 address_in_network\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:616)
+277 check_header_validity\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:932)
+278 default_headers\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:807)
+279 default_user_agent\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:798)
+280 dict_from_cookiejar\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:409)
+281 dict_to_sequence\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:99)
+282 dotted_netmask\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:631)
+283 extract_zipped_paths\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:228)
+284 from_key_val_list\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:260)
+285 get_auth_from_url\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:911)
+286 get_encoding_from_headers\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:480)
+287 get_encodings_from_content\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:435)
+288 get_environ_proxies\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:760)
+289 get_netrc_auth\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:169)
+290 get_unicode_from_response\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:529)
+291 guess_filename\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:220)
+292 guess_json_utf\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:862)
+293 is_ipv4_address\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:642)
+294 is_valid_cidr\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:653)
+295 iter_slices\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:519)
+296 parse_dict_header\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:349)
+297 parse_header_links\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:819)
+298 parse_list_header\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:317)
+299 prepend_scheme_if_needed\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:894)
+300 proxy_bypass\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:87)
+301 proxy_bypass_registry\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:48)
+302 requote_uri\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:594)
+303 rewind_body\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:970)
+304 select_proxy\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:772)
+305 set_environ\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:677)
+306 should_bypass_proxies\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:699)
+307 stream_decode_response_unicode\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:501)
+308 super_len\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:108)
+309 to_key_val_list\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:287)
+310 unquote_header_value\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:384)
+311 unquote_unreserved\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:570)
+312 urldefragauth\n(/home/avb307/projects/hla_dataset/requests/requests/utils.py:953)
+313 genexpr
+314 lambda
+315 PyTest\n(/home/avb307/projects/hla_dataset/requests/setup.py:14)
+316 finalize_options\n(/home/avb307/projects/hla_dataset/requests/setup.py:25)
+317 initialize_options\n(/home/avb307/projects/hla_dataset/requests/setup.py:17)
+318 run_tests\n(/home/avb307/projects/hla_dataset/requests/setup.py:30)
+319 u\n(/home/avb307/projects/hla_dataset/requests/tests/compat.py:20)
+320 httpbin\n(/home/avb307/projects/hla_dataset/requests/tests/conftest.py:17)
+321 httpbin_secure\n(/home/avb307/projects/hla_dataset/requests/tests/conftest.py:22)
+322 prepare_url\n(/home/avb307/projects/hla_dataset/requests/tests/conftest.py:7)
+323 inner\n(/home/avb307/projects/hla_dataset/requests/tests/conftest.py:11)
+324 VersionedPackage\n(/home/avb307/projects/hla_dataset/requests/tests/test_help.py:15)
+325 test_idna_with_version_attribute\n(/home/avb307/projects/hla_dataset/requests/tests/test_help.py:28)
+326 test_idna_without_version_attribute\n(/home/avb307/projects/hla_dataset/requests/tests/test_help.py:20)
+327 test_system_ssl\n(/home/avb307/projects/hla_dataset/requests/tests/test_help.py:10)
+328 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_help.py:16)
+329 hook\n(/home/avb307/projects/hla_dataset/requests/tests/test_hooks.py:8)
+330 lambda
+331 test_default_hooks\n(/home/avb307/projects/hla_dataset/requests/tests/test_hooks.py:22)
+332 test_hooks\n(/home/avb307/projects/hla_dataset/requests/tests/test_hooks.py:12)
+333 listcomp
+334 test_chunked_upload\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:12)
+335 test_digestauth_401_count_reset_on_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:27)
+336 test_digestauth_401_only_sent_once\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:92)
+337 test_digestauth_only_on_4xx\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:138)
+338 test_fragment_not_sent_with_request\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:239)
+339 test_fragment_update_on_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:268)
+340 test_redirect_rfc1808_to_non_ascii_location\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:208)
+341 test_use_proxy_from_environment\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:189)
+342 digest_response_handler\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:52)
+343 digest_failed_response_handler\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:108)
+344 digest_response_handler\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:151)
+345 response_handler\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:241)
+346 response_handler\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:274)
+347 redirect_resp_handler\n(/home/avb307/projects/hla_dataset/requests/tests/test_lowlevel.py:213)
+348 test_can_access_chardet_attribute\n(/home/avb307/projects/hla_dataset/requests/tests/test_packages.py:12)
+349 test_can_access_idna_attribute\n(/home/avb307/projects/hla_dataset/requests/tests/test_packages.py:8)
+350 test_can_access_urllib3_attribute\n(/home/avb307/projects/hla_dataset/requests/tests/test_packages.py:4)
+351 RedirectSession\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2225)
+352 TestCaseInsensitiveDict\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1949)
+353 TestMorselToCookieExpires\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2091)
+354 TestMorselToCookieMaxAge\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2123)
+355 TestPreparingURLs\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2382)
+356 TestRequests\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:57)
+357 TestTimeout\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2144)
+358 test_data_argument_accepts_tuples\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2311)
+359 test_json_encodes_as_bytes\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2257)
+360 test_prepared_copy\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2331)
+361 test_proxy_env_vars_override_default\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2290)
+362 test_requests_are_updated_each_time\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2269)
+363 test_urllib3_pool_connection_closed\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2372)
+364 test_urllib3_retries\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2361)
+365 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2226)
+366 _build_raw\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2251)
+367 build_response\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2237)
+368 send\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2233)
+369 lambda
+370 test_contains\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1996)
+371 test_copy\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2080)
+372 test_delitem\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1989)
+373 test_docstring_example\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1962)
+374 test_equality\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2035)
+375 test_fixes_649\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1978)
+376 test_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2005)
+377 test_getitem\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1973)
+378 test_init\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1951)
+379 test_iter\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2030)
+380 test_len\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1968)
+381 test_lower_items\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2049)
+382 test_preserve_key_case\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2058)
+383 test_preserve_last_key_case\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2068)
+384 test_setdefault\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2044)
+385 test_update\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2014)
+386 test_update_retains_unchanged\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2025)
+387 genexpr
+388 genexpr
+389 genexpr
+390 test_expires_invalid_int\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2102)
+391 test_expires_none\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2114)
+392 test_expires_valid_str\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2094)
+393 test_max_age_invalid_str\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2135)
+394 test_max_age_valid_int\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2127)
+395 test_parameters_for_nonstandard_schemes\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2497)
+396 test_preparing_bad_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2436)
+397 test_preparing_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2383)
+398 test_redirecting_to_bad_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2451)
+399 test_url_mutation\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2461)
+400 normalize_percent_encode\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2425)
+401 _patch_adapter_gzipped_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1742)
+402 test_BASICAUTH_TUPLE_HTTP_200_OK_GET\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:482)
+403 test_DIGESTAUTH_QUOTES_QOP_VALUE\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:654)
+404 test_DIGESTAUTH_WRONG_HTTP_401_GET\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:637)
+405 test_DIGEST_AUTH_RETURNS_COOKIE\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:605)
+406 test_DIGEST_AUTH_SETS_SESSION_COOKIES\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:616)
+407 test_DIGEST_HTTP_200_OK_GET\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:587)
+408 test_DIGEST_STREAM\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:625)
+409 test_HTTP_200_OK_GET_ALTERNATIVE\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:164)
+410 test_HTTP_200_OK_GET_WITH_MIXED_PARAMS\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:317)
+411 test_HTTP_200_OK_GET_WITH_PARAMS\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:309)
+412 test_HTTP_200_OK_HEAD\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:474)
+413 test_HTTP_200_OK_PUT\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:478)
+414 test_HTTP_302_ALLOW_REDIRECT_GET\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:173)
+415 test_HTTP_302_TOO_MANY_REDIRECTS\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:194)
+416 test_HTTP_302_TOO_MANY_REDIRECTS_WITH_PARAMS\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:205)
+417 test_HTTP_307_ALLOW_REDIRECT_POST\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:179)
+418 test_HTTP_307_ALLOW_REDIRECT_POST_WITH_SEEKABLE\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:186)
+419 test_POSTBIN_GET_POST_FILES\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:663)
+420 test_POSTBIN_GET_POST_FILES_WITH_DATA\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:731)
+421 test_POSTBIN_SEEKED_OBJECT_WITH_NO_ITER\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:689)
+422 test_auth_is_retained_for_redirect_on_host\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1589)
+423 test_auth_is_stripped_on_http_downgrade\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1579)
+424 test_autoset_header_values_are_native\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1560)
+425 test_basic_auth_str_is_always_native\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1762)
+426 test_basic_building\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:86)
+427 test_basicauth_encodes_byte_strings\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:513)
+428 test_basicauth_with_netrc\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:554)
+429 test_binary_put\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:144)
+430 test_can_send_file_object_with_non_string_filename\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1552)
+431 test_can_send_objects_with_files\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1544)
+432 test_cannot_send_unprepared_requests\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1331)
+433 test_certificate_failure\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:859)
+434 test_chunked_upload_does_not_set_content_length_header\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1894)
+435 test_conflicting_post_params\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:774)
+436 test_cookie_as_dict_items\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1136)
+437 test_cookie_as_dict_keeps_items\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1085)
+438 test_cookie_as_dict_keeps_len\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1065)
+439 test_cookie_as_dict_keys\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1104)
+440 test_cookie_as_dict_values\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1120)
+441 test_cookie_duplicate_names_different_domains\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1152)
+442 test_cookie_duplicate_names_raises_cookie_conflict_error\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1173)
+443 test_cookie_parameters\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1047)
+444 test_cookie_persists_via_api\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:353)
+445 test_cookie_policy_copy\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1184)
+446 test_cookie_quote_wrapped\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:348)
+447 test_cookie_removed_on_expire\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:335)
+448 test_cookie_sent_on_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:329)
+449 test_cookielib_cookiejar_on_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:392)
+450 test_custom_content_type\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:935)
+451 test_custom_redirect_mixin\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1905)
+452 test_decompress_gzip\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:794)
+453 test_different_encodings_dont_break_post\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:880)
+454 test_empty_content_length\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:105)
+455 test_empty_response_has_content_none\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1198)
+456 test_empty_stream_with_auth_does_not_set_content_length_header\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1870)
+457 test_entry_points\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:61)
+458 test_errors\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:523)
+459 test_fixes_1329\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1356)
+460 test_form_encoded_post_query_multivalued_element\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:874)
+461 test_fragment_maintained_on_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:301)
+462 test_generic_cookiejar_works\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:373)
+463 test_header_and_body_removal_on_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:261)
+464 test_header_keys_are_native\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1472)
+465 test_header_no_leading_space\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1530)
+466 test_header_no_return_chars\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1512)
+467 test_header_remove_is_case_insensitive\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1450)
+468 test_header_validation\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1482)
+469 test_header_value_not_str\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1491)
+470 test_headers_on_session_with_None_are_not_sent\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:438)
+471 test_headers_preserve_order\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:446)
+472 test_history_is_always_a_list\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:430)
+473 test_hook_receives_request_arguments\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:946)
+474 test_http_301_changes_post_to_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:218)
+475 test_http_301_doesnt_change_head_to_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:225)
+476 test_http_302_changes_post_to_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:233)
+477 test_http_302_doesnt_change_head_to_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:240)
+478 test_http_303_changes_post_to_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:247)
+479 test_http_303_doesnt_change_head_to_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:254)
+480 test_http_error\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1336)
+481 test_http_with_certificate\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:834)
+482 test_https_warnings\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:838)
+483 test_invalid_ca_certificate_path\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:818)
+484 test_invalid_files_input\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:681)
+485 test_invalid_ssl_certificate_files\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:824)
+486 test_invalid_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:74)
+487 test_json_param_post_content_type_works\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1780)
+488 test_json_param_post_should_not_override_data_param\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1789)
+489 test_links\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1023)
+490 test_long_authinfo_in_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1463)
+491 test_manual_redirect_with_partial_body_read\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1628)
+492 test_mixed_case_scheme_acceptable\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:154)
+493 test_no_body_content_length\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:100)
+494 test_no_content_length\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:95)
+495 test_non_prepared_request_error\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:927)
+496 test_nonhttp_schemes_dont_check_URLs\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1568)
+497 test_override_content_length\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:110)
+498 test_param_cookiejar_works\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:384)
+499 test_params_are_added_before_fragment\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:123)
+500 test_params_are_merged_case_sensitive\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1457)
+501 test_params_bytes_are_encoded\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:139)
+502 test_params_original_order_is_preserved_by_default\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:132)
+503 test_path_is_not_double_encoded\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:118)
+504 test_post_with_custom_mapping\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:749)
+505 test_prepare_body_position_non_stream\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1647)
+506 test_prepare_request_with_bytestring_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1007)
+507 test_prepared_from_session\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:989)
+508 test_prepared_request_hook\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:975)
+509 test_prepared_request_is_pickleable\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1285)
+510 test_prepared_request_with_file_is_pickleable\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1299)
+511 test_prepared_request_with_hook_is_pickleable\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1315)
+512 test_proxy_auth\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1839)
+513 test_proxy_auth_empty_pass\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1844)
+514 test_proxy_error\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:536)
+515 test_proxy_error_on_bad_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:541)
+516 test_pyopenssl_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:815)
+517 test_redirect_with_wrong_gzipped_header\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1756)
+518 test_request_and_response_are_pickleable\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1273)
+519 test_request_cookie_overrides_session_cookie\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:359)
+520 test_request_cookies_not_persisted\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:367)
+521 test_request_ok_set\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:782)
+522 test_request_with_bytestring_host\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1013)
+523 test_requests_history_is_saved\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1772)
+524 test_requests_in_history_are_not_overridden\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:424)
+525 test_response_chunk_size_type\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1254)
+526 test_response_context_manager\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1804)
+527 test_response_decode_unicode\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1214)
+528 test_response_is_iterable\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1202)
+529 test_response_iter_lines\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1796)
+530 test_response_iter_lines_reentrant\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1819)
+531 test_response_json_when_content_is_None\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1849)
+532 test_response_reason_unicode\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1233)
+533 test_response_reason_unicode_fallback\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1242)
+534 test_response_without_release_conn\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1860)
+535 test_rewind_body\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1652)
+536 test_rewind_body_failed_seek\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1699)
+537 test_rewind_body_failed_tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1722)
+538 test_rewind_body_no_seek\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1679)
+539 test_rewind_partially_read_body\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1665)
+540 test_session_close_proxy_clear\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1828)
+541 test_session_get_adapter_prefix_matching\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1412)
+542 test_session_get_adapter_prefix_matching_is_case_insensitive\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1440)
+543 test_session_get_adapter_prefix_matching_mixed_case\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1430)
+544 test_session_hooks_are_overridden_by_request_hooks\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:965)
+545 test_session_hooks_are_used_with_no_request_hooks\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:956)
+546 test_session_pickling\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1346)
+547 test_set_basicauth\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:497)
+548 test_set_cookie_on_301\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:323)
+549 test_should_strip_auth_default_port\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1617)
+550 test_should_strip_auth_host_change\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1596)
+551 test_should_strip_auth_http_downgrade\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1600)
+552 test_should_strip_auth_https_upgrade\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1604)
+553 test_should_strip_auth_port_change\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1613)
+554 test_status_raising\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:786)
+555 test_stream_with_auth_does_not_set_transfer_encoding_header\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1882)
+556 test_time_elapsed_blank\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1192)
+557 test_transfer_enc_removal_on_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:278)
+558 test_transport_adapter_ordering\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1374)
+559 test_unconsumed_session_response_closes_connection\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1810)
+560 test_unicode_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:798)
+561 test_unicode_header_name\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:809)
+562 test_unicode_method_name\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:910)
+563 test_unicode_method_name_with_request_object\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:916)
+564 test_unicode_multipart_post\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:887)
+565 test_unicode_multipart_post_fieldnames\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:900)
+566 test_uppercase_scheme_redirect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1367)
+567 test_urlencoded_get_query_multivalued_param\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:868)
+568 test_user_agent_transfers\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:466)
+569 test_whitespaces_are_removed_from_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:149)
+570 build_response\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1747)
+571 TestStream\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:691)
+572 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:692)
+573 __len__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:697)
+574 read\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:700)
+575 seek\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:712)
+576 tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:709)
+577 get_netrc_auth_mock\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:562)
+578 genexpr
+579 MyCookiePolicy\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1185)
+580 CustomRedirectSession\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1927)
+581 get_redirect_target\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1928)
+582 hook\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:947)
+583 genexpr
+584 listcomp
+585 CustomMapping\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:750)
+586 __delitem__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:754)
+587 __getitem__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:757)
+588 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:751)
+589 __iter__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:763)
+590 __len__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:766)
+591 __setitem__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:760)
+592 DummyAuth\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:990)
+593 __call__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:991)
+594 hook\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:976)
+595 listcomp
+596 genexpr
+597 genexpr
+598 read_mock\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1207)
+599 BadFileObj\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1700)
+600 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1701)
+601 __iter__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1710)
+602 seek\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1707)
+603 tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1704)
+604 BadFileObj\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1723)
+605 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1724)
+606 __iter__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1730)
+607 tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1727)
+608 BadFileObj\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1680)
+609 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1681)
+610 __iter__\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1687)
+611 tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:1684)
+612 lambda
+613 lambda
+614 genexpr
+615 lambda
+616 test_connect_timeout\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2191)
+617 test_encoded_methods\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2216)
+618 test_invalid_timeout\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2152)
+619 test_none_timeout\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2162)
+620 test_read_timeout\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2179)
+621 test_stream_timeout\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2146)
+622 test_total_timeout_connect\n(/home/avb307/projects/hla_dataset/requests/tests/test_requests.py:2204)
+623 TestCaseInsensitiveDict\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:8)
+624 TestLookupDict\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:52)
+625 setup\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:10)
+626 test_copy\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:36)
+627 test_delitem\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:25)
+628 test_getitem\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:21)
+629 test_instance_equality\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:41)
+630 test_list\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:16)
+631 test_lower_items\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:30)
+632 test_repr\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:33)
+633 setup\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:54)
+634 test_get\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:74)
+635 test_getitem\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:70)
+636 test_repr\n(/home/avb307/projects/hla_dataset/requests/tests/test_structures.py:60)
+637 TestTestServer\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:12)
+638 test_basic\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:14)
+639 test_basic_response\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:59)
+640 test_basic_waiting_server\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:67)
+641 test_multiple_requests\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:79)
+642 test_request_recovery\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:95)
+643 test_request_recovery_with_bigger_timeout\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:131)
+644 test_requests_after_timeout_are_not_received\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:118)
+645 test_server_closes\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:32)
+646 test_server_finishes_on_error\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:145)
+647 test_server_finishes_when_no_connections\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:157)
+648 test_text_response\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:44)
+649 handler\n(/home/avb307/projects/hla_dataset/requests/tests/test_testserver.py:19)
+650 TestAddressInNetwork\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:234)
+651 TestContentEncodingDetection\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:289)
+652 TestExtractZippedPaths\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:263)
+653 TestGetEnvironProxies\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:152)
+654 TestGuessFilename\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:243)
+655 TestGuessJSONUTF\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:320)
+656 TestIsIPv4Address\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:207)
+657 TestIsValidCIDR\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:217)
+658 TestSuperLen\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:30)
+659 TestToKeyValList\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:118)
+660 TestUnquoteHeaderValue\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:135)
+661 test__parse_content_type_header\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:474)
+662 test_add_dict_to_cookiejar\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:657)
+663 test_dotted_netmask\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:422)
+664 test_get_auth_from_url\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:351)
+665 test_get_encoding_from_headers\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:517)
+666 test_iter_slices\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:536)
+667 test_parse_dict_header\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:465)
+668 test_parse_header_links\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:553)
+669 test_prepend_scheme_if_needed\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:583)
+670 test_requote_uri_with_unquoted_percents\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:387)
+671 test_select_proxies\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:439)
+672 test_set_environ\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:760)
+673 test_set_environ_raises_exception\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:776)
+674 test_should_bypass_proxies\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:615)
+675 test_should_bypass_proxies_no_proxy\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:684)
+676 test_should_bypass_proxies_pass_only_hostname\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:637)
+677 test_should_bypass_proxies_win_registry\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:705)
+678 test_to_native_string\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:592)
+679 test_unicode_is_ascii\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:673)
+680 test_unquote_unreserved\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:405)
+681 test_urldefragauth\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:602)
+682 test_invalid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:239)
+683 test_valid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:236)
+684 test_none\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:291)
+685 test_pragmas\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:295)
+686 test_precedence\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:311)
+687 test_unzipped_paths_unchanged\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:265)
+688 test_zipped_paths_extracted\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:275)
+689 no_proxy\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:157)
+690 test_bypass\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:161)
+691 test_bypass_no_proxy_keyword\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:181)
+692 test_not_bypass\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:172)
+693 test_not_bypass_no_proxy_keyword\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:191)
+694 test_guess_filename_invalid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:245)
+695 test_guess_filename_valid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:251)
+696 test_bad_utf_like_encoding\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:331)
+697 test_encoded\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:322)
+698 test_guess_by_bom\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:334)
+699 test_invalid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:212)
+700 test_valid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:209)
+701 test_invalid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:222)
+702 test_valid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:219)
+703 test_file\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:77)
+704 test_io_streams\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:32)
+705 test_string\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:74)
+706 test_super_len_correctly_calculates_len_of_partially_read_file\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:44)
+707 test_super_len_handles_files_raising_weird_errors_in_tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:50)
+708 test_super_len_tell_ioerror\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:62)
+709 test_super_len_with__len__\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:89)
+710 test_super_len_with_fileno\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:107)
+711 test_super_len_with_no__len__\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:94)
+712 test_super_len_with_no_matches\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:113)
+713 test_super_len_with_tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:101)
+714 BoomFile\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:53)
+715 __len__\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:54)
+716 tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:57)
+717 NoLenBoomFile\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:65)
+718 seek\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:69)
+719 tell\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:66)
+720 LenFile\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:95)
+721 __init__\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:96)
+722 test_invalid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:130)
+723 test_valid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:120)
+724 test_is_filename\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:148)
+725 test_valid\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:137)
+726 dictcomp
+727 OpenKey\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:738)
+728 QueryValueEx\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:741)
+729 RegHandle\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:731)
+730 Close\n(/home/avb307/projects/hla_dataset/requests/tests/test_utils.py:732)
+731 override_environ\n(/home/avb307/projects/hla_dataset/requests/tests/utils.py:7)
+#
+15 315 U
+33 145 U
+32 31 U
+38 45 U
+38 34 U
+39 45 U
+47 33 U
+47 46 U
+41 88 U
+41 256 U
+41 90 U
+41 261 U
+41 198 U
+41 171 U
+44 47 U
+44 144 U
+43 135 U
+46 63 U
+49 48 U
+49 139 U
+49 138 U
+49 149 U
+49 154 U
+49 148 U
+49 153 U
+49 40 U
+49 146 U
+49 124 U
+49 42 U
+49 41 U
+49 44 U
+58 240 U
+58 58 U
+58 218 U
+52 58 U
+54 58 U
+53 58 U
+56 58 U
+57 58 U
+55 58 U
+51 58 U
+63 29 U
+60 59 U
+65 63 U
+62 60 U
+82 63 U
+61 59 U
+73 121 U
+73 230 U
+73 78 U
+73 77 U
+73 81 U
+73 79 U
+73 80 U
+73 273 U
+73 52 U
+77 80 U
+74 90 U
+74 121 U
+74 36 U
+74 718 U
+74 230 U
+74 73 U
+74 368 U
+74 241 U
+74 266 U
+74 273 U
+74 120 U
+74 52 U
+74 180 U
+74 175 U
+74 575 U
+74 602 U
+69 716 U
+69 576 U
+69 611 U
+69 719 U
+69 603 U
+69 74 U
+69 76 U
+69 73 U
+69 75 U
+69 607 U
+102 100 U
+98 230 U
+98 273 U
+98 29 U
+98 52 U
+98 121 U
+99 230 U
+99 273 U
+99 52 U
+99 121 U
+108 106 U
+107 102 U
+105 100 U
+90 85 U
+90 95 U
+90 109 U
+90 84 U
+91 95 U
+91 230 U
+91 273 U
+91 52 U
+91 121 U
+91 84 U
+121 119 U
+132 93 U
+132 133 U
+132 230 U
+132 94 U
+132 273 U
+132 52 U
+132 121 U
+132 89 U
+128 126 U
+135 127 U
+124 125 U
+112 83 U
+114 119 U
+116 132 U
+113 94 U
+134 133 U
+119 83 U
+115 120 U
+115 266 U
+115 175 U
+117 134 U
+120 123 U
+120 134 U
+89 132 U
+93 89 U
+88 133 U
+88 86 U
+88 136 U
+88 89 U
+136 86 U
+92 88 U
+160 240 U
+160 58 U
+142 150 U
+139 150 U
+148 139 U
+154 139 U
+156 150 U
+138 139 U
+138 156 U
+149 156 U
+158 150 U
+157 150 U
+147 150 U
+145 150 U
+146 150 U
+143 150 U
+144 146 U
+137 150 U
+140 150 U
+155 150 U
+153 150 U
+159 150 U
+141 152 U
+151 152 U
+8 163 U
+162 161 U
+163 162 U
+1 141 U
+1 151 U
+1 28 U
+1 27 U
+27 151 U
+168 170 U
+185 192 U
+185 164 U
+187 172 U
+187 167 U
+187 164 U
+187 176 U
+167 170 U
+167 169 U
+172 164 U
+176 181 U
+176 180 U
+176 178 U
+176 177 U
+176 182 U
+176 183 U
+176 184 U
+173 29 U
+175 266 U
+175 88 U
+175 256 U
+175 172 U
+175 164 U
+175 29 U
+175 87 U
+183 29 U
+184 174 U
+184 147 U
+184 189 U
+184 146 U
+184 29 U
+184 30 U
+181 256 U
+181 29 U
+181 261 U
+178 256 U
+178 189 U
+178 188 U
+178 179 U
+179 230 U
+179 256 U
+179 273 U
+179 29 U
+179 52 U
+179 121 U
+177 134 U
+177 189 U
+177 60 U
+177 179 U
+177 67 U
+180 91 U
+180 256 U
+180 88 U
+182 192 U
+198 256 U
+198 261 U
+198 88 U
+196 204 U
+197 205 U
+194 213 U
+200 213 U
+199 208 U
+213 214 U
+213 142 U
+207 256 U
+206 256 U
+203 205 U
+217 137 U
+217 140 U
+217 139 U
+217 574 U
+208 217 U
+208 155 U
+209 208 U
+205 208 U
+215 203 U
+215 205 U
+210 215 U
+210 205 U
+214 142 U
+204 35 U
+204 228 U
+204 204 U
+221 251 U
+220 221 U
+245 29 U
+249 247 U
+249 90 U
+249 246 U
+249 248 U
+249 29 U
+249 36 U
+249 368 U
+249 241 U
+249 574 U
+249 157 U
+249 137 U
+249 140 U
+249 245 U
+249 92 U
+246 250 U
+248 63 U
+218 219 U
+226 234 U
+226 38 U
+226 164 U
+226 88 U
+226 32 U
+224 228 U
+238 220 U
+238 88 U
+238 92 U
+238 256 U
+238 172 U
+238 167 U
+238 86 U
+238 164 U
+238 176 U
+238 592 U
+238 221 U
+240 168 U
+240 241 U
+240 185 U
+240 238 U
+240 233 U
+230 240 U
+235 240 U
+232 240 U
+237 240 U
+239 240 U
+236 240 U
+229 240 U
+241 90 U
+241 231 U
+241 165 U
+241 244 U
+241 121 U
+241 212 U
+241 230 U
+241 273 U
+241 52 U
+241 88 U
+241 168 U
+241 249 U
+244 249 U
+233 230 U
+233 273 U
+233 52 U
+233 121 U
+233 221 U
+231 145 U
+234 243 U
+225 242 U
+222 226 U
+222 218 U
+12 252 U
+12 257 U
+12 271 U
+252 257 U
+252 124 U
+254 253 U
+254 124 U
+261 134 U
+259 267 U
+259 261 U
+266 261 U
+264 124 U
+270 230 U
+270 273 U
+270 52 U
+270 121 U
+273 230 U
+273 273 U
+273 52 U
+273 121 U
+300 301 U
+308 141 U
+298 310 U
+296 310 U
+275 88 U
+286 274 U
+290 286 U
+311 146 U
+302 311 U
+302 146 U
+276 282 U
+305 230 U
+305 273 U
+305 52 U
+305 121 U
+314 230 U
+314 273 U
+314 52 U
+314 121 U
+306 305 U
+306 314 U
+306 313 U
+306 276 U
+306 293 U
+306 300 U
+306 294 U
+313 105 U
+288 306 U
+278 279 U
+278 256 U
+278 261 U
+297 211 U
+277 143 U
+303 159 U
+322 323 U
+320 322 U
+321 322 U
+18 8 U
+327 162 U
+326 162 U
+325 328 U
+325 162 U
+325 324 U
+19 329 U
+19 1 U
+332 165 U
+331 164 U
+20 333 U
+20 1 U
+334 56 U
+334 105 U
+335 105 U
+335 61 U
+335 342 U
+335 52 U
+336 105 U
+336 61 U
+336 52 U
+336 343 U
+337 344 U
+337 105 U
+337 61 U
+337 52 U
+333 333 U
+341 105 U
+341 731 U
+341 139 U
+341 52 U
+347 105 U
+340 105 U
+340 347 U
+340 52 U
+338 105 U
+338 52 U
+338 345 U
+339 105 U
+339 52 U
+339 346 U
+21 1 U
+22 3 U
+22 5 U
+22 13 U
+22 10 U
+22 9 U
+22 11 U
+22 164 U
+22 6 U
+22 7 U
+22 319 U
+22 1 U
+457 56 U
+457 57 U
+457 222 U
+457 55 U
+457 52 U
+457 53 U
+356 319 U
+356 147 U
+356 145 U
+356 146 U
+356 139 U
+486 52 U
+426 168 U
+426 185 U
+426 187 U
+494 187 U
+494 176 U
+493 187 U
+493 176 U
+454 187 U
+454 176 U
+497 187 U
+497 176 U
+503 190 U
+503 176 U
+503 187 U
+499 187 U
+499 176 U
+502 168 U
+502 226 U
+502 185 U
+502 218 U
+502 238 U
+501 187 U
+501 176 U
+429 176 U
+429 187 U
+569 187 U
+569 176 U
+492 185 U
+492 187 U
+492 168 U
+492 218 U
+492 241 U
+492 226 U
+409 168 U
+409 241 U
+409 226 U
+409 185 U
+409 218 U
+409 187 U
+414 52 U
+414 207 U
+417 56 U
+417 207 U
+418 56 U
+418 207 U
+415 157 U
+415 52 U
+416 157 U
+416 222 U
+474 56 U
+474 207 U
+475 207 U
+475 53 U
+476 56 U
+476 207 U
+477 207 U
+477 53 U
+478 56 U
+478 207 U
+479 207 U
+479 53 U
+463 185 U
+463 238 U
+463 168 U
+463 249 U
+463 218 U
+463 241 U
+463 226 U
+463 212 U
+557 185 U
+557 238 U
+557 256 U
+557 168 U
+557 249 U
+557 218 U
+557 198 U
+557 226 U
+557 171 U
+557 212 U
+461 52 U
+411 52 U
+410 52 U
+548 222 U
+448 222 U
+447 222 U
+446 222 U
+444 222 U
+519 222 U
+520 222 U
+462 222 U
+462 88 U
+498 222 U
+498 88 U
+449 185 U
+449 88 U
+449 187 U
+449 168 U
+449 249 U
+449 212 U
+449 86 U
+449 218 U
+449 241 U
+449 226 U
+524 52 U
+524 595 U
+472 52 U
+470 168 U
+470 226 U
+470 185 U
+470 218 U
+470 238 U
+471 185 U
+471 238 U
+471 124 U
+471 168 U
+471 218 U
+471 226 U
+568 52 U
+412 53 U
+413 57 U
+402 222 U
+402 52 U
+547 168 U
+547 185 U
+547 187 U
+547 63 U
+427 168 U
+427 185 U
+427 187 U
+458 52 U
+514 148 U
+514 52 U
+515 144 U
+515 52 U
+428 577 U
+428 289 U
+428 222 U
+428 52 U
+407 71 U
+407 222 U
+407 52 U
+407 61 U
+405 71 U
+405 52 U
+405 61 U
+406 88 U
+406 226 U
+406 230 U
+406 71 U
+406 218 U
+406 61 U
+408 71 U
+408 52 U
+408 61 U
+408 574 U
+404 71 U
+404 222 U
+404 52 U
+404 61 U
+403 61 U
+403 71 U
+403 52 U
+419 56 U
+419 214 U
+484 56 U
+421 56 U
+421 571 U
+421 575 U
+421 572 U
+420 56 U
+420 214 U
+504 585 U
+504 230 U
+504 588 U
+504 273 U
+504 52 U
+504 121 U
+435 56 U
+435 319 U
+521 52 U
+554 142 U
+554 52 U
+452 52 U
+560 52 U
+561 57 U
+516 52 U
+483 52 U
+485 52 U
+481 52 U
+482 52 U
+583 584 U
+433 154 U
+433 52 U
+567 52 U
+460 168 U
+460 185 U
+460 187 U
+453 56 U
+564 56 U
+565 168 U
+565 185 U
+565 187 U
+562 319 U
+562 58 U
+563 185 U
+563 238 U
+563 168 U
+563 218 U
+563 241 U
+563 226 U
+563 319 U
+495 168 U
+495 241 U
+495 226 U
+495 319 U
+495 185 U
+495 218 U
+450 56 U
+473 168 U
+473 241 U
+473 226 U
+473 582 U
+473 185 U
+473 218 U
+473 238 U
+545 168 U
+545 613 U
+545 226 U
+545 185 U
+545 218 U
+545 238 U
+544 168 U
+544 226 U
+544 185 U
+544 218 U
+544 238 U
+544 612 U
+508 168 U
+508 241 U
+508 226 U
+508 185 U
+508 594 U
+508 218 U
+508 187 U
+592 59 U
+507 168 U
+507 592 U
+507 241 U
+507 226 U
+507 185 U
+507 218 U
+507 238 U
+506 168 U
+506 226 U
+506 185 U
+506 218 U
+506 238 U
+522 226 U
+522 218 U
+522 240 U
+489 171 U
+489 198 U
+489 211 U
+443 86 U
+443 132 U
+438 125 U
+438 124 U
+438 86 U
+438 132 U
+437 125 U
+437 124 U
+437 86 U
+437 132 U
+439 128 U
+439 86 U
+439 132 U
+440 135 U
+440 86 U
+440 132 U
+436 124 U
+436 86 U
+436 132 U
+441 230 U
+441 124 U
+441 273 U
+441 83 U
+441 86 U
+441 52 U
+441 121 U
+441 132 U
+442 273 U
+442 83 U
+442 86 U
+442 52 U
+442 121 U
+442 132 U
+442 230 U
+445 86 U
+445 123 U
+445 579 U
+556 52 U
+455 171 U
+455 198 U
+455 205 U
+528 198 U
+528 212 U
+528 598 U
+528 171 U
+527 198 U
+527 208 U
+527 171 U
+597 208 U
+532 198 U
+532 213 U
+532 171 U
+533 198 U
+533 142 U
+533 214 U
+533 171 U
+525 198 U
+525 208 U
+525 171 U
+596 208 U
+518 52 U
+509 187 U
+509 176 U
+509 218 U
+509 241 U
+509 226 U
+510 185 U
+510 187 U
+510 168 U
+510 218 U
+510 241 U
+510 226 U
+511 185 U
+511 187 U
+511 168 U
+511 164 U
+511 218 U
+511 241 U
+511 226 U
+432 185 U
+432 168 U
+432 368 U
+432 241 U
+432 36 U
+480 198 U
+480 171 U
+480 142 U
+546 168 U
+546 226 U
+546 185 U
+546 218 U
+546 187 U
+459 230 U
+459 218 U
+459 226 U
+566 52 U
+558 234 U
+558 226 U
+558 38 U
+558 218 U
+558 32 U
+541 234 U
+541 226 U
+541 38 U
+541 218 U
+541 231 U
+541 32 U
+543 234 U
+543 226 U
+543 38 U
+543 218 U
+543 231 U
+543 32 U
+542 234 U
+542 226 U
+542 38 U
+542 218 U
+542 231 U
+542 32 U
+467 230 U
+467 218 U
+467 226 U
+500 226 U
+500 230 U
+500 218 U
+490 187 U
+490 176 U
+464 168 U
+464 319 U
+464 128 U
+464 185 U
+464 187 U
+468 52 U
+469 143 U
+469 52 U
+466 143 U
+466 52 U
+465 143 U
+465 52 U
+431 168 U
+431 185 U
+431 187 U
+430 168 U
+430 185 U
+430 187 U
+424 168 U
+424 185 U
+424 187 U
+496 168 U
+496 185 U
+496 187 U
+423 52 U
+422 52 U
+550 226 U
+550 218 U
+550 250 U
+551 226 U
+551 218 U
+551 250 U
+552 226 U
+552 218 U
+552 250 U
+553 226 U
+553 218 U
+553 250 U
+549 226 U
+549 218 U
+549 250 U
+491 230 U
+491 249 U
+491 218 U
+491 207 U
+491 226 U
+491 208 U
+491 212 U
+505 176 U
+505 187 U
+535 187 U
+535 303 U
+535 176 U
+535 574 U
+539 187 U
+539 303 U
+539 176 U
+539 574 U
+538 609 U
+538 159 U
+538 187 U
+538 303 U
+538 176 U
+538 608 U
+536 159 U
+536 599 U
+536 600 U
+536 187 U
+536 303 U
+536 176 U
+537 159 U
+537 187 U
+537 303 U
+537 604 U
+537 605 U
+537 176 U
+401 570 U
+517 401 U
+517 226 U
+517 230 U
+517 218 U
+425 63 U
+523 52 U
+487 56 U
+488 168 U
+488 185 U
+488 187 U
+529 52 U
+529 212 U
+526 52 U
+526 171 U
+559 222 U
+530 52 U
+530 212 U
+540 226 U
+540 218 U
+540 228 U
+512 38 U
+512 46 U
+512 32 U
+513 38 U
+513 46 U
+513 32 U
+531 52 U
+534 198 U
+534 204 U
+534 171 U
+456 168 U
+456 185 U
+456 187 U
+555 168 U
+555 185 U
+555 187 U
+434 168 U
+434 185 U
+434 578 U
+434 187 U
+451 230 U
+451 580 U
+451 273 U
+451 52 U
+451 207 U
+451 121 U
+580 218 U
+581 230 U
+581 273 U
+581 52 U
+581 121 U
+352 261 U
+352 256 U
+373 261 U
+373 256 U
+380 261 U
+380 256 U
+377 261 U
+377 256 U
+375 256 U
+375 128 U
+375 261 U
+372 261 U
+372 256 U
+370 261 U
+370 256 U
+376 230 U
+376 256 U
+376 261 U
+376 273 U
+376 52 U
+376 121 U
+385 256 U
+385 134 U
+385 261 U
+386 256 U
+386 134 U
+386 261 U
+379 261 U
+379 256 U
+374 261 U
+374 256 U
+384 256 U
+384 261 U
+381 261 U
+381 256 U
+387 267 U
+382 256 U
+382 128 U
+382 261 U
+388 124 U
+383 256 U
+383 128 U
+383 134 U
+383 261 U
+389 124 U
+371 266 U
+371 261 U
+371 256 U
+392 93 U
+390 93 U
+391 93 U
+394 93 U
+393 93 U
+621 52 U
+621 156 U
+618 52 U
+619 52 U
+620 149 U
+620 52 U
+616 52 U
+616 139 U
+616 138 U
+616 156 U
+622 52 U
+622 138 U
+617 58 U
+351 219 U
+368 367 U
+367 198 U
+367 256 U
+367 171 U
+367 261 U
+367 366 U
+359 172 U
+359 167 U
+359 189 U
+359 176 U
+362 351 U
+362 187 U
+362 249 U
+362 176 U
+362 365 U
+362 368 U
+361 172 U
+361 248 U
+361 167 U
+361 226 U
+361 176 U
+361 731 U
+361 218 U
+358 172 U
+358 167 U
+358 189 U
+358 176 U
+358 164 U
+360 172 U
+360 167 U
+360 176 U
+360 175 U
+364 234 U
+364 38 U
+364 230 U
+364 153 U
+364 218 U
+364 32 U
+364 226 U
+363 234 U
+363 226 U
+363 230 U
+363 38 U
+363 218 U
+363 139 U
+363 32 U
+355 146 U
+397 168 U
+397 185 U
+397 187 U
+397 400 U
+396 168 U
+396 185 U
+396 187 U
+396 146 U
+398 52 U
+399 168 U
+399 185 U
+399 187 U
+395 168 U
+395 185 U
+395 187 U
+23 13 U
+625 261 U
+625 256 U
+630 256 U
+628 256 U
+627 256 U
+631 267 U
+632 256 U
+632 264 U
+626 256 U
+626 266 U
+629 256 U
+633 257 U
+633 271 U
+636 257 U
+636 272 U
+635 257 U
+634 273 U
+24 1 U
+638 105 U
+638 649 U
+645 105 U
+648 105 U
+648 52 U
+639 105 U
+639 52 U
+640 105 U
+641 105 U
+641 139 U
+641 52 U
+25 256 U
+25 13 U
+25 14 U
+25 261 U
+25 2 U
+25 86 U
+25 6 U
+25 1 U
+704 308 U
+706 308 U
+707 714 U
+707 308 U
+708 717 U
+708 308 U
+705 308 U
+703 308 U
+709 308 U
+711 720 U
+711 721 U
+711 308 U
+713 308 U
+710 308 U
+710 574 U
+712 308 U
+723 309 U
+722 309 U
+725 310 U
+724 310 U
+690 288 U
+692 288 U
+691 689 U
+691 288 U
+693 689 U
+693 288 U
+700 293 U
+699 293 U
+702 294 U
+701 294 U
+683 276 U
+682 276 U
+694 291 U
+695 291 U
+687 283 U
+688 283 U
+684 287 U
+685 287 U
+686 287 U
+697 292 U
+696 292 U
+698 292 U
+664 285 U
+670 302 U
+680 311 U
+663 282 U
+671 304 U
+667 296 U
+661 274 U
+665 286 U
+666 295 U
+668 297 U
+669 299 U
+681 312 U
+674 306 U
+676 306 U
+662 275 U
+662 726 U
+726 275 U
+679 30 U
+675 689 U
+675 306 U
+677 306 U
+677 729 U
+677 727 U
+677 728 U
+727 729 U
+728 729 U
+672 305 U
+672 230 U
+672 273 U
+672 52 U
+672 121 U
+673 305 U
+731 134 U
+731 124 U

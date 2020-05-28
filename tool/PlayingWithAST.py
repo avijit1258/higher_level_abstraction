@@ -35,7 +35,7 @@ class PlayingWithAST:
             line = line.strip()
             if (line == "") or (not any([c.isalnum() for c in line])):
                 continue
-            return line
+            return line 
 
         return ''
 
