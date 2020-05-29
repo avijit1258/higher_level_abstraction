@@ -43,7 +43,7 @@ class PlayingWithAST:
         all_py = []
         for path, subdirs, files in os.walk(root):
             for name in files:
-                if '.py' in name :
+                if name.endswith('.py'):
                     all_py.append(os.path.join(path, name))
                     print(os.path.join(path, name))
 

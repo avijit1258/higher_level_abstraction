@@ -1,0 +1,113 @@
+1 ClusteringCallGraph
+2 PlayingWithAST
+3 app
+4 ClusteringCallGraph\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:40)
+5 __del__\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:90)
+6 bfs\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:780)
+7 bfs_leaf_node\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:317)
+8 bfs_with_parent\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:820)
+9 cluster_view\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:696)
+10 clustering_using_scipy\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:233)
+11 execution_path_to_sentence\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:891)
+12 extract_function_name\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:304)
+13 extracting_execution_paths\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:178)
+14 extracting_source_and_exit_node\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:160)
+15 flatten\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:774)
+16 get_lemma\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:630)
+17 id_to_sentence\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:866)
+18 jaccard_distance_matrix\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:190)
+19 jaccard_similarity\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:310)
+20 labeling_cluster\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:204)
+21 make_documents_for_a_cluster_tfidf_method\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:414)
+22 make_documents_for_a_cluster_tfidf_word\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:446)
+23 make_documents_for_a_cluster_tm_method\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:430)
+24 make_documents_for_a_cluster_tm_word\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:466)
+25 merge_words_as_sentence\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:483)
+26 mining_sequential_patterns\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:675)
+27 prepare_text_for_lda\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:599)
+28 pretty_print_leaf_node\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:878)
+29 python_analysis\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:94)
+30 summarize_clusters_using_docstring\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:640)
+31 tf_idf_score_for_scipy_cluster\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:356)
+32 tgf_to_networkX\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:120)
+33 tokenize\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:613)
+34 topic_model_lda\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:512)
+35 topic_model_lsi\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:553)
+36 topic_model_output\n(/home/avb307/projects/higher_level_abstraction/tool/ClusteringCallGraph.py:502)
+37 listcomp
+38 listcomp
+39 listcomp
+40 listcomp
+41 listcomp
+42 listcomp
+43 listcomp
+44 listcomp
+45 listcomp
+46 PlayingWithAST\n(/home/avb307/projects/higher_level_abstraction/tool/PlayingWithAST.py:5)
+47 file_to_function_docstring_pair\n(/home/avb307/projects/higher_level_abstraction/tool/PlayingWithAST.py:10)
+48 get_all_method_docstring_pair_of_a_project\n(/home/avb307/projects/higher_level_abstraction/tool/PlayingWithAST.py:52)
+49 get_all_py_files\n(/home/avb307/projects/higher_level_abstraction/tool/PlayingWithAST.py:42)
+50 process_docstring\n(/home/avb307/projects/higher_level_abstraction/tool/PlayingWithAST.py:30)
+51 listcomp
+52 create_csv\n(/home/avb307/projects/higher_level_abstraction/tool/app.py:100)
+53 get_cluster\n(/home/avb307/projects/higher_level_abstraction/tool/app.py:38)
+54 root\n(/home/avb307/projects/higher_level_abstraction/tool/app.py:32)
+55 save_response\n(/home/avb307/projects/higher_level_abstraction/tool/app.py:62)
+#
+1 2 U
+1 4 U
+1 29 U
+4 46 U
+4 2 U
+4 48 U
+29 14 U
+29 18 U
+29 13 U
+29 10 U
+29 32 U
+32 12 U
+18 39 U
+18 19 U
+20 26 U
+20 31 U
+20 34 U
+20 48 U
+20 35 U
+20 30 U
+20 11 U
+10 6 U
+10 8 U
+10 20 U
+10 7 U
+10 28 U
+31 25 U
+31 21 U
+31 22 U
+31 17 U
+22 25 U
+22 41 U
+41 16 U
+41 41 U
+24 25 U
+34 24 U
+34 36 U
+34 27 U
+34 44 U
+34 23 U
+35 45 U
+35 24 U
+35 36 U
+35 27 U
+35 23 U
+27 43 U
+27 33 U
+43 16 U
+43 33 U
+43 43 U
+26 42 U
+9 15 U
+37 15 U
+37 37 U
+47 50 U
+48 47 U
+48 49 U
