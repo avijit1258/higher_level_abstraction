@@ -34,7 +34,7 @@ from PlayingWithAST import *
 
 
 
-workbook = xlsxwriter.Workbook('calculator.xlsx')
+workbook = xlsxwriter.Workbook('pyan.xlsx')
 worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
@@ -72,10 +72,7 @@ class ClusteringCallGraph:
 
     pwa = PlayingWithAST()
 
-    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning')
-
-
-
+    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project('/home/avb307/projects/hla_dataset/pyan')
 
 
     # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
@@ -88,6 +85,7 @@ class ClusteringCallGraph:
     worksheet.write(0, 6, 'lsi_word')
     worksheet.write(0, 7, 'lsi_method')
     worksheet.write(0, 8, 'text_summary')
+    worksheet.write(0, 9, 'SPM method')
 
 
     def __del__(self):
@@ -103,6 +101,9 @@ class ClusteringCallGraph:
         self.extracting_execution_paths()
         end = timer()
         print('Time required for extracting_execution_paths: ', end - start)
+        print('No. of execution paths', len(self.execution_paths))
+
+        self.remove_redundant_ep()
         # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
 
         # exporting execution paths to be used in topic modeling
@@ -118,6 +119,39 @@ class ClusteringCallGraph:
         self.G.clear()
 
         return self.clustering_using_scipy(mat)
+    
+    def check_ep_overlap_from_start(self, e, f):
+        '''This function checks whether 2nd list is a sublist starting from start of 1st list'''
+    
+        for i in range(len(f)):
+            if e[i] != f[i]:
+                return False
+                
+        return True
+
+    def remove_redundant_ep(self):
+        ''' this function removes redundant execution paths from list of execution paths.
+            for example, execution_paths = [['A', 'B', 'C', 'D'], ['B', 'C', 'D'], ['E', 'F', 'G'], ['I', 'F', 'S'], ['A', 'B'], ['A','B', 'C']]
+            this list as input will produce a list [['A', 'B', 'C', 'D'], ['B', 'C', 'D'], ['E', 'F', 'G'], ['I', 'F', 'S']]
+        
+         '''
+
+        execution_paths.sort(key = len, reverse = True)
+
+        redundant_ep = []
+        for e in self.execution_paths:
+            if e in redundant_ep:
+                continue
+            for f in self.execution_paths:
+                if e != f:
+                    print(e, f)
+                    if self.check_ep_overlap_from_start(e, f):
+                        redundant_ep.append(f)
+        for r in redundant_ep:
+            execution_paths.remove(r)
+            
+        print(' Filtered execution path length ', len(self.execution_paths))
+
 
     def tgf_to_networkX(self):
         """ converting tgf file to a networkX graph"""
@@ -227,6 +261,7 @@ class ClusteringCallGraph:
         worksheet.write(self.row, 6, lsi_word)
         worksheet.write(self.row, 7, lsi_method)
         worksheet.write(self.row, 8, text_summary)
+        worksheet.write(self.row, 9, spm_method)
         self.row += 1
         
         self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': text_summary})
@@ -659,17 +694,17 @@ class ClusteringCallGraph:
         # print(_clean_text_by_sentences(text_for_summary))
         # print(get_sentences(text_for_summary))
         # print(len(get_sentences(text_for_summary)))
-        count = 0
-        for sentence in get_sentences(text_for_summary):
-            print(sentence)
-            count += 1
+        # count = 0
+        # for sentence in get_sentences(text_for_summary):
+        #     print(sentence)
+        #     count += 1
         # if count <= 9:
         #     return 'Empty.'
         # if len(text_for_summary) <= 1:
         #     return 'Empty'
 
         try:
-            return summarize(text_for_summary)
+            return summarize(text_for_summary, word_count=25)
         except ValueError:
             return 'Empty'
 
