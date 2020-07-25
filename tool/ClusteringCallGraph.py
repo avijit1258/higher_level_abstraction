@@ -103,7 +103,9 @@ class ClusteringCallGraph:
         print('Time required for extracting_execution_paths: ', end - start)
         print('No. of execution paths', len(self.execution_paths))
 
-        self.remove_redundant_ep()
+        self.execution_paths = self.mining_sequential_patterns_from_initial_execution_paths()
+
+        # self.remove_redundant_ep()
         # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
 
         # exporting execution paths to be used in topic modeling
@@ -119,6 +121,7 @@ class ClusteringCallGraph:
         self.G.clear()
 
         return self.clustering_using_scipy(mat)
+        
     
     def check_ep_overlap_from_start(self, e, f):
         '''This function checks whether 2nd list is a sublist starting from start of 1st list'''
@@ -136,7 +139,7 @@ class ClusteringCallGraph:
         
          '''
 
-        execution_paths.sort(key = len, reverse = True)
+        self.execution_paths.sort(key = len, reverse = True)
 
         redundant_ep = []
         for e in self.execution_paths:
@@ -144,11 +147,11 @@ class ClusteringCallGraph:
                 continue
             for f in self.execution_paths:
                 if e != f:
-                    print(e, f)
+                    # print(e, f)
                     if self.check_ep_overlap_from_start(e, f):
                         redundant_ep.append(f)
         for r in redundant_ep:
-            execution_paths.remove(r)
+            self.execution_paths.remove(r)
             
         print(' Filtered execution path length ', len(self.execution_paths))
 
@@ -729,6 +732,28 @@ class ClusteringCallGraph:
 
         # print(sentence)
         return sentence
+
+    def mining_sequential_patterns_from_initial_execution_paths(self):
+        ''' This function takes input inital execution paths and outputs frequent mined patterns for 
+            focusing the further analysis on important parts
+        '''
+        number_of_patterns_to_pick = 100
+        extracted_patterns = []
+        preprocess = self.execution_paths
+        
+        ps = PrefixSpan(preprocess)
+
+        ps.minlen = 5
+
+        ps.maxlen = 15
+
+        top = ps.topk(number_of_patterns_to_pick, closed = True)
+
+        for i in top:
+            extracted_patterns.append(i[1])
+
+        # print(extracted_patterns)
+        return extracted_patterns
 
     def cluster_view(self, Z, dend):
         """ 
