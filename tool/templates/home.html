@@ -2,32 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
      <script type="text/javascript" src="{{ url_for('static',filename = 'go-debug.js')}}"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'style.css')}}">
 
     <title>Designing an interactive tool for program comprehension from static analysis</title>
 </head>
 <body onload="init()">
 
-    <div id="sample">
+  <nav class="navbar  navbar-dark">
+		<div class="container-fluid">
+			
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">HLA</a>
+			</div>
 
-   <div>
-        <h3>Interactive tool for program comprehension through static analysis: ITpcSA</h3>
-        <button onclick="printDiagram()" class="btn"> GET Image </button>
+			<ul class="nav navbar-nav">
+				<li class="nav-item active"> <a href="#">Home</a> </li>
+				<li class="nav-item"> <a href="https://ise.usask.ca/avijit/research/">How it works</a> </li>
+				<li class="nav-item"> <a href="https://ise.usask.ca">About us</a> </li>
+				
+			</ul>
+
+		</div>
+
+	</nav>
+
+    <div class="container" id="sample">
+
+   <div class="container">
+        <h2 class="text-focus-in" style="text-align: center;">Interactive tool for program comprehension through static analysis: ITpcSA</h2>
+        <!-- <button onclick="printDiagram()" class="btn"> GET Image </button> -->
    </div>
-        <div>
-            <h2 style="margin-left: auto; margin-right: auto"> Full diagram</h2>
+        <div class="container">
+            <h3 style="text-align: center;"> Full diagram</h3>
         </div>
 
-  <div id="fullDiagram" style="height:550px;width:100%;border:1px solid black;margin:2px"></div>
-        <div><h2> Local diagram</h2></div>
+  <div class="container" id="fullDiagram" style="height:550px;width:100%;border:1px solid black;margin:2px">
+    
 
-  <div id="localDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
+  </div>
 
-        <button onclick="get_cluster()" class="btn"> GET Cluster </button>
+  <div class="container" style="text-align: center;">   
+    <button onclick="get_cluster()" class="btn" > GET Cluster </button>
+  </div>
+  
+  <div class="container">
+      <h3 style="text-align: center;" > Local diagram</h3>
+  </div>
+
+  <div class="container" id="localDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
 
 </div>
 
@@ -123,6 +150,16 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<footer class="page-footer font-small blue">
+
+	  
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://ise.usask.ca/avijit/"> Avijit Bhattacharjee (iSE Lab) </a>
+  </div>
+  
+
+</footer>
 
 
 
@@ -418,7 +455,9 @@
                     lsi_word: result[x].lsi_word,
                     lsi_method: result[x].lsi_method,
                     color: "#cce6ff",
-                    description: result[x].spm_method
+                    description: 'docstring : ' + result[x].text_summary+ '\n pattern: '+ result[x].spm_method,
+                    spm_method: result[x].spm_method,
+                    text_summary: result[x].text_summary
                 });
 
             }
