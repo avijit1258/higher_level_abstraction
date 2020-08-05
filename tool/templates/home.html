@@ -198,8 +198,14 @@
             contentAlignment: go.Spot.Center,  // center the tree in the viewport
             isReadOnly: false,  // don't allow user to change the diagram
             "animationManager.isEnabled": true,
-            layout: $(go.TreeLayout,
-              { angle: 90, sorting: go.TreeLayout.SortingAscending }),
+            // layout: $(go.TreeLayout,
+            //   { angle: 90, sorting: go.TreeLayout.SortingAscending }),
+            layout:
+              $(FlatTreeLayout,  // custom Layout, defined below
+                {
+                  angle: 90,
+                  compaction: go.TreeLayout.CompactionNone
+                }),
             maxSelectionCount: 1,  // only one node may be selected at a time in each diagram
             // when the selection changes, update the myLocalDiagram view
             "ChangedSelection": showLocalOnFullClick,
@@ -250,7 +256,11 @@
                       { alignment: go.Spot.Bottom, alignmentFocus: go.Spot.Top, stroke: "red" },
                       new go.Binding("text", "tfidf_word", function(s) { return "Cluster Name: " + s; }))
                   )  // end Adornment
-            }
+            },
+            $(go.Panel,  // this is underneath the "BODY"
+              { height: 17 },  // always this height, even if the TreeExpanderButton is not visible
+            $("TreeExpanderButton")
+          )  
 
         );
       myFullDiagram.nodeTemplate = myNodeTemplate;
@@ -288,7 +298,7 @@
         );
       myFullDiagram.add(highlighter);
 
-       myFullDiagram.addDiagramListener("ObjectContextClicked",
+      myFullDiagram.addDiagramListener("ObjectContextClicked",
       function(e) {
         var part = e.subject.part;
         if (!(part instanceof go.Link))
@@ -311,6 +321,35 @@
 
 
     }
+
+    // Customize the TreeLayout to position all of the leaf nodes at the same vertical Y position.
+    function FlatTreeLayout() {
+      go.TreeLayout.call(this);  // call base constructor
+    }
+    go.Diagram.inherit(FlatTreeLayout, go.TreeLayout);
+
+    // This assumes the TreeLayout.angle is 90 -- growing downward
+    FlatTreeLayout.prototype.commitLayout = function() {
+      go.TreeLayout.prototype.commitLayout.call(this);  // call base method first
+      // find maximum Y position of all Nodes
+      var y = -Infinity;
+      this.network.vertexes.each(function(v) {
+        y = Math.max(y, v.node.position.y);
+      });
+      // move down all leaf nodes to that Y position, but keeping their X position
+      this.network.vertexes.each(function(v) {
+        if (v.destinationEdges.count === 0) {
+          // shift the node down to Y
+          v.node.position = new go.Point(v.node.position.x, y);
+          // extend the last segment vertically
+          v.node.toEndSegmentLength = Math.abs(v.centerY - y);
+        } else {  // restore to normal value
+          v.node.toEndSegmentLength = 10;
+        }
+      });
+    };
+    // end FlatTreeLayout
+  
 
     // Make the corresponding node in the full diagram to that selected in the local diagram selected,
     // then call showLocalOnFullClick to update the local diagram.
