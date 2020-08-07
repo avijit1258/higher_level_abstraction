@@ -236,6 +236,7 @@
       // Define a node template that is shared by both diagrams
       var myNodeTemplate =
         $(go.Node, "Auto",
+            {isTreeExpanded: false },  // by default collapsed
           { locationSpot: go.Spot.Center },
           new go.Binding("text", "key", go.Binding.toString),  // for sorting
           $(go.Shape, "Rectangle",
@@ -257,10 +258,7 @@
                       new go.Binding("text", "tfidf_word", function(s) { return "Cluster Name: " + s; }))
                   )  // end Adornment
             },
-            $(go.Panel,  // this is underneath the "BODY"
-              { height: 17 },  // always this height, even if the TreeExpanderButton is not visible
             $("TreeExpanderButton")
-          )  
 
         );
       myFullDiagram.nodeTemplate = myNodeTemplate;
@@ -308,19 +306,23 @@
 
       });
 
+
+
       // Start by focusing the diagrams on the node at the top of the tree.
       // Wait until the tree has been laid out before selecting the root node.
       myFullDiagram.addDiagramListener("InitialLayoutCompleted", function(e) {
         var node0 = myFullDiagram.findPartForKey(0);
+        console.log(node0);
         if (node0 !== null) node0.isSelected = true;
         showLocalOnFullClick();
+        e.diagram.findTreeRoots().each(function(r) { r.expandTree(3); });
+
       });
 
       myFullDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
 
-
-
     }
+
 
     // Customize the TreeLayout to position all of the leaf nodes at the same vertical Y position.
     function FlatTreeLayout() {
