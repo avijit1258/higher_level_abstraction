@@ -34,7 +34,7 @@ from PlayingWithAST import *
 
 
 
-workbook = xlsxwriter.Workbook('pyan.xlsx')
+workbook = xlsxwriter.Workbook('pyan_08_03_2020.xlsx')
 worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
@@ -217,14 +217,26 @@ class ClusteringCallGraph:
     def extracting_execution_paths(self):
         """ Extracting execution paths from networkX call graph """
         print('Extracting execution paths')
+        # for s in self.S:
+        #     for t in self.T:
+        #         # print(list(nx.dfs_preorder_nodes(G, s)))
+        #         # print(list(nx.all_simple_paths(G, s, t)))
+        #         # execution_paths.append(list(nx.all_simple_paths(G, s, t)))
+
+        #         unpack_path = list(nx.all_simple_paths(self.G, s, t))
+        #         for p in unpack_path:
+        #             self.execution_paths.append(p)
         for s in self.S:
-            for t in self.T:
-                # print(list(nx.dfs_preorder_nodes(G, s)))
-                # print(list(nx.all_simple_paths(G, s, t)))
-                # execution_paths.append(list(nx.all_simple_paths(G, s, t)))
-                unpack_path = list(nx.all_simple_paths(self.G, s, t))
-                for p in unpack_path:
-                    self.execution_paths.append(p)
+            # for t in self.T:
+            #     # print(list(nx.dfs_preorder_nodes(G, s)))
+            #     # print(list(nx.all_simple_paths(G, s, t)))
+            #     # execution_paths.append(list(nx.all_simple_paths(G, s, t)))
+
+            unpack_path = list(nx.all_simple_paths(self.G, s, self.T))
+            for p in unpack_path:
+                self.execution_paths.append(p)
+
+        print("Number of EP: ", len(self.execution_paths))
 
     def jaccard_distance_matrix(self, paths):
         """ creating distance matrix using jaccard similarity value """
@@ -718,6 +730,9 @@ class ClusteringCallGraph:
         preprocess = [self.execution_paths[item] for item in execution_paths_of_a_cluster]
         
         ps = PrefixSpan(preprocess)
+
+        ps.maxlen = 15
+        ps.minlen = 5
 
         top5 = ps.topk(5, closed = True)
         
