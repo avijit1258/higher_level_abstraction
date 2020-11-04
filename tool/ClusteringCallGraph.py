@@ -33,14 +33,12 @@ from prefixspan import PrefixSpan
 from PlayingWithAST import *
 
 
-
+SUBJECT_SYSTEM_NAME = 'volontulo_10_27_2020'
 OUTPUT_DIRECTORY = '/output/'
-CLUSTER_TREE_DETAILS_EXCEL = ''
-DATASET = '/dataset/'
-SUBJECT_SYSTEM_TGF_FILE = ''
-SUBJECT_SYSTEM = ''
+DATASET = '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
+SUBJECT_SYSTEM = '' # put location of repository for getting comments
 
-workbook = xlsxwriter.Workbook('pyan_08_03_2020.xlsx')
+workbook = xlsxwriter.Workbook(OUTPUT_DIRECTORY +SUBJECT_SYSTEM_NAME+'.xlsx')
 worksheet = workbook.add_worksheet()
 
 class ClusteringCallGraph:
@@ -78,7 +76,7 @@ class ClusteringCallGraph:
 
     pwa = PlayingWithAST()
 
-    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project('/home/avb307/projects/hla_dataset/pyan')
+    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(SUBJECT_SYSTEM)
 
 
     # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
@@ -164,7 +162,7 @@ class ClusteringCallGraph:
 
     def tgf_to_networkX(self):
         """ converting tgf file to a networkX graph"""
-        self.subject_system = input('Enter name of the subject system: \n')
+        self.subject_system = SUBJECT_SYSTEM_NAME+'.txt'
         # self.subject_system = '/home/avb307/projects/higher_level_abstraction/tool/calculator.txt'
         print('thanks a lot')
         # path = easygui.fileopenbox()
@@ -197,7 +195,7 @@ class ClusteringCallGraph:
                 # print(ln[0])
 
         nx.draw(self.G, with_labels=True)
-        plt.savefig('call-graph.png')
+        plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
         plt.show()
 
         return
@@ -341,7 +339,7 @@ class ClusteringCallGraph:
         # self.cluster_view(Z, dn)
 
         # plt.show()
-        print(self.tree, file=open('tree'+self.subject_system, 'w'))
+        print(self.tree, file=open(OUTPUT_DIRECTORY+ 'TREE_DICT_' +self.subject_system, 'w'))
         # print(self.tree, file=open('tree_calculator.txt', 'w'))
         return self.tree
 
