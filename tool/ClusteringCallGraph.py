@@ -36,7 +36,7 @@ from PlayingWithAST import *
 SUBJECT_SYSTEM_NAME = 'volontulo_10_27_2020'
 OUTPUT_DIRECTORY = '/output/'
 DATASET = '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
-SUBJECT_SYSTEM = '' # put location of repository for getting comments
+SUBJECT_SYSTEM = 'home/avijit/Github/python_subject_systems_for_HLA/js-remote-test' # put location of repository for getting comments
 
 workbook = xlsxwriter.Workbook(OUTPUT_DIRECTORY +SUBJECT_SYSTEM_NAME+'.xlsx')
 worksheet = workbook.add_worksheet()
