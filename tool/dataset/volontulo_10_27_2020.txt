@@ -1,0 +1,1336 @@
+1 apps.volontulo.forms
+2 apps.volontulo.lib.email
+3 apps.volontulo.migrations.0001_initial
+4 apps.volontulo.migrations.0002_userprofile_phone_no
+5 apps.volontulo.migrations.0003_offer_weight
+6 apps.volontulo.migrations.0004_auto_20151118_1157
+7 apps.volontulo.migrations.0005_removing_badges
+8 apps.volontulo.migrations.0006_page
+9 apps.volontulo.migrations.0007_remove_page_slug
+10 apps.volontulo.models
+11 apps.volontulo.templatetags.labeled_status
+12 apps.volontulo.templatetags.main_image
+13 apps.volontulo.templatetags.offer_utilities
+14 apps.volontulo.tests.common
+15 apps.volontulo.tests.forms.test_edit_profile
+16 apps.volontulo.tests.models.test_offer
+17 apps.volontulo.tests.models.test_offerstatus
+18 apps.volontulo.tests.models.test_organization
+19 apps.volontulo.tests.models.test_userprofile
+20 apps.volontulo.tests.views.offers.commons
+21 apps.volontulo.tests.views.offers.test_offer_accept
+22 apps.volontulo.tests.views.offers.test_offer_create
+23 apps.volontulo.tests.views.offers.test_offer_delete
+24 apps.volontulo.tests.views.offers.test_offer_edit
+25 apps.volontulo.tests.views.offers.test_offer_join
+26 apps.volontulo.tests.views.offers.test_offer_view
+27 apps.volontulo.tests.views.offers.test_offers_archived
+28 apps.volontulo.tests.views.offers.test_offers_list
+29 apps.volontulo.tests.views.test_auth
+30 apps.volontulo.tests.views.test_contactform
+31 apps.volontulo.tests.views.test_create_orgranization
+32 apps.volontulo.tests.views.test_edit_organization
+33 apps.volontulo.tests.views.test_newsletter
+34 apps.volontulo.tests.views.test_organizations
+35 apps.volontulo.tests.views.test_pages
+36 apps.volontulo.tests.views.test_usersprofile
+37 apps.volontulo.tests.views.test_view_organization
+38 apps.volontulo.utils
+39 apps.volontulo.views
+40 apps.volontulo.views.admin_panel
+41 apps.volontulo.views.auth
+42 apps.volontulo.views.offers
+43 apps.volontulo.views.organizations
+44 apps.volontulo.views.pages
+45 fabfile
+46 setup
+47 AdministratorContactForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:207)
+48 ContactForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:192)
+49 CreateOfferForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:91)
+50 EditProfileForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:33)
+51 OfferApplyForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:183)
+52 OfferImageForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:167)
+53 OrganizationGalleryForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:138)
+54 UserForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:21)
+55 UserGalleryForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:126)
+56 VolounteerToOrganizationContactForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:201)
+57 Meta\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:99)
+58 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:95)
+59 is_valid\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:67)
+60 Meta\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:176)
+61 Meta\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:151)
+62 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:155)
+63 _set_user_organizations\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:160)
+64 Meta\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:28)
+65 Meta\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/forms.py:131)
+66 send_mail\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/lib/email.py:30)
+67 Migration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0001_initial.py:10)
+68 Migration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0002_userprofile_phone_no.py:7)
+69 Migration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0003_offer_weight.py:14)
+70 populate_null_weight_rows\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0003_offer_weight.py:7)
+71 Migration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0004_auto_20151118_1157.py:7)
+72 Migration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0005_removing_badges.py:7)
+73 Migration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0006_page.py:7)
+74 Migration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/migrations/0007_remove_page_slug.py:7)
+75 Offer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:65)
+76 OfferImage\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:293)
+77 OffersManager\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:32)
+78 Organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:21)
+79 OrganizationGallery\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:306)
+80 Page\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:345)
+81 UserGallery\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:282)
+82 UserProfile\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:228)
+83 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:136)
+84 change_status\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:189)
+85 close_offer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:219)
+86 create_new\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:163)
+87 determine_action_status\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:171)
+88 publish\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:205)
+89 reject\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:213)
+90 save_offer_image\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:150)
+91 set_main_image\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:140)
+92 unpublish\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:199)
+93 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:301)
+94 get_active\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:35)
+95 get_archived\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:56)
+96 get_for_administrator\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:43)
+97 get_weightened\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:47)
+98 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:27)
+99 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:313)
+100 get_organizations_galleries\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:333)
+101 remove\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:317)
+102 set_as_main\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:321)
+103 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:355)
+104 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:288)
+105 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:278)
+106 can_edit_offer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:253)
+107 clean_images\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:267)
+108 get_avatar\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:260)
+109 is_admin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:245)
+110 is_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/models.py:249)
+111 human\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/templatetags/labeled_status.py:15)
+112 main_image\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/templatetags/main_image.py:13)
+113 can_edit_offer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/templatetags/offer_utilities.py:12)
+114 initialize_administrator\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/common.py:156)
+115 initialize_empty_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/common.py:41)
+116 initialize_empty_organizations\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/common.py:136)
+117 initialize_empty_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/common.py:25)
+118 initialize_filled_volunteer_and_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/common.py:64)
+119 TestEditProfileForm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/forms/test_edit_profile.py:14)
+120 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/forms/test_edit_profile.py:17)
+121 test__is_validate__distinct_new_passwords__raise_exception\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/forms/test_edit_profile.py:66)
+122 test__is_validate__empty_passwords__form_is_not_valid\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/forms/test_edit_profile.py:38)
+123 test__is_validate__wrong_current_password__raise_exception\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/forms/test_edit_profile.py:49)
+124 test__no_is_avatar_field_on_edit_profile_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/forms/test_edit_profile.py:83)
+125 test_is_validate_passed_passwords_form_is_valid\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/forms/test_edit_profile.py:21)
+126 OfferTestCase\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:81)
+127 TestOfferModel\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:13)
+128 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:84)
+129 test__offer_benefits_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:126)
+130 test__offer_description_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:114)
+131 test__offer_location_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:133)
+132 test__offer_organization_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:109)
+133 test__offer_requiremends_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:118)
+134 test__offer_status_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:154)
+135 test__offer_time_commit_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:122)
+136 test__offer_time_period_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:147)
+137 test__offer_title_field\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:140)
+138 test__organization_name\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:105)
+139 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:16)
+140 test__string_representation\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offer.py:55)
+141 TestOfferStatusModel\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offerstatus.py:16)
+142 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offerstatus.py:19)
+143 test__determine_action_status\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_offerstatus.py:104)
+144 TestOrganization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_organization.py:12)
+145 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_organization.py:15)
+146 test__string_reprezentation\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_organization.py:23)
+147 TestUserProfile\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_userprofile.py:14)
+148 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_userprofile.py:17)
+149 test__is_admin_or_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_userprofile.py:68)
+150 test__string_reprezentation\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/models/test_userprofile.py:53)
+151 TestOffersCommons\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/commons.py:14)
+152 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/commons.py:17)
+153 TestOfferAccept\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_accept.py:13)
+154 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_accept.py:16)
+155 test_offer_acceptance_for_admin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_accept.py:46)
+156 test_offer_acceptance_for_anonymous_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_accept.py:20)
+157 test_offer_acceptance_for_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_accept.py:36)
+158 test_offer_acceptance_for_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_accept.py:26)
+159 TestOffersCreate\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:16)
+160 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:49)
+161 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:19)
+162 test_create_offer_without_date\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:92)
+163 test_offers_create_get_method\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:53)
+164 test_offers_create_invalid_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:78)
+165 test_offers_create_no_org_get_method\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:63)
+166 test_offers_create_valid_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_create.py:116)
+167 TestOfferDelete\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_delete.py:13)
+168 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_delete.py:16)
+169 test_offer_deletion_for_admin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_delete.py:46)
+170 test_offer_deletion_for_anonymous_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_delete.py:20)
+171 test_offer_deletion_for_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_delete.py:36)
+172 test_offer_deletion_for_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_delete.py:26)
+173 TestOffersEdit\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:16)
+174 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:59)
+175 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:19)
+176 test_for_correct_slug\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:85)
+177 test_for_different_slug\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:72)
+178 test_for_non_existing_offer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:63)
+179 test_offers_edit_invalid_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:96)
+180 test_offers_edit_valid_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:129)
+181 test_offers_status_change\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_edit.py:170)
+182 TestOffersJoin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:16)
+183 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:53)
+184 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:19)
+185 test_correct_slug_for_anonymous_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:74)
+186 test_correct_slug_for_logged_in_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:85)
+187 test_for_different_slug\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:62)
+188 test_for_nonexisting_offer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:57)
+189 test_offers_join_invalid_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:102)
+190 test_offers_join_valid_form_and_anonymous_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:157)
+191 test_offers_join_valid_form_and_logged_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:114)
+192 test_offers_join_valid_form_with_existing_email\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_join.py:183)
+193 TestOffersView\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_view.py:16)
+194 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_view.py:72)
+195 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_view.py:19)
+196 test_for_correct_slug\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_view.py:92)
+197 test_for_different_slug\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_view.py:81)
+198 test_for_non_existing_offer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offer_view.py:76)
+199 TestOffersArchived\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_archived.py:16)
+200 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_archived.py:60)
+201 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_archived.py:19)
+202 test_offers_archived_page\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_archived.py:64)
+203 TestOffersList\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_list.py:13)
+204 _test_offers_list_for_standard_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_list.py:20)
+205 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_list.py:16)
+206 test_offer_list_for_anonymous_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_list.py:33)
+207 test_offers_list_for_admin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_list.py:53)
+208 test_offers_list_for_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_list.py:45)
+209 test_offers_list_for_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/offers/test_offers_list.py:37)
+210 TestLogin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:158)
+211 TestLogout\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:304)
+212 TestRegister\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:14)
+213 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:167)
+214 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:161)
+215 test__get_login_by_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:171)
+216 test__get_login_by_authorized\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:192)
+217 test__post_login_by_anonymous_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:213)
+218 test__post_login_by_authorized_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:283)
+219 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:313)
+220 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:307)
+221 test__logged_out_anonymous_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:317)
+222 test__logged_out_authenticated_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:334)
+223 test__login_authenticated_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:359)
+224 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:17)
+225 test__register_authenticated_user\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:129)
+226 test_get_method\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:21)
+227 test_invalid_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:36)
+228 test_register_with_term_acceptance\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:85)
+229 test_register_without_term_acceptance\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:69)
+230 test_successful_registration\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:107)
+231 test_user_already_exists\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_auth.py:48)
+232 TestPages\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:13)
+233 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:33)
+234 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:19)
+235 test__contact_with_admin_form_by_organization_val_error\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:156)
+236 test__contact_with_admin_form_by_organization_val_success\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:188)
+237 test__contact_with_admin_form_by_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:127)
+238 test__contact_with_admin_form_by_volunteer_val_error\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:97)
+239 test__get_contact_with_administrator_form_by_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:37)
+240 test__get_contact_with_administrator_form_by_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:67)
+241 test__get_contact_with_administrator_form_by_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:53)
+242 test__post_contact_with_administrator_form_by_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_contactform.py:81)
+243 TestCreateOrganization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:11)
+244 test__create_empty_organization_post_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:56)
+245 test__create_organization_get_form_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:14)
+246 test__create_organization_get_form_authorized\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:27)
+247 test__create_organization_one_column_template\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:142)
+248 test__create_organization_post_form_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:43)
+249 test__create_organization_post_form_fill_fields\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:76)
+250 test__create_valid_organization_form_post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_create_orgranization.py:110)
+251 TestEditOrganization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:9)
+252 test__edit_organization_get_form_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:12)
+253 test__edit_organization_get_form_other_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:136)
+254 test__edit_organization_get_form_right_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:203)
+255 test__edit_organization_get_form_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:68)
+256 test__edit_organization_post_form_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:40)
+257 test__edit_organization_post_form_other_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:170)
+258 test__edit_organization_post_form_right_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:234)
+259 test__edit_organization_post_form_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_edit_organization.py:102)
+260 TestNews\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_newsletter.py:9)
+261 test__newsletter\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_newsletter.py:12)
+262 TestOrganizations\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_organizations.py:13)
+263 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_organizations.py:27)
+264 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_organizations.py:16)
+265 test__ensure_status_is_displayed_in_organisations_view\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_organizations.py:52)
+266 test__ensure_status_is_displayed_in_profile_view\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_organizations.py:40)
+267 test__organization_list\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_organizations.py:31)
+268 TestPages\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:12)
+269 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:21)
+270 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:15)
+271 test__get_organization_faq_staticpage\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:65)
+272 test__get_regulations_staticpage\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:79)
+273 test__get_volunteer_faq_staticpage\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:72)
+274 test__homepage_for_administrator\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:45)
+275 test__homepage_for_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:25)
+276 test__homepage_for_volunteer_and_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:33)
+277 test_about_us\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:86)
+278 test_office_subpage\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_pages.py:93)
+279 TestUsersProfile\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:13)
+280 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:25)
+281 setUpTestData\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:16)
+282 test__logged_user_profile\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:45)
+283 test__logged_user_profile_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:29)
+284 test__logged_user_profile_empty_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:89)
+285 test__logged_user_profile_empty_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:59)
+286 test__logged_user_profile_filled_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:103)
+287 test__logged_user_profile_filled_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:74)
+288 test__no_email_field_on_edit_profile_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:148)
+289 test__userprofile_first_and_last_name\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:134)
+290 test__userprofile_phone_no\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_usersprofile.py:121)
+291 TestCreateOrganization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:11)
+292 test__get_empty_organization_view_by_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:14)
+293 test__get_empty_organization_view_by_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:70)
+294 test__get_empty_organization_view_by_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:52)
+295 test__get_filled_organization_view_by_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:39)
+296 test__get_filled_organization_view_by_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:105)
+297 test__post_contact_form_on_organization_view_by_anonymous\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:118)
+298 test__post_contact_form_on_organization_view_by_organization\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:205)
+299 test__post_contact_form_on_organization_view_by_volunteer\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/tests/views/test_view_organization.py:167)
+300 correct_slug\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/utils.py:60)
+301 get_administrators_emails\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/utils.py:27)
+302 is_admin_test\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/utils.py:84)
+303 save_history\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/utils.py:49)
+304 decorator\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/utils.py:65)
+305 wrapping_func\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/utils.py:68)
+306 contact_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:216)
+307 homepage\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:38)
+308 logged_as_admin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:25)
+309 logged_user_profile\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:75)
+310 newsletter_signup\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:262)
+311 page_not_found\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:273)
+312 server_error\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:285)
+313 static_pages\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:60)
+314 main_panel\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/admin_panel.py:7)
+315 Register\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:92)
+316 activate\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:181)
+317 login\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:26)
+318 logout\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:78)
+319 password_reset\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:199)
+320 password_reset_confirm\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:212)
+321 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:95)
+322 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/auth.py:117)
+323 _handle_organization_image_upload\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:161)
+324 _handle_user_avatar_upload\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:143)
+325 _init_edit_profile_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:81)
+326 _is_saving_organization_image\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:106)
+327 _is_saving_profile\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:111)
+328 _is_saving_user_avatar\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:102)
+329 _populate_created_offers\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:96)
+330 _populate_participated_offers\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:92)
+331 _save_userprofile\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:115)
+332 _is_main\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/__init__.py:164)
+333 OffersAccept\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:330)
+334 OffersArchived\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:531)
+335 OffersCreate\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:62)
+336 OffersDelete\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:308)
+337 OffersEdit\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:181)
+338 OffersJoin\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:402)
+339 OffersList\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:26)
+340 OffersReorder\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:141)
+341 OffersView\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:352)
+342 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:333)
+343 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:534)
+344 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:65)
+345 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:101)
+346 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:311)
+347 dispatch\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:184)
+348 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:195)
+349 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:224)
+350 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:405)
+351 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:444)
+352 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:29)
+353 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:45)
+354 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:144)
+355 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:156)
+356 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:355)
+357 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/offers.py:383)
+358 OrganizationsCreate\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/organizations.py:37)
+359 organization_form\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/organizations.py:87)
+360 organization_view\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/organizations.py:150)
+361 organizations_list\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/organizations.py:24)
+362 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/organizations.py:40)
+363 post\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/organizations.py:50)
+364 PageCreate\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:41)
+365 PageDelete\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:87)
+366 PageDetails\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:35)
+367 PageEdit\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:67)
+368 PageList\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:21)
+369 dispatch\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:58)
+370 form_valid\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:52)
+371 dispatch\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:99)
+372 get\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:92)
+373 dispatch\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:78)
+374 dispatch\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/apps/volontulo/views/pages.py:26)
+375 update\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/fabfile.py:22)
+376 install_with_gulp\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/setup.py:15)
+377 run\n(/home/avijit/Github/automate_the_painful_stuffs/volontulo/setup.py:18)
+#
+46 376 U
+38 10 U
+304 305 U
+300 304 U
+1 10 U
+1 38 U
+59 348 U
+59 372 U
+59 350 U
+59 362 U
+59 352 U
+59 343 U
+59 346 U
+59 344 U
+59 342 U
+59 354 U
+59 356 U
+59 321 U
+57 75 U
+65 81 U
+61 79 U
+62 63 U
+60 76 U
+56 48 U
+47 48 U
+75 77 U
+75 78 U
+91 375 U
+90 91 U
+86 87 U
+88 375 U
+82 78 U
+106 348 U
+106 372 U
+106 350 U
+106 362 U
+106 352 U
+106 343 U
+106 346 U
+106 344 U
+106 342 U
+106 354 U
+106 356 U
+106 321 U
+81 82 U
+76 82 U
+76 75 U
+79 82 U
+79 78 U
+101 101 U
+102 375 U
+80 82 U
+2 38 U
+11 38 U
+14 10 U
+17 10 U
+143 348 U
+143 372 U
+143 350 U
+143 362 U
+143 352 U
+143 343 U
+143 346 U
+143 344 U
+143 342 U
+143 354 U
+143 87 U
+143 356 U
+143 321 U
+16 10 U
+140 348 U
+140 372 U
+140 350 U
+140 362 U
+140 352 U
+140 343 U
+140 346 U
+140 344 U
+140 342 U
+140 354 U
+140 356 U
+140 321 U
+132 78 U
+18 10 U
+19 10 U
+15 1 U
+120 117 U
+125 50 U
+125 59 U
+122 50 U
+122 59 U
+123 50 U
+123 59 U
+121 50 U
+121 59 U
+124 348 U
+124 322 U
+124 372 U
+124 350 U
+124 349 U
+124 352 U
+124 362 U
+124 351 U
+124 363 U
+124 353 U
+124 343 U
+124 346 U
+124 344 U
+124 345 U
+124 357 U
+124 342 U
+124 354 U
+124 355 U
+124 356 U
+124 321 U
+37 34 U
+291 262 U
+292 348 U
+292 362 U
+292 346 U
+292 342 U
+292 356 U
+292 350 U
+292 343 U
+292 321 U
+292 372 U
+292 352 U
+292 344 U
+292 354 U
+295 348 U
+295 372 U
+295 350 U
+295 362 U
+295 352 U
+295 343 U
+295 346 U
+295 344 U
+295 342 U
+295 354 U
+295 356 U
+295 321 U
+294 348 U
+294 362 U
+294 349 U
+294 363 U
+294 346 U
+294 342 U
+294 356 U
+294 357 U
+294 350 U
+294 351 U
+294 343 U
+294 321 U
+294 372 U
+294 322 U
+294 352 U
+294 353 U
+294 344 U
+294 345 U
+294 354 U
+294 355 U
+293 348 U
+293 362 U
+293 349 U
+293 363 U
+293 346 U
+293 342 U
+293 356 U
+293 357 U
+293 350 U
+293 351 U
+293 343 U
+293 321 U
+293 372 U
+293 322 U
+293 352 U
+293 353 U
+293 344 U
+293 345 U
+293 354 U
+293 355 U
+296 348 U
+296 362 U
+296 349 U
+296 363 U
+296 346 U
+296 342 U
+296 356 U
+296 357 U
+296 350 U
+296 351 U
+296 343 U
+296 321 U
+296 372 U
+296 322 U
+296 352 U
+296 353 U
+296 344 U
+296 345 U
+296 354 U
+296 355 U
+297 322 U
+297 349 U
+297 351 U
+297 353 U
+297 363 U
+297 345 U
+297 355 U
+297 357 U
+299 322 U
+299 349 U
+299 351 U
+299 353 U
+299 363 U
+299 345 U
+299 355 U
+299 357 U
+298 322 U
+298 349 U
+298 351 U
+298 353 U
+298 363 U
+298 345 U
+298 355 U
+298 357 U
+261 348 U
+261 372 U
+261 350 U
+261 362 U
+261 352 U
+261 343 U
+261 346 U
+261 344 U
+261 342 U
+261 354 U
+261 356 U
+261 321 U
+225 117 U
+214 117 U
+217 348 U
+217 362 U
+217 346 U
+217 342 U
+217 356 U
+217 350 U
+217 343 U
+217 321 U
+217 372 U
+217 352 U
+217 344 U
+217 354 U
+220 117 U
+31 34 U
+31 10 U
+243 262 U
+245 348 U
+245 372 U
+245 350 U
+245 362 U
+245 352 U
+245 343 U
+245 346 U
+245 344 U
+245 342 U
+245 354 U
+245 356 U
+245 321 U
+246 348 U
+246 362 U
+246 349 U
+246 363 U
+246 346 U
+246 342 U
+246 356 U
+246 357 U
+246 350 U
+246 351 U
+246 343 U
+246 321 U
+246 372 U
+246 322 U
+246 352 U
+246 353 U
+246 344 U
+246 345 U
+246 354 U
+246 355 U
+248 322 U
+248 349 U
+248 351 U
+248 353 U
+248 363 U
+248 345 U
+248 355 U
+248 357 U
+244 322 U
+244 349 U
+244 351 U
+244 353 U
+244 363 U
+244 345 U
+244 355 U
+244 357 U
+249 322 U
+249 349 U
+249 351 U
+249 353 U
+249 363 U
+249 345 U
+249 355 U
+249 357 U
+250 348 U
+250 362 U
+250 349 U
+250 363 U
+250 346 U
+250 342 U
+250 356 U
+250 357 U
+250 350 U
+250 351 U
+250 343 U
+250 321 U
+250 372 U
+250 322 U
+250 352 U
+250 353 U
+250 344 U
+250 345 U
+250 354 U
+250 355 U
+247 322 U
+247 372 U
+247 348 U
+247 350 U
+247 349 U
+247 352 U
+247 362 U
+247 351 U
+247 363 U
+247 353 U
+247 343 U
+247 346 U
+247 344 U
+247 345 U
+247 342 U
+247 354 U
+247 355 U
+247 356 U
+247 357 U
+247 321 U
+234 115 U
+234 114 U
+234 118 U
+234 117 U
+270 118 U
+270 114 U
+34 10 U
+264 118 U
+264 115 U
+264 117 U
+32 34 U
+251 262 U
+252 348 U
+252 372 U
+252 350 U
+252 362 U
+252 352 U
+252 343 U
+252 346 U
+252 344 U
+252 342 U
+252 354 U
+252 356 U
+252 321 U
+256 348 U
+256 372 U
+256 350 U
+256 362 U
+256 352 U
+256 343 U
+256 346 U
+256 344 U
+256 342 U
+256 354 U
+256 356 U
+256 321 U
+255 348 U
+255 362 U
+255 349 U
+255 363 U
+255 346 U
+255 342 U
+255 356 U
+255 357 U
+255 350 U
+255 351 U
+255 343 U
+255 321 U
+255 372 U
+255 322 U
+255 352 U
+255 353 U
+255 344 U
+255 345 U
+255 354 U
+255 355 U
+259 348 U
+259 362 U
+259 349 U
+259 363 U
+259 346 U
+259 342 U
+259 356 U
+259 357 U
+259 350 U
+259 351 U
+259 343 U
+259 321 U
+259 372 U
+259 322 U
+259 352 U
+259 353 U
+259 344 U
+259 345 U
+259 354 U
+259 355 U
+253 348 U
+253 362 U
+253 349 U
+253 363 U
+253 346 U
+253 342 U
+253 356 U
+253 357 U
+253 350 U
+253 351 U
+253 343 U
+253 321 U
+253 372 U
+253 322 U
+253 352 U
+253 353 U
+253 344 U
+253 345 U
+253 354 U
+253 355 U
+257 348 U
+257 362 U
+257 349 U
+257 363 U
+257 346 U
+257 342 U
+257 356 U
+257 357 U
+257 350 U
+257 351 U
+257 343 U
+257 321 U
+257 372 U
+257 322 U
+257 352 U
+257 353 U
+257 344 U
+257 345 U
+257 354 U
+257 355 U
+254 348 U
+254 362 U
+254 349 U
+254 363 U
+254 346 U
+254 342 U
+254 356 U
+254 357 U
+254 350 U
+254 351 U
+254 343 U
+254 321 U
+254 372 U
+254 322 U
+254 352 U
+254 353 U
+254 344 U
+254 345 U
+254 354 U
+254 355 U
+258 322 U
+258 349 U
+258 353 U
+258 351 U
+258 363 U
+258 345 U
+258 355 U
+258 357 U
+36 10 U
+281 118 U
+281 115 U
+281 117 U
+20 10 U
+152 82 U
+28 20 U
+203 151 U
+206 204 U
+209 204 U
+208 204 U
+24 10 U
+175 82 U
+179 348 U
+179 362 U
+179 346 U
+179 342 U
+179 356 U
+179 350 U
+179 343 U
+179 321 U
+179 372 U
+179 352 U
+179 344 U
+179 354 U
+180 348 U
+180 362 U
+180 346 U
+180 342 U
+180 356 U
+180 350 U
+180 343 U
+180 321 U
+180 372 U
+180 352 U
+180 344 U
+180 354 U
+181 348 U
+181 372 U
+181 350 U
+181 362 U
+181 352 U
+181 343 U
+181 346 U
+181 344 U
+181 342 U
+181 354 U
+181 356 U
+181 321 U
+26 10 U
+195 82 U
+23 20 U
+167 151 U
+27 10 U
+201 82 U
+25 10 U
+184 82 U
+22 10 U
+161 82 U
+162 348 U
+162 372 U
+162 350 U
+162 362 U
+162 352 U
+162 343 U
+162 346 U
+162 344 U
+162 342 U
+162 354 U
+162 356 U
+162 321 U
+166 348 U
+166 362 U
+166 346 U
+166 342 U
+166 356 U
+166 350 U
+166 343 U
+166 321 U
+166 372 U
+166 352 U
+166 344 U
+166 354 U
+21 20 U
+153 151 U
+69 70 U
+41 2 U
+41 10 U
+41 1 U
+317 348 U
+317 372 U
+317 350 U
+317 362 U
+317 352 U
+317 343 U
+317 346 U
+317 344 U
+317 342 U
+317 354 U
+317 356 U
+317 321 U
+317 54 U
+321 54 U
+322 372 U
+322 348 U
+322 350 U
+322 362 U
+322 352 U
+322 343 U
+322 346 U
+322 59 U
+322 344 U
+322 66 U
+322 342 U
+322 82 U
+322 354 U
+322 356 U
+322 321 U
+322 54 U
+316 348 U
+316 372 U
+316 350 U
+316 362 U
+316 352 U
+316 343 U
+316 346 U
+316 344 U
+316 342 U
+316 354 U
+316 356 U
+316 321 U
+39 2 U
+39 10 U
+39 1 U
+307 96 U
+307 308 U
+307 97 U
+325 50 U
+328 372 U
+328 348 U
+328 350 U
+328 362 U
+328 352 U
+328 343 U
+328 346 U
+328 344 U
+328 342 U
+328 354 U
+328 356 U
+328 321 U
+326 372 U
+326 348 U
+326 350 U
+326 362 U
+326 352 U
+326 343 U
+326 346 U
+326 344 U
+326 342 U
+326 354 U
+326 356 U
+326 321 U
+327 342 U
+327 348 U
+327 372 U
+327 350 U
+327 354 U
+327 343 U
+327 346 U
+327 344 U
+327 356 U
+327 321 U
+327 362 U
+327 352 U
+331 50 U
+331 372 U
+331 348 U
+331 350 U
+331 362 U
+331 352 U
+331 343 U
+331 59 U
+331 344 U
+331 346 U
+331 342 U
+331 354 U
+331 356 U
+331 321 U
+324 372 U
+324 348 U
+324 350 U
+324 362 U
+324 352 U
+324 107 U
+324 343 U
+324 346 U
+324 59 U
+324 55 U
+324 344 U
+324 342 U
+324 354 U
+324 356 U
+324 321 U
+323 348 U
+323 362 U
+323 346 U
+323 342 U
+323 356 U
+323 350 U
+323 343 U
+323 59 U
+323 53 U
+323 62 U
+323 332 U
+323 102 U
+323 321 U
+323 372 U
+323 352 U
+323 344 U
+323 354 U
+309 348 U
+309 372 U
+309 350 U
+309 331 U
+309 324 U
+309 323 U
+309 352 U
+309 362 U
+309 343 U
+309 346 U
+309 344 U
+309 55 U
+309 325 U
+309 342 U
+309 330 U
+309 354 U
+309 53 U
+309 329 U
+309 321 U
+309 328 U
+309 62 U
+309 326 U
+309 356 U
+309 100 U
+309 327 U
+306 372 U
+306 348 U
+306 350 U
+306 47 U
+306 362 U
+306 352 U
+306 343 U
+306 346 U
+306 344 U
+306 59 U
+306 66 U
+306 342 U
+306 354 U
+306 321 U
+306 356 U
+44 10 U
+44 38 U
+368 302 U
+368 80 U
+366 80 U
+364 302 U
+364 80 U
+367 302 U
+367 80 U
+365 302 U
+365 80 U
+372 351 U
+372 363 U
+372 353 U
+372 322 U
+372 355 U
+372 349 U
+372 357 U
+372 345 U
+42 2 U
+42 10 U
+42 38 U
+42 1 U
+42 39 U
+352 94 U
+352 308 U
+353 348 U
+353 372 U
+353 350 U
+353 362 U
+353 352 U
+353 343 U
+353 346 U
+353 344 U
+353 342 U
+353 354 U
+353 75 U
+353 356 U
+353 321 U
+344 49 U
+344 58 U
+344 75 U
+345 49 U
+345 59 U
+345 86 U
+345 58 U
+345 66 U
+345 75 U
+345 303 U
+354 97 U
+355 348 U
+355 372 U
+355 350 U
+355 362 U
+355 352 U
+355 343 U
+355 375 U
+355 346 U
+355 344 U
+355 342 U
+355 354 U
+355 356 U
+355 321 U
+337 75 U
+337 300 U
+347 113 U
+347 106 U
+348 348 U
+348 372 U
+348 350 U
+348 49 U
+348 362 U
+348 352 U
+348 343 U
+348 346 U
+348 344 U
+348 58 U
+348 342 U
+348 354 U
+348 52 U
+348 356 U
+348 321 U
+349 348 U
+349 362 U
+349 346 U
+349 342 U
+349 356 U
+349 350 U
+349 49 U
+349 343 U
+349 59 U
+349 90 U
+349 58 U
+349 92 U
+349 88 U
+349 52 U
+349 89 U
+349 85 U
+349 303 U
+349 321 U
+349 372 U
+349 352 U
+349 344 U
+349 354 U
+346 75 U
+342 75 U
+341 75 U
+341 300 U
+356 348 U
+356 372 U
+356 350 U
+356 362 U
+356 352 U
+356 343 U
+356 346 U
+356 344 U
+356 342 U
+356 354 U
+356 75 U
+356 356 U
+356 321 U
+357 75 U
+338 75 U
+338 300 U
+350 51 U
+350 348 U
+350 372 U
+350 350 U
+350 362 U
+350 352 U
+350 343 U
+350 346 U
+350 344 U
+350 342 U
+350 82 U
+350 354 U
+350 356 U
+350 321 U
+351 348 U
+351 362 U
+351 346 U
+351 342 U
+351 356 U
+351 350 U
+351 343 U
+351 59 U
+351 66 U
+351 82 U
+351 51 U
+351 321 U
+351 372 U
+351 352 U
+351 344 U
+351 354 U
+343 95 U
+43 2 U
+43 10 U
+43 38 U
+43 78 U
+43 1 U
+43 300 U
+362 78 U
+363 348 U
+363 372 U
+363 350 U
+363 362 U
+363 352 U
+363 343 U
+363 346 U
+363 344 U
+363 342 U
+363 78 U
+363 354 U
+363 356 U
+363 321 U
+359 348 U
+359 372 U
+359 350 U
+359 362 U
+359 352 U
+359 343 U
+359 346 U
+359 344 U
+359 342 U
+359 354 U
+359 356 U
+359 321 U
+360 348 U
+360 372 U
+360 350 U
+360 56 U
+360 362 U
+360 352 U
+360 343 U
+360 346 U
+360 59 U
+360 344 U
+360 66 U
+360 342 U
+360 78 U
+360 354 U
+360 321 U
+360 356 U

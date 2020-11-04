@@ -1,0 +1,754 @@
+1 049fed905da7_
+2 12e9a4f6ed73_
+3 2335c80a6bc3_
+4 25fd6c7bcb4a_
+5 27ae2f102682_
+6 3b281286c7bd_
+7 3b7eee912b41_
+8 3f6994568962_
+9 423155f8fc15_
+10 49d77a93118e_
+11 546b04c886f0_
+12 5aeb5811408e_
+13 73e56bad5ec5_
+14 77aa22ad72e2_
+15 9400a032eb1a_
+16 9c28df23f77e_
+17 a4accda8a8c7_
+18 audit
+19 c162ac88012a_
+20 c5696b48442d_
+21 c9a0b4e653cf_
+22 cd79ed46d9c2_
+23 certwatcher
+24 config
+25 dc8c25cf5b98_
+26 env
+27 f1393877871d_
+28 fc099bd15cbe_
+29 fetchmail
+30 ff0417f4318f_
+31 mailu
+32 mailu.configuration
+33 mailu.debug
+34 mailu.dkim
+35 mailu.internal.nginx
+36 mailu.internal.views.auth
+37 mailu.internal.views.dovecot
+38 mailu.internal.views.fetch
+39 mailu.internal.views.postfix
+40 mailu.limiter
+41 mailu.manage
+42 mailu.models
+43 mailu.ui.access
+44 mailu.ui.forms
+45 mailu.ui.views.admins
+46 mailu.ui.views.aliases
+47 mailu.ui.views.alternatives
+48 mailu.ui.views.base
+49 mailu.ui.views.domains
+50 mailu.ui.views.fetches
+51 mailu.ui.views.managers
+52 mailu.ui.views.relays
+53 mailu.ui.views.tokens
+54 mailu.ui.views.users
+55 mailu.utils
+56 server
+57 start
+58 test
+59 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/049fed905da7_.py:22)
+60 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/049fed905da7_.py:17)
+61 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/12e9a4f6ed73_.py:43)
+62 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/12e9a4f6ed73_.py:26)
+63 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/2335c80a6bc3_.py:21)
+64 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/2335c80a6bc3_.py:17)
+65 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/25fd6c7bcb4a_.py:26)
+66 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/25fd6c7bcb4a_.py:21)
+67 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/27ae2f102682_.py:40)
+68 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/27ae2f102682_.py:25)
+69 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/3b281286c7bd_.py:22)
+70 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/3b281286c7bd_.py:16)
+71 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/3b7eee912b41_.py:24)
+72 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/3b7eee912b41_.py:16)
+73 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/3f6994568962_.py:28)
+74 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/3f6994568962_.py:24)
+75 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/423155f8fc15_.py:22)
+76 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/423155f8fc15_.py:17)
+77 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/49d77a93118e_.py:22)
+78 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/49d77a93118e_.py:17)
+79 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/546b04c886f0_.py:78)
+80 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/546b04c886f0_.py:17)
+81 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/5aeb5811408e_.py:141)
+82 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/5aeb5811408e_.py:41)
+83 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/73e56bad5ec5_.py:22)
+84 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/73e56bad5ec5_.py:17)
+85 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/77aa22ad72e2_.py:22)
+86 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/77aa22ad72e2_.py:17)
+87 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/9400a032eb1a_.py:31)
+88 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/9400a032eb1a_.py:17)
+89 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/9c28df23f77e_.py:24)
+90 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/9c28df23f77e_.py:17)
+91 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/a4accda8a8c7_.py:24)
+92 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/a4accda8a8c7_.py:17)
+93 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/c162ac88012a_.py:28)
+94 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/c162ac88012a_.py:17)
+95 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/c5696b48442d_.py:21)
+96 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/c5696b48442d_.py:17)
+97 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/c9a0b4e653cf_.py:29)
+98 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/c9a0b4e653cf_.py:17)
+99 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/cd79ed46d9c2_.py:24)
+100 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/cd79ed46d9c2_.py:16)
+101 ChangeHandler\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/nginx/certwatcher.py:15)
+102 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/nginx/certwatcher.py:18)
+103 on_any_event\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/nginx/certwatcher.py:37)
+104 reexec_config\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/nginx/certwatcher.py:31)
+105 reload_nginx\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/nginx/certwatcher.py:24)
+106 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/dc8c25cf5b98_.py:22)
+107 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/dc8c25cf5b98_.py:17)
+108 run_migrations_offline\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/env.py:35)
+109 run_migrations_online\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/env.py:54)
+110 process_revision_directives\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/env.py:65)
+111 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/f1393877871d_.py:24)
+112 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/f1393877871d_.py:17)
+113 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/fc099bd15cbe_.py:46)
+114 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/fc099bd15cbe_.py:25)
+115 escape_rc_string\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/optional/fetchmail/fetchmail.py:35)
+116 extract_host_port\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/optional/fetchmail/fetchmail.py:30)
+117 fetchmail\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/optional/fetchmail/fetchmail.py:39)
+118 run\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/optional/fetchmail/fetchmail.py:48)
+119 downgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/ff0417f4318f_.py:84)
+120 upgrade\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/migrations/versions/ff0417f4318f_.py:17)
+121 create_app\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/__init__.py:51)
+122 create_app_from_config\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/__init__.py:7)
+123 ConfigManager\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:74)
+124 __coerce_value\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:103)
+125 __contains__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:146)
+126 __getitem__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:140)
+127 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:84)
+128 __setitem__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:143)
+129 get\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:134)
+130 get_host_address\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:87)
+131 init_app\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:110)
+132 keys\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:137)
+133 resolve_hosts\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:94)
+134 setdefault\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/configuration.py:129)
+135 inject_defaults\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/__init__.py:35)
+136 Profiler\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/debug.py:11)
+137 init_app\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/debug.py:12)
+138 gen_key\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/dkim.py:8)
+139 strip_key\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/dkim.py:16)
+140 extract_host_port\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/nginx.py:86)
+141 get_server\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/nginx.py:90)
+142 get_status\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/nginx.py:80)
+143 handle_authentication\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/nginx.py:23)
+144 resolve_hostname\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/nginx.py:108)
+145 admin_authentication\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/auth.py:36)
+146 basic_authentication\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/auth.py:47)
+147 nginx_authentication\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/auth.py:11)
+148 dovecot_passdb_dict\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/dovecot.py:9)
+149 dovecot_quota\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/dovecot.py:33)
+150 dovecot_sieve_data\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/dovecot.py:47)
+151 dovecot_sieve_name\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/dovecot.py:42)
+152 dovecot_userdb_dict\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/dovecot.py:25)
+153 fetch_done\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/fetch.py:25)
+154 fetch_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/fetch.py:8)
+155 is_void_address\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:99)
+156 postfix_alias_map\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:25)
+157 postfix_mailbox_domain\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:9)
+158 postfix_mailbox_map\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:19)
+159 postfix_recipient_map\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:47)
+160 postfix_sender_access\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:88)
+161 postfix_sender_login\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:79)
+162 postfix_sender_map\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:62)
+163 postfix_transport\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/internal/views/postfix.py:34)
+164 LimitWraperFactory\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:25)
+165 LimitWrapper\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:6)
+166 get_limiter\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:33)
+167 init_app\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:29)
+168 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:10)
+169 get_window_stats\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:21)
+170 hit\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:18)
+171 test\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/limiter.py:15)
+172 admin\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:41)
+173 advertise\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:22)
+174 alias\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:336)
+175 alias_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:325)
+176 config_update\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:172)
+177 domain\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:130)
+178 mailu\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:16)
+179 password\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:110)
+180 setlimits\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:360)
+181 setmanager\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:377)
+182 user\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:85)
+183 user_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:314)
+184 user_import\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/manage.py:147)
+185 Alias\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:429)
+186 Alternative\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:188)
+187 Base\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:91)
+188 CommaSeparatedList\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:60)
+189 Config\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:116)
+190 Domain\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:124)
+191 Email\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:218)
+192 Fetch\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:505)
+193 IdnaDomain\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:23)
+194 IdnaEmail\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:36)
+195 JSONEncoded\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:78)
+196 Relay\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:204)
+197 Token\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:482)
+198 User\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:304)
+199 resolve\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:439)
+200 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:200)
+201 process_bind_param\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:66)
+202 process_result_value\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:74)
+203 __eq__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:181)
+204 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:178)
+205 check_mx\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:168)
+206 dkim_key\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:145)
+207 dkim_publickey\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:152)
+208 generate_dkim_key\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:158)
+209 has_email\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:161)
+210 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:300)
+211 domain_name\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:224)
+212 email\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:232)
+213 resolve_destination\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:268)
+214 resolve_domain\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:260)
+215 sendmail\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:242)
+216 process_bind_param\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:29)
+217 process_result_value\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:32)
+218 process_bind_param\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:42)
+219 process_result_value\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:52)
+220 process_bind_param\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:84)
+221 process_result_value\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:87)
+222 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:214)
+223 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:501)
+224 check_password\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:495)
+225 set_password\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:498)
+226 check_password\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:378)
+227 destination\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:346)
+228 get\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:419)
+229 get_id\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:343)
+230 get_managed_domains\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:400)
+231 get_managed_emails\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:406)
+232 get_password_context\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:372)
+233 login\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:423)
+234 reply_active\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:356)
+235 send_welcome\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:414)
+236 set_password\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/models.py:388)
+237 authenticated\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:89)
+238 confirmation_required\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:97)
+239 domain_admin\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:49)
+240 global_admin\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:42)
+241 owner\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:65)
+242 permissions_wrapper\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:9)
+243 inner\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:100)
+244 wrapper\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:101)
+245 callback\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:12)
+246 decorator\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:33)
+247 inner\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:25)
+248 wrapper\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:34)
+249 wrapper\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/access.py:26)
+250 AdminForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:154)
+251 AliasForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:145)
+252 AlternativeForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:73)
+253 AnnouncementForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:177)
+254 ConfirmationForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:44)
+255 DestinationField\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:11)
+256 DomainForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:54)
+257 DomainSignupForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:64)
+258 FetchForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:164)
+259 LoginForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:48)
+260 ManagerForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:159)
+261 MultipleEmailAddressesVerify\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:35)
+262 RelayForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:78)
+263 TokenForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:133)
+264 UserForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:85)
+265 UserPasswordForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:117)
+266 UserReplyForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:123)
+267 UserSettingsForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:107)
+268 UserSignupForm\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:98)
+269 UserSignupFormCaptcha\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:104)
+270 iter_choices\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:18)
+271 pre_validate\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:30)
+272 __call__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:39)
+273 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/forms.py:36)
+274 admin_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/admins.py:15)
+275 admin_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/admins.py:36)
+276 admin_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/admins.py:8)
+277 alias_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/aliases.py:15)
+278 alias_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/aliases.py:56)
+279 alias_edit\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/aliases.py:39)
+280 alias_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/aliases.py:8)
+281 alternative_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/alternatives.py:15)
+282 alternative_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/alternatives.py:38)
+283 alternative_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/alternatives.py:8)
+284 announcement\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/base.py:36)
+285 client\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/base.py:51)
+286 index\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/base.py:8)
+287 login\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/base.py:14)
+288 logout\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/base.py:29)
+289 domain_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/domains.py:17)
+290 domain_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/domains.py:53)
+291 domain_details\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/domains.py:64)
+292 domain_edit\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/domains.py:37)
+293 domain_genkeys\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/domains.py:71)
+294 domain_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/domains.py:11)
+295 domain_signup\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/domains.py:81)
+296 fetch_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/fetches.py:18)
+297 fetch_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/fetches.py:54)
+298 fetch_edit\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/fetches.py:37)
+299 fetch_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/fetches.py:9)
+300 manager_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/managers.py:15)
+301 manager_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/managers.py:41)
+302 manager_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/managers.py:8)
+303 relay_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/relays.py:15)
+304 relay_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/relays.py:51)
+305 relay_edit\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/relays.py:35)
+306 relay_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/relays.py:8)
+307 token_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/tokens.py:20)
+308 token_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/tokens.py:43)
+309 token_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/tokens.py:11)
+310 user_create\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:17)
+311 user_delete\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:74)
+312 user_edit\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:47)
+313 user_forward\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:131)
+314 user_list\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:10)
+315 user_password\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:111)
+316 user_reply\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:148)
+317 user_settings\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:87)
+318 user_signup\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/ui/views/users.py:165)
+319 PrefixMiddleware\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/utils.py:35)
+320 get_locale\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/utils.py:28)
+321 handle_needs_login\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/utils.py:16)
+322 __call__\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/utils.py:36)
+323 init_app\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/admin/mailu/utils.py:42)
+324 build_app\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:49)
+325 random_ipv6_subnet\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:38)
+326 render_flavor\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:22)
+327 secret\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:29)
+328 app_context\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:54)
+329 bp_context\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:73)
+330 file\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:111)
+331 setup\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:103)
+332 submit\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:91)
+333 submit_flavor\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:83)
+334 wizard\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/setup/server.py:78)
+335 is_valid_postconf_line\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/postfix/start.py:30)
+336 setup\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/optional/postgresql/start.py:11)
+337 start_podop\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/core/postfix/start.py:15)
+338 health_checks\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/tests/compose/test.py:30)
+339 hooks\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/tests/compose/test.py:73)
+340 print_logs\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/tests/compose/test.py:64)
+341 sleep\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/tests/compose/test.py:26)
+342 stop\n(/home/avijit/Github/automate_the_painful_stuffs/Mailu/tests/compose/test.py:19)
+#
+57 57 U
+57 228 U
+57 129 U
+57 335 U
+57 336 U
+24 228 U
+24 129 U
+24 286 U
+23 101 U
+23 102 U
+103 104 U
+103 105 U
+18 228 U
+18 129 U
+18 31 U
+41 31 U
+172 228 U
+172 129 U
+172 190 U
+172 198 U
+172 236 U
+182 228 U
+182 129 U
+182 190 U
+182 198 U
+182 236 U
+179 228 U
+179 129 U
+179 236 U
+177 190 U
+177 228 U
+177 129 U
+184 228 U
+184 129 U
+184 190 U
+184 198 U
+184 236 U
+176 228 U
+176 129 U
+176 185 U
+176 212 U
+176 190 U
+176 198 U
+176 236 U
+183 228 U
+183 129 U
+175 228 U
+175 129 U
+174 228 U
+174 129 U
+174 185 U
+174 190 U
+180 228 U
+180 129 U
+181 228 U
+181 129 U
+55 31 U
+55 164 U
+55 319 U
+31 31 U
+122 323 U
+122 167 U
+122 228 U
+122 129 U
+122 31 U
+122 178 U
+121 122 U
+121 123 U
+121 127 U
+42 193 U
+42 194 U
+42 31 U
+189 187 U
+189 195 U
+190 193 U
+190 187 U
+207 206 U
+208 138 U
+186 193 U
+186 190 U
+186 187 U
+196 193 U
+196 187 U
+211 193 U
+212 194 U
+214 211 U
+214 228 U
+214 129 U
+213 228 U
+213 129 U
+213 199 U
+210 212 U
+198 191 U
+198 188 U
+198 190 U
+198 187 U
+229 212 U
+227 212 U
+226 236 U
+226 232 U
+231 230 U
+235 215 U
+228 228 U
+228 129 U
+233 226 U
+233 228 U
+233 129 U
+185 190 U
+185 188 U
+185 191 U
+185 187 U
+197 198 U
+197 212 U
+197 187 U
+192 212 U
+192 198 U
+192 187 U
+166 165 U
+166 168 U
+130 228 U
+130 129 U
+133 130 U
+131 133 U
+131 228 U
+131 124 U
+131 129 U
+129 228 U
+129 129 U
+132 132 U
+126 228 U
+126 129 U
+33 136 U
+35 31 U
+143 228 U
+143 129 U
+143 142 U
+143 226 U
+143 141 U
+141 140 U
+141 144 U
+37 31 U
+148 228 U
+148 129 U
+152 228 U
+152 129 U
+149 228 U
+149 129 U
+150 228 U
+150 129 U
+38 31 U
+154 179 U
+153 228 U
+153 129 U
+36 31 U
+147 166 U
+147 143 U
+145 240 U
+146 228 U
+146 129 U
+146 212 U
+146 226 U
+39 31 U
+157 228 U
+157 129 U
+158 228 U
+158 129 U
+156 214 U
+156 213 U
+163 228 U
+163 129 U
+163 214 U
+159 24 U
+162 228 U
+162 129 U
+162 214 U
+162 24 U
+161 214 U
+161 213 U
+160 214 U
+160 228 U
+160 155 U
+160 129 U
+43 31 U
+43 242 U
+242 246 U
+247 249 U
+249 245 U
+246 247 U
+246 243 U
+246 248 U
+248 245 U
+240 240 U
+239 190 U
+239 228 U
+239 129 U
+239 177 U
+239 230 U
+241 228 U
+241 129 U
+241 182 U
+241 212 U
+241 198 U
+241 177 U
+241 230 U
+243 244 U
+244 254 U
+238 243 U
+270 231 U
+269 268 U
+267 261 U
+267 273 U
+251 255 U
+52 240 U
+52 31 U
+52 238 U
+303 196 U
+303 262 U
+303 228 U
+303 129 U
+305 262 U
+305 228 U
+305 129 U
+304 228 U
+304 129 U
+46 190 U
+46 238 U
+46 239 U
+46 31 U
+46 185 U
+280 228 U
+280 129 U
+277 228 U
+277 129 U
+277 185 U
+277 251 U
+279 228 U
+279 129 U
+279 251 U
+278 228 U
+278 129 U
+47 240 U
+47 31 U
+47 238 U
+283 228 U
+283 129 U
+281 252 U
+281 186 U
+281 228 U
+281 129 U
+282 228 U
+282 129 U
+50 198 U
+50 192 U
+50 241 U
+50 31 U
+50 238 U
+299 228 U
+299 129 U
+299 212 U
+296 228 U
+296 129 U
+296 192 U
+296 258 U
+298 228 U
+298 129 U
+298 212 U
+298 258 U
+297 228 U
+297 129 U
+54 190 U
+54 198 U
+54 241 U
+54 239 U
+54 31 U
+54 238 U
+314 228 U
+314 129 U
+310 198 U
+310 236 U
+310 235 U
+310 228 U
+310 129 U
+310 264 U
+312 228 U
+312 129 U
+312 264 U
+311 228 U
+311 129 U
+317 228 U
+317 129 U
+317 267 U
+317 212 U
+315 228 U
+315 129 U
+315 265 U
+315 212 U
+313 228 U
+313 129 U
+313 212 U
+316 228 U
+316 129 U
+316 212 U
+316 266 U
+318 235 U
+318 269 U
+318 268 U
+318 198 U
+318 236 U
+53 197 U
+53 198 U
+53 241 U
+53 31 U
+53 238 U
+309 228 U
+309 129 U
+309 212 U
+307 228 U
+307 129 U
+307 197 U
+307 225 U
+307 263 U
+308 228 U
+308 129 U
+49 190 U
+49 240 U
+49 31 U
+49 239 U
+49 237 U
+49 238 U
+289 256 U
+289 228 U
+289 129 U
+289 190 U
+292 256 U
+292 228 U
+292 129 U
+290 228 U
+290 129 U
+291 228 U
+291 129 U
+293 228 U
+293 129 U
+295 190 U
+295 198 U
+295 236 U
+295 257 U
+295 228 U
+295 129 U
+295 205 U
+295 212 U
+45 240 U
+45 31 U
+45 238 U
+274 231 U
+274 228 U
+274 129 U
+274 212 U
+274 250 U
+275 228 U
+275 129 U
+275 174 U
+51 190 U
+51 239 U
+51 31 U
+51 238 U
+302 228 U
+302 129 U
+300 231 U
+300 228 U
+300 129 U
+300 212 U
+300 260 U
+301 228 U
+301 129 U
+48 240 U
+48 31 U
+48 237 U
+287 228 U
+287 129 U
+287 233 U
+287 259 U
+284 253 U
+284 215 U
+26 109 U
+26 228 U
+26 129 U
+26 31 U
+26 108 U
+109 110 U
+56 324 U
+333 325 U
+331 326 U
+330 326 U
+336 228 U
+336 129 U
+29 118 U
+29 228 U
+29 129 U
+118 228 U
+118 129 U
+118 116 U
+118 115 U
+118 117 U
+58 339 U
+58 342 U
+58 341 U
+58 338 U
+342 340 U
+338 132 U
+338 342 U
+339 342 U

@@ -1,0 +1,1692 @@
+1 jupyter_client.adapter
+2 jupyter_client.asynchronous.channels
+3 jupyter_client.asynchronous.client
+4 jupyter_client.blocking.channels
+5 jupyter_client.blocking.client
+6 jupyter_client.channels
+7 jupyter_client.channelsabc
+8 jupyter_client.client
+9 jupyter_client.clientabc
+10 jupyter_client.connect
+11 jupyter_client.consoleapp
+12 jupyter_client.ioloop.manager
+13 jupyter_client.ioloop.restarter
+14 jupyter_client.jsonutil
+15 jupyter_client.kernelapp
+16 jupyter_client.kernelspec
+17 jupyter_client.kernelspecapp
+18 jupyter_client.launcher
+19 jupyter_client.localinterfaces
+20 jupyter_client.manager
+21 jupyter_client.managerabc
+22 jupyter_client.multikernelmanager
+23 jupyter_client.restarter
+24 jupyter_client.runapp
+25 jupyter_client.session
+26 jupyter_client.ssh.forward
+27 jupyter_client.ssh.tunnel
+28 jupyter_client.tests.signalkernel
+29 jupyter_client.tests.test_adapter
+30 jupyter_client.tests.test_client
+31 jupyter_client.tests.test_connect
+32 jupyter_client.tests.test_jsonutil
+33 jupyter_client.tests.test_kernelapp
+34 jupyter_client.tests.test_kernelmanager
+35 jupyter_client.tests.test_kernelspec
+36 jupyter_client.tests.test_localinterfaces
+37 jupyter_client.tests.test_manager
+38 jupyter_client.tests.test_multikernelmanager
+39 jupyter_client.tests.test_public_api
+40 jupyter_client.tests.test_session
+41 jupyter_client.tests.test_ssh
+42 jupyter_client.tests.utils
+43 jupyter_client.threaded
+44 jupyter_client.win_interrupt
+45 setup
+46 Adapter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:55)
+47 V4toV5\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:223)
+48 V5toV4\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:111)
+49 _version_str_to_list\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:98)
+50 adapt\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:368)
+51 code_to_line\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:11)
+52 extract_oname_v4\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:32)
+53 __call__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:83)
+54 handle_reply_status_error\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:76)
+55 update_header\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:63)
+56 update_metadata\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:66)
+57 update_msg_type\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:69)
+58 complete_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:292)
+59 complete_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:284)
+60 display_data\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:348)
+61 execute_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:268)
+62 execute_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:260)
+63 input_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:362)
+64 inspect_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:319)
+65 inspect_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:309)
+66 kernel_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:238)
+67 stream\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:343)
+68 update_header\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:230)
+69 complete_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:172)
+70 complete_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:159)
+71 display_data\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:204)
+72 execute_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:153)
+73 execute_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:148)
+74 input_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:218)
+75 kernel_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:131)
+76 object_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:192)
+77 object_info_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:181)
+78 stream\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:199)
+79 update_header\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/adapter.py:124)
+80 ZMQSocketChannel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:9)
+81 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:17)
+82 _recv\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:34)
+83 close\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:64)
+84 get_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:39)
+85 get_msgs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:50)
+86 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:73)
+87 msg_ready\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:60)
+88 send\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:76)
+89 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/channels.py:81)
+90 AsyncKernelClient\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:59)
+91 reqrep\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:21)
+92 _context_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:68)
+93 _output_hook_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:214)
+94 _output_hook_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:226)
+95 _recv_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:160)
+96 _stdin_hook_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:192)
+97 execute_interactive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:255)
+98 get_control_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:87)
+99 get_iopub_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:79)
+100 get_shell_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:75)
+101 get_stdin_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:83)
+102 hb_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:91)
+103 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:237)
+104 wait_for_ready\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:103)
+105 wrapped\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/asynchronous/client.py:22)
+106 ZMQSocketChannel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:12)
+107 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:20)
+108 _recv\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:37)
+109 close\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:70)
+110 get_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:42)
+111 get_msgs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:56)
+112 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:79)
+113 msg_ready\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:66)
+114 send\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:82)
+115 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/channels.py:87)
+116 BlockingKernelClient\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:61)
+117 reqrep\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:23)
+118 _output_hook_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:179)
+119 _output_hook_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:191)
+120 _recv_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:125)
+121 _stdin_hook_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:157)
+122 execute_interactive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:202)
+123 wait_for_ready\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:68)
+124 wrapped\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/blocking/client.py:24)
+125 HBChannel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:30)
+126 InvalidPortNumber\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:27)
+127 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:49)
+128 _create_socket\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:90)
+129 _notice_exit\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:82)
+130 _poll\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:101)
+131 call_handlers\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:202)
+132 close\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:194)
+133 is_beating\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:180)
+134 pause\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:172)
+135 run\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:134)
+136 stop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:187)
+137 unpause\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channels.py:176)
+138 ChannelABC\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:9)
+139 HBChannelABC\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:25)
+140 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:20)
+141 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:12)
+142 stop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:16)
+143 is_beating\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:45)
+144 pause\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:37)
+145 time_to_dead\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:33)
+146 unpause\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/channelsabc.py:41)
+147 KernelClient\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:33)
+148 validate_string_dict\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:22)
+149 _context_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:52)
+150 _handle_kernel_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:398)
+151 channels_running\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:136)
+152 comm_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:383)
+153 complete\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:279)
+154 control_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:192)
+155 execute\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:222)
+156 get_control_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:88)
+157 get_iopub_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:80)
+158 get_shell_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:76)
+159 get_stdin_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:84)
+160 hb_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:181)
+161 history\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:331)
+162 input\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:414)
+163 inspect\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:302)
+164 iopub_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:157)
+165 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:204)
+166 is_complete\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:408)
+167 kernel_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:372)
+168 shell_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:145)
+169 shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:424)
+170 start_channels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:96)
+171 stdin_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:169)
+172 stop_channels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/client.py:120)
+173 KernelClientABC\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:21)
+174 channels_running\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:65)
+175 control_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:85)
+176 control_channel_class\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:49)
+177 hb_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:81)
+178 hb_channel_class\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:41)
+179 iopub_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:73)
+180 iopub_channel_class\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:37)
+181 kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:29)
+182 shell_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:69)
+183 shell_channel_class\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:33)
+184 start_channels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:57)
+185 stdin_channel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:77)
+186 stdin_channel_class\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:45)
+187 stop_channels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/clientabc.py:61)
+188 ConnectionFileMixin\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:291)
+189 find_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:170)
+190 tunnel_to_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:227)
+191 write_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:35)
+192 _create_connected_socket\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:540)
+193 _data_dir_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:295)
+194 _ip_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:327)
+195 _ip_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:318)
+196 _make_url\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:529)
+197 _record_random_port_names\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:432)
+198 _session_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:354)
+199 blocking_client\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:400)
+200 cleanup_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:408)
+201 cleanup_ipc_files\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:421)
+202 cleanup_random_ports\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:448)
+203 connect_control\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:571)
+204 connect_hb\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:567)
+205 connect_iopub\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:553)
+206 connect_shell\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:559)
+207 connect_stdin\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:563)
+208 get_connection_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:362)
+209 load_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:483)
+210 load_connection_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:499)
+211 ports\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:348)
+212 write_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/connect.py:463)
+213 IPythonConsoleApp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:344)
+214 JupyterConsoleApp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:91)
+215 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:345)
+216 _connection_file_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:130)
+217 _new_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:250)
+218 build_kernel_argv\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:145)
+219 init_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:152)
+220 init_kernel_client\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:311)
+221 init_kernel_manager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:263)
+222 init_ssh\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:203)
+223 initialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/consoleapp.py:332)
+224 AsyncIOLoopKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:65)
+225 IOLoopKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:25)
+226 as_zmqstream\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:18)
+227 _loop_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:69)
+228 start_restarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:84)
+229 stop_restarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:93)
+230 _loop_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:29)
+231 start_restarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:44)
+232 stop_restarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:53)
+233 wrapped\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/manager.py:19)
+234 AsyncIOLoopKernelRestarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/restarter.py:48)
+235 IOLoopKernelRestarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/restarter.py:20)
+236 poll\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/restarter.py:50)
+237 _loop_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/restarter.py:25)
+238 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/restarter.py:33)
+239 stop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ioloop/restarter.py:41)
+240 _ensure_tzinfo\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/jsonutil.py:31)
+241 date_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/jsonutil.py:84)
+242 extract_dates\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/jsonutil.py:59)
+243 parse_date\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/jsonutil.py:44)
+244 squash_dates\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/jsonutil.py:72)
+245 KernelApp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:13)
+246 _record_started\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:62)
+247 initialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:31)
+248 log_connection_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:57)
+249 setup_signals\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:42)
+250 shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:52)
+251 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:72)
+252 shutdown_handler\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelapp.py:47)
+253 KernelSpec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:27)
+254 KernelSpecManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:114)
+255 NoSuchKernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:106)
+256 _is_kernel_dir\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:80)
+257 _is_valid_kernel_name\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:70)
+258 _list_kernels_in\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:85)
+259 find_kernel_specs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:357)
+260 get_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:361)
+261 install_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:368)
+262 install_native_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:375)
+263 from_resource_dir\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:38)
+264 to_dict\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:49)
+265 to_json\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:60)
+266 _data_dir_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:129)
+267 _find_spec_directory\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:202)
+268 _get_destination_dir\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:291)
+269 _get_kernel_spec_by_name\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:186)
+270 _kernel_dirs_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:145)
+271 _user_kernel_dir_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:133)
+272 find_kernel_specs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:161)
+273 get_all_specs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:239)
+274 get_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:224)
+275 install_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:300)
+276 install_native_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:349)
+277 remove_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:272)
+278 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:107)
+279 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspec.py:110)
+280 InstallKernelSpec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:64)
+281 InstallNativeKernelSpec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:204)
+282 KernelSpecApp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:242)
+283 ListKernelSpecs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:20)
+284 RemoveKernelSpec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:149)
+285 _kernel_name_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:86)
+286 _kernel_spec_manager_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:79)
+287 parse_command_line\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:119)
+288 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:128)
+289 _kernel_spec_manager_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:209)
+290 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:224)
+291 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:258)
+292 _kernel_spec_manager_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:32)
+293 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:35)
+294 path_key\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:45)
+295 _kernel_spec_manager_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:160)
+296 parse_command_line\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:168)
+297 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/kernelspecapp.py:176)
+298 launch_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/launcher.py:14)
+299 NoIPAddresses\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:63)
+300 _get_output\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:32)
+301 _load_ips\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:205)
+302 _load_ips_dumb\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:198)
+303 _load_ips_gethostbyname\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:167)
+304 _load_ips_ifconfig\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:93)
+305 _load_ips_ip\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:111)
+306 _load_ips_ipconfig\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:125)
+307 _load_ips_netifaces\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:138)
+308 _only_once\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:44)
+309 _populate_from_list\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:66)
+310 _requires_ips\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:55)
+311 _uniq_stable\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:21)
+312 is_local_ip\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:266)
+313 is_public_ip\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:271)
+314 local_ips\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:251)
+315 localhost\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:261)
+316 public_ips\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:256)
+317 wrapped\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:47)
+318 ips_loaded\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/localinterfaces.py:57)
+319 AsyncKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:543)
+320 KernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:33)
+321 run_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:810)
+322 start_new_async_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:794)
+323 start_new_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:778)
+324 _async_wait\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:766)
+325 _kill_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:674)
+326 _launch_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:549)
+327 finish_shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:576)
+328 interrupt_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:713)
+329 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:755)
+330 restart_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:634)
+331 shutdown_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:595)
+332 signal_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:735)
+333 start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:557)
+334 __del__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:128)
+335 _client_class_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:53)
+336 _client_factory_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:50)
+337 _close_control_socket\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:229)
+338 _connect_control_socket\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:224)
+339 _context_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:43)
+340 _default_cache_ports\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:110)
+341 _get_env_substitutions\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:275)
+342 _kernel_cmd_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:104)
+343 _kernel_name_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:76)
+344 _kernel_spec_manager_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:66)
+345 _kernel_spec_manager_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:63)
+346 _kill_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:459)
+347 _launch_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:215)
+348 add_restart_callback\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:142)
+349 cleanup\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:358)
+350 cleanup_resources\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:346)
+351 client\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:158)
+352 finish_shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:323)
+353 format_kernel_cmd\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:175)
+354 has_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:454)
+355 interrupt_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:489)
+356 ipykernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:114)
+357 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:531)
+358 kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:84)
+359 post_start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:291)
+360 pre_start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:235)
+361 remove_restart_callback\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:148)
+362 request_shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:314)
+363 restart_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:415)
+364 shutdown_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:364)
+365 signal_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:511)
+366 start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:295)
+367 start_restarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:136)
+368 stop_restarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:139)
+369 from_ns\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/manager.py:209)
+370 KernelManagerABC\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:9)
+371 has_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:37)
+372 interrupt_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:41)
+373 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:49)
+374 kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:17)
+375 restart_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:33)
+376 shutdown_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:29)
+377 signal_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:45)
+378 start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/managerabc.py:25)
+379 AsyncMultiKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:447)
+380 DuplicateKernelError\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:22)
+381 MultiKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:42)
+382 kernel_method\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:26)
+383 finish_shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:500)
+384 interrupt_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:507)
+385 restart_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:534)
+386 shutdown_all\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:546)
+387 shutdown_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:472)
+388 signal_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:519)
+389 start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:456)
+390 __contains__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:152)
+391 __del__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:126)
+392 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:58)
+393 __len__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:148)
+394 _check_kernel_id\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:315)
+395 _context_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:121)
+396 _create_kernel_manager_factory\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:74)
+397 _find_available_port\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:96)
+398 _kernel_manager_class_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:64)
+399 _kernel_manager_factory_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:70)
+400 add_restart_callback\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:331)
+401 cleanup\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:227)
+402 cleanup_resources\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:231)
+403 connect_control\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:389)
+404 connect_hb\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:421)
+405 connect_iopub\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:357)
+406 connect_shell\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:373)
+407 connect_stdin\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:405)
+408 finish_shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:221)
+409 get_connection_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:339)
+410 get_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:320)
+411 interrupt_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:266)
+412 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:302)
+413 list_kernel_ids\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:142)
+414 new_kernel_id\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:437)
+415 pre_start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:155)
+416 remove_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:235)
+417 remove_restart_callback\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:335)
+418 request_shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:217)
+419 restart_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:291)
+420 shutdown_all\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:245)
+421 shutdown_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:189)
+422 signal_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:277)
+423 start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:176)
+424 create_kernel_manager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:77)
+425 wrapped\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/multikernelmanager.py:28)
+426 KernelRestarter\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:18)
+427 _callbacks_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:46)
+428 _fire_callbacks\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:82)
+429 add_callback\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:57)
+430 poll\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:90)
+431 remove_callback\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:68)
+432 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:49)
+433 stop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/restarter.py:53)
+434 RunApp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/runapp.py:43)
+435 handle_sigint\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/runapp.py:74)
+436 init_kernel_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/runapp.py:80)
+437 initialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/runapp.py:66)
+438 parse_command_line\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/runapp.py:61)
+439 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/runapp.py:97)
+440 Message\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:187)
+441 Session\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:242)
+442 SessionFactory\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:156)
+443 default_secure\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:135)
+444 extract_header\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:223)
+445 msg_header\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:217)
+446 new_id\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:100)
+447 new_id_bytes\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:115)
+448 squash_unicode\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:56)
+449 test_msg2obj\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:958)
+450 utcnow\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:148)
+451 __contains__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:210)
+452 __getitem__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:213)
+453 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:193)
+454 __iter__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:201)
+455 __repr__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:204)
+456 __str__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:207)
+457 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:442)
+458 _add_digest\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:861)
+459 _check_packers\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:517)
+460 _cull_digest_history\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:872)
+461 _digest_mod_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:381)
+462 _key_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:359)
+463 _key_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:356)
+464 _keyfile_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:403)
+465 _new_auth\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:386)
+466 _pack_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:415)
+467 _packer_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:296)
+468 _session_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:335)
+469 _session_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:330)
+470 _signature_scheme_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:367)
+471 _unpack_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:423)
+472 _unpacker_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:314)
+473 clone\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:492)
+474 deserialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:885)
+475 feed_identities\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:824)
+476 msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:567)
+477 msg_header\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:564)
+478 msg_id\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:511)
+479 recv\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:790)
+480 send\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:660)
+481 send_raw\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:762)
+482 serialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:601)
+483 sign\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:586)
+484 unserialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:950)
+485 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:179)
+486 _context_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:169)
+487 _logname_changed\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:163)
+488 _loop_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/session.py:176)
+489 ForwardServer\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/forward.py:35)
+490 Handler\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/forward.py:40)
+491 forward_tunnel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/forward.py:76)
+492 handle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/forward.py:42)
+493 SubHander\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/forward.py:80)
+494 SSHException\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:27)
+495 _paramiko_tunnel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:331)
+496 _split_server\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:263)
+497 _stop_tunnel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:259)
+498 _try_passwordless_openssh\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:76)
+499 _try_passwordless_paramiko\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:104)
+500 open_tunnel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:141)
+501 openssh_tunnel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:168)
+502 paramiko_tunnel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:276)
+503 select_random_ports\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:40)
+504 try_passwordless_ssh\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:60)
+505 tunnel_connection\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/ssh/tunnel.py:127)
+506 SignalTestApp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/signalkernel.py:65)
+507 SignalTestKernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/signalkernel.py:17)
+508 init_io\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/signalkernel.py:68)
+509 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/signalkernel.py:23)
+510 do_execute\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/signalkernel.py:28)
+511 kernel_info_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/signalkernel.py:57)
+512 AdapterTest\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:27)
+513 V4toV5TestCase\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:41)
+514 V5toV4TestCase\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:234)
+515 test_code_to_line_no_code\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:22)
+516 test_default_version\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:14)
+517 adapt\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:32)
+518 check_header\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:37)
+519 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:29)
+520 msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:45)
+521 test_complete_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:124)
+522 test_complete_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:109)
+523 test_display_data\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:209)
+524 test_execute_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:93)
+525 test_execute_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:78)
+526 test_input_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:227)
+527 test_kernel_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:187)
+528 test_no_adapt\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:59)
+529 test_object_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:155)
+530 test_object_info_reply_not_found\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:171)
+531 test_object_info_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:142)
+532 test_rename_type\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:66)
+533 test_same_version\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:51)
+534 msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:238)
+535 test_complete_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:297)
+536 test_complete_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:281)
+537 test_display_data\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:382)
+538 test_execute_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:268)
+539 test_input_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:400)
+540 test_inspect_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:343)
+541 test_inspect_request\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:314)
+542 test_inspect_request_token\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:329)
+543 test_kernel_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:357)
+544 test_no_adapt\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:249)
+545 test_rename_type\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:256)
+546 test_same_version\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_adapter.py:241)
+547 TestKernelClient\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:21)
+548 _check_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:42)
+549 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:22)
+550 test_comm_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:75)
+551 test_complete\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:61)
+552 test_execute_interactive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:34)
+553 test_history\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:47)
+554 test_inspect\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:54)
+555 test_kernel_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:68)
+556 test_shutdown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_client.py:82)
+557 DummyConfigurable\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:29)
+558 DummyConsoleApp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:24)
+559 test_app_load_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:89)
+560 test_find_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:123)
+561 test_find_connection_file_abspath\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:177)
+562 test_find_connection_file_local\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:144)
+563 test_find_connection_file_relative\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:160)
+564 test_load_connection_file_session\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:55)
+565 test_load_connection_file_session_with_kn\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:72)
+566 test_load_connection_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:104)
+567 test_mixin_cleanup_random_ports\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:197)
+568 test_mixin_record_random_ports\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:187)
+569 test_secure_write\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:209)
+570 test_write_connection_file\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:44)
+571 initialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:30)
+572 initialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:25)
+573 check_user_only_permissions\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:226)
+574 fetch_win32_permissions\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_connect.py:210)
+575 test_date_default\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_jsonutil.py:71)
+576 test_extract_date_from_naive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_jsonutil.py:22)
+577 test_extract_dates\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_jsonutil.py:35)
+578 test_parse_ms_precision\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_jsonutil.py:56)
+579 _launch\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelapp.py:9)
+580 test_kernelapp_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelapp.py:19)
+581 TestAsyncKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:296)
+582 TestKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:108)
+583 TestParallel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:208)
+584 async_km\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:92)
+585 config\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:46)
+586 env\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:31)
+587 install_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:55)
+588 km\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:78)
+589 start_async_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:98)
+590 start_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:69)
+591 transport\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:39)
+592 zmq_context\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:84)
+593 test_get_connect_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:313)
+594 test_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:299)
+595 test_signal_kernel_subprocesses\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:340)
+596 test_start_new_async_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:380)
+597 test_subclasses\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:323)
+598 execute\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:346)
+599 _env_test_body\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:173)
+600 test_cleanup_context\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:192)
+601 test_get_connect_info\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:120)
+602 test_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:110)
+603 test_no_cleanup_shared_context\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:197)
+604 test_signal_kernel_subprocesses\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:130)
+605 test_start_new_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:167)
+606 test_templated_kspec_env\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:185)
+607 execute\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:174)
+608 execute\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:135)
+609 _prepare_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:259)
+610 _run_signaltest_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:272)
+611 test_start_parallel_process_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:232)
+612 test_start_parallel_thread_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:217)
+613 test_start_sequence_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:210)
+614 test_start_sequence_process_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:248)
+615 execute\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelmanager.py:276)
+616 KernelSpecTests\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:28)
+617 _install_sample_kernel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:30)
+618 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:39)
+619 tearDown\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:53)
+620 test_cant_install_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:124)
+621 test_find_all_specs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:68)
+622 test_find_kernel_specs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:56)
+623 test_get_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:60)
+624 test_install_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:84)
+625 test_install_kernel_spec_prefix\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:95)
+626 test_kernel_spec_priority\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:73)
+627 test_remove_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:133)
+628 test_remove_kernel_spec_app\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:137)
+629 test_subclass\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:164)
+630 test_validate_kernel_name\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:146)
+631 MyKSM\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:171)
+632 find_kernel_specs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:183)
+633 get_kernel_spec\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_kernelspec.py:172)
+634 test_load_ips\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_localinterfaces.py:10)
+635 test_connection_file_real_path\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_manager.py:13)
+636 TestAsyncKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:147)
+637 TestKernelManager\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:20)
+638 _get_ipc_km\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:154)
+639 _get_tcp_km\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:149)
+640 _run_cinfo\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:180)
+641 _run_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:161)
+642 raw_tcp_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:253)
+643 tcp_lifecycle_with_loop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:248)
+644 test_ipc_cinfo\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:228)
+645 test_ipc_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:222)
+646 test_shutdown_all\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:207)
+647 test_start_parallel_process_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:272)
+648 test_start_parallel_thread_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:259)
+649 test_start_sequence_ipc_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:241)
+650 test_start_sequence_tcp_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:234)
+651 test_tcp_cinfo\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:217)
+652 test_tcp_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:199)
+653 test_tcp_lifecycle_with_kernel_id\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:203)
+654 _get_ipc_km\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:27)
+655 _get_tcp_km\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:22)
+656 _run_cinfo\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:53)
+657 _run_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:34)
+658 tcp_lifecycle_with_loop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:114)
+659 test_ipc_cinfo\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:97)
+660 test_ipc_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:92)
+661 test_shutdown_all\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:79)
+662 test_start_parallel_process_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:131)
+663 test_start_parallel_thread_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:119)
+664 test_start_sequence_ipc_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:108)
+665 test_start_sequence_tcp_kernels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:102)
+666 test_tcp_cinfo\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:88)
+667 test_tcp_lifecycle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:71)
+668 test_tcp_lifecycle_with_kernel_id\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_multikernelmanager.py:75)
+669 test_connect\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_public_api.py:25)
+670 test_kcs\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_public_api.py:16)
+671 test_kms\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_public_api.py:11)
+672 test_launcher\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_public_api.py:21)
+673 SessionTestCase\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:28)
+674 TestSession\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:42)
+675 _bad_packer\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:22)
+676 _bad_unpacker\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:25)
+677 no_copy_threshold\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:35)
+678 setUp\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:30)
+679 _datetime_test\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:277)
+680 test_args\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:145)
+681 test_bad_pack\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:237)
+682 test_bad_packer\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:255)
+683 test_bad_roundtrip\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:273)
+684 test_bad_unpack\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:246)
+685 test_bad_unpacker\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:264)
+686 test_clone\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:336)
+687 test_cull_digest_history\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:224)
+688 test_datetimes\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:295)
+689 test_datetimes_msgpack\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:302)
+690 test_datetimes_pickle\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:298)
+691 test_default_secure\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:75)
+692 test_feed_identities\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:190)
+693 test_msg\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:45)
+694 test_send\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:79)
+695 test_send_raw\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:311)
+696 test_serialize\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:60)
+697 test_session_id\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:197)
+698 test_tracking\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:162)
+699 test_unique_msg_ids\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:181)
+700 test_zero_digest_history\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_session.py:218)
+701 test_random_ports\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/test_ssh.py:3)
+702 AsyncKernelManagerSubclass\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:64)
+703 AsyncKernelManagerWithCleanup\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:80)
+704 execute\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:44)
+705 test_env\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:17)
+706 cleanup\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:72)
+707 cleanup_resources\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:76)
+708 cleanup\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:87)
+709 __enter__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:37)
+710 __exit__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:41)
+711 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:22)
+712 stop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/tests/utils.py:33)
+713 IOLoopThread\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:147)
+714 ThreadedKernelClient\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:222)
+715 ThreadedZMQSocketChannel\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:19)
+716 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:153)
+717 _notice_exit\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:157)
+718 close\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:214)
+719 run\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:175)
+720 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:165)
+721 stop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:201)
+722 _check_kernel_info_reply\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:241)
+723 ioloop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:226)
+724 start_channels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:232)
+725 stop_channels\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:248)
+726 __init__\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:27)
+727 _flush\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:141)
+728 _handle_recv\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:86)
+729 call_handlers\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:98)
+730 close\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:64)
+731 flush\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:115)
+732 is_alive\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:55)
+733 process_events\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:108)
+734 send\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:72)
+735 start\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:58)
+736 stop\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:61)
+737 setup_stream\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:46)
+738 thread_send\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/threaded.py:82)
+739 create_interrupt_event\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/win_interrupt.py:9)
+740 send_interrupt\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/win_interrupt.py:36)
+741 SECURITY_ATTRIBUTES\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/jupyter_client/win_interrupt.py:20)
+742 bdist_egg_disabled\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/setup.py:28)
+743 run\n(/home/avijit/Github/automate_the_painful_stuffs/jupyter_client/setup.py:34)
+#
+45 742 U
+6 125 U
+127 126 U
+128 83 U
+128 109 U
+128 132 U
+128 730 U
+128 718 U
+130 145 U
+135 131 U
+135 128 U
+135 130 U
+135 145 U
+133 86 U
+133 357 U
+133 112 U
+133 732 U
+133 140 U
+133 412 U
+133 373 U
+136 132 U
+11 441 U
+11 188 U
+214 441 U
+214 188 U
+219 209 U
+222 212 U
+222 209 U
+222 315 U
+221 255 U
+221 315 U
+220 315 U
+223 219 U
+223 220 U
+223 222 U
+223 221 U
+213 214 U
+215 453 U
+215 716 U
+215 726 U
+215 392 U
+215 457 U
+215 81 U
+215 215 U
+215 107 U
+215 127 U
+215 485 U
+215 278 U
+215 509 U
+298 739 U
+298 718 U
+298 132 U
+298 730 U
+298 83 U
+298 109 U
+191 211 U
+191 718 U
+191 132 U
+191 730 U
+191 83 U
+191 315 U
+191 109 U
+190 504 U
+190 501 U
+190 503 U
+195 315 U
+198 25 U
+198 441 U
+198 457 U
+199 208 U
+201 211 U
+202 200 U
+212 212 U
+212 197 U
+209 212 U
+209 210 U
+210 195 U
+210 197 U
+192 196 U
+205 192 U
+206 192 U
+207 192 U
+204 192 U
+203 192 U
+382 425 U
+381 254 U
+381 382 U
+398 396 U
+399 396 U
+396 424 U
+424 397 U
+424 395 U
+393 413 U
+415 380 U
+415 414 U
+423 415 U
+421 416 U
+421 410 U
+420 418 U
+420 416 U
+420 408 U
+420 410 U
+420 413 U
+410 394 U
+379 381 U
+389 415 U
+387 416 U
+387 410 U
+383 410 U
+384 410 U
+388 410 U
+385 410 U
+386 418 U
+386 402 U
+386 383 U
+386 416 U
+386 413 U
+43 6 U
+726 737 U
+737 728 U
+734 738 U
+728 729 U
+731 727 U
+721 718 U
+714 125 U
+714 715 U
+714 713 U
+724 720 U
+724 713 U
+724 716 U
+724 722 U
+722 150 U
+725 86 U
+725 357 U
+725 112 U
+725 732 U
+725 140 U
+725 721 U
+725 412 U
+725 373 U
+25 447 U
+25 14 U
+25 1 U
+448 448 U
+443 447 U
+485 457 U
+485 441 U
+453 453 U
+445 450 U
+469 446 U
+463 447 U
+462 465 U
+470 465 U
+457 459 U
+457 465 U
+459 450 U
+459 244 U
+477 478 U
+477 477 U
+476 444 U
+476 476 U
+476 477 U
+482 483 U
+480 476 U
+480 482 U
+480 440 U
+480 50 U
+481 483 U
+479 475 U
+479 474 U
+458 460 U
+474 483 U
+474 242 U
+474 50 U
+474 458 U
+484 474 U
+449 453 U
+449 440 U
+265 264 U
+258 257 U
+258 256 U
+254 253 U
+272 258 U
+267 256 U
+274 269 U
+274 257 U
+274 255 U
+274 267 U
+274 278 U
+273 269 U
+273 274 U
+273 272 U
+277 272 U
+275 268 U
+275 257 U
+259 272 U
+259 259 U
+260 274 U
+260 260 U
+261 275 U
+261 261 U
+262 276 U
+262 262 U
+739 741 U
+243 240 U
+242 243 U
+242 242 U
+244 244 U
+241 240 U
+245 254 U
+247 585 U
+247 246 U
+249 252 U
+252 250 U
+251 249 U
+251 248 U
+1 48 U
+1 47 U
+52 51 U
+53 55 U
+53 56 U
+53 57 U
+53 54 U
+48 46 U
+75 49 U
+70 51 U
+77 52 U
+77 51 U
+47 46 U
+50 450 U
+19 310 U
+19 308 U
+308 317 U
+318 301 U
+310 318 U
+309 314 U
+309 311 U
+309 316 U
+309 299 U
+304 309 U
+304 300 U
+305 309 U
+305 300 U
+306 300 U
+306 309 U
+307 314 U
+307 316 U
+307 311 U
+303 311 U
+301 305 U
+301 304 U
+301 306 U
+301 302 U
+301 307 U
+301 299 U
+301 303 U
+434 214 U
+438 218 U
+437 223 U
+437 436 U
+437 435 U
+435 411 U
+435 355 U
+435 372 U
+436 167 U
+436 137 U
+436 146 U
+436 158 U
+439 122 U
+439 97 U
+139 138 U
+283 254 U
+292 254 U
+293 294 U
+280 254 U
+286 254 U
+284 254 U
+295 254 U
+297 162 U
+281 254 U
+289 254 U
+282 280 U
+282 281 U
+282 284 U
+282 283 U
+291 290 U
+291 439 U
+291 89 U
+291 115 U
+291 432 U
+291 288 U
+291 141 U
+291 720 U
+291 711 U
+291 735 U
+291 293 U
+291 251 U
+291 297 U
+430 433 U
+430 428 U
+20 320 U
+320 254 U
+320 188 U
+345 254 U
+358 253 U
+334 200 U
+334 337 U
+351 208 U
+351 212 U
+353 369 U
+353 358 U
+353 212 U
+338 192 U
+337 192 U
+360 314 U
+360 312 U
+360 341 U
+360 212 U
+360 353 U
+359 338 U
+359 367 U
+366 359 U
+366 360 U
+366 347 U
+362 476 U
+362 338 U
+362 192 U
+362 88 U
+362 114 U
+362 480 U
+362 520 U
+362 534 U
+362 734 U
+352 354 U
+352 346 U
+352 357 U
+350 200 U
+350 337 U
+350 201 U
+349 350 U
+364 346 U
+364 350 U
+364 368 U
+364 349 U
+364 362 U
+364 352 U
+363 202 U
+363 366 U
+363 364 U
+354 347 U
+346 354 U
+346 365 U
+355 476 U
+355 338 U
+355 192 U
+355 88 U
+355 354 U
+355 740 U
+355 114 U
+355 480 U
+355 520 U
+355 534 U
+355 365 U
+355 734 U
+365 354 U
+357 354 U
+319 320 U
+333 359 U
+333 360 U
+333 326 U
+327 324 U
+327 325 U
+327 326 U
+331 325 U
+331 350 U
+331 368 U
+331 349 U
+331 362 U
+331 327 U
+330 331 U
+330 202 U
+330 333 U
+325 332 U
+325 354 U
+325 324 U
+325 326 U
+328 332 U
+328 476 U
+328 338 U
+328 192 U
+328 88 U
+328 354 U
+328 740 U
+328 114 U
+328 480 U
+328 520 U
+328 534 U
+328 734 U
+332 354 U
+329 354 U
+324 329 U
+323 320 U
+323 366 U
+323 351 U
+323 364 U
+322 331 U
+322 319 U
+322 351 U
+322 333 U
+321 323 U
+8 147 U
+8 6 U
+147 139 U
+147 188 U
+147 138 U
+170 167 U
+168 196 U
+168 723 U
+168 206 U
+164 196 U
+164 723 U
+164 205 U
+171 196 U
+171 723 U
+171 207 U
+160 196 U
+154 196 U
+154 723 U
+154 203 U
+165 86 U
+165 357 U
+165 112 U
+165 732 U
+165 140 U
+165 412 U
+165 373 U
+155 476 U
+155 520 U
+155 534 U
+155 148 U
+153 476 U
+153 520 U
+153 534 U
+163 476 U
+163 520 U
+163 534 U
+161 476 U
+161 520 U
+161 534 U
+167 476 U
+167 520 U
+167 534 U
+152 476 U
+152 520 U
+152 534 U
+166 476 U
+166 520 U
+166 534 U
+162 476 U
+162 520 U
+162 534 U
+169 476 U
+169 520 U
+169 534 U
+80 83 U
+84 82 U
+85 84 U
+3 6 U
+3 8 U
+91 105 U
+90 125 U
+90 161 U
+90 106 U
+90 153 U
+90 147 U
+90 169 U
+90 152 U
+90 167 U
+90 91 U
+90 163 U
+90 155 U
+100 84 U
+100 110 U
+99 84 U
+99 110 U
+101 84 U
+101 110 U
+98 84 U
+98 110 U
+102 196 U
+104 150 U
+104 103 U
+104 84 U
+104 110 U
+95 100 U
+95 98 U
+96 162 U
+96 113 U
+96 87 U
+94 93 U
+103 86 U
+103 357 U
+103 112 U
+103 732 U
+103 140 U
+103 412 U
+103 373 U
+97 357 U
+97 732 U
+97 140 U
+97 84 U
+97 94 U
+97 86 U
+97 93 U
+97 412 U
+97 373 U
+97 110 U
+97 91 U
+97 112 U
+97 95 U
+97 96 U
+13 23 U
+235 426 U
+238 430 U
+234 235 U
+236 86 U
+236 357 U
+236 112 U
+236 239 U
+236 732 U
+236 363 U
+236 419 U
+236 375 U
+236 140 U
+236 428 U
+236 412 U
+236 373 U
+12 20 U
+226 233 U
+225 205 U
+225 206 U
+225 207 U
+225 204 U
+225 203 U
+225 226 U
+225 320 U
+225 235 U
+231 354 U
+224 205 U
+224 206 U
+224 207 U
+224 204 U
+224 203 U
+224 226 U
+224 319 U
+224 234 U
+228 354 U
+106 109 U
+110 108 U
+111 110 U
+5 6 U
+5 8 U
+117 124 U
+116 125 U
+116 161 U
+116 106 U
+116 117 U
+116 147 U
+116 153 U
+116 169 U
+116 152 U
+116 167 U
+116 163 U
+116 155 U
+123 110 U
+123 150 U
+123 84 U
+123 165 U
+120 156 U
+120 158 U
+121 162 U
+121 113 U
+121 87 U
+119 118 U
+122 117 U
+122 120 U
+122 121 U
+122 118 U
+122 119 U
+122 357 U
+122 732 U
+122 140 U
+122 84 U
+122 86 U
+122 412 U
+122 373 U
+122 110 U
+122 112 U
+30 16 U
+549 705 U
+549 711 U
+549 712 U
+549 260 U
+549 255 U
+549 274 U
+553 548 U
+554 548 U
+551 548 U
+555 548 U
+550 548 U
+556 548 U
+678 441 U
+678 457 U
+674 673 U
+693 476 U
+693 520 U
+693 534 U
+696 476 U
+696 475 U
+696 482 U
+696 474 U
+696 520 U
+696 534 U
+694 475 U
+694 474 U
+694 520 U
+694 734 U
+694 88 U
+694 534 U
+694 478 U
+694 476 U
+694 114 U
+694 480 U
+694 479 U
+680 457 U
+680 441 U
+698 480 U
+698 441 U
+699 445 U
+699 477 U
+692 476 U
+692 520 U
+692 534 U
+697 457 U
+697 441 U
+700 457 U
+700 441 U
+700 458 U
+687 457 U
+687 441 U
+687 458 U
+681 457 U
+681 441 U
+681 675 U
+684 457 U
+684 676 U
+684 441 U
+682 457 U
+682 441 U
+685 457 U
+685 441 U
+683 457 U
+683 441 U
+679 450 U
+679 242 U
+688 679 U
+688 441 U
+690 679 U
+690 441 U
+690 457 U
+689 679 U
+689 457 U
+689 441 U
+695 476 U
+695 475 U
+695 474 U
+695 520 U
+695 534 U
+695 481 U
+686 473 U
+686 441 U
+686 458 U
+41 27 U
+701 503 U
+580 579 U
+709 711 U
+710 712 U
+704 157 U
+704 704 U
+704 608 U
+704 598 U
+704 615 U
+704 607 U
+704 158 U
+704 155 U
+29 1 U
+29 25 U
+516 476 U
+516 457 U
+516 441 U
+516 50 U
+515 51 U
+519 441 U
+519 457 U
+517 517 U
+513 512 U
+520 476 U
+520 520 U
+520 534 U
+533 520 U
+533 517 U
+528 517 U
+528 520 U
+532 520 U
+532 517 U
+525 520 U
+525 517 U
+524 520 U
+524 517 U
+522 517 U
+522 520 U
+521 520 U
+521 517 U
+531 520 U
+531 517 U
+529 520 U
+529 517 U
+530 520 U
+530 517 U
+527 520 U
+527 517 U
+523 520 U
+523 517 U
+526 520 U
+526 517 U
+514 512 U
+534 476 U
+534 520 U
+534 534 U
+546 534 U
+546 517 U
+544 517 U
+544 534 U
+545 534 U
+545 517 U
+538 534 U
+538 517 U
+536 517 U
+536 534 U
+535 534 U
+535 517 U
+541 534 U
+541 517 U
+542 534 U
+542 517 U
+540 534 U
+540 517 U
+543 534 U
+543 517 U
+537 534 U
+537 517 U
+539 534 U
+539 517 U
+31 25 U
+31 10 U
+31 11 U
+558 214 U
+572 219 U
+557 188 U
+570 191 U
+564 558 U
+564 191 U
+564 572 U
+564 457 U
+564 441 U
+564 209 U
+565 558 U
+565 191 U
+565 572 U
+565 457 U
+565 441 U
+565 209 U
+559 558 U
+559 191 U
+559 572 U
+560 558 U
+560 572 U
+560 189 U
+562 189 U
+563 189 U
+561 189 U
+568 557 U
+568 212 U
+567 557 U
+567 202 U
+567 212 U
+573 574 U
+569 573 U
+634 301 U
+38 22 U
+655 392 U
+655 381 U
+654 392 U
+654 381 U
+667 657 U
+667 655 U
+668 655 U
+668 657 U
+661 655 U
+666 656 U
+666 655 U
+666 315 U
+660 657 U
+660 654 U
+659 656 U
+659 654 U
+665 657 U
+665 655 U
+664 657 U
+664 654 U
+658 667 U
+663 667 U
+663 658 U
+662 667 U
+662 658 U
+639 379 U
+638 379 U
+652 642 U
+653 642 U
+646 639 U
+651 639 U
+651 640 U
+651 315 U
+645 641 U
+645 638 U
+644 638 U
+644 640 U
+650 639 U
+650 641 U
+649 641 U
+649 638 U
+643 642 U
+642 639 U
+642 641 U
+648 643 U
+648 642 U
+647 643 U
+647 642 U
+618 254 U
+618 705 U
+618 711 U
+618 617 U
+619 712 U
+622 617 U
+622 272 U
+623 267 U
+623 617 U
+623 274 U
+621 273 U
+621 617 U
+626 272 U
+626 617 U
+624 275 U
+624 272 U
+625 275 U
+625 272 U
+620 275 U
+627 617 U
+627 277 U
+630 257 U
+629 631 U
+629 273 U
+629 274 U
+629 254 U
+631 254 U
+633 274 U
+632 267 U
+510 236 U
+510 430 U
+506 507 U
+34 702 U
+34 703 U
+586 711 U
+586 705 U
+586 712 U
+604 608 U
+599 607 U
+606 599 U
+613 610 U
+612 591 U
+612 610 U
+611 610 U
+611 591 U
+614 610 U
+610 615 U
+610 609 U
+597 702 U
+597 703 U
+595 598 U
+32 25 U
+576 242 U
+577 242 U
+578 243 U
+575 450 U
+575 242 U
+575 241 U
+37 16 U
+37 20 U
+635 253 U
+635 320 U
+635 353 U
+27 502 U
+27 501 U
+27 494 U
+503 83 U
+503 211 U
+503 109 U
+503 132 U
+503 718 U
+503 730 U
+504 498 U
+504 499 U
+498 494 U
+499 476 U
+499 520 U
+499 534 U
+499 496 U
+505 500 U
+500 501 U
+500 503 U
+500 502 U
+501 494 U
+501 497 U
+502 495 U
+502 499 U
+495 496 U
+495 491 U
+492 83 U
+492 109 U
+492 88 U
+492 114 U
+492 480 U
+492 132 U
+492 718 U
+492 479 U
+492 730 U
+492 734 U
+493 490 U
