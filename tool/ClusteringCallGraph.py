@@ -34,8 +34,11 @@ from PlayingWithAST import *
 
 
 
-
-
+OUTPUT_DIRECTORY = '/output/'
+CLUSTER_TREE_DETAILS_EXCEL = ''
+DATASET = '/dataset/'
+SUBJECT_SYSTEM_TGF_FILE = ''
+SUBJECT_SYSTEM = ''
 
 workbook = xlsxwriter.Workbook('pyan_08_03_2020.xlsx')
 worksheet = workbook.add_worksheet()
@@ -574,13 +577,13 @@ class ClusteringCallGraph:
         dictionary = corpora.Dictionary(self.text_data)
         corpus = [dictionary.doc2bow(text) for text in self.text_data]
 
-        pickle.dump(corpus, open('corpus.pkl', 'wb'))
-        dictionary.save('dictionary.gensim')
+        # pickle.dump(corpus, open('corpus.pkl', 'wb'))
+        # dictionary.save('dictionary.gensim')
 
         NUM_TOPICS = 5
         ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         # ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
-        ldamodel.save('model5.gensim')
+        # ldamodel.save('model5.gensim')
         #topics = ldamodel.print_topics(num_words=5)
         # for topic in topics:
         #    print(topic)
@@ -618,14 +621,14 @@ class ClusteringCallGraph:
         dictionary = corpora.Dictionary(self.text_data)
         corpus = [dictionary.doc2bow(text) for text in self.text_data]
 
-        pickle.dump(corpus, open('corpus.pkl', 'wb'))
-        dictionary.save('dictionary.gensim')
+        # pickle.dump(corpus, open('corpus.pkl', 'wb'))
+        # dictionary.save('dictionary.gensim')
 
         NUM_TOPICS = 5
         # ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         # ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         lsimodel = gensim.models.lsimodel.LsiModel(corpus, num_topics=5, id2word=dictionary)
-        lsimodel.save('model5.gensim')
+        # lsimodel.save('model5.gensim')
         # topics = ldamodel.print_topics(num_words=5)
         # for topic in topics:
         #    print(topic)
