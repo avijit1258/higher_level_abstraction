@@ -32,11 +32,11 @@ from prefixspan import PrefixSpan
 
 from PlayingWithAST import *
 
-
-SUBJECT_SYSTEM_NAME = 'volontulo_10_27_2020'
-OUTPUT_DIRECTORY = '/output/'
-DATASET = '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
-SUBJECT_SYSTEM = 'home/avijit/Github/python_subject_systems_for_HLA/js-remote-test' # put location of repository for getting comments
+ROOT = '/home/avijit/Github/higher_level_abstraction/tool'
+SUBJECT_SYSTEM_NAME = 'urllib3_10_27_2020'
+OUTPUT_DIRECTORY = ROOT + '/output/'
+DATASET = ROOT + '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
+SUBJECT_SYSTEM_FOR_COMMENT = 'home/avijit/Github/python_subject_systems_for_HLA/volontulo' # put location of repository for getting comments
 
 workbook = xlsxwriter.Workbook(OUTPUT_DIRECTORY +SUBJECT_SYSTEM_NAME+'.xlsx')
 worksheet = workbook.add_worksheet()
@@ -76,7 +76,7 @@ class ClusteringCallGraph:
 
     pwa = PlayingWithAST()
 
-    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(SUBJECT_SYSTEM)
+    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(SUBJECT_SYSTEM_FOR_COMMENT)
 
 
     # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
@@ -99,7 +99,7 @@ class ClusteringCallGraph:
     def python_analysis(self):
         """ analyzing python programs to build cluster tree of execution paths. """
         self.tgf_to_networkX()
-        self.G.remove_edges_from(self.G.selfloop_edges())
+        self.G.remove_edges_from(nx.selfloop_edges(self.G))
         self.extracting_source_and_exit_node()
         start = timer()
         self.extracting_execution_paths()
@@ -162,12 +162,12 @@ class ClusteringCallGraph:
 
     def tgf_to_networkX(self):
         """ converting tgf file to a networkX graph"""
-        self.subject_system = SUBJECT_SYSTEM_NAME+'.txt'
+        self.subject_system = SUBJECT_SYSTEM_NAME + '.txt' 
         # self.subject_system = '/home/avb307/projects/higher_level_abstraction/tool/calculator.txt'
         print('thanks a lot')
         # path = easygui.fileopenbox()
 
-        f = open(self.subject_system, "r")
+        f = open(DATASET, "r")
 
         # f = open(path, "r")
         G = nx.DiGraph()
