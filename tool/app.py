@@ -18,8 +18,9 @@ import json
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
+ROOT = '/home/avijit/Github/higher_level_abstraction/tool/output/'
 # subject_system = ['treerealTimeMay28.txt', 'treerealTimeSept7.txt', 'treedetectronSept7.txt']
-subject_system = ['treehlaMay28.txt', 'treepyanMay28.txt', 'treerealTimeMay28.txt']
+subject_system = ['TREE_DICT_js-remote-test_10_27_2020.txt', 'TREE_DICT_jupyter_client_10_16_2020.txt', 'TREE_DICT_Mailu_10_27_2020.txt']
 
 ss_count = 0
 cluster_count = 0
@@ -50,7 +51,7 @@ def get_cluster():
     # elif ss_count == 2:
     #     print('Second Subject system')
 
-    with open(subject_system[ss_count], 'r') as f:
+    with open(ROOT + subject_system[ss_count], 'r') as f:
         print(subject_system[ss_count])
         ss_count = ss_count + 1
         content = f.read()
