@@ -32,11 +32,11 @@ from prefixspan import PrefixSpan
 
 from PlayingWithAST import *
 
-ROOT = '/home/avijit/Github/higher_level_abstraction/tool'
-SUBJECT_SYSTEM_NAME = 'urllib3_10_27_2020'
+ROOT = '/Users/avijitbhattacharjee/github/higher_level_abstraction/tool'
+SUBJECT_SYSTEM_NAME = 'js-remote-test_10_27_2020'
 OUTPUT_DIRECTORY = ROOT + '/output/'
 DATASET = ROOT + '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
-SUBJECT_SYSTEM_FOR_COMMENT = 'home/avijit/Github/python_subject_systems_for_HLA/volontulo' # put location of repository for getting comments
+SUBJECT_SYSTEM_FOR_COMMENT = 'home/avijit/Github/python_subject_systems_for_HLA/js-remote-test' # put location of repository for getting comments
 
 workbook = xlsxwriter.Workbook(OUTPUT_DIRECTORY +SUBJECT_SYSTEM_NAME+'.xlsx')
 worksheet = workbook.add_worksheet()
@@ -579,8 +579,8 @@ class ClusteringCallGraph:
         # dictionary.save('dictionary.gensim')
 
         NUM_TOPICS = 5
-        ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
-        # ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
+        # ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
+        ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         # ldamodel.save('model5.gensim')
         #topics = ldamodel.print_topics(num_words=5)
         # for topic in topics:
