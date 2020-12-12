@@ -4,6 +4,7 @@ from flask import make_response
 from flask import request
 from flask import url_for
 from flask_cors import CORS
+import glob
 
 import xlsxwriter
 
@@ -18,10 +19,12 @@ import json
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
-ROOT = '/home/avijit/Github/higher_level_abstraction/tool/output/'
+ROOT = '/Users/avijitbhattacharjee/github/higher_level_abstraction/tool/output/'
 # subject_system = ['treerealTimeMay28.txt', 'treerealTimeSept7.txt', 'treedetectronSept7.txt']
-subject_system = ['TREE_DICT_js-remote-test_10_27_2020.txt', 'TREE_DICT_jupyter_client_10_16_2020.txt', 'TREE_DICT_Mailu_10_27_2020.txt']
-
+SUBJECT_SYSTEMS = glob.glob1(ROOT, 'TREE_DICT*')
+print(SUBJECT_SYSTEMS)
+NUMBER_OF_SUBJECT_SYSTEMS = len(SUBJECT_SYSTEMS)
+print(NUMBER_OF_SUBJECT_SYSTEMS)
 ss_count = 0
 cluster_count = 0
 row = 1
@@ -34,7 +37,7 @@ worksheet = ''
 @app.route('/',methods=['GET'])
 def root():
     # return 'Hello world'
-    return render_template('home.html')
+    return render_template('home.html', subject_systems = SUBJECT_SYSTEMS)
 
 
 @app.route('/get_cluster', methods=['GET'])
@@ -59,6 +62,8 @@ def get_cluster():
 
     # del c
     return jsonify(cluster)
+
+
 
 
 @app.route('/save_response', methods=['POST'])
