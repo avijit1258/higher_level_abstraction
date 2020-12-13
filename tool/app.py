@@ -40,30 +40,17 @@ def root():
     return render_template('home.html', subject_systems = SUBJECT_SYSTEMS)
 
 
-@app.route('/get_cluster', methods=['GET'])
+@app.route('/get_cluster/', methods = ['GET'])
 def get_cluster():
-    global ss_count
+    subject_system = request.args.get('subject_system')
 
-    # c = ClusteringCallGraph()
-    
-    # cluster = c.python_analysis()
-    # print(cluster)
-
-    # if ss_count == 1:
-    #     print('First Subject system')
-    # elif ss_count == 2:
-    #     print('Second Subject system')
-
-    with open(ROOT + subject_system[ss_count], 'r') as f:
-        print(subject_system[ss_count])
-        ss_count = ss_count + 1
+    with open(ROOT + subject_system, 'r') as f:
+        print(subject_system)
         content = f.read()
         cluster = eval(content)
 
     # del c
     return jsonify(cluster)
-
-
 
 
 @app.route('/save_response', methods=['POST'])

@@ -39,7 +39,7 @@
    </div>
 
    <div> 
-    <select name="subject_system">
+    <select name="subject_system" id = "subject_system_id">
       {% for ss in subject_systems %}
       <option value="{{ss}}">{{ss}}</option>
       {% endfor %}
@@ -176,14 +176,12 @@
 
 <script >
 
-    var subject_system = 1;
+    
     function get_cluster() {
         Url = 'http://127.0.0.1:5000/get_cluster'
-        // $('.btn').click(function () {
-        //
-        // })
-
-        $.getJSON(Url, function (result) {
+        var subject_system = document.getElementById('subject_system_id').value;
+        
+        $.getJSON(Url, {subject_system : subject_system}, function (result) {
                 // alert(result);
 
                 setupDiagram(result);
