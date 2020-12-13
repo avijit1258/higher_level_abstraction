@@ -33,10 +33,10 @@ from prefixspan import PrefixSpan
 from PlayingWithAST import *
 
 ROOT = '/Users/avijitbhattacharjee/github/higher_level_abstraction/tool'
-SUBJECT_SYSTEM_NAME = 'js-remote-test_10_27_2020'
+SUBJECT_SYSTEM_NAME = 'jupyter_client_10_16_2020'
 OUTPUT_DIRECTORY = ROOT + '/output/'
 DATASET = ROOT + '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
-SUBJECT_SYSTEM_FOR_COMMENT = 'home/avijit/Github/python_subject_systems_for_HLA/js-remote-test' # put location of repository for getting comments
+SUBJECT_SYSTEM_FOR_COMMENT = '/Users/avijitbhattacharjee/github/python_subject_systems/jupyter_client' # put location of repository for getting comments
 
 workbook = xlsxwriter.Workbook(OUTPUT_DIRECTORY +SUBJECT_SYSTEM_NAME+'.xlsx')
 worksheet = workbook.add_worksheet()
@@ -77,6 +77,7 @@ class ClusteringCallGraph:
     pwa = PlayingWithAST()
 
     function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(SUBJECT_SYSTEM_FOR_COMMENT)
+    print(function_name_to_docstring)
 
 
     # worksheet.write('ClusterId', 'Execution_Paths', 'Naming_using_our_approach')
@@ -116,9 +117,9 @@ class ClusteringCallGraph:
         # df = pd.DataFrame(execution_paths)
         # df.to_csv('people.csv')
         start = timer()
-        mat = self.jaccard_distance_matrix(self.execution_paths)
+        mat = self.distance_matrix(self.execution_paths)
         end = timer()
-        print('Time required for jaccard_distance_matrix: ', end - start)
+        print('Time required for distance_matrix: ', end - start)
         # clustering_using_sklearn(mat)
 
         # plt.show()
@@ -228,14 +229,16 @@ class ClusteringCallGraph:
 
         print("Number of EP: ", len(self.execution_paths))
 
-    def jaccard_distance_matrix(self, paths):
+    def distance_matrix(self, paths):
         """ creating distance matrix using jaccard similarity value """
-        print('jaccard_distance_matrix')
+        print('distance_matrix')
         length = len(paths)
         Matrix = [[0 for x in range(length)] for y in range(length)]
         for i in range(len(paths)):
             for j in range(len(paths)):
                 Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
+                # Matrix[i][j] = self.similarity(paths[i], paths[j])
+                
         
         # print('Paths :', paths)
         # print('Matrix :', Matrix)
@@ -348,6 +351,12 @@ class ClusteringCallGraph:
         end = str.find('\\')
 
         return str[:end]
+
+    def similarity(self, list1, list2):
+        print('list1 :', list1)
+        print('list2 :', list2)
+        print('braycurtis ', ssd.braycurtis(list1, list2))
+        return ssd.braycurtis(list1, list2)
 
     def jaccard_similarity(self, list1, list2):
         """ calculating jaccard similarity """
@@ -687,26 +696,14 @@ class ClusteringCallGraph:
         for c in execution_paths_of_a_cluster:
             for f in self.execution_paths[c]:
                 # print(self.function_id_to_name[f], ' ', function_name_to_docstring[self.function_id_to_name[f]])
+                print(self.function_id_to_name[f])
                 if self.function_id_to_name[f] in function_name_to_docstring:
 
                     if function_name_to_docstring[self.function_id_to_name[f]] is not None:
                         text_for_summary += function_name_to_docstring[self.function_id_to_name[f]] + ' '
                         # count += 1
 
-        # print([self.execution_paths[e] for e in execution_paths_of_a_cluster])
-        # print(text_for_summary)
         print(len(text_for_summary))
-        # print(_clean_text_by_sentences(text_for_summary))
-        # print(get_sentences(text_for_summary))
-        # print(len(get_sentences(text_for_summary)))
-        # count = 0
-        # for sentence in get_sentences(text_for_summary):
-        #     print(sentence)
-        #     count += 1
-        # if count <= 9:
-        #     return 'Empty.'
-        # if len(text_for_summary) <= 1:
-        #     return 'Empty'
 
         try:
             return summarize(text_for_summary, word_count=25)
