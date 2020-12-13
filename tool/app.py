@@ -37,7 +37,8 @@ worksheet = ''
 @app.route('/',methods=['GET'])
 def root():
     # return 'Hello world'
-    return render_template('home.html', subject_systems = SUBJECT_SYSTEMS)
+    TECHNIQUE_CHOICES = ['tfidf_word', 'tfidf_method', 'lda_method', 'lda_word', 'lsi_method', 'lsi_word']
+    return render_template('home.html', subject_systems = SUBJECT_SYSTEMS, technique_choices = TECHNIQUE_CHOICES)
 
 
 @app.route('/get_cluster/', methods = ['GET'])
