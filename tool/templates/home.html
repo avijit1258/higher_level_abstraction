@@ -1,193 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-     <script type="text/javascript" src="{{ url_for('static',filename = 'go-debug.js')}}"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'style.css')}}">
-    <script src="{{ url_for('static',filename = 'manipulate_tree.js')}}"></script>
-    <script src="{{ url_for('static',filename = 'user_study.js')}}"></script>
-    <title>Designing an interactive tool for program comprehension from static analysis</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="{{ url_for('static',filename = 'go-debug.js')}}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'style.css')}}">
+  <script src="{{ url_for('static',filename = 'manipulate_tree.js')}}"></script>
+  <script src="{{ url_for('static',filename = 'user_study.js')}}"></script>
+  <title>Designing an interactive tool for program comprehension from static analysis</title>
 </head>
+
 <body onload="init()">
 
   <nav class="navbar  navbar-dark">
-		<div class="container-fluid">
-			
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">HLA</a>
-			</div>
+    <div class="container-fluid">
 
-			<ul class="nav navbar-nav">
-				<li class="nav-item active"> <a href="#">Home</a> </li>
-				<li class="nav-item"> <a href="https://ise.usask.ca/avijit/research/">How it works</a> </li>
-				<li class="nav-item"> <a href="https://ise.usask.ca">About us</a> </li>
-				
-			</ul>
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">HLA</a>
+      </div>
 
-		</div>
+      <ul class="nav navbar-nav">
+        <li class="nav-item active"> <a href="#">Home</a> </li>
+        <li class="nav-item"> <a href="https://ise.usask.ca/avijit/research/">How it works</a> </li>
+        <li class="nav-item"> <a href="https://ise.usask.ca">About us</a> </li>
 
-	</nav>
+      </ul>
 
-    <div class="container" id="sample">
+    </div>
 
-   <div class="container">
-        <h2 class="text-focus-in" style="text-align: center;">Interactive tool for program comprehension through static analysis: ITpcSA</h2>
-        <!-- <button onclick="printDiagram()" class="btn"> GET Image </button> -->
-   </div>
+  </nav>
 
-   <div> 
-    <select name="subject_system" id = "subject_system_id">
-      {% for ss in subject_systems %}
-      <option value="{{ss}}">{{ss}}</option>
-      {% endfor %}
-    </select>
+  <div class="container" id="sample">
 
-   </div>
+    <div class="container">
+      <h2 class="text-focus-in" style="text-align: center;">Interactive tool for program comprehension through static
+        analysis: ITpcSA</h2>
+      <!-- <button onclick="printDiagram()" class="btn"> GET Image </button> -->
+    </div>
 
-    <div> 
-      <select name="technique_choice" id = "technique_choice_id">
+    <div>
+      <select name="subject_system" id="subject_system_id">
+        {% for ss in subject_systems %}
+        <option value="{{ss}}">{{ss}}</option>
+        {% endfor %}
+      </select>
+
+    </div>
+
+    <div>
+      <select name="technique_choice" id="technique_choice_id">
         {% for tc in technique_choices %}
         <option value="{{tc}}">{{tc}}</option>
         {% endfor %}
       </select>
 
     </div>
-        <div class="container">
-            <h3 style="text-align: center;"> Full diagram</h3>
+    <div class="container">
+      <h3 style="text-align: center;"> Full diagram</h3>
+    </div>
+
+    <div class="container" id="fullDiagram" style="height:550px;width:100%;border:1px solid black;margin:2px">
+
+
+    </div>
+
+    <div class="container" style="text-align: center;">
+      <button onclick="get_cluster()" class="btn"> GET Cluster </button>
+    </div>
+
+    <div class="container">
+      <h3 style="text-align: center;"> Local diagram</h3>
+    </div>
+
+    <div class="container" id="localDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
+
+  </div>
+
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="modal-title">Modal title</h4>
         </div>
-
-  <div class="container" id="fullDiagram" style="height:550px;width:100%;border:1px solid black;margin:2px">
-    
-
-  </div>
-
-  <div class="container" style="text-align: center;">   
-    <button onclick="get_cluster()" class="btn" > GET Cluster </button>
-  </div>
-  
-  <div class="container">
-      <h3 style="text-align: center;" > Local diagram</h3>
-  </div>
-
-  <div class="container" id="localDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
-
-</div>
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="modal-title">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <form action="{{url_for('save_response')}}" method="post" id="user_feedback">
-           <div class="form-group">
-                 <label> Description of the cluster functionality </label>
-                 <label id="cluster_description">  </label>
-          </div>
-
-
-          <div class="form-group">
-                 <label>Technique 1</label> <br>
-                 <label id="tech1"></label><br>
-                  <label><input type="radio" name="n_t1" value="1"  required>1</label>
-                  <label><input type="radio" name="n_t1" value="2"  required>2</label>
-                  <label><input type="radio" name="n_t1" value="3"  required>3</label>
-                  <label><input type="radio" name="n_t1" value="4"  required>4</label>
-                  <label><input type="radio" name="n_t1" value="5"  required>5</label>
-
-          </div>
+        <div class="modal-body">
+          <form action="{{url_for('save_response')}}" method="post" id="user_feedback">
             <div class="form-group">
-                 <label>Technique 2</label> <br>
-                 <label id="tech2"></label><br>
-                  <label><input type="radio" name="n_t2" value="1"  required>1</label>
-                  <label><input type="radio" name="n_t2" value="2"  required>2</label>
-                  <label><input type="radio" name="n_t2" value="3"  required>3</label>
-                  <label><input type="radio" name="n_t2" value="4"  required>4</label>
-                  <label><input type="radio" name="n_t2" value="5"  required>5</label>
-          </div>
-            <div class="form-group">
-                 <label>Technique 3</label> <br>
-                 <label id="tech3"></label><br>
-                  <label><input type="radio" name="n_t3" value="1"  required>1</label>
-                  <label><input type="radio" name="n_t3" value="2"  required>2</label>
-                  <label><input type="radio" name="n_t3" value="3"  required>3</label>
-                  <label><input type="radio" name="n_t3" value="4"  required>4</label>
-                  <label><input type="radio" name="n_t3" value="5"  required>5</label>
-          </div>
-            <div class="form-group">
-                 <label>Technique 4</label> <br>
-                 <label id="tech4"></label><br>
-                  <label><input type="radio" name="n_t4" value="1"  required>1</label>
-                  <label><input type="radio" name="n_t4" value="2"  required>2</label>
-                  <label><input type="radio" name="n_t4" value="3"  required>3</label>
-                  <label><input type="radio" name="n_t4" value="4"  required>4</label>
-                  <label><input type="radio" name="n_t4" value="5"  required>5</label>
+              <label> Description of the cluster functionality </label>
+              <label id="cluster_description"> </label>
+            </div>
 
-          </div>
-            <div class="form-group">
-                 <label>Technique 5</label> <br>
-                 <label id="tech5"></label><br>
-                  <label><input type="radio" name="n_t5" value="1"  required>1</label>
-                  <label><input type="radio" name="n_t5" value="2"  required>2</label>
-                  <label><input type="radio" name="n_t5" value="3"  required>3</label>
-                  <label><input type="radio" name="n_t5" value="4"  required>4</label>
-                  <label><input type="radio" name="n_t5" value="5"  required>5</label>
 
-          </div>
             <div class="form-group">
-                 <label>Technique 6</label> <br>
-                 <label id="tech6"></label><br>
-                  <label><input type="radio" name="n_t6" value="1"  required>1</label>
-                  <label><input type="radio" name="n_t6" value="2"  required>2</label>
-                  <label><input type="radio" name="n_t6" value="3"  required>3</label>
-                  <label><input type="radio" name="n_t6" value="4"  required>4</label>
-                  <label><input type="radio" name="n_t6" value="5"  required>5</label>
+              <label>Technique 1</label> <br>
+              <label id="tech1"></label><br>
+              <label><input type="radio" name="n_t1" value="1" required>1</label>
+              <label><input type="radio" name="n_t1" value="2" required>2</label>
+              <label><input type="radio" name="n_t1" value="3" required>3</label>
+              <label><input type="radio" name="n_t1" value="4" required>4</label>
+              <label><input type="radio" name="n_t1" value="5" required>5</label>
 
-          </div>
+            </div>
             <div class="form-group">
-            <label for="user_summary" class="col-form-label">Your Summary from the description:(pick five significant words from the description and use comma to seperate them)</label>
-                <input type="text" id="user_summary" name="user_summary" required>
-                <input type="hidden" id="key" name="key">
-          </div>
-          <div class="form-group">
-            <label for="comment" class="col-form-label">Any Comments:</label>
+              <label>Technique 2</label> <br>
+              <label id="tech2"></label><br>
+              <label><input type="radio" name="n_t2" value="1" required>1</label>
+              <label><input type="radio" name="n_t2" value="2" required>2</label>
+              <label><input type="radio" name="n_t2" value="3" required>3</label>
+              <label><input type="radio" name="n_t2" value="4" required>4</label>
+              <label><input type="radio" name="n_t2" value="5" required>5</label>
+            </div>
+            <div class="form-group">
+              <label>Technique 3</label> <br>
+              <label id="tech3"></label><br>
+              <label><input type="radio" name="n_t3" value="1" required>1</label>
+              <label><input type="radio" name="n_t3" value="2" required>2</label>
+              <label><input type="radio" name="n_t3" value="3" required>3</label>
+              <label><input type="radio" name="n_t3" value="4" required>4</label>
+              <label><input type="radio" name="n_t3" value="5" required>5</label>
+            </div>
+            <div class="form-group">
+              <label>Technique 4</label> <br>
+              <label id="tech4"></label><br>
+              <label><input type="radio" name="n_t4" value="1" required>1</label>
+              <label><input type="radio" name="n_t4" value="2" required>2</label>
+              <label><input type="radio" name="n_t4" value="3" required>3</label>
+              <label><input type="radio" name="n_t4" value="4" required>4</label>
+              <label><input type="radio" name="n_t4" value="5" required>5</label>
+
+            </div>
+            <div class="form-group">
+              <label>Technique 5</label> <br>
+              <label id="tech5"></label><br>
+              <label><input type="radio" name="n_t5" value="1" required>1</label>
+              <label><input type="radio" name="n_t5" value="2" required>2</label>
+              <label><input type="radio" name="n_t5" value="3" required>3</label>
+              <label><input type="radio" name="n_t5" value="4" required>4</label>
+              <label><input type="radio" name="n_t5" value="5" required>5</label>
+
+            </div>
+            <div class="form-group">
+              <label>Technique 6</label> <br>
+              <label id="tech6"></label><br>
+              <label><input type="radio" name="n_t6" value="1" required>1</label>
+              <label><input type="radio" name="n_t6" value="2" required>2</label>
+              <label><input type="radio" name="n_t6" value="3" required>3</label>
+              <label><input type="radio" name="n_t6" value="4" required>4</label>
+              <label><input type="radio" name="n_t6" value="5" required>5</label>
+
+            </div>
+            <div class="form-group">
+              <label for="user_summary" class="col-form-label">Your Summary from the description:(pick five significant
+                words from the description and use comma to seperate them)</label>
+              <input type="text" id="user_summary" name="user_summary" required>
+              <input type="hidden" id="key" name="key">
+            </div>
+            <div class="form-group">
+              <label for="comment" class="col-form-label">Any Comments:</label>
               <input type="text" id="comment" name="comment">
-          </div>
+            </div>
             <input type="submit" value="Submit">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
-<footer class="page-footer font-small blue">
+  <footer class="page-footer font-small blue">
 
-	  
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://ise.usask.ca/avijit/"> Avijit Bhattacharjee (iSE Lab) </a>
-  </div>
-  
 
-</footer>
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="https://ise.usask.ca/avijit/"> Avijit Bhattacharjee (iSE Lab) </a>
+    </div>
 
+
+  </footer>
 
 
 </body>
 
-<script >
-
-    
-    
-</script>
 
 </html>
