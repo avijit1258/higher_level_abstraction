@@ -432,30 +432,10 @@ class ClusteringCallGraph:
         # print(tf.vocabulary_)
         #
         feature_names = np.array(tf.get_feature_names())
-        # sorted_by_idf = np.argsort(tf.idf_)
-        # print("Features with lowest idf:\n{}".format(
-        #     feature_names[sorted_by_idf[:5]]))
-        # print("\nFeatures with highest idf:\n{}".format(
-        #     feature_names[sorted_by_idf[-5:]]))
-
         max_val = txt_transformed.max(axis=0).toarray().ravel()
-
-        # sort weights from smallest to biggest and extract their indices
-        # print(max_val)
         sort_by_tfidf = max_val.argsort()
 
-        # print("Features with lowest tfidf:\n{}".format(
-        #     max_val[sort_by_tfidf[:5]]))
-
-        # print("\nFeatures with highest tfidf: \n{}".format(
-        #     max_val[sort_by_tfidf[-5:]]))
-
-        # ~ printing highest frequency
-        # print("Features with lowest tfidf:\n{}".format(
-        #     feature_names[sort_by_tfidf[:5]]))
-
-        # print("\nFeatures with highest tfidf: \n{}".format(
-        #     feature_names[sort_by_tfidf[-5:]]))
+        
         if method_or_word == 'method':
             return self.id_to_sentence(feature_names[sort_by_tfidf[-5:]])
         elif method_or_word == 'word':
@@ -570,9 +550,7 @@ class ClusteringCallGraph:
         elif method_or_word == 'word':
             txt = self.make_documents_for_a_cluster_tm_word(labels)
 
-        # txt = self.make_documents_for_a_cluster_tm_method(labels)
-        # txt = self.make_documents_for_a_cluster_tm_word(labels)
-
+       
         for line in txt:
             # print(line)
             tokens = self.prepare_text_for_lda(line)
@@ -584,17 +562,10 @@ class ClusteringCallGraph:
         dictionary = corpora.Dictionary(self.text_data)
         corpus = [dictionary.doc2bow(text) for text in self.text_data]
 
-        # pickle.dump(corpus, open('corpus.pkl', 'wb'))
-        # dictionary.save('dictionary.gensim')
-
         NUM_TOPICS = 5
         # ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
-        # ldamodel.save('model5.gensim')
-        #topics = ldamodel.print_topics(num_words=5)
-        # for topic in topics:
-        #    print(topic)
-        # topics = ldamodel.print_topic(0, topn=5)
+    
         topics = ldamodel.show_topic(0, topn=5)
         topics = self.topic_model_output(topics)
 
@@ -613,9 +584,6 @@ class ClusteringCallGraph:
         elif method_or_word == 'word':
             txt = self.make_documents_for_a_cluster_tm_word(labels)
 
-        # txt = self.make_documents_for_a_cluster_tm_method(labels)
-        # txt = self.make_documents_for_a_cluster_tm_word(labels)
-        # print(txt)
 
         for line in txt:
             # print(line)
@@ -635,12 +603,6 @@ class ClusteringCallGraph:
         # ldamodel = gensim.models.ldamulticore.LdaMulticore(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         # ldamodel = gensim.models.ldamodel.LdaModel(corpus, num_topics=NUM_TOPICS, id2word=dictionary, passes=3)
         lsimodel = gensim.models.lsimodel.LsiModel(corpus, num_topics=5, id2word=dictionary)
-        # lsimodel.save('model5.gensim')
-        # topics = ldamodel.print_topics(num_words=5)
-        # for topic in topics:
-        #    print(topic)
-        # topics = lsimodel.print_topic(0, topn=5)
-
         topics = lsimodel.show_topic(0, topn=5)
         topics = self.topic_model_output(topics)
 
@@ -776,16 +738,6 @@ class ClusteringCallGraph:
         # this should work but doesn't:
 
         # # traverse tree from leaves upwards and populate mapping ID -> (x,y);
-        # # use linkage matrix to traverse the tree optimally
-        # # (each row in the linkage matrix corresponds to a row in dend['icoord'] and dend['dcoord'])
-        # root_node, node_list = to_tree(Z, rd=True)
-        # for ii, (X, Y) in enumerate(zip(dend['icoord'], dend['dcoord'])):
-        #     x = (X[1] + X[2]) / 2
-        #     y = Y[1] # or Y[2]
-        #     node_id = ii + len(dend['leaves'])
-        #     id_to_coord[node_id] = (x, y)
-
-        # so we need to do it the hard way:
 
         # map endpoint of each link to coordinates of parent node
         children_to_parent_coords = dict()
