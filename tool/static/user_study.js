@@ -114,12 +114,7 @@ jQuery("#user_feedback").submit(function (event) {
 
 function showModal(part) {
 
-
-    // var modal = jQuery(this);
-    // modal.find('#tech1').text(part.data.tfidf_method);
-
     document.getElementById('modal-title').innerHTML = 'Cluster ID: ' + part.data.key;
-
     document.getElementById('tech1').innerHTML = part.data.tfidf_word;
     document.getElementById('tech2').innerHTML = part.data.tfidf_method;
     document.getElementById('tech3').innerHTML = part.data.lda_word;
@@ -129,12 +124,6 @@ function showModal(part) {
     document.getElementById('key').value = part.data.key;
     document.getElementById('cluster_description').innerHTML = part.data.description;
 
-    // alert(part.data.description);
 
-    //$('#tech1').val(part.data.tfidf_method)
-    // alert("Clicked on " + part.data.key);
-    // alert("Clicked on " + part.data.tfidf_method);
-    // alert("Clicked on " + part.data.tfidf_word);
-    // alert("Clicked on " + part.data.lda_method);
     jQuery('#myModal').modal('show');
 }
