@@ -187,6 +187,19 @@ function init() {
     }, "update node text");
   }
 
+  jQuery('#search_button').click(function(){
+    alert('hello');
+    change_node_color();
+  });
+
+  function change_node_color(){
+    myFullDiagram.nodes.each(function (n) {
+      myFullDiagram.model.commit(function (m) {
+        m.set(n.data, "color", "#ffc61a" );
+      }, 'change node color');
+    });
+  }
+
   myFullDiagram.addDiagramListener("ObjectContextClicked",
     function (e) {
       var part = e.subject.part;
@@ -290,31 +303,6 @@ function showLocalOnFullClick() {
 
 
 
-
-
-
-
-// Create the tree model containing TOTAL nodes, with each node having a variable number of children
-// function setupDiagram(total) {
-//   if (total === undefined) total = 100;  // default to 100 nodes
-//   var nodeDataArray = [];
-//   for (var i = 0; i < total; i++) {
-//     nodeDataArray.push({
-//       key: nodeDataArray.length,
-//       color: go.Brush.randomColor()
-//     });
-//   }
-//   var j = 0;
-//   for (var i = 1; i < total; i++) {
-//     var data = nodeDataArray[i];
-//     data.parent = j;
-//     if (Math.random() < 0.3) j++;  // this controls the likelihood that there are enough children
-//   }
-//   myFullDiagram.model = new go.TreeModel(nodeDataArray);
-// }
-
-
-
 function setupDiagram(result) {
   var nodeDataArray = [];
   for (x in result) {
@@ -349,32 +337,5 @@ function clearDiagram() {
 }
 
 
-function get_image() {
-  myFullDiagram.makeImage();
-  alert('Image saved');
-}
 
-function printDiagram() {
-  var svgWindow = window.open();
-  if (!svgWindow) return; // failure to open a new Window
-  var printSize = new go.Size(700, 960);
-  var bnds = myFullDiagram.documentBounds;
-  var x = bnds.x;
-  var y = bnds.y;
-  while (y < bnds.bottom) {
-    while (x < bnds.right) {
-      var svg = myFullDiagram.makeSVG({
-        scale: 1.0,
-        position: new go.Point(x, y),
-        size: printSize
-      });
-      svgWindow.document.body.appendChild(svg);
-      x += printSize.width;
-    }
-    x = bnds.x;
-    y += printSize.height;
-  }
-  setTimeout(function () {
-    svgWindow.print();
-  }, 1);
-}
+
