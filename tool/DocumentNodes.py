@@ -12,18 +12,25 @@ from gensim.summarization.summarizer import summarize
 from gensim.summarization.textcleaner import clean_text_by_sentences as _clean_text_by_sentences
 from gensim.summarization.textcleaner import get_sentences
 from sklearn.feature_extraction.text import TfidfVectorizer
+import numpy as np
 
 class DocumentNodes:
 
+    nltk.download('wordnet')
+    parser = English()
+    nltk.download('stopwords')
+    en_stop = set(nltk.corpus.stopwords.words('english'))
+
     def __init__(self, output_directory, subject_system_name):
         self.workbook = xlsxwriter.Workbook(output_directory +subject_system_name+'.xlsx')
-        self.worksheet = workbook.add_worksheet()
-        self.nltk.download('wordnet')
-        self.parser = English()
-        self.nltk.download('stopwords')
-        self.en_stop = set(nltk.corpus.stopwords.words('english'))
+        self.worksheet = self.workbook.add_worksheet()
         self.row = 0
         self.initalize_sheet()
+        self.execution_paths = []
+        self.function_id_to_name = {}
+        self.id_to_sentence = {}
+        self.function_name_to_docstring = {}
+        self.execution_path_to_sentence = {}
 
     def initalize_sheet(self):
         column = 0
@@ -59,18 +66,15 @@ class DocumentNodes:
         self.worksheet.write(self.row, 9, spm_method)
         self.row += 1
         
-        self.tree.append({'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': text_summary})
         return {'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': text_summary}
 
     def tf_idf_score_for_scipy_cluster(self, clusters, method_or_word):
         """ 
         Tfidf score calculation for a scipy cluster.
         """
-        # print(execution_paths[labels[0]])
-        # print('tf_idf_score_for_scipy_cluster')
-        # print(labels)
-
+    
         txt1 = ['His smile was not perfect', 'His smile was not not not not perfect', 'she not sang']
+        
         try:
 
             if method_or_word == 'method':
@@ -78,9 +82,8 @@ class DocumentNodes:
             elif method_or_word == 'word':
                 txt1 = self.make_documents_for_a_cluster_tfidf_word(clusters)
                 
-            
             tf = TfidfVectorizer(smooth_idf=False, sublinear_tf=False, norm=None, analyzer='word', token_pattern='[a-zA-Z0-9]+')
-        
+ 
             txt_transformed = tf.fit_transform(txt1)
 
         except:
@@ -355,13 +358,13 @@ class DocumentNodes:
         # print(sentence)
         return sentence
 
-    def mining_sequential_patterns_from_initial_execution_paths(self):
+    def mining_sequential_patterns_from_initial_execution_paths(self, execution_paths):
         ''' This function takes input inital execution paths and outputs frequent mined patterns for 
             focusing the further analysis on important parts
         '''
         number_of_patterns_to_pick = 100
         extracted_patterns = []
-        preprocess = self.execution_paths
+        preprocess = execution_paths
         
         ps = PrefixSpan(preprocess)
 

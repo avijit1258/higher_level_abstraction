@@ -8,7 +8,7 @@ import pandas as pd
 from sklearn.cluster import AgglomerativeClustering
 from scipy.cluster.hierarchy import dendrogram, linkage, fcluster, to_tree
 from scipy.spatial.distance import pdist
-import numpy as np
+
 from collections import defaultdict
 from scipy.spatial import distance as ssd
 import queue
@@ -19,14 +19,13 @@ import multiprocessing
 
 from PlayingWithAST import *
 
-from tool.DocumentNodes import DocumentNodes
+from DocumentNodes import DocumentNodes
 
 ROOT = '/Users/avijitbhattacharjee/github/higher_level_abstraction/tool'
 SUBJECT_SYSTEM_NAME = 'jupyter_client_10_16_2020'
 OUTPUT_DIRECTORY = ROOT + '/output/'
 DATASET = ROOT + '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
 SUBJECT_SYSTEM_FOR_COMMENT = '/Users/avijitbhattacharjee/github/python_subject_systems/jupyter_client' # put location of repository for getting comments
-
 
 document_nodes = DocumentNodes(OUTPUT_DIRECTORY, SUBJECT_SYSTEM_NAME)
 
@@ -69,7 +68,7 @@ class ClusteringCallGraph:
         print('Time required for extracting_execution_paths: ', end - start)
         print('No. of execution paths', len(self.execution_paths))
 
-        self.execution_paths = self.mining_sequential_patterns_from_initial_execution_paths()
+        self.execution_paths = document_nodes.mining_sequential_patterns_from_initial_execution_paths(self.execution_paths)
 
         # self.remove_redundant_ep()
         # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
@@ -229,7 +228,12 @@ class ClusteringCallGraph:
         print('Time required for clustering: ', end - start)
         # labels = bfs_leaf_node(nodelist, 6729)
         # print(labels)
-
+        count = 0
+        document_nodes.execution_paths = self.execution_paths
+        document_nodes.function_id_to_name = self.function_id_to_name
+        document_nodes.id_to_sentence = self.id_to_sentence
+        document_nodes.function_name_to_docstring = self.function_name_to_docstring
+        document_nodes.execution_path_to_sentence = self.execution_path_to_sentence
         start = timer()
         for k,v in nodes_with_parent.items():
             if nodelist[k].count == 1:
@@ -240,8 +244,8 @@ class ClusteringCallGraph:
             # print(k, 'cluster using scipy', labels)
             # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
             # p.start()
-            self.count += 1
-            print('Cluster no: ',self.count)
+            count += 1
+            print('Cluster no: ', count)
             # if self.count == 300:
             #     print('Hello')
             #     break
