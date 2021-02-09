@@ -204,7 +204,8 @@ function init() {
     function (e) {
       var part = e.subject.part;
       if (!(part instanceof go.Link)) {
-        showModal(part);
+        // showUserStudyPanel(part);
+        showNodeDetails(part);
       }
 
     });
@@ -226,6 +227,14 @@ function init() {
 
   myFullDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
 
+}
+
+function showNodeDetails(part){
+    document.getElementById('node_key').innerHTML = 'Node Key: ' + part.data.key;
+    document.getElementById('node_summary').innerHTML = part.data.text_summary;
+    document.getElementById('node_patterns').innerHTML = part.data.spm_method;
+
+    jQuery('#node_details').modal('show');
 }
 
 

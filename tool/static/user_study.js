@@ -112,7 +112,7 @@ jQuery("#user_feedback").submit(function (event) {
     changeDoneClusterColor(f_key);
 });
 
-function showModal(part) {
+function showUserStudyPanel(part) {
 
     document.getElementById('modal-title').innerHTML = 'Cluster ID: ' + part.data.key;
     document.getElementById('tech1').innerHTML = part.data.tfidf_word;
@@ -127,3 +127,4 @@ function showModal(part) {
 
     jQuery('#myModal').modal('show');
 }
+
