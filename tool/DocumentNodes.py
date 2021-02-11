@@ -319,14 +319,14 @@ class DocumentNodes:
         for c in execution_paths_of_a_cluster:
             for f in self.execution_paths[c]:
                 # print(self.function_id_to_name[f], ' ', function_name_to_docstring[self.function_id_to_name[f]])
-                print(self.function_id_to_name[f])
+                # print(self.function_id_to_name[f])
                 if self.function_id_to_name[f] in function_name_to_docstring:
 
                     if function_name_to_docstring[self.function_id_to_name[f]] is not None:
                         text_for_summary += function_name_to_docstring[self.function_id_to_name[f]] + ' '
                         # count += 1
 
-        print(len(text_for_summary))
+        # print(len(text_for_summary))
 
         try:
             return summarize(text_for_summary, word_count=25)
