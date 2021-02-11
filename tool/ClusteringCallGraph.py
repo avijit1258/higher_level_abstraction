@@ -20,12 +20,13 @@ import multiprocessing
 from PlayingWithAST import *
 
 from DocumentNodes import DocumentNodes
+import config
 
-ROOT = '/Users/avijitbhattacharjee/github/higher_level_abstraction/tool'
-SUBJECT_SYSTEM_NAME = 'jupyter_client_10_16_2020'
+ROOT = config.ROOT
+SUBJECT_SYSTEM_NAME = config.SUBJECT_SYSTEM_NAME
 OUTPUT_DIRECTORY = ROOT + '/output/'
 DATASET = ROOT + '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
-SUBJECT_SYSTEM_FOR_COMMENT = '/Users/avijitbhattacharjee/github/python_subject_systems/jupyter_client' # put location of repository for getting comments
+SUBJECT_SYSTEM_FOR_COMMENT = config.SUBJECT_SYSTEM_FOR_COMMENT # put location of repository for getting comments
 
 document_nodes = DocumentNodes(OUTPUT_DIRECTORY, SUBJECT_SYSTEM_NAME)
 
@@ -49,7 +50,6 @@ class ClusteringCallGraph:
     pwa = PlayingWithAST()
 
     function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(SUBJECT_SYSTEM_FOR_COMMENT)
-    print(function_name_to_docstring)
 
 
 
@@ -59,6 +59,7 @@ class ClusteringCallGraph:
 
     def python_analysis(self):
         """ analyzing python programs to build cluster tree of execution paths. """
+
         self.tgf_to_networkX()
         self.G.remove_edges_from(nx.selfloop_edges(self.G))
         self.extracting_source_and_exit_node()
@@ -68,7 +69,7 @@ class ClusteringCallGraph:
         print('Time required for extracting_execution_paths: ', end - start)
         print('No. of execution paths', len(self.execution_paths))
 
-        self.execution_paths = document_nodes.mining_sequential_patterns_from_initial_execution_paths(self.execution_paths)
+        # self.execution_paths = document_nodes.mining_sequential_patterns_from_initial_execution_paths(self.execution_paths)
 
         # self.remove_redundant_ep()
         # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
@@ -197,6 +198,9 @@ class ClusteringCallGraph:
         for i in range(len(paths)):
             for j in range(len(paths)):
                 Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
+                print('Similarity', paths[i])
+                print(paths[j])
+                print(Matrix[i][j])
                 # Matrix[i][j] = self.similarity(paths[i], paths[j])
                 
         
@@ -256,6 +260,8 @@ class ClusteringCallGraph:
         
         print(self.tree, file=open(OUTPUT_DIRECTORY+ 'TREE_DICT_' +self.subject_system, 'w'))
         # print(self.tree, file=open('tree_calculator.txt', 'w'))
+
+
         return self.tree
 
     def extract_function_name(self,str):

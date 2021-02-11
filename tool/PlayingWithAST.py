@@ -11,7 +11,7 @@ class PlayingWithAST:
         """ This function returns function name with their docstring """
 
         with open(filename) as f:
-            tree = ast.parse( f.read() ,filename= filename, mode='exec')
+            tree = ast.parse(f.read(), filename = filename, mode='exec')
 
             for node in ast.walk(tree):
                 # print(type(node))
@@ -54,7 +54,8 @@ class PlayingWithAST:
 
         for f in all_files:
             self.file_to_function_docstring_pair(f)
-
+        for key, value in self.function_with_docstring.items():
+            print(key, value)
         return self.function_with_docstring
 
 
