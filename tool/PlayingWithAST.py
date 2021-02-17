@@ -28,13 +28,14 @@ class PlayingWithAST:
         return 
 
     def process_docstring(self, doc):
-
+        print('Comment in:', doc)
         if doc is None:
             return ''
         for line in doc.split('\n'):
             line = line.strip()
             if (line == "") or (not any([c.isalnum() for c in line])):
                 continue
+            print('Comment out:', line)
             return line 
 
         return ''
@@ -53,9 +54,10 @@ class PlayingWithAST:
         all_files = self.get_all_py_files(location)
 
         for f in all_files:
+            print('File under investigation: ', f)
             self.file_to_function_docstring_pair(f)
         for key, value in self.function_with_docstring.items():
-            print(key, value)
+            print('Function: ', key, ' Comment:', value)
         return self.function_with_docstring
 
 
