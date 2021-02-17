@@ -329,7 +329,7 @@ class DocumentNodes:
         # print(len(text_for_summary))
 
         try:
-            return summarize(text_for_summary, word_count=25)
+            return summarize(text_for_summary, word_count=50)
         except ValueError:
             return 'Empty'
 
