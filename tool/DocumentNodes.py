@@ -327,9 +327,12 @@ class DocumentNodes:
                         # count += 1
 
         # print(len(text_for_summary))
+        print('Cluster comments: ', text_for_summary)
 
         try:
-            return summarize(text_for_summary, word_count=50)
+            cluster_summary = summarize(text_for_summary, ratio = 0.25)
+            print('Cluster summary: ', cluster_summary)
+            return cluster_summary
         except ValueError:
             return 'Empty'
 
