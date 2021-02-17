@@ -21,6 +21,7 @@ from PlayingWithAST import *
 
 from DocumentNodes import DocumentNodes
 import config
+import util
 
 ROOT = config.ROOT
 SUBJECT_SYSTEM_NAME = config.SUBJECT_SYSTEM_NAME
@@ -197,10 +198,11 @@ class ClusteringCallGraph:
         Matrix = [[0 for x in range(length)] for y in range(length)]
         for i in range(len(paths)):
             for j in range(len(paths)):
-                Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
-                print('Similarity', paths[i])
-                print(paths[j])
-                print(Matrix[i][j])
+                # Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
+                Matrix[i][j] = util.compare_execution_paths(paths[i], paths[j])
+                # print('Similarity', paths[i])
+                # print(paths[j])
+                # print(Matrix[i][j])
                 # Matrix[i][j] = self.similarity(paths[i], paths[j])
                 
         
