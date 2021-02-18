@@ -36,7 +36,7 @@ class PlayingWithAST:
             if (line == "") or (not any([c.isalnum() for c in line])):
                 continue
             print('Comment out:', line)
-            if '.' == line[-1]:
+            if '.' in line:
                 return line
             else:
                 return line+'.' 
