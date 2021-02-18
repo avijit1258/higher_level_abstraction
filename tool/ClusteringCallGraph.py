@@ -46,7 +46,7 @@ class ClusteringCallGraph:
     execution_paths = []
     G = nx.DiGraph()
     function_id_to_name = {}
-    function_id_to_file_function = {}
+    function_id_to_file_function_name = {}
 
     pwa = PlayingWithAST()
 
