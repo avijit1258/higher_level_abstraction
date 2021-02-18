@@ -28,6 +28,7 @@ class DocumentNodes:
         self.initalize_sheet()
         self.execution_paths = []
         self.function_id_to_name = {}
+        self.function_id_to_file_function_name = {}
         self.id_to_sentence = {}
         self.function_name_to_docstring = {}
         self.execution_path_to_sentence = {}
@@ -353,13 +354,12 @@ class DocumentNodes:
         sentence = ''
         for i in top5:
             for j in i[1]:
-                sentence += self.function_id_to_name[j] 
+                sentence += self.function_id_to_file_function_name[j] 
                 if j != i[1][len(i[1])-1]:
-                    sentence += ','
+                    sentence += ' &rarr; '
                 
-            sentence += ';\n'
+            sentence += '<br>'
 
-        # print(sentence)
         return sentence
 
     def mining_sequential_patterns_from_initial_execution_paths(self, execution_paths):
