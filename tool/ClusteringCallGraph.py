@@ -46,7 +46,7 @@ class ClusteringCallGraph:
     execution_paths = []
     G = nx.DiGraph()
     function_id_to_name = {}
-
+    function_id_to_file_function = {}
 
     pwa = PlayingWithAST()
 
@@ -155,8 +155,10 @@ class ClusteringCallGraph:
                 ln = line.split(' ')
                 # print(ln)
                 self.function_id_to_name[ln[0]] = self.extract_function_name(ln[1])
+                self.function_id_to_file_function_name[ln[0]] = self.extract_function_name(ln[1]) + line.split('/')[-1]
                 # print(ln[0])
-
+        print('Function id to function name', self.function_id_to_name, 'len : ', len(self.function_id_to_name))        
+        print('Function id to file name, function name', self.function_id_to_file_function_name)
         nx.draw(self.G, with_labels=True)
         plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
         plt.show()
