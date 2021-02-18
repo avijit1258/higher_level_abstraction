@@ -330,7 +330,8 @@ class DocumentNodes:
         print('Cluster comments: ', text_for_summary)
 
         try:
-            cluster_summary = summarize(text_for_summary, ratio = 0.25)
+            cluster_summary = summarize(text_for_summary, ratio=0.35, split=True)
+            cluster_summary = ' '.join(list(set(cluster_summary)))
             print('Cluster summary: ', cluster_summary)
             return cluster_summary
         except ValueError:
