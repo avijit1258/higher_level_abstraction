@@ -346,19 +346,21 @@ class DocumentNodes:
         
         ps = PrefixSpan(preprocess)
 
-        ps.maxlen = 15
-        ps.minlen = 5
+        # ps.maxlen = 15
+        ps.minlen = 4
 
-        top5 = ps.topk(5, closed = True)
+        # top5 = ps.topk(5)
+
+        top5 = ps.frequent(2)
         
-        sentence = ''
+        sentence = ' &#187; '
         for i in top5:
             for j in i[1]:
                 sentence += self.function_id_to_file_function_name[j] 
                 if j != i[1][len(i[1])-1]:
                     sentence += ' &rarr; '
                 
-            sentence += '<br>'
+            sentence += ' . <br>'
 
         return sentence
 
@@ -376,7 +378,7 @@ class DocumentNodes:
 
         ps.maxlen = 15
 
-        top = ps.topk(number_of_patterns_to_pick, closed = True)
+        top = ps.topk(number_of_patterns_to_pick, closed = True, generator = True)
 
         for i in top:
             extracted_patterns.append(i[1])
