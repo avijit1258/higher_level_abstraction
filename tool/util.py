@@ -1,3 +1,5 @@
+import random
+
 
 def test_strike_a_match():
     ep1 = ['58', '338', '342', '340'] #['F', 'R', 'A', 'N', 'C', 'E']
@@ -12,6 +14,7 @@ def method_pairs(execution_path):
     return all_pairs
     
 def compare_execution_paths(ep1, ep2):
+    ''' Strike a match implementation '''
     ep1_pairs = method_pairs(ep1)
     ep2_pairs = method_pairs(ep2)
     union = len(ep1_pairs) + len(ep2_pairs)
@@ -26,4 +29,11 @@ def compare_execution_paths(ep1, ep2):
                 break
                 
     return 1 - ( 2 * intersection) / union
+
+def random_sample_execution_paths(execution_paths):
+    execution_path_max = 5000
+
+    return random.sample(execution_paths, execution_path_max)
+    
+
     
