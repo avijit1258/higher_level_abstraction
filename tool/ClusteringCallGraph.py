@@ -69,7 +69,7 @@ class ClusteringCallGraph:
         print('Time required for extracting_execution_paths: ', end - start)
         print('No. of execution paths', len(self.execution_paths))
 
-        # self.execution_paths = document_nodes.mining_sequential_patterns_from_initial_execution_paths(self.execution_paths)
+        self.execution_paths = document_nodes.mining_sequential_patterns_from_initial_execution_paths(self.execution_paths)
 
         # self.remove_redundant_ep()
         # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
