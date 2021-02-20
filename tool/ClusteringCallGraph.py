@@ -21,6 +21,7 @@ from PlayingWithAST import *
 
 from DocumentNodes import DocumentNodes
 import config
+import util
 
 ROOT = config.ROOT
 SUBJECT_SYSTEM_NAME = config.SUBJECT_SYSTEM_NAME
@@ -45,7 +46,7 @@ class ClusteringCallGraph:
     execution_paths = []
     G = nx.DiGraph()
     function_id_to_name = {}
-
+    function_id_to_file_function_name = {}
 
     pwa = PlayingWithAST()
 
@@ -69,7 +70,10 @@ class ClusteringCallGraph:
         print('Time required for extracting_execution_paths: ', end - start)
         print('No. of execution paths', len(self.execution_paths))
 
-        self.execution_paths = document_nodes.mining_sequential_patterns_from_initial_execution_paths(self.execution_paths)
+        
+        if len(self.execution_paths) > 5000:
+            self.execution_paths = util.random_sample_execution_paths(self.execution_paths)
+        
 
         # self.remove_redundant_ep()
         # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
@@ -125,37 +129,30 @@ class ClusteringCallGraph:
     def tgf_to_networkX(self):
         """ converting tgf file to a networkX graph"""
         self.subject_system = SUBJECT_SYSTEM_NAME + '.txt' 
-        # self.subject_system = '/home/avb307/projects/higher_level_abstraction/tool/calculator.txt'
-        print('thanks a lot')
-        # path = easygui.fileopenbox()
-
+        
         f = open(DATASET, "r")
-
-        # f = open(path, "r")
         G = nx.DiGraph()
-        # print("Function name: ")
         graph_started = False
         for line in f:
 
             if line.find('#') != -1:
-                # print(line.find('#'))
                 graph_started = True
                 continue
 
             if graph_started == True:
                 edge_info = line.split()
-                # print(edge_info)
-                # G.add_edge(function_id_to_name[edge_info[0]], function_id_to_name[edge_info[1]])
-                if self.function_id_to_name[edge_info[0]] in self.special_functions or self.function_id_to_name[edge_info[1]] in self.special_functions:
-                    continue
-                self.G.add_edge(edge_info[0], edge_info[1])
+                # if self.function_id_to_name[edge_info[0]] in self.special_functions or self.function_id_to_name[edge_info[1]] in self.special_functions:
+                #     continue
+                # filter module calls from function calls
+                if edge_info[0] in self.function_id_to_file_function_name and edge_info[1] in self.function_id_to_name:
+                    self.G.add_edge(edge_info[0], edge_info[1])
 
-            if graph_started == False :
+            if graph_started == False and '.py' in line:
                 ln = line.split(' ')
-                # print(ln)
                 self.function_id_to_name[ln[0]] = self.extract_function_name(ln[1])
-                # print(ln[0])
-
+                self.function_id_to_file_function_name[ln[0]] = self.extract_function_name(ln[1]) + ' (' + line.split('/')[-1] + ')'
+        print('Function id to function name', self.function_id_to_name, 'len : ', len(self.function_id_to_name))        
+        print('Function id to file name, function name', self.function_id_to_file_function_name)
         nx.draw(self.G, with_labels=True)
         plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
         plt.show()
@@ -197,16 +194,9 @@ class ClusteringCallGraph:
         Matrix = [[0 for x in range(length)] for y in range(length)]
         for i in range(len(paths)):
             for j in range(len(paths)):
-                Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
-                print('Similarity', paths[i])
-                print(paths[j])
-                print(Matrix[i][j])
-                # Matrix[i][j] = self.similarity(paths[i], paths[j])
+                # Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
+                Matrix[i][j] = util.compare_execution_paths(paths[i], paths[j])
                 
-        
-        # print('Paths :', paths)
-        # print('Matrix :', Matrix)
-
         return Matrix
 
 
@@ -235,6 +225,7 @@ class ClusteringCallGraph:
         count = 0
         document_nodes.execution_paths = self.execution_paths
         document_nodes.function_id_to_name = self.function_id_to_name
+        document_nodes.function_id_to_file_function_name = self.function_id_to_file_function_name
         document_nodes.id_to_sentence = self.id_to_sentence
         document_nodes.function_name_to_docstring = self.function_name_to_docstring
         document_nodes.execution_path_to_sentence = self.execution_path_to_sentence
@@ -504,7 +495,7 @@ class ClusteringCallGraph:
         for l in execution_paths:
             str += self.function_id_to_name[l]
             if l != execution_paths[len(execution_paths)-1]:
-                str += '-->'
+                str += ' &rarr; '
 
         return str
 

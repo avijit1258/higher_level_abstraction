@@ -28,6 +28,7 @@ class DocumentNodes:
         self.initalize_sheet()
         self.execution_paths = []
         self.function_id_to_name = {}
+        self.function_id_to_file_function_name = {}
         self.id_to_sentence = {}
         self.function_name_to_docstring = {}
         self.execution_path_to_sentence = {}
@@ -327,9 +328,13 @@ class DocumentNodes:
                         # count += 1
 
         # print(len(text_for_summary))
+        print('Cluster comments: ', text_for_summary)
 
         try:
-            return summarize(text_for_summary, word_count=25)
+            cluster_summary = summarize(text_for_summary, ratio=0.35, split=True)
+            cluster_summary = ' '.join(list(set(cluster_summary)))
+            print('Cluster summary: ', cluster_summary)
+            return cluster_summary
         except ValueError:
             return 'Empty'
 
@@ -341,21 +346,22 @@ class DocumentNodes:
         
         ps = PrefixSpan(preprocess)
 
-        ps.maxlen = 15
-        ps.minlen = 5
+        # ps.maxlen = 15
+        ps.minlen = 4
 
-        top5 = ps.topk(5, closed = True)
+        # top5 = ps.topk(5)
+
+        top5 = ps.frequent(2)
         
-        sentence = ''
+        sentence = ' &#187; '
         for i in top5:
             for j in i[1]:
-                sentence += self.function_id_to_name[j] 
+                sentence += self.function_id_to_file_function_name[j] 
                 if j != i[1][len(i[1])-1]:
-                    sentence += ','
+                    sentence += ' &rarr; '
                 
-            sentence += ';\n'
+            sentence += ' . <br>'
 
-        # print(sentence)
         return sentence
 
     def mining_sequential_patterns_from_initial_execution_paths(self, execution_paths):
@@ -372,7 +378,7 @@ class DocumentNodes:
 
         ps.maxlen = 30
 
-        top = ps.topk(number_of_patterns_to_pick, closed = True)
+        top = ps.topk(number_of_patterns_to_pick, closed = True, generator = True)
 
         for i in top:
             extracted_patterns.append(i[1])
