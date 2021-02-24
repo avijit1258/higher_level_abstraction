@@ -5,12 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="{{ url_for('static',filename = 'go-debug.js')}}"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
-  </script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'style.css')}}">
   <script src="{{ url_for('static',filename = 'manipulate_tree.js')}}"></script>
@@ -19,7 +16,8 @@
 </head>
 
 <body onload="init()">
-
+  
+ 
   <nav class="navbar  navbar-dark">
     <div class="container-fluid">
 
@@ -38,45 +36,66 @@
 
   </nav>
 
+
   <div class="container" id="sample">
 
-    <div class="container">
+    <div class="container"> 
       <h2 class="text-focus-in" style="text-align: center;">Interactive tool for program comprehension through static
         analysis: ITpcSA</h2>
-      <!-- <button onclick="printDiagram()" class="btn"> GET Image </button> -->
     </div>
-
-    <div class="container">
-      <select name="subject_system" id="subject_system_id">
-        {% for ss in subject_systems %}
-        <option value="{{ss}}">{{ss}}</option>
-        {% endfor %}
-      </select>
-
-    </div>
-
-    <div class="container">
-      <select name="technique_choice" id="technique_choice_id">
-        {% for tc in technique_choices %}
-        <option value="{{tc}}">{{tc}}</option>
-        {% endfor %}
-      </select>
-
-    </div>
-
-    <div class="container">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="submit" id="search_button"> Search </button>
+    
+    
+    <div class="d-sm-flex flex-row">
+     
+      <div class="p-2">
+        <select name="subject_system" id="subject_system_id">
+          {% for ss in subject_systems %}
+          <option value="{{ss}}">{{ss}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="p-2">
+        <select name="technique_choice" id="technique_choice_id">
+          {% for tc in technique_choices %}
+          <option value="{{tc}}">{{tc}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="p-2">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit" id="search_button"> Search </button>
+      </div>
     </div>
 
     
+
 
     <div class="container">
       <h3 style="text-align: center;"> Full diagram</h3>
     </div>
 
-    <div class="container" id="fullDiagram" style="height:550px;width:100%;border:1px solid black;margin:2px">
+    <div class="grid-container"> 
+      
+      
+      <div class="container" id="fullDiagram" style="height:550px;width:60%;border:1px solid black;margin:2px">
 
+      </div>
+      <div >
+        <div class="card" style="width:45 rem;">
+  
+          <div class="card-body">
+            <h5 class="card-title" id = "node_key">Node Key</h5>
+            <label> Node summary</label>
+            <p class="card-text" id="node_summary"> </p>
+            <label> Node patterns </label>
+            <p class="card-text" id="node_patterns"> </p>
+          </div>
+        </div>
+        
+      </div>
+      
+    
+    
 
     </div>
 
@@ -88,11 +107,11 @@
       <h3 style="text-align: center;"> Local diagram</h3>
     </div>
 
-    <div class="container" id="localDiagram" style="height:250px;width:100%;border:1px solid black;margin:2px"></div>
+    <div class="container" id="localDiagram" style="height:550px;width:70%;border:1px solid black;margin:2px"></div>
 
   </div>
 
-  <div class="modal" tabindex="-1" role="dialog" id="node_details">
+  <!-- <div class="modal" role="dialog" id="node_details">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -102,20 +121,20 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="form-group"> 
-              <label> Node summary</label>
-              <p id="node_summary"> </p>
+          <div class="form-group">
+            <label> Node summary</label>
+            <p id="node_summary"> </p>
           </div>
 
-          <div class="form-group"> 
+          <div class="form-group">
             <label> Node patterns </label>
             <p id="node_patterns"> </p>
           </div>
-          
+
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 

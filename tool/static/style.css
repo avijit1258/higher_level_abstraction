@@ -6,6 +6,14 @@ body{
 	-webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 	        animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-gap: 10px;
+}
+
+
 /* 
 textarea{
   white-space: nowrap;
