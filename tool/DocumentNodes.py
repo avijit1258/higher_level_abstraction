@@ -369,15 +369,15 @@ class DocumentNodes:
         ''' This function takes input inital execution paths and outputs frequent mined patterns for 
             focusing the further analysis on important parts
         '''
-        number_of_patterns_to_pick = 100
+        number_of_patterns_to_pick = 3000
         extracted_patterns = []
         preprocess = execution_paths
         
         ps = PrefixSpan(preprocess)
 
-        ps.minlen = 5
+        ps.minlen = 20
 
-        ps.maxlen = 15
+        ps.maxlen = 30
 
         top = ps.topk(number_of_patterns_to_pick, closed = True, generator = True)
 
