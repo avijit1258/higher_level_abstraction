@@ -42,24 +42,7 @@ function init() {
         "undoManager.isEnabled": true
       });
 
-  myLocalDiagram = // this is very similar to the full Diagram
-    $(go.Diagram, "localDiagram", {
-      autoScale: go.Diagram.UniformToFill,
-      contentAlignment: go.Spot.Center,
-      isReadOnly: false,
-      layout: $(go.TreeLayout, {
-        angle: 90,
-        sorting: go.TreeLayout.SortingAscending
-      }),
-      "LayoutCompleted": function (e) {
-        var sel = e.diagram.selection.first();
-        if (sel !== null) myLocalDiagram.scrollToRect(sel.actualBounds);
-      },
-      maxSelectionCount: 1,
-      // when the selection changes, update the contents of the myLocalDiagram
-      "ChangedSelection": showLocalOnLocalClick,
-      "undoManager.isEnabled": true
-    });
+  
 
   //myFullDiagram.toolManager.textEditingTool.defaultTextEditor = window.TextEditor;
   //myLocalDiagram.toolManager.textEditingTool.defaultTextEditor = window.TextEditor;
@@ -117,7 +100,7 @@ function init() {
 
     );
   myFullDiagram.nodeTemplate = myNodeTemplate;
-  myLocalDiagram.nodeTemplate = myNodeTemplate;
+  
 
   // Define a basic link template, not selectable, shared by both diagrams
   var myLinkTemplate =
@@ -130,7 +113,7 @@ function init() {
       })
     );
   myFullDiagram.linkTemplate = myLinkTemplate;
-  myLocalDiagram.linkTemplate = myLinkTemplate;
+  
 
 
   // Create the full tree diagram
@@ -269,46 +252,11 @@ FlatTreeLayout.prototype.commitLayout = function () {
 
 // Make the corresponding node in the full diagram to that selected in the local diagram selected,
 // then call showLocalOnFullClick to update the local diagram.
-function showLocalOnLocalClick() {
-  var selectedLocal = myLocalDiagram.selection.first();
-  if (selectedLocal !== null) {
-    // there are two separate Nodes, one for each Diagram, but they share the same key value
-    myFullDiagram.select(myFullDiagram.findPartForKey(selectedLocal.data.key));
-  }
-}
 
 
 
-function showLocalOnFullClick() {
-  var node = myFullDiagram.selection.first();
-  if (node !== null) {
-    // make sure the selected node is in the viewport
-    myFullDiagram.scrollToRect(node.actualBounds);
-    // move the large yellow node behind the selected node to highlight it
-    highlighter.location = node.location;
-    // create a new model for the local Diagram
-    var model = new go.TreeModel();
-    // add the selected node and its children and grandchildren to the local diagram
-    var nearby = node.findTreeParts(3); // three levels of the (sub)tree
-    // add parent and grandparent
-    var parent = node.findTreeParentNode();
-    if (parent !== null) {
-      nearby.add(parent);
-      var grandparent = parent.findTreeParentNode();
-      if (grandparent !== null) {
-        nearby.add(grandparent);
-      }
-    }
-    // create the model using the same node data as in myFullDiagram's model
-    nearby.each(function (n) {
-      if (n instanceof go.Node) model.addNodeData(n.data);
-    });
-    myLocalDiagram.model = model;
-    // select the node at the diagram's focus
-    var selectedLocal = myLocalDiagram.findPartForKey(node.data.key);
-    if (selectedLocal !== null) selectedLocal.isSelected = true;
-  }
-}
+
+
 
 
 
