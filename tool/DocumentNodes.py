@@ -347,14 +347,15 @@ class DocumentNodes:
         ps = PrefixSpan(preprocess)
 
         # ps.maxlen = 15
-        ps.minlen = 4
+        ps.minlen = 6
 
-        # top5 = ps.topk(5)
+        top5 = ps.topk(10, closed = True)
 
-        top5 = ps.frequent(2)
+        # top5 = ps.frequent(2, closed = True)
         
-        sentence = ' &#187; '
+        sentence = ' '
         for i in top5:
+            sentence += ' &#187; '
             for j in i[1]:
                 sentence += self.function_id_to_file_function_name[j] 
                 if j != i[1][len(i[1])-1]:
