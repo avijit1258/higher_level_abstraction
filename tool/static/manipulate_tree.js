@@ -38,7 +38,6 @@ function init() {
           }),
         maxSelectionCount: 1, // only one node may be selected at a time in each diagram
         // when the selection changes, update the myLocalDiagram view
-        "ChangedSelection": showLocalOnFullClick,
         "undoManager.isEnabled": true
       });
 
@@ -201,14 +200,13 @@ function init() {
     var node0 = myFullDiagram.findPartForKey(0);
     console.log(node0);
     if (node0 !== null) node0.isSelected = true;
-    showLocalOnFullClick();
     e.diagram.findTreeRoots().each(function (r) {
       r.expandTree(3);
     });
 
   });
 
-  myFullDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
+  // myFullDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
 
 }
 
