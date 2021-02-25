@@ -214,8 +214,10 @@ function showNodeDetails(part){
     document.getElementById('node_key').innerHTML = 'Node Key: ' + part.data.key;
     document.getElementById('node_summary').innerHTML = part.data.text_summary;
     document.getElementById('node_patterns').innerHTML = part.data.spm_method;
+    document.getElementById('files').innerHTML = part.data.files;
+    document.getElementById('files_count').innerHTML = part.data.files_count;
 
-    jQuery('#node_details').modal('show');
+    // jQuery('#node_details').modal('show');
 }
 
 
@@ -272,9 +274,10 @@ function setupDiagram(result) {
       lsi_word: result[x].lsi_word,
       lsi_method: result[x].lsi_method,
       color: "#cce6ff",
-      description: 'docstring : ' + result[x].text_summary + '\n pattern: ' + result[x].spm_method,
       spm_method: result[x].spm_method,
-      text_summary: result[x].text_summary
+      text_summary: result[x].text_summary,
+      files: result[x].files,
+      files_count: result[x].files_count
     });
 
   }
