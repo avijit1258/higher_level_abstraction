@@ -28,7 +28,7 @@ class DocumentNodes:
         self.initalize_sheet()
         self.execution_paths = []
         self.function_id_to_name = {}
-        self.function_id_to_file_function_name = {}
+        self.function_id_to_file_name = {}
         self.id_to_sentence = {}
         self.function_name_to_docstring = {}
         self.execution_path_to_sentence = {}
@@ -48,12 +48,14 @@ class DocumentNodes:
         
         spm_method = self.mining_sequential_patterns(execution_paths_of_a_cluster)
         tfidf_method = self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'method') 
-        tfidf_word = 'IN: '+ str(k) + ', Name: ' + self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') 
+        tfidf_word =  self.tf_idf_score_for_scipy_cluster(execution_paths_of_a_cluster, 'word') 
         lda_method = self.topic_model_lda(execution_paths_of_a_cluster, 'method')
         lda_word = self.topic_model_lda(execution_paths_of_a_cluster, 'word')
         lsi_method = self.topic_model_lsi(execution_paths_of_a_cluster, 'method')
         lsi_word = self.topic_model_lsi(execution_paths_of_a_cluster, 'word')
         text_summary = self.summarize_clusters_using_docstring(execution_paths_of_a_cluster, self.function_name_to_docstring)
+        files_count, files = self.count_files_in_node(execution_paths_of_a_cluster)
+        
 
         self.worksheet.write(self.row, 0, k)
         self.worksheet.write(self.row, 1, self.execution_path_to_sentence(execution_paths_of_a_cluster))
@@ -67,7 +69,9 @@ class DocumentNodes:
         self.worksheet.write(self.row, 9, spm_method)
         self.row += 1
         
-        return {'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word, 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method , 'text_summary': text_summary}
+        return {'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word,\
+                'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method' : spm_method ,\
+                'text_summary': text_summary, 'files_count': files_count, 'files': files}
 
     def tf_idf_score_for_scipy_cluster(self, clusters, method_or_word):
         """ 
@@ -357,7 +361,7 @@ class DocumentNodes:
         for i in top5:
             sentence += ' &#187; '
             for j in i[1]:
-                sentence += self.function_id_to_file_function_name[j] 
+                sentence += self.function_id_to_name[j] + '(' + self.function_id_to_file_name[j] + ')'
                 if j != i[1][len(i[1])-1]:
                     sentence += ' &rarr; '
                 
@@ -386,3 +390,19 @@ class DocumentNodes:
 
         # print(extracted_patterns)
         return extracted_patterns
+
+    def count_files_in_node(self, execution_paths_of_a_cluster):
+        
+        files_count = {}
+        total_file = 0
+        for c in execution_paths_of_a_cluster:
+            for f in self.execution_paths[c]:
+                if self.function_id_to_file_name in files_count:
+                    files_count[self.function_id_to_file_name] += 1
+                    total_file += 1
+                else:
+                    files_count[self.function_id_to_file_name] = 1
+                    total_file += 1
+
+        return total_file, list(files_count.keys())
+        
