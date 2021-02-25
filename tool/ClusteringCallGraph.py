@@ -46,7 +46,7 @@ class ClusteringCallGraph:
     execution_paths = []
     G = nx.DiGraph()
     function_id_to_name = {}
-    function_id_to_file_function_name = {}
+    function_id_to_file_name = {}
 
     pwa = PlayingWithAST()
 
@@ -144,15 +144,15 @@ class ClusteringCallGraph:
                 # if self.function_id_to_name[edge_info[0]] in self.special_functions or self.function_id_to_name[edge_info[1]] in self.special_functions:
                 #     continue
                 # filter module calls from function calls
-                if edge_info[0] in self.function_id_to_file_function_name and edge_info[1] in self.function_id_to_name:
+                if edge_info[0] in self.function_id_to_name and edge_info[1] in self.function_id_to_name:
                     self.G.add_edge(edge_info[0], edge_info[1])
 
             if graph_started == False and '.py' in line:
                 ln = line.split(' ')
                 self.function_id_to_name[ln[0]] = self.extract_function_name(ln[1])
-                self.function_id_to_file_function_name[ln[0]] = self.extract_function_name(ln[1]) + ' (' + line.split('/')[-1] + ')'
+                self.function_id_to_file_name[ln[0]] = line.split('/')[-1]
         print('Function id to function name', self.function_id_to_name, 'len : ', len(self.function_id_to_name))        
-        print('Function id to file name, function name', self.function_id_to_file_function_name)
+        print('Function id to file name, function name', self.function_id_to_file_name)
         nx.draw(self.G, with_labels=True)
         plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
         plt.show()
@@ -225,7 +225,7 @@ class ClusteringCallGraph:
         count = 0
         document_nodes.execution_paths = self.execution_paths
         document_nodes.function_id_to_name = self.function_id_to_name
-        document_nodes.function_id_to_file_function_name = self.function_id_to_file_function_name
+        document_nodes.function_id_to_file_name = self.function_id_to_file_name
         document_nodes.id_to_sentence = self.id_to_sentence
         document_nodes.function_name_to_docstring = self.function_name_to_docstring
         document_nodes.execution_path_to_sentence = self.execution_path_to_sentence
