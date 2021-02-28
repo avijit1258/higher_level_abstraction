@@ -13,7 +13,7 @@
   </script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'style.css')}}">
-  <script src="{{ url_for('static',filename = 'manipulate_tree.js')}}"></script>
+  <script src="{{ url_for('static',filename = 'manipulate_tree_directory_view.js')}}"></script>
   <script src="{{ url_for('static',filename = 'user_study.js')}}"></script>
   <title>Designing an interactive tool for program comprehension from static analysis</title>
 </head>
@@ -88,13 +88,13 @@
 
           <div class="card-body">
             <h5 class="card-title" id="node_key">Node Key</h5>
-            <em> Number of Files </em>
+            <em class="node_details_label"> Number of Files </em>
             <div id="number_of_files"> </div>
-            <em> Files</em>
+            <em class="node_details_label"> Files</em>
             <div id="files" class="vertical-scrollbar"> </div>
-            <em> Node summary</em>
+            <em class="node_details_label"> Node summary</em>
             <div id="node_summary" class="vertical-scrollbar"> </div>
-            <em> Node patterns </em>
+            <em class="node_details_label"> Node patterns </em>
             <div class="vertical-scrollbar" id="node_patterns"> </div>
           </div>
         </div>

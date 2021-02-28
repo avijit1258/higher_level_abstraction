@@ -174,6 +174,23 @@ function init() {
     change_node_color();
   });
 
+  function showNodeDetails(part){
+    var clickable_text = '';
+
+    for(index = 0; index < part.data.files.length; index++){
+      clickable_text += '<a class="click_text" >' + part.data.files[index] + '</a>, ';
+    }
+
+    document.getElementById('node_key').innerHTML = 'Node Key: ' + part.data.key;
+    document.getElementById('node_summary').innerHTML = part.data.text_summary;
+    document.getElementById('node_patterns').innerHTML = part.data.spm_method;
+    document.getElementById('files').innerHTML = clickable_text;
+    document.getElementById('number_of_files').innerHTML = part.data.files_count;
+
+    // jQuery('#node_details').modal('show');
+}
+
+
   function change_node_color(){
     myFullDiagram.nodes.each(function (n) {
       myFullDiagram.model.commit(function (m) {
@@ -210,15 +227,6 @@ function init() {
 
 }
 
-function showNodeDetails(part){
-    document.getElementById('node_key').innerHTML = 'Node Key: ' + part.data.key;
-    document.getElementById('node_summary').innerHTML = part.data.text_summary;
-    document.getElementById('node_patterns').innerHTML = part.data.spm_method;
-    document.getElementById('files').innerHTML = part.data.files;
-    document.getElementById('files_count').innerHTML = part.data.files_count;
-
-    // jQuery('#node_details').modal('show');
-}
 
 
 // Customize the TreeLayout to position all of the leaf nodes at the same vertical Y position.
