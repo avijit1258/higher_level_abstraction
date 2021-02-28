@@ -394,15 +394,15 @@ class DocumentNodes:
     def count_files_in_node(self, execution_paths_of_a_cluster):
         
         files_count = {}
-        total_file = 0
+    
         for c in execution_paths_of_a_cluster:
             for f in self.execution_paths[c]:
-                if self.function_id_to_file_name in files_count:
-                    files_count[self.function_id_to_file_name] += 1
-                    total_file += 1
+                if self.function_id_to_file_name[f] in files_count:
+                    files_count[self.function_id_to_file_name[f]] += 1
+                    
                 else:
-                    files_count[self.function_id_to_file_name] = 1
-                    total_file += 1
+                    files_count[self.function_id_to_file_name[f]] = 1
+                    
 
-        return total_file, list(files_count.keys())
+        return len(list(files_count.keys())), list(files_count.keys())
         

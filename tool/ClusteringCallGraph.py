@@ -150,7 +150,7 @@ class ClusteringCallGraph:
             if graph_started == False and '.py' in line:
                 ln = line.split(' ')
                 self.function_id_to_name[ln[0]] = self.extract_function_name(ln[1])
-                self.function_id_to_file_name[ln[0]] = line.split('/')[-1]
+                self.function_id_to_file_name[ln[0]] = line.split('/')[-1].split(':')[0]
         print('Function id to function name', self.function_id_to_name, 'len : ', len(self.function_id_to_name))        
         print('Function id to file name, function name', self.function_id_to_file_name)
         nx.draw(self.G, with_labels=True)
