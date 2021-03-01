@@ -27,9 +27,11 @@ ROOT = config.ROOT
 SUBJECT_SYSTEM_NAME = config.SUBJECT_SYSTEM_NAME
 OUTPUT_DIRECTORY = ROOT + '/output/'
 DATASET = ROOT + '/dataset/'+SUBJECT_SYSTEM_NAME+'.txt'
-SUBJECT_SYSTEM_FOR_COMMENT = config.SUBJECT_SYSTEM_FOR_COMMENT # put location of repository for getting comments
+# put location of repository for getting comments
+SUBJECT_SYSTEM_FOR_COMMENT = config.SUBJECT_SYSTEM_FOR_COMMENT
 
 document_nodes = DocumentNodes(OUTPUT_DIRECTORY, SUBJECT_SYSTEM_NAME)
+
 
 class ClusteringCallGraph:
     """ This class takes caller-callee relationships of a python project. Next, builds a call graph from the input.
@@ -42,7 +44,8 @@ class ClusteringCallGraph:
     tree = []
     text_data = []
     subject_system = ''
-    special_functions = ['lambda', 'genexpr', 'listcomp', 'setcomp', 'dictcomp']
+    special_functions = ['lambda', 'genexpr',
+                         'listcomp', 'setcomp', 'dictcomp']
     execution_paths = []
     G = nx.DiGraph()
     function_id_to_name = {}
@@ -50,9 +53,8 @@ class ClusteringCallGraph:
 
     pwa = PlayingWithAST()
 
-    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(SUBJECT_SYSTEM_FOR_COMMENT)
-
-
+    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(
+        SUBJECT_SYSTEM_FOR_COMMENT)
 
     def __del__(self):
         """ deletes the ClusteringCallGraph class objects """
@@ -70,33 +72,23 @@ class ClusteringCallGraph:
         print('Time required for extracting_execution_paths: ', end - start)
         print('No. of execution paths', len(self.execution_paths))
 
-        
         if len(self.execution_paths) > 5000:
-            self.execution_paths = util.random_sample_execution_paths(self.execution_paths)
+            self.execution_paths = util.random_sample_execution_paths(
+                self.execution_paths)
 
         # self.remove_redundant_ep()
-        
+
         start = timer()
         mat = self.distance_matrix(self.execution_paths)
         end = timer()
         print('Time required for distance_matrix: ', end - start)
-        
+
         self.G.clear()
 
-        document_nodes.initalize_graph_related_data_structures(self.execution_paths, self.function_id_to_name, \
-            self.function_id_to_file_name, self.id_to_sentence, self.function_name_to_docstring)
+        document_nodes.initalize_graph_related_data_structures(self.execution_paths, self.function_id_to_name,
+                                                               self.function_id_to_file_name, self.id_to_sentence, self.function_name_to_docstring)
 
         return self.clustering_using_scipy(mat)
-        
-    
-    def check_ep_overlap_from_start(self, e, f):
-        '''This function checks whether 2nd list is a sublist starting from start of 1st list'''
-    
-        for i in range(len(f)):
-            if e[i] != f[i]:
-                return False
-                
-        return True
 
     def remove_redundant_ep(self):
         ''' this function removes redundant execution paths from list of execution paths.
@@ -105,7 +97,7 @@ class ClusteringCallGraph:
         
          '''
 
-        self.execution_paths.sort(key = len, reverse = True)
+        self.execution_paths.sort(key=len, reverse=True)
 
         redundant_ep = []
         for e in self.execution_paths:
@@ -118,14 +110,22 @@ class ClusteringCallGraph:
                         redundant_ep.append(f)
         for r in redundant_ep:
             self.execution_paths.remove(r)
-            
-        print(' Filtered execution path length ', len(self.execution_paths))
 
+        return
+
+    def check_ep_overlap_from_start(self, e, f):
+        '''This function checks whether 2nd list is a sublist starting from start of 1st list'''
+
+        for i in range(len(f)):
+            if e[i] != f[i]:
+                return False
+
+        return True
 
     def tgf_to_networkX(self):
         """ converting tgf file to a networkX graph"""
-        self.subject_system = SUBJECT_SYSTEM_NAME + '.txt' 
-        
+        self.subject_system = SUBJECT_SYSTEM_NAME + '.txt'
+
         f = open(DATASET, "r")
         G = nx.DiGraph()
         graph_started = False
@@ -145,10 +145,11 @@ class ClusteringCallGraph:
 
             if graph_started == False and '.py' in line:
                 ln = line.split(' ')
-                self.function_id_to_name[ln[0]] = self.extract_function_name(ln[1])
-                self.function_id_to_file_name[ln[0]] = line.split('/')[-1].split(':')[0]
-        print('Function id to function name', self.function_id_to_name, 'len : ', len(self.function_id_to_name))        
-        print('Function id to file name, function name', self.function_id_to_file_name)
+                self.function_id_to_name[ln[0]
+                                         ] = self.extract_function_name(ln[1])
+                self.function_id_to_file_name[ln[0]] = line.split(
+                    '/')[-1].split(':')[0]
+
         nx.draw(self.G, with_labels=True)
         plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
         plt.show()
@@ -192,10 +193,8 @@ class ClusteringCallGraph:
             for j in range(len(paths)):
                 # Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
                 Matrix[i][j] = util.compare_execution_paths(paths[i], paths[j])
-                
+
         return Matrix
-
-
 
     def clustering_using_scipy(self, mt):
         """ clustering execution paths using scipy """
@@ -205,36 +204,42 @@ class ClusteringCallGraph:
         fig = plt.figure(figsize=(25, 10))
         dn = dendrogram(Z, truncate_mode='lastp', p=200)
         rootnode, nodelist = to_tree(Z, rd=True)
-        nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
-        nodes_with_leaf_nodes = util.find_leaf_nodes_for_nodes(rootnode, nodelist)
+        nodes_with_parent = self.bfs_with_parent(
+            nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
+        nodes_with_leaf_nodes = util.find_leaf_nodes_for_nodes(
+            rootnode, nodelist)
         end = timer()
         print('Time required for clustering: ', end - start)
-        
+
         count = 0
-        
+
         start = timer()
         for child, parent in nodes_with_parent.items():
             if nodelist[child].count == 1:
-                self.tree.append({'key': child, 'parent': parent, 'tfidf_word': 'EP: '+ str( child) \
-                    + ', Name: ' +self.pretty_print_leaf_node(self.execution_paths[child]), \
-                    'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '',\
-                     'lsi_method': '', 'spm_method': '','text_summary': 'hello summary', 'files': [], 'files_count': 0})
+                self.tree.append({'key': child, 'parent': parent, 'tfidf_word': 'EP: ' + str(child)
+                                  + ', Name: ' +
+                                  self.pretty_print_leaf_node(
+                                      self.execution_paths[child]),
+                                  'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '',
+                                  'lsi_method': '', 'spm_method': '', 'text_summary': 'hello summary', 'files': [], 'files_count': 0})
                 continue
             execution_paths_of_a_cluster = nodes_with_leaf_nodes[child]
-            
+
             count += 1
             print('Cluster no: ', count)
-            
-            self.tree.append(document_nodes.labeling_cluster(execution_paths_of_a_cluster, child, parent))
-            
+
+            self.tree.append(document_nodes.labeling_cluster(
+                execution_paths_of_a_cluster, child, parent))
+
         end = timer()
         print('Time required for labeling using 6 techniques', end - start)
-        
-        print(self.tree, file=open(OUTPUT_DIRECTORY+ 'TREE_DICT_' +self.subject_system, 'w'))
+
+        print(self.tree, file=open(OUTPUT_DIRECTORY +
+                                   'TREE_DICT_' + self.subject_system, 'w'))
 
         return self.tree
 
-    def extract_function_name(self,str):
+    def extract_function_name(self, str):
         """ extracting function names from TGF file """
         end = str.find('\\')
 
@@ -245,7 +250,6 @@ class ClusteringCallGraph:
         print('list2 :', list2)
         print('braycurtis ', ssd.braycurtis(list1, list2))
         return ssd.braycurtis(list1, list2)
-
 
     def bfs_with_parent(self, nodelist, id, depth):
         """ 
@@ -281,17 +285,17 @@ class ClusteringCallGraph:
                 q.put(nodelist[p].right.id)
 
             nodes.append(p)
-            
+
             visited[p] = 1
 
             # if math.ceil(math.log(count + 1, 2)) == depth:
             #     break
-        
+
         return tree
 
         return
 
-    def id_to_sentence(self,execution_paths):
+    def id_to_sentence(self, execution_paths):
         """
         This function takes a single execution path and maps its function id with names. Returns printable sentence of a execution path.
         """
@@ -302,8 +306,8 @@ class ClusteringCallGraph:
             str += ' '
 
         return str
-    
-    def pretty_print_leaf_node(self,execution_paths):
+
+    def pretty_print_leaf_node(self, execution_paths):
         """
         This function takes a single execution path and maps its function id with names. Returns printable sentence of a execution path.
         """
@@ -317,10 +321,8 @@ class ClusteringCallGraph:
         return str
 
 
-
 c = ClusteringCallGraph()
 
 c.python_analysis()
 
 document_nodes.workbook.close()
-
