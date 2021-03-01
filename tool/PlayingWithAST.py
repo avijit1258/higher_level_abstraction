@@ -2,6 +2,7 @@ import ast
 import glob
 import os
 
+
 class PlayingWithAST:
     """ This class takes a python file as input returns its function name with corresponding docstring"""
 
@@ -11,7 +12,7 @@ class PlayingWithAST:
         """ This function returns function name with their docstring """
 
         with open(filename) as f:
-            tree = ast.parse(f.read(), filename = filename, mode='exec')
+            tree = ast.parse(f.read(), filename=filename, mode='exec')
 
             for node in ast.walk(tree):
                 # print(type(node))
@@ -19,13 +20,15 @@ class PlayingWithAST:
                     for cn in ast.iter_child_nodes(node):
                         if isinstance(cn, ast.FunctionDef):
                             # print(ast.dump(cn))
-                            self.function_with_docstring[cn.name] = self.process_docstring(ast.get_docstring(cn))
+                            self.function_with_docstring[cn.name] = self.process_docstring(
+                                ast.get_docstring(cn))
                             # print(cn.name)
                             # print(ast.get_docstring(cn))
                     # print('Class definition',ast.get_docstring(node))
                 if isinstance(node, ast.FunctionDef):
-                    self.function_with_docstring[node.name] = self.process_docstring(ast.get_docstring(node))
-        return 
+                    self.function_with_docstring[node.name] = self.process_docstring(
+                        ast.get_docstring(node))
+        return
 
     def process_docstring(self, doc):
         print('Comment in:', doc)
@@ -39,7 +42,7 @@ class PlayingWithAST:
             if '.' in line:
                 return line
             else:
-                return line+'.' 
+                return line+'.'
 
         return ''
 
@@ -77,7 +80,6 @@ class PlayingWithAST:
 # for cn in ast.iter_child_nodes(node):
 #     if isinstance(cn, ast.FunctionDef):
 #         print(cn.name)
-
 
 
 # pwa = PlayingWithAST()
