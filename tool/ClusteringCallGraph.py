@@ -73,22 +73,18 @@ class ClusteringCallGraph:
         
         if len(self.execution_paths) > 5000:
             self.execution_paths = util.random_sample_execution_paths(self.execution_paths)
-        
 
         # self.remove_redundant_ep()
-        # df = pd.DataFrame(splitWordAndMakeSentence(execution_paths)) This line is for extracting words from function name which will be necessary for topic modeling application
-
-        # exporting execution paths to be used in topic modeling
-        # df = pd.DataFrame(execution_paths)
-        # df.to_csv('people.csv')
+        
         start = timer()
         mat = self.distance_matrix(self.execution_paths)
         end = timer()
         print('Time required for distance_matrix: ', end - start)
-        # clustering_using_sklearn(mat)
-
-        # plt.show()
+        
         self.G.clear()
+
+        document_nodes.initalize_graph_related_data_structures(self.execution_paths, self.function_id_to_name, \
+            self.function_id_to_file_name, self.id_to_sentence, self.function_name_to_docstring)
 
         return self.clustering_using_scipy(mat)
         
@@ -204,54 +200,37 @@ class ClusteringCallGraph:
     def clustering_using_scipy(self, mt):
         """ clustering execution paths using scipy """
 
-        # print('Execution paths : ', len(self.execution_paths))
-        # print(mt)
-        # npa = np.asarray(execution_paths)
-        # Y = pdist(npa, 'jaccard')
         start = timer()
         Z = linkage(ssd.squareform(mt), 'ward')
-        # print('Z is here', Z)
         fig = plt.figure(figsize=(25, 10))
         dn = dendrogram(Z, truncate_mode='lastp', p=200)
         rootnode, nodelist = to_tree(Z, rd=True)
-
-        nodes = self.bfs(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
         nodes_with_parent = self.bfs_with_parent(nodelist, rootnode.id, math.ceil(math.log(len(nodelist) + 1, 2)))
-        # print(nodes_with_parent)
+        nodes_with_leaf_nodes = util.find_leaf_nodes_for_nodes(rootnode, nodelist)
         end = timer()
         print('Time required for clustering: ', end - start)
-        # labels = bfs_leaf_node(nodelist, 6729)
-        # print(labels)
+        
         count = 0
-        document_nodes.execution_paths = self.execution_paths
-        document_nodes.function_id_to_name = self.function_id_to_name
-        document_nodes.function_id_to_file_name = self.function_id_to_file_name
-        document_nodes.id_to_sentence = self.id_to_sentence
-        document_nodes.function_name_to_docstring = self.function_name_to_docstring
-        document_nodes.execution_path_to_sentence = self.execution_path_to_sentence
+        
         start = timer()
-        for k,v in nodes_with_parent.items():
-            if nodelist[k].count == 1:
-                self.tree.append({'key': k, 'parent': v, 'tfidf_word': 'EP: '+ str(k) + ', Name: ' +self.pretty_print_leaf_node(self.execution_paths[k]), 'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '', 'lsi_method': '', 'spm_method': '','text_summary': 'hello summary'})
+        for child, parent in nodes_with_parent.items():
+            if nodelist[child].count == 1:
+                self.tree.append({'key': child, 'parent': parent, 'tfidf_word': 'EP: '+ str( child) \
+                    + ', Name: ' +self.pretty_print_leaf_node(self.execution_paths[child]), \
+                    'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '',\
+                     'lsi_method': '', 'spm_method': '','text_summary': 'hello summary', 'files': [], 'files_count': 0})
                 continue
-            execution_paths_of_a_cluster = self.bfs_leaf_node(nodelist, k)
-            # print(k, 'Nodes leaf nodes are: ', execution_paths_of_a_cluster)
-            # print(k, 'cluster using scipy', labels)
-            # p = multiprocessing.Process(target=self.labeling_cluster,args=(labels,k,v,))
-            # p.start()
+            execution_paths_of_a_cluster = nodes_with_leaf_nodes[child]
+            
             count += 1
             print('Cluster no: ', count)
-            # if self.count == 300:
-            #     print('Hello')
-            #     break
-            self.tree.append(document_nodes.labeling_cluster(execution_paths_of_a_cluster, k, v))
+            
+            self.tree.append(document_nodes.labeling_cluster(execution_paths_of_a_cluster, child, parent))
             
         end = timer()
         print('Time required for labeling using 6 techniques', end - start)
         
         print(self.tree, file=open(OUTPUT_DIRECTORY+ 'TREE_DICT_' +self.subject_system, 'w'))
-        # print(self.tree, file=open('tree_calculator.txt', 'w'))
-
 
         return self.tree
 
@@ -267,12 +246,6 @@ class ClusteringCallGraph:
         print('braycurtis ', ssd.braycurtis(list1, list2))
         return ssd.braycurtis(list1, list2)
 
-    def jaccard_similarity(self, list1, list2):
-        """ calculating jaccard similarity """
-        intersection = len(list(set(list1).intersection(list2)))
-        # print(list(set(list1).intersection(list2)))
-        union = (len(list1) + len(list2)) - intersection
-        return 1 - float(intersection / union)
 
     def bfs_leaf_node(self, nodelist, id):
         """ 
@@ -290,13 +263,8 @@ class ClusteringCallGraph:
         while True:
             if q.empty():
                 break
-            # print(q.qsize())
             p = q.get()
-            # print(p)
-            # print(q.qsize())
             count = count + 1
-
-            # print(p, ' ', nodelist[p].count)
             visited[p] = 1
 
             if nodelist[p].count == 1:
@@ -451,7 +419,6 @@ class ClusteringCallGraph:
 
             if nodelist[p].count == 1:
                 nodes.append(p)
-                # print(p, ' ', nodelist[p].count)
                 visited[p] = 1
                 continue
 
@@ -463,13 +430,12 @@ class ClusteringCallGraph:
                 q.put(nodelist[p].right.id)
 
             nodes.append(p)
-            # print(p, ' ', nodelist[p].count)
+            
             visited[p] = 1
 
             # if math.ceil(math.log(count + 1, 2)) == depth:
             #     break
-        # print('bfs_with_parent')
-        # print(tree)
+        
         return tree
 
         return
@@ -499,25 +465,6 @@ class ClusteringCallGraph:
 
         return str
 
-    def execution_path_to_sentence(self, execution_paths_of_a_cluster):
-        """ 
-        This function takes execution paths of a cluster. Then creates a printable string with execution paths with function names.
-        """
-        documents = []
-
-        try:
-            str = ''
-            for l in execution_paths_of_a_cluster:
-
-                for e in self.execution_paths[l]:
-                    str += self.function_id_to_name[e]
-                    str += ', '
-                str += ' ;'
-                # documents.append(str)
-        except:
-            print('Crushed : ', e)
-
-        return str
 
 
 c = ClusteringCallGraph()
