@@ -31,7 +31,17 @@ class DocumentNodes:
         self.function_id_to_file_name = {}
         self.id_to_sentence = {}
         self.function_name_to_docstring = {}
-        self.execution_path_to_sentence = {}
+
+    def initalize_graph_related_data_structures(self, execution_paths, function_id_to_name, function_id_to_file_name, \
+            id_to_sentence, function_name_to_docstring
+        ):
+        self.execution_paths = execution_paths
+        self.function_id_to_name = function_id_to_name
+        self.function_id_to_file_name = function_id_to_file_name
+        self.id_to_sentence = id_to_sentence
+        self.function_name_to_docstring = function_name_to_docstring
+
+        return
 
     def initalize_sheet(self):
         column = 0
@@ -390,6 +400,26 @@ class DocumentNodes:
 
         # print(extracted_patterns)
         return extracted_patterns
+
+    def execution_path_to_sentence(self, execution_paths_of_a_cluster):
+        """ 
+        This function takes execution paths of a cluster. Then creates a printable string with execution paths with function names.
+        """
+        documents = []
+
+        try:
+            str = ''
+            for l in execution_paths_of_a_cluster:
+
+                for e in self.execution_paths[l]:
+                    str += self.function_id_to_name[e]
+                    str += ', '
+                str += ' ;'
+                # documents.append(str)
+        except:
+            print('Crushed : ', e)
+
+        return str
 
     def count_files_in_node(self, execution_paths_of_a_cluster):
         
