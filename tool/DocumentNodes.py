@@ -119,9 +119,9 @@ class DocumentNodes:
         sort_by_tfidf = max_val.argsort()
 
         if method_or_word == 'method':
-            return self.id_to_sentence(feature_names[sort_by_tfidf[-5:]])
+            return self.id_to_sentence(feature_names[sort_by_tfidf[-10:]])
         elif method_or_word == 'word':
-            return self.merge_words_as_sentence(feature_names[sort_by_tfidf[-5:]])
+            return self.merge_words_as_sentence(feature_names[sort_by_tfidf[-10:]])
 
     def make_documents_for_a_cluster_tfidf_method(self, clusters):
         """ 
