@@ -55,9 +55,7 @@ class DocumentNodes:
 
     def labeling_cluster(self, execution_paths_of_a_cluster, k, v):
         """ Labelling a cluster using six variants """
-        # print(k,'blank document', execution_paths_of_a_cluster)
-        # print('Here we go',self.execution_path_to_sentence(execution_paths_of_a_cluster))
-
+        
         spm_method = self.mining_sequential_patterns(
             execution_paths_of_a_cluster)
         tfidf_method = self.tf_idf_score_for_scipy_cluster(
@@ -115,8 +113,7 @@ class DocumentNodes:
         except:
             print('Here I got you', clusters, 'In a sentence:', txt1)
 
-        # print(tf.vocabulary_)
-        #
+        
         feature_names = np.array(tf.get_feature_names())
         max_val = txt_transformed.max(axis=0).toarray().ravel()
         sort_by_tfidf = max_val.argsort()
@@ -165,17 +162,17 @@ class DocumentNodes:
         for c in clusters:
             str = ''
             for e in self.execution_paths[c]:
-                # print(self.merge_words_as_sentence(self.function_id_to_name[e].split("_")))
+                
                 words_in_function_name = [
                     w for w in self.function_id_to_name[e].split("_") if w not in self.en_stop]
                 words_in_function_name = [self.get_lemma(
                     w) for w in words_in_function_name]
                 str += self.merge_words_as_sentence(words_in_function_name)
                 str += ' '
-            # print('\n')
+            
             documents.append(str)
 
-        # print('make_documents_for_a_cluster_tfidf_word', documents)
+        
 
         return documents
 
@@ -188,11 +185,11 @@ class DocumentNodes:
         for c in clusters:
             str = ''
             for e in self.execution_paths[c]:
-                # print(self.merge_words_as_sentence(self.function_id_to_name[e].split("_")))
+                
                 str += self.merge_words_as_sentence(
                     self.function_id_to_name[e].split("_"))
                 str += ' '
-            # print('\n')
+            
             documents.append(str)
 
         return documents
@@ -237,13 +234,13 @@ class DocumentNodes:
             txt = self.make_documents_for_a_cluster_tm_word(labels)
 
         for line in txt:
-            # print(line)
+            
             tokens = self.prepare_text_for_lda(line)
             # if random.random() > .99:
             # print(tokens)
             self.text_data.append(tokens)
 
-        # print(text_data)
+        
         dictionary = corpora.Dictionary(self.text_data)
         corpus = [dictionary.doc2bow(text) for text in self.text_data]
 
@@ -270,13 +267,13 @@ class DocumentNodes:
             txt = self.make_documents_for_a_cluster_tm_word(labels)
 
         for line in txt:
-            # print(line)
+            
             tokens = self.prepare_text_for_lda(line)
             # if random.random() > .99:
             # print(tokens)
             self.text_data.append(tokens)
 
-        # print(text_data)
+        
         dictionary = corpora.Dictionary(self.text_data)
         corpus = [dictionary.doc2bow(text) for text in self.text_data]
 
@@ -298,13 +295,13 @@ class DocumentNodes:
         Proprocessing text for LDA.
         """
         tokens = self.tokenize(text)
-        # print(tokens)
+        
         tokens = [token for token in tokens if len(token) >= 2]
-        # print(tokens)
+        
         tokens = [token for token in tokens if token not in self.en_stop]
-        # print(tokens)
+        
         tokens = [self.get_lemma(token) for token in tokens]
-        # print(tokens)
+        
         return tokens
 
     def tokenize(self, text):
@@ -341,22 +338,21 @@ class DocumentNodes:
         # count = 0
         for c in execution_paths_of_a_cluster:
             for f in self.execution_paths[c]:
-                # print(self.function_id_to_name[f], ' ', function_name_to_docstring[self.function_id_to_name[f]])
-                # print(self.function_id_to_name[f])
+                
                 if self.function_id_to_name[f] in function_name_to_docstring:
 
                     if function_name_to_docstring[self.function_id_to_name[f]] is not None:
                         text_for_summary += function_name_to_docstring[self.function_id_to_name[f]] + ' '
                         # count += 1
 
-        # print(len(text_for_summary))
+        
         print('Cluster comments: ', text_for_summary)
 
         try:
             cluster_summary = summarize(
                 text_for_summary, ratio=0.35, split=True)
             cluster_summary = ' '.join(list(set(cluster_summary)))
-            print('Cluster summary: ', cluster_summary)
+            
             return cluster_summary
         except ValueError:
             return 'Empty'
@@ -372,22 +368,37 @@ class DocumentNodes:
         # ps.maxlen = 15
         ps.minlen = 6
 
-        top5 = ps.topk(10, closed=True)
+        # top5 = ps.topk(10, closed=True)
 
-        # top5 = ps.frequent(2, closed = True)
+        top_patterns = ps.frequent(2)
+        top_patterns = self.remove_similar_patterns(top_patterns)
 
         sentence = ' '
-        for i in top5:
+        for pattern in top_patterns:
             sentence += ' &#187; '
-            for j in i[1]:
-                sentence += self.function_id_to_name[j] + \
-                    '(' + self.function_id_to_file_name[j] + ')'
-                if j != i[1][len(i[1])-1]:
+            for method in pattern:
+                sentence += self.function_id_to_name[method] + \
+                    '(' + self.function_id_to_file_name[method] + ')'
+                if method != pattern[len(pattern)-1]:
                     sentence += ' &rarr; '
 
             sentence += ' . <br>'
 
         return sentence
+
+    def remove_similar_patterns(self, patterns):
+        ''' Ignore similar patterns and keep the lengthy one. '''
+
+        similar_pattern_removed = {}
+        
+        for pattern in patterns:
+            if pattern[1][0] in similar_pattern_removed:
+                if len(similar_pattern_removed[pattern[1][0]]) < len(pattern[1]):
+                    similar_pattern_removed[pattern[1][0]] = pattern[1]
+            else:
+                similar_pattern_removed[pattern[1][0]] = pattern[1]
+
+        return list(similar_pattern_removed.values())
 
     def mining_sequential_patterns_from_initial_execution_paths(self, execution_paths):
         ''' This function takes input inital execution paths and outputs frequent mined patterns for 
@@ -408,7 +419,6 @@ class DocumentNodes:
         for i in top:
             extracted_patterns.append(i[1])
 
-        # print(extracted_patterns)
         return extracted_patterns
 
     def execution_path_to_sentence(self, execution_paths_of_a_cluster):
