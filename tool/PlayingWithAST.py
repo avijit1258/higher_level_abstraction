@@ -60,11 +60,20 @@ class PlayingWithAST:
         all_files = self.get_all_py_files(location)
 
         for f in all_files:
-            print('File under investigation: ', f)
             self.file_to_function_docstring_pair(f)
-        for key, value in self.function_with_docstring.items():
-            print('Function: ', key, ' Comment:', value)
+        
         return self.function_with_docstring
+
+    def get_function_to_comment_ratio(self, location):
+
+        self.get_all_method_docstring_pair_of_a_project(location)
+        total_methods = len(self.function_with_docstring)
+        no_comments = 0
+        for method, doc in self.function_with_docstring.items():
+            if doc == '':
+                no_comments += 1
+
+        return (no_comments/total_methods) * 100
 
 
 # for node in ast.walk(parsed_tree):
