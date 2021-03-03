@@ -15,30 +15,28 @@ class PlayingWithAST:
             tree = ast.parse(f.read(), filename=filename, mode='exec')
 
             for node in ast.walk(tree):
-                # print(type(node))
+                
                 if isinstance(node, ast.ClassDef):
                     for cn in ast.iter_child_nodes(node):
                         if isinstance(cn, ast.FunctionDef):
-                            # print(ast.dump(cn))
+                            
                             self.function_with_docstring[cn.name] = self.process_docstring(
                                 ast.get_docstring(cn))
-                            # print(cn.name)
-                            # print(ast.get_docstring(cn))
-                    # print('Class definition',ast.get_docstring(node))
+                            
                 if isinstance(node, ast.FunctionDef):
                     self.function_with_docstring[node.name] = self.process_docstring(
                         ast.get_docstring(node))
         return
 
     def process_docstring(self, doc):
-        print('Comment in:', doc)
+        
         if doc is None:
             return ''
         for line in doc.split('\n'):
             line = line.strip()
             if (line == "") or (not any([c.isalnum() for c in line])):
                 continue
-            print('Comment out:', line)
+            
             if '.' in line:
                 return line
             else:
@@ -76,22 +74,3 @@ class PlayingWithAST:
         return (no_comments/total_methods) * 100
 
 
-# for node in ast.walk(parsed_tree):
-# # print(ast.get_docstring(node))
-#     print(ast.dump(node))
-
-# for n in ast.iter_child_nodes(node):
-#     if isinstance(n, ast.FunctionDef):
-#         print(n.body)
-
-# # if isinstance(node, ast.Module):
-# #         print(node.body)
-# for cn in ast.iter_child_nodes(node):
-#     if isinstance(cn, ast.FunctionDef):
-#         print(cn.name)
-
-
-# pwa = PlayingWithAST()
-# print(pwa.file_to_function_docstring_pair('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning/vocoder/audio.py'))
-
-# print(pwa.get_all_method_docstring_pair_of_a_project('/home/avb307/projects/hla_dataset/Real-Time-Voice-Cloning'))

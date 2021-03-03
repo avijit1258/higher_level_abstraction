@@ -105,7 +105,7 @@ class ClusteringCallGraph:
                 continue
             for f in self.execution_paths:
                 if e != f:
-                    # print(e, f)
+                    
                     if self.check_ep_overlap_from_start(e, f):
                         redundant_ep.append(f)
         for r in redundant_ep:
@@ -160,17 +160,17 @@ class ClusteringCallGraph:
         """ Finding source and exit nodes from networkX graph """
         print('In degree')
         for s, v in self.G.in_degree():
-            # print(s, v)
+            
             if v == 0:
                 self.S.append(s)
-                # print(s)
+                
         print(len(self.S))
         print('Out degree')
         for t, v in self.G.out_degree():
-            # print(t, v)
+            
             if v == 0:
                 self.T.append(t)
-                # print(t)
+                
 
         print(len(self.T))
 
