@@ -50,7 +50,6 @@ class PlayingWithAST:
             for name in files:
                 if name.endswith('.py'):
                     all_py.append(os.path.join(path, name))
-                    print(os.path.join(path, name))
 
         return all_py
 
