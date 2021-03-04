@@ -1,0 +1,1296 @@
+1 pasta.augment
+2 pasta.augment.errors
+3 pasta.augment.import_utils
+4 pasta.augment.import_utils_test
+5 pasta.augment.inline
+6 pasta.augment.inline_test
+7 pasta.augment.rename
+8 pasta.augment.rename_test
+9 pasta.base
+10 pasta.base.annotate
+11 pasta.base.annotate_test
+12 pasta.base.ast_constants
+13 pasta.base.ast_utils
+14 pasta.base.ast_utils_test
+15 pasta.base.codegen
+16 pasta.base.codegen_test
+17 pasta.base.formatting
+18 pasta.base.fstring_utils
+19 pasta.base.scope
+20 pasta.base.scope_test
+21 pasta.base.test_utils
+22 pasta.base.test_utils_test
+23 pasta.base.token_generator
+24 InvalidAstError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/errors.py:22)
+25 add_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils.py:30)
+26 get_unused_import_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils.py:137)
+27 remove_duplicates\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils.py:182)
+28 remove_import_alias_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils.py:167)
+29 split_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils.py:105)
+30 make_safe_alias_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils.py:65)
+31 AddImportTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:234)
+32 GetUnusedImportsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:120)
+33 RemoveDuplicatesTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:342)
+34 RemoveImportTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:179)
+35 SplitImportTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:32)
+36 suite\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:418)
+37 test_add_existing_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:278)
+38 test_add_existing_import_aliased\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:283)
+39 test_add_existing_import_aliased_with_asname\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:288)
+40 test_add_existing_import_normal_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:293)
+41 test_add_existing_import_normal_import_aliased\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:299)
+42 test_add_from_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:250)
+43 test_add_from_import_with_asname\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:256)
+44 test_add_import_after_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:336)
+45 test_add_import_with_asname_with_conflict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:314)
+46 test_add_import_with_conflict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:307)
+47 test_add_normal_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:236)
+48 test_add_normal_import_with_asname\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:242)
+49 test_add_single_name_from_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:264)
+50 test_add_single_name_from_import_with_asname\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:270)
+51 test_merge_from_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:321)
+52 test_dynamic_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:165)
+53 test_import_asname\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:153)
+54 test_import_from\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:132)
+55 test_import_from_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:144)
+56 test_normal_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:122)
+57 test_remove_duplicates\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:343)
+58 test_remove_duplicates_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:403)
+59 test_remove_duplicates_empty_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:380)
+60 test_remove_duplicates_multiple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:360)
+61 test_remove_duplicates_normal_and_from\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:394)
+62 test_remove_full_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:211)
+63 test_remove_full_importfrom\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:222)
+64 test_remove_just_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:183)
+65 test_remove_just_alias_import_from\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:197)
+66 test_split_from_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:46)
+67 test_split_imports_multiple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:71)
+68 test_split_imports_with_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:59)
+69 test_split_nested_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:86)
+70 test_split_normal_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/import_utils_test.py:34)
+71 InlineError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline.py:28)
+72 inline_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline.py:32)
+73 InlineTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:29)
+74 suite\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:91)
+75 test_inline_conditional_fails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:76)
+76 test_inline_function_fails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:67)
+77 test_inline_multiple_reads\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:43)
+78 test_inline_multiple_targets\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:37)
+79 test_inline_non_assign_fails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:83)
+80 test_inline_non_constant_fails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:57)
+81 test_inline_simple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/inline_test.py:31)
+82 _rename_name_in_importfrom\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename.py:94)
+83 _rename_reads\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename.py:127)
+84 rename_external\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename.py:29)
+85 RenameTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:30)
+86 suite\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:128)
+87 test_rename_external_in_import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:32)
+88 test_rename_external_in_import_multiple_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:52)
+89 test_rename_external_in_import_with_asname\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:46)
+90 test_rename_external_in_importfrom\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:58)
+91 test_rename_external_in_importfrom_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:72)
+92 test_rename_external_in_importfrom_alias_with_asname\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:78)
+93 test_rename_reads_attribute\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:98)
+94 test_rename_reads_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:84)
+95 test_rename_reads_name_as_attribute\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:91)
+96 test_rename_reads_noop\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:105)
+97 test_rename_reads_type_annotation\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/augment/rename_test.py:113)
+98 AnnotationError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1278)
+99 AstAnnotator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1282)
+100 BaseVisitor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:113)
+101 _gen_wrapper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:42)
+102 _get_indent_diff\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1560)
+103 _get_indent_width\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1535)
+104 _ltrim_indent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1545)
+105 _noop_context\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:56)
+106 block_statement\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:92)
+107 expression\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:61)
+108 fstring_expression\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:66)
+109 module\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:87)
+110 space_around\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:71)
+111 space_left\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:76)
+112 statement\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:81)
+113 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1284)
+114 _optional_token\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1526)
+115 attr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1467)
+116 block_suffix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1423)
+117 check_is_continued_try\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1389)
+118 check_is_continued_with\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1394)
+119 check_is_elif\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1384)
+120 check_slice_includes_step\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1398)
+121 dots\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1417)
+122 indented\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1296)
+123 one_of_symbols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1456)
+124 optional_token\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1442)
+125 scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1511)
+126 token\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1426)
+127 visit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1288)
+128 visit_Bytes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1369)
+129 visit_Ellipsis\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1374)
+130 visit_JoinedStr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1351)
+131 visit_Num\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1337)
+132 visit_Str\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1346)
+133 ws\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1405)
+134 _parse_dots\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1419)
+135 _one_of_symbols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1458)
+136 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:127)
+137 _comp_exp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:944)
+138 attr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:191)
+139 check_is_continued_try\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:344)
+140 check_is_continued_with\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:348)
+141 check_is_elif\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:260)
+142 check_slice_includes_step\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1254)
+143 dots\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:205)
+144 indented\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:149)
+145 one_of_symbols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:216)
+146 optional_token\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:213)
+147 prefix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:138)
+148 scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:167)
+149 set_default_indent_diff\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:164)
+150 suffix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:142)
+151 token\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:188)
+152 visit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:133)
+153 visit_Add\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1026)
+154 visit_And\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1020)
+155 visit_AnnAssign\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:585)
+156 visit_Assert\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:562)
+157 visit_Assign\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:570)
+158 visit_AsyncFor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:318)
+159 visit_AsyncFunctionDef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:453)
+160 visit_AsyncWith\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:341)
+161 visit_Attribute\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:743)
+162 visit_AugAssign\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:577)
+163 visit_Await\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:595)
+164 visit_BinOp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:749)
+165 visit_BitAnd\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1053)
+166 visit_BitOr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1056)
+167 visit_BitXor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1059)
+168 visit_BoolOp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:757)
+169 visit_Break\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:600)
+170 visit_Call\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:766)
+171 visit_Call_arguments\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:781)
+172 visit_Call_arguments35\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:806)
+173 visit_ClassDef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:390)
+174 visit_Compare\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:851)
+175 visit_Constant\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:860)
+176 visit_Continue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:604)
+177 visit_Delete\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:608)
+178 visit_Dict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:881)
+179 visit_DictComp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:898)
+180 visit_Div\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1035)
+181 visit_Ellipsis\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1016)
+182 visit_Eq\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1077)
+183 visit_ExceptHandler\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:513)
+184 visit_Exec\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:616)
+185 visit_Expr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:631)
+186 visit_ExtSlice\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1230)
+187 visit_FloorDiv\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1062)
+188 visit_For\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:296)
+189 visit_FormattedValue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1265)
+190 visit_FunctionDef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:418)
+191 visit_GeneratorExp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:908)
+192 visit_Global\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:635)
+193 visit_Gt\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1089)
+194 visit_GtE\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1092)
+195 visit_If\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:236)
+196 visit_IfExp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:912)
+197 visit_Import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:645)
+198 visit_ImportFrom\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:654)
+199 visit_In\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1101)
+200 visit_Index\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1226)
+201 visit_Invert\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1065)
+202 visit_Is\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1095)
+203 visit_IsNot\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1098)
+204 visit_LShift\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1047)
+205 visit_Lambda\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:920)
+206 visit_List\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:927)
+207 visit_ListComp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:940)
+208 visit_Lt\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1083)
+209 visit_LtE\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1086)
+210 visit_MatMult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1038)
+211 visit_Mod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1041)
+212 visit_Module\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:225)
+213 visit_Mult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1032)
+214 visit_Name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:954)
+215 visit_NameConstant\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:958)
+216 visit_NamedExpr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:681)
+217 visit_Nonlocal\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:687)
+218 visit_Not\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1068)
+219 visit_NotEq\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1080)
+220 visit_NotIn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1104)
+221 visit_Or\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1023)
+222 visit_Pass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:697)
+223 visit_Pow\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1044)
+224 visit_Print\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:701)
+225 visit_RShift\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1050)
+226 visit_Raise\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:531)
+227 visit_Raise_3\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:547)
+228 visit_Repr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:962)
+229 visit_Return\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:719)
+230 visit_Set\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:968)
+231 visit_SetComp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:982)
+232 visit_Slice\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1238)
+233 visit_Starred\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:847)
+234 visit_Sub\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1029)
+235 visit_Subscript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:986)
+236 visit_Try\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:491)
+237 visit_TryExcept\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:475)
+238 visit_TryFinally\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:456)
+239 visit_Tuple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:993)
+240 visit_UAdd\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1071)
+241 visit_USub\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1074)
+242 visit_UnaryOp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1006)
+243 visit_While\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:281)
+244 visit_With\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:321)
+245 visit_With_3\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:367)
+246 visit_Yield\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:726)
+247 visit_YieldFrom\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:733)
+248 visit_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1111)
+249 visit_arg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1124)
+250 visit_arguments\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1132)
+251 visit_comprehension\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1203)
+252 visit_keyword\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:1217)
+253 visit_withitem\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:383)
+254 ws\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:194)
+255 ws_oneline\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:209)
+256 _ws\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:145)
+257 arg_location\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:782)
+258 arg_compare\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:807)
+259 get_pos\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:821)
+260 is_arg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:809)
+261 wrapped\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:44)
+262 wrapped\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate.py:94)
+263 FstringTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:436)
+264 IndentationTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:118)
+265 ManualEditsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:408)
+266 PrefixSuffixGoldenTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:397)
+267 PrefixSuffixGoldenTestMeta\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:338)
+268 PrefixSuffixTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:44)
+269 SymmetricTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:323)
+270 SymmetricTestMeta\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:294)
+271 VersionSupportTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:459)
+272 _get_diff\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:500)
+273 _get_node_identifier\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:331)
+274 _is_syntax_valid\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:285)
+275 generate_goldens\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:515)
+276 suite\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:504)
+277 test_fstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:439)
+278 test_fstring_escaping\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:448)
+279 test_autoindent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:238)
+280 test_indent_depths\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:154)
+281 test_indent_extra_newlines\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:215)
+282 test_indent_extra_newlines_with_comment\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:226)
+283 test_indent_levels\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:120)
+284 test_indent_levels_same_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:146)
+285 test_indent_multiline_string\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:172)
+286 test_indent_multiline_string_with_newline\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:184)
+287 test_mixed_tabs_spaces_indentation\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:254)
+288 test_scope_trailing_comma\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:196)
+289 test_tab_below_spaces\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:262)
+290 test_tabs_below_spaces_and_tab\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:273)
+291 test_call_illegal_pos\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:422)
+292 test_call_no_pos\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:414)
+293 __new__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:340)
+294 golden_test_generator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:342)
+295 test\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:343)
+296 escape\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:350)
+297 test_block_suffix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:46)
+298 test_expression_prefix_suffix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:105)
+299 test_module_suffix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:95)
+300 test_no_block_suffix_for_single_line_statement\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:100)
+301 test_statement_prefix_suffix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:111)
+302 is_node_for_suffix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:75)
+303 __new__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:296)
+304 symmetric_test_generator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:298)
+305 test\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:299)
+306 test_all_ast_nodes_supported\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:461)
+307 should_ignore_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/annotate_test.py:466)
+308 FindNodeVisitor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:79)
+309 _TreeNormalizer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:39)
+310 find_nodes_by_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:73)
+311 get_last_child\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:91)
+312 has_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:176)
+313 parse\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:51)
+314 remove_child\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:141)
+315 replace_child\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:150)
+316 sanitize_source\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:61)
+317 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:81)
+318 visit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:85)
+319 visit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils.py:42)
+320 AlterChildTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:53)
+321 UtilsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:27)
+322 testRemoveAlias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:77)
+323 testRemoveChildMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:55)
+324 testRemoveFromBlock\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:86)
+325 testReplaceChildInBody\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:103)
+326 testReplaceChildInvalid\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:115)
+327 test_sanitize_source\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/ast_utils_test.py:29)
+328 PrintError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:30)
+329 Printer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:34)
+330 to_str\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:160)
+331 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:44)
+332 attr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:119)
+333 check_is_continued_try\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:151)
+334 check_is_continued_with\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:155)
+335 check_is_elif\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:145)
+336 optional_token\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:111)
+337 token\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:108)
+338 visit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:48)
+339 visit_Bytes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:93)
+340 visit_Constant\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:99)
+341 visit_JoinedStr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:76)
+342 visit_Module\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:56)
+343 visit_Num\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:64)
+344 visit_Str\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen.py:70)
+345 AutoFormatTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:70)
+346 AutoFormatTestMeta\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:43)
+347 _is_syntax_valid\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:34)
+348 suite\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:99)
+349 test_bytes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:84)
+350 test_default_indentation\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:90)
+351 test_exec_node_default\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:78)
+352 test_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:73)
+353 __new__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:45)
+354 auto_format_test_generator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:47)
+355 test\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/codegen_test.py:48)
+356 _formatting_dict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/formatting.py:48)
+357 append\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/formatting.py:40)
+358 get\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/formatting.py:24)
+359 prepend\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/formatting.py:44)
+360 set\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/formatting.py:31)
+361 _wrap\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/fstring_utils.py:43)
+362 get_formatted_values\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/fstring_utils.py:26)
+363 perform_replacements\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/fstring_utils.py:36)
+364 placeholder\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/fstring_utils.py:31)
+365 Name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:268)
+366 RootScope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:222)
+367 Scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:176)
+368 ScopeVisitor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:37)
+369 analyze\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:293)
+370 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:270)
+371 add_reference\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:276)
+372 define\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:279)
+373 lookup_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:285)
+374 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:224)
+375 _set_scope_for_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:263)
+376 add_external_reference\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:231)
+377 get_name_for_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:249)
+378 get_root_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:238)
+379 lookup_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:255)
+380 parent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:241)
+381 set_name_for_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:252)
+382 set_parent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:244)
+383 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:178)
+384 create_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:216)
+385 define_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:183)
+386 forward_define_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:191)
+387 get_root_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:210)
+388 lookup_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:200)
+389 lookup_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:213)
+390 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:39)
+391 visit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:44)
+392 visit_Attribute\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:167)
+393 visit_ClassDef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:158)
+394 visit_FunctionDef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:118)
+395 visit_Import\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:66)
+396 visit_ImportFrom\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:97)
+397 visit_Name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:110)
+398 visit_arg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:144)
+399 visit_arguments\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:131)
+400 visit_in_order\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope.py:55)
+401 ScopeTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:30)
+402 suite\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:520)
+403 test_class_methods\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:478)
+404 test_classdef_nested_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:189)
+405 test_forward_type_reference\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:375)
+406 test_forward_type_reference2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:392)
+407 test_functiondef_nested_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:174)
+408 test_if_nested_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:117)
+409 test_import_attribute_references\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:414)
+410 test_import_in_argument_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:335)
+411 test_import_in_argument_type_string\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:354)
+412 test_import_in_decortator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:299)
+413 test_import_in_return_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:317)
+414 test_import_masked_by_assign\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:280)
+415 test_import_masked_by_function_arg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:263)
+416 test_import_reads_in_classdef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:243)
+417 test_import_reads_in_functiondef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:224)
+418 test_lookup_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:440)
+419 test_multilevel_import_reads\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:204)
+420 test_top_level_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:32)
+421 test_try_nested_imports\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:147)
+422 test_vararg_kwarg_references_in_function_body\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/scope_test.py:500)
+423 TestCase\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils.py:28)
+424 requires_features\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils.py:66)
+425 supports_feature\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils.py:73)
+426 checkAstsEqual\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils.py:30)
+427 CheckAstEqualityTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils_test.py:41)
+428 suite\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils_test.py:73)
+429 test_different_number_of_nodes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils_test.py:58)
+430 test_empty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils_test.py:43)
+431 test_one_global\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils_test.py:48)
+432 test_simple_function_def\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils_test.py:66)
+433 test_two_globals\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/test_utils_test.py:53)
+434 TokenGenerator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:56)
+435 _generate_tokens\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:565)
+436 _scope_helper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:522)
+437 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:76)
+438 _space_between\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:472)
+439 block_whitespace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:171)
+440 chars_consumed\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:86)
+441 close_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:257)
+442 dots\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:198)
+443 eat_tokens\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:342)
+444 fstr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:356)
+445 hint_closed\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:311)
+446 hint_open\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:307)
+447 is_in_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:330)
+448 loc_begin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:89)
+449 loc_end\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:95)
+450 next\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:115)
+451 next_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:490)
+452 next_of_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:501)
+453 open_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:216)
+454 peek\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:101)
+455 peek_conditional\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:111)
+456 peek_non_whitespace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:107)
+457 rewind\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:124)
+458 scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:317)
+459 str\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:334)
+460 takewhile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:510)
+461 whitespace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:128)
+462 fstr_parser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:366)
+463 fstr_eater\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:377)
+464 predicate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:493)
+465 predicate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:336)
+466 predicate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/pasta/base/token_generator.py:146)
+#
+3 19 U
+3 13 U
+3 2 U
+25 450 U
+25 30 U
+25 369 U
+25 312 U
+29 24 U
+26 369 U
+26 360 U
+28 314 U
+27 28 U
+27 369 U
+27 360 U
+4 21 U
+4 3 U
+4 19 U
+4 13 U
+35 423 U
+70 369 U
+70 29 U
+66 369 U
+66 29 U
+68 369 U
+68 29 U
+67 369 U
+67 29 U
+69 310 U
+69 369 U
+69 29 U
+32 423 U
+56 26 U
+54 26 U
+55 26 U
+53 26 U
+52 26 U
+34 423 U
+64 28 U
+64 369 U
+65 28 U
+65 369 U
+62 28 U
+62 369 U
+63 28 U
+63 369 U
+31 423 U
+47 25 U
+48 25 U
+42 25 U
+43 25 U
+49 25 U
+50 25 U
+37 25 U
+38 25 U
+39 25 U
+40 25 U
+41 25 U
+46 25 U
+45 25 U
+51 25 U
+44 25 U
+33 423 U
+57 27 U
+60 27 U
+59 27 U
+61 27 U
+58 27 U
+36 34 U
+36 32 U
+36 31 U
+36 33 U
+36 35 U
+5 19 U
+5 13 U
+72 71 U
+72 315 U
+72 369 U
+72 314 U
+6 5 U
+6 21 U
+73 423 U
+81 426 U
+81 72 U
+78 426 U
+78 72 U
+77 426 U
+77 72 U
+80 71 U
+80 72 U
+76 71 U
+76 72 U
+75 71 U
+75 72 U
+79 71 U
+79 72 U
+74 73 U
+7 3 U
+7 19 U
+7 13 U
+84 83 U
+84 369 U
+84 82 U
+82 29 U
+83 315 U
+8 7 U
+8 19 U
+8 21 U
+85 424 U
+85 423 U
+87 426 U
+87 84 U
+89 426 U
+89 84 U
+88 426 U
+88 84 U
+90 426 U
+90 84 U
+91 426 U
+91 84 U
+92 426 U
+92 84 U
+94 83 U
+94 426 U
+94 369 U
+95 426 U
+95 369 U
+95 83 U
+93 426 U
+93 369 U
+93 83 U
+96 426 U
+96 369 U
+96 83 U
+97 426 U
+97 369 U
+97 83 U
+86 85 U
+10 13 U
+10 12 U
+10 17 U
+10 23 U
+101 261 U
+261 105 U
+107 101 U
+108 101 U
+110 101 U
+111 101 U
+112 101 U
+109 101 U
+106 262 U
+262 358 U
+262 311 U
+100 107 U
+100 109 U
+100 108 U
+100 106 U
+100 110 U
+100 111 U
+100 112 U
+152 136 U
+147 254 U
+147 138 U
+256 254 U
+150 256 U
+150 138 U
+144 138 U
+144 358 U
+148 138 U
+255 254 U
+212 138 U
+212 136 U
+195 152 U
+195 358 U
+195 138 U
+195 144 U
+195 254 U
+195 141 U
+195 360 U
+195 151 U
+195 255 U
+243 138 U
+243 144 U
+243 152 U
+243 255 U
+243 254 U
+188 138 U
+188 144 U
+188 152 U
+188 255 U
+188 254 U
+158 188 U
+244 138 U
+244 144 U
+244 245 U
+244 152 U
+244 255 U
+244 140 U
+244 254 U
+160 244 U
+245 138 U
+245 144 U
+245 152 U
+245 255 U
+245 151 U
+245 254 U
+253 138 U
+253 152 U
+253 254 U
+173 152 U
+173 138 U
+173 144 U
+173 254 U
+173 148 U
+173 255 U
+190 152 U
+190 138 U
+190 144 U
+190 254 U
+190 148 U
+190 255 U
+159 190 U
+238 138 U
+238 144 U
+238 152 U
+238 139 U
+238 255 U
+238 254 U
+237 138 U
+237 144 U
+237 152 U
+237 255 U
+237 254 U
+236 138 U
+236 144 U
+236 152 U
+236 255 U
+236 254 U
+183 138 U
+183 144 U
+183 152 U
+183 255 U
+183 151 U
+183 145 U
+183 254 U
+226 138 U
+226 227 U
+226 152 U
+226 151 U
+226 254 U
+227 138 U
+227 152 U
+227 151 U
+227 254 U
+156 138 U
+156 152 U
+156 254 U
+157 138 U
+157 152 U
+157 254 U
+162 152 U
+162 138 U
+162 254 U
+155 138 U
+155 152 U
+155 254 U
+163 138 U
+163 152 U
+163 254 U
+169 151 U
+176 151 U
+177 138 U
+177 152 U
+177 254 U
+184 138 U
+184 148 U
+184 152 U
+184 254 U
+184 145 U
+185 152 U
+192 138 U
+192 151 U
+192 254 U
+197 138 U
+197 152 U
+197 151 U
+197 254 U
+198 152 U
+198 138 U
+198 254 U
+198 148 U
+198 151 U
+198 143 U
+216 138 U
+216 152 U
+216 254 U
+217 138 U
+217 151 U
+217 254 U
+222 151 U
+224 138 U
+224 152 U
+224 254 U
+229 138 U
+229 152 U
+229 151 U
+229 254 U
+246 138 U
+246 152 U
+246 151 U
+246 254 U
+247 138 U
+247 152 U
+247 254 U
+161 138 U
+161 152 U
+161 151 U
+161 254 U
+164 152 U
+164 138 U
+164 254 U
+168 152 U
+168 138 U
+168 254 U
+170 172 U
+170 152 U
+170 148 U
+170 171 U
+170 146 U
+171 152 U
+171 257 U
+171 138 U
+171 254 U
+258 260 U
+258 259 U
+172 138 U
+172 152 U
+172 258 U
+172 254 U
+233 138 U
+233 152 U
+233 254 U
+174 138 U
+174 152 U
+174 254 U
+175 459 U
+175 138 U
+175 151 U
+175 136 U
+178 138 U
+178 152 U
+178 146 U
+178 151 U
+178 254 U
+179 138 U
+179 152 U
+179 254 U
+191 137 U
+196 138 U
+196 152 U
+196 254 U
+205 138 U
+205 152 U
+205 254 U
+206 138 U
+206 152 U
+206 146 U
+206 254 U
+207 137 U
+137 138 U
+137 152 U
+137 254 U
+214 151 U
+215 151 U
+215 459 U
+228 138 U
+228 152 U
+228 254 U
+230 138 U
+230 152 U
+230 146 U
+230 254 U
+231 137 U
+235 138 U
+235 152 U
+235 254 U
+239 138 U
+239 152 U
+239 148 U
+239 146 U
+239 254 U
+242 152 U
+242 138 U
+242 254 U
+181 151 U
+154 151 U
+221 151 U
+153 151 U
+234 151 U
+213 151 U
+180 151 U
+210 151 U
+211 151 U
+223 151 U
+204 151 U
+225 151 U
+165 151 U
+166 151 U
+167 151 U
+187 151 U
+201 151 U
+218 151 U
+240 151 U
+241 151 U
+182 151 U
+219 145 U
+219 138 U
+208 151 U
+209 151 U
+193 151 U
+194 151 U
+202 151 U
+203 254 U
+203 138 U
+199 151 U
+220 254 U
+220 138 U
+248 138 U
+248 151 U
+248 254 U
+249 138 U
+249 152 U
+249 151 U
+249 254 U
+250 152 U
+250 138 U
+250 254 U
+250 151 U
+251 138 U
+251 152 U
+251 254 U
+252 138 U
+252 152 U
+252 151 U
+252 254 U
+200 152 U
+186 138 U
+186 152 U
+186 146 U
+186 254 U
+232 138 U
+232 152 U
+232 146 U
+232 254 U
+232 142 U
+189 138 U
+189 152 U
+189 254 U
+99 110 U
+99 107 U
+99 100 U
+113 434 U
+113 437 U
+113 136 U
+127 152 U
+127 360 U
+127 98 U
+122 456 U
+122 455 U
+122 439 U
+122 360 U
+122 102 U
+131 459 U
+131 452 U
+131 115 U
+131 454 U
+132 459 U
+132 115 U
+130 434 U
+130 444 U
+130 450 U
+130 127 U
+130 115 U
+128 459 U
+128 115 U
+129 454 U
+129 126 U
+119 451 U
+117 456 U
+118 454 U
+120 456 U
+133 461 U
+133 126 U
+133 454 U
+134 442 U
+121 134 U
+116 360 U
+116 439 U
+126 450 U
+126 446 U
+126 445 U
+126 98 U
+124 357 U
+124 133 U
+124 450 U
+124 456 U
+124 454 U
+135 450 U
+135 98 U
+123 135 U
+115 360 U
+115 126 U
+125 458 U
+114 133 U
+114 450 U
+114 454 U
+102 104 U
+102 103 U
+11 21 U
+11 15 U
+11 10 U
+11 13 U
+11 17 U
+268 423 U
+297 459 U
+297 272 U
+297 358 U
+297 317 U
+297 302 U
+297 318 U
+297 308 U
+299 358 U
+300 358 U
+298 358 U
+301 358 U
+264 424 U
+264 423 U
+283 310 U
+283 358 U
+284 358 U
+280 358 U
+285 358 U
+286 358 U
+288 358 U
+281 358 U
+282 358 U
+279 330 U
+289 358 U
+290 358 U
+305 434 U
+305 330 U
+305 99 U
+305 113 U
+305 313 U
+305 127 U
+304 305 U
+303 274 U
+303 304 U
+269 270 U
+269 423 U
+273 138 U
+273 459 U
+295 459 U
+295 358 U
+295 296 U
+295 273 U
+295 99 U
+295 113 U
+295 313 U
+295 127 U
+294 295 U
+293 294 U
+293 274 U
+266 267 U
+266 423 U
+265 423 U
+292 310 U
+291 310 U
+263 424 U
+263 423 U
+277 358 U
+278 358 U
+271 423 U
+306 99 U
+306 360 U
+306 307 U
+276 265 U
+276 268 U
+276 266 U
+276 269 U
+276 271 U
+276 263 U
+275 266 U
+13 17 U
+13 309 U
+13 2 U
+313 316 U
+313 319 U
+310 318 U
+310 317 U
+310 308 U
+318 317 U
+311 358 U
+311 311 U
+314 24 U
+315 24 U
+315 358 U
+315 360 U
+14 21 U
+14 2 U
+14 13 U
+321 423 U
+327 316 U
+320 423 U
+323 314 U
+322 314 U
+324 314 U
+325 315 U
+326 24 U
+326 315 U
+15 17 U
+15 18 U
+15 10 U
+329 100 U
+338 152 U
+338 328 U
+342 147 U
+342 358 U
+342 331 U
+342 150 U
+343 147 U
+343 358 U
+343 150 U
+344 147 U
+344 358 U
+344 150 U
+341 147 U
+341 358 U
+341 330 U
+341 150 U
+341 363 U
+341 362 U
+341 364 U
+339 147 U
+339 358 U
+339 150 U
+340 147 U
+340 358 U
+340 150 U
+336 358 U
+332 358 U
+335 358 U
+330 149 U
+330 338 U
+330 329 U
+330 358 U
+330 331 U
+16 21 U
+16 15 U
+355 330 U
+354 355 U
+353 347 U
+353 354 U
+345 346 U
+345 424 U
+345 423 U
+350 330 U
+348 345 U
+358 356 U
+360 356 U
+357 358 U
+357 360 U
+359 358 U
+359 360 U
+363 361 U
+363 364 U
+390 366 U
+390 374 U
+391 366 U
+391 382 U
+400 391 U
+395 366 U
+395 385 U
+395 376 U
+395 390 U
+396 366 U
+396 385 U
+396 376 U
+396 390 U
+397 366 U
+397 381 U
+397 385 U
+397 388 U
+397 390 U
+394 385 U
+394 366 U
+394 380 U
+394 384 U
+394 400 U
+399 366 U
+399 400 U
+398 366 U
+398 386 U
+398 390 U
+393 366 U
+393 400 U
+392 377 U
+392 381 U
+392 390 U
+392 366 U
+385 372 U
+385 370 U
+385 365 U
+386 370 U
+386 371 U
+386 365 U
+388 370 U
+388 365 U
+389 387 U
+384 387 U
+384 383 U
+366 367 U
+374 383 U
+380 374 U
+377 374 U
+379 380 U
+371 370 U
+372 370 U
+373 370 U
+369 368 U
+369 366 U
+369 390 U
+369 391 U
+20 19 U
+20 21 U
+20 13 U
+401 424 U
+401 423 U
+420 369 U
+408 310 U
+408 369 U
+421 310 U
+421 369 U
+407 310 U
+407 369 U
+404 369 U
+419 369 U
+417 369 U
+416 369 U
+415 369 U
+414 369 U
+412 369 U
+413 369 U
+410 369 U
+411 369 U
+405 369 U
+406 369 U
+409 369 U
+418 369 U
+403 369 U
+422 369 U
+402 401 U
+21 423 U
+426 426 U
+424 425 U
+22 21 U
+427 423 U
+430 426 U
+431 426 U
+433 426 U
+429 426 U
+432 426 U
+428 427 U
+23 17 U
+23 18 U
+437 448 U
+437 435 U
+440 438 U
+456 455 U
+455 450 U
+461 466 U
+461 450 U
+461 460 U
+461 438 U
+461 454 U
+439 460 U
+439 450 U
+439 461 U
+442 450 U
+442 438 U
+453 436 U
+453 460 U
+453 437 U
+453 438 U
+453 454 U
+453 457 U
+441 358 U
+441 460 U
+441 357 U
+441 437 U
+441 360 U
+441 438 U
+441 457 U
+441 359 U
+458 441 U
+458 453 U
+465 447 U
+459 465 U
+459 443 U
+443 460 U
+443 438 U
+462 459 U
+462 450 U
+462 437 U
+462 456 U
+462 443 U
+462 440 U
+462 463 U
+462 364 U
+444 462 U
+451 460 U
+451 450 U
+451 464 U
+452 450 U
+460 450 U
+460 457 U
+436 436 U
+331 136 U
+Cloning repo:  https://github.com/google/pasta
+pyan3 /home/avb307/msc_thesis_work/automate_the_painful_stuffs/pasta/**/**/*.py --uses --no-defines --colored --grouped --annotated  -f pasta_03_04_2021.txt --uses --no-defines --tgf

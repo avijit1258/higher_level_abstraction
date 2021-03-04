@@ -1,0 +1,1693 @@
+1 examples
+2 fire
+3 fire.__main__
+4 fire.completion
+5 fire.completion_test
+6 fire.core
+7 fire.core_test
+8 fire.custom_descriptions
+9 fire.custom_descriptions_test
+10 fire.decorators
+11 fire.decorators_test
+12 fire.docstrings
+13 fire.docstrings_fuzz_test
+14 fire.docstrings_test
+15 fire.fire_import_test
+16 fire.fire_test
+17 fire.formatting
+18 fire.formatting_test
+19 fire.formatting_windows
+20 fire.helptext
+21 fire.helptext_test
+22 fire.inspectutils
+23 fire.inspectutils_test
+24 fire.interact
+25 fire.interact_test
+26 fire.main_test
+27 fire.parser
+28 fire.parser_fuzz_test
+29 fire.parser_test
+30 fire.test_components
+31 fire.test_components_bin
+32 fire.test_components_py3
+33 fire.test_components_test
+34 fire.testutils
+35 fire.testutils_test
+36 fire.trace
+37 fire.trace_test
+38 fire.value_types
+39 import_from_file_path\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/__main__.py:46)
+40 import_from_module_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/__main__.py:90)
+41 import_module\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/__main__.py:96)
+42 main\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/__main__.py:130)
+43 Completions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:395)
+44 MemberVisible\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:284)
+45 Script\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:29)
+46 VisibleMembers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:347)
+47 _BashScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:35)
+48 _Commands\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:446)
+49 _CompletionsFromArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:380)
+50 _FishScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:188)
+51 _FormatForCommand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:424)
+52 _GetMaps\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:485)
+53 _IsOption\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:481)
+54 _GetOptsAssignmentTemplate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion.py:152)
+55 TabCompletionTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:26)
+56 testClassCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:177)
+57 testClassFishScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:147)
+58 testClassScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:124)
+59 testCompletionBashScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:28)
+60 testCompletionFishScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:44)
+61 testDeepDictCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:103)
+62 testDeepDictFishScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:132)
+63 testDeepDictScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:109)
+64 testDictCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:73)
+65 testDictCompletionsVerbose\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:88)
+66 testFnCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:57)
+67 testFnFishScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:140)
+68 testFnScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:117)
+69 testGeneratorCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:168)
+70 testListCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:66)
+71 testMethodCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:186)
+72 testNonStringDictCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:155)
+73 testObjectCompletions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:181)
+74 example\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:58)
+75 generator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/completion_test.py:169)
+76 CompletionScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:177)
+77 Display\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:172)
+78 Fire\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:81)
+79 FireError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:182)
+80 FireExit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:190)
+81 _CallAndUpdateTrace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:649)
+82 _DictAsString\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:302)
+83 _DisplayError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:275)
+84 _Fire\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:359)
+85 _GetMember\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:619)
+86 _IsFlag\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:931)
+87 _IsHelpShortcut\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:211)
+88 _IsMultiCharFlag\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:949)
+89 _IsSingleCharFlag\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:944)
+90 _MakeParseFn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:696)
+91 _OneLineResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:338)
+92 _ParseArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:754)
+93 _ParseKeywordArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:813)
+94 _ParseValue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:954)
+95 _PrintResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:244)
+96 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:200)
+97 _ParseFn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core.py:715)
+98 CoreTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:30)
+99 testCallable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:169)
+100 testCallableWithPositionalArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:177)
+101 testClassMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:190)
+102 testErrorRaising\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:119)
+103 testFireError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:125)
+104 testFireErrorMultipleValues\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:129)
+105 testHelpOnErrorInConstructor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:98)
+106 testHelpWithClass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:78)
+107 testHelpWithMember\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:86)
+108 testHelpWithNamespaceCollision\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:104)
+109 testInteractiveMode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:43)
+110 testInteractiveModeFullArgument\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:50)
+111 testInteractiveModeVariables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:55)
+112 testInteractiveModeVariablesWithName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:65)
+113 testInvalidParameterRaisesFireExit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:115)
+114 testLruCacheDecorator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:203)
+115 testLruCacheDecoratorBoundArg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:197)
+116 testOneLineResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:32)
+117 testOneLineResultCircularRef\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:38)
+118 testPrintEmptyDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:133)
+119 testPrintFrozenSet\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:161)
+120 testPrintNamedTupleField\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:145)
+121 testPrintNamedTupleFieldNameEqualsValue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:149)
+122 testPrintNamedTupleIndex\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:153)
+123 testPrintNamedTupleNegativeIndex\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:165)
+124 testPrintOrderedDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:139)
+125 testPrintSet\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:157)
+126 testStaticMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/core_test.py:183)
+127 GetDescription\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions.py:146)
+128 GetStringTypeDescription\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions.py:105)
+129 GetStringTypeSummary\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions.py:78)
+130 GetSummary\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions.py:138)
+131 NeedsCustomDescription\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions.py:50)
+132 CustomDescriptionTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:27)
+133 test_string_type_description_enough_space\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:53)
+134 test_string_type_description_not_enough_space_new_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:65)
+135 test_string_type_description_not_enough_space_truncated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:59)
+136 test_string_type_summary_enough_space\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:29)
+137 test_string_type_summary_not_enough_space_long_truncated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:47)
+138 test_string_type_summary_not_enough_space_new_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:41)
+139 test_string_type_summary_not_enough_space_truncated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/custom_descriptions_test.py:35)
+140 GetMetadata\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators.py:87)
+141 GetParseFns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators.py:111)
+142 SetParseFn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators.py:32)
+143 SetParseFns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators.py:55)
+144 _SetMetadata\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators.py:81)
+145 _Decorator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators.py:42)
+146 _Decorator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators.py:71)
+147 FireDecoratorsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:93)
+148 MixedArguments\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:58)
+149 NoDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:26)
+150 PartialParseFn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:65)
+151 WithDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:47)
+152 WithKwargs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:76)
+153 WithVarArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:86)
+154 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:42)
+155 testSetParseFn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:166)
+156 testSetParseFnsDefaultsFromFire\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:111)
+157 testSetParseFnsDefaultsFromPython\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:105)
+158 testSetParseFnsFnWithPositionalArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:102)
+159 testSetParseFnsForKeywordArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:147)
+160 testSetParseFnsNamedArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:95)
+161 testSetParseFnsNamedDefaultsFromFire\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:127)
+162 testSetParseFnsNamedDefaultsFromPython\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:121)
+163 testSetParseFnsOnlySomeTypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:141)
+164 testSetParseFnsPositionalAndNamed\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:137)
+165 testSetParseFnsPositionalArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:99)
+166 example3\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:60)
+167 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:29)
+168 quadruple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:37)
+169 triple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:33)
+170 example4\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:67)
+171 example5\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:71)
+172 example1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:49)
+173 example2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:53)
+174 example6\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:78)
+175 example7\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/decorators_test.py:88)
+176 ArgInfo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:70)
+177 DocstringInfo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:62)
+178 Formats\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:107)
+179 KwargInfo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:78)
+180 Namespace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:83)
+181 Sections\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:99)
+182 _as_arg_name_and_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:326)
+183 _as_arg_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:349)
+184 _cast_to_known_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:371)
+185 _consume_google_args_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:390)
+186 _consume_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:415)
+187 _create_line_info\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:514)
+188 _get_after_directive\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:700)
+189 _get_after_google_header\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:676)
+190 _get_directive\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:682)
+191 _get_or_create_arg_by_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:278)
+192 _google_section\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:657)
+193 _google_section_permitted\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:581)
+194 _is_arg_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:306)
+195 _is_blank\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:238)
+196 _join_lines\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:242)
+197 _line_is_hyphens\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:728)
+198 _line_is_numpy_parameter_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:755)
+199 _matches_section\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:623)
+200 _matches_section_title\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:608)
+201 _numpy_section\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:733)
+202 _rst_section\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:709)
+203 _section_from_possible_title\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:643)
+204 _strip_blank_lines\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:215)
+205 _update_section_state\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:537)
+206 parse\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:122)
+207 __delattr__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:94)
+208 __getattr__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:86)
+209 __setattr__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings.py:91)
+210 DocstringsFuzzTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_fuzz_test.py:30)
+211 test_fuzz_parse\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_fuzz_test.py:32)
+212 DocstringsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:31)
+213 test_google_format_arg_named_args\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:106)
+214 test_google_format_args_only\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:89)
+215 test_google_format_multiline_arg_description\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:147)
+216 test_google_format_typed_args_and_returns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:119)
+217 test_google_section_with_blank_first_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:284)
+218 test_ill_formed_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:297)
+219 test_multisection_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:265)
+220 test_numpy_colon_in_description\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:313)
+221 test_numpy_format_multiline_arg_description\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:236)
+222 test_numpy_format_typed_args_and_returns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:202)
+223 test_one_line_runs_over\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:64)
+224 test_one_line_runs_over_whitespace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:77)
+225 test_one_line_simple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:33)
+226 test_one_line_simple_whitespace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:41)
+227 test_one_line_too_long\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:51)
+228 test_rst_format_typed_args_and_kwargs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:339)
+229 test_rst_format_typed_args_and_returns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:173)
+230 test_strip_blank_lines\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/docstrings_test.py:307)
+231 FireImportTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_import_test.py:24)
+232 testFire\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_import_test.py:27)
+233 testFireMethods\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_import_test.py:31)
+234 testNoPrivateMethods\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_import_test.py:34)
+235 FireTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:32)
+236 testBasicSeparator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:584)
+237 testBoolParsing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:360)
+238 testBoolParsingContinued\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:374)
+239 testBoolParsingLessExpectedCases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:411)
+240 testBoolParsingSingleHyphen\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:394)
+241 testBoolParsingWithNo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:506)
+242 testClassInstantiation\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:668)
+243 testClassWithDefaultMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:705)
+244 testClassWithInvalidProperty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:710)
+245 testExtraSeparators\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:616)
+246 testFire\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:34)
+247 testFireAllNamedArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:118)
+248 testFireAllNamedArgsOneMissing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:135)
+249 testFireAnnotatedArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:183)
+250 testFireAsyncio\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:724)
+251 testFireDefaultName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:58)
+252 testFireDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:274)
+253 testFireExceptions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:69)
+254 testFireFrozenset\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:297)
+255 testFireInvalidCommandArg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:53)
+256 testFireKeywordArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:226)
+257 testFireKeywordArgsWithMissingPositionalArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:260)
+258 testFireKeywordOnlyArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:187)
+259 testFireList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:302)
+260 testFireNamedArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:82)
+261 testFireNamedArgsSingleHyphen\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:94)
+262 testFireNamedArgsWithEquals\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:106)
+263 testFireNamedArgsWithEqualsSingleHyphen\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:112)
+264 testFireNoArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:66)
+265 testFireNoComponent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:330)
+266 testFireObject\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:268)
+267 testFireObjectWithDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:282)
+268 testFireObjectWithList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:308)
+269 testFireObjectWithListAsObject\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:320)
+270 testFireObjectWithTuple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:314)
+271 testFireObjectWithTupleAsObject\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:325)
+272 testFirePartialNamedArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:143)
+273 testFirePartialNamedArgsOneMissing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:167)
+274 testFirePositionalCommand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:48)
+275 testFireProperties\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:198)
+276 testFireRecursion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:202)
+277 testFireSet\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:292)
+278 testFireUnderscores\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:339)
+279 testFireUnderscoresInArg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:347)
+280 testFireVarArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:209)
+281 testFireVarArgsWithNamedArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:218)
+282 testFloatForExpectedInt\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:656)
+283 testHelpFlag\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:549)
+284 testHelpFlagAndTraceFlag\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:557)
+285 testHelpKwargsDecorator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:715)
+286 testNegativeNumbers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:651)
+287 testNonComparable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:603)
+288 testSeparatorForChaining\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:629)
+289 testSingleCharFlagParsing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:442)
+290 testSingleCharFlagParsingCapitalLetter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:501)
+291 testSingleCharFlagParsingEqualSign\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:467)
+292 testSingleCharFlagParsingExactMatch\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:484)
+293 testTabCompletion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:571)
+294 testTabCompletionNoName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:566)
+295 testTabCompletionWithDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:577)
+296 testTraceErrors\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:676)
+297 testTraceFlag\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:541)
+298 fn1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:508)
+299 fn2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:522)
+300 fn3\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/fire_test.py:532)
+301 Bold\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:35)
+302 BoldUnderline\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:43)
+303 DoubleQuote\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:96)
+304 EllipsisMiddleTruncate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:84)
+305 EllipsisTruncate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:74)
+306 Error\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:70)
+307 Indent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:28)
+308 Underline\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:39)
+309 WrappedJoin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting.py:47)
+310 FormattingTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:27)
+311 test_bold\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:29)
+312 test_ellipsis_middle_truncate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:68)
+313 test_ellipsis_middle_truncate_not_enough_space\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:74)
+314 test_ellipsis_truncate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:56)
+315 test_ellipsis_truncate_not_enough_space\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:62)
+316 test_indent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:37)
+317 test_indent_multiple_lines\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:41)
+318 test_underline\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:33)
+319 test_wrap_multiple_items\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:49)
+320 test_wrap_one_item\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_test.py:45)
+321 initialize_or_disable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/formatting_windows.py:34)
+322 ActionGroup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:747)
+323 HelpText\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:52)
+324 UsageText\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:594)
+325 _ArgsAndFlagsSections\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:180)
+326 _CreateArgItem\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:391)
+327 _CreateAvailabilityLine\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:737)
+328 _CreateFlagItem\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:424)
+329 _CreateItem\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:530)
+330 _CreateKeywordOnlyFlagItem\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:175)
+331 _CreateOutputSection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:384)
+332 _DescriptionSection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:147)
+333 _GetActionsGroupedByKind\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:348)
+334 _GetArgDefault\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:509)
+335 _GetArgDescription\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:538)
+336 _GetArgType\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:484)
+337 _GetArgsAndFlagsString\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:284)
+338 _GetCallableAvailabilityLines\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:706)
+339 _GetCallableUsageItems\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:677)
+340 _GetCurrentCommand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:375)
+341 _GetDescription\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:279)
+342 _GetPossibleActions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:333)
+343 _GetPossibleActionsString\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:342)
+344 _GetPossibleActionsUsageString\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:659)
+345 _GetSummary\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:274)
+346 _KeywordOnlyArguments\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:701)
+347 _MakeUsageDetailsSection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:546)
+348 _NameSection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:98)
+349 _NewChoicesSection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:586)
+350 _SynopsisSection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:119)
+351 _UsageAvailabilityLines\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:665)
+352 _UsageDetailsSections\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:257)
+353 _ValuesUsageDetailsSection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:567)
+354 Add\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:756)
+355 GetItems\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:760)
+356 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext.py:750)
+357 HelpTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:33)
+358 UsageTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:427)
+359 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:35)
+360 testHelpScreen\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:299)
+361 testHelpScreenForFunctionDocstringWithLineBreak\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:327)
+362 testHelpScreenForFunctionFunctionWithDefaultArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:350)
+363 testHelpTextBoldCommandName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:383)
+364 testHelpTextEmptyList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:227)
+365 testHelpTextFunction\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:63)
+366 testHelpTextFunctionIntType\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:217)
+367 testHelpTextFunctionWithBuiltin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:205)
+368 testHelpTextFunctionWithDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:76)
+369 testHelpTextFunctionWithDefaultsAndTypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:130)
+370 testHelpTextFunctionWithKwargs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:102)
+371 testHelpTextFunctionWithKwargsAndDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:115)
+372 testHelpTextFunctionWithLongDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:87)
+373 testHelpTextFunctionWithLongTypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:183)
+374 testHelpTextFunctionWithTypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:165)
+375 testHelpTextFunctionWithTypesAndDefaultNone\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:147)
+376 testHelpTextInt\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:260)
+377 testHelpTextKeywordOnlyArgumentsWithDefault\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:281)
+378 testHelpTextKeywordOnlyArgumentsWithoutDefault\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:290)
+379 testHelpTextNameSectionCommandWithSeparator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:410)
+380 testHelpTextNameSectionCommandWithSeparatorVerbose\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:418)
+381 testHelpTextNoDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:39)
+382 testHelpTextNoDefaultsObject\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:49)
+383 testHelpTextNoInit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:273)
+384 testHelpTextObjectWithGroupAndValues\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:395)
+385 testHelpTextShortList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:242)
+386 testHelpTextUnderlineFlag\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:371)
+387 testInitRequiresFlagSyntaxSubclassNamedTuple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:570)
+388 testUsageOutput\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:429)
+389 testUsageOutputCallable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:500)
+390 testUsageOutputConstructorWithParameter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:517)
+391 testUsageOutputConstructorWithParameterVerbose\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:530)
+392 testUsageOutputEmptyDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:544)
+393 testUsageOutputFunctionWithDocstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:486)
+394 testUsageOutputFunctionWithHelp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:472)
+395 testUsageOutputMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:458)
+396 testUsageOutputNone\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:557)
+397 testUsageOutputVerbose\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/helptext_test.py:444)
+398 FullArgSpec\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:33)
+399 GetClassAttrsDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:357)
+400 GetFileAndLine\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:235)
+401 GetFullArgSpec\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:183)
+402 Info\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:262)
+403 IsCoroutineFunction\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:368)
+404 IsNamedTuple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:335)
+405 Py2GetArgSpec\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:98)
+406 Py3GetFullArgSpec\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:108)
+407 _GetArgSpecInfo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:58)
+408 _InfoBackup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:304)
+409 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils.py:36)
+410 InspectUtilsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:31)
+411 testGetFullArgSpec\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:33)
+412 testGetFullArgSpecFromBuiltin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:55)
+413 testGetFullArgSpecFromClassNoInit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:93)
+414 testGetFullArgSpecFromMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:103)
+415 testGetFullArgSpecFromNamedTuple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:73)
+416 testGetFullArgSpecFromNamedTupleSubclass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:83)
+417 testGetFullArgSpecFromSlotWrapper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:63)
+418 testGetFullArgSpecPy3\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:43)
+419 testInfoClass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:120)
+420 testInfoClassNoInit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:126)
+421 testInfoNoDocstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:135)
+422 testInfoOne\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/inspectutils_test.py:113)
+423 Embed\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/interact.py:30)
+424 _AvailableString\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/interact.py:46)
+425 _EmbedCode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/interact.py:97)
+426 _EmbedIPython\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/interact.py:84)
+427 InteractTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/interact_test.py:34)
+428 testInteract\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/interact_test.py:36)
+429 testInteractVariables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/interact_test.py:42)
+430 MainModuleFileTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:42)
+431 MainModuleTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:24)
+432 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:45)
+433 testFileNameFailure\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:59)
+434 testFileNameFire\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:53)
+435 testFileNameModuleDuplication\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:65)
+436 testFileNameModuleFileFailure\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:78)
+437 testArgPassing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:32)
+438 testNameSetting\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/main_test.py:27)
+439 CreateParser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser.py:25)
+440 DefaultParseValue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser.py:57)
+441 SeparateFlagArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser.py:37)
+442 _LiteralEval\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser.py:77)
+443 _Replacement\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser.py:117)
+444 ParserFuzzTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_fuzz_test.py:31)
+445 testDefaultParseValueFuzz\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_fuzz_test.py:33)
+446 ParserTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:25)
+447 testCreateParser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:27)
+448 testDefaultParseValueBadLiteral\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:128)
+449 testDefaultParseValueBareWordsLists\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:100)
+450 testDefaultParseValueBareWordsTuple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:114)
+451 testDefaultParseValueBool\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:110)
+452 testDefaultParseValueComments\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:123)
+453 testDefaultParseValueDict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:103)
+454 testDefaultParseValueIgnoreBinOp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:138)
+455 testDefaultParseValueLists\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:93)
+456 testDefaultParseValueNestedContainers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:118)
+457 testDefaultParseValueNone\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:107)
+458 testDefaultParseValueNumbers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:70)
+459 testDefaultParseValueOtherNumbers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:90)
+460 testDefaultParseValueQuotedStringNumbers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:87)
+461 testDefaultParseValueQuotedStrings\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:54)
+462 testDefaultParseValueSpecialStrings\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:62)
+463 testDefaultParseValueStringNumbers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:79)
+464 testDefaultParseValueStrings\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:48)
+465 testDefaultParseValueSyntaxError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:134)
+466 testSeparateFlagArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/parser_test.py:30)
+467 Annotations\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:152)
+468 BinaryCanvas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:478)
+469 BoolConverter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:210)
+470 CallableWithKeywordArgument\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:336)
+471 CallableWithPositionalArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:314)
+472 CapitalizedArgNames\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:146)
+473 CircularReference\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:278)
+474 ClassWithDocstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:350)
+475 ClassWithMultilineDocstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:373)
+476 Color\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:418)
+477 DefaultMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:511)
+478 Empty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:53)
+479 EmptyDictOutput\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:269)
+480 ErrorInConstructor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:67)
+481 ErrorRaiser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:254)
+482 HasStaticAndClassMethods\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:424)
+483 InstanceVars\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:232)
+484 InvalidProperty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:522)
+485 Kwargs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:242)
+486 MixedDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:125)
+487 NamedTuple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:298)
+488 NoDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:82)
+489 NonComparable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:260)
+490 NumberDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:223)
+491 OldStyleEmpty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:57)
+492 OldStyleWithDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:116)
+493 OrderedDictionary\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:286)
+494 ReturnsObj\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:216)
+495 SimilarArgNames\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:137)
+496 SubPoint\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:329)
+497 Subdict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:410)
+498 TypedProperties\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:164)
+499 Underscores\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:201)
+500 VarArgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:183)
+501 WithDefaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:91)
+502 WithHelpArg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:74)
+503 WithInit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:61)
+504 decorated_method\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:539)
+505 fn_with_code_in_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:461)
+506 fn_with_kwarg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:545)
+507 fn_with_kwarg_and_defaults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:556)
+508 function_with_help\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:49)
+509 function_with_keyword_arguments\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:456)
+510 function_with_varargs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:441)
+511 identity\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:31)
+512 multiplier_with_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:37)
+513 simple_decorator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:532)
+514 simple_frozenset\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:406)
+515 simple_set\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:402)
+516 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:154)
+517 triple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:157)
+518 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:481)
+519 __str__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:487)
+520 move\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:495)
+521 off\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:503)
+522 on\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:500)
+523 set\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:506)
+524 show\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:491)
+525 as_bool\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:212)
+526 __call__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:339)
+527 print_msg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:343)
+528 __call__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:319)
+529 fn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:322)
+530 sum\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:148)
+531 create\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:280)
+532 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:356)
+533 print_msg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:366)
+534 example_generator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:380)
+535 __getattr__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:516)
+536 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:513)
+537 _missing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:517)
+538 nothing_printable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:274)
+539 totally_empty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:271)
+540 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:69)
+541 fail\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:256)
+542 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:429)
+543 class_fn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:436)
+544 static_fn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:432)
+545 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:234)
+546 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:238)
+547 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:524)
+548 prop\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:527)
+549 props\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:244)
+550 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:250)
+551 upper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:247)
+552 identity\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:133)
+553 sum\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:130)
+554 ten\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:127)
+555 matching_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:307)
+556 point\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:301)
+557 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:84)
+558 triple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:87)
+559 __eq__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:262)
+560 __ne__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:265)
+561 integer_reciprocal\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:228)
+562 reciprocal\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:225)
+563 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:118)
+564 triple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:121)
+565 empty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:288)
+566 non_empty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:291)
+567 get_obj\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:218)
+568 identity\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:139)
+569 identity2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:142)
+570 coordinate_sum\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:332)
+571 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:167)
+572 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:203)
+573 underscore_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:206)
+574 cumsums\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:186)
+575 varchars\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:197)
+576 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:94)
+577 text\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:108)
+578 triple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:105)
+579 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:77)
+580 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:63)
+581 wrapper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components.py:533)
+582 main\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_bin.py:28)
+583 KeywordOnly\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:29)
+584 LruCacheDecoratedMethod\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:41)
+585 WithAsyncio\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:53)
+586 WithDefaultsAndTypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:82)
+587 WithTypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:60)
+588 identity\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:24)
+589 lru_cache_decorated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:48)
+590 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:31)
+591 triple\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:34)
+592 with_default\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:37)
+593 lru_cache_in_class\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:43)
+594 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:55)
+595 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:85)
+596 get_int\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:96)
+597 double\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:63)
+598 long_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_py3.py:74)
+599 TestComponentsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_test.py:25)
+600 testNonComparable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_test.py:32)
+601 testTestComponents\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/test_components_test.py:28)
+602 BaseTestCase\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils.py:35)
+603 ChangeDirectory\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils.py:108)
+604 assertOutputMatches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils.py:38)
+605 assertRaisesFireExit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils.py:82)
+606 assertRaisesRegex\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils.py:76)
+607 TestTestUtils\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils_test.py:28)
+608 testCheckStdoutOrStderrNone\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils_test.py:36)
+609 testCorrectOrderingOfAssertRaises\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils_test.py:50)
+610 testNoCheckOnException\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/testutils_test.py:31)
+611 FireTrace\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:45)
+612 FireTraceElement\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:248)
+613 AddAccessedProperty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:90)
+614 AddCalledComponent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:101)
+615 AddCompletionScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:127)
+616 AddError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:138)
+617 AddInteractiveMode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:134)
+618 AddSeparator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:142)
+619 GetCommand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:172)
+620 GetLastHealthyElement\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:73)
+621 GetResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:67)
+622 HasError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:86)
+623 NeedsSeparatingHyphenHyphen\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:226)
+624 NeedsSeparator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:198)
+625 _Quote\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:166)
+626 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:53)
+627 __str__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:216)
+628 AddSeparator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:295)
+629 ErrorAsStr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:298)
+630 HasCapacity\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:289)
+631 HasError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:286)
+632 HasSeparator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:292)
+633 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:255)
+634 __str__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace.py:301)
+635 FireTraceElementTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:118)
+636 FireTraceTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:25)
+637 testFireTraceElementAsStringNoMetadata\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:127)
+638 testFireTraceElementAsStringWithTarget\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:134)
+639 testFireTraceElementAsStringWithTargetAndLineNo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:142)
+640 testFireTraceElementHasError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:120)
+641 testAddAccessedProperty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:46)
+642 testAddCalledCallable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:54)
+643 testAddCalledRoutine\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:63)
+644 testAddCompletionScript\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:82)
+645 testAddInstantiatedClass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:72)
+646 testAddInteractiveMode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:89)
+647 testFireTraceGetResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:32)
+648 testFireTraceHasError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:38)
+649 testFireTraceInitialization\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:27)
+650 testGetCommand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:96)
+651 testGetCommandWithFlagQuotes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:110)
+652 testGetCommandWithQuotes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/trace_test.py:103)
+653 HasCustomStr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/value_types.py:63)
+654 IsCommand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/value_types.py:36)
+655 IsGroup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/value_types.py:31)
+656 IsSimpleGroup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/value_types.py:44)
+657 IsValue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/fire/value_types.py:40)
+#
+2 78 U
+3 2 U
+3 42 U
+41 40 U
+41 39 U
+42 78 U
+42 41 U
+4 22 U
+45 48 U
+45 47 U
+45 50 U
+47 54 U
+47 52 U
+47 523 U
+50 523 U
+50 52 U
+44 399 U
+46 44 U
+46 399 U
+43 51 U
+43 405 U
+43 46 U
+43 401 U
+43 49 U
+48 48 U
+48 46 U
+48 51 U
+48 43 U
+52 53 U
+52 51 U
+52 523 U
+5 30 U
+5 34 U
+5 4 U
+55 602 U
+59 47 U
+60 50 U
+66 74 U
+66 43 U
+70 43 U
+64 43 U
+65 43 U
+61 43 U
+63 45 U
+68 45 U
+68 511 U
+58 45 U
+58 486 U
+62 45 U
+67 45 U
+67 511 U
+57 45 U
+57 486 U
+72 43 U
+69 75 U
+69 43 U
+56 488 U
+56 43 U
+73 488 U
+73 43 U
+71 488 U
+71 43 U
+6 38 U
+6 4 U
+6 22 U
+6 36 U
+6 10 U
+6 17 U
+6 20 U
+6 24 U
+6 27 U
+78 83 U
+78 77 U
+78 441 U
+78 439 U
+78 323 U
+78 80 U
+78 96 U
+78 95 U
+78 84 U
+76 45 U
+87 401 U
+87 93 U
+95 653 U
+95 77 U
+95 82 U
+95 91 U
+95 656 U
+95 323 U
+95 523 U
+83 77 U
+83 323 U
+83 324 U
+83 306 U
+82 44 U
+82 91 U
+82 399 U
+84 400 U
+84 85 U
+84 617 U
+84 618 U
+84 611 U
+84 81 U
+84 615 U
+84 76 U
+84 423 U
+84 404 U
+84 616 U
+84 79 U
+84 613 U
+84 87 U
+84 626 U
+85 79 U
+81 400 U
+81 90 U
+81 140 U
+81 403 U
+90 401 U
+90 97 U
+90 405 U
+90 523 U
+97 92 U
+97 405 U
+97 94 U
+97 401 U
+97 93 U
+97 79 U
+97 523 U
+92 79 U
+92 94 U
+93 79 U
+93 86 U
+86 89 U
+86 88 U
+94 440 U
+7 30 U
+7 34 U
+7 6 U
+7 36 U
+98 602 U
+116 91 U
+117 91 U
+117 473 U
+117 531 U
+109 78 U
+109 498 U
+110 78 U
+110 498 U
+111 78 U
+111 611 U
+111 501 U
+112 78 U
+112 611 U
+112 501 U
+106 78 U
+106 483 U
+106 605 U
+107 78 U
+107 605 U
+107 498 U
+105 480 U
+105 78 U
+105 605 U
+108 604 U
+108 78 U
+108 502 U
+108 508 U
+113 485 U
+113 78 U
+113 605 U
+102 78 U
+102 481 U
+103 79 U
+104 79 U
+118 604 U
+118 78 U
+118 479 U
+124 493 U
+124 604 U
+124 78 U
+120 604 U
+120 78 U
+120 487 U
+121 604 U
+121 78 U
+121 487 U
+122 604 U
+122 78 U
+122 487 U
+125 515 U
+125 604 U
+125 78 U
+119 604 U
+119 78 U
+119 514 U
+123 604 U
+123 78 U
+123 487 U
+99 470 U
+99 604 U
+99 78 U
+100 78 U
+100 471 U
+100 605 U
+126 78 U
+126 482 U
+101 78 U
+101 482 U
+115 78 U
+115 584 U
+114 78 U
+114 589 U
+8 129 U
+8 17 U
+8 128 U
+131 523 U
+129 303 U
+129 305 U
+128 303 U
+128 305 U
+9 34 U
+9 8 U
+132 602 U
+136 130 U
+139 130 U
+138 130 U
+137 130 U
+133 127 U
+135 127 U
+134 127 U
+145 141 U
+145 144 U
+142 145 U
+146 141 U
+146 144 U
+143 146 U
+144 140 U
+141 140 U
+11 143 U
+11 34 U
+11 10 U
+11 6 U
+149 143 U
+151 143 U
+148 143 U
+150 143 U
+152 143 U
+153 142 U
+147 602 U
+160 149 U
+160 78 U
+165 149 U
+165 78 U
+158 154 U
+158 78 U
+157 151 U
+156 151 U
+156 78 U
+162 151 U
+161 151 U
+161 78 U
+164 148 U
+164 78 U
+163 78 U
+163 150 U
+159 152 U
+159 78 U
+155 78 U
+155 153 U
+12 181 U
+12 177 U
+12 176 U
+12 179 U
+179 176 U
+206 180 U
+206 184 U
+206 186 U
+206 187 U
+206 179 U
+206 204 U
+206 196 U
+206 177 U
+206 176 U
+204 195 U
+191 180 U
+182 194 U
+183 194 U
+185 182 U
+185 194 U
+185 191 U
+186 181 U
+186 197 U
+186 185 U
+186 198 U
+186 178 U
+186 191 U
+186 205 U
+186 194 U
+186 190 U
+186 183 U
+187 180 U
+205 202 U
+205 201 U
+205 178 U
+205 192 U
+205 189 U
+205 193 U
+205 188 U
+199 181 U
+199 200 U
+203 181 U
+203 199 U
+192 203 U
+202 190 U
+202 203 U
+201 197 U
+201 203 U
+13 34 U
+13 12 U
+210 602 U
+211 206 U
+14 12 U
+14 34 U
+14 177 U
+14 176 U
+14 179 U
+212 602 U
+225 177 U
+225 206 U
+226 177 U
+226 206 U
+227 177 U
+227 206 U
+223 177 U
+223 206 U
+224 177 U
+224 206 U
+214 177 U
+214 206 U
+214 176 U
+213 177 U
+213 206 U
+213 176 U
+216 177 U
+216 206 U
+216 176 U
+215 177 U
+215 206 U
+215 176 U
+229 177 U
+229 206 U
+229 176 U
+222 177 U
+222 206 U
+222 176 U
+221 177 U
+221 206 U
+221 176 U
+219 177 U
+219 206 U
+217 206 U
+218 206 U
+230 204 U
+220 177 U
+220 206 U
+220 176 U
+228 177 U
+228 206 U
+228 176 U
+228 179 U
+15 2 U
+15 34 U
+231 602 U
+232 78 U
+233 78 U
+234 2 U
+16 2 U
+16 30 U
+16 34 U
+235 602 U
+246 501 U
+246 78 U
+246 478 U
+246 491 U
+246 503 U
+246 488 U
+246 492 U
+274 488 U
+274 78 U
+255 78 U
+255 501 U
+251 78 U
+251 604 U
+251 478 U
+264 486 U
+264 78 U
+253 78 U
+253 490 U
+253 605 U
+253 478 U
+253 488 U
+253 498 U
+260 492 U
+260 78 U
+260 501 U
+261 492 U
+261 78 U
+261 501 U
+262 78 U
+262 501 U
+263 78 U
+263 501 U
+247 486 U
+247 78 U
+248 486 U
+248 78 U
+272 486 U
+272 78 U
+273 486 U
+273 78 U
+273 605 U
+249 78 U
+249 467 U
+258 78 U
+258 583 U
+258 605 U
+275 78 U
+275 498 U
+276 78 U
+276 498 U
+280 78 U
+280 500 U
+281 78 U
+281 500 U
+256 485 U
+256 78 U
+257 485 U
+257 78 U
+266 78 U
+266 501 U
+252 78 U
+267 78 U
+267 498 U
+277 515 U
+277 78 U
+254 78 U
+254 514 U
+259 78 U
+268 78 U
+268 498 U
+270 78 U
+270 498 U
+269 78 U
+269 498 U
+271 78 U
+271 498 U
+265 78 U
+265 523 U
+278 78 U
+278 499 U
+279 78 U
+279 499 U
+237 469 U
+237 78 U
+238 486 U
+238 78 U
+240 486 U
+240 78 U
+239 486 U
+239 78 U
+239 605 U
+289 495 U
+289 486 U
+289 78 U
+289 605 U
+291 486 U
+291 78 U
+292 495 U
+292 78 U
+290 472 U
+290 78 U
+241 299 U
+241 78 U
+241 300 U
+241 605 U
+241 298 U
+297 469 U
+297 78 U
+297 605 U
+283 469 U
+283 78 U
+283 605 U
+284 469 U
+284 78 U
+284 605 U
+294 488 U
+294 78 U
+293 488 U
+293 78 U
+295 78 U
+236 486 U
+236 78 U
+236 605 U
+287 489 U
+287 78 U
+245 78 U
+245 494 U
+288 469 U
+288 78 U
+288 494 U
+286 486 U
+286 78 U
+282 486 U
+282 78 U
+282 490 U
+242 78 U
+242 483 U
+242 605 U
+296 78 U
+296 483 U
+296 605 U
+243 78 U
+243 477 U
+244 484 U
+244 78 U
+285 78 U
+285 504 U
+285 605 U
+250 585 U
+250 78 U
+17 19 U
+302 301 U
+302 308 U
+18 34 U
+18 17 U
+310 602 U
+311 301 U
+318 308 U
+316 307 U
+317 307 U
+320 309 U
+319 309 U
+314 577 U
+314 305 U
+315 577 U
+315 305 U
+312 577 U
+312 304 U
+313 577 U
+313 304 U
+19 321 U
+20 12 U
+20 38 U
+20 22 U
+20 4 U
+20 10 U
+20 17 U
+20 8 U
+323 140 U
+323 402 U
+323 352 U
+323 401 U
+323 332 U
+323 350 U
+323 331 U
+323 333 U
+323 325 U
+323 348 U
+348 131 U
+348 345 U
+348 130 U
+348 340 U
+350 342 U
+350 337 U
+350 343 U
+350 340 U
+332 341 U
+332 131 U
+332 345 U
+332 130 U
+332 127 U
+330 328 U
+325 329 U
+325 335 U
+325 330 U
+325 326 U
+325 328 U
+325 179 U
+352 349 U
+352 347 U
+352 353 U
+337 308 U
+343 308 U
+333 322 U
+333 356 U
+333 354 U
+333 46 U
+333 655 U
+333 657 U
+333 654 U
+331 301 U
+331 307 U
+326 302 U
+326 335 U
+326 305 U
+326 329 U
+326 336 U
+328 334 U
+328 336 U
+328 329 U
+328 335 U
+328 308 U
+328 305 U
+329 307 U
+347 402 U
+347 131 U
+347 349 U
+347 130 U
+347 329 U
+353 349 U
+353 402 U
+353 329 U
+349 301 U
+349 308 U
+349 329 U
+324 342 U
+324 344 U
+324 140 U
+324 351 U
+324 333 U
+324 339 U
+324 401 U
+324 338 U
+351 327 U
+338 327 U
+338 346 U
+327 309 U
+327 307 U
+354 356 U
+21 30 U
+21 34 U
+21 36 U
+21 17 U
+21 20 U
+357 602 U
+359 602 U
+381 488 U
+381 323 U
+381 626 U
+381 611 U
+382 488 U
+382 323 U
+382 626 U
+382 611 U
+365 488 U
+365 323 U
+365 626 U
+365 611 U
+368 323 U
+368 626 U
+368 611 U
+368 501 U
+372 323 U
+372 626 U
+372 611 U
+372 501 U
+370 323 U
+370 626 U
+370 611 U
+370 506 U
+371 507 U
+371 323 U
+371 626 U
+371 611 U
+369 323 U
+369 626 U
+369 611 U
+369 586 U
+375 323 U
+375 626 U
+375 611 U
+375 586 U
+374 587 U
+374 323 U
+374 626 U
+374 611 U
+373 587 U
+373 323 U
+373 626 U
+373 611 U
+367 323 U
+367 626 U
+367 611 U
+366 323 U
+366 626 U
+366 611 U
+364 323 U
+364 626 U
+364 611 U
+385 323 U
+385 626 U
+385 611 U
+376 323 U
+376 626 U
+376 611 U
+383 323 U
+383 626 U
+383 611 U
+383 491 U
+377 592 U
+377 323 U
+377 626 U
+377 611 U
+378 323 U
+378 626 U
+378 611 U
+378 590 U
+360 323 U
+360 474 U
+360 626 U
+360 611 U
+360 532 U
+361 323 U
+361 534 U
+361 626 U
+361 611 U
+361 475 U
+362 323 U
+362 626 U
+362 611 U
+362 501 U
+386 301 U
+386 323 U
+386 626 U
+386 611 U
+386 308 U
+386 501 U
+363 302 U
+363 301 U
+363 323 U
+363 474 U
+363 626 U
+363 611 U
+363 532 U
+384 323 U
+384 626 U
+384 611 U
+384 571 U
+384 498 U
+379 323 U
+379 626 U
+379 618 U
+379 611 U
+380 323 U
+380 626 U
+380 618 U
+380 611 U
+380 501 U
+358 602 U
+388 488 U
+388 324 U
+388 626 U
+388 611 U
+397 488 U
+397 324 U
+397 626 U
+397 611 U
+395 613 U
+395 488 U
+395 324 U
+395 626 U
+395 611 U
+394 324 U
+394 626 U
+394 611 U
+394 508 U
+393 324 U
+393 626 U
+393 611 U
+393 512 U
+389 470 U
+389 324 U
+389 626 U
+389 611 U
+390 324 U
+390 483 U
+390 626 U
+390 611 U
+391 324 U
+391 483 U
+391 626 U
+391 611 U
+392 324 U
+392 626 U
+392 611 U
+396 324 U
+396 626 U
+396 611 U
+387 496 U
+387 324 U
+387 626 U
+387 611 U
+22 12 U
+401 407 U
+401 398 U
+401 409 U
+401 406 U
+401 405 U
+402 408 U
+402 206 U
+408 400 U
+23 30 U
+23 34 U
+23 22 U
+410 602 U
+411 401 U
+411 405 U
+411 511 U
+418 401 U
+418 588 U
+418 405 U
+412 401 U
+412 405 U
+417 488 U
+417 401 U
+417 405 U
+415 401 U
+415 405 U
+416 496 U
+416 401 U
+416 405 U
+413 401 U
+413 405 U
+413 491 U
+414 488 U
+414 401 U
+414 405 U
+422 402 U
+419 488 U
+419 402 U
+420 402 U
+420 491 U
+421 402 U
+421 488 U
+423 425 U
+423 424 U
+423 426 U
+25 34 U
+25 24 U
+427 602 U
+428 423 U
+429 423 U
+26 34 U
+26 3 U
+431 602 U
+438 42 U
+438 604 U
+437 42 U
+437 604 U
+430 602 U
+432 602 U
+434 42 U
+434 604 U
+433 42 U
+435 603 U
+435 42 U
+435 604 U
+436 603 U
+436 42 U
+436 606 U
+440 442 U
+442 443 U
+28 34 U
+28 27 U
+444 602 U
+445 553 U
+445 440 U
+445 530 U
+29 34 U
+29 27 U
+446 602 U
+447 439 U
+466 441 U
+464 440 U
+461 440 U
+462 440 U
+458 440 U
+463 440 U
+460 440 U
+459 440 U
+455 440 U
+449 440 U
+453 440 U
+457 440 U
+451 440 U
+450 440 U
+456 440 U
+452 440 U
+448 440 U
+465 440 U
+454 440 U
+30 470 U
+30 513 U
+30 32 U
+30 497 U
+571 501 U
+567 469 U
+522 523 U
+521 523 U
+535 537 U
+513 581 U
+31 2 U
+31 30 U
+31 582 U
+582 78 U
+582 30 U
+33 30 U
+33 34 U
+599 602 U
+601 478 U
+601 491 U
+600 489 U
+34 6 U
+34 36 U
+605 611 U
+605 604 U
+605 80 U
+35 34 U
+607 602 U
+610 604 U
+608 604 U
+609 604 U
+36 22 U
+626 633 U
+626 612 U
+621 620 U
+620 612 U
+622 612 U
+622 633 U
+613 633 U
+613 612 U
+614 633 U
+614 612 U
+615 633 U
+615 612 U
+617 612 U
+617 633 U
+616 612 U
+616 633 U
+618 612 U
+618 633 U
+619 631 U
+619 632 U
+619 625 U
+619 624 U
+619 612 U
+624 620 U
+627 612 U
+623 401 U
+623 620 U
+623 405 U
+634 631 U
+634 629 U
+37 34 U
+37 36 U
+636 602 U
+649 626 U
+649 611 U
+649 612 U
+647 613 U
+647 626 U
+647 611 U
+647 621 U
+648 613 U
+648 622 U
+648 626 U
+648 611 U
+648 616 U
+641 611 U
+641 627 U
+641 613 U
+641 626 U
+642 614 U
+642 611 U
+642 627 U
+642 626 U
+643 614 U
+643 611 U
+643 627 U
+643 626 U
+645 614 U
+645 611 U
+645 627 U
+645 626 U
+644 626 U
+644 611 U
+644 627 U
+644 615 U
+646 617 U
+646 626 U
+646 611 U
+646 627 U
+650 614 U
+650 611 U
+650 619 U
+650 626 U
+652 614 U
+652 611 U
+652 619 U
+652 626 U
+651 614 U
+651 611 U
+651 619 U
+651 626 U
+635 602 U
+640 631 U
+640 633 U
+640 612 U
+637 634 U
+637 633 U
+637 612 U
+638 634 U
+638 633 U
+638 612 U
+639 634 U
+639 633 U
+639 612 U
+38 22 U
+655 657 U
+655 654 U
+657 653 U
+656 657 U
+653 399 U
+Cloning repo:  https://github.com/google/python-fire
+pyan3 /home/avb307/msc_thesis_work/automate_the_painful_stuffs/python-fire/**/*.py --uses --no-defines --colored --grouped --annotated  -f python-fire_03_04_2021.txt --uses --no-defines --tgf

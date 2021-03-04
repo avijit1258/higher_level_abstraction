@@ -1,0 +1,1110 @@
+1 deploy_gcf
+2 turbinia.config
+3 turbinia.config.logger
+4 turbinia.config.turbinia_config_test
+5 turbinia.config.turbinia_config_tmpl
+6 turbinia.jobs
+7 turbinia.jobs.binary_extractor
+8 turbinia.jobs.bulk_extractor
+9 turbinia.jobs.docker
+10 turbinia.jobs.finalize_request
+11 turbinia.jobs.fsstat
+12 turbinia.jobs.grep
+13 turbinia.jobs.hadoop
+14 turbinia.jobs.hindsight
+15 turbinia.jobs.http_access_logs
+16 turbinia.jobs.imports_test
+17 turbinia.jobs.interface
+18 turbinia.jobs.interface_test
+19 turbinia.jobs.jenkins
+20 turbinia.jobs.jupyter
+21 turbinia.jobs.manager
+22 turbinia.jobs.manager_test
+23 turbinia.jobs.partitions
+24 turbinia.jobs.photorec
+25 turbinia.jobs.plaso
+26 turbinia.jobs.psort
+27 turbinia.jobs.redis
+28 turbinia.jobs.sshd
+29 turbinia.jobs.strings
+30 turbinia.jobs.tomcat
+31 turbinia.jobs.volatility
+32 turbinia.jobs.worker_stat
+33 turbinia.lib
+34 turbinia.lib.dfvfs_classes
+35 turbinia.lib.dfvfs_classes_test
+36 turbinia.lib.docker_manager
+37 turbinia.lib.dockermanager_test
+38 turbinia.lib.google_cloud
+39 turbinia.lib.text_formatter
+40 turbinia.lib.text_formatter_test
+41 turbinia.lib.utils
+42 turbinia.processors
+43 turbinia.processors.archive
+44 turbinia.processors.archive_test
+45 turbinia.processors.docker
+46 turbinia.processors.google_cloud
+47 turbinia.processors.mount_local
+48 turbinia.processors.mount_local_test
+49 turbinia.processors.partitions
+50 turbinia.workers
+51 turbinia.workers.artifact
+52 turbinia.workers.binary_extractor
+53 turbinia.workers.binary_extractor_test
+54 turbinia.workers.bulk_extractor
+55 turbinia.workers.bulk_extractor_test
+56 turbinia.workers.docker
+57 turbinia.workers.docker_test
+58 turbinia.workers.finalize_request
+59 turbinia.workers.fsstat
+60 turbinia.workers.fsstat_test
+61 turbinia.workers.grep
+62 turbinia.workers.hadoop
+63 turbinia.workers.hadoop_test
+64 turbinia.workers.hindsight
+65 turbinia.workers.partitions
+66 turbinia.workers.partitions_test
+67 turbinia.workers.photorec
+68 turbinia.workers.photorec_test
+69 turbinia.workers.plaso
+70 turbinia.workers.psort
+71 turbinia.workers.redis
+72 turbinia.workers.redis_test
+73 turbinia.workers.sshd
+74 turbinia.workers.sshd_test
+75 turbinia.workers.strings
+76 turbinia.workers.tomcat
+77 turbinia.workers.tomcat_test
+78 turbinia.workers.volatility
+79 turbinia.workers.volatility_test
+80 turbinia.workers.worker_stat
+81 turbinia.workers.workers_test
+82 LoadConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/__init__.py:108)
+83 ParseDependencies\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/__init__.py:199)
+84 ValidateAndSetConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/__init__.py:169)
+85 setup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/logger.py:26)
+86 TestTurbiniaConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:27)
+87 WriteConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:69)
+88 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:42)
+89 setUpClass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:30)
+90 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:62)
+91 tearDownClass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:54)
+92 testBadDependenciesConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:167)
+93 testBasicConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:81)
+94 testEnvPathConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:144)
+95 testExplicitConfigPath\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:131)
+96 testMissingConfigFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:127)
+97 testMissingConfigPath\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:122)
+98 testMissingRequiredKeyConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:92)
+99 testNonexistentOptionalKeyConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:113)
+100 testParseDependencies\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:158)
+101 testUnsetOptionalKeyConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:104)
+102 testUnsetRequiredKeyConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/config/turbinia_config_test.py:98)
+103 BinaryExtractorJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/binary_extractor.py:27)
+104 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/binary_extractor.py:36)
+105 BulkExtractorJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/bulk_extractor.py:28)
+106 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/bulk_extractor.py:41)
+107 DockerContainersEnumerationJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/docker.py:26)
+108 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/docker.py:35)
+109 FinalizeRequestJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/finalize_request.py:25)
+110 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/finalize_request.py:35)
+111 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/finalize_request.py:39)
+112 FsstatJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/fsstat.py:24)
+113 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/fsstat.py:31)
+114 GrepJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/grep.py:27)
+115 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/grep.py:36)
+116 HadoopAnalysisJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/hadoop.py:27)
+117 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/hadoop.py:35)
+118 HindsightJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/hindsight.py:26)
+119 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/hindsight.py:36)
+120 HTTPAccessLogAnalysisJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/http_access_logs.py:59)
+121 HTTPAccessLogExtractionJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/http_access_logs.py:34)
+122 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/http_access_logs.py:67)
+123 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/http_access_logs.py:42)
+124 JobImportTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/imports_test.py:26)
+125 _AssertFilesImportedInInit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/imports_test.py:35)
+126 testJobsImported\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/imports_test.py:62)
+127 TurbiniaJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface.py:25)
+128 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface.py:43)
+129 check_done\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface.py:57)
+130 create_final_task\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface.py:80)
+131 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface.py:68)
+132 remove_task\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface.py:94)
+133 TestJobsInterface\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface_test.py:24)
+134 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface_test.py:27)
+135 testCheckDone\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface_test.py:31)
+136 testCheckDoneNoCompletedCount\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface_test.py:36)
+137 testCheckDoneWithTasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface_test.py:40)
+138 testRemoveTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface_test.py:46)
+139 testRemoveTaskUnknownTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/interface_test.py:53)
+140 JenkinsAnalysisJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/jenkins.py:28)
+141 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/jenkins.py:36)
+142 JupyterAnalysisJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/jupyter.py:53)
+143 JupyterExtractionJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/jupyter.py:30)
+144 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/jupyter.py:61)
+145 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/jupyter.py:39)
+146 JobsManager\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:22)
+147 DeregisterJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:78)
+148 DeregisterJobs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:96)
+149 FilterJobNames\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:27)
+150 FilterJobObjects\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:60)
+151 GetDockerImage\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:244)
+152 GetJobInstance\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:133)
+153 GetJobInstances\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:153)
+154 GetJobNames\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:170)
+155 GetJobs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:179)
+156 RegisterDockerImage\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:233)
+157 RegisterJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:199)
+158 RegisterJobs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager.py:218)
+159 JobsManagerTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:37)
+160 TestJob1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:14)
+161 TestJob2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:25)
+162 TestJob3\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:31)
+163 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:42)
+164 testFilterJobNamesAllowList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:125)
+165 testFilterJobNamesDenyList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:111)
+166 testFilterJobNamesEmptyLists\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:104)
+167 testFilterJobNamesException\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:139)
+168 testFilterJobNamesMixedCase\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:146)
+169 testFilterJobObjectsAllowList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:132)
+170 testFilterJobObjectsDenyList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:118)
+171 testGetJobInstance\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:84)
+172 testGetJobInstances\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:95)
+173 testJobDeregistrationWithUnknownAllowlist\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:79)
+174 testJobRegistration\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:54)
+175 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/manager_test.py:20)
+176 PartitionEnumerationJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/partitions.py:26)
+177 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/partitions.py:38)
+178 PhotorecJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/photorec.py:24)
+179 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/photorec.py:31)
+180 PlasoJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/plaso.py:32)
+181 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/plaso.py:43)
+182 PsortJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/psort.py:26)
+183 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/psort.py:35)
+184 RedisAnalysisJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/redis.py:54)
+185 RedisExtractionJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/redis.py:30)
+186 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/redis.py:62)
+187 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/redis.py:39)
+188 SSHDAnalysisJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/sshd.py:54)
+189 SSHDExtractionJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/sshd.py:30)
+190 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/sshd.py:62)
+191 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/sshd.py:39)
+192 StringsJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/strings.py:27)
+193 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/strings.py:40)
+194 TomcatAnalysisJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/tomcat.py:52)
+195 TomcatExtractionJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/tomcat.py:28)
+196 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/tomcat.py:60)
+197 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/tomcat.py:37)
+198 VolatilityJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/volatility.py:26)
+199 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/volatility.py:38)
+200 StatJob\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/worker_stat.py:27)
+201 create_tasks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/jobs/worker_stat.py:36)
+202 UnattendedVolumeScannerMediator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes.py:23)
+203 GetAPFSVolumeIdentifiers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes.py:32)
+204 GetPartitionIdentifiers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes.py:50)
+205 GetVSSStoreIdentifiers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes.py:68)
+206 UnlockEncryptedVolume\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes.py:85)
+207 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes.py:26)
+208 TestUnattendedVolumeScannerMediator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes_test.py:28)
+209 testGetAPFSVolumeIdentifiers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes_test.py:31)
+210 testGetPartitionIdentifiers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes_test.py:46)
+211 testGetVSSStoreIdentifiers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes_test.py:60)
+212 testUnlockEncryptedVolume\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dfvfs_classes_test.py:77)
+213 ContainerManager\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:154)
+214 DockerManager\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:79)
+215 GetDockerPath\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:46)
+216 IsBlockDevice\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:31)
+217 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:161)
+218 _create_mount_points\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:170)
+219 execute_container\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:209)
+220 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:82)
+221 _create_client\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:86)
+222 get_image\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:106)
+223 list_images\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/docker_manager.py:125)
+224 MockContainer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:44)
+225 MockImage\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:30)
+226 TestContainerManager\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:132)
+227 TestDockerManager\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:78)
+228 TestDockerManagerFunc\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:191)
+229 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:54)
+230 logs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:65)
+231 remove\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:73)
+232 start\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:61)
+233 wait\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:69)
+234 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:38)
+235 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:135)
+236 testContainerManagerInit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:143)
+237 testCreateMountPoints\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:149)
+238 testExecuteContainer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:167)
+239 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:81)
+240 testDockerManagerInit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:86)
+241 testListImages\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:104)
+242 testVerifyImages\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:91)
+243 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:201)
+244 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:213)
+245 testGetDockerPath\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/dockermanager_test.py:220)
+246 get_logs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/google_cloud.py:103)
+247 setup_stackdriver_handler\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/google_cloud.py:39)
+248 setup_stackdriver_traceback\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/google_cloud.py:84)
+249 my_enqueue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/google_cloud.py:53)
+250 bold\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:22)
+251 bullet\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:94)
+252 code\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:106)
+253 heading1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:34)
+254 heading2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:46)
+255 heading3\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:58)
+256 heading4\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:70)
+257 heading5\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter.py:82)
+258 TextFormatterTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter_test.py:24)
+259 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter_test.py:27)
+260 testFormatting\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/text_formatter_test.py:30)
+261 _image_export\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/utils.py:30)
+262 bruteforce_password_hashes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/utils.py:125)
+263 extract_artifacts\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/utils.py:61)
+264 extract_files\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/utils.py:85)
+265 get_exe_path\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/lib/utils.py:106)
+266 CompressDirectory\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive.py:56)
+267 UncompressTarFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive.py:92)
+268 ValidateTarFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive.py:29)
+269 ArchiveProcessorTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive_test.py:30)
+270 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive_test.py:33)
+271 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive_test.py:57)
+272 test_compressed_dir\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive_test.py:62)
+273 test_validate_tarfile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/archive_test.py:75)
+274 PreprocessMountDockerFS\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/docker.py:31)
+275 GetLocalInstanceName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/google_cloud.py:51)
+276 IsBlockDevice\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/google_cloud.py:36)
+277 PostprocessDetachDisk\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/google_cloud.py:129)
+278 PreprocessAttachDisk\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/google_cloud.py:73)
+279 GetFilesystem\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local.py:266)
+280 PostprocessDeleteLosetup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local.py:295)
+281 PostprocessUnmountPath\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local.py:328)
+282 PreprocessBitLocker\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local.py:34)
+283 PreprocessLosetup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local.py:107)
+284 PreprocessMountDisk\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local.py:147)
+285 PreprocessMountPartition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local.py:213)
+286 MountLocalProcessorTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:36)
+287 _mock_returns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:29)
+288 testGetFilesystem\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:248)
+289 testPostprocessDeleteLosetup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:270)
+290 testPostprocessUnmountPath\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:285)
+291 testPreprocessBitLocker\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:39)
+292 testPreprocessLosetup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:111)
+293 testPreprocessMountDisk\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:147)
+294 testPreprocessMountPartition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/mount_local_test.py:196)
+295 Enumerate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/partitions.py:28)
+296 GetPartitionEncryptionType\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/partitions.py:56)
+297 GetPathSpecByLocation\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/processors/partitions.py:71)
+298 Priority\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:63)
+299 TurbiniaTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:366)
+300 TurbiniaTaskResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:75)
+301 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:405)
+302 check_worker_role\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:470)
+303 create_result\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:687)
+304 deserialize\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:442)
+305 evidence_setup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:486)
+306 execute\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:510)
+307 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:916)
+308 run_wrapper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:766)
+309 serialize\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:431)
+310 setup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:652)
+311 touch\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:683)
+312 validate_result\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:710)
+313 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:111)
+314 __str__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:142)
+315 add_evidence\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:293)
+316 close\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:164)
+317 deserialize\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:342)
+318 log\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:250)
+319 serialize\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:323)
+320 set_error\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:313)
+321 setup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:145)
+322 update_task_status\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/__init__.py:275)
+323 FileArtifactExtractionTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/artifact.py:27)
+324 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/artifact.py:32)
+325 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/artifact.py:36)
+326 BinaryExtractorTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor.py:31)
+327 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor.py:41)
+328 check_extraction\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor.py:47)
+329 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor.py:73)
+330 BinaryExtractorTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor_test.py:35)
+331 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor_test.py:38)
+332 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor_test.py:69)
+333 testBinaryExtractorRun\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor_test.py:73)
+334 test_check_extraction\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/binary_extractor_test.py:81)
+335 BulkExtractorTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor.py:32)
+336 check_xml_attrib\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor.py:100)
+337 generate_summary_report\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor.py:117)
+338 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor.py:37)
+339 BulkExtractorTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor_test.py:32)
+340 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor_test.py:35)
+341 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor_test.py:43)
+342 testBulkExtractorRun\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor_test.py:48)
+343 test_generate_report\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/bulk_extractor_test.py:58)
+344 DockerContainersEnumerationTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/docker.py:34)
+345 GetContainers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/docker.py:39)
+346 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/docker.py:88)
+347 DockerTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/docker_test.py:31)
+348 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/docker_test.py:34)
+349 testDockerContainersEnumerationRun\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/docker_test.py:44)
+350 FinalizeRequestTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/finalize_request.py:26)
+351 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/finalize_request.py:29)
+352 FsstatTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/fsstat.py:26)
+353 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/fsstat.py:30)
+354 FsstatTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/fsstat_test.py:30)
+355 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/fsstat_test.py:33)
+356 testFsstatRun\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/fsstat_test.py:40)
+357 GrepTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/grep.py:26)
+358 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/grep.py:29)
+359 HadoopAnalysisTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hadoop.py:36)
+360 _AnalyzeHadoopAppRoot\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hadoop.py:41)
+361 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hadoop.py:101)
+362 HadoopAnalysisTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hadoop_test.py:27)
+363 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hadoop_test.py:40)
+364 testAnalyzeHadoopAppRoot\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hadoop_test.py:45)
+365 HindsightTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hindsight.py:25)
+366 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hindsight.py:28)
+367 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/hindsight.py:31)
+368 PartitionEnumerationTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/partitions.py:37)
+369 _ProcessPartition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/partitions.py:42)
+370 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/partitions.py:118)
+371 PartitionEnumerationTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/partitions_test.py:29)
+372 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/partitions_test.py:32)
+373 testPartitionEnumerationRun\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/partitions_test.py:39)
+374 PhotorecTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/photorec.py:26)
+375 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/photorec.py:30)
+376 PhotorecTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/photorec_test.py:30)
+377 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/photorec_test.py:33)
+378 testPhotorecRun\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/photorec_test.py:40)
+379 PlasoTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/plaso.py:30)
+380 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/plaso.py:36)
+381 PsortTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/psort.py:26)
+382 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/psort.py:29)
+383 RedisAnalysisTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/redis.py:29)
+384 analyse_redis_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/redis.py:68)
+385 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/redis.py:34)
+386 RedisAnalysisTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/redis_test.py:25)
+387 test_analyse_redis_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/redis_test.py:43)
+388 SSHDAnalysisTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/sshd.py:28)
+389 analyse_sshd_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/sshd.py:65)
+390 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/sshd.py:31)
+391 SSHDAnalysisTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/sshd_test.py:25)
+392 test_analyse_sshd_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/sshd_test.py:46)
+393 StringsAsciiTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/strings.py:26)
+394 StringsUnicodeTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/strings.py:60)
+395 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/strings.py:31)
+396 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/strings.py:65)
+397 TomcatAnalysisTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/tomcat.py:28)
+398 analyse_tomcat_file\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/tomcat.py:66)
+399 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/tomcat.py:31)
+400 TomcatAnalysisTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/tomcat_test.py:25)
+401 test_analyse_tomcat_file\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/tomcat_test.py:61)
+402 VolatilityTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility.py:28)
+403 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility.py:35)
+404 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility.py:39)
+405 VolatilityTaskTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility_test.py:27)
+406 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility_test.py:30)
+407 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility_test.py:42)
+408 testVolatilityTaskRun\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility_test.py:46)
+409 testVolatilityTaskRunLargeOutput\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility_test.py:58)
+410 testVolatilityTaskRunNoOutput\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/volatility_test.py:72)
+411 StatTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/worker_stat.py:30)
+412 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/worker_stat.py:33)
+413 TestTurbiniaTask\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:122)
+414 TestTurbiniaTaskBase\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:34)
+415 testEvidenceSetup\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:340)
+416 testEvidenceSetupStateNotFulfilled\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:347)
+417 testTurbiniaTaskEvidenceValidationFailure\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:226)
+418 testTurbiniaTaskExecute\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:238)
+419 testTurbiniaTaskExecuteEvidenceDoesNotExist\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:304)
+420 testTurbiniaTaskExecuteEvidenceExists\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:284)
+421 testTurbiniaTaskExecuteEvidenceExistsButEmpty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:320)
+422 testTurbiniaTaskExecuteFailure\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:264)
+423 testTurbiniaTaskJobUnavailable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:170)
+424 testTurbiniaTaskRunWrapper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:135)
+425 testTurbiniaTaskRunWrapperAutoClose\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:146)
+426 testTurbiniaTaskRunWrapperBadResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:155)
+427 testTurbiniaTaskRunWrapperExceptionThrown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:182)
+428 testTurbiniaTaskRunWrapperSetupFail\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:193)
+429 testTurbiniaTaskSerialize\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:125)
+430 testTurbiniaTaskValidateResultBadResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:216)
+431 testTurbiniaTaskValidateResultGoodResult\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:208)
+432 setResults\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:88)
+433 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:48)
+434 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:77)
+435 unregisterMetrics\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/turbinia/workers/workers_test.py:116)
+#
+1 82 U
+1 2 U
+82 84 U
+3 2 U
+85 82 U
+4 2 U
+89 2 U
+88 2 U
+90 2 U
+93 87 U
+93 2 U
+93 82 U
+98 87 U
+98 82 U
+102 87 U
+102 82 U
+101 87 U
+101 82 U
+99 87 U
+99 82 U
+97 82 U
+96 82 U
+95 87 U
+95 82 U
+94 87 U
+94 82 U
+94 2 U
+100 87 U
+100 82 U
+100 83 U
+92 87 U
+92 82 U
+92 83 U
+6 12 U
+6 7 U
+6 8 U
+6 9 U
+6 10 U
+6 11 U
+6 25 U
+6 13 U
+6 14 U
+6 15 U
+6 19 U
+6 20 U
+6 23 U
+6 24 U
+6 26 U
+6 27 U
+6 28 U
+6 29 U
+6 30 U
+6 31 U
+6 32 U
+7 326 U
+7 157 U
+7 103 U
+7 146 U
+7 17 U
+7 21 U
+103 127 U
+104 326 U
+104 327 U
+8 157 U
+8 335 U
+8 146 U
+8 17 U
+8 21 U
+8 105 U
+105 127 U
+106 335 U
+9 157 U
+9 107 U
+9 146 U
+9 344 U
+9 17 U
+9 21 U
+107 127 U
+108 344 U
+10 157 U
+10 146 U
+10 109 U
+10 350 U
+10 17 U
+10 21 U
+109 127 U
+111 350 U
+11 157 U
+11 112 U
+11 146 U
+11 352 U
+11 17 U
+11 21 U
+112 127 U
+113 352 U
+12 157 U
+12 357 U
+12 146 U
+12 17 U
+12 21 U
+12 114 U
+114 127 U
+115 357 U
+13 157 U
+13 146 U
+13 116 U
+13 359 U
+13 17 U
+13 21 U
+116 127 U
+117 359 U
+14 157 U
+14 146 U
+14 118 U
+14 17 U
+14 365 U
+14 21 U
+118 127 U
+119 366 U
+119 365 U
+15 158 U
+15 17 U
+15 121 U
+15 21 U
+15 51 U
+15 120 U
+15 146 U
+121 127 U
+123 323 U
+123 324 U
+120 127 U
+126 125 U
+132 127 U
+132 128 U
+18 414 U
+18 17 U
+133 414 U
+134 127 U
+134 433 U
+134 128 U
+135 129 U
+136 129 U
+137 129 U
+137 127 U
+137 128 U
+138 127 U
+138 132 U
+138 128 U
+139 127 U
+139 132 U
+139 128 U
+19 157 U
+19 146 U
+19 140 U
+19 17 U
+19 21 U
+140 127 U
+20 143 U
+20 158 U
+20 142 U
+20 17 U
+20 21 U
+20 51 U
+20 146 U
+143 127 U
+145 323 U
+145 324 U
+142 127 U
+150 149 U
+148 154 U
+153 155 U
+158 157 U
+22 17 U
+22 21 U
+160 127 U
+161 160 U
+162 160 U
+163 147 U
+163 160 U
+163 161 U
+174 157 U
+174 158 U
+174 147 U
+174 146 U
+174 160 U
+174 161 U
+173 148 U
+171 157 U
+171 147 U
+171 152 U
+171 160 U
+172 157 U
+172 160 U
+172 127 U
+172 153 U
+172 154 U
+166 149 U
+165 149 U
+170 160 U
+170 161 U
+170 150 U
+164 149 U
+169 160 U
+169 161 U
+169 150 U
+167 149 U
+168 149 U
+23 157 U
+23 176 U
+23 368 U
+23 17 U
+23 21 U
+176 127 U
+177 368 U
+24 157 U
+24 374 U
+24 17 U
+24 21 U
+24 178 U
+178 127 U
+179 374 U
+25 157 U
+25 17 U
+25 180 U
+25 21 U
+25 379 U
+180 127 U
+181 379 U
+26 381 U
+26 157 U
+26 17 U
+26 21 U
+26 182 U
+182 127 U
+183 381 U
+27 158 U
+27 17 U
+27 21 U
+27 51 U
+27 71 U
+27 185 U
+27 184 U
+185 127 U
+187 324 U
+187 323 U
+184 127 U
+186 383 U
+28 158 U
+28 73 U
+28 189 U
+28 188 U
+28 17 U
+28 21 U
+28 51 U
+189 127 U
+191 323 U
+191 324 U
+188 127 U
+190 388 U
+29 157 U
+29 192 U
+29 393 U
+29 394 U
+29 17 U
+29 21 U
+192 127 U
+193 393 U
+193 394 U
+30 158 U
+30 17 U
+30 21 U
+30 51 U
+30 195 U
+30 76 U
+30 194 U
+195 127 U
+197 324 U
+197 323 U
+194 127 U
+196 397 U
+31 198 U
+31 157 U
+31 402 U
+31 17 U
+31 21 U
+198 127 U
+199 403 U
+199 402 U
+32 157 U
+32 200 U
+32 411 U
+32 17 U
+32 21 U
+200 127 U
+201 411 U
+35 202 U
+209 202 U
+209 207 U
+209 203 U
+210 204 U
+210 202 U
+210 207 U
+211 202 U
+211 205 U
+211 207 U
+212 202 U
+212 207 U
+212 206 U
+220 221 U
+213 214 U
+217 220 U
+217 222 U
+218 216 U
+219 218 U
+219 222 U
+37 36 U
+239 214 U
+239 220 U
+240 221 U
+242 222 U
+241 223 U
+241 225 U
+241 234 U
+235 213 U
+235 217 U
+236 222 U
+237 218 U
+238 229 U
+238 219 U
+238 224 U
+245 215 U
+247 249 U
+40 39 U
+260 255 U
+260 251 U
+260 250 U
+260 256 U
+260 253 U
+260 252 U
+260 254 U
+260 257 U
+263 261 U
+264 261 U
+267 268 U
+44 43 U
+270 266 U
+272 266 U
+273 268 U
+45 41 U
+45 2 U
+274 265 U
+274 82 U
+46 2 U
+278 276 U
+278 275 U
+278 82 U
+277 276 U
+277 275 U
+277 82 U
+47 2 U
+282 82 U
+284 279 U
+284 82 U
+285 279 U
+285 82 U
+48 47 U
+291 282 U
+291 287 U
+292 283 U
+293 284 U
+293 287 U
+294 285 U
+294 287 U
+288 279 U
+289 280 U
+290 281 U
+49 202 U
+295 202 U
+295 207 U
+50 36 U
+50 2 U
+313 298 U
+316 318 U
+316 313 U
+318 313 U
+322 318 U
+317 313 U
+305 299 U
+306 219 U
+306 151 U
+306 21 U
+306 213 U
+306 217 U
+310 299 U
+310 312 U
+310 303 U
+303 313 U
+303 320 U
+303 321 U
+303 300 U
+312 300 U
+312 303 U
+308 307 U
+308 21 U
+308 301 U
+308 299 U
+308 154 U
+308 305 U
+308 310 U
+308 312 U
+308 303 U
+51 299 U
+51 2 U
+323 299 U
+324 301 U
+325 306 U
+325 82 U
+52 299 U
+52 2 U
+326 299 U
+327 301 U
+329 328 U
+329 306 U
+329 82 U
+53 414 U
+53 300 U
+53 52 U
+53 2 U
+330 414 U
+331 326 U
+331 433 U
+331 432 U
+333 300 U
+54 299 U
+54 39 U
+54 2 U
+335 299 U
+338 306 U
+338 337 U
+338 82 U
+337 251 U
+337 336 U
+337 256 U
+337 257 U
+55 54 U
+55 414 U
+55 300 U
+339 414 U
+340 433 U
+340 335 U
+340 432 U
+342 300 U
+56 41 U
+56 215 U
+56 298 U
+56 299 U
+56 2 U
+344 299 U
+345 215 U
+345 265 U
+345 82 U
+346 345 U
+346 298 U
+57 414 U
+57 300 U
+57 56 U
+347 414 U
+348 433 U
+348 344 U
+348 432 U
+349 300 U
+349 313 U
+58 299 U
+58 2 U
+350 299 U
+59 299 U
+352 299 U
+353 306 U
+60 414 U
+60 300 U
+60 59 U
+354 414 U
+355 433 U
+355 352 U
+355 432 U
+356 300 U
+61 299 U
+357 299 U
+358 306 U
+62 298 U
+62 299 U
+62 39 U
+62 263 U
+359 299 U
+360 251 U
+360 252 U
+360 250 U
+360 256 U
+360 298 U
+361 360 U
+361 263 U
+63 62 U
+63 2 U
+364 360 U
+364 82 U
+364 359 U
+64 299 U
+365 299 U
+367 306 U
+65 49 U
+65 299 U
+65 39 U
+65 302 U
+65 298 U
+368 299 U
+369 251 U
+369 257 U
+370 295 U
+370 369 U
+370 256 U
+370 298 U
+66 414 U
+66 300 U
+66 39 U
+66 65 U
+371 414 U
+372 433 U
+372 368 U
+372 432 U
+373 251 U
+373 300 U
+373 313 U
+373 256 U
+373 257 U
+67 299 U
+374 299 U
+375 306 U
+68 414 U
+68 67 U
+68 300 U
+376 414 U
+377 433 U
+377 374 U
+377 432 U
+378 300 U
+69 299 U
+69 2 U
+379 299 U
+380 306 U
+380 82 U
+70 299 U
+70 2 U
+381 299 U
+382 306 U
+382 82 U
+71 299 U
+71 298 U
+71 39 U
+383 299 U
+385 384 U
+384 251 U
+384 250 U
+384 256 U
+384 298 U
+72 71 U
+72 2 U
+387 383 U
+387 82 U
+387 384 U
+73 299 U
+73 298 U
+73 39 U
+388 299 U
+390 389 U
+389 251 U
+389 250 U
+389 256 U
+389 298 U
+74 73 U
+74 2 U
+392 389 U
+392 388 U
+392 82 U
+75 299 U
+393 299 U
+395 306 U
+394 299 U
+396 306 U
+76 299 U
+76 298 U
+76 39 U
+397 299 U
+399 398 U
+398 251 U
+398 250 U
+398 256 U
+398 298 U
+77 76 U
+77 2 U
+401 397 U
+401 398 U
+401 82 U
+78 299 U
+78 2 U
+402 299 U
+403 301 U
+404 306 U
+404 82 U
+79 414 U
+79 78 U
+405 414 U
+406 433 U
+406 402 U
+406 432 U
+407 434 U
+408 300 U
+408 313 U
+409 300 U
+409 313 U
+410 300 U
+410 313 U
+80 299 U
+411 299 U
+81 300 U
+81 299 U
+81 379 U
+433 300 U
+433 299 U
+433 313 U
+433 379 U
+432 300 U
+413 414 U
+429 379 U
+429 304 U
+424 435 U
+424 317 U
+424 300 U
+424 313 U
+424 432 U
+425 435 U
+425 317 U
+425 300 U
+425 313 U
+425 432 U
+426 435 U
+426 317 U
+426 300 U
+426 313 U
+426 321 U
+426 432 U
+423 435 U
+423 317 U
+423 432 U
+427 435 U
+427 317 U
+427 300 U
+427 432 U
+428 317 U
+428 300 U
+431 300 U
+430 300 U
+417 317 U
+417 432 U
+418 300 U
+418 313 U
+422 313 U
+422 300 U
+420 300 U
+419 300 U
+421 300 U
+110 128 U
+366 301 U
+Cloning repo:  https://github.com/google/turbinia
+pyan3 /home/avb307/msc_thesis_work/automate_the_painful_stuffs/turbinia/**/**/*.py --uses --no-defines --colored --grouped --annotated  -f turbinia_03_04_2021.txt --uses --no-defines --tgf

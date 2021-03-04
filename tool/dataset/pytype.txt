@@ -1,0 +1,2 @@
+Cloning repo:  https://github.com/google/pytype
+pyan3 /home/avb307/msc_thesis_work/automate_the_painful_stuffs/pytype/**/*.py --uses --no-defines --colored --grouped --annotated  -f pytype_03_04_2021.txt --uses --no-defines --tgf

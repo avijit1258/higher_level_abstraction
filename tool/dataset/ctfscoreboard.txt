@@ -1,0 +1,729 @@
+1 scoreboard.attachments
+2 scoreboard.attachments.file
+3 scoreboard.attachments.gcs
+4 scoreboard.attachments.testing
+5 scoreboard.auth
+6 scoreboard.auth.local
+7 scoreboard.tests
+8 scoreboard.tests.base
+9 scoreboard.tests.cache_test
+10 scoreboard.tests.controllers_test
+11 scoreboard.tests.csrfutil_test
+12 scoreboard.tests.data
+13 scoreboard.tests.models_test
+14 scoreboard.tests.rest_test
+15 scoreboard.tests.utils_test
+16 scoreboard.tests.validators_test
+17 scoreboard.validators
+18 scoreboard.validators.base
+19 scoreboard.validators.nonce
+20 scoreboard.validators.per_team
+21 scoreboard.validators.regex
+22 scoreboard.validators.static_pbkdf2
+23 get_backend\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/__init__.py:49)
+24 get_backend_path\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/__init__.py:38)
+25 get_backend_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/__init__.py:43)
+26 patch\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/__init__.py:62)
+27 attachment_dir\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/file.py:37)
+28 delete\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/file.py:65)
+29 send\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/file.py:56)
+30 upload\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/file.py:71)
+31 delete\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/gcs.py:72)
+32 get_bucket\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/gcs.py:46)
+33 send\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/gcs.py:52)
+34 upload\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/gcs.py:82)
+35 delete\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/testing.py:41)
+36 send\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/testing.py:34)
+37 upload\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/attachments/testing.py:46)
+38 get_login_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/auth/local.py:33)
+39 get_register_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/auth/local.py:37)
+40 login_user\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/auth/local.py:23)
+41 logout\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/auth/local.py:41)
+42 register\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/auth/local.py:45)
+43 AdminClient\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:168)
+44 AuthenticatedClient\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:146)
+45 BaseTestCase\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:40)
+46 MaxQueryBlock\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:186)
+47 RestTestCase\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:104)
+48 admin_test\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:241)
+49 authenticated_test\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:232)
+50 json_monkeypatch\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:265)
+51 run_all_tests\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:250)
+52 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:171)
+53 open\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:178)
+54 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:149)
+55 open\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:160)
+56 assertItemsEqual\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:86)
+57 create_app\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:57)
+58 queryLimit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:83)
+59 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:65)
+60 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:78)
+61 __enter__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:197)
+62 __exit__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:201)
+63 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:189)
+64 _count_query\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:224)
+65 query_count\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:220)
+66 _pbkdf2_dummy\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:141)
+67 postJSON\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:122)
+68 putJSON\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:128)
+69 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:107)
+70 swapClient\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:134)
+71 tearDown\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:118)
+72 wrapped_test\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:243)
+73 wrapped_test\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:234)
+74 new_loads\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/base.py:267)
+75 BaseCacheTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:25)
+76 makeMockGet\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:32)
+77 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:28)
+78 testBuildCaches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:43)
+79 testRestAddCacheHeader\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:134)
+80 testRestCacheCaller_NonLoadable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:126)
+81 testRestCacheCaller_NonSerializable\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:119)
+82 testRestCachePath\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:76)
+83 testRestCache_Basic\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:52)
+84 testRestCache_Override\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:61)
+85 testRestTeamCache_Basic\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:89)
+86 testRestTeamCache_Override\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:103)
+87 mock_get\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/cache_test.py:35)
+88 RegisterTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/controllers_test.py:21)
+89 testRegister_BadEmail\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/controllers_test.py:28)
+90 testRegister_DupeEmail\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/controllers_test.py:50)
+91 testRegister_DupeNick\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/controllers_test.py:34)
+92 testRegister_DupeTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/controllers_test.py:40)
+93 testRegister_Normal\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/controllers_test.py:24)
+94 CSRFUtilTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:31)
+95 testCSRFProtectionMiddleware_FormValid\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:148)
+96 testCSRFProtectionMiddleware_GET\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:159)
+97 testCSRFProtectionMiddleware_HeaderInvalid\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:134)
+98 testCSRFProtectionMiddleware_HeaderValid\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:122)
+99 testDecorator_Fails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:102)
+100 testDecorator_GET\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:84)
+101 testDecorator_Passes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:92)
+102 testGetCSRFField\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:113)
+103 testGetCSRFToken\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:38)
+104 testVerifyCSRFToken_Expired\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:52)
+105 testVerifyCSRFToken_InvalidSig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:59)
+106 testVerifyCSRFToken_TamperedTime\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:66)
+107 testVerifyCSRFToken_Truncated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:73)
+108 testVerifyCSRFToken_Valid\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/csrfutil_test.py:45)
+109 create_all\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/data.py:104)
+110 make_admin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/data.py:22)
+111 make_answers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/data.py:87)
+112 make_challenges\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/data.py:54)
+113 make_players\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/data.py:36)
+114 make_tags\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/data.py:47)
+115 make_teams\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/data.py:28)
+116 TeamTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:27)
+117 UserTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:60)
+118 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:29)
+119 testCreateTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:33)
+120 testGetByName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:52)
+121 testUpdateScore\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:41)
+122 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:62)
+123 testGetByApiKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:178)
+124 testGetByEmail\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:173)
+125 testGetByNick\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:68)
+126 testGetToken\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:89)
+127 testResetApiKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:76)
+128 testStr\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:73)
+129 testVerifyToken_badFormat\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:123)
+130 testVerifyToken_expired\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:127)
+131 testVerifyToken_full\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:100)
+132 testVerifyToken_invalidSig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:136)
+133 testVerifyToken_perPass\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:161)
+134 testVerifyToken_perUser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:148)
+135 testVerifyToken_wrongType\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/models_test.py:111)
+136 APIKeyTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1067)
+137 AnswerTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:911)
+138 AttachmentTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:224)
+139 CTFTimeTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1212)
+140 ChallengeTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:784)
+141 ConfigTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1027)
+142 ConfigzTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:54)
+143 NewsTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1148)
+144 PageTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:72)
+145 ScoreboardTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:897)
+146 SessionTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:621)
+147 TeamTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:566)
+148 UpdateTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:142)
+149 UserTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:328)
+150 makeTestChallenges\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:47)
+151 makeTestTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:40)
+152 makeTestUser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:34)
+153 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1071)
+154 testDeleteApiKey_All_Denied\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1139)
+155 testDelete_All\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1110)
+156 testDelete_Own\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1100)
+157 testGetApiKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1076)
+158 testGetApiKey_Denied\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1123)
+159 testUpdateApiKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1086)
+160 testUpdateApiKey_Denied\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1131)
+161 mock_side_effect\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1091)
+162 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:915)
+163 testSubmitAdmin_Override\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:940)
+164 testSubmitAdmin_Regular\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:932)
+165 testSubmitAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:925)
+166 testSubmitCorrect\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:952)
+167 testSubmitDouble\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:974)
+168 testSubmitIncorrect\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:962)
+169 testSubmit_ProofOfWork\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:987)
+170 testSubmit_ProofOfWorkFails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1006)
+171 fetchFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:241)
+172 testDeletionRemovesFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:293)
+173 testFileChallengesEmpty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:270)
+174 testFileDelete\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:287)
+175 testFileQueryAID\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:260)
+176 testFileQueryName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:265)
+177 testFileRetrievalValue\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:281)
+178 testFileUpdate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:301)
+179 testQueryFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:254)
+180 testRetrieveFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:275)
+181 testUpdateChangesName\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:314)
+182 testUploadFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:245)
+183 uploadFile\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:232)
+184 testGetScoreboard\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1216)
+185 getUpdateData\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:844)
+186 newChallengeData\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:814)
+187 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:789)
+188 testCreateChallenge\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:833)
+189 testCreateChallengeAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:824)
+190 testDeleteChallenge\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:884)
+191 testDeleteChallengeAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:889)
+192 testGetListAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:807)
+193 testGetListAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:795)
+194 testGetListAuthenticated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:800)
+195 testGetSingleton\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:869)
+196 testGetSingletonAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:877)
+197 testUpdateChallenge\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:852)
+198 testUpdateChallengeAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:861)
+199 makeTestGetConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1031)
+200 testGetConfig\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1034)
+201 testAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:65)
+202 testGetFails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:58)
+203 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1152)
+204 testCreateNews\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1175)
+205 testCreateNewsAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1184)
+206 testCreateTeamNewsAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1195)
+207 testGetNews\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1160)
+208 testGetNewsAuthenticated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:1168)
+209 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:78)
+210 testCreatePage\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:107)
+211 testCreatePageNonAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:119)
+212 testDeletePage\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:99)
+213 testGetAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:88)
+214 testGetNonExistent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:95)
+215 testUpdatePage\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:129)
+216 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:901)
+217 testGetScoreboard\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:905)
+218 testGetSessionAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:640)
+219 testGetSessionAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:625)
+220 testGetSessionAuthenticated\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:628)
+221 testGetSessionWithApiKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:741)
+222 testGetSessionWithBadApiKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:762)
+223 testSessionLoginAlreadyLoggedIn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:700)
+224 testSessionLoginFailsBadPassword\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:674)
+225 testSessionLoginFailsBadUser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:687)
+226 testSessionLoginSucceeds\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:654)
+227 testSessionLogout\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:722)
+228 testSessionLogoutAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:732)
+229 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:570)
+230 testGetTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:576)
+231 testGetTeamAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:589)
+232 testGetTeamAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:585)
+233 testGetTeamList\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:606)
+234 testUpdateTeamAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:596)
+235 changeTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:153)
+236 createTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:148)
+237 patchState\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:160)
+238 restoreState\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:164)
+239 testCantSwitchAfterStart\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:215)
+240 testChangeTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:168)
+241 testEmptyTeamIsDeleted\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:185)
+242 testTeamChangeWorked\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:176)
+243 testTeamWithSolvesNotDeleted\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:198)
+244 default_data\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:466)
+245 testGetAnonymous\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:333)
+246 testGetNonExistent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:338)
+247 testGetNonExistentAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:347)
+248 testGetSelf\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:354)
+249 testGetUsers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:452)
+250 testGetUsersNoAccess\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:446)
+251 testRegisterUserExistingTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:489)
+252 testRegisterUserInviteKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:540)
+253 testRegisterUserLoggedInFails\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:520)
+254 testRegisterUserNewTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:477)
+255 testRegisterUserNoInviteKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:548)
+256 testRegisterUserNoNick\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:527)
+257 testRegisterUserNoTeam\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:533)
+258 testRegisterUserTeamWrongCode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:507)
+259 testRegisterUserWrongInviteKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:556)
+260 testUpdateUser\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:364)
+261 testUpdateUserAdmin\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:381)
+262 testUpdateUserDemote\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:414)
+263 testUpdateUserNoAccess\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:373)
+264 testUpdateUserNoAnswers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:432)
+265 testUpdateUserNoSelfPromotion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:423)
+266 testUpdateUserPromote\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:404)
+267 testUpdateUsersNoTeams\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/rest_test.py:393)
+268 NormalizeInputTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:20)
+269 ProofOfWorkTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:29)
+270 testNormalizeInput\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:22)
+271 testValidateProofOfWork_FailsInvalidBase64\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:61)
+272 testValidateProofOfWork_FailsMoreBits\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:55)
+273 testValidateProofOfWork_FailsWrongKey\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:49)
+274 testValidateProofOfWork_FailsWrongVal\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:43)
+275 testValidateProofOfWork_Succeeds\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:31)
+276 testValidateProofOfWork_SucceedsUnicode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/utils_test.py:37)
+277 CaseStaticValidatorTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:40)
+278 ChallengeStub\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:22)
+279 NonceValidatorTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:105)
+280 RegexCaseValidatorTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:81)
+281 RegexValidatorTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:57)
+282 StaticValidatorTest\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:29)
+283 testCaseStaticValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:42)
+284 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:24)
+285 setUp\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:107)
+286 testNonceValidator_Basic\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:117)
+287 testNonceValidator_Dupe\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:121)
+288 makeValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:83)
+289 testRegexChangeWorks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:96)
+290 testRegexWorks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:88)
+291 makeValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:59)
+292 testRegexChangeWorks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:72)
+293 testRegexWorks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:64)
+294 testStaticValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/tests/validators_test.py:31)
+295 GetDefaultValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/__init__.py:33)
+296 GetValidatorForChallenge\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/__init__.py:37)
+297 IsValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/__init__.py:57)
+298 ValidatorMeta\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/__init__.py:46)
+299 ValidatorNames\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/__init__.py:42)
+300 BaseValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/base.py:16)
+301 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/base.py:23)
+302 change_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/base.py:32)
+303 validate_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/base.py:26)
+304 Base32Validator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:104)
+305 BaseNonceValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:31)
+306 Nonce_16_64_Base32_Validator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:121)
+307 Nonce_24_56_Base32_Validator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:128)
+308 Nonce_32_88_Base32_Validator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:135)
+309 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:106)
+310 _decode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:115)
+311 _encode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:111)
+312 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:38)
+313 _decode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:46)
+314 _encode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:50)
+315 compute_authenticator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:81)
+316 make_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:89)
+317 unpack_nonce\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:98)
+318 validate_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/nonce.py:54)
+319 PerTeamValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/per_team.py:22)
+320 construct_mac\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/per_team.py:36)
+321 validate_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/per_team.py:29)
+322 RegexCaseValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/regex.py:38)
+323 RegexValidator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/regex.py:20)
+324 validate_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/regex.py:31)
+325 CaseStaticPBKDF2Validator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/static_pbkdf2.py:37)
+326 StaticPBKDF2Validator\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/static_pbkdf2.py:21)
+327 change_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/static_pbkdf2.py:48)
+328 validate_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/static_pbkdf2.py:42)
+329 change_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/static_pbkdf2.py:33)
+330 validate_answer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/scoreboard/validators/static_pbkdf2.py:26)
+#
+1 25 U
+1 23 U
+25 24 U
+26 23 U
+29 27 U
+28 27 U
+30 27 U
+33 32 U
+31 32 U
+34 32 U
+8 1 U
+8 50 U
+57 26 U
+58 63 U
+58 46 U
+47 45 U
+69 52 U
+69 44 U
+69 43 U
+69 59 U
+69 54 U
+69 66 U
+71 60 U
+55 54 U
+53 52 U
+63 64 U
+61 64 U
+62 64 U
+64 63 U
+49 73 U
+48 72 U
+50 74 U
+9 8 U
+75 45 U
+77 59 U
+76 87 U
+78 76 U
+10 8 U
+88 45 U
+11 8 U
+94 45 U
+109 111 U
+109 114 U
+109 112 U
+109 115 U
+109 113 U
+109 110 U
+13 8 U
+116 45 U
+118 59 U
+117 45 U
+122 59 U
+14 8 U
+14 12 U
+150 114 U
+150 112 U
+142 202 U
+142 49 U
+142 48 U
+142 47 U
+202 58 U
+201 58 U
+144 49 U
+144 48 U
+144 47 U
+209 69 U
+213 58 U
+214 58 U
+212 58 U
+210 58 U
+210 67 U
+211 58 U
+211 67 U
+215 58 U
+215 67 U
+148 49 U
+148 47 U
+235 68 U
+235 44 U
+240 235 U
+240 237 U
+240 238 U
+240 236 U
+242 235 U
+242 237 U
+242 44 U
+242 238 U
+242 236 U
+241 236 U
+241 235 U
+241 237 U
+241 44 U
+241 238 U
+243 236 U
+243 235 U
+243 237 U
+243 44 U
+243 238 U
+239 235 U
+239 237 U
+239 238 U
+239 236 U
+138 47 U
+183 43 U
+183 52 U
+171 52 U
+171 43 U
+182 183 U
+179 183 U
+179 171 U
+175 183 U
+175 171 U
+176 183 U
+176 171 U
+173 183 U
+173 171 U
+180 183 U
+180 43 U
+180 52 U
+177 183 U
+177 43 U
+177 52 U
+174 183 U
+174 43 U
+174 52 U
+172 183 U
+172 43 U
+172 52 U
+178 183 U
+178 43 U
+178 52 U
+181 183 U
+181 43 U
+181 52 U
+149 49 U
+149 47 U
+149 48 U
+149 246 U
+245 58 U
+245 152 U
+246 58 U
+247 58 U
+248 58 U
+248 44 U
+260 58 U
+260 44 U
+260 68 U
+260 12 U
+263 58 U
+263 43 U
+263 68 U
+263 12 U
+261 58 U
+261 44 U
+261 68 U
+261 12 U
+267 58 U
+267 44 U
+267 68 U
+267 12 U
+266 58 U
+266 44 U
+266 68 U
+262 58 U
+262 43 U
+262 68 U
+265 58 U
+265 44 U
+265 68 U
+265 12 U
+264 58 U
+264 44 U
+264 68 U
+250 58 U
+249 58 U
+249 43 U
+249 56 U
+254 58 U
+254 56 U
+254 67 U
+254 244 U
+251 58 U
+251 56 U
+251 44 U
+251 67 U
+251 244 U
+258 58 U
+258 44 U
+258 67 U
+258 244 U
+253 244 U
+253 58 U
+253 67 U
+256 244 U
+256 58 U
+256 67 U
+257 244 U
+257 58 U
+257 67 U
+252 67 U
+252 244 U
+255 58 U
+255 67 U
+255 244 U
+259 58 U
+259 67 U
+259 244 U
+147 49 U
+147 48 U
+147 47 U
+229 152 U
+229 69 U
+229 151 U
+230 58 U
+232 58 U
+231 58 U
+234 58 U
+234 68 U
+234 12 U
+233 58 U
+146 49 U
+146 48 U
+146 47 U
+220 58 U
+220 44 U
+218 58 U
+218 43 U
+218 56 U
+226 58 U
+226 44 U
+226 67 U
+224 58 U
+224 44 U
+224 67 U
+225 58 U
+225 67 U
+225 12 U
+223 58 U
+223 44 U
+223 67 U
+227 58 U
+228 58 U
+221 43 U
+221 58 U
+222 58 U
+140 196 U
+140 49 U
+140 47 U
+140 191 U
+140 48 U
+140 198 U
+140 189 U
+187 69 U
+187 150 U
+193 58 U
+194 58 U
+194 150 U
+192 58 U
+192 150 U
+189 58 U
+189 186 U
+189 67 U
+188 58 U
+188 186 U
+188 67 U
+197 58 U
+197 185 U
+197 68 U
+198 58 U
+198 185 U
+198 68 U
+195 58 U
+195 150 U
+196 58 U
+190 58 U
+191 58 U
+145 47 U
+216 69 U
+216 109 U
+137 49 U
+137 48 U
+137 47 U
+162 69 U
+165 58 U
+165 67 U
+164 58 U
+164 67 U
+163 58 U
+163 67 U
+166 58 U
+166 67 U
+168 58 U
+168 67 U
+167 58 U
+167 67 U
+169 58 U
+169 67 U
+170 58 U
+170 67 U
+141 49 U
+141 48 U
+141 47 U
+141 199 U
+199 200 U
+136 49 U
+136 158 U
+136 160 U
+136 47 U
+136 48 U
+136 154 U
+153 69 U
+157 58 U
+159 58 U
+159 43 U
+159 161 U
+159 67 U
+156 58 U
+156 43 U
+155 43 U
+155 58 U
+158 58 U
+160 67 U
+160 58 U
+154 58 U
+143 49 U
+143 47 U
+143 48 U
+143 204 U
+143 207 U
+203 44 U
+203 69 U
+207 58 U
+208 58 U
+204 58 U
+204 67 U
+205 58 U
+205 67 U
+206 58 U
+206 44 U
+206 67 U
+139 47 U
+184 58 U
+15 8 U
+268 45 U
+269 45 U
+16 8 U
+16 17 U
+282 45 U
+294 284 U
+294 296 U
+294 278 U
+277 45 U
+283 284 U
+283 296 U
+283 278 U
+281 45 U
+291 284 U
+291 296 U
+291 278 U
+293 291 U
+292 291 U
+280 45 U
+288 284 U
+288 296 U
+288 278 U
+290 288 U
+289 288 U
+279 45 U
+285 296 U
+285 59 U
+17 299 U
+17 296 U
+19 18 U
+305 300 U
+312 301 U
+318 313 U
+318 315 U
+318 317 U
+316 315 U
+316 314 U
+304 305 U
+309 312 U
+306 304 U
+307 304 U
+308 304 U
+20 18 U
+319 300 U
+321 320 U
+21 18 U
+323 300 U
+322 323 U
+22 18 U
+326 300 U
+325 326 U
+328 330 U
+327 329 U
+Cloning repo:  https://github.com/google/ctfscoreboard
+pyan3 /home/avb307/msc_thesis_work/automate_the_painful_stuffs/ctfscoreboard/**/**/*.py --uses --no-defines --colored --grouped --annotated  -f ctfscoreboard_03_04_2021.txt --uses --no-defines --tgf

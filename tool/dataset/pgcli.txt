@@ -1,0 +1,1342 @@
+1 conftest
+2 metadata
+3 pgcli
+4 pgcli.__main__
+5 pgcli.completion_refresher
+6 pgcli.config
+7 pgcli.key_bindings
+8 pgcli.magic
+9 pgcli.main
+10 pgcli.pgbuffer
+11 pgcli.pgcompleter
+12 pgcli.pgexecute
+13 pgcli.pgstyle
+14 pgcli.pgtoolbar
+15 test_completion_refresher
+16 test_config
+17 test_exceptionals
+18 test_fuzzy_completion
+19 test_main
+20 test_naive_completion
+21 test_pgexecute
+22 test_pgspecial
+23 test_prioritization
+24 test_prompt_utils
+25 test_rowlimit
+26 test_smart_completion_multiple_schemata
+27 test_smart_completion_public_schema_only
+28 test_sqlcompletion
+29 utils
+30 connection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/conftest.py:15)
+31 cursor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/conftest.py:25)
+32 exception_formatter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/conftest.py:43)
+33 executor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/conftest.py:31)
+34 temp_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/conftest.py:48)
+35 MetaData\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:62)
+36 completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:21)
+37 escape\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:15)
+38 function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:25)
+39 get_result\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:31)
+40 result_set\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:38)
+41 wildcard_expansion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:58)
+42 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:63)
+43 _make_col\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:199)
+44 builtin_datatypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:69)
+45 builtin_functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:66)
+46 columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:81)
+47 columns_functions_and_keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:142)
+48 completer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:160)
+49 datatypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:89)
+50 from_clause_items\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:147)
+51 functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:106)
+52 functions_and_keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:134)
+53 get_completer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:203)
+54 get_completers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:164)
+55 keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:72)
+56 schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:130)
+57 schemas_and_from_clause_items\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:154)
+58 specials\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:75)
+59 tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:95)
+60 types\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:157)
+61 views\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:101)
+62 _cfg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:177)
+63 _cfgs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:186)
+64 completers\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/metadata.py:193)
+65 CompletionRefresher\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:9)
+66 refresh_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:133)
+67 refresh_databases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:128)
+68 refresh_functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:148)
+69 refresh_schemata\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:104)
+70 refresh_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:110)
+71 refresh_types\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:123)
+72 refresh_views\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:117)
+73 refresher\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:92)
+74 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:13)
+75 _bg_refresh\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:48)
+76 is_refreshing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:45)
+77 refresh\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:17)
+78 wrapper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/completion_refresher.py:97)
+79 config_location\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:11)
+80 ensure_dir_exists\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:33)
+81 get_casing_file\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:70)
+82 get_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:57)
+83 get_config_filename\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:53)
+84 load_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:20)
+85 skip_initial_comment\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:77)
+86 upgrade_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:48)
+87 write_default_config\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/config.py:38)
+88 pgcli_bindings\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/key_bindings.py:17)
+89 _\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/key_bindings.py:122)
+90 load_ipython_extension\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/magic.py:9)
+91 pgcli_line_magic\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/magic.py:20)
+92 PGCli\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:127)
+93 PgCliQuitError\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:123)
+94 cli\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1101)
+95 exception_formatter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1410)
+96 format_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1414)
+97 has_change_db_cmd\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1376)
+98 has_change_path_cmd\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1388)
+99 has_meta_cmd\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1363)
+100 is_mutating\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1394)
+101 is_select\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1403)
+102 obfuscate_process_password\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1351)
+103 parse_service_info\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1506)
+104 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:156)
+105 _build_cli\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:788)
+106 _evaluate_command\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:883)
+107 _handle_server_closed_connection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:968)
+108 _has_limit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:870)
+109 _limit_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:875)
+110 _on_completions_refreshed\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1002)
+111 _should_limit_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:858)
+112 _swap_completer_objects\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1010)
+113 change_db\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:360)
+114 change_table_format\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:332)
+115 connect\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:511)
+116 connect_dsn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:487)
+117 connect_service\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:490)
+118 connect_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:505)
+119 echo_via_pager\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1084)
+120 execute_command\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:653)
+121 execute_from_file\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:391)
+122 get_completions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1042)
+123 get_last_query\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1065)
+124 get_prompt\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1048)
+125 handle_editor_command\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:615)
+126 info_connection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:345)
+127 initialize_keyring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:474)
+128 initialize_logging\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:430)
+129 is_too_tall\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1078)
+130 is_too_wide\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1069)
+131 quit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:266)
+132 refresh_completions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:979)
+133 register_special_commands\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:269)
+134 run_cli\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:732)
+135 set_default_pager\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:131)
+136 write_to_file\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:413)
+137 get_continuation\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:808)
+138 get_message\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:791)
+139 should_ask_for_password\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:563)
+140 format_array\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1422)
+141 format_arrays\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/main.py:1429)
+142 _is_complete\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgbuffer.py:11)
+143 buffer_should_be_handled\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgbuffer.py:25)
+144 cond\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgbuffer.py:26)
+145 Candidate\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:50)
+146 PGCompleter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:76)
+147 SchemaObject\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:43)
+148 generate_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:64)
+149 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:85)
+150 _arg_list\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:762)
+151 _format_arg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:792)
+152 _get_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:992)
+153 _make_cand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:809)
+154 _maybe_schema\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:1004)
+155 _refresh_arg_list_cache\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:248)
+156 alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:571)
+157 case\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:457)
+158 escape_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:129)
+159 escape_schema\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:139)
+160 escaped_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:149)
+161 extend_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:174)
+162 extend_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:206)
+163 extend_database_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:152)
+164 extend_datatypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:285)
+165 extend_foreignkeys\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:262)
+166 extend_functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:228)
+167 extend_keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:155)
+168 extend_query_history\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:297)
+169 extend_relations\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:182)
+170 extend_schemata\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:159)
+171 find_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:315)
+172 get_alias_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:858)
+173 get_column_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:492)
+174 get_completions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:460)
+175 get_database_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:862)
+176 get_datatype_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:906)
+177 get_from_clause_item_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:750)
+178 get_function_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:696)
+179 get_join_condition_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:644)
+180 get_join_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:588)
+181 get_keyword_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:865)
+182 get_namedquery_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:922)
+183 get_path_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:889)
+184 get_schema_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:737)
+185 get_special_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:897)
+186 get_table_formats\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:846)
+187 get_table_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:835)
+188 get_view_matches\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:850)
+189 populate_functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:1022)
+190 populate_schema_objects\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:1007)
+191 populate_scoped_cols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:946)
+192 reset_completions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:308)
+193 set_search_path\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:305)
+194 unescape_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:142)
+195 _match\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:390)
+196 filter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:532)
+197 flat_cols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:509)
+198 make_cand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:505)
+199 filt\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:712)
+200 add_cond\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:655)
+201 list_dict\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:663)
+202 addcols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgcompleter.py:958)
+203 PGExecute\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:130)
+204 _wait_select\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:32)
+205 register_date_typecasters\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:64)
+206 register_hstore_typecaster\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:112)
+207 register_json_typecasters\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:85)
+208 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:195)
+209 _columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:543)
+210 _json_typecaster\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:326)
+211 _must_raise\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:426)
+212 _relations\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:514)
+213 _select_one\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:316)
+214 casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:803)
+215 connect\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:221)
+216 copy\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:217)
+217 databases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:607)
+218 datatypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:759)
+219 execute_normal_sql\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:440)
+220 failed_transaction\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:337)
+221 foreignkeys\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:629)
+222 full_databases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:613)
+223 function_definition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:493)
+224 functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:669)
+225 get_socket_directory\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:620)
+226 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:348)
+227 schemata\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:506)
+228 search_path\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:460)
+229 short_host\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:307)
+230 table_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:601)
+231 tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:532)
+232 valid_transaction\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:341)
+233 view_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:604)
+234 view_definition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:475)
+235 views\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:536)
+236 cast_date\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgexecute.py:70)
+237 parse_pygments_style\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgstyle.py:49)
+238 style_factory\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgstyle.py:65)
+239 style_factory_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgstyle.py:95)
+240 OutputStyle\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgstyle.py:112)
+241 _get_vi_mode\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgtoolbar.py:8)
+242 create_toolbar_tokens_func\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgtoolbar.py:20)
+243 get_toolbar_tokens\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/pgcli/pgtoolbar.py:23)
+244 refresher\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_completion_refresher.py:6)
+245 test_ctor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_completion_refresher.py:13)
+246 test_refresh_called_once\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_completion_refresher.py:33)
+247 test_refresh_called_twice\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_completion_refresher.py:52)
+248 test_refresh_with_callbacks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_completion_refresher.py:81)
+249 dummy_bg_refresh\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_completion_refresher.py:63)
+250 test_ensure_existing_dir\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_config.py:16)
+251 test_ensure_file_parent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_config.py:10)
+252 test_ensure_other_create_error\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_config.py:23)
+253 test_skip_initial_comment\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_config.py:34)
+254 completer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_fuzzy_completion.py:4)
+255 test_matching_should_be_case_insensitive\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_fuzzy_completion.py:76)
+256 test_ranking_based_on_shortest_match\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_fuzzy_completion.py:31)
+257 test_ranking_ignores_identifier_quotes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_fuzzy_completion.py:11)
+258 test_should_break_ties_using_lexical_order\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_fuzzy_completion.py:52)
+259 pset_pager_mocks\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:181)
+260 test_application_name_db_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:381)
+261 test_color_pattern\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:243)
+262 test_format_array_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:74)
+263 test_format_array_output_expanded\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:97)
+264 test_format_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:57)
+265 test_format_output_auto_expand\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:122)
+266 test_i_works\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:259)
+267 test_missing_rc_dir\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:269)
+268 test_multihost_db_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:366)
+269 test_obfuscate_process_password\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:25)
+270 test_pg_service_file\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:285)
+271 test_port_db_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:357)
+272 test_pset_pager_always\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:206)
+273 test_pset_pager_off\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:192)
+274 test_pset_pager_on\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:223)
+275 test_quoted_db_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:276)
+276 test_ssl_db_uri\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_main.py:338)
+277 complete_event\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:14)
+278 completer\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:7)
+279 test_alter_well_known_keywords_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:77)
+280 test_column_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:66)
+281 test_datatype_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:112)
+282 test_empty_string_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:21)
+283 test_function_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:43)
+284 test_select_keyword_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:32)
+285 test_special_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_naive_completion.py:100)
+286 BrokenConnection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:516)
+287 expanded\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:234)
+288 function_meta_data\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:13)
+289 pgspecial\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:313)
+290 test_bools_are_treated_as_strings\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:72)
+291 test_bytea_field_support_in_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:325)
+292 test_conn\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:41)
+293 test_copy\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:56)
+294 test_database_list\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:214)
+295 test_datatypes_query\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:206)
+296 test_date_time_types\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:368)
+297 test_describe_special\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:417)
+298 test_execute_from_file_io_error\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:270)
+299 test_execute_from_file_no_arg\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:260)
+300 test_exit_without_active_connection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:523)
+301 test_expanded_slash_G\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:87)
+302 test_foreign_key_query\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:139)
+303 test_function_definition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:468)
+304 test_functions_query\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:154)
+305 test_invalid_column_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:226)
+306 test_invalid_syntax\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:220)
+307 test_json_renders_without_u_prefix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:346)
+308 test_jsonb_renders_without_u_prefix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:357)
+309 test_large_numbers_render_directly\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:409)
+310 test_multiple_queries_same_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:285)
+311 test_multiple_queries_same_line_syntaxerror\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:302)
+312 test_multiple_queries_with_special_command_same_line\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:293)
+313 test_nonexistent_function_definition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:462)
+314 test_nonexistent_view_definition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:496)
+315 test_not_is_special\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:250)
+316 test_on_error_resume\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:435)
+317 test_on_error_stop\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:444)
+318 test_raises_with_no_formatter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:428)
+319 test_schemata_table_views_and_columns_query\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:96)
+320 test_short_host\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:504)
+321 test_special_command_help\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:318)
+322 test_unicode_support_in_enum_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:338)
+323 test_unicode_support_in_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:239)
+324 test_unicode_support_in_unknown_type\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:333)
+325 test_view_definition\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:484)
+326 cursor\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgexecute.py:519)
+327 test_c_suggests_databases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:75)
+328 test_dT_suggests_schema_or_datatypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:63)
+329 test_d_dot_suggests_schema_qualified_tables_or_views\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:40)
+330 test_d_suggests_tables_views_and_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:32)
+331 test_df_suggests_schema_or_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:48)
+332 test_dn_suggests_schemata\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:24)
+333 test_leading_whitespace_ok\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:56)
+334 test_schema_qualified_dT_suggests_datatypes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:69)
+335 test_slash_d_suggests_special\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:19)
+336 test_slash_suggests_special\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_pgspecial.py:14)
+337 test_prevalence_counter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_prioritization.py:4)
+338 test_confirm_destructive_query_notty\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_prompt_utils.py:6)
+339 DEFAULT\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:16)
+340 LIMIT\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:21)
+341 default_pgcli_obj\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:11)
+342 low_count\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:40)
+343 over_default\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:26)
+344 over_limit\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:33)
+345 test_row_limit_on_non_select\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:71)
+346 test_row_limit_with_LIMIT_clause\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:47)
+347 test_row_limit_without_LIMIT_clause\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_rowlimit.py:59)
+348 test_alias_search_with_aliases1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:606)
+349 test_alias_search_with_aliases2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:599)
+350 test_alias_search_without_aliases1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:592)
+351 test_alias_search_without_aliases2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:585)
+352 test_aliases_with_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:553)
+353 test_all_schema_objects\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:691)
+354 test_all_schema_objects_with_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:711)
+355 test_all_schema_objects_with_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:701)
+356 test_column_alias_search\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:667)
+357 test_column_alias_search_qualified\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:674)
+358 test_function_alias_search_with_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:657)
+359 test_function_alias_search_without_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:647)
+360 test_join_alias_search_with_aliases1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:613)
+361 test_join_alias_search_with_aliases2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:633)
+362 test_join_alias_search_without_aliases1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:623)
+363 test_join_alias_search_without_aliases2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:640)
+364 test_schema_object_order\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:683)
+365 test_schema_or_visible_table_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:528)
+366 test_schema_qualified_function_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:341)
+367 test_schema_qualified_type_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:353)
+368 test_set_schema\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:721)
+369 test_suggest_columns_from_aliased_set_returning_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:368)
+370 test_suggest_columns_from_quoted_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:513)
+371 test_suggest_columns_from_unquoted_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:493)
+372 test_suggested_aliases_after_on_right_side\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:325)
+373 test_suggested_column_names_from_cte\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:148)
+374 test_suggested_column_names_from_qualified_shadowed_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:133)
+375 test_suggested_column_names_from_schema_qualifed_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:200)
+376 test_suggested_column_names_from_shadowed_visible_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:124)
+377 test_suggested_column_names_in_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:224)
+378 test_suggested_column_names_with_qualified_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:273)
+379 test_suggested_columns_with_insert\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:208)
+380 test_suggested_join_conditions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:157)
+381 test_suggested_joins\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:179)
+382 test_suggested_multiple_column_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:281)
+383 test_suggested_multiple_column_names_with_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:291)
+384 test_suggested_table_names_with_schema_dot\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:234)
+385 test_suggested_table_names_with_schema_dot2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:255)
+386 test_suggestions_after_on\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:301)
+387 test_table_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:537)
+388 test_table_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:569)
+389 test_table_names_after_from\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:332)
+390 test_wildcard_column_expansion_with_alias_qualifier\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:398)
+391 test_wildcard_column_expansion_with_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:378)
+392 test_wildcard_column_expansion_with_insert\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:411)
+393 test_wildcard_column_expansion_with_table_qualifier\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:452)
+394 test_wildcard_column_expansion_with_two_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:465)
+395 test_wildcard_column_expansion_with_two_tables_and_parent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_multiple_schemata.py:480)
+396 test_aliased_joins\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:505)
+397 test_aliases_with_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:989)
+398 test_allow_leading_double_quote_in_last_word\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:699)
+399 test_auto_escaped_col_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:691)
+400 test_builtin_function_matches_only_at_start\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:180)
+401 test_builtin_function_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:162)
+402 test_cased_join_conditions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:386)
+403 test_cased_joins\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:490)
+404 test_columns_before_keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:797)
+405 test_cte_qualified_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1055)
+406 test_drop_alter_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:140)
+407 test_duplicate_aliases_with_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:964)
+408 test_duplicate_table_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:939)
+409 test_empty_string_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:148)
+410 test_function_column_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:129)
+411 test_insert\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1007)
+412 test_join_functions_on_suggests_columns_and_join_conditions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:759)
+413 test_join_functions_using_suggests_common_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:749)
+414 test_join_using_suggests_columns_after_first_column\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:646)
+415 test_join_using_suggests_common_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:613)
+416 test_join_using_suggests_from_last_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:628)
+417 test_keyword_after_alter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1085)
+418 test_keyword_casing_upper\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1069)
+419 test_learn_keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:770)
+420 test_learn_table_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:782)
+421 test_list_functions_for_special\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:220)
+422 test_no_column_qualification\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:276)
+423 test_schema_or_visible_table_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:921)
+424 test_select_keyword_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:156)
+425 test_set_schema\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1093)
+426 test_special_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1101)
+427 test_suggest_columns_after_three_way_join\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:349)
+428 test_suggest_columns_from_aliased_set_returning_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:739)
+429 test_suggest_columns_from_cte\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1040)
+430 test_suggest_columns_from_escaped_table_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:725)
+431 test_suggest_columns_from_quoted_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:915)
+432 test_suggest_columns_from_set_returning_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:731)
+433 test_suggest_columns_from_unquoted_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:904)
+434 test_suggest_cte_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:1023)
+435 test_suggest_datatype\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:708)
+436 test_suggested_aliases_after_on\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:539)
+437 test_suggested_aliases_after_on_right_side\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:560)
+438 test_suggested_auto_qualified_column_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:247)
+439 test_suggested_auto_qualified_column_names_two_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:258)
+440 test_suggested_cased_always_qualified_column_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:284)
+441 test_suggested_cased_column_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:236)
+442 test_suggested_cased_column_names_with_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:331)
+443 test_suggested_column_names_from_visible_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:228)
+444 test_suggested_column_names_in_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:295)
+445 test_suggested_column_names_with_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:309)
+446 test_suggested_column_names_with_table_dot\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:303)
+447 test_suggested_join_conditions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:377)
+448 test_suggested_join_conditions_with_invalid_qualifier\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:421)
+449 test_suggested_join_conditions_with_invalid_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:428)
+450 test_suggested_join_conditions_with_same_table_twice\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:395)
+451 test_suggested_joins\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:476)
+452 test_suggested_joins_fuzzy\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:443)
+453 test_suggested_joins_quoted_schema_qualified_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:520)
+454 test_suggested_multiple_column_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:315)
+455 test_suggested_multiple_column_names_with_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:323)
+456 test_suggested_multiple_column_names_with_dot\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:339)
+457 test_suggested_tables_after_on\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:574)
+458 test_suggested_tables_after_on_right_side\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:595)
+459 test_table_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:930)
+460 test_table_casing\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:998)
+461 test_table_names_after_from\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:661)
+462 test_user_function_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:189)
+463 test_user_function_name_completion_matches_anywhere\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:207)
+464 test_wildcard_column_expansion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:808)
+465 test_wildcard_column_expansion_with_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:830)
+466 test_wildcard_column_expansion_with_table_qualifier\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:852)
+467 test_wildcard_column_expansion_with_two_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:876)
+468 test_wildcard_column_expansion_with_two_tables_and_parent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_smart_completion_public_schema_only.py:891)
+469 cols_etc\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:21)
+470 test_2_statements_1st_current\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:667)
+471 test_2_statements_2nd_current\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:645)
+472 test_3_statements_2nd_current\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:675)
+473 test_after_as\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:90)
+474 test_alias_suggests_keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:859)
+475 test_alter_column_type_suggests_types\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:827)
+476 test_cast_operator_suggests_schema_qualified_types\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:817)
+477 test_cast_operator_suggests_types\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:808)
+478 test_col_comma_suggests_cols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:293)
+479 test_column_keyword_suggests_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:940)
+480 test_create_db_with_template\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:775)
+481 test_cte_does_not_crash\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:46)
+482 test_distinct_and_order_by_suggestions_with_alias_given\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:254)
+483 test_distinct_and_order_by_suggestions_with_aliases\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:225)
+484 test_distinct_suggests_cols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:213)
+485 test_dot_col_comma_suggests_cols_or_schema_qualified_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:391)
+486 test_dot_suggests_cols_of_a_table_or_schema_qualified_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:343)
+487 test_dot_suggests_cols_of_an_alias\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:353)
+488 test_dot_suggests_cols_of_an_alias_where\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:372)
+489 test_drop_schema_qualified_table_suggests_only_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:790)
+490 test_drop_schema_suggests_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:803)
+491 test_function_arguments_with_alias_given\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:278)
+492 test_handle_pre_completion_comma_gracefully\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:796)
+493 test_handle_unrecognized_kw_generously\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:954)
+494 test_identifier_suggests_types_in_parentheses\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:836)
+495 test_ignore_leading_double_quotes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:934)
+496 test_insert_into_lparen_comma_suggests_cols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:329)
+497 test_insert_into_lparen_partial_text_suggests_cols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:322)
+498 test_insert_into_lparen_suggests_cols\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:312)
+499 test_into_suggests_tables_and_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:307)
+500 test_invalid_sql\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:876)
+501 test_join_alias_dot_suggests_cols1\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:512)
+502 test_join_alias_dot_suggests_cols2\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:531)
+503 test_join_suggests_tables_and_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:490)
+504 test_join_using_suggests_common_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:616)
+505 test_keyword_after_alter\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:962)
+506 test_leading_parenthesis\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:928)
+507 test_left_join_with_comma\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:503)
+508 test_lparen_suggests_cols_and_funcs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:102)
+509 test_named_query_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:893)
+510 test_on_suggests_aliases_and_join_conditions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:548)
+511 test_on_suggests_aliases_right_side\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:588)
+512 test_on_suggests_tables_and_join_conditions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:572)
+513 test_on_suggests_tables_and_join_conditions_right_side\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:600)
+514 test_outer_table_reference_in_exists_subquery_suggests_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:429)
+515 test_partially_typed_col_name_suggests_col_names\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:336)
+516 test_select_suggests_cols_and_funcs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:111)
+517 test_select_suggests_cols_with_qualified_table_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:41)
+518 test_select_suggests_cols_with_visible_table_scope\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:36)
+519 test_select_suggests_fields_from_function\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:923)
+520 test_specials_included_for_initial_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:783)
+521 test_statements_in_function_body\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:688)
+522 test_statements_with_cursor_after_function_body\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:763)
+523 test_statements_with_cursor_before_function_body\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:769)
+524 test_sub_select_col_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:459)
+525 test_sub_select_dot_col_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:478)
+526 test_sub_select_multiple_col_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:470)
+527 test_sub_select_partial_text_suggests_keyword\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:416)
+528 test_sub_select_suggests_keyword\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:403)
+529 test_sub_select_table_name_completion\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:440)
+530 test_sub_select_table_name_completion_with_outer_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:446)
+531 test_suggest_after_join_with_one_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:151)
+532 test_suggest_after_join_with_two_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:134)
+533 test_suggest_columns_after_multiple_joins\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:635)
+534 test_suggest_qualified_aliasable_tables_and_views\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:172)
+535 test_suggest_qualified_tables_and_views\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:164)
+536 test_suggest_qualified_tables_views_and_functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:178)
+537 test_suggest_qualified_tables_views_functions_and_joins\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:193)
+538 test_suggest_tables_views_schemas_and_functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:128)
+539 test_suggest_where_keyword\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:883)
+540 test_suggests_tables_views_and_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:120)
+541 test_table_comma_suggests_tables_and_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:302)
+542 test_truncate_suggests_qualified_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:208)
+543 test_truncate_suggests_tables_and_schemas\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:203)
+544 test_where_equals_any_suggests_columns_or_keywords\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:96)
+545 test_where_in_suggests_columns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:81)
+546 test_where_suggests_columns_functions\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:59)
+547 test_where_suggests_columns_functions_quoted_table\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/test_sqlcompletion.py:52)
+548 completions_to_set\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/utils.py:91)
+549 create_db\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/utils.py:54)
+550 db_connection\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/utils.py:14)
+551 drop_tables\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/utils.py:62)
+552 run\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/tests/utils.py:73)
+#
+4 94 U
+5 203 U
+5 73 U
+5 146 U
+77 76 U
+77 75 U
+75 149 U
+75 168 U
+75 146 U
+73 78 U
+87 80 U
+86 84 U
+83 79 U
+82 83 U
+82 87 U
+82 84 U
+81 79 U
+7 143 U
+88 143 U
+8 92 U
+90 91 U
+91 104 U
+91 134 U
+91 115 U
+91 92 U
+9 203 U
+9 146 U
+9 88 U
+9 94 U
+9 242 U
+9 238 U
+9 239 U
+9 79 U
+9 84 U
+9 80 U
+9 83 U
+9 82 U
+9 81 U
+9 85 U
+9 65 U
+104 74 U
+104 84 U
+104 135 U
+104 149 U
+104 128 U
+104 127 U
+104 83 U
+104 133 U
+104 82 U
+104 81 U
+104 239 U
+104 65 U
+104 146 U
+131 93 U
+133 113 U
+133 114 U
+133 131 U
+133 121 U
+133 132 U
+133 136 U
+133 126 U
+121 82 U
+128 80 U
+128 82 U
+128 79 U
+127 82 U
+116 115 U
+117 115 U
+117 103 U
+118 115 U
+115 203 U
+115 208 U
+115 139 U
+125 123 U
+125 234 U
+125 223 U
+120 193 U
+120 98 U
+120 228 U
+120 106 U
+120 215 U
+120 107 U
+120 99 U
+120 82 U
+120 119 U
+120 160 U
+120 192 U
+120 93 U
+120 132 U
+120 97 U
+134 104 U
+134 125 U
+134 105 U
+134 82 U
+134 120 U
+134 168 U
+134 79 U
+134 132 U
+134 93 U
+105 138 U
+105 88 U
+105 82 U
+105 242 U
+105 238 U
+105 137 U
+105 146 U
+138 82 U
+138 124 U
+137 82 U
+111 108 U
+111 82 U
+111 101 U
+109 82 U
+106 98 U
+106 100 U
+106 111 U
+106 109 U
+106 95 U
+106 96 U
+106 99 U
+106 82 U
+106 239 U
+106 226 U
+106 97 U
+106 157 U
+107 215 U
+107 120 U
+132 203 U
+132 82 U
+132 110 U
+132 77 U
+110 105 U
+110 112 U
+112 146 U
+124 225 U
+124 213 U
+124 229 U
+130 105 U
+129 105 U
+119 129 U
+119 130 U
+94 84 U
+94 117 U
+94 104 U
+94 118 U
+94 96 U
+94 134 U
+94 102 U
+94 115 U
+94 119 U
+94 222 U
+94 116 U
+94 79 U
+94 92 U
+96 141 U
+140 140 U
+141 140 U
+103 85 U
+143 144 U
+144 142 U
+11 79 U
+11 84 U
+146 184 U
+146 172 U
+146 178 U
+146 175 U
+146 180 U
+146 173 U
+146 187 U
+146 188 U
+146 181 U
+146 183 U
+146 185 U
+146 176 U
+146 179 U
+146 186 U
+146 177 U
+146 182 U
+159 194 U
+160 158 U
+163 149 U
+170 160 U
+170 149 U
+169 160 U
+162 160 U
+166 160 U
+166 155 U
+165 160 U
+164 160 U
+193 160 U
+171 195 U
+171 194 U
+171 157 U
+195 194 U
+174 183 U
+174 171 U
+173 191 U
+173 197 U
+173 196 U
+173 171 U
+173 157 U
+198 145 U
+198 148 U
+198 157 U
+197 198 U
+156 148 U
+156 157 U
+156 194 U
+180 145 U
+180 148 U
+180 191 U
+180 156 U
+180 171 U
+180 157 U
+179 191 U
+179 200 U
+179 201 U
+179 171 U
+200 145 U
+200 157 U
+178 199 U
+178 171 U
+178 189 U
+178 153 U
+184 159 U
+184 171 U
+184 149 U
+177 178 U
+177 187 U
+177 188 U
+150 151 U
+151 157 U
+153 156 U
+153 145 U
+153 148 U
+153 157 U
+187 171 U
+187 147 U
+187 153 U
+187 190 U
+186 171 U
+188 171 U
+188 153 U
+188 190 U
+172 171 U
+175 171 U
+181 171 U
+185 145 U
+185 171 U
+176 171 U
+176 153 U
+176 190 U
+182 171 U
+191 202 U
+191 149 U
+191 158 U
+191 160 U
+152 158 U
+152 160 U
+154 160 U
+190 152 U
+190 147 U
+190 154 U
+189 152 U
+189 147 U
+189 154 U
+12 204 U
+205 236 U
+208 215 U
+216 208 U
+215 225 U
+215 205 U
+215 207 U
+215 210 U
+215 213 U
+215 206 U
+229 225 U
+226 211 U
+226 219 U
+231 212 U
+235 212 U
+230 209 U
+233 209 U
+238 237 U
+239 237 U
+239 240 U
+243 241 U
+242 243 U
+1 549 U
+1 12 U
+1 550 U
+1 551 U
+30 549 U
+30 550 U
+30 551 U
+33 3 U
+2 36 U
+40 39 U
+45 38 U
+45 48 U
+44 48 U
+55 48 U
+58 48 U
+46 37 U
+49 37 U
+59 37 U
+61 37 U
+51 38 U
+51 37 U
+56 37 U
+52 45 U
+52 51 U
+52 55 U
+47 46 U
+47 52 U
+50 59 U
+50 61 U
+50 51 U
+57 56 U
+57 50 U
+60 59 U
+60 49 U
+48 53 U
+63 62 U
+64 53 U
+64 63 U
+54 64 U
+53 193 U
+53 170 U
+53 161 U
+53 227 U
+53 169 U
+53 149 U
+53 162 U
+53 166 U
+53 165 U
+53 164 U
+53 43 U
+53 59 U
+53 61 U
+53 146 U
+244 74 U
+244 65 U
+247 249 U
+16 85 U
+16 80 U
+251 80 U
+250 80 U
+252 80 U
+253 85 U
+254 146 U
+254 149 U
+254 11 U
+19 203 U
+19 552 U
+19 96 U
+19 102 U
+19 92 U
+269 102 U
+264 96 U
+262 552 U
+263 552 U
+265 287 U
+265 96 U
+259 104 U
+259 92 U
+266 104 U
+266 552 U
+266 92 U
+267 104 U
+267 92 U
+275 118 U
+275 104 U
+275 92 U
+270 203 U
+270 117 U
+270 104 U
+270 92 U
+276 118 U
+276 104 U
+276 92 U
+271 118 U
+271 104 U
+271 92 U
+268 118 U
+268 104 U
+268 92 U
+260 118 U
+260 104 U
+260 203 U
+260 92 U
+20 548 U
+278 146 U
+278 149 U
+278 11 U
+282 548 U
+284 548 U
+283 548 U
+280 548 U
+279 548 U
+285 548 U
+281 548 U
+21 552 U
+21 92 U
+292 552 U
+293 552 U
+290 552 U
+301 552 U
+319 552 U
+302 552 U
+304 552 U
+304 288 U
+295 552 U
+306 552 U
+305 552 U
+323 552 U
+310 552 U
+312 552 U
+311 552 U
+289 92 U
+289 104 U
+321 552 U
+291 552 U
+324 552 U
+322 552 U
+307 552 U
+308 552 U
+296 552 U
+309 552 U
+303 552 U
+325 552 U
+300 552 U
+300 286 U
+337 55 U
+25 92 U
+341 92 U
+341 104 U
+346 104 U
+346 111 U
+346 92 U
+347 104 U
+347 111 U
+347 92 U
+345 104 U
+345 111 U
+345 92 U
+26 40 U
+26 41 U
+26 35 U
+26 42 U
+26 548 U
+26 214 U
+26 54 U
+26 2 U
+26 38 U
+26 39 U
+376 548 U
+376 39 U
+376 47 U
+374 548 U
+374 39 U
+374 47 U
+373 548 U
+373 52 U
+373 39 U
+380 548 U
+380 39 U
+381 548 U
+381 39 U
+381 57 U
+375 548 U
+375 39 U
+375 47 U
+379 46 U
+379 548 U
+379 39 U
+377 548 U
+377 39 U
+377 47 U
+384 548 U
+384 50 U
+384 39 U
+385 548 U
+385 50 U
+385 39 U
+378 46 U
+378 548 U
+378 39 U
+382 548 U
+382 39 U
+382 47 U
+383 46 U
+383 548 U
+383 39 U
+386 548 U
+386 39 U
+372 548 U
+372 39 U
+389 548 U
+389 39 U
+389 57 U
+366 548 U
+366 38 U
+366 39 U
+367 60 U
+367 548 U
+367 39 U
+369 46 U
+369 548 U
+369 39 U
+391 41 U
+391 39 U
+390 41 U
+390 39 U
+392 41 U
+392 39 U
+393 41 U
+393 39 U
+394 41 U
+394 39 U
+395 41 U
+395 39 U
+371 46 U
+371 548 U
+371 39 U
+370 46 U
+370 548 U
+370 39 U
+365 548 U
+365 39 U
+365 57 U
+387 56 U
+387 548 U
+387 38 U
+387 39 U
+352 548 U
+352 38 U
+352 39 U
+388 548 U
+388 38 U
+388 39 U
+351 39 U
+350 39 U
+349 39 U
+348 39 U
+360 39 U
+362 39 U
+361 39 U
+363 39 U
+359 39 U
+358 39 U
+356 39 U
+357 39 U
+364 39 U
+353 548 U
+353 38 U
+353 39 U
+355 548 U
+355 38 U
+355 39 U
+354 548 U
+354 38 U
+354 39 U
+368 548 U
+368 39 U
+27 40 U
+27 41 U
+27 35 U
+27 42 U
+27 548 U
+27 54 U
+27 2 U
+27 38 U
+27 39 U
+410 39 U
+406 38 U
+406 39 U
+409 548 U
+409 55 U
+409 39 U
+409 58 U
+424 548 U
+424 39 U
+401 548 U
+401 38 U
+401 39 U
+400 39 U
+462 548 U
+462 38 U
+462 39 U
+463 548 U
+463 38 U
+463 39 U
+421 548 U
+421 38 U
+421 39 U
+443 548 U
+443 39 U
+443 47 U
+441 45 U
+441 548 U
+441 55 U
+441 38 U
+441 39 U
+438 548 U
+438 52 U
+438 39 U
+439 548 U
+439 52 U
+439 39 U
+422 548 U
+422 39 U
+440 45 U
+440 548 U
+440 55 U
+440 38 U
+440 39 U
+444 548 U
+444 39 U
+444 47 U
+446 46 U
+446 548 U
+446 39 U
+445 46 U
+445 548 U
+445 39 U
+454 548 U
+454 39 U
+454 47 U
+455 46 U
+455 548 U
+455 39 U
+442 548 U
+442 39 U
+456 46 U
+456 548 U
+456 39 U
+427 39 U
+447 548 U
+447 39 U
+402 548 U
+402 39 U
+450 39 U
+448 39 U
+449 548 U
+449 39 U
+452 39 U
+451 548 U
+451 39 U
+451 57 U
+403 548 U
+403 39 U
+396 56 U
+396 548 U
+396 38 U
+396 39 U
+453 548 U
+453 39 U
+453 57 U
+436 548 U
+436 39 U
+437 548 U
+437 39 U
+457 548 U
+457 39 U
+458 548 U
+458 39 U
+415 548 U
+415 39 U
+416 548 U
+416 39 U
+414 548 U
+414 39 U
+461 548 U
+461 39 U
+461 57 U
+399 548 U
+399 39 U
+399 47 U
+398 39 U
+435 60 U
+435 56 U
+435 44 U
+435 548 U
+435 39 U
+430 46 U
+430 548 U
+430 39 U
+432 548 U
+432 39 U
+432 47 U
+428 46 U
+428 548 U
+428 39 U
+413 46 U
+413 548 U
+413 39 U
+412 46 U
+412 548 U
+412 39 U
+419 39 U
+420 39 U
+404 39 U
+464 41 U
+464 39 U
+465 41 U
+465 39 U
+466 41 U
+466 39 U
+467 41 U
+467 39 U
+468 41 U
+468 39 U
+433 46 U
+433 548 U
+433 39 U
+431 46 U
+431 548 U
+431 39 U
+423 548 U
+423 39 U
+423 57 U
+459 56 U
+459 548 U
+459 38 U
+459 39 U
+408 56 U
+408 548 U
+408 38 U
+408 39 U
+407 548 U
+407 38 U
+407 39 U
+397 548 U
+397 38 U
+397 39 U
+460 548 U
+460 39 U
+411 46 U
+411 548 U
+411 39 U
+434 548 U
+434 39 U
+429 548 U
+429 52 U
+429 39 U
+405 548 U
+405 39 U
+418 39 U
+418 53 U
+417 39 U
+425 548 U
+425 39 U
+426 548 U
+426 39 U
+28 224 U
+28 51 U
+518 469 U
+517 469 U
+547 469 U
+546 469 U
+545 469 U
+544 469 U
+531 231 U
+531 59 U
+515 469 U
+526 469 U
+501 231 U
+501 59 U
+510 231 U
+510 59 U
+512 231 U
+512 59 U
+513 231 U
+513 59 U
+504 231 U
+504 59 U
+470 469 U
+472 469 U
+539 469 U
+519 469 U
+29 207 U
+29 550 U
+29 96 U
+549 550 U
+552 96 U
+155 149 U
+Cloning repo:  https://github.com/dbcli/pgcli
+pyan3 /home/avb307/msc_thesis_work/automate_the_painful_stuffs/pgcli/**/*.py --uses --no-defines --colored --grouped --annotated  -f pgcli_03_04_2021.txt --uses --no-defines --tgf
