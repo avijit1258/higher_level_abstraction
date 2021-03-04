@@ -345,8 +345,6 @@ class DocumentNodes:
                         text_for_summary += function_name_to_docstring[self.function_id_to_name[f]] + ' '
                         # count += 1
 
-        
-        print('Cluster comments: ', text_for_summary)
 
         try:
             cluster_summary = summarize(
