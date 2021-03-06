@@ -18,6 +18,9 @@ body{
   overflow-y: auto;
 }
 
+.node_details_label{
+  background-color:powderblue;
+}
 
 /* 
 textarea{

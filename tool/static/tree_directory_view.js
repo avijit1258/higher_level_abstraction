@@ -89,9 +89,11 @@ function init() {
           new go.Binding("source", "isTreeExpanded", imageConverter).ofObject(),
           new go.Binding("source", "isTreeLeaf", imageConverter).ofObject()),
         $(go.TextBlock,
-          { font: '9pt Verdana, sans-serif' },
-          new go.Binding("text", "node_text", function(s) { return " " + s; }))
-      )  // end Horizontal Panel
+          { font: '9pt Verdana, sans-serif'},
+          new go.Binding("text", "node_text", function(s) { return " " + s; }),
+          new go.Binding('stroke', 'color')
+          ) 
+        ) // end Horizontal Panel
     );  // end Node
 
   // without lines

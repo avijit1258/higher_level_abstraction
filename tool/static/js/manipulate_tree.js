@@ -29,7 +29,7 @@ function setupDiagram(result) {
             lda_method: result[x].lda_method,
             lsi_word: result[x].lsi_word,
             lsi_method: result[x].lsi_method,
-            color: "#cce6ff",
+            color: "black",
             spm_method: result[x].spm_method,
             text_summary: result[x].text_summary,
             files: result[x].files,
@@ -89,7 +89,7 @@ function showNodeDetails(part) {
 function change_node_color() {
     myDiagram.nodes.each(function (n) {
         myDiagram.model.commit(function (m) {
-            m.set(n.data, "color", "#ffc61a");
+            m.set(n.data, "color", "red");
         }, 'change node color');
     });
 }
