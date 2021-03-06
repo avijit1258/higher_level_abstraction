@@ -1,23 +1,3 @@
-function get_cluster() {
-  Url = 'http://127.0.0.1:5000/get_cluster'
-  var subject_system = document.getElementById('subject_system_id').value;
-
-
-  $.getJSON(Url, {
-    subject_system: subject_system
-  }, function (result) {
-    // alert(result);
-
-    setupDiagram(result);
-
-    console.log(result);
-  })
-  clearDiagram();
-
-}
-
-
-
 function init() {
   //if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
   var $ = go.GraphObject.make; // for conciseness in defining templates
@@ -41,7 +21,7 @@ function init() {
         "undoManager.isEnabled": true
       });
 
-  
+
 
   //myFullDiagram.toolManager.textEditingTool.defaultTextEditor = window.TextEditor;
   //myLocalDiagram.toolManager.textEditingTool.defaultTextEditor = window.TextEditor;
@@ -99,7 +79,7 @@ function init() {
 
     );
   myDiagram.nodeTemplate = myNodeTemplate;
-  
+
 
   // Define a basic link template, not selectable, shared by both diagrams
   var myLinkTemplate =
@@ -112,7 +92,7 @@ function init() {
       })
     );
   myDiagram.linkTemplate = myLinkTemplate;
-  
+
 
 
   // Create the full tree diagram
@@ -163,10 +143,9 @@ function init() {
   });
 
   // myDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
+  
 
 }
-
-
 
 // Customize the TreeLayout to position all of the leaf nodes at the same vertical Y position.
 function FlatTreeLayout() {
@@ -196,11 +175,9 @@ FlatTreeLayout.prototype.commitLayout = function () {
 };
 // end FlatTreeLayout
 
-
 function clearDiagram() {
   myDiagram.model = null;
 }
-
 
 
 
