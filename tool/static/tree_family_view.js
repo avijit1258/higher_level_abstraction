@@ -21,7 +21,7 @@ function get_cluster() {
 function init() {
   //if (window.goSamples) goSamples();  // init for these samples -- you don't need to call this
   var $ = go.GraphObject.make; // for conciseness in defining templates
-  myFullDiagram =
+  myDiagram =
     $(go.Diagram, "fullDiagram", // each diagram refers to its DIV HTML element by id
       {
         initialAutoScale: go.Diagram.UniformToFill, // automatically scale down to show whole tree
@@ -98,7 +98,7 @@ function init() {
       $("TreeExpanderButton")
 
     );
-  myFullDiagram.nodeTemplate = myNodeTemplate;
+  myDiagram.nodeTemplate = myNodeTemplate;
   
 
   // Define a basic link template, not selectable, shared by both diagrams
@@ -111,7 +111,7 @@ function init() {
         strokeWidth: 1
       })
     );
-  myFullDiagram.linkTemplate = myLinkTemplate;
+  myDiagram.linkTemplate = myLinkTemplate;
   
 
 
@@ -135,71 +135,10 @@ function init() {
         desiredSize: new go.Size(400, 400)
       })
     );
-  myFullDiagram.add(highlighter);
-
-  jQuery('#technique_choice_id').change(function () {
-    var technique_choice = document.getElementById('technique_choice_id').value;
-
-    myFullDiagram.nodes.each(function (n) {
-      update_node_text(n, technique_choice);
-    });
-
-  });
-
-  function update_node_text(node, technique) {
-    myFullDiagram.model.commit(function (m) { // this Model
-      // This is the safe way to change model data
-      // GoJS will be notified that the data has changed
-      // and can update the node in the Diagram
-      // and record the change in the UndoManager
-      if (technique == 'tfidf_word') {
-        m.set(node.data, "node_text", node.data.tfidf_word);
-      } else if (technique == 'tfidf_method') {
-        m.set(node.data, "node_text", node.data.tfidf_method);
-      } else if (technique == 'lda_word') {
-        m.set(node.data, "node_text", node.data.lda_word);
-      } else if (technique == 'lda_method') {
-        m.set(node.data, "node_text", node.data.lda_method);
-      } else if (technique == 'lsi_word') {
-        m.set(node.data, "node_text", node.data.lsi_word);
-      } else if (technique == 'lsi_method') {
-        m.set(node.data, "node_text", node.data.lsi_method);
-      }
-
-    }, "update node text");
-  }
-
-  jQuery('#search_button').click(function(){
-    alert('hello');
-    change_node_color();
-  });
-
-  function showNodeDetails(part){
-    var clickable_text = '';
-
-    for(index = 0; index < part.data.files.length; index++){
-      clickable_text += '<a class="click_text" >' + part.data.files[index] + '</a>, ';
-    }
-
-    document.getElementById('node_key').innerHTML = 'Node Key: ' + part.data.key;
-    document.getElementById('node_summary').innerHTML = part.data.text_summary;
-    document.getElementById('node_patterns').innerHTML = part.data.spm_method;
-    document.getElementById('files').innerHTML = clickable_text;
-    document.getElementById('number_of_files').innerHTML = part.data.files_count;
-
-    // jQuery('#node_details').modal('show');
-}
+  myDiagram.add(highlighter);
 
 
-  function change_node_color(){
-    myFullDiagram.nodes.each(function (n) {
-      myFullDiagram.model.commit(function (m) {
-        m.set(n.data, "color", "#ffc61a" );
-      }, 'change node color');
-    });
-  }
-
-  myFullDiagram.addDiagramListener("ObjectContextClicked",
+  myDiagram.addDiagramListener("ObjectContextClicked",
     function (e) {
       var part = e.subject.part;
       if (!(part instanceof go.Link)) {
@@ -213,8 +152,8 @@ function init() {
 
   // Start by focusing the diagrams on the node at the top of the tree.
   // Wait until the tree has been laid out before selecting the root node.
-  myFullDiagram.addDiagramListener("InitialLayoutCompleted", function (e) {
-    var node0 = myFullDiagram.findPartForKey(0);
+  myDiagram.addDiagramListener("InitialLayoutCompleted", function (e) {
+    var node0 = myDiagram.findPartForKey(0);
     console.log(node0);
     if (node0 !== null) node0.isSelected = true;
     e.diagram.findTreeRoots().each(function (r) {
@@ -223,7 +162,7 @@ function init() {
 
   });
 
-  // myFullDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
+  // myDiagram.toolManager.mouseMoveTools.insertAt(2, new DragZoomingTool());
 
 }
 
@@ -258,48 +197,8 @@ FlatTreeLayout.prototype.commitLayout = function () {
 // end FlatTreeLayout
 
 
-// Make the corresponding node in the full diagram to that selected in the local diagram selected,
-// then call showLocalOnFullClick to update the local diagram.
-
-
-
-
-
-
-
-
-function setupDiagram(result) {
-  var nodeDataArray = [];
-  for (x in result) {
-    nodeDataArray.push({
-      key: result[x].key,
-      parent: result[x].parent,
-      node_text: result[x].tfidf_word,
-      tfidf_word: result[x].tfidf_word,
-      tfidf_method: result[x].tfidf_method,
-      lda_word: result[x].lda_word,
-      lda_method: result[x].lda_method,
-      lsi_word: result[x].lsi_word,
-      lsi_method: result[x].lsi_method,
-      color: "#cce6ff",
-      spm_method: result[x].spm_method,
-      text_summary: result[x].text_summary,
-      files: result[x].files,
-      files_count: result[x].files_count
-    });
-
-  }
-  // Use below line for randomly coloring brushes
-  // color: go.Brush.randomColor()
-
-  myFullDiagram.model = new go.TreeModel(nodeDataArray);
-  // update_nodes_for_study();
-
-}
-
-
 function clearDiagram() {
-  myFullDiagram.model = null;
+  myDiagram.model = null;
 }
 
 
