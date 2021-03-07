@@ -72,6 +72,8 @@ class DocumentNodes:
             execution_paths_of_a_cluster, self.function_name_to_docstring)
         files_count, files = self.count_files_in_node(
             execution_paths_of_a_cluster)
+        execution_paths_count = len(execution_paths_of_a_cluster)
+        function_id_to_name_file = self.function_id_to_file_name_of_execution_path(execution_paths_of_a_cluster)
 
         self.worksheet.write(self.row, 0, k)
         self.worksheet.write(self.row, 1, self.execution_path_to_sentence(
@@ -88,7 +90,8 @@ class DocumentNodes:
 
         return {'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word,
                 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method': spm_method,
-                'text_summary': text_summary, 'files_count': files_count, 'files': files}
+                'text_summary': text_summary, 'files_count': files_count, 'files': files, 'execution_path_count' : execution_paths_count, 
+                'function_id_to_name_file' : function_id_to_name_file}
 
     def tf_idf_score_for_scipy_cluster(self, clusters, method_or_word):
         """ 
@@ -452,3 +455,14 @@ class DocumentNodes:
                     files_count[self.function_id_to_file_name[f]] = 1
 
         return len(list(files_count.keys())), list(files_count.keys())
+
+    def function_id_to_file_name_of_execution_path(self, execution_paths_of_a_cluster):
+
+        function_id_to_name_file = {}
+
+        for ep in execution_paths_of_a_cluster:
+            for method in self.execution_paths[ep]:
+                id = str(method)
+                function_id_to_name_file[id] = self.function_id_to_name[id] + '(' + self.function_id_to_file_name[id] + ')'
+
+        return function_id_to_name_file
