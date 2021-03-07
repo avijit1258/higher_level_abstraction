@@ -55,7 +55,7 @@ class DocumentNodes:
 
     def labeling_cluster(self, execution_paths_of_a_cluster, k, v):
         """ Labelling a cluster using six variants """
-        
+
         spm_method = self.mining_sequential_patterns(
             execution_paths_of_a_cluster)
         tfidf_method = self.tf_idf_score_for_scipy_cluster(
@@ -73,7 +73,8 @@ class DocumentNodes:
         files_count, files = self.count_files_in_node(
             execution_paths_of_a_cluster)
         execution_paths_count = len(execution_paths_of_a_cluster)
-        function_id_to_name_file = self.function_id_to_file_name_of_execution_path(execution_paths_of_a_cluster)
+        function_id_to_name_file = self.function_id_to_file_name_of_execution_path(
+            execution_paths_of_a_cluster)
 
         self.worksheet.write(self.row, 0, k)
         self.worksheet.write(self.row, 1, self.execution_path_to_sentence(
@@ -90,8 +91,8 @@ class DocumentNodes:
 
         return {'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word,
                 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method': spm_method,
-                'text_summary': text_summary, 'files_count': files_count, 'files': files, 'execution_path_count' : execution_paths_count, 
-                'function_id_to_name_file' : function_id_to_name_file}
+                'text_summary': text_summary, 'files_count': files_count, 'files': files, 'execution_path_count': execution_paths_count,
+                'function_id_to_name_file': function_id_to_name_file}
 
     def tf_idf_score_for_scipy_cluster(self, clusters, method_or_word):
         """ 
@@ -116,7 +117,6 @@ class DocumentNodes:
         except:
             print('Here I got you', clusters, 'In a sentence:', txt1)
 
-        
         feature_names = np.array(tf.get_feature_names())
         max_val = txt_transformed.max(axis=0).toarray().ravel()
         sort_by_tfidf = max_val.argsort()
@@ -165,17 +165,15 @@ class DocumentNodes:
         for c in clusters:
             str = ''
             for e in self.execution_paths[c]:
-                
+
                 words_in_function_name = [
                     w for w in self.function_id_to_name[e].split("_") if w not in self.en_stop]
                 words_in_function_name = [self.get_lemma(
                     w) for w in words_in_function_name]
                 str += self.merge_words_as_sentence(words_in_function_name)
                 str += ' '
-            
-            documents.append(str)
 
-        
+            documents.append(str)
 
         return documents
 
@@ -188,11 +186,11 @@ class DocumentNodes:
         for c in clusters:
             str = ''
             for e in self.execution_paths[c]:
-                
+
                 str += self.merge_words_as_sentence(
                     self.function_id_to_name[e].split("_"))
                 str += ' '
-            
+
             documents.append(str)
 
         return documents
@@ -237,13 +235,12 @@ class DocumentNodes:
             txt = self.make_documents_for_a_cluster_tm_word(labels)
 
         for line in txt:
-            
+
             tokens = self.prepare_text_for_lda(line)
             # if random.random() > .99:
             # print(tokens)
             self.text_data.append(tokens)
 
-        
         dictionary = corpora.Dictionary(self.text_data)
         corpus = [dictionary.doc2bow(text) for text in self.text_data]
 
@@ -270,13 +267,12 @@ class DocumentNodes:
             txt = self.make_documents_for_a_cluster_tm_word(labels)
 
         for line in txt:
-            
+
             tokens = self.prepare_text_for_lda(line)
             # if random.random() > .99:
             # print(tokens)
             self.text_data.append(tokens)
 
-        
         dictionary = corpora.Dictionary(self.text_data)
         corpus = [dictionary.doc2bow(text) for text in self.text_data]
 
@@ -298,13 +294,13 @@ class DocumentNodes:
         Proprocessing text for LDA.
         """
         tokens = self.tokenize(text)
-        
+
         tokens = [token for token in tokens if len(token) >= 2]
-        
+
         tokens = [token for token in tokens if token not in self.en_stop]
-        
+
         tokens = [self.get_lemma(token) for token in tokens]
-        
+
         return tokens
 
     def tokenize(self, text):
@@ -341,19 +337,18 @@ class DocumentNodes:
         # count = 0
         for c in execution_paths_of_a_cluster:
             for f in self.execution_paths[c]:
-                
+
                 if self.function_id_to_name[f] in function_name_to_docstring:
 
                     if function_name_to_docstring[self.function_id_to_name[f]] is not None:
                         text_for_summary += function_name_to_docstring[self.function_id_to_name[f]] + ' '
                         # count += 1
 
-
         try:
             cluster_summary = summarize(
                 text_for_summary, ratio=0.35, split=True)
             cluster_summary = ' '.join(list(set(cluster_summary)))
-            
+
             return cluster_summary
         except ValueError:
             return 'Empty'
@@ -391,7 +386,7 @@ class DocumentNodes:
         ''' Ignore similar patterns and keep the lengthy one. '''
 
         similar_pattern_removed = {}
-        
+
         for pattern in patterns:
             if pattern[1][0] in similar_pattern_removed:
                 if len(similar_pattern_removed[pattern[1][0]]) < len(pattern[1]):
@@ -463,6 +458,7 @@ class DocumentNodes:
         for ep in execution_paths_of_a_cluster:
             for method in self.execution_paths[ep]:
                 id = str(method)
-                function_id_to_name_file[id] = self.function_id_to_name[id] + '(' + self.function_id_to_file_name[id] + ')'
+                function_id_to_name_file[id] = self.function_id_to_name[id] + \
+                    '(' + self.function_id_to_file_name[id] + ')'
 
         return function_id_to_name_file
