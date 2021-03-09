@@ -54,6 +54,7 @@
     <div class="d-sm-flex flex-row">
 
       <div class="p-2">
+        <label> Select Subject System </label> <br>
         <select name="subject_system" id="subject_system_id">
           {% for ss in subject_systems %}
           <option value="{{ss}}">{{ss}}</option>
@@ -61,6 +62,8 @@
         </select>
       </div>
       <div class="p-2">
+        <label> Select technique to lable nodes</label> <br>
+
         <select name="technique_choice" id="technique_choice_id">
           {% for tc in technique_choices %}
           <option value="{{tc}}">{{tc}}</option>
@@ -68,8 +71,8 @@
         </select>
       </div>
       <div class="p-2">
+        <label> Highlight nodes with similar function</label> <br>
         <select id= 'function_file'> </select>
-        
         <button type="submit" id="search_button"> Search </button>
       </div>
     </div>

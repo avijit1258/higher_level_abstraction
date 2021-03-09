@@ -84,19 +84,30 @@ function showNodeDetails(part) {
     document.getElementById('node_patterns').innerHTML = part.data.spm_method;
     document.getElementById('files').innerHTML = clickable_text;
     document.getElementById('number_of_files').innerHTML = part.data.files_count;
-    document.getElementById('number_of_execution_paths').innerHTML = part.data.execution_paths;
+    document.getElementById('number_of_execution_paths').innerHTML = part.data.execution_path_count;
 
 }
 
 
-function change_node_color() {
+function reset_node_color() {
     myDiagram.nodes.each(function (n) {
         myDiagram.model.commit(function (m) {
-            m.set(n.data, "color", "red");
+            m.set(n.data, "color", "black");
         }, 'change node color');
     });
 }
 
+function highlight_node(function_id) {
+    myDiagram.nodes.each(function (n) {
+        
+        if (function_id in n.data.function_id_to_name_file){
+            myDiagram.model.commit(function (m) {
+                m.set(n.data, "color", "red");
+            }, 'change node color');
+        }
+        
+    });
+}
 // $('#search_button').click(function () {
 //     alert('hello');
 //     change_node_color();
@@ -104,8 +115,9 @@ function change_node_color() {
 
 jQuery(document).ready(function() {
     jQuery("#search_button").click(function () {
-      alert("Hello!");
-      change_node_color();
+      var function_id = document.getElementById('function_file').value;
+      reset_node_color();
+      highlight_node(parseInt(function_id));
     });
   });
 
