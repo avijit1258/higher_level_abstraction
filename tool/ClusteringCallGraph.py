@@ -37,7 +37,7 @@ class ClusteringCallGraph:
     """ This class takes caller-callee relationships of a python project. Next, builds a call graph from the input.
         Extracts execution paths from the call graph. Then clusters the execution paths according to their similarity.
         Finally, clusters are renamed using the execution paths under them using different topic modelling techniques.
-    
+
      """
     S = []
     T = []
@@ -94,7 +94,7 @@ class ClusteringCallGraph:
         ''' this function removes redundant execution paths from list of execution paths.
             for example, execution_paths = [['A', 'B', 'C', 'D'], ['B', 'C', 'D'], ['E', 'F', 'G'], ['I', 'F', 'S'], ['A', 'B'], ['A','B', 'C']]
             this list as input will produce a list [['A', 'B', 'C', 'D'], ['B', 'C', 'D'], ['E', 'F', 'G'], ['I', 'F', 'S']]
-        
+
          '''
 
         self.execution_paths.sort(key=len, reverse=True)
@@ -105,7 +105,7 @@ class ClusteringCallGraph:
                 continue
             for f in self.execution_paths:
                 if e != f:
-                    
+
                     if self.check_ep_overlap_from_start(e, f):
                         redundant_ep.append(f)
         for r in redundant_ep:
@@ -160,17 +160,16 @@ class ClusteringCallGraph:
         """ Finding source and exit nodes from networkX graph """
         print('In degree')
         for s, v in self.G.in_degree():
-            
+
             if v == 0:
                 self.S.append(s)
-                
+
         print(len(self.S))
         print('Out degree')
         for t, v in self.G.out_degree():
-            
+
             if v == 0:
                 self.T.append(t)
-                
 
         print(len(self.T))
 
@@ -191,7 +190,7 @@ class ClusteringCallGraph:
         Matrix = [[0 for x in range(length)] for y in range(length)]
         for i in range(len(paths)):
             for j in range(len(paths)):
-                # Matrix[i][j] = self.jaccard_similarity(paths[i], paths[j])
+                # Matrix[i][j] = util.jaccard_similarity(paths[i], paths[j])
                 Matrix[i][j] = util.compare_execution_paths(paths[i], paths[j])
 
         return Matrix
@@ -221,7 +220,8 @@ class ClusteringCallGraph:
                                   self.pretty_print_leaf_node(
                                       self.execution_paths[child]),
                                   'tfidf_method': '', 'lda_word': '', 'lda_method': '', 'lsi_word': '',
-                                  'lsi_method': '', 'spm_method': '', 'text_summary': 'hello summary', 'files': [], 'files_count': 0})
+                                  'lsi_method': '', 'spm_method': '', 'text_summary': 'hello summary', 'files': [], 'files_count': 0,
+                                  'execution_path_count': 0, 'function_id_to_name_file': []})
                 continue
             execution_paths_of_a_cluster = nodes_with_leaf_nodes[child]
 
