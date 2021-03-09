@@ -1,16 +1,17 @@
 function get_cluster() {
-    Url = 'http://127.0.0.1:5000/get_cluster'
+    Url = 'http://127.0.0.1:5000/get_cluster';
     var subject_system = document.getElementById('subject_system_id').value;
 
 
     $.getJSON(Url, {
         subject_system: subject_system
     }, function (result) {
-        // alert(result);
+        
 
         setupDiagram(result);
-
-        console.log(result);
+        
+        setupSearchForFunction(result[0].function_id_to_name_file); // pass the root node to create datalist
+        
     })
     clearDiagram();
 
@@ -33,7 +34,9 @@ function setupDiagram(result) {
             spm_method: result[x].spm_method,
             text_summary: result[x].text_summary,
             files: result[x].files,
-            files_count: result[x].files_count
+            files_count: result[x].files_count,
+            execution_path_count: result[x].execution_path_count,
+            function_id_to_name_file: result[x].function_id_to_name_file
         });
 
     }
@@ -73,7 +76,7 @@ function showNodeDetails(part) {
     var clickable_text = '';
 
     for (index = 0; index < part.data.files.length; index++) {
-        clickable_text += '<a class="click_text" >' + part.data.files[index] + '</a>, ';
+        clickable_text +=  part.data.files[index] + ' , ';
     }
 
     document.getElementById('node_key').innerHTML = 'Node Key: ' + part.data.key;
@@ -81,8 +84,8 @@ function showNodeDetails(part) {
     document.getElementById('node_patterns').innerHTML = part.data.spm_method;
     document.getElementById('files').innerHTML = clickable_text;
     document.getElementById('number_of_files').innerHTML = part.data.files_count;
+    document.getElementById('number_of_execution_paths').innerHTML = part.data.execution_paths;
 
-    // jQuery('#node_details').modal('show');
 }
 
 
@@ -117,3 +120,15 @@ jQuery(document).ready(function() {
     
     });
 });  
+
+function setupSearchForFunction(function_id_to_name_file){
+    const function_list = document.getElementById('function_file');
+
+    for (var key in function_id_to_name_file) {
+        let option = document.createElement('option');
+        option.value = key;
+        option.innerHTML = function_id_to_name_file[key];
+        function_list.appendChild(option);
+    }
+
+}
