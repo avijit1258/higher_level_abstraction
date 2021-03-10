@@ -1,0 +1,142 @@
+1 ClusteringCallGraph
+2 DocumentNodes
+3 PlayingWithAST
+4 app
+5 config
+6 mine_repositories_with_comment_and_loc
+7 util
+8 ClusteringCallGraph\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:36)
+9 __del__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:59)
+10 bfs_with_parent\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:254)
+11 check_ep_overlap_from_start\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:116)
+12 clustering_using_scipy\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:198)
+13 distance_matrix\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:186)
+14 extract_function_name\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:242)
+15 extracting_execution_paths\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:176)
+16 extracting_source_and_exit_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:159)
+17 id_to_sentence\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:298)
+18 pretty_print_leaf_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:310)
+19 python_analysis\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:63)
+20 remove_redundant_ep\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:93)
+21 similarity\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:248)
+22 tgf_to_networkX\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/ClusteringCallGraph.py:125)
+23 DocumentNodes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:18)
+24 __init__\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:25)
+25 count_files_in_node\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:440)
+26 execution_path_to_sentence\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:420)
+27 function_id_to_file_name_of_execution_path\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:454)
+28 get_lemma\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:323)
+29 initalize_graph_related_data_structures\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:37)
+30 initalize_sheet\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:48)
+31 labeling_cluster\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:56)
+32 make_documents_for_a_cluster_tfidf_method\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:129)
+33 make_documents_for_a_cluster_tfidf_word\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:159)
+34 make_documents_for_a_cluster_tm_method\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:144)
+35 make_documents_for_a_cluster_tm_word\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:180)
+36 merge_words_as_sentence\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:198)
+37 mining_sequential_patterns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:356)
+38 mining_sequential_patterns_from_initial_execution_paths\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:399)
+39 prepare_text_for_lda\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:292)
+40 remove_similar_patterns\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:385)
+41 summarize_clusters_using_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:333)
+42 tf_idf_score_for_scipy_cluster\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:97)
+43 tokenize\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:306)
+44 topic_model_lda\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:227)
+45 topic_model_lsi\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:257)
+46 topic_model_output\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/DocumentNodes.py:217)
+47 PlayingWithAST\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/PlayingWithAST.py:6)
+48 file_to_function_docstring_pair\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/PlayingWithAST.py:11)
+49 get_all_method_docstring_pair_of_a_project\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/PlayingWithAST.py:56)
+50 get_all_py_files\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/PlayingWithAST.py:47)
+51 get_function_to_comment_ratio\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/PlayingWithAST.py:64)
+52 process_docstring\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/PlayingWithAST.py:31)
+53 create_csv\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/app.py:95)
+54 get_cluster\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/app.py:44)
+55 root\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/app.py:37)
+56 save_response\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/app.py:57)
+57 copy_repo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/mine_repositories_with_comment_and_loc.py:21)
+58 count_comment_loc_for_repo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/mine_repositories_with_comment_and_loc.py:34)
+59 count_total_loc\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/mine_repositories_with_comment_and_loc.py:12)
+60 read_csv_file_for_repos\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/mine_repositories_with_comment_and_loc.py:6)
+61 remove_repo\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/mine_repositories_with_comment_and_loc.py:28)
+62 compare_execution_paths\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/util.py:16)
+63 dfs_for_leaf_nodes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/util.py:54)
+64 find_leaf_nodes_for_nodes\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/util.py:46)
+65 jaccard_similarity\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/util.py:38)
+66 method_pairs\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/util.py:9)
+67 random_sample_execution_paths\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/util.py:33)
+68 test_strike_a_match\n(/home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/util.py:4)
+#
+1 24 U
+1 19 U
+1 7 U
+1 23 U
+1 5 U
+1 8 U
+8 3 U
+8 47 U
+19 22 U
+19 16 U
+19 13 U
+19 15 U
+19 3 U
+19 29 U
+19 67 U
+19 47 U
+19 17 U
+19 12 U
+20 11 U
+20 67 U
+22 14 U
+15 67 U
+13 62 U
+12 18 U
+12 67 U
+12 10 U
+12 64 U
+12 31 U
+24 30 U
+31 27 U
+31 26 U
+31 37 U
+31 42 U
+31 44 U
+31 45 U
+31 41 U
+31 25 U
+42 33 U
+42 36 U
+42 32 U
+33 28 U
+33 36 U
+35 36 U
+44 39 U
+44 34 U
+44 35 U
+44 24 U
+44 46 U
+45 39 U
+45 34 U
+45 35 U
+45 24 U
+45 46 U
+39 43 U
+39 28 U
+37 40 U
+48 52 U
+49 48 U
+49 50 U
+51 49 U
+6 58 U
+6 57 U
+6 60 U
+6 61 U
+58 59 U
+58 3 U
+58 47 U
+68 62 U
+62 66 U
+64 63 U
+63 63 U
+Cloning repo:  https://github.com/avijit1258/higher_level_abstraction
+pyan3 /home/avb307/msc_thesis_work/automate_the_painful_stuffs/higher_level_abstraction/tool/*.py --uses --no-defines --colored --grouped --annotated  -f higher_level_abstraction_03_09_2021.txt --uses --no-defines --tgf

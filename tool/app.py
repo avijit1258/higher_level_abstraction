@@ -5,6 +5,7 @@ from flask import request
 from flask import url_for
 from flask_cors import CORS
 import glob
+import config
 
 import xlsxwriter
 
@@ -19,7 +20,7 @@ import json
 app = Flask(__name__, static_url_path='/static')
 CORS(app)
 
-ROOT = '/Users/avijitbhattacharjee/github/higher_level_abstraction/tool/output/'
+ROOT = config.ROOT + '/output/'
 # subject_system = ['treerealTimeMay28.txt', 'treerealTimeSept7.txt', 'treedetectronSept7.txt']
 SUBJECT_SYSTEMS = glob.glob1(ROOT, 'TREE_DICT*')
 print(SUBJECT_SYSTEMS)
