@@ -1,5 +1,5 @@
 import random
-
+import re
 
 def test_strike_a_match():
     ep1 = ['58', '338', '342', '340'] #['F', 'R', 'A', 'N', 'C', 'E']
@@ -63,6 +63,17 @@ def dfs_for_leaf_nodes(node, nodes_to_leaf_nodes):
         leaves_in_right = dfs_for_leaf_nodes(node.right, nodes_to_leaf_nodes)
         nodes_to_leaf_nodes[node.id] = leaves_in_left + leaves_in_right
         return nodes_to_leaf_nodes[node.id]
+
+def parse_method_class_name_to_words(name):
+    ''' split class name, method name of both camel case and snake case identifiers '''
+    # if '-' is in a name, we assume it is snake case else camel case
+    words = []
+    if '_' in name:
+        words = name.split('_')
+    else:
+        words =  re.sub('([A-Z][a-z]+)', r' \1', re.sub('([A-Z]+)', r' \1', name)).split()
+
+    return [w for w in words if w != '']
 
 
 
