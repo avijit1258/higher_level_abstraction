@@ -14,6 +14,7 @@ from gensim.summarization.textcleaner import get_sentences
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
 
+import util
 
 class DocumentNodes:
 
@@ -167,7 +168,7 @@ class DocumentNodes:
             for e in self.execution_paths[c]:
 
                 words_in_function_name = [
-                    w for w in self.function_id_to_name[e].split("_") if w not in self.en_stop]
+                    w for w in util.parse_method_class_name_to_words(self.function_id_to_name[e]) if w not in self.en_stop]
                 words_in_function_name = [self.get_lemma(
                     w) for w in words_in_function_name]
                 str += self.merge_words_as_sentence(words_in_function_name)
@@ -186,9 +187,12 @@ class DocumentNodes:
         for c in clusters:
             str = ''
             for e in self.execution_paths[c]:
-
+                words_in_function_name = [
+                    w for w in util.parse_method_class_name_to_words(self.function_id_to_name[e]) if w not in self.en_stop]
+                words_in_function_name = [self.get_lemma(
+                    w) for w in words_in_function_name]
                 str += self.merge_words_as_sentence(
-                    self.function_id_to_name[e].split("_"))
+                    words_in_function_name)
                 str += ' '
 
             documents.append(str)
