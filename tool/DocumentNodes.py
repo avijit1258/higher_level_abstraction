@@ -34,6 +34,7 @@ class DocumentNodes:
         self.function_id_to_file_name = {}
         self.id_to_sentence = {}
         self.function_name_to_docstring = {}
+        self.initalize_sheet()
 
     def initalize_graph_related_data_structures(self, execution_paths, function_id_to_name, function_id_to_file_name,
                                                 id_to_sentence, function_name_to_docstring
@@ -364,14 +365,13 @@ class DocumentNodes:
                       for item in execution_paths_of_a_cluster]
 
         ps = PrefixSpan(preprocess)
+        ps.maxlen = 10
+        ps.minlen = 3
 
-        # ps.maxlen = 15
-        ps.minlen = 6
-
-        # top5 = ps.topk(10, closed=True)
-
-        top_patterns = ps.frequent(2)
-        top_patterns = self.remove_similar_patterns(top_patterns)
+        top_patterns = ps.topk(10)
+        top_patterns = [pattern for freq, pattern in top_patterns]
+        # top_patterns = ps.frequent(2)
+        # top_patterns = self.remove_similar_patterns(top_patterns)
 
         sentence = ' '
         for pattern in top_patterns:
