@@ -28,7 +28,7 @@ function init() {
         allowMove: false,
         allowCopy: false,
         allowDelete: false,
-        allowHorizontalScroll: false,
+        allowHorizontalScroll: true,
         layout:
           $(go.TreeLayout,
             {
