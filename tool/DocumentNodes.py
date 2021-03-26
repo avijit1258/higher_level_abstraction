@@ -351,7 +351,7 @@ class DocumentNodes:
 
         try:
             cluster_summary = summarize(
-                text_for_summary, ratio=0.35, split=True)
+                text_for_summary, word_count= 120, split=True)
             cluster_summary = ' '.join(list(set(cluster_summary)))
 
             return cluster_summary
@@ -368,10 +368,10 @@ class DocumentNodes:
         ps.maxlen = 10
         ps.minlen = 3
 
-        top_patterns = ps.topk(10)
-        top_patterns = [pattern for freq, pattern in top_patterns]
+        top_patterns = ps.topk(100)
+        # top_patterns = [pattern for freq, pattern in top_patterns]
         # top_patterns = ps.frequent(2)
-        # top_patterns = self.remove_similar_patterns(top_patterns)
+        top_patterns = self.remove_similar_patterns(top_patterns)
 
         sentence = ' '
         for pattern in top_patterns:
