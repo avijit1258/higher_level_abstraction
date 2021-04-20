@@ -1,0 +1,1090 @@
+1 app
+2 app.api_1_0
+3 app.api_1_0.authentication
+4 app.api_1_0.comments
+5 app.api_1_0.decorators
+6 app.api_1_0.errors
+7 app.api_1_0.posts
+8 app.api_1_0.users
+9 app.auth
+10 app.auth.forms
+11 app.auth.views
+12 app.decorators
+13 app.email
+14 app.exceptions
+15 app.jobs
+16 app.main
+17 app.main.ajax
+18 app.main.errors
+19 app.main.forms
+20 app.main.jobsview
+21 app.main.oldViews
+22 app.main.views
+23 app.models
+24 app.provmod
+25 app.provmod.Operators
+26 app.provmod.ProvModel
+27 app.provmod.configuration
+28 app.util
+29 create_app\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/__init__.py:30)
+30 auth_error\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/authentication.py:27)
+31 before_request\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/authentication.py:32)
+32 get_token\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/authentication.py:40)
+33 verify_password\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/authentication.py:10)
+34 get_comment\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/comments.py:29)
+35 get_comments\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/comments.py:8)
+36 get_post_comments\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/comments.py:35)
+37 new_post_comment\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/comments.py:57)
+38 permission_required\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/decorators.py:6)
+39 decorator\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/decorators.py:7)
+40 decorated_function\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/decorators.py:8)
+41 bad_request\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/errors.py:6)
+42 forbidden\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/errors.py:18)
+43 unauthorized\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/errors.py:12)
+44 validation_error\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/errors.py:24)
+45 edit_post\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/posts.py:47)
+46 get_post\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/posts.py:30)
+47 get_posts\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/posts.py:9)
+48 new_post\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/posts.py:36)
+49 get_user\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/users.py:6)
+50 get_user_followed_posts\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/users.py:34)
+51 get_user_posts\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/api_1_0/users.py:12)
+52 ChangeEmailForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:64)
+53 ChangePasswordForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:37)
+54 LoginForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:8)
+55 PasswordResetForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:51)
+56 PasswordResetRequestForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:45)
+57 RegistrationForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:16)
+58 validate_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:70)
+59 validate_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:59)
+60 validate_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:28)
+61 validate_username\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/forms.py:32)
+62 allocate_storage\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:72)
+63 before_request\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:17)
+64 change_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:200)
+65 change_email_request\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:181)
+66 change_password\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:130)
+67 confirm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:108)
+68 login\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:52)
+69 logout\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:64)
+70 password_reset\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:164)
+71 password_reset_request\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:145)
+72 register\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:87)
+73 resend_confirmation\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:120)
+74 unconfirmed\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/auth/views.py:27)
+75 admin_required\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/decorators.py:18)
+76 permission_required\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/decorators.py:7)
+77 decorator\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/decorators.py:8)
+78 decorated_function\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/decorators.py:9)
+79 send_async_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/email.py:7)
+80 send_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/email.py:12)
+81 ValidationError\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/exceptions.py:1)
+82 ContextTask\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:23)
+83 RequestContextTask\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:52)
+84 generate_graph\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:204)
+85 run_script\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:133)
+86 stop_script\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:176)
+87 sync_task_status_with_db\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:182)
+88 sync_task_status_with_db_for_user\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:198)
+89 __call__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:27)
+90 on_failure\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:25)
+91 __call__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:68)
+92 _include_global\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:126)
+93 _include_request_context\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:107)
+94 apply\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:97)
+95 apply_async\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:92)
+96 retry\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/jobs.py:102)
+97 inject_permissions\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/__init__.py:9)
+98 WorkflowHandler\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:14)
+99 add_desc\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:92)
+100 add_input\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:66)
+101 add_operation\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:101)
+102 add_output\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:79)
+103 add_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:31)
+104 add_workitem\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:57)
+105 delete_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:39)
+106 delete_workitem\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:49)
+107 run_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:15)
+108 set_editmode\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:27)
+109 stop_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:21)
+110 task_status\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:128)
+111 update_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:112)
+112 update_workitem\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/ajax.py:120)
+113 forbidden\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/errors.py:5)
+114 internal_server_error\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/errors.py:25)
+115 page_not_found\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/errors.py:15)
+116 unprocessable_failure\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/errors.py:34)
+117 CommentForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:58)
+118 EditProfileAdminForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:22)
+119 EditProfileForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:15)
+120 NameForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:10)
+121 PostForm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:53)
+122 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:36)
+123 validate_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:42)
+124 validate_username\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/forms.py:47)
+125 LibraryHelper\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:30)
+126 build_graph\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:87)
+127 functions\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:113)
+128 get_functions\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:381)
+129 get_task_full_status\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:334)
+130 get_task_status\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:330)
+131 get_user_status\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:319)
+132 graphs\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:307)
+133 install\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:110)
+134 make_fn\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:93)
+135 run_biowl\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:73)
+136 runnables\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:338)
+137 unique_filename\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:101)
+138 update_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:58)
+139 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:33)
+140 refresh\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:43)
+141 reload\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/jobsview.py:38)
+142 AlchemyEncoder\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:294)
+143 Samples\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:959)
+144 about\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:284)
+145 addDatasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:816)
+146 addGroups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:939)
+147 addSchema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:953)
+148 add_folder\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:622)
+149 after_request\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:35)
+150 contact\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:289)
+151 create_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:830)
+152 create_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:874)
+153 dataset\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1135)
+154 datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:780)
+155 datasources\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:679)
+156 delete_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:765)
+157 delete_filter\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:382)
+158 delete_folder\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:631)
+159 delete_groups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:895)
+160 dowload_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:813)
+161 download_data\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:557)
+162 download_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:904)
+163 edit\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:150)
+164 edit_profile\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:77)
+165 edit_profile_admin\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:94)
+166 filters\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:387)
+167 follow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:167)
+168 followed_by\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:216)
+169 followers\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:199)
+170 getCurrentUser\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:31)
+171 get_filecontent\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:569)
+172 groups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:910)
+173 index\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:46)
+174 leave_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:900)
+175 loadSchema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:810)
+176 load_data_sources\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:644)
+177 load_dataset\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1131)
+178 load_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:757)
+179 load_filter_history\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:347)
+180 load_filter_tip\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:365)
+181 load_filters\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:356)
+182 load_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:801)
+183 load_groups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:884)
+184 load_metadata\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:419)
+185 load_metadataproperties\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:409)
+186 load_parent_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:928)
+187 load_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:946)
+188 load_script_from_filter\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:369)
+189 metadata\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:545)
+190 moderate\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:249)
+191 moderate_disable\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:273)
+192 moderate_enable\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:262)
+193 parseSchema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:858)
+194 post\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:121)
+195 rename_folder\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:637)
+196 samples\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1113)
+197 save_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:751)
+198 save_filters\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:376)
+199 save_metadata\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:503)
+200 search_and_filter\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:333)
+201 server_shutdown\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:54)
+202 show_all\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:233)
+203 show_followed\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:241)
+204 sizeof_fmt\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:324)
+205 translate\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:312)
+206 unfollow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:183)
+207 update_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:770)
+208 upload_data\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:578)
+209 upload_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:703)
+210 user\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:65)
+211 view_dataset\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:776)
+212 workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:144)
+213 default\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:295)
+214 add_sample\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1080)
+215 add_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1072)
+216 create_workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1065)
+217 get_samples_as_list\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1021)
+218 get_workflows_info\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1012)
+219 jsonify_script\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1060)
+220 load_samples\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:990)
+221 load_samples_recursive\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:978)
+222 load_samples_recursive_for_user\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:960)
+223 make_fn\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1041)
+224 unique_filename\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/oldViews.py:1050)
+225 addDatasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:136)
+226 addGroups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:260)
+227 addSchema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:274)
+228 create_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:151)
+229 create_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:195)
+230 datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:94)
+231 delete_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:79)
+232 delete_groups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:216)
+233 dowload_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:125)
+234 download_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:225)
+235 getCurrentUser\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:20)
+236 groups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:231)
+237 leave_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:221)
+238 loadSchema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:122)
+239 load_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:71)
+240 load_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:112)
+241 load_groups\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:205)
+242 load_parent_group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:250)
+243 load_schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:267)
+244 parseSchema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:179)
+245 update_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:84)
+246 upload_datasets\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:24)
+247 view_dataset\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/main/views.py:90)
+248 AccessRights\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:413)
+249 AccessType\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:454)
+250 AnonymousUser\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:305)
+251 Comment\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:374)
+252 Data\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:639)
+253 DataAccessError\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1351)
+254 DataAnnotation\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1294)
+255 DataMimeType\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1603)
+256 DataPermission\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1266)
+257 DataProperty\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1319)
+258 DataSource\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1356)
+259 DataSourceAllocation\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1402)
+260 DataType\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:623)
+261 DataVisualizer\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1547)
+262 Dataset\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1197)
+263 Filter\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:901)
+264 Follow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:83)
+265 Group\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1024)
+266 GroupCategory\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1003)
+267 GroupMember\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1091)
+268 LogType\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:666)
+269 MimeType\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1576)
+270 Param\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:560)
+271 Permission\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:22)
+272 Post\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:318)
+273 Role\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:45)
+274 Runnable\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:783)
+275 Schema\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1149)
+276 SchemaItem\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1172)
+277 SearchHistory\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:957)
+278 Service\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:567)
+279 ServiceAccess\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:606)
+280 Status\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:657)
+281 Task\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:671)
+282 TaskLog\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:767)
+283 TaskStatus\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:646)
+284 User\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:91)
+285 Visualizer\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1520)
+286 Workflow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:459)
+287 WorkflowAccess\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:616)
+288 load_user\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:314)
+289 hasRight\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:420)
+290 readRequested\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:430)
+291 requested\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:426)
+292 rights_to_string\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:438)
+293 writeRequested\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:434)
+294 can\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:306)
+295 is_administrator\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:309)
+296 from_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:404)
+297 on_changed_body\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:384)
+298 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:392)
+299 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1352)
+300 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1300)
+301 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1613)
+302 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1273)
+303 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1326)
+304 add_key_value\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1347)
+305 __repr__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1399)
+306 insert_datasources\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1369)
+307 update_localFS\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1388)
+308 access_rights_to_string\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1516)
+309 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1423)
+310 check_access_rights\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1511)
+311 get\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1451)
+312 get_access_rights\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1490)
+313 get_by_url\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1458)
+314 has_access_rights\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1468)
+315 has_read_access\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1417)
+316 has_right\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1463)
+317 has_write_access\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1420)
+318 update_url\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1442)
+319 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1557)
+320 __repr__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1263)
+321 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1211)
+322 remove\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1228)
+323 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1248)
+324 update\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1237)
+325 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:909)
+326 name_from_value\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:933)
+327 remove\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:924)
+328 to_json_info\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:941)
+329 to_json_tooltip\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:949)
+330 __repr__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1088)
+331 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1039)
+332 remove\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1058)
+333 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1067)
+334 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1009)
+335 __repr__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1146)
+336 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1103)
+337 remove\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1118)
+338 removeByGroup\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1127)
+339 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1136)
+340 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1584)
+341 from_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:365)
+342 generate_fake\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:327)
+343 on_changed_body\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:342)
+344 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:351)
+345 __repr__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:80)
+346 insert_roles\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:53)
+347 completed\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:826)
+348 create\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:881)
+349 get_user\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:897)
+350 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:829)
+351 to_json_info\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:873)
+352 to_json_log\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:857)
+353 to_json_tooltip\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:843)
+354 update\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:818)
+355 updateTime\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:801)
+356 update_status\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:809)
+357 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1157)
+358 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1181)
+359 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:964)
+360 name_from_value\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:979)
+361 to_json_info\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:987)
+362 to_json_tooltip\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:995)
+363 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:586)
+364 to_json_info\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:597)
+365 hasRight\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:613)
+366 add_log\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:741)
+367 create_task\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:685)
+368 failed\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:729)
+369 start\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:707)
+370 succeeded\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:717)
+371 to_json_log\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:751)
+372 update\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:700)
+373 updateTime\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:775)
+374 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:651)
+375 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:152)
+376 __repr__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:302)
+377 add_self_follows\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:144)
+378 can\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:230)
+379 change_email\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:211)
+380 confirm\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:179)
+381 follow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:252)
+382 followed_posts\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:270)
+383 generate_auth_token\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:288)
+384 generate_confirmation_token\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:175)
+385 generate_email_change_token\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:207)
+386 generate_fake\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:121)
+387 generate_reset_token\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:191)
+388 gravatar\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:242)
+389 is_administrator\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:235)
+390 is_followed_by\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:266)
+391 is_following\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:262)
+392 password\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:168)
+393 ping\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:238)
+394 reset_password\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:195)
+395 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:275)
+396 unfollow\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:257)
+397 verify_auth_token\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:293)
+398 verify_password\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:172)
+399 add\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:1528)
+400 add_access\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:478)
+401 create\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:489)
+402 from_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:551)
+403 to_json\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:521)
+404 to_json_info\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:542)
+405 to_json_tooltip\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:531)
+406 update_script\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/models.py:512)
+407 Flatten\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/Operators.py:1)
+408 Data\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:34)
+409 Document\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:95)
+410 File\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:66)
+411 Module\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:126)
+412 Object\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:41)
+413 User\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:187)
+414 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:36)
+415 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:97)
+416 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:68)
+417 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:144)
+418 body\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:138)
+419 logEnd\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:133)
+420 logStart\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:128)
+421 run\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:169)
+422 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:43)
+423 __init__\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/ProvModel.py:189)
+424 logger_debug\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/configuration.py:62)
+425 logger_error\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/configuration.py:84)
+426 logger_fatal\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/configuration.py:96)
+427 logger_info\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/configuration.py:31)
+428 logger_info_end\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/configuration.py:51)
+429 logger_info_start\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/configuration.py:41)
+430 logger_warn\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/provmod/configuration.py:73)
+431 Utility\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:9)
+432 add_meta_data\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:147)
+433 copyfile\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:121)
+434 create_file_system\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:43)
+435 datasource_by_prefix\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:73)
+436 datasource_by_prefix_or_default\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:52)
+437 filesystem_by_prefix\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:99)
+438 filesystem_by_prefix_or_default\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:111)
+439 filesystem_by_prefix_or_none\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:105)
+440 filesystem_by_typename\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:116)
+441 filesystem_type_by_prefix\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:93)
+442 filesystem_type_by_prefix_or_default\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:88)
+443 get_fullpath\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:28)
+444 get_normalized_path\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:137)
+445 get_quota_path\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:35)
+446 get_rootdir\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:17)
+447 strip_root\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:142)
+448 value_or_none\n(/home/avb307/msc_thesis_work/projects_for_analysis/scidatamanager/app/util.py:10)
+#
+12 271 U
+77 78 U
+76 77 U
+75 76 U
+75 271 U
+23 250 U
+23 343 U
+23 297 U
+23 81 U
+346 271 U
+386 375 U
+377 381 U
+377 375 U
+377 391 U
+375 264 U
+375 273 U
+379 375 U
+378 273 U
+378 271 U
+389 378 U
+389 271 U
+381 391 U
+381 264 U
+382 264 U
+382 272 U
+397 375 U
+288 284 U
+288 375 U
+342 284 U
+342 375 U
+341 81 U
+296 81 U
+400 287 U
+400 248 U
+401 284 U
+401 287 U
+401 249 U
+401 375 U
+405 249 U
+402 81 U
+365 289 U
+367 280 U
+367 268 U
+367 282 U
+369 280 U
+369 366 U
+369 268 U
+370 280 U
+370 366 U
+370 268 U
+368 366 U
+368 260 U
+368 280 U
+368 268 U
+366 268 U
+366 282 U
+371 280 U
+371 260 U
+282 268 U
+274 280 U
+348 280 U
+349 286 U
+349 284 U
+349 375 U
+329 326 U
+361 360 U
+362 360 U
+265 266 U
+333 284 U
+333 375 U
+333 266 U
+267 273 U
+267 284 U
+267 265 U
+262 267 U
+262 275 U
+262 265 U
+323 267 U
+323 284 U
+323 375 U
+323 265 U
+304 303 U
+304 260 U
+315 316 U
+315 248 U
+317 248 U
+317 316 U
+309 302 U
+311 256 U
+316 289 U
+316 256 U
+314 248 U
+314 258 U
+314 289 U
+314 256 U
+312 248 U
+312 258 U
+312 256 U
+310 253 U
+310 299 U
+310 314 U
+308 312 U
+308 292 U
+261 259 U
+261 285 U
+255 269 U
+255 259 U
+28 274 U
+28 260 U
+28 257 U
+28 281 U
+28 248 U
+28 258 U
+28 259 U
+446 258 U
+443 446 U
+436 258 U
+435 258 U
+442 435 U
+441 435 U
+437 434 U
+437 435 U
+439 435 U
+439 434 U
+438 435 U
+438 434 U
+438 440 U
+440 258 U
+440 434 U
+433 442 U
+444 438 U
+447 438 U
+432 274 U
+432 309 U
+432 260 U
+432 311 U
+432 303 U
+432 281 U
+432 248 U
+432 370 U
+432 436 U
+80 79 U
+15 83 U
+15 274 U
+15 286 U
+15 280 U
+89 29 U
+95 93 U
+95 92 U
+94 93 U
+94 92 U
+96 93 U
+96 92 U
+85 286 U
+85 280 U
+85 274 U
+85 356 U
+85 354 U
+85 352 U
+88 286 U
+88 87 U
+88 347 U
+88 274 U
+84 286 U
+1 29 U
+17 284 U
+17 286 U
+17 431 U
+17 271 U
+17 260 U
+17 252 U
+17 258 U
+17 273 U
+107 448 U
+109 448 U
+103 286 U
+105 448 U
+105 286 U
+106 448 U
+104 448 U
+104 286 U
+100 260 U
+100 252 U
+100 448 U
+102 260 U
+102 252 U
+102 448 U
+99 448 U
+101 448 U
+111 448 U
+111 286 U
+112 448 U
+110 448 U
+110 286 U
+21 272 U
+21 261 U
+21 251 U
+21 269 U
+21 277 U
+21 255 U
+21 248 U
+21 266 U
+21 249 U
+21 265 U
+21 75 U
+21 267 U
+21 284 U
+21 286 U
+21 275 U
+21 276 U
+21 119 U
+21 262 U
+21 118 U
+21 121 U
+21 117 U
+21 287 U
+21 431 U
+21 254 U
+21 257 U
+21 258 U
+21 259 U
+21 285 U
+21 76 U
+21 263 U
+21 271 U
+21 273 U
+170 284 U
+170 375 U
+210 284 U
+210 375 U
+164 119 U
+165 284 U
+165 122 U
+165 273 U
+165 118 U
+165 375 U
+194 272 U
+194 251 U
+194 117 U
+212 286 U
+163 272 U
+163 271 U
+163 121 U
+167 284 U
+167 375 U
+206 284 U
+206 375 U
+169 284 U
+169 375 U
+168 284 U
+168 375 U
+190 251 U
+192 251 U
+191 251 U
+205 448 U
+205 286 U
+205 142 U
+200 438 U
+200 359 U
+179 277 U
+179 361 U
+181 328 U
+181 263 U
+180 263 U
+188 263 U
+198 325 U
+157 327 U
+166 180 U
+166 198 U
+166 157 U
+166 179 U
+166 181 U
+166 188 U
+166 200 U
+184 308 U
+184 173 U
+184 189 U
+184 248 U
+184 284 U
+184 375 U
+184 434 U
+184 204 U
+184 436 U
+184 389 U
+184 309 U
+184 310 U
+199 399 U
+199 340 U
+199 438 U
+199 300 U
+199 303 U
+199 313 U
+199 248 U
+199 310 U
+199 436 U
+189 184 U
+189 199 U
+189 185 U
+161 438 U
+171 438 U
+208 399 U
+208 340 U
+208 309 U
+208 438 U
+208 300 U
+208 248 U
+208 436 U
+148 438 U
+158 438 U
+195 438 U
+176 258 U
+176 434 U
+155 161 U
+155 176 U
+155 171 U
+155 438 U
+155 208 U
+155 148 U
+155 158 U
+155 195 U
+209 267 U
+209 436 U
+209 399 U
+209 340 U
+209 309 U
+209 438 U
+209 300 U
+209 248 U
+209 321 U
+197 321 U
+178 323 U
+178 262 U
+156 322 U
+207 324 U
+154 284 U
+154 209 U
+154 375 U
+154 156 U
+154 211 U
+154 178 U
+154 207 U
+182 267 U
+182 265 U
+145 182 U
+145 187 U
+151 331 U
+151 266 U
+151 273 U
+193 276 U
+193 193 U
+193 358 U
+152 267 U
+152 193 U
+152 357 U
+183 267 U
+183 333 U
+183 265 U
+159 338 U
+159 332 U
+174 337 U
+162 276 U
+172 162 U
+172 159 U
+172 151 U
+172 152 U
+172 174 U
+172 183 U
+186 267 U
+186 265 U
+146 186 U
+187 275 U
+147 187 U
+222 221 U
+221 220 U
+221 221 U
+220 196 U
+217 286 U
+217 196 U
+217 249 U
+217 218 U
+224 223 U
+216 401 U
+215 216 U
+214 224 U
+196 286 U
+196 403 U
+196 215 U
+196 405 U
+196 217 U
+177 262 U
+153 177 U
+22 267 U
+22 284 U
+22 285 U
+22 261 U
+22 269 U
+22 259 U
+22 255 U
+22 431 U
+22 254 U
+22 275 U
+22 248 U
+22 266 U
+22 276 U
+22 273 U
+22 262 U
+22 265 U
+235 284 U
+235 375 U
+246 267 U
+246 399 U
+246 340 U
+246 309 U
+246 438 U
+246 300 U
+246 248 U
+246 436 U
+246 321 U
+239 323 U
+239 262 U
+231 322 U
+245 324 U
+230 231 U
+230 235 U
+230 246 U
+230 245 U
+230 239 U
+230 247 U
+240 267 U
+240 265 U
+233 275 U
+225 235 U
+225 240 U
+225 233 U
+228 331 U
+228 266 U
+228 273 U
+244 244 U
+244 276 U
+244 358 U
+229 267 U
+229 244 U
+229 357 U
+241 267 U
+241 333 U
+241 265 U
+232 338 U
+232 332 U
+237 337 U
+234 276 U
+236 235 U
+236 237 U
+236 228 U
+236 241 U
+236 232 U
+236 234 U
+236 229 U
+242 267 U
+242 265 U
+226 235 U
+226 242 U
+243 275 U
+227 243 U
+20 274 U
+20 286 U
+20 88 U
+20 125 U
+20 84 U
+20 85 U
+20 139 U
+20 86 U
+20 87 U
+20 249 U
+139 141 U
+141 139 U
+141 140 U
+140 139 U
+138 286 U
+138 406 U
+138 249 U
+135 348 U
+135 286 U
+135 85 U
+126 84 U
+137 134 U
+127 138 U
+127 125 U
+127 141 U
+127 140 U
+127 135 U
+127 137 U
+127 133 U
+127 128 U
+132 126 U
+131 274 U
+131 286 U
+131 351 U
+130 352 U
+130 274 U
+129 353 U
+129 274 U
+136 274 U
+136 88 U
+136 86 U
+136 131 U
+136 130 U
+136 347 U
+136 135 U
+136 129 U
+136 87 U
+128 125 U
+16 271 U
+97 271 U
+19 284 U
+19 273 U
+122 273 U
+123 284 U
+123 375 U
+124 284 U
+124 375 U
+11 284 U
+11 80 U
+11 57 U
+11 431 U
+11 54 U
+11 53 U
+11 56 U
+11 55 U
+11 52 U
+11 248 U
+11 258 U
+11 259 U
+68 284 U
+68 375 U
+68 398 U
+62 437 U
+62 309 U
+62 248 U
+62 258 U
+72 62 U
+72 284 U
+72 57 U
+72 375 U
+73 80 U
+66 53 U
+71 284 U
+71 80 U
+71 56 U
+71 387 U
+71 375 U
+70 284 U
+70 55 U
+70 394 U
+70 375 U
+65 80 U
+65 52 U
+10 284 U
+60 284 U
+60 375 U
+61 284 U
+61 375 U
+59 284 U
+59 375 U
+58 284 U
+58 375 U
+26 427 U
+26 430 U
+26 429 U
+26 428 U
+26 424 U
+26 425 U
+26 426 U
+26 27 U
+412 408 U
+422 423 U
+422 413 U
+410 408 U
+416 423 U
+416 413 U
+409 408 U
+415 423 U
+415 413 U
+417 412 U
+417 423 U
+417 410 U
+417 409 U
+417 413 U
+421 419 U
+421 420 U
+421 418 U
+5 42 U
+39 40 U
+40 42 U
+38 39 U
+3 250 U
+3 284 U
+3 42 U
+3 43 U
+33 397 U
+33 250 U
+33 284 U
+33 375 U
+33 398 U
+30 43 U
+31 42 U
+32 43 U
+8 284 U
+8 272 U
+49 284 U
+49 375 U
+49 395 U
+51 284 U
+51 375 U
+50 284 U
+50 375 U
+7 272 U
+7 271 U
+7 42 U
+7 38 U
+47 272 U
+47 344 U
+46 344 U
+46 272 U
+48 341 U
+45 272 U
+45 344 U
+45 271 U
+45 42 U
+4 272 U
+4 251 U
+4 271 U
+4 38 U
+35 251 U
+35 298 U
+34 251 U
+34 298 U
+36 272 U
+37 272 U
+37 296 U
+6 81 U
+44 41 U
