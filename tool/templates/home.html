@@ -53,73 +53,76 @@
     </div>
 
 
-    <div class="container-md">
+    <div class="container">
 
-      <div class="form-group">
-        <label> Select Subject System </label> <br>
-        <select name="subject_system" id="subject_system_id" class="form-control">
-          {% for ss in subject_systems %}
-          <option value="{{ss}}">{{ss}}</option>
-          {% endfor %}
-        </select>
-      </div>
-      <div class="form-group">
-        <label> Select technique to lable nodes</label> <br>
+      <div class="row"> 
+        <div class="col">
+          <label> Select Subject System </label> <br>
+          <select name="subject_system" id="subject_system_id" class="form-control">
+            {% for ss in subject_systems %}
+            <option value="{{ss}}">{{ss}}</option>
+            {% endfor %}
+          </select>
+        </div>
 
-        <select class="form-control" name="technique_choice" id="technique_choice_id">
-          {% for tc in technique_choices %}
-          <option value="{{tc}}">{{tc}}</option>
-          {% endfor %}
-        </select>
-      </div>
-      <div class="form-group">
+
+        <div class="col">
+          <label> Select technique to lable nodes</label> <br>
+
+          <select class="form-control" name="technique_choice" id="technique_choice_id">
+            {% for tc in technique_choices %}
+            <option value="{{tc}}">{{tc}}</option>
+            {% endfor %}
+          </select>
+        </div>
+    </div>
+  
+    <div class="row">
+    
+      <div class="col-8">
         <label> Highlight nodes with similar function</label> <br>
         <select id= 'function_file' name = 'select_elem' style="width: 75%" class="form-control"> </select>
-        <button type="submit" id="search_button"> Search </button>
+        <button type="submit" class="btn btn-info" id="search_button"> Search </button>
       </div>
+      
+
     </div>
 
-
-
-
-    <div class="container">
-      <h3 style="text-align: center;"> Full diagram</h3>
-    </div>
-
-    <div class="grid-container">
-
-
-      <div class="container" id="fullDiagram" style="height:550px;width:80%;border:1px solid black;margin:2px">
-
+    <div class="row">
+      <div class="mx-auto" >
+        <button onclick="get_cluster()" type="submit" class="btn btn-info"> Load Cluster Tree </button>
       </div>
-      <div>
-        <div class="card" style="width:45 rem;">
+    </div>
+      
+      <div class="row"> 
+        <div class="col" id="fullDiagram" style="height:550px;width:80%;border:1px solid black;margin:2px"></div>
 
-          <div class="card-body">
-            <h5 class="card-title" id="node_key">Node Key</h5>
-            <em class="node_details_label"> Number of Files </em>
-            <div id="number_of_files"> </div>
-            <em class="node_details_label"> Number of Execution paths </em>
-            <div id="number_of_execution_paths"> </div>
-            <em class="node_details_label"> Files</em>
-            <div id="files" class="vertical-scrollbar"> </div>
-            <em class="node_details_label"> Node summary</em>
-            <div id="node_summary" class="vertical-scrollbar"> </div>
-            <em class="node_details_label"> Execution patterns </em>
-            <div class="vertical-scrollbar" id="node_patterns"> </div>
+        <div class="col-4">
+          <div class="card" >
+
+            <div class="card-body">
+              <b class="card-title" id="node_key">Node Key</b>
+              <br>
+              <b class="node_details_label"> Number of Files </b>
+              <div id="number_of_files"> </div>
+              <b class="node_details_label"> Number of Execution paths </b>
+              <div id="number_of_execution_paths"> </div>
+              <b class="node_details_label"> Files</b>
+              <div id="files" class="vertical-scrollbar"> </div>
+              <b class="node_details_label"> Node summary</b>
+              <div id="node_summary" class="vertical-scrollbar"> </div>
+              <b class="node_details_label"> Execution patterns </b>
+              <div class="vertical-scrollbar" id="node_patterns"> </div>
+            </div>
           </div>
+
         </div>
 
       </div>
 
 
-
-
     </div>
 
-    <div class="container" style="text-align: center;">
-      <button onclick="get_cluster()" type="submit"> GET Cluster </button>
-    </div>
 
 
   </div>
