@@ -1,5 +1,6 @@
+// var select_elem;
 function get_cluster() {
-    Url = 'http://127.0.0.1:5000/get_cluster';
+    Url = '/get_cluster';
     var subject_system = document.getElementById('subject_system_id').value;
 
 
@@ -7,9 +8,7 @@ function get_cluster() {
         subject_system: subject_system
     }, function (result) {
         
-
         setupDiagram(result);
-        
         setupSearchForFunction(result[0].function_id_to_name_file); // pass the root node to create datalist
         
     })
@@ -113,6 +112,7 @@ function highlight_node(function_id) {
 //     change_node_color();
 // });
 
+
 jQuery(document).ready(function() {
     jQuery("#search_button").click(function () {
       var function_id = document.getElementById('function_file').value;
@@ -134,13 +134,17 @@ jQuery(document).ready(function() {
 });  
 
 function setupSearchForFunction(function_id_to_name_file){
-    const function_list = document.getElementById('function_file');
-
+    
+    var data = []
     for (var key in function_id_to_name_file) {
-        let option = document.createElement('option');
-        option.value = key;
-        option.innerHTML = function_id_to_name_file[key];
-        function_list.appendChild(option);
+        data.push({"id": key, "text": function_id_to_name_file[key]})
     }
+    
+    jQuery('#function_file').select2({
+        width: 'resolve',
+        placholder: 'Start typing...',
+        data:  data
+    });
+    
 
 }
