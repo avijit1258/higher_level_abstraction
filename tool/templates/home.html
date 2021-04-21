@@ -5,12 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="{{ url_for('static',filename = 'js/go-debug.js')}}"></script>
+
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-  </script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -27,24 +31,19 @@
 
 <body onload="init()">
 
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://ise.usask.ca/avijit/research/">How it works</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://ise.usask.ca">About us</a>
+    </li>
+    
+  </ul>
 
-  <nav class="navbar  navbar-dark">
-    <div class="container-fluid">
-
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">HLA</a>
-      </div>
-
-      <ul class="nav navbar-nav">
-        <li class="nav-item active"> <a href="#">Home</a> </li>
-        <li class="nav-item"> <a href="https://ise.usask.ca/avijit/research/">How it works</a> </li>
-        <li class="nav-item"> <a href="https://ise.usask.ca">About us</a> </li>
-
-      </ul>
-
-    </div>
-
-  </nav>
 
 
   <div class="container" id="sample">
@@ -54,28 +53,28 @@
     </div>
 
 
-    <div class="d-sm-flex flex-row">
+    <div class="container-md">
 
-      <div class="p-2">
+      <div class="form-group">
         <label> Select Subject System </label> <br>
-        <select name="subject_system" id="subject_system_id">
+        <select name="subject_system" id="subject_system_id" class="form-control">
           {% for ss in subject_systems %}
           <option value="{{ss}}">{{ss}}</option>
           {% endfor %}
         </select>
       </div>
-      <div class="p-2">
+      <div class="form-group">
         <label> Select technique to lable nodes</label> <br>
 
-        <select name="technique_choice" id="technique_choice_id">
+        <select class="form-control" name="technique_choice" id="technique_choice_id">
           {% for tc in technique_choices %}
           <option value="{{tc}}">{{tc}}</option>
           {% endfor %}
         </select>
       </div>
-      <div class="p-2">
+      <div class="form-group">
         <label> Highlight nodes with similar function</label> <br>
-        <select id= 'function_file' name = 'select_elem' style="width: 75%"> </select>
+        <select id= 'function_file' name = 'select_elem' style="width: 75%" class="form-control"> </select>
         <button type="submit" id="search_button"> Search </button>
       </div>
     </div>
@@ -231,7 +230,7 @@
 
 
   </footer>
-
+  
 
 </body>
 
