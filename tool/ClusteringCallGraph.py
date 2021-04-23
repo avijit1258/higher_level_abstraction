@@ -20,6 +20,8 @@ import multiprocessing
 from PlayingWithAST import *
 
 from DocumentNodes import DocumentNodes
+from ClusteringExecutionPaths import ClusteringExecutionPath
+
 import config
 import util
 
@@ -87,8 +89,21 @@ class ClusteringCallGraph:
 
         document_nodes.initalize_graph_related_data_structures(self.execution_paths, self.function_id_to_name,
                                                                self.function_id_to_file_name, self.id_to_sentence, self.function_name_to_docstring)
+        
+        return self.flat_cluster_and_label_nodes(mat)
+        # return self.clustering_using_scipy(mat)
 
-        return self.clustering_using_scipy(mat)
+    def flat_cluster_and_label_nodes(self, mat):
+        cep = ClusteringExecutionPath()
+        tree = cep.label_flat_clusters(document_nodes, mat)
+
+        print(tree, file=open(OUTPUT_DIRECTORY +
+                                   'TREE_DICT_' + self.subject_system, 'w'))
+
+        return tree
+        
+
+
 
     def remove_redundant_ep(self):
         ''' this function removes redundant execution paths from list of execution paths.
@@ -236,6 +251,7 @@ class ClusteringCallGraph:
 
         print(self.tree, file=open(OUTPUT_DIRECTORY +
                                    'TREE_DICT_' + self.subject_system, 'w'))
+
 
         return self.tree
 
