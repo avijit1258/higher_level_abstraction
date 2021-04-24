@@ -165,9 +165,9 @@ class ClusteringCallGraph:
                 self.function_id_to_file_name[ln[0]] = line.split(
                     '/')[-1].split(':')[0]
 
-        nx.draw(self.G, with_labels=True)
-        plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
-        plt.show()
+        # nx.draw(self.G, with_labels=True)
+        # plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
+        # plt.show()
 
         return
 
