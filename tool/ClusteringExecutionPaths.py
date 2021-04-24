@@ -35,7 +35,7 @@ class ClusteringExecutionPath:
 
     def label_flat_clusters(self, document_nodes, mat):
         tree = []
-        thresholds = [4, 3, 2, 1]
+        thresholds = [5, 4, 3, 2]
 
         for i, threshold in enumerate(thresholds):
             self.flat_cluster(mat, threshold, i+1)

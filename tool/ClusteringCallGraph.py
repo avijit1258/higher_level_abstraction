@@ -97,7 +97,9 @@ class ClusteringCallGraph:
         cep = ClusteringExecutionPath()
         tree = cep.label_flat_clusters(document_nodes, mat)
 
-        print(tree, file=open(OUTPUT_DIRECTORY +
+        json_data = {'cluster': tree, 'function_id_to_name': self.function_id_to_name, 'function_id_to_file_name': self.function_id_to_file_name ,'execution_paths': self.execution_paths}
+
+        print(json_data, file=open(OUTPUT_DIRECTORY +
                                    'TREE_DICT_' + self.subject_system, 'w'))
 
         return tree
