@@ -1,4 +1,4 @@
-// var select_elem;
+var cluster_json;
 function get_cluster() {
     Url = '/get_cluster';
     var subject_system = document.getElementById('subject_system_id').value;
@@ -7,9 +7,10 @@ function get_cluster() {
     $.getJSON(Url, {
         subject_system: subject_system
     }, function (result) {
-        
-        setupDiagram(result);
-        setupSearchForFunction(result[0].function_id_to_name_file); // pass the root node to create datalist
+        console.log(result);
+        cluster_json = result;
+        setupDiagram(result['cluster']);
+        setupSearchForFunction(result['cluster'][0].function_id_to_name_file); // pass the root node to create datalist
         
     })
     clearDiagram();
@@ -107,17 +108,41 @@ function highlight_node(function_id) {
         
     });
 }
-// $('#search_button').click(function () {
-//     alert('hello');
-//     change_node_color();
-// });
 
+function find_execution_paths_for_function(function_id){
+
+    eps = []
+
+    for(i = 0; i < cluster_json['execution_paths'].length; i++){
+        if(cluster_json['execution_paths'][i].includes(function_id)){
+            eps.push(i)
+        }
+        if(eps.length >= 3){
+            break;
+        }
+    }
+    eps_preety = ''
+
+    for(ep = 0; ep < eps.length; ep++){
+        eps_preety += ' &#187; '
+        for(f = 0; f < cluster_json['execution_paths'][eps[ep]].length; f++){
+            eps_preety += cluster_json['function_id_to_name'][cluster_json['execution_paths'][eps[ep]][f]]
+            eps_preety += '(' + cluster_json['function_id_to_file_name'][cluster_json['execution_paths'][eps[ep]][f]] + ')'
+            
+            eps_preety += ' &rarr; '
+        }
+        eps_preety += '. <br> '
+    }
+    
+    document.getElementById('searched_execution_paths').innerHTML = eps_preety
+}
 
 jQuery(document).ready(function() {
     jQuery("#search_button").click(function () {
       var function_id = document.getElementById('function_file').value;
       reset_node_color();
       highlight_node(parseInt(function_id));
+      find_execution_paths_for_function(function_id);
     });
   });
 
