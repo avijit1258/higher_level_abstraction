@@ -7,7 +7,7 @@ function get_cluster() {
     $.getJSON(Url, {
         subject_system: subject_system
     }, function (result) {
-        console.log(result);
+
         cluster_json = result;
         setupDiagram(result['cluster']);
         setupSearchForFunction(result['cluster'][0].function_id_to_name_file); // pass the root node to create datalist
