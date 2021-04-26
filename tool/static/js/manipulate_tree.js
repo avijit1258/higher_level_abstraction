@@ -36,7 +36,8 @@ function setupDiagram(result) {
             files: result[x].files,
             files_count: result[x].files_count,
             execution_path_count: result[x].execution_path_count,
-            function_id_to_name_file: result[x].function_id_to_name_file
+            function_id_to_name_file: result[x].function_id_to_name_file,
+            execution_paths: result[x].execution_paths
         });
 
     }
@@ -85,7 +86,7 @@ function showNodeDetails(part) {
     document.getElementById('files').innerHTML = clickable_text;
     document.getElementById('number_of_files').innerHTML = part.data.files_count;
     document.getElementById('number_of_execution_paths').innerHTML = part.data.execution_path_count;
-
+    document.getElementById('searched_execution_paths').innerHTML = get_some_execution_patterns(part.data.execution_paths)
 }
 
 
@@ -126,15 +127,45 @@ function find_execution_paths_for_function(function_id){
     for(ep = 0; ep < eps.length; ep++){
         eps_preety += ' &#187; '
         for(f = 0; f < cluster_json['execution_paths'][eps[ep]].length; f++){
-            eps_preety += cluster_json['function_id_to_name'][cluster_json['execution_paths'][eps[ep]][f]]
-            eps_preety += '(' + cluster_json['function_id_to_file_name'][cluster_json['execution_paths'][eps[ep]][f]] + ')'
-            
+            console.log(cluster_json['execution_paths'][eps[ep]][f], parseInt(function_id));
+            if(cluster_json['execution_paths'][eps[ep]][f] == function_id){
+                
+                eps_preety += '<b>' + cluster_json['function_id_to_name'][cluster_json['execution_paths'][eps[ep]][f]] + '</b>';
+                eps_preety += '(' + cluster_json['function_id_to_file_name'][cluster_json['execution_paths'][eps[ep]][f]] + ')';   
+            }else{
+                eps_preety += cluster_json['function_id_to_name'][cluster_json['execution_paths'][eps[ep]][f]];
+                eps_preety += '(' + cluster_json['function_id_to_file_name'][cluster_json['execution_paths'][eps[ep]][f]] + ')';
+
+            }
+
+                        
             eps_preety += ' &rarr; '
         }
         eps_preety += '. <br> '
     }
     
     document.getElementById('searched_execution_paths').innerHTML = eps_preety
+}
+
+function get_some_execution_patterns(eps){
+    eps_preety = ''
+    count = 0
+    for(const [key, value] of Object.entries(eps)){
+        count += 1
+        if(count === 5){
+            break
+        }
+        eps_preety += ' &#187; '
+        for(f = 0; f < cluster_json['execution_paths'][key].length; f++){
+            eps_preety += cluster_json['function_id_to_name'][cluster_json['execution_paths'][key][f]]
+            eps_preety += '(' + cluster_json['function_id_to_file_name'][cluster_json['execution_paths'][key][f]] + ')'
+            
+            eps_preety += ' &rarr; '
+        }
+        eps_preety += '. <br> '
+    }
+
+    return eps_preety
 }
 
 jQuery(document).ready(function() {
