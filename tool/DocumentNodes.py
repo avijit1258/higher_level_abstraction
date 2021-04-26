@@ -13,6 +13,7 @@ from gensim.summarization.textcleaner import clean_text_by_sentences as _clean_t
 from gensim.summarization.textcleaner import get_sentences
 from sklearn.feature_extraction.text import TfidfVectorizer
 import numpy as np
+import math
 
 import util
 
@@ -91,10 +92,12 @@ class DocumentNodes:
         self.worksheet.write(self.row, 9, spm_method)
         self.row += 1
 
+        execution_paths = {ep: 1 for ep in execution_paths_of_a_cluster}
+
         return {'key': k, 'parent': v, 'tfidf_word': tfidf_word, 'tfidf_method': tfidf_method, 'lda_word': lda_word,
                 'lda_method': lda_method, 'lsi_word': lsi_word, 'lsi_method': lsi_method, 'spm_method': spm_method,
                 'text_summary': text_summary, 'files_count': files_count, 'files': files, 'execution_path_count': execution_paths_count,
-                'function_id_to_name_file': function_id_to_name_file}
+                'function_id_to_name_file': function_id_to_name_file, 'execution_paths': execution_paths}
 
     def tf_idf_score_for_scipy_cluster(self, clusters, method_or_word):
         """ 
@@ -350,8 +353,10 @@ class DocumentNodes:
                         # count += 1
 
         try:
+            # cluster_summary = summarize(
+            #     text_for_summary, word_count= 120, split=True)
             cluster_summary = summarize(
-                text_for_summary, word_count= 120, split=True)
+                text_for_summary, split=True)    
             cluster_summary = ' '.join(list(set(cluster_summary)))
 
             return cluster_summary
@@ -367,11 +372,11 @@ class DocumentNodes:
         ps = PrefixSpan(preprocess)
         ps.maxlen = 10
         ps.minlen = 3
+        NUMBER_OF_PATTERNS = 2 * math.log(len(execution_paths_of_a_cluster)) + 6
 
-        top_patterns = ps.topk(100)
-        # top_patterns = [pattern for freq, pattern in top_patterns]
-        # top_patterns = ps.frequent(2)
-        top_patterns = self.remove_similar_patterns(top_patterns)
+        top_patterns = ps.topk(NUMBER_OF_PATTERNS)
+        top_patterns = [ pattern[1] for pattern in top_patterns]
+        # top_patterns = self.remove_similar_patterns(top_patterns)
 
         sentence = ' '
         for pattern in top_patterns:
