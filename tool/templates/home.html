@@ -11,8 +11,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+  </script>
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,7 +26,7 @@
   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename = 'style.css')}}">
   <script src="{{ url_for('static',filename = 'js/tree_directory_view.js')}}"></script>
   <script src="{{ url_for('static',filename = 'js/manipulate_tree.js')}}"></script>
-  
+
 
   <!-- <script src="{{ url_for('static',filename = 'user_study.js')}}"></script> -->
   <title>HCPC: Human Centric Program Comprehension Through Higher Level Abstraction</title>
@@ -41,102 +44,118 @@
     <li class="nav-item">
       <a class="nav-link" href="https://ise.usask.ca">About us</a>
     </li>
-    
+
   </ul>
 
 
-
-  <div class="container" id="sample">
-
     <div class="container">
-      <h2 class="text-focus-in" style="text-align: center;">HCPC: Human Centric Program Comprehension Through Higher Level Abstraction</h2>
-    </div>
-
-
-    <div class="container">
-
-      <div class="row"> 
-        <div class="col">
-          <label> Select Subject System </label> <br>
-          <select name="subject_system" id="subject_system_id" class="form-control">
-            {% for ss in subject_systems %}
-            <option value="{{ss}}">{{ss}}</option>
-            {% endfor %}
-          </select>
-        </div>
-
-
-        <div class="col">
-          <label> Select technique to lable nodes</label> <br>
-
-          <select class="form-control" name="technique_choice" id="technique_choice_id">
-            {% for tc in technique_choices %}
-            <option value="{{tc}}">{{tc}}</option>
-            {% endfor %}
-          </select>
-        </div>
-    </div>
-  
-    <div class="row">
-    
-      <div class="col-8">
-        <label> Highlight nodes with similar function</label> <br>
-        <select id= 'function_file' name = 'select_elem' style="width: 75%" class="form-control"> </select>
-        <button type="submit" class="btn btn-info" id="search_button"> Search </button>
-      </div>
-      
-
-    </div>
-
-    <div class="row">
-      <div class="mx-auto" >
-        <button onclick="get_cluster()" type="submit" class="btn btn-info"> Load Cluster Tree </button>
-      </div>
-    </div>
-      
-      <div class="row"> 
-        <div class="col" id="fullDiagram" style="height:580px;width:80%;border:1px solid black;margin:2px"></div>
-
-        <div class="col-4">
-          <div class="card" >
-
-            <div class="card-body">
-              <b class="card-title" id="node_key">Node Key</b>
-              <br>
-              <b class="node_details_label"> Number of Files </b>
-              <div id="number_of_files"> </div>
-              <b class="node_details_label"> Number of Execution paths </b>
-              <div id="number_of_execution_paths"> </div>
-              <b class="node_details_label"> Files</b>
-              <div id="files" class="vertical-scrollbar"> </div>
-              <b class="node_details_label"> Node summary</b>
-              <div id="node_summary" class="vertical-scrollbar"> </div>
-              <b class="node_details_label"> Execution patterns </b>
-              <div class="vertical-scrollbar" id="node_patterns"> </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
 
       <div class="row">
-        <div class="col-8">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Execution Paths</h5>
-                <p class="card-text" id="searched_execution_paths"></p>
+        <div class="col">
+          <h4 class="text-focus-in" style="text-align: center;">HCPC: Human Centric Program Comprehension Through Higher
+            Level Abstraction
+          </h4>
+  
+        </div>
+        
+      </div>
+
+      <div class="row" >
+        
+        <div class="col-2">
+
+          <div class="row">
+            <div class="col">
+              <label> Select Subject System </label> <br>
+                <select name="subject_system" id="subject_system_id" class="form-control">
+                  {% for ss in subject_systems %}
+                  <option value="{{ss}}">{{ss}}</option>
+                  {% endfor %}
+                </select>
+            </div>
+            
+          </div>
+  
+  
+          <div class="row">
+
+            <div class="col">
+              <label> Select technique to lable nodes</label> <br>
+  
+                <select class="form-control" name="technique_choice" id="technique_choice_id">
+                  {% for tc in technique_choices %}
+                  <option value="{{tc}}">{{tc}}</option>
+                  {% endfor %}
+                </select>  
+            </div>
+            
+          </div>
+          <div class="row">
+            <div class="col">
+              <label> Highlight nodes with similar function</label> <br>
+              <select id='function_file' name='select_elem' class="form-control"> </select>
+              <button type="submit" class="btn btn-secondary" id="search_button"> Search </button>
+              
+            </div>
+            
+          </div>
+        </div>
+
+
+        <div class="col-6">
+          <div class="row aling-items-center">
+            <div class="col ">
+              <button onclick="get_cluster()" type="submit" class="btn btn-secondary"> Load Cluster Tree </button>
+            </div>
+  
+          </div>
+          <div class="row"> 
+            <div class="col" id="fullDiagram" style="height:525px;width:80%;border:1px solid black;margin:2px"></div>
+          </div>
+          
+          <div class="row">
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <b class="card-title">Execution Paths</b>
+                  <p class="card-text vertical-scrollbar" id="searched_execution_paths"></p>
+                </div>
               </div>
             </div>
+              
+          </div>
+  
         </div>
+
+        <div class="col-4"> 
+          
+            <div class="card">
+  
+              <div class="card-body">
+                <b class="card-title" id="node_key">Node Key</b>
+                <br>
+                <b class="node_details_label"> Number of Files </b>
+                <div id="number_of_files"> </div>
+                <b class="node_details_label"> Number of Execution paths </b>
+                <div id="number_of_execution_paths"> </div>
+                <b class="node_details_label"> Files</b>
+                <div id="files" class="vertical-scrollbar"> </div>
+                <b class="node_details_label"> Node summary</b>
+                <div id="node_summary" class="vertical-scrollbar"> </div>
+                <b class="node_details_label"> Execution patterns </b>
+                <div class="vertical-scrollbar" id="node_patterns"> </div>
+              </div>
+            </div>
+  
+          
+        </div>
+      
       </div>
 
 
     </div>
 
-
-
-  </div>
 
 
 
@@ -244,7 +263,7 @@
 
 
   </footer>
-  
+
 
 </body>
 
