@@ -65,7 +65,7 @@
 
           <div class="row">
             <div class="col">
-              <label> Select Subject System </label> <br>
+              <b> Subject System </b> <br>
                 <select name="subject_system" id="subject_system_id" class="form-control">
                   {% for ss in subject_systems %}
                   <option value="{{ss}}">{{ss}}</option>
@@ -79,7 +79,7 @@
           <div class="row">
 
             <div class="col">
-              <label> Select technique to lable nodes</label> <br>
+              <b> Technique to lable nodes</b> <br>
   
                 <select class="form-control" name="technique_choice" id="technique_choice_id">
                   {% for tc in technique_choices %}
@@ -91,7 +91,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <label> Highlight nodes with similar function</label> <br>
+              <b> Highlight nodes</b> <br>
               <select id='function_file' name='select_elem' class="form-control"> </select>
               <button type="submit" class="btn btn-secondary" id="search_button"> Search </button>
               
