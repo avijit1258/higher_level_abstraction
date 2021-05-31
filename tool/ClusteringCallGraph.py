@@ -1,29 +1,25 @@
-import networkx as nx
-import matplotlib.pyplot as plt
-import pydot
 import csv
-import re
-import pandas as pd
-#import networkx.drawing.nx_pydot.read_dot
-from sklearn.cluster import AgglomerativeClustering
-from scipy.cluster.hierarchy import dendrogram, linkage, fcluster, to_tree
-from scipy.spatial.distance import pdist
-
-from collections import defaultdict
-from scipy.spatial import distance as ssd
-import queue
 import math
-from timeit import default_timer as timer
 import multiprocessing
+import queue
+import re
+from collections import defaultdict
+from timeit import default_timer as timer
 
-
-from PlayingWithAST import *
-
-from DocumentNodes import DocumentNodes
-from ClusteringExecutionPaths import ClusteringExecutionPath
+import matplotlib.pyplot as plt
+import networkx as nx
+import pandas as pd
+import pydot
+from AnalyzeAST import *
+from scipy.cluster.hierarchy import dendrogram, fcluster, linkage, to_tree
+from scipy.spatial import distance as ssd
+from scipy.spatial.distance import pdist
+from sklearn.cluster import AgglomerativeClustering
 
 import config
 import util
+from ClusteringExecutionPaths import ClusteringExecutionPath
+from DocumentNodes import DocumentNodes
 
 ROOT = config.ROOT
 SUBJECT_SYSTEM_NAME = config.SUBJECT_SYSTEM_NAME
@@ -41,21 +37,21 @@ class ClusteringCallGraph:
         Finally, clusters are renamed using the execution paths under them using different topic modelling techniques.
 
      """
-    S = []
-    T = []
+    entry_point = []
+    exit_point = []
     tree = []
     text_data = []
     subject_system = ''
     special_functions = ['lambda', 'genexpr',
                          'listcomp', 'setcomp', 'dictcomp']
     execution_paths = []
-    G = nx.DiGraph()
+    graph = nx.DiGraph()
     function_id_to_name = {}
     function_id_to_file_name = {}
 
-    pwa = PlayingWithAST()
+    analyzeAST = AnalyzeAST()
 
-    function_name_to_docstring = pwa.get_all_method_docstring_pair_of_a_project(
+    function_name_to_docstring = analyzeAST.get_all_method_docstring_pair_of_a_project(
         SUBJECT_SYSTEM_FOR_COMMENT)
 
     def __del__(self):
@@ -66,7 +62,7 @@ class ClusteringCallGraph:
         """ analyzing python programs to build cluster tree of execution paths. """
 
         self.tgf_to_networkX()
-        self.G.remove_edges_from(nx.selfloop_edges(self.G))
+        self.graph.remove_edges_from(nx.selfloop_edges(self.graph))
         self.extracting_source_and_exit_node()
         start = timer()
         self.extracting_execution_paths()
@@ -85,7 +81,7 @@ class ClusteringCallGraph:
         end = timer()
         print('Time required for distance_matrix: ', end - start)
 
-        self.G.clear()
+        self.graph.clear()
 
         document_nodes.initalize_graph_related_data_structures(self.execution_paths, self.function_id_to_name,
                                                                self.function_id_to_file_name, self.id_to_sentence, self.function_name_to_docstring)
@@ -128,7 +124,7 @@ class ClusteringCallGraph:
         for r in redundant_ep:
             self.execution_paths.remove(r)
 
-        return
+        
 
     def check_ep_overlap_from_start(self, e, f):
         '''This function checks whether 2nd list is a sublist starting from start of 1st list'''
@@ -144,7 +140,7 @@ class ClusteringCallGraph:
         self.subject_system = SUBJECT_SYSTEM_NAME + '.txt'
 
         f = open(DATASET, "r")
-        G = nx.DiGraph()
+        # G = nx.DiGraph()
         graph_started = False
         for line in f:
 
@@ -154,11 +150,9 @@ class ClusteringCallGraph:
 
             if graph_started == True:
                 edge_info = line.split()
-                # if self.function_id_to_name[edge_info[0]] in self.special_functions or self.function_id_to_name[edge_info[1]] in self.special_functions:
-                #     continue
-                # filter module calls from function calls
+                
                 if edge_info[0] in self.function_id_to_name and edge_info[1] in self.function_id_to_name:
-                    self.G.add_edge(edge_info[0], edge_info[1])
+                    self.graph.add_edge(edge_info[0], edge_info[1])
 
             if graph_started == False and '.py' in line:
                 ln = line.split(' ')
@@ -167,34 +161,30 @@ class ClusteringCallGraph:
                 self.function_id_to_file_name[ln[0]] = line.split(
                     '/')[-1].split(':')[0]
 
-        # nx.draw(self.G, with_labels=True)
-        # plt.savefig(OUTPUT_DIRECTORY+'call-graph.png')
-        # plt.show()
-
-        return
+       
 
     def extracting_source_and_exit_node(self):
         """ Finding source and exit nodes from networkX graph """
         print('In degree')
-        for s, v in self.G.in_degree():
+        for s, v in self.graph.in_degree():
 
             if v == 0:
-                self.S.append(s)
+                self.entry_point.append(s)
 
-        print(len(self.S))
+        print(len(self.entry_point))
         print('Out degree')
-        for t, v in self.G.out_degree():
+        for t, v in self.graph.out_degree():
 
             if v == 0:
-                self.T.append(t)
+                self.exit_point.append(t)
 
-        print(len(self.T))
+        print(len(self.exit_point))
 
     def extracting_execution_paths(self):
         """ Extracting execution paths from networkX call graph """
         print('Extracting execution paths')
-        for s in self.S:
-            unpack_path = list(nx.all_simple_paths(self.G, s, self.T))
+        for s in self.entry_point:
+            unpack_path = list(nx.all_simple_paths(self.graph, s, self.exit_point))
             for p in unpack_path:
                 self.execution_paths.append(p)
 
@@ -306,8 +296,6 @@ class ClusteringCallGraph:
 
             visited[p] = 1
 
-            # if math.ceil(math.log(count + 1, 2)) == depth:
-            #     break
 
         return tree
 
